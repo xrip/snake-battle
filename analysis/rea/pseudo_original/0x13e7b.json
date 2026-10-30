@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_7b2f594b5c039959286ff84d6c45afee107c42191f4c1dd8eb8d215fa5d3449b\",\"subject\":{\"name\":\"SNAKE.EXE\",\"digest\":{\"sha256\":\"c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821\"},\"local_path\":\"/workspace/scratch/488b0609771f/work/original/SNAKE.EXE\",\"format\":\"dos-mz\",\"architecture\":\"x86\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"dos-mz\",\"architecture\":\"x86\",\"available_architectures\":[\"x86\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"function-body-call-coverage-v5\",\"function_dossier_coverage\":\"observed-facets-and-call-relationships-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"procedure_file_offset_resolution\":\"address-first-unique-target-source-mapping-v2\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-without-synthetic-entry-v2\",\"function_boundary_observations\":\"ghidra-function-boundary-limitations-v4\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"load_image_evidence\":\"independent-mz-mapping-relocations-v2\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"MzLoader\",\"language_id\":\"x86:LE:16:Real Mode\",\"compiler_spec_id\":\"default\",\"load_segment\":\"0x1000\",\"address_coordinates\":\"linear-byte-offset\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"00872daa045ec4c4f503e0aa00aa9e560f42b5c7fcdcd08e54830338c2ca16b7\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_pseudo_code\",\"parameters\":{\"procedure\":\"0x13e7b\"},\"raw_result\":{\"value\":\"\\nint __cdecl16far thunk_FUN_1000_3cee(uint param_1,char *param_2,undefined2 param_3,int param_4)\\n\\n{\\n  uint *puVar1;\\n  char *pcVar2;\\n  uint uVar3;\\n  char *pcVar4;\\n  int iVar5;\\n  int iVar6;\\n  undefined2 unaff_SS;\\n  char acStack_90 [130];\\n  undefined4 uStack_e;\\n  char cStack_9;\\n  int iStack_8;\\n  char *pcStack_6;\\n  undefined2 uVar7;\\n  \\n  if (param_1 < DAT_2679_15ec) {\\n    if (param_4 + 1U < 2) {\\n      iVar5 = 0;\\n    }\\n    else {\\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x800) != 0) {\\n        FUN_1000_06c0(param_1,0,0,2);\\n      }\\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x4000) == 0) {\\n        iVar5 = FUN_1000_3e3f(param_1,param_2,param_3,param_4);\\n      }\\n      else {\\n        puVar1 = (uint *)(param_1 * 2 + 0x15ee);\\n        *puVar1 = *puVar1 & 0xfdff;\\n        uStack_e = (char *)CONCAT22(param_3,param_2);\\n        iStack_8 = param_4;\\n        do {\\n          _pcStack_6 = (char *)CONCAT22(unaff_SS,acStack_90);\\n          do {\\n            pcVar4 = uStack_e;\\n            if (iStack_8 == 0) {\\n              iVar5 = (int)pcStack_6 - (int)acStack_90;\\n              if (iVar5 == 0) {\\n                return param_4;\\n              }\\n              iVar6 = FUN_1000_3e3f(param_1,acStack_90);\\n              if (iVar6 == iVar5) {\\n                return param_4;\\n              }\\n              if (iVar6 == -1) goto LAB_1000_3dde;\\n              goto LAB_1000_3e30;\\n            }\\n            iStack_8 = iStack_8 + -1;\\n            uStack_e = (char *)CONCAT22(uStack_e._2_2_,(char *)uStack_e + 1);\\n            cStack_9 = *pcVar4;\\n            if (cStack_9 == '\\\\n') {\\n              *_pcStack_6 = '\\\\r';\\n              uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\\n              _pcStack_6 = (char *)CONCAT22(uVar7,pcStack_6 + 1);\\n            }\\n            *_pcStack_6 = cStack_9;\\n            pcVar2 = pcStack_6 + 1;\\n            uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\\n            _pcStack_6 = (char *)CONCAT22(uVar7,pcVar2);\\n            uVar3 = (uint)(pcVar2 < acStack_90);\\n          } while (((int)-uVar3 < 0) ||\\n                  ((uVar3 == 0 && ((uint)((int)pcVar2 - (int)acStack_90) < 0x80))));\\n          iVar5 = (int)pcVar2 - (int)acStack_90;\\n          iVar6 = FUN_1000_3e3f(param_1,acStack_90);\\n        } while (iVar6 == iVar5);\\n        if (iVar6 == -1) {\\nLAB_1000_3dde:\\n          iVar5 = -1;\\n        }\\n        else {\\n          param_4 = param_4 - iStack_8;\\nLAB_1000_3e30:\\n          iVar5 = (param_4 + iVar6) - iVar5;\\n        }\\n      }\\n    }\\n  }\\n  else {\\n    iVar5 = FUN_1000_05c2(6);\\n  }\\n  return iVar5;\\n}\\n\\n\",\"limitations\":[]},\"normalized_result\":\"\\nint __cdecl16far thunk_FUN_1000_3cee(uint param_1,char *param_2,undefined2 param_3,int param_4)\\n\\n{\\n  uint *puVar1;\\n  char *pcVar2;\\n  uint uVar3;\\n  char *pcVar4;\\n  int iVar5;\\n  int iVar6;\\n  undefined2 unaff_SS;\\n  char acStack_90 [130];\\n  undefined4 uStack_e;\\n  char cStack_9;\\n  int iStack_8;\\n  char *pcStack_6;\\n  undefined2 uVar7;\\n  \\n  if (param_1 < DAT_2679_15ec) {\\n    if (param_4 + 1U < 2) {\\n      iVar5 = 0;\\n    }\\n    else {\\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x800) != 0) {\\n        FUN_1000_06c0(param_1,0,0,2);\\n      }\\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x4000) == 0) {\\n        iVar5 = FUN_1000_3e3f(param_1,param_2,param_3,param_4);\\n      }\\n      else {\\n        puVar1 = (uint *)(param_1 * 2 + 0x15ee);\\n        *puVar1 = *puVar1 & 0xfdff;\\n        uStack_e = (char *)CONCAT22(param_3,param_2);\\n        iStack_8 = param_4;\\n        do {\\n          _pcStack_6 = (char *)CONCAT22(unaff_SS,acStack_90);\\n          do {\\n            pcVar4 = uStack_e;\\n            if (iStack_8 == 0) {\\n              iVar5 = (int)pcStack_6 - (int)acStack_90;\\n              if (iVar5 == 0) {\\n                return param_4;\\n              }\\n              iVar6 = FUN_1000_3e3f(param_1,acStack_90);\\n              if (iVar6 == iVar5) {\\n                return param_4;\\n              }\\n              if (iVar6 == -1) goto LAB_1000_3dde;\\n              goto LAB_1000_3e30;\\n            }\\n            iStack_8 = iStack_8 + -1;\\n            uStack_e = (char *)CONCAT22(uStack_e._2_2_,(char *)uStack_e + 1);\\n            cStack_9 = *pcVar4;\\n            if (cStack_9 == '\\\\n') {\\n              *_pcStack_6 = '\\\\r';\\n              uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\\n              _pcStack_6 = (char *)CONCAT22(uVar7,pcStack_6 + 1);\\n            }\\n            *_pcStack_6 = cStack_9;\\n            pcVar2 = pcStack_6 + 1;\\n            uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\\n            _pcStack_6 = (char *)CONCAT22(uVar7,pcVar2);\\n            uVar3 = (uint)(pcVar2 < acStack_90);\\n          } while (((int)-uVar3 < 0) ||\\n                  ((uVar3 == 0 && ((uint)((int)pcVar2 - (int)acStack_90) < 0x80))));\\n          iVar5 = (int)pcVar2 - (int)acStack_90;\\n          iVar6 = FUN_1000_3e3f(param_1,acStack_90);\\n        } while (iVar6 == iVar5);\\n        if (iVar6 == -1) {\\nLAB_1000_3dde:\\n          iVar5 = -1;\\n        }\\n        else {\\n          param_4 = param_4 - iStack_8;\\nLAB_1000_3e30:\\n          iVar5 = (param_4 + iVar6) - iVar5;\\n        }\\n      }\\n    }\\n  }\\n  else {\\n    iVar5 = FUN_1000_05c2(6);\\n  }\\n  return iVar5;\\n}\\n\\n\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.\",\"External functions and functions without an analyzable body return null; other decompiler failures remain explicit.\",\"DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.\",\"Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_7b2f594b5c039959286ff84d6c45afee107c42191f4c1dd8eb8d215fa5d3449b",
+    "subject": {
+      "name": "SNAKE.EXE",
+      "digest": {
+        "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821"
+      },
+      "local_path": "/workspace/scratch/488b0609771f/work/original/SNAKE.EXE",
+      "format": "dos-mz",
+      "architecture": "x86"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "dos-mz",
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "function-body-call-coverage-v5",
+        "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-without-synthetic-entry-v2",
+        "function_boundary_observations": "ghidra-function-boundary-limitations-v4",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "load_image_evidence": "independent-mz-mapping-relocations-v2",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "MzLoader",
+        "language_id": "x86:LE:16:Real Mode",
+        "compiler_spec_id": "default",
+        "load_segment": "0x1000",
+        "address_coordinates": "linear-byte-offset",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "00872daa045ec4c4f503e0aa00aa9e560f42b5c7fcdcd08e54830338c2ca16b7"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x13e7b"
+    },
+    "raw_result": {
+      "value": "\nint __cdecl16far thunk_FUN_1000_3cee(uint param_1,char *param_2,undefined2 param_3,int param_4)\n\n{\n  uint *puVar1;\n  char *pcVar2;\n  uint uVar3;\n  char *pcVar4;\n  int iVar5;\n  int iVar6;\n  undefined2 unaff_SS;\n  char acStack_90 [130];\n  undefined4 uStack_e;\n  char cStack_9;\n  int iStack_8;\n  char *pcStack_6;\n  undefined2 uVar7;\n  \n  if (param_1 < DAT_2679_15ec) {\n    if (param_4 + 1U < 2) {\n      iVar5 = 0;\n    }\n    else {\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x800) != 0) {\n        FUN_1000_06c0(param_1,0,0,2);\n      }\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x4000) == 0) {\n        iVar5 = FUN_1000_3e3f(param_1,param_2,param_3,param_4);\n      }\n      else {\n        puVar1 = (uint *)(param_1 * 2 + 0x15ee);\n        *puVar1 = *puVar1 & 0xfdff;\n        uStack_e = (char *)CONCAT22(param_3,param_2);\n        iStack_8 = param_4;\n        do {\n          _pcStack_6 = (char *)CONCAT22(unaff_SS,acStack_90);\n          do {\n            pcVar4 = uStack_e;\n            if (iStack_8 == 0) {\n              iVar5 = (int)pcStack_6 - (int)acStack_90;\n              if (iVar5 == 0) {\n                return param_4;\n              }\n              iVar6 = FUN_1000_3e3f(param_1,acStack_90);\n              if (iVar6 == iVar5) {\n                return param_4;\n              }\n              if (iVar6 == -1) goto LAB_1000_3dde;\n              goto LAB_1000_3e30;\n            }\n            iStack_8 = iStack_8 + -1;\n            uStack_e = (char *)CONCAT22(uStack_e._2_2_,(char *)uStack_e + 1);\n            cStack_9 = *pcVar4;\n            if (cStack_9 == '\\n') {\n              *_pcStack_6 = '\\r';\n              uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\n              _pcStack_6 = (char *)CONCAT22(uVar7,pcStack_6 + 1);\n            }\n            *_pcStack_6 = cStack_9;\n            pcVar2 = pcStack_6 + 1;\n            uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\n            _pcStack_6 = (char *)CONCAT22(uVar7,pcVar2);\n            uVar3 = (uint)(pcVar2 < acStack_90);\n          } while (((int)-uVar3 < 0) ||\n                  ((uVar3 == 0 && ((uint)((int)pcVar2 - (int)acStack_90) < 0x80))));\n          iVar5 = (int)pcVar2 - (int)acStack_90;\n          iVar6 = FUN_1000_3e3f(param_1,acStack_90);\n        } while (iVar6 == iVar5);\n        if (iVar6 == -1) {\nLAB_1000_3dde:\n          iVar5 = -1;\n        }\n        else {\n          param_4 = param_4 - iStack_8;\nLAB_1000_3e30:\n          iVar5 = (param_4 + iVar6) - iVar5;\n        }\n      }\n    }\n  }\n  else {\n    iVar5 = FUN_1000_05c2(6);\n  }\n  return iVar5;\n}\n\n",
+      "limitations": []
+    },
+    "normalized_result": "\nint __cdecl16far thunk_FUN_1000_3cee(uint param_1,char *param_2,undefined2 param_3,int param_4)\n\n{\n  uint *puVar1;\n  char *pcVar2;\n  uint uVar3;\n  char *pcVar4;\n  int iVar5;\n  int iVar6;\n  undefined2 unaff_SS;\n  char acStack_90 [130];\n  undefined4 uStack_e;\n  char cStack_9;\n  int iStack_8;\n  char *pcStack_6;\n  undefined2 uVar7;\n  \n  if (param_1 < DAT_2679_15ec) {\n    if (param_4 + 1U < 2) {\n      iVar5 = 0;\n    }\n    else {\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x800) != 0) {\n        FUN_1000_06c0(param_1,0,0,2);\n      }\n      if ((*(uint *)(param_1 * 2 + 0x15ee) & 0x4000) == 0) {\n        iVar5 = FUN_1000_3e3f(param_1,param_2,param_3,param_4);\n      }\n      else {\n        puVar1 = (uint *)(param_1 * 2 + 0x15ee);\n        *puVar1 = *puVar1 & 0xfdff;\n        uStack_e = (char *)CONCAT22(param_3,param_2);\n        iStack_8 = param_4;\n        do {\n          _pcStack_6 = (char *)CONCAT22(unaff_SS,acStack_90);\n          do {\n            pcVar4 = uStack_e;\n            if (iStack_8 == 0) {\n              iVar5 = (int)pcStack_6 - (int)acStack_90;\n              if (iVar5 == 0) {\n                return param_4;\n              }\n              iVar6 = FUN_1000_3e3f(param_1,acStack_90);\n              if (iVar6 == iVar5) {\n                return param_4;\n              }\n              if (iVar6 == -1) goto LAB_1000_3dde;\n              goto LAB_1000_3e30;\n            }\n            iStack_8 = iStack_8 + -1;\n            uStack_e = (char *)CONCAT22(uStack_e._2_2_,(char *)uStack_e + 1);\n            cStack_9 = *pcVar4;\n            if (cStack_9 == '\\n') {\n              *_pcStack_6 = '\\r';\n              uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\n              _pcStack_6 = (char *)CONCAT22(uVar7,pcStack_6 + 1);\n            }\n            *_pcStack_6 = cStack_9;\n            pcVar2 = pcStack_6 + 1;\n            uVar7 = (undefined2)((ulong)_pcStack_6 >> 0x10);\n            _pcStack_6 = (char *)CONCAT22(uVar7,pcVar2);\n            uVar3 = (uint)(pcVar2 < acStack_90);\n          } while (((int)-uVar3 < 0) ||\n                  ((uVar3 == 0 && ((uint)((int)pcVar2 - (int)acStack_90) < 0x80))));\n          iVar5 = (int)pcVar2 - (int)acStack_90;\n          iVar6 = FUN_1000_3e3f(param_1,acStack_90);\n        } while (iVar6 == iVar5);\n        if (iVar6 == -1) {\nLAB_1000_3dde:\n          iVar5 = -1;\n        }\n        else {\n          param_4 = param_4 - iStack_8;\nLAB_1000_3e30:\n          iVar5 = (param_4 + iVar6) - iVar5;\n        }\n      }\n    }\n  }\n  else {\n    iVar5 = FUN_1000_05c2(6);\n  }\n  return iVar5;\n}\n\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.",
+      "Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

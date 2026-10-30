@@ -1,0 +1,132 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 1
+SNDIRQ.ASM
+
+
+
+      1				     ; Reconstructed PIT/IRQ0 implementation, original 1341:006E..00FE.
+      2				     ; IRQ entry preserves all general registers, DS/ES, and chains the	old INT	8
+      3				     ; whenever	the 16-bit 1193182/0x174d timer	accumulator overflows.
+      4				     .286
+      5	0000			     _TEXT segment byte	public 'CODE'
+      6				     assume cs:_TEXT, ds:DGROUP
+      7				     extrn _snd_055E:near
+      8				     public _snd_isr_count, _snd_old_int8, _snd_0074, _snd_00B4, _snd_00E7
+      9	0000  0000		     _snd_isr_count dw 0
+     10	0002  00000000		     _snd_old_int8 dd 0
+     11	0006			     _snd_0074 label near
+     12	0006  60			 pusha
+     13	0007  1E			 push ds
+     14	0008  06			 push es
+     15	0009  2E: FF 06	0000r		 inc word ptr cs:_snd_isr_count
+     16	000E  2E: 83 3E	0000r 01	 cmp word ptr cs:_snd_isr_count,1
+     17	0014  75 28			 jne short nested_irq
+     18	0016  B8 0000s			 mov ax,DGROUP
+     19	0019  8E D8			 mov ds,ax
+     20	001B			     next_pending_tick:
+     21	001B  81 06 0000e 174D		 add word ptr _snd_timer_accumulator,0174dh
+     22	0021  73 08			 jnc short acknowledge_pic
+     23	0023  9C			 pushf
+     24	0024  2E: FF 1E	0002r		 call dword ptr	cs:_snd_old_int8
+     25	0029  EB 04			 jmp short run_tick
+     26	002B			     acknowledge_pic:
+     27	002B  B0 20			 mov al,020h
+     28	002D  E6 20			 out 020h,al
+     29	002F			     run_tick:
+     30	002F  FB			 sti
+     31	0030  E8 0000e			 call near ptr _snd_055E
+     32	0033  2E: FF 0E	0000r		 dec word ptr cs:_snd_isr_count
+     33	0038  75 E1			 jne short next_pending_tick
+     34	003A  07			 pop es
+     35	003B  1F			 pop ds
+     36	003C  61			 popa
+     37	003D  CF			 iret
+     38	003E			     nested_irq:
+     39	003E  B0 20			 mov al,020h
+     40	0040  E6 20			 out 020h,al
+     41	0042  07			 pop es
+     42	0043  1F			 pop ds
+     43	0044  61			 popa
+     44	0045  CF			 iret
+     45	0046			     _snd_00B4 label near
+     46	0046  1E			 push ds
+     47	0047  06			 push es
+     48	0048  B8 3508			 mov ax,03508h
+     49	004B  CD 21			 int 021h
+     50	004D  2E: 89 1E	0002r		 mov word ptr cs:_snd_old_int8,bx
+     51	0052  2E: 8C 06	0004r		 mov word ptr cs:_snd_old_int8+2,es
+     52	0057  8C C8			 mov ax,cs
+     53	0059  8E D8			 mov ds,ax
+     54	005B  BA 0006r			 mov dx,offset _snd_0074
+     55	005E  B8 2508			 mov ax,02508h
+     56	0061  CD 21			 int 021h
+     57	0063  B0 34			 mov al,034h
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 2
+SNDIRQ.ASM
+
+
+
+     58	0065  E6 43			 out 043h,al
+     59	0067  B8 174D			 mov ax,0174dh
+     60	006A  E6 40			 out 040h,al
+     61	006C  8A C4			 mov al,ah
+     62	006E  E6 40			 out 040h,al
+     63	0070  33 C0			 xor ax,ax
+     64	0072  2E: A3 0000r		 mov word ptr cs:_snd_isr_count,ax
+     65	0076  07			 pop es
+     66	0077  1F			 pop ds
+     67	0078  C3			 ret
+     68	0079			     _snd_00E7 label near
+     69	0079  1E			 push ds
+     70	007A  33 C0			 xor ax,ax
+     71	007C  E6 40			 out 040h,al
+     72	007E  8A C4			 mov al,ah
+     73	0080  E6 40			 out 040h,al
+     74	0082  2E: C5 16	0002r		 lds dx,dword ptr cs:_snd_old_int8
+     75	0087  B8 2508			 mov ax,02508h
+     76	008A  CD 21			 int 021h
+     77	008C  33 C0			 xor ax,ax
+     78	008E  1F			 pop ds
+     79	008F  C3			 ret
+     80	0090			     _TEXT ends
+     81	0000			     _DATA segment word	public 'DATA'
+     82	0000			     _DATA ends
+     83	0000			     _BSS segment word public 'BSS'
+     84				     extrn _snd_timer_accumulator:word
+     85	0000			     _BSS ends
+     86				     DGROUP group _DATA,_BSS
+     87				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "SNDIRQ  "
+??time				  Text	 "18:15:27"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 SNDIRQ
+@WordSize			  Text	 2
+@curseg				  Text	 _BSS
+_snd_0074			  Near	 _TEXT:0006
+_snd_00B4			  Near	 _TEXT:0046
+_snd_00E7			  Near	 _TEXT:0079
+_snd_055E			  Near	 _TEXT:---- Extern
+_snd_isr_count			  Word	 _TEXT:0000
+_snd_old_int8			  Dword	 _TEXT:0002
+_snd_timer_accumulator		  Word	 _BSS:---- Extern
+acknowledge_pic			  Near	 _TEXT:002B
+nested_irq			  Near	 _TEXT:003E
+next_pending_tick		  Near	 _TEXT:001B
+run_tick			  Near	 _TEXT:002F
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _BSS				  16  0000 Word	  Public  BSS
+  _DATA				  16  0000 Word	  Public  DATA
+_TEXT				  16  0090 Byte	  Public  CODE
+

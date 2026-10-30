@@ -1,0 +1,53 @@
+{
+  "status": "whole_executable_byte_exact_mixed_C_and_ASM",
+  "goal": "Reconstruct the entire SNAKE.EXE and document its internal formats, using the original toolchain",
+  "whole_executable_byte_exact": true,
+  "all_ordinary_sound_functions_compiler_matched_from_C": false,
+  "historical_author_source_text_recovered": false,
+  "original_sound_C_compiler_identified": false,
+  "output": "build/exact/native/SNAKE.EXE",
+  "comparison": "build/exact/comparison.json",
+  "build_provenance": "build/exact/provenance.json",
+  "file_size": 102326,
+  "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "different_file_bytes": 0,
+  "different_image_bytes": 0,
+  "mz_header_exact": true,
+  "relocation_representation_and_order_exact": true,
+  "relocation_count": 879,
+  "application_modules": {
+    "C_compiled_modules": 24,
+    "C_compiled_modules_with_CODE": 23,
+    "C_compiled_CODE_bytes_including_inline_assembly": 46134,
+    "symbolic_ASM_modules": ["EGA", "LZSS", "SOUND"],
+    "total_application_objects": 27,
+    "initialized_DATA_bytes": 4786,
+    "BSS_bytes": 18893
+  },
+  "original_runtime": {
+    "library_members_from_CL_LIB": 91,
+    "separate_startup_object": "C0L.OBJ",
+    "total_runtime_objects": 92,
+    "runtime_C_source_reconstructed": false
+  },
+  "build_properties": {
+    "all_application_modules_rebuilt_from_sources": true,
+    "runtime_freshly_extracted_from_original_compiler": true,
+    "reads_reference_EXE_as_build_input": false,
+    "patches_final_EXE": false,
+    "uses_original_EXE_opcode_arrays": false,
+    "native_linker": "Borland Turbo Link 5.1",
+    "total_linked_objects": 119
+  },
+  "remaining_for_complete_C_matching": [
+    "Identify the historical compiler, options and any assembler-stage edits for the SOUND block",
+    "Match the ordinary functions in SOUND.C, MIDISND.C and ADLIB.C using that verified toolchain; exact symbolic ASM remains the executable specification"
+  ],
+  "scope_notes": [
+    "The complete EXE is byte exact; this does not establish a reconstruction exclusively from C",
+    "Register-ABI and hardware assembly is represented explicitly",
+    "Original author names, comments and formatting cannot be inferred from binary equality",
+    "build/diagnostic/ is a separate non-exact experiment using ordinary sound C functions",
+    "build/verification.json and modules.json describe the C-oriented diagnostic path; build/exact/comparison.json is the whole-file equality proof"
+  ]
+}

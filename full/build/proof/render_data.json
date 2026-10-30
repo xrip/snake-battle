@@ -1,0 +1,279 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/RENDER.OBJ",
+  "object_sha256": "6a29c5940f9f3d5c7bf9eca3ba10fff45d07bc841f79ce0a453054284913b46e",
+  "module": "render.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3506,
+    "image_offset": 95554,
+    "address": "1679:0DB2"
+  },
+  "file_offset": 99650,
+  "object_size": 154,
+  "expected_size": 154,
+  "public_bindings": [
+    {
+      "name": "_sb_render_strings",
+      "object_offset": 39,
+      "expected": {
+        "segment": 5753,
+        "offset": 3545,
+        "image_offset": 95593,
+        "address": "1679:0DD9"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3545,
+        "image_offset": 95593,
+        "address": "1679:0DD9"
+      },
+      "equal": true
+    },
+    {
+      "name": "_sb_render_defaults",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3506,
+        "image_offset": 95554,
+        "address": "1679:0DB2"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3506,
+        "image_offset": 95554,
+        "address": "1679:0DB2"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0db2",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3506,
+        "image_offset": 95554,
+        "address": "1679:0DB2"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3506,
+        "image_offset": 95554,
+        "address": "1679:0DB2"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0db4",
+      "object_offset": 2,
+      "expected": {
+        "segment": 5753,
+        "offset": 3508,
+        "image_offset": 95556,
+        "address": "1679:0DB4"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3508,
+        "image_offset": 95556,
+        "address": "1679:0DB4"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0dd9",
+      "object_offset": 39,
+      "expected": {
+        "segment": 5753,
+        "offset": 3545,
+        "image_offset": 95593,
+        "address": "1679:0DD9"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3545,
+        "image_offset": 95593,
+        "address": "1679:0DD9"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0de6",
+      "object_offset": 52,
+      "expected": {
+        "segment": 5753,
+        "offset": 3558,
+        "image_offset": 95606,
+        "address": "1679:0DE6"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3558,
+        "image_offset": 95606,
+        "address": "1679:0DE6"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0df3",
+      "object_offset": 65,
+      "expected": {
+        "segment": 5753,
+        "offset": 3571,
+        "image_offset": 95619,
+        "address": "1679:0DF3"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3571,
+        "image_offset": 95619,
+        "address": "1679:0DF3"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e00",
+      "object_offset": 78,
+      "expected": {
+        "segment": 5753,
+        "offset": 3584,
+        "image_offset": 95632,
+        "address": "1679:0E00"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3584,
+        "image_offset": 95632,
+        "address": "1679:0E00"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e0d",
+      "object_offset": 91,
+      "expected": {
+        "segment": 5753,
+        "offset": 3597,
+        "image_offset": 95645,
+        "address": "1679:0E0D"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3597,
+        "image_offset": 95645,
+        "address": "1679:0E0D"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e1a",
+      "object_offset": 104,
+      "expected": {
+        "segment": 5753,
+        "offset": 3610,
+        "image_offset": 95658,
+        "address": "1679:0E1A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3610,
+        "image_offset": 95658,
+        "address": "1679:0E1A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e27",
+      "object_offset": 117,
+      "expected": {
+        "segment": 5753,
+        "offset": 3623,
+        "image_offset": 95671,
+        "address": "1679:0E27"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3623,
+        "image_offset": 95671,
+        "address": "1679:0E27"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e2a",
+      "object_offset": 120,
+      "expected": {
+        "segment": 5753,
+        "offset": 3626,
+        "image_offset": 95674,
+        "address": "1679:0E2A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3626,
+        "image_offset": 95674,
+        "address": "1679:0E2A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e35",
+      "object_offset": 131,
+      "expected": {
+        "segment": 5753,
+        "offset": 3637,
+        "image_offset": 95685,
+        "address": "1679:0E35"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3637,
+        "image_offset": 95685,
+        "address": "1679:0E35"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e42",
+      "object_offset": 144,
+      "expected": {
+        "segment": 5753,
+        "offset": 3650,
+        "image_offset": 95698,
+        "address": "1679:0E42"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3650,
+        "image_offset": 95698,
+        "address": "1679:0E42"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      154
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "3b89f9b1a7afda7ad99c2af669df44a14503c198232c82bae7131b187e539dc9",
+  "original_sha256": "3b89f9b1a7afda7ad99c2af669df44a14503c198232c82bae7131b187e539dc9",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

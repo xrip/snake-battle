@@ -1,0 +1,290 @@
+{
+  "object": "snake-battle-recovered/full/graphics/build/PARA.OBJ",
+  "object_sha256": "cbd9183feb155cfc0ef8b1cd4f6f8d7343ee44ac5dd8e1324b1a328f2c6f5bbe",
+  "module": "para.c",
+  "segment_index": 1,
+  "segment_name": "PARA_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 3567,
+    "offset": 7,
+    "image_offset": 57079,
+    "address": "0DEF:0007"
+  },
+  "file_offset": 61175,
+  "object_size": 110,
+  "expected_size": 110,
+  "public_bindings": [
+    {
+      "name": "_para_0055",
+      "object_offset": 78,
+      "expected": {
+        "segment": 3567,
+        "offset": 85,
+        "image_offset": 57157,
+        "address": "0DEF:0055"
+      },
+      "binding": {
+        "segment": 3567,
+        "offset": 85,
+        "image_offset": 57157,
+        "address": "0DEF:0055"
+      },
+      "equal": true
+    },
+    {
+      "name": "_para_0007",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3567,
+        "offset": 7,
+        "image_offset": 57079,
+        "address": "0DEF:0007"
+      },
+      "binding": {
+        "segment": 3567,
+        "offset": 7,
+        "image_offset": 57079,
+        "address": "0DEF:0007"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      110
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 94,
+      "function_offset": 94,
+      "omf_fixup": {
+        "record_offset": 577,
+        "subrecord_offset": 0,
+        "offset": 94,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 4,
+          "name": "_farfree"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 6089,
+        "image_offset": 6089,
+        "address": "0000:17C9"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "c9170000",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 58,
+      "function_offset": 58,
+      "omf_fixup": {
+        "record_offset": 577,
+        "subrecord_offset": 4,
+        "offset": 58,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_f_0b33_0003"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 2867,
+        "offset": 3,
+        "image_offset": 45875,
+        "address": "0B33:0003"
+      },
+      "frame": 2867,
+      "before_hex": "00000000",
+      "after_hex": "0300330b",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 54,
+      "function_offset": 54,
+      "omf_fixup": {
+        "record_offset": 577,
+        "subrecord_offset": 8,
+        "offset": 54,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_g_0e88"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3720,
+        "image_offset": 95768,
+        "address": "1679:0E88"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "880e",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 42,
+      "function_offset": 42,
+      "omf_fixup": {
+        "record_offset": 577,
+        "subrecord_offset": 13,
+        "offset": 42,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 3,
+          "name": "_g_0e78"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3704,
+        "image_offset": 95752,
+        "address": "1679:0E78"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "780e",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 22,
+      "function_offset": 22,
+      "omf_fixup": {
+        "record_offset": 577,
+        "subrecord_offset": 18,
+        "offset": 22,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 5,
+          "name": "_farcalloc"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 7163,
+        "image_offset": 7163,
+        "address": "0000:1BFB"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "fb1b0000",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [
+    {
+      "segment": 3567,
+      "offset": 103,
+      "image_offset": 57175,
+      "address": "0DEF:0067"
+    },
+    {
+      "segment": 3567,
+      "offset": 67,
+      "image_offset": 57139,
+      "address": "0DEF:0043"
+    },
+    {
+      "segment": 3567,
+      "offset": 31,
+      "image_offset": 57103,
+      "address": "0DEF:001F"
+    }
+  ],
+  "original_relocations": [
+    {
+      "segment": 3567,
+      "offset": 103,
+      "image_offset": 57175,
+      "address": "0DEF:0067"
+    },
+    {
+      "segment": 3567,
+      "offset": 67,
+      "image_offset": 57139,
+      "address": "0DEF:0043"
+    },
+    {
+      "segment": 3567,
+      "offset": 31,
+      "image_offset": 57103,
+      "address": "0DEF:001F"
+    }
+  ],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "0bad703fe65ffb6e1fba8251d03dfb5877e5061f6c8a139ac3f86d37c24123fd",
+  "original_sha256": "0bad703fe65ffb6e1fba8251d03dfb5877e5061f6c8a139ac3f86d37c24123fd",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

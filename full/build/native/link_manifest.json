@@ -1,0 +1,258 @@
+{
+  "game_objects": [
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/START.OBJ",
+      "dos_path": "GAME\\G000.OBJ",
+      "sha256": "d5185748eda89af6c238f6807e948c7a1fca76ae262ac6873fc42ab7d6ff90e9"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/INPUT.OBJ",
+      "dos_path": "GAME\\G001.OBJ",
+      "sha256": "320845e097930bf394c23640a696d3682139b71077f4216a4ac0f0838fece2e7"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/MUSIC.OBJ",
+      "dos_path": "GAME\\G002.OBJ",
+      "sha256": "8cd1d7062a0622123fa245b51b8d5fde7ae7e84256b01c34d67a22a7a43b763d"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/UI.OBJ",
+      "dos_path": "GAME\\G003.OBJ",
+      "sha256": "6e67f0eb1d4704fb90ba0381f6204239abc3122a2b4de1a6abeacf3cbf62ac1a"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/GAME.OBJ",
+      "dos_path": "GAME\\G004.OBJ",
+      "sha256": "77c1f0c725f538800566659a0d6ce8a1b443ea6dd0c1e017357a649f4ad49ac6"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/CARDS.OBJ",
+      "dos_path": "GAME\\G005.OBJ",
+      "sha256": "f23e9395fa62e34d683299d18e3aacd8adfc80b1f4dc7a82fa1ca44f41ef2420"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/ABOUT.OBJ",
+      "dos_path": "GAME\\G006.OBJ",
+      "sha256": "9462a9a01de596afdb2413f3de16f4155c6a2ef826bd33c548e562bfbe84c379"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/XOR.OBJ",
+      "dos_path": "GAME\\G007.OBJ",
+      "sha256": "0abf4bde909595fa9444ed77b4ef80f9f5c2f3d9dfd215f45c1da2fa33231cc1"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/FILES.OBJ",
+      "dos_path": "GAME\\G008.OBJ",
+      "sha256": "ece00dd1a013748ddb64d9a1bd5a1155fddd7a325a4f82f9c4500cff5e21cd69"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/TICKS.OBJ",
+      "dos_path": "GAME\\G009.OBJ",
+      "sha256": "87cd23ad0d7669a103df0adc9754a633711ffb7d07ee8cd77738e7e7c7d60cca"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/NUMBER.OBJ",
+      "dos_path": "GAME\\G010.OBJ",
+      "sha256": "29c3fc1892083d917ff6ffb5e18886a647c10ce27c2e2083d68fd073d01d42ca"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/ASSERT.OBJ",
+      "dos_path": "GAME\\G011.OBJ",
+      "sha256": "36a81aa127ecfa2bda2fda7f35777799605ea547847200ff8883ed2be524a52c"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/FORMAT.OBJ",
+      "dos_path": "GAME\\G012.OBJ",
+      "sha256": "c203f531a39fa7f3bc4ccd735e598ea23ec30e532147dc5b5a482a8a87738d1f"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/VIDEO.OBJ",
+      "dos_path": "GAME\\G013.OBJ",
+      "sha256": "481d9190d1ce077d9ff5b901e1b7d4b6a930b8bdfe0a89161321f5541c3dd0e6"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/REGISTER.OBJ",
+      "dos_path": "GAME\\G014.OBJ",
+      "sha256": "37d09255ed4ecd382f9835aba155c59e6d2e346efd3be8153e798a18a8bedb3c"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/RENDER.OBJ",
+      "dos_path": "GAME\\G015.OBJ",
+      "sha256": "1aa37ace629a9403062fef019d4da38a8f84868e4e5d4abb267824189de090b6"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/BLO.OBJ",
+      "dos_path": "GAME\\G016.OBJ",
+      "sha256": "98af8e8734f195ccc449c02a627f56cb31d068d966a1a95b4500b517bee7b65b"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/CHUNK.OBJ",
+      "dos_path": "GAME\\G017.OBJ",
+      "sha256": "8a2572791ce328c8d705371e12b03cba125dd7adfde3857d8b380e37f17a6d0c"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/PARA.OBJ",
+      "dos_path": "GAME\\G018.OBJ",
+      "sha256": "1edb66027341ec5b341947350fc29e96ac147707bb6fdc27d68643e20077d06c"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/HW.OBJ",
+      "dos_path": "GAME\\G019.OBJ",
+      "sha256": "b4ca5290e39fe2e580e6b3b1a2c7a3bd501af748f1113388fe9e8b9d214ef248"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/REC.OBJ",
+      "dos_path": "GAME\\G020.OBJ",
+      "sha256": "64b519d3831d1ee93995f1d17457719cb804bf52d7a7a5e6af4b6df494d4b193"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/RETRACE.OBJ",
+      "dos_path": "GAME\\G021.OBJ",
+      "sha256": "ef2806c504b12b647caf55a4c7fb86216466e75db6b9c5672f7c160c174b9745"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/EGA.OBJ",
+      "dos_path": "GAME\\G022.OBJ",
+      "sha256": "971f3b61b7be4369879dcfa4b177bf40695a37e9816fce805e8728ba63c24932"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/GPF.OBJ",
+      "dos_path": "GAME\\G023.OBJ",
+      "sha256": "b167968f57973d58fa358d8ae70e9a24a2fa9e0e67487995cb208e4e861c66fc"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/LZSS.OBJ",
+      "dos_path": "GAME\\G024.OBJ",
+      "sha256": "5993163a9b2f16a562d241e2597f2c9aefa44897b386dc202058147249270a85"
+    },
+    {
+      "input": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/SNDATA.OBJ",
+      "dos_path": "GAME\\G025.OBJ",
+      "sha256": "847cbc27cb090ab45f2499b069f5ccda0e6968bcf43e7ab4f668fa9507f53194"
+    }
+  ],
+  "runtime_layout": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/exact/runtime/layout.json",
+  "object_order": [
+    "CRT\\C0L.OBJ",
+    "GAME\\G000.OBJ",
+    "GAME\\G001.OBJ",
+    "GAME\\G002.OBJ",
+    "GAME\\G003.OBJ",
+    "GAME\\G004.OBJ",
+    "GAME\\G005.OBJ",
+    "GAME\\G006.OBJ",
+    "GAME\\G007.OBJ",
+    "GAME\\G008.OBJ",
+    "GAME\\G009.OBJ",
+    "GAME\\G010.OBJ",
+    "GAME\\G011.OBJ",
+    "GAME\\G012.OBJ",
+    "GAME\\G013.OBJ",
+    "GAME\\G014.OBJ",
+    "GAME\\G015.OBJ",
+    "GAME\\G016.OBJ",
+    "GAME\\G017.OBJ",
+    "GAME\\G018.OBJ",
+    "GAME\\G019.OBJ",
+    "GAME\\G020.OBJ",
+    "GAME\\G021.OBJ",
+    "GAME\\G022.OBJ",
+    "GAME\\G023.OBJ",
+    "GAME\\G024.OBJ",
+    "GAME\\G025.OBJ",
+    "CRT\\ATEXIT.OBJ",
+    "CRT\\CTYPE.OBJ",
+    "CRT\\DOSFATTR.OBJ",
+    "CRT\\EXIT.OBJ",
+    "CRT\\FILES.OBJ",
+    "CRT\\FILES2.OBJ",
+    "CRT\\FMODE.OBJ",
+    "CRT\\F_LXMUL.OBJ",
+    "CRT\\F_SCOPY.OBJ",
+    "CRT\\GETDATE.OBJ",
+    "CRT\\GETVECT.OBJ",
+    "CRT\\H_LDIV.OBJ",
+    "CRT\\H_LLSH.OBJ",
+    "CRT\\H_PADA.OBJ",
+    "CRT\\H_PADD.OBJ",
+    "CRT\\IOERROR.OBJ",
+    "CRT\\ISATTY.OBJ",
+    "CRT\\LONGTOA.OBJ",
+    "CRT\\LSEEK.OBJ",
+    "CRT\\MKNAME.OBJ",
+    "CRT\\N_LXMUL.OBJ",
+    "CRT\\N_PCMP.OBJ",
+    "CRT\\RAND.OBJ",
+    "CRT\\READA.OBJ",
+    "CRT\\SCANNER.OBJ",
+    "CRT\\SCANTOL.OBJ",
+    "CRT\\SETDATE.OBJ",
+    "CRT\\SETUPIO.OBJ",
+    "CRT\\STIME.OBJ",
+    "CRT\\STKLEN.OBJ",
+    "CRT\\TOUPPER.OBJ",
+    "CRT\\UNLINK.OBJ",
+    "CRT\\VPRINTER.OBJ",
+    "CRT\\_STPCPY.OBJ",
+    "CRT\\CVTFAK.OBJ",
+    "CRT\\DELAY.OBJ",
+    "CRT\\FARHEAP.OBJ",
+    "CRT\\FBRK.OBJ",
+    "CRT\\FCALLOC.OBJ",
+    "CRT\\INTR.OBJ",
+    "CRT\\IOCTL.OBJ",
+    "CRT\\REALCVT.OBJ",
+    "CRT\\SCANTOD.OBJ",
+    "CRT\\SETARGV.OBJ",
+    "CRT\\SETBLOCK.OBJ",
+    "CRT\\SETENVP.OBJ",
+    "CRT\\SOUND.OBJ",
+    "CRT\\ATOL.OBJ",
+    "CRT\\CHMODA.OBJ",
+    "CRT\\CLOSE.OBJ",
+    "CRT\\CLOSEA.OBJ",
+    "CRT\\EOF.OBJ",
+    "CRT\\FCLOSE.OBJ",
+    "CRT\\FFLUSH.OBJ",
+    "CRT\\FGETS.OBJ",
+    "CRT\\FINDFIRS.OBJ",
+    "CRT\\FLUSHALL.OBJ",
+    "CRT\\FOPEN.OBJ",
+    "CRT\\FREAD.OBJ",
+    "CRT\\FSEEK.OBJ",
+    "CRT\\FWRITE.OBJ",
+    "CRT\\GETC.OBJ",
+    "CRT\\GETENV.OBJ",
+    "CRT\\MEMCPY.OBJ",
+    "CRT\\MEMSET.OBJ",
+    "CRT\\MOVMEM.OBJ",
+    "CRT\\OPEN.OBJ",
+    "CRT\\OPENA.OBJ",
+    "CRT\\PRINTF.OBJ",
+    "CRT\\PUTC.OBJ",
+    "CRT\\READ.OBJ",
+    "CRT\\READU.OBJ",
+    "CRT\\REWIND.OBJ",
+    "CRT\\SETVBUF.OBJ",
+    "CRT\\SPRINTF.OBJ",
+    "CRT\\STRCAT.OBJ",
+    "CRT\\STRCMP.OBJ",
+    "CRT\\STRCPY.OBJ",
+    "CRT\\STRCSPN.OBJ",
+    "CRT\\STRLEN.OBJ",
+    "CRT\\STRNCAT.OBJ",
+    "CRT\\STRNCPY.OBJ",
+    "CRT\\TIMECVT.OBJ",
+    "CRT\\TZSET.OBJ",
+    "CRT\\UNGETC.OBJ",
+    "CRT\\VFSCANF.OBJ",
+    "CRT\\WRITE.OBJ",
+    "CRT\\WRITEA.OBJ",
+    "CRT\\WRITEU.OBJ",
+    "CRT\\XFCLOSE.OBJ",
+    "CRT\\XFFLUSH.OBJ"
+  ],
+  "executable": "SNAKE.EXE",
+  "uses_original_executable_as_build_input": false,
+  "contains_placeholder_code": false
+}

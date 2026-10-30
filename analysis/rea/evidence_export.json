@@ -1,0 +1,16 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/workspace/scratch/488b0609771f/snake-battle-recovered/analysis/rea/evidence.json\",\"bytes\":4721274,\"records\":513,\"unknowns\":0}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/workspace/scratch/488b0609771f/snake-battle-recovered/analysis/rea/evidence.json",
+      "bytes": 4721274,
+      "records": 513,
+      "unknowns": 0
+    }
+  }
+}

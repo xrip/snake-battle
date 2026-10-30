@@ -1,0 +1,39 @@
+{
+  "object": "snake-battle-recovered/full/low/build/REGISTER.OBJ",
+  "object_sha256": "60f4f4140bf31884db6605d33e87c72ba2f5df004e166ca12e696cf6949314db",
+  "module": "register.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3452,
+    "image_offset": 95500,
+    "address": "1679:0D7C"
+  },
+  "file_offset": 99596,
+  "object_size": 8,
+  "expected_size": 8,
+  "public_bindings": [],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      8
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+  "original_sha256": "af5570f5a1810b7af78caf4bc70a660f0df51e42baf91d4de5b2328de0e83dfc",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

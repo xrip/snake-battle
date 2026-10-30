@@ -1,0 +1,5113 @@
+{
+  "input": "work/bc2/original/BC2/LIB/CL.LIB",
+  "sha256": "e46928b89fd1fd6423252d2ff0dcbd7839250f70d046f8c427dea5720f841e59",
+  "module_count": 522,
+  "exe": "work/original/SNAKE.EXE",
+  "exe_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "mz_header_size": 4096,
+  "mz_relocations": [
+    1,
+    94,
+    163,
+    335,
+    16159,
+    16154,
+    16149,
+    16141,
+    16127,
+    17155,
+    17147,
+    17127,
+    17118,
+    17037,
+    17029,
+    17009,
+    17000,
+    16929,
+    16920,
+    16872,
+    16848,
+    16835,
+    16825,
+    16803,
+    16769,
+    16754,
+    16706,
+    16678,
+    16597,
+    16553,
+    16503,
+    16431,
+    16415,
+    16394,
+    16365,
+    17626,
+    17611,
+    17597,
+    17588,
+    17559,
+    17537,
+    17511,
+    17503,
+    17472,
+    17450,
+    17421,
+    17413,
+    17398,
+    17382,
+    17352,
+    17342,
+    17295,
+    17273,
+    17263,
+    17253,
+    17227,
+    17203,
+    17188,
+    18649,
+    18561,
+    18466,
+    18389,
+    18288,
+    18227,
+    18166,
+    18097,
+    17994,
+    17945,
+    17905,
+    17865,
+    17825,
+    17791,
+    17783,
+    17746,
+    17738,
+    17698,
+    19655,
+    19650,
+    19643,
+    19627,
+    19598,
+    19551,
+    19415,
+    19314,
+    19304,
+    19227,
+    19220,
+    19208,
+    19196,
+    19160,
+    19129,
+    19119,
+    19063,
+    19038,
+    19027,
+    19019,
+    18986,
+    18978,
+    18960,
+    18939,
+    18917,
+    18868,
+    18858,
+    18840,
+    18811,
+    18803,
+    18766,
+    18737,
+    18676,
+    18657,
+    20667,
+    20613,
+    20242,
+    20207,
+    20171,
+    20135,
+    20099,
+    19889,
+    19807,
+    19753,
+    19713,
+    21715,
+    21679,
+    21672,
+    21600,
+    21582,
+    21574,
+    21543,
+    21491,
+    21398,
+    21316,
+    21292,
+    21226,
+    21208,
+    21203,
+    21195,
+    21164,
+    21102,
+    21097,
+    21062,
+    21044,
+    21039,
+    20978,
+    20967,
+    20924,
+    20897,
+    22691,
+    22647,
+    22639,
+    22595,
+    22590,
+    22579,
+    22571,
+    22515,
+    22496,
+    22472,
+    22429,
+    22414,
+    22304,
+    22295,
+    22287,
+    22223,
+    22180,
+    22142,
+    22075,
+    22058,
+    22035,
+    21984,
+    21977,
+    21906,
+    21899,
+    21864,
+    21857,
+    21787,
+    21780,
+    21722,
+    23753,
+    23737,
+    23694,
+    23673,
+    23471,
+    23463,
+    23327,
+    23315,
+    23296,
+    23221,
+    23193,
+    23162,
+    23127,
+    23103,
+    23097,
+    23085,
+    23008,
+    22999,
+    22987,
+    22947,
+    22935,
+    22907,
+    22895,
+    22878,
+    22850,
+    22804,
+    24787,
+    24747,
+    24654,
+    24604,
+    24486,
+    24409,
+    24397,
+    24370,
+    24360,
+    24294,
+    24267,
+    24254,
+    24242,
+    24227,
+    24199,
+    24176,
+    24153,
+    24130,
+    24107,
+    24084,
+    24061,
+    24038,
+    24018,
+    23965,
+    23946,
+    23938,
+    23870,
+    23862,
+    23812,
+    25797,
+    25777,
+    25720,
+    25692,
+    25466,
+    25447,
+    25407,
+    25388,
+    25305,
+    25198,
+    25182,
+    25154,
+    25130,
+    25076,
+    24978,
+    24960,
+    24942,
+    24914,
+    24905,
+    24821,
+    26818,
+    26796,
+    26774,
+    26752,
+    26730,
+    26707,
+    26700,
+    26672,
+    26654,
+    26619,
+    26608,
+    26587,
+    26567,
+    26543,
+    26514,
+    26472,
+    26421,
+    26368,
+    26350,
+    26285,
+    26275,
+    26245,
+    26237,
+    26165,
+    26109,
+    26091,
+    26078,
+    25998,
+    25944,
+    25834,
+    27847,
+    27720,
+    27707,
+    27702,
+    27694,
+    27687,
+    27672,
+    27612,
+    27577,
+    27558,
+    27550,
+    27502,
+    27460,
+    27447,
+    27404,
+    27378,
+    27332,
+    27299,
+    27286,
+    27242,
+    27224,
+    27219,
+    27202,
+    27115,
+    27097,
+    27075,
+    27053,
+    27031,
+    27000,
+    26982,
+    26959,
+    26941,
+    26916,
+    26898,
+    26880,
+    26862,
+    26840,
+    28854,
+    28768,
+    28729,
+    28712,
+    28689,
+    28674,
+    28624,
+    28611,
+    28522,
+    28454,
+    28439,
+    28402,
+    28395,
+    28238,
+    28231,
+    28195,
+    28188,
+    28153,
+    28146,
+    28093,
+    28060,
+    27976,
+    27971,
+    27966,
+    27950,
+    27922,
+    27915,
+    29293,
+    29288,
+    29277,
+    29197,
+    29189,
+    29181,
+    29116,
+    29101,
+    29067,
+    29033,
+    29001,
+    28955,
+    28934,
+    30338,
+    30313,
+    30191,
+    30035,
+    29894,
+    29827,
+    29698,
+    29666,
+    29627,
+    29499,
+    29460,
+    31378,
+    31259,
+    31180,
+    31137,
+    31059,
+    31036,
+    30941,
+    30725,
+    30656,
+    30620,
+    30530,
+    30457,
+    30445,
+    30393,
+    32322,
+    32018,
+    31851,
+    31655,
+    31589,
+    33393,
+    33335,
+    33298,
+    33271,
+    33246,
+    33238,
+    32803,
+    32795,
+    32774,
+    32726,
+    32705,
+    32654,
+    34453,
+    34407,
+    34396,
+    34374,
+    34296,
+    34288,
+    34232,
+    34191,
+    34158,
+    34059,
+    33571,
+    33553,
+    33535,
+    35424,
+    34927,
+    34575,
+    34476,
+    34469,
+    36457,
+    36439,
+    36397,
+    36348,
+    36015,
+    35663,
+    37305,
+    37268,
+    37248,
+    37139,
+    37071,
+    37018,
+    36878,
+    36859,
+    36841,
+    36798,
+    38523,
+    38505,
+    38487,
+    38469,
+    38451,
+    38433,
+    38411,
+    38393,
+    38388,
+    38374,
+    38364,
+    38359,
+    38354,
+    38314,
+    38304,
+    38275,
+    38227,
+    38209,
+    38198,
+    38177,
+    38163,
+    38127,
+    38091,
+    38055,
+    37943,
+    37715,
+    37673,
+    37655,
+    37612,
+    39556,
+    39515,
+    39503,
+    39437,
+    39305,
+    39204,
+    39019,
+    39011,
+    38981,
+    38954,
+    38908,
+    38892,
+    38872,
+    38862,
+    38824,
+    38799,
+    38776,
+    38765,
+    38726,
+    38685,
+    38632,
+    38560,
+    40423,
+    40385,
+    40291,
+    40281,
+    40277,
+    40238,
+    40225,
+    40192,
+    40187,
+    40179,
+    40127,
+    40078,
+    40073,
+    40052,
+    39914,
+    39802,
+    39777,
+    39759,
+    39754,
+    39746,
+    39655,
+    39591,
+    39568,
+    41128,
+    41114,
+    41104,
+    41099,
+    41090,
+    41082,
+    41065,
+    41010,
+    40959,
+    40938,
+    40912,
+    40900,
+    40888,
+    40876,
+    40860,
+    40848,
+    40838,
+    40832,
+    40820,
+    40718,
+    42127,
+    42084,
+    42027,
+    41984,
+    41901,
+    41828,
+    41774,
+    41655,
+    41624,
+    41556,
+    41490,
+    41397,
+    41376,
+    41321,
+    41208,
+    41153,
+    43183,
+    43122,
+    42964,
+    42862,
+    42826,
+    42794,
+    42762,
+    42744,
+    42726,
+    42711,
+    42706,
+    42672,
+    42558,
+    42474,
+    42447,
+    42395,
+    42380,
+    44114,
+    43890,
+    43849,
+    43804,
+    43719,
+    43663,
+    43629,
+    43445,
+    43436,
+    43431,
+    43423,
+    43416,
+    43401,
+    43303,
+    43230,
+    45224,
+    45127,
+    45120,
+    45083,
+    44977,
+    44954,
+    44906,
+    44758,
+    44676,
+    44625,
+    44500,
+    44432,
+    44403,
+    44288,
+    44246,
+    45517,
+    45435,
+    45423,
+    45411,
+    45401,
+    45391,
+    45383,
+    45335,
+    45322,
+    45307,
+    45259,
+    45235,
+    45747,
+    45741,
+    45732,
+    45724,
+    45674,
+    45635,
+    45605,
+    45575,
+    45543,
+    45538,
+    46858,
+    46808,
+    46767,
+    46442,
+    46393,
+    46303,
+    46277,
+    46234,
+    46146,
+    46095,
+    46076,
+    46033,
+    46003,
+    45983,
+    45934,
+    45909,
+    45897,
+    45881,
+    47868,
+    47814,
+    47698,
+    47644,
+    47493,
+    47439,
+    47230,
+    47176,
+    47060,
+    47006,
+    46927,
+    48902,
+    48875,
+    48841,
+    48801,
+    48718,
+    48674,
+    48640,
+    48603,
+    48565,
+    48547,
+    48529,
+    48495,
+    48429,
+    48366,
+    48312,
+    48215,
+    48161,
+    48051,
+    48023,
+    47969,
+    49380,
+    49373,
+    49359,
+    49332,
+    49297,
+    49264,
+    49240,
+    49210,
+    49158,
+    49107,
+    49089,
+    49071,
+    49039,
+    49006,
+    48966,
+    49671,
+    49934,
+    49916,
+    49884,
+    49869,
+    49855,
+    49730,
+    49715,
+    50191,
+    50151,
+    50137,
+    50066,
+    50046,
+    49997,
+    49978,
+    50295,
+    50263,
+    50227,
+    51285,
+    51256,
+    51242,
+    51213,
+    51097,
+    51084,
+    51063,
+    51048,
+    51020,
+    51003,
+    50917,
+    50886,
+    50861,
+    50850,
+    50806,
+    50704,
+    50690,
+    50654,
+    50633,
+    50591,
+    50528,
+    50477,
+    50401,
+    50369,
+    50343,
+    95496,
+    52288,
+    52066,
+    52042,
+    52031,
+    51982,
+    51964,
+    51946,
+    51877,
+    51865,
+    51777,
+    51765,
+    52793,
+    52747,
+    54167,
+    54072,
+    54003,
+    53938,
+    53916,
+    53872,
+    53849,
+    53838,
+    53756,
+    53716,
+    53692,
+    55328,
+    55322,
+    55229,
+    55167,
+    55155,
+    54943,
+    54715,
+    54614,
+    54602,
+    54532,
+    54520,
+    54386,
+    55744,
+    55637,
+    55632,
+    55626,
+    55617,
+    55611,
+    55605,
+    55597,
+    55586,
+    55580,
+    55565,
+    55552,
+    55402,
+    55392,
+    56757,
+    56693,
+    56680,
+    56653,
+    56575,
+    56482,
+    56347,
+    56324,
+    56296,
+    56282,
+    56171,
+    56139,
+    56096,
+    56085,
+    56063,
+    56038,
+    56027,
+    56013,
+    55993,
+    55963,
+    55876,
+    57072,
+    57052,
+    56988,
+    56966,
+    56913,
+    56893,
+    56829,
+    56807,
+    57175,
+    57139,
+    57103,
+    57198,
+    57274,
+    57285,
+    57299,
+    57947,
+    57878,
+    57925,
+    59371,
+    60639,
+    60490,
+    60427,
+    60342,
+    60284,
+    60239,
+    60174,
+    60119,
+    60040,
+    60004,
+    59983,
+    59921,
+    59864,
+    59846,
+    59824,
+    59809,
+    59779,
+    59763,
+    59745,
+    59710,
+    74146,
+    74113,
+    74079,
+    74051,
+    74027,
+    74003,
+    73964,
+    73947,
+    73930,
+    73913,
+    73833,
+    73805,
+    73791,
+    73767,
+    73728,
+    73710,
+    73600,
+    73586,
+    73536,
+    73518,
+    73496,
+    73446,
+    73353,
+    73327,
+    73308,
+    73280,
+    73236,
+    73206,
+    73170,
+    74598,
+    74531,
+    74500,
+    74397,
+    74311,
+    74278,
+    74245,
+    74212,
+    74179,
+    78997,
+    97258,
+    97254,
+    97250,
+    98210,
+    9211,
+    13295,
+    98168,
+    98172,
+    98228
+  ],
+  "matches": [
+    {
+      "module": "FFMALLOC",
+      "module_file_offset": 15296,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 18,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 45971,
+          "size": 18,
+          "stable_bytes": 13,
+          "masked_bytes": 5,
+          "anchor_offset": 0,
+          "anchor_length": 9,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 50067
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          14,
+          18
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 15454,
+          "subrecord_offset": 0,
+          "offset": 10,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_farmalloc"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        9
+      ],
+      "symbols": [
+        {
+          "name": "__ffarmalloc",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 15407
+        }
+      ]
+    },
+    {
+      "module": "GETDATE",
+      "module_file_offset": 22864,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 38,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 965,
+          "size": 38,
+          "stable_bytes": 38,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 38,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5061
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          38
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_getdate",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 22958
+        },
+        {
+          "name": "_gettime",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 19,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 22976
+        }
+      ]
+    },
+    {
+      "module": "GFREEMEM",
+      "module_file_offset": 24512,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 18,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 45971,
+          "size": 18,
+          "stable_bytes": 13,
+          "masked_bytes": 5,
+          "anchor_offset": 0,
+          "anchor_length": 9,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 50067
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          14,
+          18
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 24667,
+          "subrecord_offset": 0,
+          "offset": 10,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_free"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        9
+      ],
+      "symbols": [
+        {
+          "name": "__graphfreemem",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 24618
+        }
+      ]
+    },
+    {
+      "module": "PRINTF",
+      "module_file_offset": 30688,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 27,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11859,
+          "size": 27,
+          "stable_bytes": 21,
+          "masked_bytes": 6,
+          "anchor_offset": 11,
+          "anchor_length": 12,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15955
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          4
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          11,
+          23
+        ],
+        [
+          25,
+          27
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 30868,
+          "subrecord_offset": 0,
+          "offset": 23,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__VPRINTER"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 30868,
+          "subrecord_offset": 4,
+          "offset": 9,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 30868,
+          "subrecord_offset": 9,
+          "offset": 4,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 3,
+            "name": "__FPUTN"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_printf",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 30817
+        }
+      ]
+    },
+    {
+      "module": "RAND",
+      "module_file_offset": 32784,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 55,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 2007,
+          "size": 55,
+          "stable_bytes": 39,
+          "masked_bytes": 16,
+          "anchor_offset": 0,
+          "anchor_length": 8,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 6103
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          8
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          15,
+          19
+        ],
+        [
+          21,
+          23
+        ],
+        [
+          25,
+          32
+        ],
+        [
+          34,
+          42
+        ],
+        [
+          44,
+          45
+        ],
+        [
+          47,
+          48
+        ],
+        [
+          50,
+          55
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 0,
+          "offset": 48,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 5,
+          "offset": 45,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 10,
+          "offset": 42,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 15,
+          "offset": 32,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "N_LXMUL@"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 19,
+          "offset": 23,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 24,
+          "offset": 19,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 29,
+          "offset": 13,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 32982,
+          "subrecord_offset": 34,
+          "offset": 8,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_srand",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 32889
+        },
+        {
+          "name": "_rand",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 17,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 32905
+        }
+      ]
+    },
+    {
+      "module": "SETUPIO",
+      "module_file_offset": 35120,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 121,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 3945,
+          "size": 121,
+          "stable_bytes": 85,
+          "masked_bytes": 36,
+          "anchor_offset": 29,
+          "anchor_length": 20,
+          "relaxed_calls": [
+            {
+              "offset": 5,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 52,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 65,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 112,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "relaxed_transfers": [
+            {
+              "offset": 5,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 52,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 65,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 112,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "file_offset": 8041
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          10,
+          17
+        ],
+        [
+          19,
+          27
+        ],
+        [
+          29,
+          49
+        ],
+        [
+          51,
+          52
+        ],
+        [
+          57,
+          61
+        ],
+        [
+          63,
+          65
+        ],
+        [
+          70,
+          77
+        ],
+        [
+          79,
+          87
+        ],
+        [
+          89,
+          109
+        ],
+        [
+          111,
+          112
+        ],
+        [
+          117,
+          121
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 0,
+          "offset": 1,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 5,
+          "offset": 6,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 3,
+            "name": "_isatty"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 9,
+          "offset": 17,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 14,
+          "offset": 27,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 19,
+          "offset": 49,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 24,
+          "offset": 53,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_setvbuf"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 28,
+          "offset": 61,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 33,
+          "offset": 66,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 3,
+            "name": "_isatty"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 37,
+          "offset": 77,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 42,
+          "offset": 87,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 47,
+          "offset": 109,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__streams"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 35447,
+          "subrecord_offset": 52,
+          "offset": 113,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_setvbuf"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        5,
+        52,
+        65,
+        112
+      ],
+      "symbols": [
+        {
+          "name": "__setupio",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 35300
+        }
+      ]
+    },
+    {
+      "module": "SPRINTF",
+      "module_file_offset": 40352,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 131,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13389,
+          "size": 131,
+          "stable_bytes": 118,
+          "masked_bytes": 13,
+          "anchor_offset": 29,
+          "anchor_length": 46,
+          "relaxed_calls": [
+            {
+              "offset": 24,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "relaxed_transfers": [
+            {
+              "offset": 24,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "file_offset": 17485
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          29,
+          75
+        ],
+        [
+          77,
+          94
+        ],
+        [
+          96,
+          109
+        ],
+        [
+          111,
+          127
+        ],
+        [
+          129,
+          131
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 40646,
+          "subrecord_offset": 0,
+          "offset": 127,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__VPRINTER"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 40646,
+          "subrecord_offset": 4,
+          "offset": 109,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 40646,
+          "subrecord_offset": 8,
+          "offset": 94,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__VPRINTER"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 40646,
+          "subrecord_offset": 12,
+          "offset": 75,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 40646,
+          "subrecord_offset": 16,
+          "offset": 25,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_memcpy"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        24
+      ],
+      "symbols": [
+        {
+          "name": "_sprintf",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 64,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 40471
+        },
+        {
+          "name": "_vsprintf",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 98,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 40489
+        }
+      ]
+    },
+    {
+      "module": "STIME",
+      "module_file_offset": 41008,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 152,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 4066,
+          "size": 152,
+          "stable_bytes": 122,
+          "masked_bytes": 30,
+          "anchor_offset": 109,
+          "anchor_length": 43,
+          "relaxed_calls": [
+            {
+              "offset": 104,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 87,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 75,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 51,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 39,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 26,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "relaxed_transfers": [
+            {
+              "offset": 104,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 87,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 75,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 51,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 39,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 26,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "file_offset": 8162
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          26
+        ],
+        [
+          31,
+          39
+        ],
+        [
+          44,
+          51
+        ],
+        [
+          56,
+          75
+        ],
+        [
+          80,
+          87
+        ],
+        [
+          92,
+          104
+        ],
+        [
+          109,
+          152
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 41358,
+          "subrecord_offset": 0,
+          "offset": 105,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 5,
+            "name": "_dostounix"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 41358,
+          "subrecord_offset": 4,
+          "offset": 88,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 4,
+            "name": "_gettime"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 41358,
+          "subrecord_offset": 8,
+          "offset": 76,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "_getdate"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 41358,
+          "subrecord_offset": 12,
+          "offset": 52,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 3,
+            "name": "_settime"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 41358,
+          "subrecord_offset": 16,
+          "offset": 40,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_setdate"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 41358,
+          "subrecord_offset": 20,
+          "offset": 27,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 6,
+            "name": "_unixtodos"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        104,
+        87,
+        75,
+        51,
+        39,
+        26
+      ],
+      "symbols": [
+        {
+          "name": "_time",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 64,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 41168
+        },
+        {
+          "name": "_stime",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 41183
+        }
+      ]
+    },
+    {
+      "module": "STPCPY",
+      "module_file_offset": 41520,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 52,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 5529,
+          "size": 52,
+          "stable_bytes": 42,
+          "masked_bytes": 10,
+          "anchor_offset": 15,
+          "anchor_length": 18,
+          "relaxed_calls": [
+            {
+              "offset": 33,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 10,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "relaxed_transfers": [
+            {
+              "offset": 33,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 10,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "file_offset": 9625
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          10
+        ],
+        [
+          15,
+          33
+        ],
+        [
+          38,
+          52
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 41711,
+          "subrecord_offset": 0,
+          "offset": 34,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_memcpy"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 41711,
+          "subrecord_offset": 4,
+          "offset": 11,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "_strlen"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        33,
+        10
+      ],
+      "symbols": [
+        {
+          "name": "_stpcpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 41635
+        }
+      ]
+    },
+    {
+      "module": "TOUPPER",
+      "module_file_offset": 48816,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 44,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 4218,
+          "size": 44,
+          "stable_bytes": 42,
+          "masked_bytes": 2,
+          "anchor_offset": 0,
+          "anchor_length": 24,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 8314
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          26,
+          44
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 48992,
+          "subrecord_offset": 0,
+          "offset": 24,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__ctype"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_toupper",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 48923
+        }
+      ]
+    },
+    {
+      "module": "VFSCANF",
+      "module_file_offset": 49376,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 37,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 15561,
+          "size": 37,
+          "stable_bytes": 31,
+          "masked_bytes": 6,
+          "anchor_offset": 0,
+          "anchor_length": 22,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 19657
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          22
+        ],
+        [
+          24,
+          26
+        ],
+        [
+          28,
+          30
+        ],
+        [
+          32,
+          37
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 49568,
+          "subrecord_offset": 0,
+          "offset": 30,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__scanner"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 49568,
+          "subrecord_offset": 4,
+          "offset": 26,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__Nfgetc"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 49568,
+          "subrecord_offset": 8,
+          "offset": 22,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 3,
+            "name": "__Nungetc"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_vfscanf",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 49506
+        }
+      ]
+    },
+    {
+      "module": "ATOL",
+      "module_file_offset": 53024,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 134,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 7992,
+          "size": 134,
+          "stable_bytes": 132,
+          "masked_bytes": 2,
+          "anchor_offset": 22,
+          "anchor_length": 112,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 12088
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          20
+        ],
+        [
+          22,
+          134
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 53321,
+          "subrecord_offset": 0,
+          "offset": 20,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__ctype"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_atoi",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 117,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 53150
+        },
+        {
+          "name": "_atol",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 53165
+        }
+      ]
+    },
+    {
+      "module": "CHMODA",
+      "module_file_offset": 55168,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 29,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 8126,
+          "size": 29,
+          "stable_bytes": 27,
+          "masked_bytes": 2,
+          "anchor_offset": 0,
+          "anchor_length": 25,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 12222
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          25
+        ],
+        [
+          27,
+          29
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 55351,
+          "subrecord_offset": 0,
+          "offset": 25,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__chmod",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 55298
+        }
+      ]
+    },
+    {
+      "module": "FINDFIRS",
+      "module_file_offset": 60432,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 96,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 8889,
+          "size": 96,
+          "stable_bytes": 92,
+          "masked_bytes": 4,
+          "anchor_offset": 0,
+          "anchor_length": 47,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 12985
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          47
+        ],
+        [
+          49,
+          92
+        ],
+        [
+          94,
+          96
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 60706,
+          "subrecord_offset": 0,
+          "offset": 47,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 60706,
+          "subrecord_offset": 5,
+          "offset": 92,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_findfirst",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 60564
+        },
+        {
+          "name": "_findnext",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 51,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 60584
+        }
+      ]
+    },
+    {
+      "module": "GETENV",
+      "module_file_offset": 62992,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 112,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11038,
+          "size": 112,
+          "stable_bytes": 110,
+          "masked_bytes": 2,
+          "anchor_offset": 37,
+          "anchor_length": 75,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15134
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          35
+        ],
+        [
+          37,
+          112
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 63257,
+          "subrecord_offset": 0,
+          "offset": 35,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_environ"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_getenv",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 63121
+        }
+      ]
+    },
+    {
+      "module": "GETVECT",
+      "module_file_offset": 63760,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 32,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1003,
+          "size": 32,
+          "stable_bytes": 32,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 32,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5099
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          32
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_setvect",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 15,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 63876
+        },
+        {
+          "name": "_getvect",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 63894
+        }
+      ]
+    },
+    {
+      "module": "INTR",
+      "module_file_offset": 65536,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 164,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 7305,
+          "size": 164,
+          "stable_bytes": 164,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 164,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 11401
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          164
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_intr",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 65649
+        }
+      ]
+    },
+    {
+      "module": "ISATTY",
+      "module_file_offset": 67488,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 17,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1549,
+          "size": 17,
+          "stable_bytes": 17,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 17,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5645
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          17
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_isatty",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 67603
+        }
+      ]
+    },
+    {
+      "module": "LSEEK",
+      "module_file_offset": 68768,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 41,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1728,
+          "size": 41,
+          "stable_bytes": 37,
+          "masked_bytes": 4,
+          "anchor_offset": 12,
+          "anchor_length": 24,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5824
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          10
+        ],
+        [
+          12,
+          36
+        ],
+        [
+          38,
+          41
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 68971,
+          "subrecord_offset": 0,
+          "offset": 10,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "__openfd"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 68971,
+          "subrecord_offset": 5,
+          "offset": 36,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_lseek",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 68907
+        }
+      ]
+    },
+    {
+      "module": "MEMCPY",
+      "module_file_offset": 70032,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 36,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11150,
+          "size": 36,
+          "stable_bytes": 36,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 36,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15246
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          36
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_memcpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 70147
+        }
+      ]
+    },
+    {
+      "module": "MEMSET",
+      "module_file_offset": 70224,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 67,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11186,
+          "size": 67,
+          "stable_bytes": 67,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 67,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15282
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          67
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_setmem",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 70339
+        },
+        {
+          "name": "_memset",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 36,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 70356
+        }
+      ]
+    },
+    {
+      "module": "MOVMEM",
+      "module_file_offset": 70848,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 115,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11253,
+          "size": 115,
+          "stable_bytes": 113,
+          "masked_bytes": 2,
+          "anchor_offset": 21,
+          "anchor_length": 94,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15349
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          19
+        ],
+        [
+          21,
+          115
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 71133,
+          "subrecord_offset": 0,
+          "offset": 19,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "N_PCMP@"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_movmem",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 70976
+        },
+        {
+          "name": "_memmove",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 82,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 70993
+        }
+      ]
+    },
+    {
+      "module": "REMOVE",
+      "module_file_offset": 74624,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 24,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 4262,
+          "size": 24,
+          "stable_bytes": 22,
+          "masked_bytes": 2,
+          "anchor_offset": 0,
+          "anchor_length": 20,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 8358
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          20
+        ],
+        [
+          22,
+          24
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 74802,
+          "subrecord_offset": 0,
+          "offset": 20,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_remove",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 74754
+        }
+      ]
+    },
+    {
+      "module": "SCANTOL",
+      "module_file_offset": 77280,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 461,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 3377,
+          "size": 461,
+          "stable_bytes": 459,
+          "masked_bytes": 2,
+          "anchor_offset": 93,
+          "anchor_length": 368,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 7473
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          91
+        ],
+        [
+          93,
+          461
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 77896,
+          "subrecord_offset": 0,
+          "offset": 91,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__ctype"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__scantol",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 43,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 77409
+        }
+      ]
+    },
+    {
+      "module": "SETBLOCK",
+      "module_file_offset": 79296,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 28,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 7825,
+          "size": 28,
+          "stable_bytes": 26,
+          "masked_bytes": 2,
+          "anchor_offset": 0,
+          "anchor_length": 23,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 11921
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          23
+        ],
+        [
+          25,
+          28
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 79482,
+          "subrecord_offset": 0,
+          "offset": 23,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_setblock",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 79428
+        }
+      ]
+    },
+    {
+      "module": "SETDATE",
+      "module_file_offset": 79504,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 42,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 3838,
+          "size": 42,
+          "stable_bytes": 42,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 42,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 7934
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          42
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_setdate",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 79620
+        },
+        {
+          "name": "_settime",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 21,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 79638
+        }
+      ]
+    },
+    {
+      "module": "SOUND",
+      "module_file_offset": 80352,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 51,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 7941,
+          "size": 51,
+          "stable_bytes": 51,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 51,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 12037
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          51
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_sound",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 80466
+        },
+        {
+          "name": "_nosound",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 44,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 80482
+        }
+      ]
+    },
+    {
+      "module": "STRCAT",
+      "module_file_offset": 80928,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 63,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13520,
+          "size": 63,
+          "stable_bytes": 63,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 63,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17616
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          63
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_strcat",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 81043
+        }
+      ]
+    },
+    {
+      "module": "STRCMP",
+      "module_file_offset": 81344,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 48,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13583,
+          "size": 48,
+          "stable_bytes": 48,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 48,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17679
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          48
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_strcmp",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 81459
+        }
+      ]
+    },
+    {
+      "module": "STRCPY",
+      "module_file_offset": 81536,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 41,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13631,
+          "size": 41,
+          "stable_bytes": 41,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 41,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17727
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          41
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_strcpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 81651
+        }
+      ]
+    },
+    {
+      "module": "STRLEN",
+      "module_file_offset": 81952,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 31,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13741,
+          "size": 31,
+          "stable_bytes": 31,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 31,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17837
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          31
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_strlen",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 82067
+        }
+      ]
+    },
+    {
+      "module": "STRNCPY",
+      "module_file_offset": 82528,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 49,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13871,
+          "size": 49,
+          "stable_bytes": 49,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 49,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17967
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          49
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_strncpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 82644
+        }
+      ]
+    },
+    {
+      "module": "UNGETC",
+      "module_file_offset": 85120,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 110,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 15451,
+          "size": 110,
+          "stable_bytes": 110,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 110,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 19547
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          110
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__Nungetc",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 85235
+        },
+        {
+          "name": "_ungetc",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 85254
+        }
+      ]
+    },
+    {
+      "module": "UNLINK",
+      "module_file_offset": 85408,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 24,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 4262,
+          "size": 24,
+          "stable_bytes": 22,
+          "masked_bytes": 2,
+          "anchor_offset": 0,
+          "anchor_length": 20,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 8358
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          20
+        ],
+        [
+          22,
+          24
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 85586,
+          "subrecord_offset": 0,
+          "offset": 20,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__IOERROR"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "_unlink",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 85538
+        }
+      ]
+    },
+    {
+      "module": "DEL",
+      "module_file_offset": 98352,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 18,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 45971,
+          "size": 18,
+          "stable_bytes": 13,
+          "masked_bytes": 5,
+          "anchor_offset": 0,
+          "anchor_length": 9,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 50067
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          14,
+          18
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 98499,
+          "subrecord_offset": 0,
+          "offset": 10,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_free"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        9
+      ],
+      "symbols": [
+        {
+          "name": "@$bdele$qnv",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 98453
+        }
+      ]
+    },
+    {
+      "module": "OLDDEL",
+      "module_file_offset": 98864,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 18,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 45971,
+          "size": 18,
+          "stable_bytes": 13,
+          "masked_bytes": 5,
+          "anchor_offset": 0,
+          "anchor_length": 9,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 50067
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          9
+        ],
+        [
+          14,
+          18
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 99016,
+          "subrecord_offset": 0,
+          "offset": 10,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_free"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        9
+      ],
+      "symbols": [
+        {
+          "name": "@$bdele$qnvui",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 98968
+        }
+      ]
+    },
+    {
+      "module": "CVTFAK",
+      "module_file_offset": 101584,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 31,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 5581,
+          "size": 31,
+          "stable_bytes": 23,
+          "masked_bytes": 8,
+          "anchor_offset": 8,
+          "anchor_length": 14,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 9677
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          8,
+          22
+        ],
+        [
+          24,
+          29
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 101798,
+          "subrecord_offset": 0,
+          "offset": 1,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 101798,
+          "subrecord_offset": 5,
+          "offset": 6,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 101798,
+          "subrecord_offset": 10,
+          "offset": 22,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 2,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 101798,
+          "subrecord_offset": 15,
+          "offset": 29,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_abort"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": []
+    },
+    {
+      "module": "F_LXMUL",
+      "module_file_offset": 105488,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 23,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 914,
+          "size": 23,
+          "stable_bytes": 23,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 23,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5010
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          23
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "LXMUL@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105579
+        },
+        {
+          "name": "F_LXMUL@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105595
+        }
+      ]
+    },
+    {
+      "module": "H_LDIV",
+      "module_file_offset": 105824,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 174,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1035,
+          "size": 174,
+          "stable_bytes": 174,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 174,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5131
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          174
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "LUMOD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 26,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105914
+        },
+        {
+          "name": "LDIV@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105930
+        },
+        {
+          "name": "F_LUMOD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 26,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105945
+        },
+        {
+          "name": "N_LUMOD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 23,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105963
+        },
+        {
+          "name": "N_LMOD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 15,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105981
+        },
+        {
+          "name": "F_LMOD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 18,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 105998
+        },
+        {
+          "name": "LMOD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 18,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106015
+        },
+        {
+          "name": "N_LUDIV@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 7,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106030
+        },
+        {
+          "name": "F_LUDIV@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 10,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106048
+        },
+        {
+          "name": "LUDIV@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 10,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106066
+        },
+        {
+          "name": "N_LDIV@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106082
+        },
+        {
+          "name": "F_LDIV@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106099
+        }
+      ]
+    },
+    {
+      "module": "H_LLSH",
+      "module_file_offset": 106304,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 33,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1209,
+          "size": 33,
+          "stable_bytes": 33,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 33,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5305
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          33
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "LXLSH@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106394
+        },
+        {
+          "name": "N_LXLSH@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106410
+        },
+        {
+          "name": "F_LXLSH@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106428
+        }
+      ]
+    },
+    {
+      "module": "H_PADA",
+      "module_file_offset": 106880,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 136,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1242,
+          "size": 136,
+          "stable_bytes": 136,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 136,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5338
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          136
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "N_PADA@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106970
+        },
+        {
+          "name": "F_PADA@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 106987
+        },
+        {
+          "name": "PSBA@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 71,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107004
+        },
+        {
+          "name": "F_PSBA@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 71,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107019
+        },
+        {
+          "name": "N_PSBA@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 68,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107036
+        },
+        {
+          "name": "PADA@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107053
+        }
+      ]
+    },
+    {
+      "module": "H_PADD",
+      "module_file_offset": 107216,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 96,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1378,
+          "size": 96,
+          "stable_bytes": 96,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 96,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 5474
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          96
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "F_PADD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107306
+        },
+        {
+          "name": "N_PADD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107323
+        },
+        {
+          "name": "F_PSUB@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 50,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107340
+        },
+        {
+          "name": "N_PSUB@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 47,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107357
+        },
+        {
+          "name": "PSUB@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 50,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107374
+        },
+        {
+          "name": "PADD@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 3,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 107389
+        }
+      ]
+    },
+    {
+      "module": "N_LXMUL",
+      "module_file_offset": 108800,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 23,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1951,
+          "size": 23,
+          "stable_bytes": 23,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 23,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 6047
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          23
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "N_LXMUL@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 108891
+        }
+      ]
+    },
+    {
+      "module": "N_PCMP",
+      "module_file_offset": 108944,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 33,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 1974,
+          "size": 33,
+          "stable_bytes": 33,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 33,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 6070
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          33
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "N_PCMP@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 109034
+        }
+      ]
+    },
+    {
+      "module": "FMEMCPY",
+      "module_file_offset": 112928,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 36,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11150,
+          "size": 36,
+          "stable_bytes": 36,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 36,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15246
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          36
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fmemcpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 113044
+        }
+      ]
+    },
+    {
+      "module": "FMEMSET",
+      "module_file_offset": 113360,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 67,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11186,
+          "size": 67,
+          "stable_bytes": 67,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 67,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15282
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          67
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fmemset",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 36,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 113476
+        },
+        {
+          "name": "__fsetmem",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 113495
+        }
+      ]
+    },
+    {
+      "module": "FMOVMEM",
+      "module_file_offset": 113600,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 115,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 11253,
+          "size": 115,
+          "stable_bytes": 113,
+          "masked_bytes": 2,
+          "anchor_offset": 21,
+          "anchor_length": 94,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 15349
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          19
+        ],
+        [
+          21,
+          115
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 113890,
+          "subrecord_offset": 0,
+          "offset": 19,
+          "width": 2,
+          "location_type": 1,
+          "mode": "self_relative",
+          "frame": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "N_PCMP@"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fmemmove",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 82,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 113729
+        },
+        {
+          "name": "__fmovmem",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 113749
+        }
+      ]
+    },
+    {
+      "module": "FSTRCAT",
+      "module_file_offset": 113904,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 63,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13520,
+          "size": 63,
+          "stable_bytes": 63,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 63,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17616
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          63
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fstrcat",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 114020
+        }
+      ]
+    },
+    {
+      "module": "FSTRCMP",
+      "module_file_offset": 114336,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 48,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13583,
+          "size": 48,
+          "stable_bytes": 48,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 48,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17679
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          48
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fstrcmp",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 114452
+        }
+      ]
+    },
+    {
+      "module": "FSTRCPY",
+      "module_file_offset": 114544,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 41,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13631,
+          "size": 41,
+          "stable_bytes": 41,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 41,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17727
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          41
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fstrcpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 114660
+        }
+      ]
+    },
+    {
+      "module": "FSTRLEN",
+      "module_file_offset": 115440,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 31,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13741,
+          "size": 31,
+          "stable_bytes": 31,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 31,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17837
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          31
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fstrlen",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 115556
+        }
+      ]
+    },
+    {
+      "module": "FSTRNCPY",
+      "module_file_offset": 116304,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 49,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 13871,
+          "size": 49,
+          "stable_bytes": 49,
+          "masked_bytes": 0,
+          "anchor_offset": 0,
+          "anchor_length": 49,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 17967
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          49
+        ]
+      ],
+      "fixups": [],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__fstrncpy",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 116421
+        }
+      ]
+    },
+    {
+      "module": "FTOUPPER",
+      "module_file_offset": 118896,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 44,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 4218,
+          "size": 44,
+          "stable_bytes": 42,
+          "masked_bytes": 2,
+          "anchor_offset": 0,
+          "anchor_length": 24,
+          "relaxed_calls": [],
+          "relaxed_transfers": [],
+          "file_offset": 8314
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          26,
+          44
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 119075,
+          "subrecord_offset": 0,
+          "offset": 24,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "__ctype"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [],
+      "symbols": [
+        {
+          "name": "__ftoupper",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 0,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 119004
+        }
+      ]
+    }
+  ],
+  "matched_segment_count": 53,
+  "unique_segment_count": 53
+}

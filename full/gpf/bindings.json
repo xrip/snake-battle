@@ -1,0 +1,24 @@
+{
+  "functions": {
+    "_gpf_open": "11DB:0006",
+    "_gpf_close": "11DB:0052",
+    "_gpf_find": "11DB:006D",
+    "_gpf_alloc": "11DB:00F5",
+    "_gpf_load": "11DB:01FA",
+    "_gpf_planes": "11DB:02CE",
+    "_gpf_show": "11DB:04A5",
+    "_gpf_display": "11DB:04FA",
+    "_gpf_upper": "11DB:059B",
+    "_lzss_decode": "1238:100D"
+  },
+  "externals": {
+    "_gpf_handle": "1679:0F06",
+    "_gpf_header": "1679:4104",
+    "_gpf_entry": "1679:4126",
+    "_gpf_plane0": "1679:40A6",
+    "_gpf_plane1": "1679:40A8",
+    "_gpf_plane2": "1679:40AA",
+    "_gpf_plane3": "1679:40AC"
+  },
+  "groups": { "DGROUP": "1679:0000" }
+}

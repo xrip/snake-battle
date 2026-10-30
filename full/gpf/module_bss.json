@@ -1,0 +1,32 @@
+{
+  "segment": "_BSS",
+  "object_size": 56,
+  "expected_size": 56,
+  "initialized_bytes": 0,
+  "publics": [
+    {
+      "name": "_gpf_entry",
+      "offset": 34,
+      "address": {
+        "segment": 5753,
+        "offset": 16678,
+        "image_offset": 108726,
+        "address": "1679:4126"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_gpf_header",
+      "offset": 0,
+      "address": {
+        "segment": 5753,
+        "offset": 16644,
+        "image_offset": 108692,
+        "address": "1679:4104"
+      },
+      "matches_binding": true
+    }
+  ],
+  "layout_exact": true,
+  "note": "BSS allocation/layout check only: uninitialized data has no bytes in the EXE."
+}

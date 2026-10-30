@@ -1,0 +1,3449 @@
+{
+  "source": "work/ega-analysis/PLAIN.BIN",
+  "sha256": "cb9278a159438196a3160d0bd6608d96f1d4e16017005e159dd6ae1aedd3e3ad",
+  "offset_base": "driver header",
+  "copy_helper": 2559,
+  "generated_start": 322,
+  "generated_limit": 1122,
+  "generated_cursor_variable": 320,
+  "templates": [
+    {
+      "start": 1345,
+      "end": 1351,
+      "length": 6,
+      "copy_calls": [
+        3332,
+        3801
+      ]
+    },
+    {
+      "start": 1351,
+      "end": 1377,
+      "length": 26,
+      "copy_calls": [
+        3402,
+        3871
+      ]
+    },
+    {
+      "start": 1377,
+      "end": 1377,
+      "length": 0,
+      "copy_calls": [
+        3510
+      ]
+    },
+    {
+      "start": 1377,
+      "end": 1394,
+      "length": 17,
+      "copy_calls": [
+        3626
+      ]
+    },
+    {
+      "start": 1394,
+      "end": 1400,
+      "length": 6,
+      "copy_calls": [
+        2642,
+        3111
+      ]
+    },
+    {
+      "start": 1400,
+      "end": 1424,
+      "length": 24,
+      "copy_calls": [
+        2712,
+        3181
+      ]
+    },
+    {
+      "start": 1424,
+      "end": 1424,
+      "length": 0,
+      "copy_calls": [
+        2820
+      ]
+    },
+    {
+      "start": 1424,
+      "end": 1439,
+      "length": 15,
+      "copy_calls": [
+        2936
+      ]
+    },
+    {
+      "start": 1445,
+      "end": 1469,
+      "length": 24,
+      "copy_calls": [
+        3476,
+        3945
+      ]
+    },
+    {
+      "start": 1469,
+      "end": 1484,
+      "length": 15,
+      "copy_calls": [
+        3700
+      ]
+    },
+    {
+      "start": 1490,
+      "end": 1511,
+      "length": 21,
+      "copy_calls": [
+        2786,
+        3255
+      ]
+    },
+    {
+      "start": 1511,
+      "end": 1523,
+      "length": 12,
+      "copy_calls": [
+        3010
+      ]
+    },
+    {
+      "start": 1523,
+      "end": 1540,
+      "length": 17,
+      "copy_calls": [
+        4759,
+        5248
+      ]
+    },
+    {
+      "start": 1540,
+      "end": 1566,
+      "length": 26,
+      "copy_calls": [
+        4829,
+        5318
+      ]
+    },
+    {
+      "start": 1566,
+      "end": 1575,
+      "length": 9,
+      "copy_calls": [
+        4947
+      ]
+    },
+    {
+      "start": 1575,
+      "end": 1599,
+      "length": 24,
+      "copy_calls": [
+        5063
+      ]
+    },
+    {
+      "start": 1599,
+      "end": 1614,
+      "length": 15,
+      "copy_calls": [
+        4039,
+        4528
+      ]
+    },
+    {
+      "start": 1614,
+      "end": 1638,
+      "length": 24,
+      "copy_calls": [
+        4109,
+        4598
+      ]
+    },
+    {
+      "start": 1638,
+      "end": 1645,
+      "length": 7,
+      "copy_calls": [
+        4227
+      ]
+    },
+    {
+      "start": 1645,
+      "end": 1667,
+      "length": 22,
+      "copy_calls": [
+        4343
+      ]
+    },
+    {
+      "start": 1684,
+      "end": 1708,
+      "length": 24,
+      "copy_calls": [
+        4903,
+        5392
+      ]
+    },
+    {
+      "start": 1717,
+      "end": 1739,
+      "length": 22,
+      "copy_calls": [
+        5137
+      ]
+    },
+    {
+      "start": 1754,
+      "end": 1775,
+      "length": 21,
+      "copy_calls": [
+        4183,
+        4672
+      ]
+    },
+    {
+      "start": 1782,
+      "end": 1801,
+      "length": 19,
+      "copy_calls": [
+        4417
+      ]
+    },
+    {
+      "start": 1801,
+      "end": 1819,
+      "length": 18,
+      "copy_calls": [
+        6210,
+        6701
+      ]
+    },
+    {
+      "start": 1819,
+      "end": 1845,
+      "length": 26,
+      "copy_calls": [
+        6280,
+        6771
+      ]
+    },
+    {
+      "start": 1845,
+      "end": 1859,
+      "length": 14,
+      "copy_calls": [
+        6399
+      ]
+    },
+    {
+      "start": 1859,
+      "end": 1885,
+      "length": 26,
+      "copy_calls": [
+        6515
+      ]
+    },
+    {
+      "start": 1885,
+      "end": 1903,
+      "length": 18,
+      "copy_calls": [
+        5487,
+        5978
+      ]
+    },
+    {
+      "start": 1903,
+      "end": 1927,
+      "length": 24,
+      "copy_calls": [
+        5557,
+        6048
+      ]
+    },
+    {
+      "start": 1927,
+      "end": 1941,
+      "length": 14,
+      "copy_calls": [
+        5676
+      ]
+    },
+    {
+      "start": 1941,
+      "end": 1965,
+      "length": 24,
+      "copy_calls": [
+        5792
+      ]
+    },
+    {
+      "start": 1983,
+      "end": 2007,
+      "length": 24,
+      "copy_calls": [
+        6354,
+        6845
+      ]
+    },
+    {
+      "start": 2021,
+      "end": 2045,
+      "length": 24,
+      "copy_calls": [
+        6589
+      ]
+    },
+    {
+      "start": 2063,
+      "end": 2084,
+      "length": 21,
+      "copy_calls": [
+        5631,
+        6122
+      ]
+    },
+    {
+      "start": 2098,
+      "end": 2119,
+      "length": 21,
+      "copy_calls": [
+        5866
+      ]
+    },
+    {
+      "start": 2119,
+      "end": 2148,
+      "length": 29,
+      "copy_calls": [
+        7703,
+        8214
+      ]
+    },
+    {
+      "start": 2148,
+      "end": 2174,
+      "length": 26,
+      "copy_calls": [
+        7773,
+        8284
+      ]
+    },
+    {
+      "start": 2174,
+      "end": 2199,
+      "length": 25,
+      "copy_calls": [
+        7902
+      ]
+    },
+    {
+      "start": 2199,
+      "end": 2225,
+      "length": 26,
+      "copy_calls": [
+        8018
+      ]
+    },
+    {
+      "start": 2225,
+      "end": 2252,
+      "length": 27,
+      "copy_calls": [
+        6950,
+        7461
+      ]
+    },
+    {
+      "start": 2252,
+      "end": 2276,
+      "length": 24,
+      "copy_calls": [
+        7020,
+        7531
+      ]
+    },
+    {
+      "start": 2276,
+      "end": 2299,
+      "length": 23,
+      "copy_calls": [
+        7149
+      ]
+    },
+    {
+      "start": 2299,
+      "end": 2323,
+      "length": 24,
+      "copy_calls": [
+        7265
+      ]
+    },
+    {
+      "start": 2352,
+      "end": 2376,
+      "length": 24,
+      "copy_calls": [
+        7847,
+        8358
+      ]
+    },
+    {
+      "start": 2401,
+      "end": 2425,
+      "length": 24,
+      "copy_calls": [
+        8092
+      ]
+    },
+    {
+      "start": 2452,
+      "end": 2473,
+      "length": 21,
+      "copy_calls": [
+        7094,
+        7605
+      ]
+    },
+    {
+      "start": 2496,
+      "end": 2517,
+      "length": 21,
+      "copy_calls": [
+        7339
+      ]
+    },
+    {
+      "start": 2519,
+      "end": 2523,
+      "length": 4,
+      "copy_calls": [
+        3047,
+        3737,
+        4454,
+        5174,
+        5903,
+        6626,
+        7376,
+        8129
+      ]
+    },
+    {
+      "start": 2523,
+      "end": 2530,
+      "length": 7,
+      "copy_calls": [
+        3073,
+        3763,
+        4480,
+        5200,
+        5929,
+        6652,
+        7402,
+        8155
+      ]
+    },
+    {
+      "start": 2530,
+      "end": 2531,
+      "length": 1,
+      "copy_calls": [
+        3269,
+        3959,
+        4686,
+        5406,
+        6136,
+        6859,
+        7619,
+        8372
+      ]
+    },
+    {
+      "start": 2536,
+      "end": 2546,
+      "length": 10,
+      "copy_calls": [
+        2866,
+        3556,
+        4273,
+        4993,
+        5722,
+        6445,
+        7195,
+        7948
+      ]
+    },
+    {
+      "start": 2546,
+      "end": 2559,
+      "length": 13,
+      "copy_calls": [
+        2678,
+        2752,
+        2902,
+        2976,
+        3147,
+        3221,
+        3368,
+        3442,
+        3592,
+        3666,
+        3837,
+        3911,
+        4075,
+        4149,
+        4309,
+        4383,
+        4564,
+        4638,
+        4795,
+        4869,
+        5029,
+        5103,
+        5284,
+        5358,
+        5523,
+        5597,
+        5758,
+        5832,
+        6014,
+        6088,
+        6246,
+        6320,
+        6481,
+        6555,
+        6737,
+        6811,
+        6986,
+        7060,
+        7231,
+        7305,
+        7497,
+        7571,
+        7739,
+        7813,
+        7984,
+        8058,
+        8250,
+        8324
+      ]
+    },
+    {
+      "start": 8466,
+      "end": 8481,
+      "length": 15,
+      "copy_calls": [
+        8662,
+        8796
+      ]
+    },
+    {
+      "start": 8481,
+      "end": 8493,
+      "length": 12,
+      "copy_calls": [
+        8552,
+        8629
+      ]
+    },
+    {
+      "start": 8493,
+      "end": 8498,
+      "length": 5,
+      "copy_calls": [
+        8717,
+        8764
+      ]
+    },
+    {
+      "start": 8498,
+      "end": 8503,
+      "length": 5,
+      "copy_calls": [
+        8599
+      ]
+    },
+    {
+      "start": 8503,
+      "end": 8504,
+      "length": 1,
+      "copy_calls": [
+        8577
+      ]
+    },
+    {
+      "start": 8504,
+      "end": 8507,
+      "length": 3,
+      "copy_calls": [
+        8747,
+        9018,
+        9181,
+        9369,
+        9528
+      ]
+    },
+    {
+      "start": 8507,
+      "end": 8510,
+      "length": 3,
+      "copy_calls": [
+        8699,
+        8970,
+        9133,
+        9321,
+        9480
+      ]
+    },
+    {
+      "start": 8510,
+      "end": 8511,
+      "length": 1,
+      "copy_calls": [
+        8809,
+        9241,
+        9586
+      ]
+    },
+    {
+      "start": 8847,
+      "end": 8857,
+      "length": 10,
+      "copy_calls": [
+        9096,
+        9228
+      ]
+    },
+    {
+      "start": 8857,
+      "end": 8864,
+      "length": 7,
+      "copy_calls": [
+        8933,
+        9065
+      ]
+    },
+    {
+      "start": 8864,
+      "end": 8874,
+      "length": 10,
+      "copy_calls": [
+        9443,
+        9573
+      ]
+    },
+    {
+      "start": 8874,
+      "end": 8881,
+      "length": 7,
+      "copy_calls": [
+        9284,
+        9414
+      ]
+    },
+    {
+      "start": 8881,
+      "end": 8889,
+      "length": 8,
+      "copy_calls": [
+        9151,
+        9198,
+        9498,
+        9545
+      ]
+    },
+    {
+      "start": 8889,
+      "end": 8894,
+      "length": 5,
+      "copy_calls": [
+        8988,
+        9035,
+        9339,
+        9386
+      ]
+    }
+  ],
+  "template_ranges": [
+    [
+      1345,
+      1439
+    ],
+    [
+      1445,
+      1484
+    ],
+    [
+      1490,
+      1667
+    ],
+    [
+      1684,
+      1708
+    ],
+    [
+      1717,
+      1739
+    ],
+    [
+      1754,
+      1775
+    ],
+    [
+      1782,
+      1965
+    ],
+    [
+      1983,
+      2007
+    ],
+    [
+      2021,
+      2045
+    ],
+    [
+      2063,
+      2084
+    ],
+    [
+      2098,
+      2323
+    ],
+    [
+      2352,
+      2376
+    ],
+    [
+      2401,
+      2425
+    ],
+    [
+      2452,
+      2473
+    ],
+    [
+      2496,
+      2517
+    ],
+    [
+      2519,
+      2531
+    ],
+    [
+      2536,
+      2559
+    ],
+    [
+      8466,
+      8511
+    ],
+    [
+      8847,
+      8894
+    ]
+  ],
+  "copy_calls": [
+    {
+      "call": 2642,
+      "source": 1394,
+      "length": 6
+    },
+    {
+      "call": 2678,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 2712,
+      "source": 1400,
+      "length": 24
+    },
+    {
+      "call": 2752,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 2786,
+      "source": 1490,
+      "length": 21
+    },
+    {
+      "call": 2820,
+      "source": 1424,
+      "length": 0
+    },
+    {
+      "call": 2866,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 2902,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 2936,
+      "source": 1424,
+      "length": 15
+    },
+    {
+      "call": 2976,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3010,
+      "source": 1511,
+      "length": 12
+    },
+    {
+      "call": 3047,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 3073,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 3111,
+      "source": 1394,
+      "length": 6
+    },
+    {
+      "call": 3147,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3181,
+      "source": 1400,
+      "length": 24
+    },
+    {
+      "call": 3221,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3255,
+      "source": 1490,
+      "length": 21
+    },
+    {
+      "call": 3269,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 3332,
+      "source": 1345,
+      "length": 6
+    },
+    {
+      "call": 3368,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3402,
+      "source": 1351,
+      "length": 26
+    },
+    {
+      "call": 3442,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3476,
+      "source": 1445,
+      "length": 24
+    },
+    {
+      "call": 3510,
+      "source": 1377,
+      "length": 0
+    },
+    {
+      "call": 3556,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 3592,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3626,
+      "source": 1377,
+      "length": 17
+    },
+    {
+      "call": 3666,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3700,
+      "source": 1469,
+      "length": 15
+    },
+    {
+      "call": 3737,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 3763,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 3801,
+      "source": 1345,
+      "length": 6
+    },
+    {
+      "call": 3837,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3871,
+      "source": 1351,
+      "length": 26
+    },
+    {
+      "call": 3911,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 3945,
+      "source": 1445,
+      "length": 24
+    },
+    {
+      "call": 3959,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 4039,
+      "source": 1599,
+      "length": 15
+    },
+    {
+      "call": 4075,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4109,
+      "source": 1614,
+      "length": 24
+    },
+    {
+      "call": 4149,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4183,
+      "source": 1754,
+      "length": 21
+    },
+    {
+      "call": 4227,
+      "source": 1638,
+      "length": 7
+    },
+    {
+      "call": 4273,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 4309,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4343,
+      "source": 1645,
+      "length": 22
+    },
+    {
+      "call": 4383,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4417,
+      "source": 1782,
+      "length": 19
+    },
+    {
+      "call": 4454,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 4480,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 4528,
+      "source": 1599,
+      "length": 15
+    },
+    {
+      "call": 4564,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4598,
+      "source": 1614,
+      "length": 24
+    },
+    {
+      "call": 4638,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4672,
+      "source": 1754,
+      "length": 21
+    },
+    {
+      "call": 4686,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 4759,
+      "source": 1523,
+      "length": 17
+    },
+    {
+      "call": 4795,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4829,
+      "source": 1540,
+      "length": 26
+    },
+    {
+      "call": 4869,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 4903,
+      "source": 1684,
+      "length": 24
+    },
+    {
+      "call": 4947,
+      "source": 1566,
+      "length": 9
+    },
+    {
+      "call": 4993,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 5029,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5063,
+      "source": 1575,
+      "length": 24
+    },
+    {
+      "call": 5103,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5137,
+      "source": 1717,
+      "length": 22
+    },
+    {
+      "call": 5174,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 5200,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 5248,
+      "source": 1523,
+      "length": 17
+    },
+    {
+      "call": 5284,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5318,
+      "source": 1540,
+      "length": 26
+    },
+    {
+      "call": 5358,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5392,
+      "source": 1684,
+      "length": 24
+    },
+    {
+      "call": 5406,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 5487,
+      "source": 1885,
+      "length": 18
+    },
+    {
+      "call": 5523,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5557,
+      "source": 1903,
+      "length": 24
+    },
+    {
+      "call": 5597,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5631,
+      "source": 2063,
+      "length": 21
+    },
+    {
+      "call": 5676,
+      "source": 1927,
+      "length": 14
+    },
+    {
+      "call": 5722,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 5758,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5792,
+      "source": 1941,
+      "length": 24
+    },
+    {
+      "call": 5832,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 5866,
+      "source": 2098,
+      "length": 21
+    },
+    {
+      "call": 5903,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 5929,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 5978,
+      "source": 1885,
+      "length": 18
+    },
+    {
+      "call": 6014,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6048,
+      "source": 1903,
+      "length": 24
+    },
+    {
+      "call": 6088,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6122,
+      "source": 2063,
+      "length": 21
+    },
+    {
+      "call": 6136,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 6210,
+      "source": 1801,
+      "length": 18
+    },
+    {
+      "call": 6246,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6280,
+      "source": 1819,
+      "length": 26
+    },
+    {
+      "call": 6320,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6354,
+      "source": 1983,
+      "length": 24
+    },
+    {
+      "call": 6399,
+      "source": 1845,
+      "length": 14
+    },
+    {
+      "call": 6445,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 6481,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6515,
+      "source": 1859,
+      "length": 26
+    },
+    {
+      "call": 6555,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6589,
+      "source": 2021,
+      "length": 24
+    },
+    {
+      "call": 6626,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 6652,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 6701,
+      "source": 1801,
+      "length": 18
+    },
+    {
+      "call": 6737,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6771,
+      "source": 1819,
+      "length": 26
+    },
+    {
+      "call": 6811,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 6845,
+      "source": 1983,
+      "length": 24
+    },
+    {
+      "call": 6859,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 6950,
+      "source": 2225,
+      "length": 27
+    },
+    {
+      "call": 6986,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7020,
+      "source": 2252,
+      "length": 24
+    },
+    {
+      "call": 7060,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7094,
+      "source": 2452,
+      "length": 21
+    },
+    {
+      "call": 7149,
+      "source": 2276,
+      "length": 23
+    },
+    {
+      "call": 7195,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 7231,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7265,
+      "source": 2299,
+      "length": 24
+    },
+    {
+      "call": 7305,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7339,
+      "source": 2496,
+      "length": 21
+    },
+    {
+      "call": 7376,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 7402,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 7461,
+      "source": 2225,
+      "length": 27
+    },
+    {
+      "call": 7497,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7531,
+      "source": 2252,
+      "length": 24
+    },
+    {
+      "call": 7571,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7605,
+      "source": 2452,
+      "length": 21
+    },
+    {
+      "call": 7619,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 7703,
+      "source": 2119,
+      "length": 29
+    },
+    {
+      "call": 7739,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7773,
+      "source": 2148,
+      "length": 26
+    },
+    {
+      "call": 7813,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 7847,
+      "source": 2352,
+      "length": 24
+    },
+    {
+      "call": 7902,
+      "source": 2174,
+      "length": 25
+    },
+    {
+      "call": 7948,
+      "source": 2536,
+      "length": 10
+    },
+    {
+      "call": 7984,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 8018,
+      "source": 2199,
+      "length": 26
+    },
+    {
+      "call": 8058,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 8092,
+      "source": 2401,
+      "length": 24
+    },
+    {
+      "call": 8129,
+      "source": 2519,
+      "length": 4
+    },
+    {
+      "call": 8155,
+      "source": 2523,
+      "length": 7
+    },
+    {
+      "call": 8214,
+      "source": 2119,
+      "length": 29
+    },
+    {
+      "call": 8250,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 8284,
+      "source": 2148,
+      "length": 26
+    },
+    {
+      "call": 8324,
+      "source": 2546,
+      "length": 13
+    },
+    {
+      "call": 8358,
+      "source": 2352,
+      "length": 24
+    },
+    {
+      "call": 8372,
+      "source": 2530,
+      "length": 1
+    },
+    {
+      "call": 8552,
+      "source": 8481,
+      "length": 12
+    },
+    {
+      "call": 8577,
+      "source": 8503,
+      "length": 1
+    },
+    {
+      "call": 8599,
+      "source": 8498,
+      "length": 5
+    },
+    {
+      "call": 8629,
+      "source": 8481,
+      "length": 12
+    },
+    {
+      "call": 8662,
+      "source": 8466,
+      "length": 15
+    },
+    {
+      "call": 8699,
+      "source": 8507,
+      "length": 3
+    },
+    {
+      "call": 8717,
+      "source": 8493,
+      "length": 5
+    },
+    {
+      "call": 8747,
+      "source": 8504,
+      "length": 3
+    },
+    {
+      "call": 8764,
+      "source": 8493,
+      "length": 5
+    },
+    {
+      "call": 8796,
+      "source": 8466,
+      "length": 15
+    },
+    {
+      "call": 8809,
+      "source": 8510,
+      "length": 1
+    },
+    {
+      "call": 8933,
+      "source": 8857,
+      "length": 7
+    },
+    {
+      "call": 8970,
+      "source": 8507,
+      "length": 3
+    },
+    {
+      "call": 8988,
+      "source": 8889,
+      "length": 5
+    },
+    {
+      "call": 9018,
+      "source": 8504,
+      "length": 3
+    },
+    {
+      "call": 9035,
+      "source": 8889,
+      "length": 5
+    },
+    {
+      "call": 9065,
+      "source": 8857,
+      "length": 7
+    },
+    {
+      "call": 9096,
+      "source": 8847,
+      "length": 10
+    },
+    {
+      "call": 9133,
+      "source": 8507,
+      "length": 3
+    },
+    {
+      "call": 9151,
+      "source": 8881,
+      "length": 8
+    },
+    {
+      "call": 9181,
+      "source": 8504,
+      "length": 3
+    },
+    {
+      "call": 9198,
+      "source": 8881,
+      "length": 8
+    },
+    {
+      "call": 9228,
+      "source": 8847,
+      "length": 10
+    },
+    {
+      "call": 9241,
+      "source": 8510,
+      "length": 1
+    },
+    {
+      "call": 9284,
+      "source": 8874,
+      "length": 7
+    },
+    {
+      "call": 9321,
+      "source": 8507,
+      "length": 3
+    },
+    {
+      "call": 9339,
+      "source": 8889,
+      "length": 5
+    },
+    {
+      "call": 9369,
+      "source": 8504,
+      "length": 3
+    },
+    {
+      "call": 9386,
+      "source": 8889,
+      "length": 5
+    },
+    {
+      "call": 9414,
+      "source": 8874,
+      "length": 7
+    },
+    {
+      "call": 9443,
+      "source": 8864,
+      "length": 10
+    },
+    {
+      "call": 9480,
+      "source": 8507,
+      "length": 3
+    },
+    {
+      "call": 9498,
+      "source": 8881,
+      "length": 8
+    },
+    {
+      "call": 9528,
+      "source": 8504,
+      "length": 3
+    },
+    {
+      "call": 9545,
+      "source": 8881,
+      "length": 8
+    },
+    {
+      "call": 9573,
+      "source": 8864,
+      "length": 10
+    },
+    {
+      "call": 9586,
+      "source": 8510,
+      "length": 1
+    }
+  ],
+  "cs_writes": [
+    {
+      "instruction": 238,
+      "destination": 256,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x100], bx"
+    },
+    {
+      "instruction": 2578,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], di"
+    },
+    {
+      "instruction": 2605,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 2624,
+      "destination": 1395,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x573], al"
+    },
+    {
+      "instruction": 2660,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 2665,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 2689,
+      "destination": 1401,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x579], ax"
+    },
+    {
+      "instruction": 2700,
+      "destination": 1410,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x582], ax"
+    },
+    {
+      "instruction": 2734,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 2739,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 2763,
+      "destination": 1491,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5d3], ax"
+    },
+    {
+      "instruction": 2774,
+      "destination": 1499,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5db], ax"
+    },
+    {
+      "instruction": 2854,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 2884,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 2889,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 2913,
+      "destination": 1425,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x591], ax"
+    },
+    {
+      "instruction": 2924,
+      "destination": 1432,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x598], ax"
+    },
+    {
+      "instruction": 2958,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 2963,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 2987,
+      "destination": 1512,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5e8], ax"
+    },
+    {
+      "instruction": 2998,
+      "destination": 1518,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5ee], ax"
+    },
+    {
+      "instruction": 3035,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 3061,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 3093,
+      "destination": 1395,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x573], al"
+    },
+    {
+      "instruction": 3129,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3134,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3158,
+      "destination": 1401,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x579], ax"
+    },
+    {
+      "instruction": 3169,
+      "destination": 1410,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x582], ax"
+    },
+    {
+      "instruction": 3203,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3208,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3232,
+      "destination": 1491,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5d3], ax"
+    },
+    {
+      "instruction": 3243,
+      "destination": 1499,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5db], ax"
+    },
+    {
+      "instruction": 3295,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 3314,
+      "destination": 1346,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x542], al"
+    },
+    {
+      "instruction": 3350,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3355,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3379,
+      "destination": 1352,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x548], ax"
+    },
+    {
+      "instruction": 3390,
+      "destination": 1363,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x553], ax"
+    },
+    {
+      "instruction": 3424,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3429,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3453,
+      "destination": 1446,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5a6], ax"
+    },
+    {
+      "instruction": 3464,
+      "destination": 1457,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5b1], ax"
+    },
+    {
+      "instruction": 3544,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 3574,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3579,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3603,
+      "destination": 1378,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x562], ax"
+    },
+    {
+      "instruction": 3614,
+      "destination": 1387,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x56b], ax"
+    },
+    {
+      "instruction": 3648,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3653,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3677,
+      "destination": 1470,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5be], ax"
+    },
+    {
+      "instruction": 3688,
+      "destination": 1479,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5c7], ax"
+    },
+    {
+      "instruction": 3725,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 3751,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 3783,
+      "destination": 1346,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x542], al"
+    },
+    {
+      "instruction": 3819,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3824,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3848,
+      "destination": 1352,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x548], ax"
+    },
+    {
+      "instruction": 3859,
+      "destination": 1363,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x553], ax"
+    },
+    {
+      "instruction": 3893,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 3898,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 3922,
+      "destination": 1446,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5a6], ax"
+    },
+    {
+      "instruction": 3933,
+      "destination": 1457,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5b1], ax"
+    },
+    {
+      "instruction": 3992,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 4011,
+      "destination": 1607,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x647], al"
+    },
+    {
+      "instruction": 4027,
+      "destination": 1600,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x640], ax"
+    },
+    {
+      "instruction": 4057,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4062,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4086,
+      "destination": 1615,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x64f], ax"
+    },
+    {
+      "instruction": 4097,
+      "destination": 1624,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x658], ax"
+    },
+    {
+      "instruction": 4131,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4136,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4160,
+      "destination": 1755,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6db], ax"
+    },
+    {
+      "instruction": 4171,
+      "destination": 1763,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6e3], ax"
+    },
+    {
+      "instruction": 4215,
+      "destination": 1639,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x667], ax"
+    },
+    {
+      "instruction": 4261,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 4291,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4296,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4320,
+      "destination": 1646,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x66e], ax"
+    },
+    {
+      "instruction": 4331,
+      "destination": 1653,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x675], ax"
+    },
+    {
+      "instruction": 4365,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4370,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4394,
+      "destination": 1783,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6f7], ax"
+    },
+    {
+      "instruction": 4405,
+      "destination": 1789,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6fd], ax"
+    },
+    {
+      "instruction": 4442,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 4468,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 4500,
+      "destination": 1607,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x647], al"
+    },
+    {
+      "instruction": 4516,
+      "destination": 1600,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x640], ax"
+    },
+    {
+      "instruction": 4546,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4551,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4575,
+      "destination": 1615,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x64f], ax"
+    },
+    {
+      "instruction": 4586,
+      "destination": 1624,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x658], ax"
+    },
+    {
+      "instruction": 4620,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4625,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4649,
+      "destination": 1755,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6db], ax"
+    },
+    {
+      "instruction": 4660,
+      "destination": 1763,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6e3], ax"
+    },
+    {
+      "instruction": 4712,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 4731,
+      "destination": 1533,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x5fd], al"
+    },
+    {
+      "instruction": 4747,
+      "destination": 1524,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5f4], ax"
+    },
+    {
+      "instruction": 4777,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4782,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4806,
+      "destination": 1541,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x605], ax"
+    },
+    {
+      "instruction": 4817,
+      "destination": 1552,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x610], ax"
+    },
+    {
+      "instruction": 4851,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 4856,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 4880,
+      "destination": 1685,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x695], ax"
+    },
+    {
+      "instruction": 4891,
+      "destination": 1696,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6a0], ax"
+    },
+    {
+      "instruction": 4935,
+      "destination": 1567,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x61f], ax"
+    },
+    {
+      "instruction": 4981,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 5011,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5016,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5040,
+      "destination": 1576,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x628], ax"
+    },
+    {
+      "instruction": 5051,
+      "destination": 1585,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x631], ax"
+    },
+    {
+      "instruction": 5085,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5090,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5114,
+      "destination": 1718,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6b6], ax"
+    },
+    {
+      "instruction": 5125,
+      "destination": 1727,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6bf], ax"
+    },
+    {
+      "instruction": 5162,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 5188,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 5220,
+      "destination": 1533,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x5fd], al"
+    },
+    {
+      "instruction": 5236,
+      "destination": 1524,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x5f4], ax"
+    },
+    {
+      "instruction": 5266,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5271,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5295,
+      "destination": 1541,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x605], ax"
+    },
+    {
+      "instruction": 5306,
+      "destination": 1552,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x610], ax"
+    },
+    {
+      "instruction": 5340,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5345,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5369,
+      "destination": 1685,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x695], ax"
+    },
+    {
+      "instruction": 5380,
+      "destination": 1696,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x6a0], ax"
+    },
+    {
+      "instruction": 5439,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 5458,
+      "destination": 1896,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x768], al"
+    },
+    {
+      "instruction": 5475,
+      "destination": 1886,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x75e], ax"
+    },
+    {
+      "instruction": 5505,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5510,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5534,
+      "destination": 1904,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x770], ax"
+    },
+    {
+      "instruction": 5545,
+      "destination": 1913,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x779], ax"
+    },
+    {
+      "instruction": 5579,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5584,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5608,
+      "destination": 2064,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x810], ax"
+    },
+    {
+      "instruction": 5619,
+      "destination": 2072,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x818], ax"
+    },
+    {
+      "instruction": 5664,
+      "destination": 1928,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x788], ax"
+    },
+    {
+      "instruction": 5710,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 5740,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5745,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5769,
+      "destination": 1942,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x796], ax"
+    },
+    {
+      "instruction": 5780,
+      "destination": 1951,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x79f], ax"
+    },
+    {
+      "instruction": 5814,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 5819,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 5843,
+      "destination": 2099,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x833], ax"
+    },
+    {
+      "instruction": 5854,
+      "destination": 2107,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x83b], ax"
+    },
+    {
+      "instruction": 5891,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 5917,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 5949,
+      "destination": 1896,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x768], al"
+    },
+    {
+      "instruction": 5966,
+      "destination": 1886,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x75e], ax"
+    },
+    {
+      "instruction": 5996,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6001,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6025,
+      "destination": 1904,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x770], ax"
+    },
+    {
+      "instruction": 6036,
+      "destination": 1913,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x779], ax"
+    },
+    {
+      "instruction": 6070,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6075,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6099,
+      "destination": 2064,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x810], ax"
+    },
+    {
+      "instruction": 6110,
+      "destination": 2072,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x818], ax"
+    },
+    {
+      "instruction": 6162,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 6181,
+      "destination": 1812,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x714], al"
+    },
+    {
+      "instruction": 6198,
+      "destination": 1802,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x70a], ax"
+    },
+    {
+      "instruction": 6228,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6233,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6257,
+      "destination": 1820,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x71c], ax"
+    },
+    {
+      "instruction": 6268,
+      "destination": 1831,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x727], ax"
+    },
+    {
+      "instruction": 6302,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6307,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6331,
+      "destination": 1984,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x7c0], ax"
+    },
+    {
+      "instruction": 6342,
+      "destination": 1995,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x7cb], ax"
+    },
+    {
+      "instruction": 6387,
+      "destination": 1846,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x736], ax"
+    },
+    {
+      "instruction": 6433,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 6463,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6468,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6492,
+      "destination": 1860,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x744], ax"
+    },
+    {
+      "instruction": 6503,
+      "destination": 1871,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x74f], ax"
+    },
+    {
+      "instruction": 6537,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6542,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6566,
+      "destination": 2022,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x7e6], ax"
+    },
+    {
+      "instruction": 6577,
+      "destination": 2033,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x7f1], ax"
+    },
+    {
+      "instruction": 6614,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 6640,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 6672,
+      "destination": 1812,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x714], al"
+    },
+    {
+      "instruction": 6689,
+      "destination": 1802,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x70a], ax"
+    },
+    {
+      "instruction": 6719,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6724,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6748,
+      "destination": 1820,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x71c], ax"
+    },
+    {
+      "instruction": 6759,
+      "destination": 1831,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x727], ax"
+    },
+    {
+      "instruction": 6793,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6798,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6822,
+      "destination": 1984,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x7c0], ax"
+    },
+    {
+      "instruction": 6833,
+      "destination": 1995,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x7cb], ax"
+    },
+    {
+      "instruction": 6892,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 6911,
+      "destination": 2245,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x8c5], al"
+    },
+    {
+      "instruction": 6928,
+      "destination": 2233,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8b9], ax"
+    },
+    {
+      "instruction": 6938,
+      "destination": 2226,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8b2], ax"
+    },
+    {
+      "instruction": 6968,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 6973,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 6997,
+      "destination": 2253,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8cd], ax"
+    },
+    {
+      "instruction": 7008,
+      "destination": 2262,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8d6], ax"
+    },
+    {
+      "instruction": 7042,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7047,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7071,
+      "destination": 2453,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x995], ax"
+    },
+    {
+      "instruction": 7082,
+      "destination": 2461,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x99d], ax"
+    },
+    {
+      "instruction": 7127,
+      "destination": 2284,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8ec], ax"
+    },
+    {
+      "instruction": 7137,
+      "destination": 2277,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8e5], ax"
+    },
+    {
+      "instruction": 7183,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 7213,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7218,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7242,
+      "destination": 2300,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8fc], ax"
+    },
+    {
+      "instruction": 7253,
+      "destination": 2309,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x905], ax"
+    },
+    {
+      "instruction": 7287,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7292,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7316,
+      "destination": 2497,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9c1], ax"
+    },
+    {
+      "instruction": 7327,
+      "destination": 2505,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9c9], ax"
+    },
+    {
+      "instruction": 7364,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 7390,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 7422,
+      "destination": 2245,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x8c5], al"
+    },
+    {
+      "instruction": 7439,
+      "destination": 2233,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8b9], ax"
+    },
+    {
+      "instruction": 7449,
+      "destination": 2226,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8b2], ax"
+    },
+    {
+      "instruction": 7479,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7484,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7508,
+      "destination": 2253,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8cd], ax"
+    },
+    {
+      "instruction": 7519,
+      "destination": 2262,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8d6], ax"
+    },
+    {
+      "instruction": 7553,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7558,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7582,
+      "destination": 2453,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x995], ax"
+    },
+    {
+      "instruction": 7593,
+      "destination": 2461,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x99d], ax"
+    },
+    {
+      "instruction": 7645,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 7664,
+      "destination": 2141,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x85d], al"
+    },
+    {
+      "instruction": 7681,
+      "destination": 2129,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x851], ax"
+    },
+    {
+      "instruction": 7691,
+      "destination": 2120,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x848], ax"
+    },
+    {
+      "instruction": 7721,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7726,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7750,
+      "destination": 2149,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x865], ax"
+    },
+    {
+      "instruction": 7761,
+      "destination": 2160,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x870], ax"
+    },
+    {
+      "instruction": 7795,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7800,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7824,
+      "destination": 2353,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x931], ax"
+    },
+    {
+      "instruction": 7835,
+      "destination": 2364,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x93c], ax"
+    },
+    {
+      "instruction": 7880,
+      "destination": 2184,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x888], ax"
+    },
+    {
+      "instruction": 7890,
+      "destination": 2175,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x87f], ax"
+    },
+    {
+      "instruction": 7936,
+      "destination": 2544,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9f0], ax"
+    },
+    {
+      "instruction": 7966,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 7971,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 7995,
+      "destination": 2200,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x898], ax"
+    },
+    {
+      "instruction": 8006,
+      "destination": 2211,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x8a3], ax"
+    },
+    {
+      "instruction": 8040,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 8045,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 8069,
+      "destination": 2402,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x962], ax"
+    },
+    {
+      "instruction": 8080,
+      "destination": 2413,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x96d], ax"
+    },
+    {
+      "instruction": 8117,
+      "destination": 2522,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9da], al"
+    },
+    {
+      "instruction": 8143,
+      "destination": 2528,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x9e0], ax"
+    },
+    {
+      "instruction": 8175,
+      "destination": 2141,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x85d], al"
+    },
+    {
+      "instruction": 8192,
+      "destination": 2129,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x851], ax"
+    },
+    {
+      "instruction": 8202,
+      "destination": 2120,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x848], ax"
+    },
+    {
+      "instruction": 8232,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 8237,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 8261,
+      "destination": 2149,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x865], ax"
+    },
+    {
+      "instruction": 8272,
+      "destination": 2160,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x870], ax"
+    },
+    {
+      "instruction": 8306,
+      "destination": 2551,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9f7], cl"
+    },
+    {
+      "instruction": 8311,
+      "destination": 2557,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x9fd], ah"
+    },
+    {
+      "instruction": 8335,
+      "destination": 2353,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x931], ax"
+    },
+    {
+      "instruction": 8346,
+      "destination": 2364,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x93c], ax"
+    },
+    {
+      "instruction": 8514,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 8539,
+      "destination": 8482,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x2122], bx"
+    },
+    {
+      "instruction": 8587,
+      "destination": 8499,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x2133], ax"
+    },
+    {
+      "instruction": 8616,
+      "destination": 8482,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x2122], bx"
+    },
+    {
+      "instruction": 8649,
+      "destination": 8467,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x2113], bx"
+    },
+    {
+      "instruction": 8687,
+      "destination": 8508,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x213c], ax"
+    },
+    {
+      "instruction": 8735,
+      "destination": 8506,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x213a], al"
+    },
+    {
+      "instruction": 8783,
+      "destination": 8467,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x2113], bx"
+    },
+    {
+      "instruction": 8897,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 8920,
+      "destination": 8859,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x229b], bl"
+    },
+    {
+      "instruction": 8958,
+      "destination": 8508,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x213c], ax"
+    },
+    {
+      "instruction": 9006,
+      "destination": 8506,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x213a], al"
+    },
+    {
+      "instruction": 9052,
+      "destination": 8859,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x229b], bl"
+    },
+    {
+      "instruction": 9083,
+      "destination": 8852,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x2294], bl"
+    },
+    {
+      "instruction": 9121,
+      "destination": 8508,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x213c], ax"
+    },
+    {
+      "instruction": 9169,
+      "destination": 8506,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x213a], al"
+    },
+    {
+      "instruction": 9215,
+      "destination": 8852,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x2294], bl"
+    },
+    {
+      "instruction": 9250,
+      "destination": 320,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x140], ax"
+    },
+    {
+      "instruction": 9271,
+      "destination": 8876,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x22ac], bl"
+    },
+    {
+      "instruction": 9309,
+      "destination": 8508,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x213c], ax"
+    },
+    {
+      "instruction": 9357,
+      "destination": 8506,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x213a], al"
+    },
+    {
+      "instruction": 9401,
+      "destination": 8876,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x22ac], bl"
+    },
+    {
+      "instruction": 9430,
+      "destination": 8869,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x22a5], bl"
+    },
+    {
+      "instruction": 9468,
+      "destination": 8508,
+      "length": 2,
+      "operation": "mov word ptr cs:[0x213c], ax"
+    },
+    {
+      "instruction": 9516,
+      "destination": 8506,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x213a], al"
+    },
+    {
+      "instruction": 9560,
+      "destination": 8869,
+      "length": 1,
+      "operation": "mov byte ptr cs:[0x22a5], bl"
+    }
+  ],
+  "dynamic_copy_lengths": []
+}

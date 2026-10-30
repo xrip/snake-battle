@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "files.c": "f6f6b40513f5bed7fa06def36f4703cb897e18442789e06fdb4d43407e0b1e71",
+    "xor.c": "35f709cf291803898fb0a0ab4cb61563055625cdefe790b19b1011c3a6496414",
+    "rec.c": "78570958b100b6e8dba40a9c024bd012814cf940bc2cedff420bab3f649a9d23",
+    "ticks.c": "4468bdac54b9896a1974986c5402e9efa01e19e170533609eddb9a405172ba09",
+    "cards.h": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+    "about.c": "cf2e1fbd81f41d0cb695662976908354aaf1581b063d856902a379f12bff1b6e",
+    "number.c": "ff5829e068225c5b50cd6e0b7858681d42913f9965f9ced0f9a9813553919d9d",
+    "fmtabi.h": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+    "cards.c": "7041102ca01f84fedf089e507c94a0df6aa735e63cf6190816995b4511ff2c30"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G-",
+  "seconds": 1.851,
+  "files": [
+    "rec.c",
+    "xor.c",
+    "files.c",
+    "ticks.c",
+    "number.c",
+    "about.c",
+    "cards.c"
+  ]
+}

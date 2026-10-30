@@ -1,0 +1,129 @@
+{
+  "object": "snake-battle-recovered/matching/AIMATCH.OBJ",
+  "object_sha256": "2f50e32609fc74ef9da452e529b3cb32c30bc3dd2c069d32b918980d6244c677",
+  "executable": "/workspace/scratch/488b0609771f/snake-battle-recovered/original/SNAKE.EXE",
+  "function": "_sb_mirror_x",
+  "module": "aimatch.c",
+  "object_segment": 1,
+  "object_start": 0,
+  "object_end": 167,
+  "target": {
+    "segment": 1833,
+    "offset": 13,
+    "image_offset": 29341,
+    "address": "0729:000D"
+  },
+  "file_offset": 33437,
+  "compiled_size": 167,
+  "original_size": 167,
+  "unresolved": [],
+  "relocations": [
+    {
+      "segment": 1833,
+      "offset": 171,
+      "image_offset": 29499,
+      "address": "0729:00AB"
+    },
+    {
+      "segment": 1833,
+      "offset": 132,
+      "image_offset": 29460,
+      "address": "0729:0084"
+    }
+  ],
+  "original_relocations": [
+    {
+      "segment": 1833,
+      "offset": 171,
+      "image_offset": 29499,
+      "address": "0729:00AB"
+    },
+    {
+      "segment": 1833,
+      "offset": 132,
+      "image_offset": 29460,
+      "address": "0729:0084"
+    }
+  ],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "fixups": [
+    {
+      "object_offset": 156,
+      "function_offset": 156,
+      "omf_fixup": {
+        "record_offset": 1400,
+        "subrecord_offset": 45,
+        "offset": 156,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_memcpy"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 11150,
+        "image_offset": 11150,
+        "address": "0000:2B8E"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "8e2b0000",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 117,
+      "function_offset": 117,
+      "omf_fixup": {
+        "record_offset": 1400,
+        "subrecord_offset": 49,
+        "offset": 117,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "F_SCOPY@"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 937,
+        "image_offset": 937,
+        "address": "0000:03A9"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "a9030000",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "mismatches": [],
+  "compiled_relocated_sha256": "1914ee4f27b684f07fe48b14f33888d4396aad2cfdad0c9d0404cc88d5603465",
+  "original_sha256": "1914ee4f27b684f07fe48b14f33888d4396aad2cfdad0c9d0404cc88d5603465",
+  "byte_exact": true,
+  "complete_module_layout_proven": false,
+  "passed": true
+}

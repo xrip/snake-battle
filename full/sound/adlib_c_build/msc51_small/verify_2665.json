@@ -1,0 +1,68 @@
+{
+  "object": "full/sound/adlib_c_build/msc51_small/SMALL.OBJ",
+  "object_sha256": "d2cb0a62ace3a525dad48391ac7a2473b58203b28781563b69685766a5c848ff",
+  "executable": "/workspace/scratch/488b0609771f/snake-battle-recovered/original/SNAKE.EXE",
+  "function": "_snd_2665",
+  "module": "SMALL.C",
+  "object_segment": 1,
+  "object_start": 0,
+  "object_end": 20,
+  "target": {
+    "segment": 4929,
+    "offset": 9829,
+    "image_offset": 88693,
+    "address": "1341:2665"
+  },
+  "file_offset": 92789,
+  "compiled_size": 20,
+  "original_size": 20,
+  "unresolved": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "fixups": [
+    {
+      "object_offset": 16,
+      "function_offset": 16,
+      "omf_fixup": {
+        "record_offset": 285,
+        "subrecord_offset": 0,
+        "offset": 16,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 4,
+          "name": "_snd_053D"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 1341,
+        "image_offset": 80205,
+        "address": "1341:053D"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "c6de",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "mismatches": [],
+  "compiled_relocated_sha256": "118663a869749d7773cd448392be61ba5946043fc8d9285aa4df5a1f5c3828e3",
+  "original_sha256": "118663a869749d7773cd448392be61ba5946043fc8d9285aa4df5a1f5c3828e3",
+  "byte_exact": true,
+  "complete_module_layout_proven": false,
+  "passed": true
+}

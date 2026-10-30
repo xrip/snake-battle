@@ -1,0 +1,472 @@
+{
+  "segment": "_BSS",
+  "object_size": 8378,
+  "expected_size": 8378,
+  "initialized_bytes": 0,
+  "publics": [
+    {
+      "name": "_snd_master_volume",
+      "offset": 0,
+      "address": {
+        "segment": 5753,
+        "offset": 16700,
+        "image_offset": 108748,
+        "address": "1679:413C"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_resources",
+      "offset": 2,
+      "address": {
+        "segment": 5753,
+        "offset": 16702,
+        "image_offset": 108750,
+        "address": "1679:413E"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_timer_accumulator",
+      "offset": 6,
+      "address": {
+        "segment": 5753,
+        "offset": 16706,
+        "image_offset": 108754,
+        "address": "1679:4142"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_tick_period",
+      "offset": 8,
+      "address": {
+        "segment": 5753,
+        "offset": 16708,
+        "image_offset": 108756,
+        "address": "1679:4144"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_parse_nesting",
+      "offset": 12,
+      "address": {
+        "segment": 5753,
+        "offset": 16712,
+        "image_offset": 108760,
+        "address": "1679:4148"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_parse_finished",
+      "offset": 13,
+      "address": {
+        "segment": 5753,
+        "offset": 16713,
+        "image_offset": 108761,
+        "address": "1679:4149"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_parse_cursor",
+      "offset": 14,
+      "address": {
+        "segment": 5753,
+        "offset": 16714,
+        "image_offset": 108762,
+        "address": "1679:414A"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_event_channel",
+      "offset": 18,
+      "address": {
+        "segment": 5753,
+        "offset": 16718,
+        "image_offset": 108766,
+        "address": "1679:414E"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_event_note",
+      "offset": 20,
+      "address": {
+        "segment": 5753,
+        "offset": 16720,
+        "image_offset": 108768,
+        "address": "1679:4150"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_event_velocity",
+      "offset": 22,
+      "address": {
+        "segment": 5753,
+        "offset": 16722,
+        "image_offset": 108770,
+        "address": "1679:4152"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_scan_note_count",
+      "offset": 24,
+      "address": {
+        "segment": 5753,
+        "offset": 16724,
+        "image_offset": 108772,
+        "address": "1679:4154"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_scan_end_tick",
+      "offset": 26,
+      "address": {
+        "segment": 5753,
+        "offset": 16726,
+        "image_offset": 108774,
+        "address": "1679:4156"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_note_channels",
+      "offset": 30,
+      "address": {
+        "segment": 5753,
+        "offset": 16730,
+        "image_offset": 108778,
+        "address": "1679:415A"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_sysex_buffer",
+      "offset": 286,
+      "address": {
+        "segment": 5753,
+        "offset": 16986,
+        "image_offset": 109034,
+        "address": "1679:425A"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_players",
+      "offset": 414,
+      "address": {
+        "segment": 5753,
+        "offset": 17114,
+        "image_offset": 109162,
+        "address": "1679:42DA"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_sequences",
+      "offset": 450,
+      "address": {
+        "segment": 5753,
+        "offset": 17150,
+        "image_offset": 109198,
+        "address": "1679:42FE"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_hooks",
+      "offset": 554,
+      "address": {
+        "segment": 5753,
+        "offset": 17254,
+        "image_offset": 109302,
+        "address": "1679:4366"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_held_notes",
+      "offset": 686,
+      "address": {
+        "segment": 5753,
+        "offset": 17386,
+        "image_offset": 109434,
+        "address": "1679:43EA"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_held_active",
+      "offset": 1166,
+      "address": {
+        "segment": 5753,
+        "offset": 17866,
+        "image_offset": 109914,
+        "address": "1679:45CA"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_held_free",
+      "offset": 1168,
+      "address": {
+        "segment": 5753,
+        "offset": 17868,
+        "image_offset": 109916,
+        "address": "1679:45CC"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_held_cursor",
+      "offset": 1170,
+      "address": {
+        "segment": 5753,
+        "offset": 17870,
+        "image_offset": 109918,
+        "address": "1679:45CE"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_fade_tick_scale",
+      "offset": 1172,
+      "address": {
+        "segment": 5753,
+        "offset": 17872,
+        "image_offset": 109920,
+        "address": "1679:45D0"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_fade_state",
+      "offset": 1174,
+      "address": {
+        "segment": 5753,
+        "offset": 17874,
+        "image_offset": 109922,
+        "address": "1679:45D2"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_fades",
+      "offset": 1176,
+      "address": {
+        "segment": 5753,
+        "offset": 17876,
+        "image_offset": 109924,
+        "address": "1679:45D4"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_queue_read",
+      "offset": 1208,
+      "address": {
+        "segment": 5753,
+        "offset": 17908,
+        "image_offset": 109956,
+        "address": "1679:45F4"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_queue",
+      "offset": 1210,
+      "address": {
+        "segment": 5753,
+        "offset": 17910,
+        "image_offset": 109958,
+        "address": "1679:45F6"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_queue_write",
+      "offset": 2234,
+      "address": {
+        "segment": 5753,
+        "offset": 18934,
+        "image_offset": 110982,
+        "address": "1679:49F6"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_building_queue",
+      "offset": 2236,
+      "address": {
+        "segment": 5753,
+        "offset": 18936,
+        "image_offset": 110984,
+        "address": "1679:49F8"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_queued_marker",
+      "offset": 2237,
+      "address": {
+        "segment": 5753,
+        "offset": 18937,
+        "image_offset": 110985,
+        "address": "1679:49F9"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_queued_sound",
+      "offset": 2238,
+      "address": {
+        "segment": 5753,
+        "offset": 18938,
+        "image_offset": 110986,
+        "address": "1679:49FA"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_trigger_count",
+      "offset": 2240,
+      "address": {
+        "segment": 5753,
+        "offset": 18940,
+        "image_offset": 110988,
+        "address": "1679:49FC"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_scanning",
+      "offset": 2242,
+      "address": {
+        "segment": 5753,
+        "offset": 18942,
+        "image_offset": 110990,
+        "address": "1679:49FE"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_parts",
+      "offset": 2244,
+      "address": {
+        "segment": 5753,
+        "offset": 18944,
+        "image_offset": 110992,
+        "address": "1679:4A00"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_part_instruments",
+      "offset": 3268,
+      "address": {
+        "segment": 5753,
+        "offset": 19968,
+        "image_offset": 112016,
+        "address": "1679:4E00"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_global_instruments",
+      "offset": 4228,
+      "address": {
+        "segment": 5753,
+        "offset": 20928,
+        "image_offset": 112976,
+        "address": "1679:51C0"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_voices",
+      "offset": 5188,
+      "address": {
+        "segment": 5753,
+        "offset": 21888,
+        "image_offset": 113936,
+        "address": "1679:5580"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_voice_tick",
+      "offset": 6070,
+      "address": {
+        "segment": 5753,
+        "offset": 22770,
+        "image_offset": 114818,
+        "address": "1679:58F2"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_voice_tick_pad",
+      "offset": 6071,
+      "address": {
+        "segment": 5753,
+        "offset": 22771,
+        "image_offset": 114819,
+        "address": "1679:58F3"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_voice_counter",
+      "offset": 6072,
+      "address": {
+        "segment": 5753,
+        "offset": 22772,
+        "image_offset": 114820,
+        "address": "1679:58F4"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_voice_counter_pad",
+      "offset": 6073,
+      "address": {
+        "segment": 5753,
+        "offset": 22773,
+        "image_offset": 114821,
+        "address": "1679:58F5"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_opl_cache",
+      "offset": 6074,
+      "address": {
+        "segment": 5753,
+        "offset": 22774,
+        "image_offset": 114822,
+        "address": "1679:58F6"
+      },
+      "matches_binding": true
+    },
+    {
+      "name": "_snd_volume_products",
+      "offset": 6330,
+      "address": {
+        "segment": 5753,
+        "offset": 23030,
+        "image_offset": 115078,
+        "address": "1679:59F6"
+      },
+      "matches_binding": true
+    }
+  ],
+  "layout_exact": true,
+  "note": "BSS allocation/layout check only: uninitialized data has no bytes in the EXE."
+}

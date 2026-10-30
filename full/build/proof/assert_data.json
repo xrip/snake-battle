@@ -1,0 +1,160 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/ASSERT.OBJ",
+  "object_sha256": "c7f4eaf36f3d61d9a2e08c49f0054747b2e15093f6aa37039f7477264b904380",
+  "module": "assert.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3386,
+    "image_offset": 95434,
+    "address": "1679:0D3A"
+  },
+  "file_offset": 99530,
+  "object_size": 60,
+  "expected_size": 60,
+  "public_bindings": [
+    {
+      "name": "_sb_assert_strings",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3386,
+        "image_offset": 95434,
+        "address": "1679:0D3A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3386,
+        "image_offset": 95434,
+        "address": "1679:0D3A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0d3a",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3386,
+        "image_offset": 95434,
+        "address": "1679:0D3A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3386,
+        "image_offset": 95434,
+        "address": "1679:0D3A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0d3e",
+      "object_offset": 4,
+      "expected": {
+        "segment": 5753,
+        "offset": 3390,
+        "image_offset": 95438,
+        "address": "1679:0D3E"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3390,
+        "image_offset": 95438,
+        "address": "1679:0D3E"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0d4f",
+      "object_offset": 21,
+      "expected": {
+        "segment": 5753,
+        "offset": 3407,
+        "image_offset": 95455,
+        "address": "1679:0D4F"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3407,
+        "image_offset": 95455,
+        "address": "1679:0D4F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0d57",
+      "object_offset": 29,
+      "expected": {
+        "segment": 5753,
+        "offset": 3415,
+        "image_offset": 95463,
+        "address": "1679:0D57"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3415,
+        "image_offset": 95463,
+        "address": "1679:0D57"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0d5e",
+      "object_offset": 36,
+      "expected": {
+        "segment": 5753,
+        "offset": 3422,
+        "image_offset": 95470,
+        "address": "1679:0D5E"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3422,
+        "image_offset": 95470,
+        "address": "1679:0D5E"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0d64",
+      "object_offset": 42,
+      "expected": {
+        "segment": 5753,
+        "offset": 3428,
+        "image_offset": 95476,
+        "address": "1679:0D64"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3428,
+        "image_offset": 95476,
+        "address": "1679:0D64"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      60
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "cd755648f248c86f0a958cbc707ae3aca8d6f46016a8a2954fac898dd9589b80",
+  "original_sha256": "cd755648f248c86f0a958cbc707ae3aca8d6f46016a8a2954fac898dd9589b80",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+    "GPF.C": "b9fe78b0c8606aeb65f53109982e4669eeb297367cf3748daa5dae4a6965f753"
+  },
+  "flags": "-ml -a- -k- -O- -r- -Z- -G- -K",
+  "seconds": 0.846,
+  "files": [
+    "GPF.C"
+  ]
+}

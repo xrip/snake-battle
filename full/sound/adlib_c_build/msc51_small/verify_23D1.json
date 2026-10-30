@@ -1,0 +1,38 @@
+{
+  "object": "full/sound/adlib_c_build/msc51_small/SMALL.OBJ",
+  "object_sha256": "d2cb0a62ace3a525dad48391ac7a2473b58203b28781563b69685766a5c848ff",
+  "executable": "/workspace/scratch/488b0609771f/snake-battle-recovered/original/SNAKE.EXE",
+  "function": "_snd_23D1",
+  "module": "SMALL.C",
+  "object_segment": 1,
+  "object_start": 20,
+  "object_end": 22,
+  "target": {
+    "segment": 4929,
+    "offset": 9169,
+    "image_offset": 88033,
+    "address": "1341:23D1"
+  },
+  "file_offset": 92129,
+  "compiled_size": 2,
+  "original_size": 1,
+  "unresolved": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "fixups": [],
+  "mismatches": [
+    {
+      "offset": 1,
+      "compiled": 144,
+      "original": null
+    }
+  ],
+  "compiled_relocated_sha256": "226cb735deb88147fb164f8adf555fcd3f82ca2a49efdf6d999665f9c36c9d59",
+  "original_sha256": "ae3f4619b0413d70d3004b9131c3752153074e45725be13b9a148978895e359e",
+  "byte_exact": false,
+  "complete_module_layout_proven": false,
+  "passed": false
+}

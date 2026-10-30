@@ -1,0 +1,204 @@
+{
+  "functions": {
+    "_render_000a": {
+      "address": "0C85:000A",
+      "length": 408
+    },
+    "_render_01a2": {
+      "address": "0C85:01A2",
+      "length": 679
+    },
+    "_render_0449": {
+      "address": "0C85:0449",
+      "length": 15
+    },
+    "_render_0458": {
+      "address": "0C85:0458",
+      "length": 15
+    },
+    "_render_0467": {
+      "address": "0C85:0467",
+      "length": 54
+    },
+    "_render_049d": {
+      "address": "0C85:049D",
+      "length": 197
+    },
+    "_render_0562": {
+      "address": "0C85:0562",
+      "length": 44
+    },
+    "_render_058e": {
+      "address": "0C85:058E",
+      "length": 23
+    },
+    "_render_05a5": {
+      "address": "0C85:05A5",
+      "length": 55
+    },
+    "_render_05dc": {
+      "address": "0C85:05DC",
+      "length": 148
+    },
+    "_render_0670": {
+      "address": "0C85:0670",
+      "length": 23
+    },
+    "_render_0687": {
+      "address": "0C85:0687",
+      "length": 259
+    },
+    "_render_078a": {
+      "address": "0C85:078A",
+      "length": 73
+    },
+    "_render_07d3": {
+      "address": "0C85:07D3",
+      "length": 169
+    },
+    "_render_087c": {
+      "address": "0C85:087C",
+      "length": 220
+    },
+    "_render_0958": {
+      "address": "0C85:0958",
+      "length": 146
+    },
+    "_render_09ea": {
+      "address": "0C85:09EA",
+      "length": 128
+    },
+    "_render_0a6a": {
+      "address": "0C85:0A6A",
+      "length": 197
+    },
+    "_render_0b2f": {
+      "address": "0C85:0B2F",
+      "length": 32
+    },
+    "_render_0b4f": {
+      "address": "0C85:0B4F",
+      "length": 52
+    },
+    "_render_0b83": {
+      "address": "0C85:0B83",
+      "length": 47
+    },
+    "_render_0bb2": {
+      "address": "0C85:0BB2",
+      "length": 92
+    },
+    "_render_0c0e": {
+      "address": "0C85:0C0E",
+      "length": 608
+    },
+    "_render_0e6e": {
+      "address": "0C85:0E6E",
+      "length": 25
+    },
+    "_render_0e87": {
+      "address": "0C85:0E87",
+      "length": 38
+    },
+    "_render_0ead": {
+      "address": "0C85:0EAD",
+      "length": 83
+    },
+    "_render_0f00": {
+      "address": "0C85:0F00",
+      "length": 79
+    },
+    "_render_0f4f": {
+      "address": "0C85:0F4F",
+      "length": 37
+    },
+    "_render_0f74": {
+      "address": "0C85:0F74",
+      "length": 61
+    },
+    "_render_0fb1": {
+      "address": "0C85:0FB1",
+      "length": 48
+    },
+    "_render_0fe1": {
+      "address": "0C85:0FE1",
+      "length": 40
+    },
+    "_render_1009": {
+      "address": "0C85:1009",
+      "length": 229
+    },
+    "_render_10ee": {
+      "address": "0C85:10EE",
+      "length": 26
+    },
+    "_render_1108": {
+      "address": "0C85:1108",
+      "length": 161
+    }
+  },
+  "externals": {
+    "_g_0db2": "1679:0DB2",
+    "_g_0db4": "1679:0DB4",
+    "_g_1af6": "1679:1AF6",
+    "_g_19bf": "1679:19BF",
+    "_g_3c42": "1679:3C42",
+    "_g_4042": "1679:4042",
+    "_g_4046": "1679:4046",
+    "_g_40ae": "1679:40AE",
+    "_g_404a": "1679:404A",
+    "_g_404e": "1679:404E",
+    "_g_4052": "1679:4052",
+    "_g_4056": "1679:4056",
+    "_g_4058": "1679:4058",
+    "_g_405a": "1679:405A",
+    "_g_407a": "1679:407A",
+    "_g_409a": "1679:409A",
+    "_g_40a4": "1679:40A4",
+    "_g_40b6": "1679:40B6",
+    "_g_409c": "1679:409C",
+    "_g_40b8": "1679:40B8",
+    "_g_40bc": "1679:40BC",
+    "_g_40b2": "1679:40B2",
+    "_g_40c4": "1679:40C4",
+    "_g_0dd9": "1679:0DD9",
+    "_g_0de6": "1679:0DE6",
+    "_g_0df3": "1679:0DF3",
+    "_g_0e00": "1679:0E00",
+    "_g_0e0d": "1679:0E0D",
+    "_g_0e1a": "1679:0E1A",
+    "_g_0e27": "1679:0E27",
+    "_g_0e2a": "1679:0E2A",
+    "_g_0e35": "1679:0E35",
+    "_g_0e42": "1679:0E42",
+    "_f_0b33_002a": "0b33:002a",
+    "_f_0b33_0063": "0b33:0063",
+    "_f_0b33_0003": "0b33:0003",
+    "_f_0b33_0d8f": "0b33:0d8f",
+    "_f_11db_0006": "11db:0006",
+    "_f_11db_0052": "11db:0052",
+    "_f_11db_006d": "11db:006d",
+    "_f_11db_01fa": "11db:01fa",
+    "_f_11db_04fa": "11db:04fa",
+    "_f_0def_0007": "0def:0007",
+    "_f_0def_0055": "0def:0055",
+    "_f_0d9f_005b": "0d9f:005b",
+    "_f_0d9f_0018": "0d9f:0018",
+    "_f_0d9f_0317": "0d9f:0317",
+    "_f_0ed6_0000": "0ed6:0000",
+    "_f_0c41_000b": "0c41:000b",
+    "_f_0c41_002c": "0c41:002c",
+    "_f_0c41_0050": "0c41:0050",
+    "_f_0ed3_0000": "0ed3:0000",
+    "_f_03f2_0288": "03f2:0288",
+    "_f_03f2_02fe": "03f2:02fe",
+    "_f_0431_0077": "0431:0077",
+    "_f_0431_01c0": "0431:01c0",
+    "_f_0c10_000a": "0c10:000a",
+    "_f_0c10_0016": "0c10:0016",
+    "F_0ED6_0000": "0ED6:0000"
+  },
+  "segments": {
+    "_DATA": "1679:0DB6"
+  }
+}

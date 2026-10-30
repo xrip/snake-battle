@@ -1,0 +1,1388 @@
+{
+  "passed": true,
+  "input_sha256": {
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM": "13e4d437a733d178f64c6ccef3ecf3cdd309fbf789c0b70fa95b6c13bf8b13fd",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM": "2d836607f848d8a53705dc3a069d9a78740459d3750c75bfe97ad5c64d44d06e",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM": "5a10db06e54b3526a70e0581de16bcc1e8718fee47361dacee6850a98c966dc5",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDIRQ.ASM": "f3e394d594b50bb2c446801abaa85d96ddfc95961e781c2becb8ba75a556d641",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDWAIT.ASM": "47b98af359e5e74844c6a2228cf1765d7f077600ba13e6969bc81fca810fd2b5",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDMEM.ASM": "104caee71165ab74316f80830a2359e917a8970a967c37832734de3189418fe9",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/ADIO.ASM": "bfc202e2b9d872b4166d92476a589d94ef3615c92ddbc0887990240d6fb58b50",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDTAIL.ASM": "fe485d527e81b331a5e1ee7bf3b21ce83548685d60dff3c9399fed4844724a5f",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR101E.ASM": "466fbd1ac46f675cdd4cd5a12fad136df5128b572d720123d20099e67c4123b5",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1537.ASM": "6f59143492f00f9b14e3d623580638a2275270afdbdcbab698257f205696dcc0",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR183E.ASM": "ff68e4265da76ab6c0b9a0874bba59d5585ff76af0f44e7fac7c0b169b78c747",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1A4A.ASM": "ec5f65b4b96ff13d993dcc00aad888f6c51ab7232c6079389f57e8b65b181333",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1D49.ASM": "de9ce10eac182c972983aa8ba6ac41efe5bff58a365fd9ab5d960a03a769c141",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1DC6.ASM": "66eb06d4d35d137d42afdf93b515fd5120ec5339ca67e9bc9388ff47275d6f17",
+    "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1DDB.ASM": "39e08a97865d06f71c380feaef510bcbc0495eb4f3859a7a053d8c0b104ab272"
+  },
+  "pieces": [
+    {
+      "origin": 12,
+      "name": "_snd_000C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_000C"
+      ]
+    },
+    {
+      "origin": 30,
+      "name": "_snd_001E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_001E"
+      ]
+    },
+    {
+      "origin": 34,
+      "name": "_snd_0022",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0022"
+      ]
+    },
+    {
+      "origin": 38,
+      "name": "_snd_0026",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0026"
+      ]
+    },
+    {
+      "origin": 42,
+      "name": "_snd_002A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_002A"
+      ]
+    },
+    {
+      "origin": 57,
+      "name": "_snd_0039",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0039"
+      ]
+    },
+    {
+      "origin": 72,
+      "name": "_snd_0048",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0048"
+      ]
+    },
+    {
+      "origin": 87,
+      "name": "_snd_0057",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0057"
+      ]
+    },
+    {
+      "origin": 110,
+      "name": "SNDIRQ",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDIRQ.ASM",
+      "publics": [
+        "_snd_isr_count",
+        "_snd_old_int8",
+        "_snd_0074",
+        "_snd_00B4",
+        "_snd_00E7"
+      ]
+    },
+    {
+      "origin": 254,
+      "name": "_snd_00FE",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_00FE"
+      ]
+    },
+    {
+      "origin": 344,
+      "name": "_snd_0158",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0158"
+      ]
+    },
+    {
+      "origin": 423,
+      "name": "_snd_01A7",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_01A7"
+      ]
+    },
+    {
+      "origin": 459,
+      "name": "_snd_01CB",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_01CB"
+      ]
+    },
+    {
+      "origin": 469,
+      "name": "_snd_01D5",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_01D5"
+      ]
+    },
+    {
+      "origin": 476,
+      "name": "_snd_01DC",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_01DC"
+      ]
+    },
+    {
+      "origin": 535,
+      "name": "_snd_0217",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0217"
+      ]
+    },
+    {
+      "origin": 540,
+      "name": "_snd_021C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_021C"
+      ]
+    },
+    {
+      "origin": 617,
+      "name": "_snd_0269",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0269"
+      ]
+    },
+    {
+      "origin": 667,
+      "name": "_snd_029B",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_029B"
+      ]
+    },
+    {
+      "origin": 695,
+      "name": "_snd_02B7",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_02B7"
+      ]
+    },
+    {
+      "origin": 740,
+      "name": "_snd_02E4",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_02E4"
+      ]
+    },
+    {
+      "origin": 1030,
+      "name": "_snd_0406",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0406"
+      ]
+    },
+    {
+      "origin": 1174,
+      "name": "SNDWAIT",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDWAIT.ASM",
+      "publics": [
+        "_snd_0496"
+      ]
+    },
+    {
+      "origin": 1208,
+      "name": "_snd_04B8",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_04B8"
+      ]
+    },
+    {
+      "origin": 1228,
+      "name": "_snd_04CC",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_04CC"
+      ]
+    },
+    {
+      "origin": 1241,
+      "name": "_snd_04D9",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_04D9"
+      ]
+    },
+    {
+      "origin": 1268,
+      "name": "_snd_04F4",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_04F4"
+      ]
+    },
+    {
+      "origin": 1341,
+      "name": "SNDMEM",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDMEM.ASM",
+      "publics": [
+        "_snd_053D"
+      ]
+    },
+    {
+      "origin": 1374,
+      "name": "_snd_055E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_055E"
+      ]
+    },
+    {
+      "origin": 1396,
+      "name": "_snd_0574",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0574"
+      ]
+    },
+    {
+      "origin": 1446,
+      "name": "_snd_05A6",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_05A6"
+      ]
+    },
+    {
+      "origin": 1512,
+      "name": "_snd_05E8",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_05E8"
+      ]
+    },
+    {
+      "origin": 1603,
+      "name": "_snd_0643",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0643"
+      ]
+    },
+    {
+      "origin": 1643,
+      "name": "_snd_066B",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_066B"
+      ]
+    },
+    {
+      "origin": 1859,
+      "name": "_snd_0743",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0743"
+      ]
+    },
+    {
+      "origin": 1886,
+      "name": "_snd_075E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_075E"
+      ]
+    },
+    {
+      "origin": 1935,
+      "name": "_snd_078F",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_078F"
+      ]
+    },
+    {
+      "origin": 1962,
+      "name": "_snd_07AA",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_07AA"
+      ]
+    },
+    {
+      "origin": 2041,
+      "name": "_snd_07F9",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_07F9"
+      ]
+    },
+    {
+      "origin": 2068,
+      "name": "_snd_0814",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0814"
+      ]
+    },
+    {
+      "origin": 2135,
+      "name": "_snd_0857",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0857"
+      ]
+    },
+    {
+      "origin": 2548,
+      "name": "_snd_09F4",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_09F4"
+      ]
+    },
+    {
+      "origin": 2862,
+      "name": "_snd_0B2E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0B2E"
+      ]
+    },
+    {
+      "origin": 2926,
+      "name": "_snd_0B6E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0B6E"
+      ]
+    },
+    {
+      "origin": 3133,
+      "name": "_snd_0C3D",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0C3D"
+      ]
+    },
+    {
+      "origin": 3267,
+      "name": "_snd_0CC3",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0CC3"
+      ]
+    },
+    {
+      "origin": 3359,
+      "name": "_snd_0D1F",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0D1F"
+      ]
+    },
+    {
+      "origin": 3496,
+      "name": "_snd_0DA8",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_0DA8"
+      ]
+    },
+    {
+      "origin": 3513,
+      "name": "_snd_0DB9",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_0DB9"
+      ]
+    },
+    {
+      "origin": 3690,
+      "name": "_snd_0E6A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_0E6A"
+      ]
+    },
+    {
+      "origin": 3708,
+      "name": "_snd_0E7C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_0E7C"
+      ]
+    },
+    {
+      "origin": 4030,
+      "name": "_snd_0FBE",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_0FBE"
+      ]
+    },
+    {
+      "origin": 4126,
+      "name": "MR101E",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR101E.ASM",
+      "publics": [
+        "_snd_101E"
+      ]
+    },
+    {
+      "origin": 4161,
+      "name": "_snd_1041",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1041"
+      ]
+    },
+    {
+      "origin": 4230,
+      "name": "_snd_1086",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1086"
+      ]
+    },
+    {
+      "origin": 4252,
+      "name": "_snd_109C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_109C"
+      ]
+    },
+    {
+      "origin": 4327,
+      "name": "_snd_10E7",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_10E7"
+      ]
+    },
+    {
+      "origin": 4376,
+      "name": "_snd_1118",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1118"
+      ]
+    },
+    {
+      "origin": 4429,
+      "name": "_snd_114D",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_114D"
+      ]
+    },
+    {
+      "origin": 4482,
+      "name": "_snd_1182",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1182"
+      ]
+    },
+    {
+      "origin": 4535,
+      "name": "_snd_11B7",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_11B7"
+      ]
+    },
+    {
+      "origin": 4592,
+      "name": "_snd_11F0",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_11F0"
+      ]
+    },
+    {
+      "origin": 4707,
+      "name": "_snd_1263",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1263"
+      ]
+    },
+    {
+      "origin": 4824,
+      "name": "_snd_12D8",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_12D8"
+      ]
+    },
+    {
+      "origin": 5431,
+      "name": "MR1537",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1537.ASM",
+      "publics": [
+        "_snd_1537"
+      ]
+    },
+    {
+      "origin": 5599,
+      "name": "_snd_15DF",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_15DF"
+      ]
+    },
+    {
+      "origin": 5616,
+      "name": "_snd_15F0",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_15F0"
+      ]
+    },
+    {
+      "origin": 5644,
+      "name": "_snd_160C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_160C"
+      ]
+    },
+    {
+      "origin": 5674,
+      "name": "_snd_162A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_162A"
+      ]
+    },
+    {
+      "origin": 5758,
+      "name": "_snd_167E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_167E"
+      ]
+    },
+    {
+      "origin": 5764,
+      "name": "_snd_1684",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1684"
+      ]
+    },
+    {
+      "origin": 5797,
+      "name": "_snd_16A5",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_16A5"
+      ]
+    },
+    {
+      "origin": 5917,
+      "name": "_snd_171D",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_171D"
+      ]
+    },
+    {
+      "origin": 6075,
+      "name": "_snd_17BB",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_17BB"
+      ]
+    },
+    {
+      "origin": 6140,
+      "name": "_snd_17FC",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_17FC"
+      ]
+    },
+    {
+      "origin": 6206,
+      "name": "MR183E",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR183E.ASM",
+      "publics": [
+        "_snd_183E"
+      ]
+    },
+    {
+      "origin": 6730,
+      "name": "MR1A4A",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1A4A.ASM",
+      "publics": [
+        "_snd_1A4A"
+      ]
+    },
+    {
+      "origin": 7497,
+      "name": "MR1D49",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1D49.ASM",
+      "publics": [
+        "_snd_1D49"
+      ]
+    },
+    {
+      "origin": 7533,
+      "name": "_snd_1D6D",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/MIDISND.ASM",
+      "publics": [
+        "_snd_1D6D"
+      ]
+    },
+    {
+      "origin": 7622,
+      "name": "MR1DC6",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1DC6.ASM",
+      "publics": [
+        "_snd_1DC6"
+      ]
+    },
+    {
+      "origin": 7643,
+      "name": "MR1DDB",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/readers/MR1DDB.ASM",
+      "publics": [
+        "_snd_1DDB"
+      ]
+    },
+    {
+      "origin": 7706,
+      "name": "_snd_1E1A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_1E1A"
+      ]
+    },
+    {
+      "origin": 7811,
+      "name": "_snd_1E83",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_1E83"
+      ]
+    },
+    {
+      "origin": 8098,
+      "name": "_snd_1FA2",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_1FA2"
+      ]
+    },
+    {
+      "origin": 8140,
+      "name": "_snd_1FCC",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_1FCC"
+      ]
+    },
+    {
+      "origin": 8164,
+      "name": "_snd_1FE4",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_1FE4"
+      ]
+    },
+    {
+      "origin": 8362,
+      "name": "_snd_20AA",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_20AA"
+      ]
+    },
+    {
+      "origin": 8423,
+      "name": "_snd_20E7",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_20E7"
+      ]
+    },
+    {
+      "origin": 8450,
+      "name": "_snd_2102",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2102"
+      ]
+    },
+    {
+      "origin": 8489,
+      "name": "_snd_2129",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2129"
+      ]
+    },
+    {
+      "origin": 8556,
+      "name": "_snd_216C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_216C"
+      ]
+    },
+    {
+      "origin": 8610,
+      "name": "_snd_21A2",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_21A2"
+      ]
+    },
+    {
+      "origin": 8687,
+      "name": "_snd_21EF",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_21EF"
+      ]
+    },
+    {
+      "origin": 8713,
+      "name": "_snd_2209",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2209"
+      ]
+    },
+    {
+      "origin": 8751,
+      "name": "_snd_222F",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_222F"
+      ]
+    },
+    {
+      "origin": 8823,
+      "name": "_snd_2277",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2277"
+      ]
+    },
+    {
+      "origin": 8868,
+      "name": "_snd_22A4",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_22A4"
+      ]
+    },
+    {
+      "origin": 8909,
+      "name": "_snd_22CD",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_22CD"
+      ]
+    },
+    {
+      "origin": 8945,
+      "name": "_snd_22F1",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_22F1"
+      ]
+    },
+    {
+      "origin": 9050,
+      "name": "_snd_235A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_235A"
+      ]
+    },
+    {
+      "origin": 9169,
+      "name": "_snd_23D1",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_23D1"
+      ]
+    },
+    {
+      "origin": 9170,
+      "name": "_snd_23D2",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_23D2"
+      ]
+    },
+    {
+      "origin": 9342,
+      "name": "_snd_247E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_247E"
+      ]
+    },
+    {
+      "origin": 9481,
+      "name": "_snd_2509",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2509"
+      ]
+    },
+    {
+      "origin": 9532,
+      "name": "_snd_253C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_253C"
+      ]
+    },
+    {
+      "origin": 9575,
+      "name": "_snd_2567",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2567"
+      ]
+    },
+    {
+      "origin": 9620,
+      "name": "_snd_2594",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2594"
+      ]
+    },
+    {
+      "origin": 9703,
+      "name": "_snd_25E7",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_25E7"
+      ]
+    },
+    {
+      "origin": 9754,
+      "name": "_snd_261A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_261A"
+      ]
+    },
+    {
+      "origin": 9829,
+      "name": "_snd_2665",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2665"
+      ]
+    },
+    {
+      "origin": 9849,
+      "name": "_snd_2679",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2679"
+      ]
+    },
+    {
+      "origin": 9883,
+      "name": "_snd_269B",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_269B"
+      ]
+    },
+    {
+      "origin": 9923,
+      "name": "_snd_26C3",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_26C3"
+      ]
+    },
+    {
+      "origin": 9993,
+      "name": "_snd_2709",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2709"
+      ]
+    },
+    {
+      "origin": 10064,
+      "name": "_snd_2750",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2750"
+      ]
+    },
+    {
+      "origin": 10098,
+      "name": "_snd_2772",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2772"
+      ]
+    },
+    {
+      "origin": 10125,
+      "name": "_snd_278D",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_278D"
+      ]
+    },
+    {
+      "origin": 10429,
+      "name": "_snd_28BD",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_28BD"
+      ]
+    },
+    {
+      "origin": 10459,
+      "name": "_snd_28DB",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_28DB"
+      ]
+    },
+    {
+      "origin": 10491,
+      "name": "_snd_28FB",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_28FB"
+      ]
+    },
+    {
+      "origin": 10657,
+      "name": "_snd_29A1",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_29A1"
+      ]
+    },
+    {
+      "origin": 10846,
+      "name": "_snd_2A5E",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2A5E"
+      ]
+    },
+    {
+      "origin": 10887,
+      "name": "_snd_2A87",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2A87"
+      ]
+    },
+    {
+      "origin": 10969,
+      "name": "_snd_2AD9",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2AD9"
+      ]
+    },
+    {
+      "origin": 11011,
+      "name": "_snd_2B03",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2B03"
+      ]
+    },
+    {
+      "origin": 11071,
+      "name": "_snd_2B3F",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2B3F"
+      ]
+    },
+    {
+      "origin": 11116,
+      "name": "_snd_2B6C",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2B6C"
+      ]
+    },
+    {
+      "origin": 11204,
+      "name": "_snd_2BC4",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2BC4"
+      ]
+    },
+    {
+      "origin": 11254,
+      "name": "_snd_2BF6",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2BF6"
+      ]
+    },
+    {
+      "origin": 11353,
+      "name": "_snd_2C59",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2C59"
+      ]
+    },
+    {
+      "origin": 11571,
+      "name": "_snd_2D33",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2D33"
+      ]
+    },
+    {
+      "origin": 11731,
+      "name": "_snd_2DD3",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2DD3"
+      ]
+    },
+    {
+      "origin": 11898,
+      "name": "_snd_2E7A",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/ADLIB.ASM",
+      "publics": [
+        "_snd_2E7A"
+      ]
+    },
+    {
+      "origin": 11931,
+      "name": "ADIO",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/ADIO.ASM",
+      "publics": [
+        "_snd_2E9B",
+        "_snd_2F48",
+        "_snd_2F6F",
+        "_snd_2F94",
+        "_snd_2FA0",
+        "_snd_2FB1",
+        "_snd_304C"
+      ]
+    },
+    {
+      "origin": 12484,
+      "name": "SNDTAIL",
+      "kind": "register-ABI-ASM",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/SNDTAIL.ASM",
+      "publics": [
+        "_snd_30C4",
+        "_snd_312B",
+        "_snd_3164",
+        "_snd_316E",
+        "_snd_3179",
+        "_snd_31AA",
+        "_snd_320A",
+        "__aNulmul",
+        "__aFuldiv"
+      ]
+    },
+    {
+      "origin": 12931,
+      "name": "_snd_3283",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_3283"
+      ]
+    },
+    {
+      "origin": 12975,
+      "name": "_snd_32AF",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_32AF"
+      ]
+    },
+    {
+      "origin": 13007,
+      "name": "_snd_32CF",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_32CF"
+      ]
+    },
+    {
+      "origin": 13035,
+      "name": "_snd_32EB",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_32EB"
+      ]
+    },
+    {
+      "origin": 13059,
+      "name": "_snd_3303",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_3303"
+      ]
+    },
+    {
+      "origin": 13103,
+      "name": "_snd_332F",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_332F"
+      ]
+    },
+    {
+      "origin": 13154,
+      "name": "_snd_3362",
+      "kind": "compiler-C",
+      "source": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/sound_input/SOUND.ASM",
+      "publics": [
+        "_snd_3362"
+      ]
+    }
+  ],
+  "unresolved_assembler_externals": {
+    "_snd_tick_period": "DWORD",
+    "_snd_parse_nesting": "BYTE",
+    "_snd_parse_finished": "BYTE",
+    "_snd_parse_cursor": "DWORD",
+    "_snd_players": "BYTE",
+    "_snd_sequences": "BYTE",
+    "_snd_hooks": "BYTE",
+    "_snd_held_notes": "BYTE",
+    "_snd_held_active": "WORD",
+    "_snd_held_free": "WORD",
+    "_snd_held_cursor": "WORD",
+    "_snd_fade_tick_scale": "WORD",
+    "_snd_fade_state": "BYTE",
+    "_snd_fades": "BYTE",
+    "_snd_queue_read": "WORD",
+    "_snd_queue_write": "WORD",
+    "_snd_queue": "BYTE",
+    "_snd_building_queue": "BYTE",
+    "_snd_queued_marker": "BYTE",
+    "_snd_queued_sound": "WORD",
+    "_snd_trigger_count": "WORD",
+    "_snd_scanning": "BYTE",
+    "_snd_parts": "BYTE",
+    "_snd_part_instruments": "BYTE",
+    "_snd_volume_products": "BYTE",
+    "_snd_basic_commands": "BYTE",
+    "_snd_extended_commands": "BYTE",
+    "_snd_command_kinds": "BYTE",
+    "_snd_midi_tags": "QWORD",
+    "_snd_paused": "WORD",
+    "_snd_disabled": "BYTE",
+    "_snd_master_volume": "WORD",
+    "_snd_resources": "DWORD",
+    "_snd_midi_lengths": "QWORD",
+    "_snd_channel_masks": "BYTE",
+    "_snd_event_channel": "BYTE",
+    "_snd_event_note": "BYTE",
+    "_snd_scan_note_count": "BYTE",
+    "_snd_note_channels": "BYTE",
+    "_snd_scan_end_tick": "BYTE",
+    "_snd_max_values": "BYTE",
+    "_snd_step_counts": "BYTE",
+    "_snd_voices": "BYTE",
+    "_snd_voice_tick": "BYTE",
+    "_snd_voice_counter": "WORD",
+    "_snd_random_seed": "BYTE",
+    "_snd_default_instrument": "BYTE",
+    "_snd_global_instruments": "BYTE",
+    "_snd_instrument_fields": "BYTE",
+    "_snd_parameter_map": "BYTE",
+    "_snd_timer_accumulator": "WORD",
+    "_snd_modulator_slots": "BYTE",
+    "_snd_carrier_slots": "BYTE",
+    "_snd_channel_frequency": "WORD",
+    "_snd_register_fields": "BYTE",
+    "_snd_octaves": "BYTE",
+    "_snd_semitones": "BYTE",
+    "_snd_frequencies": "BYTE",
+    "_snd_opl_index_delay": "WORD",
+    "_snd_opl_data_delay": "WORD",
+    "_snd_opl_cache": "BYTE",
+    "_snd_event_velocity": "BYTE",
+    "_snd_sysex_buffer": "BYTE"
+  },
+  "compiler_instructions_modified": false,
+  "assembler_may_expand_conditional_branches": true,
+  "reads_reference_executable": false,
+  "byte_exact_claim": false,
+  "assembly_sha256": "9cf58376bcf14755605a102823d22c6ba6de9cfaba47d8a9cc61f5fb134c9cfc"
+}

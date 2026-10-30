@@ -1,0 +1,70 @@
+{
+  "module": "music.c",
+  "segment_name": "_BSS",
+  "object_size": 8,
+  "expected_size": 8,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 6592,
+    "image_offset": 98640,
+    "address": "1679:19C0"
+  },
+  "public_bindings": [
+    {
+      "name": "_sb_music_state",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6592,
+        "image_offset": 98640,
+        "address": "1679:19C0"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6592,
+        "image_offset": 98640,
+        "address": "1679:19C0"
+      },
+      "equal": true
+    },
+    {
+      "name": "_music_hardware",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6592,
+        "image_offset": 98640,
+        "address": "1679:19C0"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6592,
+        "image_offset": 98640,
+        "address": "1679:19C0"
+      },
+      "equal": true
+    },
+    {
+      "name": "_music_data",
+      "object_offset": 4,
+      "actual": {
+        "segment": 5753,
+        "offset": 6596,
+        "image_offset": 98644,
+        "address": "1679:19C4"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6596,
+        "image_offset": 98644,
+        "address": "1679:19C4"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

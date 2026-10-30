@@ -1,0 +1,1206 @@
+SNAKE.EXE SHA256 c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821
+MZ header = 0x1000; file offset = 0x1000 + segment*16 + offset.
+Segments here are relative to the MZ load image (not runtime PSP).
+Some entries are evidence ranges inside a larger function, not functions.
+
+E01 snk_encode  0B2B:000F  file 0xC2BF  length 55
+0B2B:000F  file 00C2BF  55                        push    bp
+0B2B:0010  file 00C2C0  8b ec                     mov     bp, sp
+0B2B:0012  file 00C2C2  83 ec 04                  sub     sp, 4
+0B2B:0015  file 00C2C5  8a 46 0c                  mov     al, byte ptr [bp + 0xc]
+0B2B:0018  file 00C2C8  88 46 fd                  mov     byte ptr [bp - 3], al
+0B2B:001B  file 00C2CB  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0B2B:0020  file 00C2D0  eb 15                     jmp     0x37
+0B2B:0022  file 00C2D2  c4 5e 06                  les     bx, ptr [bp + 6]
+0B2B:0025  file 00C2D5  8a 46 fd                  mov     al, byte ptr [bp - 3]
+0B2B:0028  file 00C2D8  26 30 07                  xor     byte ptr es:[bx], al
+0B2B:002B  file 00C2DB  26 8a 07                  mov     al, byte ptr es:[bx]
+0B2B:002E  file 00C2DE  88 46 fd                  mov     byte ptr [bp - 3], al
+0B2B:0031  file 00C2E1  ff 46 06                  inc     word ptr [bp + 6]
+0B2B:0034  file 00C2E4  ff 46 fe                  inc     word ptr [bp - 2]
+0B2B:0037  file 00C2E7  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0B2B:003A  file 00C2EA  3b 46 0a                  cmp     ax, word ptr [bp + 0xa]
+0B2B:003D  file 00C2ED  7c e3                     jl      0x22
+0B2B:003F  file 00C2EF  8a 46 fd                  mov     al, byte ptr [bp - 3]
+0B2B:0042  file 00C2F2  8b e5                     mov     sp, bp
+0B2B:0044  file 00C2F4  5d                        pop     bp
+0B2B:0045  file 00C2F5  cb                        retf    
+
+E02 snk_decode  0B2B:0046  file 0xC2F6  length 61
+0B2B:0046  file 00C2F6  55                        push    bp
+0B2B:0047  file 00C2F7  8b ec                     mov     bp, sp
+0B2B:0049  file 00C2F9  83 ec 04                  sub     sp, 4
+0B2B:004C  file 00C2FC  8a 46 0c                  mov     al, byte ptr [bp + 0xc]
+0B2B:004F  file 00C2FF  88 46 fd                  mov     byte ptr [bp - 3], al
+0B2B:0052  file 00C302  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0B2B:0057  file 00C307  eb 1b                     jmp     0x74
+0B2B:0059  file 00C309  8a 46 fd                  mov     al, byte ptr [bp - 3]
+0B2B:005C  file 00C30C  88 46 fc                  mov     byte ptr [bp - 4], al
+0B2B:005F  file 00C30F  c4 5e 06                  les     bx, ptr [bp + 6]
+0B2B:0062  file 00C312  26 8a 07                  mov     al, byte ptr es:[bx]
+0B2B:0065  file 00C315  88 46 fd                  mov     byte ptr [bp - 3], al
+0B2B:0068  file 00C318  8a 46 fc                  mov     al, byte ptr [bp - 4]
+0B2B:006B  file 00C31B  26 30 07                  xor     byte ptr es:[bx], al
+0B2B:006E  file 00C31E  ff 46 06                  inc     word ptr [bp + 6]
+0B2B:0071  file 00C321  ff 46 fe                  inc     word ptr [bp - 2]
+0B2B:0074  file 00C324  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0B2B:0077  file 00C327  3b 46 0a                  cmp     ax, word ptr [bp + 0xa]
+0B2B:007A  file 00C32A  7c dd                     jl      0x59
+0B2B:007C  file 00C32C  8a 46 fd                  mov     al, byte ptr [bp - 3]
+0B2B:007F  file 00C32F  8b e5                     mov     sp, bp
+0B2B:0081  file 00C331  5d                        pop     bp
+0B2B:0082  file 00C332  cb                        retf    
+
+E03 password_complement  044D:022F  file 0x56FF  length 30
+044D:022F  file 0056FF  55                        push    bp
+044D:0230  file 005700  8b ec                     mov     bp, sp
+044D:0232  file 005702  eb 0e                     jmp     0x242
+044D:0234  file 005704  c4 5e 06                  les     bx, ptr [bp + 6]
+044D:0237  file 005707  b0 ff                     mov     al, 0xff
+044D:0239  file 005709  26 2a 07                  sub     al, byte ptr es:[bx]
+044D:023C  file 00570C  26 88 07                  mov     byte ptr es:[bx], al
+044D:023F  file 00570F  ff 46 06                  inc     word ptr [bp + 6]
+044D:0242  file 005712  c4 5e 06                  les     bx, ptr [bp + 6]
+044D:0245  file 005715  26 80 3f 00               cmp     byte ptr es:[bx], 0
+044D:0249  file 005719  75 e9                     jne     0x234
+044D:024B  file 00571B  5d                        pop     bp
+044D:024C  file 00571C  cb                        retf    
+
+E04 snk_loader  0B33:0A4C  file 0xCD7C  length 543
+0B33:0A4C  file 00CD7C  55                        push    bp
+0B33:0A4D  file 00CD7D  8b ec                     mov     bp, sp
+0B33:0A4F  file 00CD7F  81 ec 88 00               sub     sp, 0x88
+0B33:0A53  file 00CD83  ff 76 08                  push    word ptr [bp + 8]
+0B33:0A56  file 00CD86  ff 76 06                  push    word ptr [bp + 6]
+0B33:0A59  file 00CD89  16                        push    ss
+0B33:0A5A  file 00CD8A  8d 46 e2                  lea     ax, [bp - 0x1e]
+0B33:0A5D  file 00CD8D  50                        push    ax
+0B33:0A5E  file 00CD8E  9a 3f 35 00 00            lcall   0, 0x353f
+0B33:0A63  file 00CD93  83 c4 08                  add     sp, 8
+0B33:0A66  file 00CD96  1e                        push    ds
+0B33:0A67  file 00CD97  b8 25 0d                  mov     ax, 0xd25
+0B33:0A6A  file 00CD9A  50                        push    ax
+0B33:0A6B  file 00CD9B  16                        push    ss
+0B33:0A6C  file 00CD9C  8d 46 e2                  lea     ax, [bp - 0x1e]
+0B33:0A6F  file 00CD9F  50                        push    ax
+0B33:0A70  file 00CDA0  9a d0 34 00 00            lcall   0, 0x34d0
+0B33:0A75  file 00CDA5  83 c4 08                  add     sp, 8
+0B33:0A78  file 00CDA8  1e                        push    ds
+0B33:0A79  file 00CDA9  b8 2c 0d                  mov     ax, 0xd2c
+0B33:0A7C  file 00CDAC  50                        push    ax
+0B33:0A7D  file 00CDAD  16                        push    ss
+0B33:0A7E  file 00CDAE  8d 46 e2                  lea     ax, [bp - 0x1e]
+0B33:0A81  file 00CDB1  50                        push    ax
+0B33:0A82  file 00CDB2  9a 32 25 00 00            lcall   0, 0x2532
+0B33:0A87  file 00CDB7  83 c4 08                  add     sp, 8
+0B33:0A8A  file 00CDBA  89 56 fe                  mov     word ptr [bp - 2], dx
+0B33:0A8D  file 00CDBD  89 46 fc                  mov     word ptr [bp - 4], ax
+0B33:0A90  file 00CDC0  0b 46 fe                  or      ax, word ptr [bp - 2]
+0B33:0A93  file 00CDC3  75 03                     jne     0xa98
+0B33:0A95  file 00CDC5  e9 98 01                  jmp     0xc30
+0B33:0A98  file 00CDC8  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0A9B  file 00CDCB  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0A9E  file 00CDCE  b8 01 00                  mov     ax, 1
+0B33:0AA1  file 00CDD1  50                        push    ax
+0B33:0AA2  file 00CDD2  50                        push    ax
+0B33:0AA3  file 00CDD3  16                        push    ss
+0B33:0AA4  file 00CDD4  8d 46 f3                  lea     ax, [bp - 0xd]
+0B33:0AA7  file 00CDD7  50                        push    ax
+0B33:0AA8  file 00CDD8  9a 5b 26 00 00            lcall   0, 0x265b
+0B33:0AAD  file 00CDDD  83 c4 0c                  add     sp, 0xc
+0B33:0AB0  file 00CDE0  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0AB3  file 00CDE3  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0AB7  file 00CDE7  75 1f                     jne     0xad8
+0B33:0AB9  file 00CDE9  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0ABC  file 00CDEC  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0ABF  file 00CDEF  b8 01 00                  mov     ax, 1
+0B33:0AC2  file 00CDF2  50                        push    ax
+0B33:0AC3  file 00CDF3  b8 69 00                  mov     ax, 0x69
+0B33:0AC6  file 00CDF6  50                        push    ax
+0B33:0AC7  file 00CDF7  16                        push    ss
+0B33:0AC8  file 00CDF8  8d 86 78 ff               lea     ax, [bp - 0x88]
+0B33:0ACC  file 00CDFC  50                        push    ax
+0B33:0ACD  file 00CDFD  9a 5b 26 00 00            lcall   0, 0x265b
+0B33:0AD2  file 00CE02  83 c4 0c                  add     sp, 0xc
+0B33:0AD5  file 00CE05  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0AD8  file 00CE08  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0ADC  file 00CE0C  74 03                     je      0xae1
+0B33:0ADE  file 00CE0E  e9 4f 01                  jmp     0xc30
+0B33:0AE1  file 00CE11  8a 46 f3                  mov     al, byte ptr [bp - 0xd]
+0B33:0AE4  file 00CE14  50                        push    ax
+0B33:0AE5  file 00CE15  b8 69 00                  mov     ax, 0x69
+0B33:0AE8  file 00CE18  50                        push    ax
+0B33:0AE9  file 00CE19  16                        push    ss
+0B33:0AEA  file 00CE1A  8d 86 78 ff               lea     ax, [bp - 0x88]
+0B33:0AEE  file 00CE1E  50                        push    ax
+0B33:0AEF  file 00CE1F  9a 46 00 2b 0b            lcall   0xb2b, 0x46
+0B33:0AF4  file 00CE24  83 c4 08                  add     sp, 8
+0B33:0AF7  file 00CE27  83 be 78 ff 01            cmp     word ptr [bp - 0x88], 1
+0B33:0AFC  file 00CE2C  74 03                     je      0xb01
+0B33:0AFE  file 00CE2E  e9 2b 01                  jmp     0xc2c
+0B33:0B01  file 00CE31  83 be 7c ff 00            cmp     word ptr [bp - 0x84], 0
+0B33:0B06  file 00CE36  7e 07                     jle     0xb0f
+0B33:0B08  file 00CE38  83 be 7c ff 09            cmp     word ptr [bp - 0x84], 9
+0B33:0B0D  file 00CE3D  7e 06                     jle     0xb15
+0B33:0B0F  file 00CE3F  c7 86 7c ff 01 00         mov     word ptr [bp - 0x84], 1
+0B33:0B15  file 00CE45  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0B18  file 00CE48  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0B1B  file 00CE4B  9a 0a 33 00 00            lcall   0, 0x330a
+0B33:0B20  file 00CE50  59                        pop     cx
+0B33:0B21  file 00CE51  59                        pop     cx
+0B33:0B22  file 00CE52  b8 09 00                  mov     ax, 9
+0B33:0B25  file 00CE55  2b 86 7c ff               sub     ax, word ptr [bp - 0x84]
+0B33:0B29  file 00CE59  ba 98 00                  mov     dx, 0x98
+0B33:0B2C  file 00CE5C  f7 ea                     imul    dx
+0B33:0B2E  file 00CE5E  ba c1 05                  mov     dx, 0x5c1
+0B33:0B31  file 00CE61  2b d0                     sub     dx, ax
+0B33:0B33  file 00CE63  89 56 f8                  mov     word ptr [bp - 8], dx
+0B33:0B36  file 00CE66  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0B39  file 00CE69  26 8b 07                  mov     ax, word ptr es:[bx]
+0B33:0B3C  file 00CE6C  26 0b 47 02               or      ax, word ptr es:[bx + 2]
+0B33:0B40  file 00CE70  75 17                     jne     0xb59
+0B33:0B42  file 00CE72  52                        push    dx
+0B33:0B43  file 00CE73  0e                        push    cs
+0B33:0B44  file 00CE74  e8 e3 f4                  call    0x2a
+0B33:0B47  file 00CE77  59                        pop     cx
+0B33:0B48  file 00CE78  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0B4B  file 00CE7B  26 89 57 02               mov     word ptr es:[bx + 2], dx
+0B33:0B4F  file 00CE7F  26 89 07                  mov     word ptr es:[bx], ax
+0B33:0B52  file 00CE82  c7 46 f4 01 00            mov     word ptr [bp - 0xc], 1
+0B33:0B57  file 00CE87  eb 05                     jmp     0xb5e
+0B33:0B59  file 00CE89  c7 46 f4 00 00            mov     word ptr [bp - 0xc], 0
+0B33:0B5E  file 00CE8E  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0B61  file 00CE91  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0B64  file 00CE94  b8 01 00                  mov     ax, 1
+0B33:0B67  file 00CE97  50                        push    ax
+0B33:0B68  file 00CE98  50                        push    ax
+0B33:0B69  file 00CE99  16                        push    ss
+0B33:0B6A  file 00CE9A  8d 46 f3                  lea     ax, [bp - 0xd]
+0B33:0B6D  file 00CE9D  50                        push    ax
+0B33:0B6E  file 00CE9E  9a 5b 26 00 00            lcall   0, 0x265b
+0B33:0B73  file 00CEA3  83 c4 0c                  add     sp, 0xc
+0B33:0B76  file 00CEA6  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0B79  file 00CEA9  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0B7D  file 00CEAD  75 22                     jne     0xba1
+0B33:0B7F  file 00CEAF  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0B82  file 00CEB2  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0B85  file 00CEB5  b8 01 00                  mov     ax, 1
+0B33:0B88  file 00CEB8  50                        push    ax
+0B33:0B89  file 00CEB9  ff 76 f8                  push    word ptr [bp - 8]
+0B33:0B8C  file 00CEBC  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0B8F  file 00CEBF  26 ff 77 02               push    word ptr es:[bx + 2]
+0B33:0B93  file 00CEC3  26 ff 37                  push    word ptr es:[bx]
+0B33:0B96  file 00CEC6  9a 5b 26 00 00            lcall   0, 0x265b
+0B33:0B9B  file 00CECB  83 c4 0c                  add     sp, 0xc
+0B33:0B9E  file 00CECE  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0BA1  file 00CED1  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0BA5  file 00CED5  75 4a                     jne     0xbf1
+0B33:0BA7  file 00CED7  8a 46 f3                  mov     al, byte ptr [bp - 0xd]
+0B33:0BAA  file 00CEDA  50                        push    ax
+0B33:0BAB  file 00CEDB  ff 76 f8                  push    word ptr [bp - 8]
+0B33:0BAE  file 00CEDE  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0BB1  file 00CEE1  26 ff 77 02               push    word ptr es:[bx + 2]
+0B33:0BB5  file 00CEE5  26 ff 37                  push    word ptr es:[bx]
+0B33:0BB8  file 00CEE8  9a 46 00 2b 0b            lcall   0xb2b, 0x46
+0B33:0BBD  file 00CEED  83 c4 08                  add     sp, 8
+0B33:0BC0  file 00CEF0  88 46 f1                  mov     byte ptr [bp - 0xf], al
+0B33:0BC3  file 00CEF3  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0BC6  file 00CEF6  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0BC9  file 00CEF9  b8 01 00                  mov     ax, 1
+0B33:0BCC  file 00CEFC  50                        push    ax
+0B33:0BCD  file 00CEFD  50                        push    ax
+0B33:0BCE  file 00CEFE  16                        push    ss
+0B33:0BCF  file 00CEFF  8d 46 f2                  lea     ax, [bp - 0xe]
+0B33:0BD2  file 00CF02  50                        push    ax
+0B33:0BD3  file 00CF03  9a 5b 26 00 00            lcall   0, 0x265b
+0B33:0BD8  file 00CF08  83 c4 0c                  add     sp, 0xc
+0B33:0BDB  file 00CF0B  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0BDE  file 00CF0E  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0BE2  file 00CF12  75 08                     jne     0xbec
+0B33:0BE4  file 00CF14  8a 46 f1                  mov     al, byte ptr [bp - 0xf]
+0B33:0BE7  file 00CF17  3a 46 f2                  cmp     al, byte ptr [bp - 0xe]
+0B33:0BEA  file 00CF1A  74 05                     je      0xbf1
+0B33:0BEC  file 00CF1C  c7 46 f6 00 00            mov     word ptr [bp - 0xa], 0
+0B33:0BF1  file 00CF21  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0BF5  file 00CF25  75 07                     jne     0xbfe
+0B33:0BF7  file 00CF27  c7 46 fa 01 00            mov     word ptr [bp - 6], 1
+0B33:0BFC  file 00CF2C  eb 37                     jmp     0xc35
+0B33:0BFE  file 00CF2E  c7 46 fa 00 00            mov     word ptr [bp - 6], 0
+0B33:0C03  file 00CF33  83 7e f4 00               cmp     word ptr [bp - 0xc], 0
+0B33:0C07  file 00CF37  74 2c                     je      0xc35
+0B33:0C09  file 00CF39  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0C0C  file 00CF3C  26 ff 77 02               push    word ptr es:[bx + 2]
+0B33:0C10  file 00CF40  26 ff 37                  push    word ptr es:[bx]
+0B33:0C13  file 00CF43  9a c9 17 00 00            lcall   0, 0x17c9
+0B33:0C18  file 00CF48  59                        pop     cx
+0B33:0C19  file 00CF49  59                        pop     cx
+0B33:0C1A  file 00CF4A  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0C1D  file 00CF4D  26 c7 47 02 00 00         mov     word ptr es:[bx + 2], 0
+0B33:0C23  file 00CF53  26 c7 07 00 00            mov     word ptr es:[bx], 0
+0B33:0C28  file 00CF58  eb 0b                     jmp     0xc35
+0B33:0C2A  file 00CF5A  eb 09                     jmp     0xc35
+0B33:0C2C  file 00CF5C  eb 02                     jmp     0xc30
+0B33:0C2E  file 00CF5E  eb 05                     jmp     0xc35
+0B33:0C30  file 00CF60  c7 46 fa 00 00            mov     word ptr [bp - 6], 0
+0B33:0C35  file 00CF65  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0C38  file 00CF68  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0C3B  file 00CF6B  9a 98 20 00 00            lcall   0, 0x2098
+0B33:0C40  file 00CF70  59                        pop     cx
+0B33:0C41  file 00CF71  59                        pop     cx
+0B33:0C42  file 00CF72  83 7e fa 00               cmp     word ptr [bp - 6], 0
+0B33:0C46  file 00CF76  74 1c                     je      0xc64
+0B33:0C48  file 00CF78  ff 76 08                  push    word ptr [bp + 8]
+0B33:0C4B  file 00CF7B  ff 76 06                  push    word ptr [bp + 6]
+0B33:0C4E  file 00CF7E  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0C51  file 00CF81  26 8b 07                  mov     ax, word ptr es:[bx]
+0B33:0C54  file 00CF84  05 15 00                  add     ax, 0x15
+0B33:0C57  file 00CF87  26 ff 77 02               push    word ptr es:[bx + 2]
+0B33:0C5B  file 00CF8B  50                        push    ax
+0B33:0C5C  file 00CF8C  9a 3f 35 00 00            lcall   0, 0x353f
+0B33:0C61  file 00CF91  83 c4 08                  add     sp, 8
+0B33:0C64  file 00CF94  8b 46 fa                  mov     ax, word ptr [bp - 6]
+0B33:0C67  file 00CF97  8b e5                     mov     sp, bp
+0B33:0C69  file 00CF99  5d                        pop     bp
+0B33:0C6A  file 00CF9A  cb                        retf    
+
+E05 snk_saver  0B33:0C6B  file 0xCF9B  length 292
+0B33:0C6B  file 00CF9B  55                        push    bp
+0B33:0C6C  file 00CF9C  8b ec                     mov     bp, sp
+0B33:0C6E  file 00CF9E  83 ec 1c                  sub     sp, 0x1c
+0B33:0C71  file 00CFA1  ff 76 08                  push    word ptr [bp + 8]
+0B33:0C74  file 00CFA4  ff 76 06                  push    word ptr [bp + 6]
+0B33:0C77  file 00CFA7  16                        push    ss
+0B33:0C78  file 00CFA8  8d 46 e4                  lea     ax, [bp - 0x1c]
+0B33:0C7B  file 00CFAB  50                        push    ax
+0B33:0C7C  file 00CFAC  9a 3f 35 00 00            lcall   0, 0x353f
+0B33:0C81  file 00CFB1  83 c4 08                  add     sp, 8
+0B33:0C84  file 00CFB4  1e                        push    ds
+0B33:0C85  file 00CFB5  b8 25 0d                  mov     ax, 0xd25
+0B33:0C88  file 00CFB8  50                        push    ax
+0B33:0C89  file 00CFB9  16                        push    ss
+0B33:0C8A  file 00CFBA  8d 46 e4                  lea     ax, [bp - 0x1c]
+0B33:0C8D  file 00CFBD  50                        push    ax
+0B33:0C8E  file 00CFBE  9a d0 34 00 00            lcall   0, 0x34d0
+0B33:0C93  file 00CFC3  83 c4 08                  add     sp, 8
+0B33:0C96  file 00CFC6  1e                        push    ds
+0B33:0C97  file 00CFC7  b8 2f 0d                  mov     ax, 0xd2f
+0B33:0C9A  file 00CFCA  50                        push    ax
+0B33:0C9B  file 00CFCB  16                        push    ss
+0B33:0C9C  file 00CFCC  8d 46 e4                  lea     ax, [bp - 0x1c]
+0B33:0C9F  file 00CFCF  50                        push    ax
+0B33:0CA0  file 00CFD0  9a 32 25 00 00            lcall   0, 0x2532
+0B33:0CA5  file 00CFD5  83 c4 08                  add     sp, 8
+0B33:0CA8  file 00CFD8  89 56 fe                  mov     word ptr [bp - 2], dx
+0B33:0CAB  file 00CFDB  89 46 fc                  mov     word ptr [bp - 4], ax
+0B33:0CAE  file 00CFDE  0b 46 fe                  or      ax, word ptr [bp - 2]
+0B33:0CB1  file 00CFE1  75 03                     jne     0xcb6
+0B33:0CB3  file 00CFE3  e9 c0 00                  jmp     0xd76
+0B33:0CB6  file 00CFE6  b8 80 00                  mov     ax, 0x80
+0B33:0CB9  file 00CFE9  50                        push    ax
+0B33:0CBA  file 00CFEA  90                        nop     
+0B33:0CBB  file 00CFEB  0e                        push    cs
+0B33:0CBC  file 00CFEC  e8 d0 00                  call    0xd8f
+0B33:0CBF  file 00CFEF  59                        pop     cx
+0B33:0CC0  file 00CFF0  88 46 f5                  mov     byte ptr [bp - 0xb], al
+0B33:0CC3  file 00CFF3  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0CC6  file 00CFF6  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0CC9  file 00CFF9  b8 01 00                  mov     ax, 1
+0B33:0CCC  file 00CFFC  50                        push    ax
+0B33:0CCD  file 00CFFD  50                        push    ax
+0B33:0CCE  file 00CFFE  16                        push    ss
+0B33:0CCF  file 00CFFF  8d 46 f5                  lea     ax, [bp - 0xb]
+0B33:0CD2  file 00D002  50                        push    ax
+0B33:0CD3  file 00D003  9a cb 28 00 00            lcall   0, 0x28cb
+0B33:0CD8  file 00D008  83 c4 0c                  add     sp, 0xc
+0B33:0CDB  file 00D00B  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0CDE  file 00D00E  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0CE2  file 00D012  74 03                     je      0xce7
+0B33:0CE4  file 00D014  e9 82 00                  jmp     0xd69
+0B33:0CE7  file 00D017  c4 5e 0a                  les     bx, ptr [bp + 0xa]
+0B33:0CEA  file 00D01A  b8 09 00                  mov     ax, 9
+0B33:0CED  file 00D01D  26 2b 47 04               sub     ax, word ptr es:[bx + 4]
+0B33:0CF1  file 00D021  ba 98 00                  mov     dx, 0x98
+0B33:0CF4  file 00D024  f7 ea                     imul    dx
+0B33:0CF6  file 00D026  ba c1 05                  mov     dx, 0x5c1
+0B33:0CF9  file 00D029  2b d0                     sub     dx, ax
+0B33:0CFB  file 00D02B  89 56 f8                  mov     word ptr [bp - 8], dx
+0B33:0CFE  file 00D02E  8a 46 f5                  mov     al, byte ptr [bp - 0xb]
+0B33:0D01  file 00D031  50                        push    ax
+0B33:0D02  file 00D032  52                        push    dx
+0B33:0D03  file 00D033  ff 76 0c                  push    word ptr [bp + 0xc]
+0B33:0D06  file 00D036  53                        push    bx
+0B33:0D07  file 00D037  9a 0f 00 2b 0b            lcall   0xb2b, 0xf
+0B33:0D0C  file 00D03C  83 c4 08                  add     sp, 8
+0B33:0D0F  file 00D03F  88 46 f4                  mov     byte ptr [bp - 0xc], al
+0B33:0D12  file 00D042  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0D15  file 00D045  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0D18  file 00D048  b8 01 00                  mov     ax, 1
+0B33:0D1B  file 00D04B  50                        push    ax
+0B33:0D1C  file 00D04C  ff 76 f8                  push    word ptr [bp - 8]
+0B33:0D1F  file 00D04F  ff 76 0c                  push    word ptr [bp + 0xc]
+0B33:0D22  file 00D052  ff 76 0a                  push    word ptr [bp + 0xa]
+0B33:0D25  file 00D055  9a cb 28 00 00            lcall   0, 0x28cb
+0B33:0D2A  file 00D05A  83 c4 0c                  add     sp, 0xc
+0B33:0D2D  file 00D05D  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0D30  file 00D060  8a 46 f5                  mov     al, byte ptr [bp - 0xb]
+0B33:0D33  file 00D063  50                        push    ax
+0B33:0D34  file 00D064  ff 76 f8                  push    word ptr [bp - 8]
+0B33:0D37  file 00D067  ff 76 0c                  push    word ptr [bp + 0xc]
+0B33:0D3A  file 00D06A  ff 76 0a                  push    word ptr [bp + 0xa]
+0B33:0D3D  file 00D06D  9a 46 00 2b 0b            lcall   0xb2b, 0x46
+0B33:0D42  file 00D072  83 c4 08                  add     sp, 8
+0B33:0D45  file 00D075  88 46 f3                  mov     byte ptr [bp - 0xd], al
+0B33:0D48  file 00D078  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0D4C  file 00D07C  75 1b                     jne     0xd69
+0B33:0D4E  file 00D07E  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0D51  file 00D081  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0D54  file 00D084  b8 01 00                  mov     ax, 1
+0B33:0D57  file 00D087  50                        push    ax
+0B33:0D58  file 00D088  50                        push    ax
+0B33:0D59  file 00D089  16                        push    ss
+0B33:0D5A  file 00D08A  8d 46 f4                  lea     ax, [bp - 0xc]
+0B33:0D5D  file 00D08D  50                        push    ax
+0B33:0D5E  file 00D08E  9a cb 28 00 00            lcall   0, 0x28cb
+0B33:0D63  file 00D093  83 c4 0c                  add     sp, 0xc
+0B33:0D66  file 00D096  89 46 f6                  mov     word ptr [bp - 0xa], ax
+0B33:0D69  file 00D099  83 7e f6 01               cmp     word ptr [bp - 0xa], 1
+0B33:0D6D  file 00D09D  75 07                     jne     0xd76
+0B33:0D6F  file 00D09F  c7 46 fa 01 00            mov     word ptr [bp - 6], 1
+0B33:0D74  file 00D0A4  eb 05                     jmp     0xd7b
+0B33:0D76  file 00D0A6  c7 46 fa 00 00            mov     word ptr [bp - 6], 0
+0B33:0D7B  file 00D0AB  ff 76 fe                  push    word ptr [bp - 2]
+0B33:0D7E  file 00D0AE  ff 76 fc                  push    word ptr [bp - 4]
+0B33:0D81  file 00D0B1  9a 98 20 00 00            lcall   0, 0x2098
+0B33:0D86  file 00D0B6  59                        pop     cx
+0B33:0D87  file 00D0B7  59                        pop     cx
+0B33:0D88  file 00D0B8  8b 46 fa                  mov     ax, word ptr [bp - 6]
+0B33:0D8B  file 00D0BB  8b e5                     mov     sp, bp
+0B33:0D8D  file 00D0BD  5d                        pop     bp
+0B33:0D8E  file 00D0BE  cb                        retf    
+
+E06 rec_open_read  0E92:0008  file 0xF928  length 84
+0E92:0008  file 00F928  55                        push    bp
+0E92:0009  file 00F929  8b ec                     mov     bp, sp
+0E92:000B  file 00F92B  c7 06 fa 40 00 00         mov     word ptr [0x40fa], 0
+0E92:0011  file 00F931  b8 04 80                  mov     ax, 0x8004
+0E92:0014  file 00F934  50                        push    ax
+0E92:0015  file 00F935  ff 76 08                  push    word ptr [bp + 8]
+0E92:0018  file 00F938  ff 76 06                  push    word ptr [bp + 6]
+0E92:001B  file 00F93B  9a 95 2c 00 00            lcall   0, 0x2c95
+0E92:0020  file 00F940  83 c4 06                  add     sp, 6
+0E92:0023  file 00F943  a3 f8 40                  mov     word ptr [0x40f8], ax
+0E92:0026  file 00F946  83 3e f8 40 ff            cmp     word ptr [0x40f8], -1
+0E92:002B  file 00F94B  75 04                     jne     0x31
+0E92:002D  file 00F94D  33 c0                     xor     ax, ax
+0E92:002F  file 00F94F  eb 29                     jmp     0x5a
+0E92:0031  file 00F951  b8 01 00                  mov     ax, 1
+0E92:0034  file 00F954  50                        push    ax
+0E92:0035  file 00F955  1e                        push    ds
+0E92:0036  file 00F956  b8 f7 40                  mov     ax, 0x40f7
+0E92:0039  file 00F959  50                        push    ax
+0E92:003A  file 00F95A  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:003E  file 00F95E  9a 07 33 00 00            lcall   0, 0x3307
+0E92:0043  file 00F963  83 c4 08                  add     sp, 8
+0E92:0046  file 00F966  3d 01 00                  cmp     ax, 1
+0E92:0049  file 00F969  74 0c                     je      0x57
+0E92:004B  file 00F96B  1e                        push    ds
+0E92:004C  file 00F96C  b8 d2 0e                  mov     ax, 0xed2
+0E92:004F  file 00F96F  50                        push    ax
+0E92:0050  file 00F970  9a 03 00 33 0b            lcall   0xb33, 3
+0E92:0055  file 00F975  59                        pop     cx
+0E92:0056  file 00F976  59                        pop     cx
+0E92:0057  file 00F977  a1 f8 40                  mov     ax, word ptr [0x40f8]
+0E92:005A  file 00F97A  5d                        pop     bp
+0E92:005B  file 00F97B  cb                        retf    
+
+E07 rec_open_write_no_trunc  0E92:0067  file 0xF987  length 90
+0E92:0067  file 00F987  55                        push    bp
+0E92:0068  file 00F988  8b ec                     mov     bp, sp
+0E92:006A  file 00F98A  c7 06 fa 40 00 00         mov     word ptr [0x40fa], 0
+0E92:0070  file 00F990  b8 80 01                  mov     ax, 0x180
+0E92:0073  file 00F993  50                        push    ax
+0E92:0074  file 00F994  b8 04 81                  mov     ax, 0x8104
+0E92:0077  file 00F997  50                        push    ax
+0E92:0078  file 00F998  ff 76 08                  push    word ptr [bp + 8]
+0E92:007B  file 00F99B  ff 76 06                  push    word ptr [bp + 6]
+0E92:007E  file 00F99E  9a 95 2c 00 00            lcall   0, 0x2c95
+0E92:0083  file 00F9A3  83 c4 08                  add     sp, 8
+0E92:0086  file 00F9A6  a3 f8 40                  mov     word ptr [0x40f8], ax
+0E92:0089  file 00F9A9  b8 80 00                  mov     ax, 0x80
+0E92:008C  file 00F9AC  50                        push    ax
+0E92:008D  file 00F9AD  9a 8f 0d 33 0b            lcall   0xb33, 0xd8f
+0E92:0092  file 00F9B2  59                        pop     cx
+0E92:0093  file 00F9B3  a2 f7 40                  mov     byte ptr [0x40f7], al
+0E92:0096  file 00F9B6  b8 01 00                  mov     ax, 1
+0E92:0099  file 00F9B9  50                        push    ax
+0E92:009A  file 00F9BA  1e                        push    ds
+0E92:009B  file 00F9BB  b8 f7 40                  mov     ax, 0x40f7
+0E92:009E  file 00F9BE  50                        push    ax
+0E92:009F  file 00F9BF  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:00A3  file 00F9C3  9a 7b 3e 00 00            lcall   0, 0x3e7b
+0E92:00A8  file 00F9C8  83 c4 08                  add     sp, 8
+0E92:00AB  file 00F9CB  3d ff ff                  cmp     ax, 0xffff
+0E92:00AE  file 00F9CE  75 0c                     jne     0xbc
+0E92:00B0  file 00F9D0  1e                        push    ds
+0E92:00B1  file 00F9D1  b8 ba 0e                  mov     ax, 0xeba
+0E92:00B4  file 00F9D4  50                        push    ax
+0E92:00B5  file 00F9D5  9a 03 00 33 0b            lcall   0xb33, 3
+0E92:00BA  file 00F9DA  59                        pop     cx
+0E92:00BB  file 00F9DB  59                        pop     cx
+0E92:00BC  file 00F9DC  a1 f8 40                  mov     ax, word ptr [0x40f8]
+0E92:00BF  file 00F9DF  5d                        pop     bp
+0E92:00C0  file 00F9E0  cb                        retf    
+
+E08 rec_close_and_set_packed  0E92:00C1  file 0xF9E1  length 73
+0E92:00C1  file 00F9E1  55                        push    bp
+0E92:00C2  file 00F9E2  8b ec                     mov     bp, sp
+0E92:00C4  file 00F9E4  83 ec 02                  sub     sp, 2
+0E92:00C7  file 00F9E7  83 3e fa 40 00            cmp     word ptr [0x40fa], 0
+0E92:00CC  file 00F9EC  74 1c                     je      0xea
+0E92:00CE  file 00F9EE  83 3e fd 40 02            cmp     word ptr [0x40fd], 2
+0E92:00D3  file 00F9F3  75 15                     jne     0xea
+0E92:00D5  file 00F9F5  c6 46 ff 0d               mov     byte ptr [bp - 1], 0xd
+0E92:00D9  file 00F9F9  b8 01 00                  mov     ax, 1
+0E92:00DC  file 00F9FC  50                        push    ax
+0E92:00DD  file 00F9FD  16                        push    ss
+0E92:00DE  file 00F9FE  8d 46 ff                  lea     ax, [bp - 1]
+0E92:00E1  file 00FA01  50                        push    ax
+0E92:00E2  file 00FA02  90                        nop     
+0E92:00E3  file 00FA03  0e                        push    cs
+0E92:00E4  file 00FA04  e8 23 00                  call    0x10a
+0E92:00E7  file 00FA07  83 c4 06                  add     sp, 6
+0E92:00EA  file 00FA0A  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:00EE  file 00FA0E  9a db 1f 00 00            lcall   0, 0x1fdb
+0E92:00F3  file 00FA13  59                        pop     cx
+0E92:00F4  file 00FA14  8b e5                     mov     sp, bp
+0E92:00F6  file 00FA16  5d                        pop     bp
+0E92:00F7  file 00FA17  cb                        retf    
+0E92:00F8  file 00FA18  c7 06 fa 40 01 00         mov     word ptr [0x40fa], 1
+0E92:00FE  file 00FA1E  c7 06 fd 40 01 00         mov     word ptr [0x40fd], 1
+0E92:0104  file 00FA24  c6 06 fc 40 00            mov     byte ptr [0x40fc], 0
+0E92:0109  file 00FA29  cb                        retf    
+
+E09 rec_write_stream  0E92:010A  file 0xFA2A  length 236
+0E92:010A  file 00FA2A  55                        push    bp
+0E92:010B  file 00FA2B  8b ec                     mov     bp, sp
+0E92:010D  file 00FA2D  83 ec 02                  sub     sp, 2
+0E92:0110  file 00FA30  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0E92:0115  file 00FA35  83 3e fa 40 00            cmp     word ptr [0x40fa], 0
+0E92:011A  file 00FA3A  74 03                     je      0x11f
+0E92:011C  file 00FA3C  e9 b7 00                  jmp     0x1d6
+0E92:011F  file 00FA3F  a0 f7 40                  mov     al, byte ptr [0x40f7]
+0E92:0122  file 00FA42  50                        push    ax
+0E92:0123  file 00FA43  ff 76 0a                  push    word ptr [bp + 0xa]
+0E92:0126  file 00FA46  ff 76 08                  push    word ptr [bp + 8]
+0E92:0129  file 00FA49  ff 76 06                  push    word ptr [bp + 6]
+0E92:012C  file 00FA4C  9a 0f 00 2b 0b            lcall   0xb2b, 0xf
+0E92:0131  file 00FA51  83 c4 08                  add     sp, 8
+0E92:0134  file 00FA54  ff 76 0a                  push    word ptr [bp + 0xa]
+0E92:0137  file 00FA57  ff 76 08                  push    word ptr [bp + 8]
+0E92:013A  file 00FA5A  ff 76 06                  push    word ptr [bp + 6]
+0E92:013D  file 00FA5D  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:0141  file 00FA61  9a 7b 3e 00 00            lcall   0, 0x3e7b
+0E92:0146  file 00FA66  83 c4 08                  add     sp, 8
+0E92:0149  file 00FA69  3d ff ff                  cmp     ax, 0xffff
+0E92:014C  file 00FA6C  75 05                     jne     0x153
+0E92:014E  file 00FA6E  b8 01 00                  mov     ax, 1
+0E92:0151  file 00FA71  eb 02                     jmp     0x155
+0E92:0153  file 00FA73  33 c0                     xor     ax, ax
+0E92:0155  file 00FA75  89 46 fe                  mov     word ptr [bp - 2], ax
+0E92:0158  file 00FA78  a0 f7 40                  mov     al, byte ptr [0x40f7]
+0E92:015B  file 00FA7B  50                        push    ax
+0E92:015C  file 00FA7C  ff 76 0a                  push    word ptr [bp + 0xa]
+0E92:015F  file 00FA7F  ff 76 08                  push    word ptr [bp + 8]
+0E92:0162  file 00FA82  ff 76 06                  push    word ptr [bp + 6]
+0E92:0165  file 00FA85  9a 46 00 2b 0b            lcall   0xb2b, 0x46
+0E92:016A  file 00FA8A  83 c4 08                  add     sp, 8
+0E92:016D  file 00FA8D  a2 f7 40                  mov     byte ptr [0x40f7], al
+0E92:0170  file 00FA90  eb 6e                     jmp     0x1e0
+0E92:0172  file 00FA92  eb 62                     jmp     0x1d6
+0E92:0174  file 00FA94  83 3e fd 40 01            cmp     word ptr [0x40fd], 1
+0E92:0179  file 00FA99  75 19                     jne     0x194
+0E92:017B  file 00FA9B  c7 06 fd 40 02 00         mov     word ptr [0x40fd], 2
+0E92:0181  file 00FAA1  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:0184  file 00FAA4  26 8a 07                  mov     al, byte ptr es:[bx]
+0E92:0187  file 00FAA7  b1 04                     mov     cl, 4
+0E92:0189  file 00FAA9  d2 e0                     shl     al, cl
+0E92:018B  file 00FAAB  08 06 fc 40               or      byte ptr [0x40fc], al
+0E92:018F  file 00FAAF  ff 46 06                  inc     word ptr [bp + 6]
+0E92:0192  file 00FAB2  eb 42                     jmp     0x1d6
+0E92:0194  file 00FAB4  c7 06 fd 40 01 00         mov     word ptr [0x40fd], 1
+0E92:019A  file 00FABA  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:019D  file 00FABD  26 8a 07                  mov     al, byte ptr es:[bx]
+0E92:01A0  file 00FAC0  08 06 fc 40               or      byte ptr [0x40fc], al
+0E92:01A4  file 00FAC4  ff 46 06                  inc     word ptr [bp + 6]
+0E92:01A7  file 00FAC7  b8 01 00                  mov     ax, 1
+0E92:01AA  file 00FACA  50                        push    ax
+0E92:01AB  file 00FACB  1e                        push    ds
+0E92:01AC  file 00FACC  b8 fc 40                  mov     ax, 0x40fc
+0E92:01AF  file 00FACF  50                        push    ax
+0E92:01B0  file 00FAD0  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:01B4  file 00FAD4  9a 7b 3e 00 00            lcall   0, 0x3e7b
+0E92:01B9  file 00FAD9  83 c4 08                  add     sp, 8
+0E92:01BC  file 00FADC  3d ff ff                  cmp     ax, 0xffff
+0E92:01BF  file 00FADF  75 05                     jne     0x1c6
+0E92:01C1  file 00FAE1  b8 01 00                  mov     ax, 1
+0E92:01C4  file 00FAE4  eb 02                     jmp     0x1c8
+0E92:01C6  file 00FAE6  33 c0                     xor     ax, ax
+0E92:01C8  file 00FAE8  89 46 fe                  mov     word ptr [bp - 2], ax
+0E92:01CB  file 00FAEB  83 7e fe 00               cmp     word ptr [bp - 2], 0
+0E92:01CF  file 00FAEF  75 0f                     jne     0x1e0
+0E92:01D1  file 00FAF1  c6 06 fc 40 00            mov     byte ptr [0x40fc], 0
+0E92:01D6  file 00FAF6  8b 46 0a                  mov     ax, word ptr [bp + 0xa]
+0E92:01D9  file 00FAF9  ff 4e 0a                  dec     word ptr [bp + 0xa]
+0E92:01DC  file 00FAFC  0b c0                     or      ax, ax
+0E92:01DE  file 00FAFE  75 94                     jne     0x174
+0E92:01E0  file 00FB00  83 7e fe 00               cmp     word ptr [bp - 2], 0
+0E92:01E4  file 00FB04  74 0c                     je      0x1f2
+0E92:01E6  file 00FB06  1e                        push    ds
+0E92:01E7  file 00FB07  b8 ba 0e                  mov     ax, 0xeba
+0E92:01EA  file 00FB0A  50                        push    ax
+0E92:01EB  file 00FB0B  9a 03 00 33 0b            lcall   0xb33, 3
+0E92:01F0  file 00FB10  59                        pop     cx
+0E92:01F1  file 00FB11  59                        pop     cx
+0E92:01F2  file 00FB12  8b e5                     mov     sp, bp
+0E92:01F4  file 00FB14  5d                        pop     bp
+0E92:01F5  file 00FB15  cb                        retf    
+
+E10 rec_unget_and_read_stream  0E92:01F6  file 0xFB16  length 253
+0E92:01F6  file 00FB16  55                        push    bp
+0E92:01F7  file 00FB17  8b ec                     mov     bp, sp
+0E92:01F9  file 00FB19  c7 06 04 0f 01 00         mov     word ptr [0xf04], 1
+0E92:01FF  file 00FB1F  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:0202  file 00FB22  26 8a 07                  mov     al, byte ptr es:[bx]
+0E92:0205  file 00FB25  a2 f6 40                  mov     byte ptr [0x40f6], al
+0E92:0208  file 00FB28  5d                        pop     bp
+0E92:0209  file 00FB29  cb                        retf    
+0E92:020A  file 00FB2A  55                        push    bp
+0E92:020B  file 00FB2B  8b ec                     mov     bp, sp
+0E92:020D  file 00FB2D  83 ec 02                  sub     sp, 2
+0E92:0210  file 00FB30  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0E92:0215  file 00FB35  83 3e fa 40 00            cmp     word ptr [0x40fa], 0
+0E92:021A  file 00FB3A  74 03                     je      0x21f
+0E92:021C  file 00FB3C  e9 b4 00                  jmp     0x2d3
+0E92:021F  file 00FB3F  ff 76 0a                  push    word ptr [bp + 0xa]
+0E92:0222  file 00FB42  ff 76 08                  push    word ptr [bp + 8]
+0E92:0225  file 00FB45  ff 76 06                  push    word ptr [bp + 6]
+0E92:0228  file 00FB48  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:022C  file 00FB4C  9a 07 33 00 00            lcall   0, 0x3307
+0E92:0231  file 00FB51  83 c4 08                  add     sp, 8
+0E92:0234  file 00FB54  3b 46 0a                  cmp     ax, word ptr [bp + 0xa]
+0E92:0237  file 00FB57  74 05                     je      0x23e
+0E92:0239  file 00FB59  b8 01 00                  mov     ax, 1
+0E92:023C  file 00FB5C  eb 02                     jmp     0x240
+0E92:023E  file 00FB5E  33 c0                     xor     ax, ax
+0E92:0240  file 00FB60  89 46 fe                  mov     word ptr [bp - 2], ax
+0E92:0243  file 00FB63  83 7e fe 00               cmp     word ptr [bp - 2], 0
+0E92:0247  file 00FB67  74 03                     je      0x24c
+0E92:0249  file 00FB69  e9 91 00                  jmp     0x2dd
+0E92:024C  file 00FB6C  a0 f7 40                  mov     al, byte ptr [0x40f7]
+0E92:024F  file 00FB6F  50                        push    ax
+0E92:0250  file 00FB70  ff 76 0a                  push    word ptr [bp + 0xa]
+0E92:0253  file 00FB73  ff 76 08                  push    word ptr [bp + 8]
+0E92:0256  file 00FB76  ff 76 06                  push    word ptr [bp + 6]
+0E92:0259  file 00FB79  9a 46 00 2b 0b            lcall   0xb2b, 0x46
+0E92:025E  file 00FB7E  83 c4 08                  add     sp, 8
+0E92:0261  file 00FB81  a2 f7 40                  mov     byte ptr [0x40f7], al
+0E92:0264  file 00FB84  eb 77                     jmp     0x2dd
+0E92:0266  file 00FB86  eb 75                     jmp     0x2dd
+0E92:0268  file 00FB88  eb 69                     jmp     0x2d3
+0E92:026A  file 00FB8A  83 3e 04 0f 00            cmp     word ptr [0xf04], 0
+0E92:026F  file 00FB8F  74 0e                     je      0x27f
+0E92:0271  file 00FB91  c7 06 04 0f 00 00         mov     word ptr [0xf04], 0
+0E92:0277  file 00FB97  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:027A  file 00FB9A  a0 f6 40                  mov     al, byte ptr [0x40f6]
+0E92:027D  file 00FB9D  eb 4e                     jmp     0x2cd
+0E92:027F  file 00FB9F  83 3e fd 40 01            cmp     word ptr [0x40fd], 1
+0E92:0284  file 00FBA4  75 39                     jne     0x2bf
+0E92:0286  file 00FBA6  b8 01 00                  mov     ax, 1
+0E92:0289  file 00FBA9  50                        push    ax
+0E92:028A  file 00FBAA  1e                        push    ds
+0E92:028B  file 00FBAB  b8 fc 40                  mov     ax, 0x40fc
+0E92:028E  file 00FBAE  50                        push    ax
+0E92:028F  file 00FBAF  ff 36 f8 40               push    word ptr [0x40f8]
+0E92:0293  file 00FBB3  9a 07 33 00 00            lcall   0, 0x3307
+0E92:0298  file 00FBB8  83 c4 08                  add     sp, 8
+0E92:029B  file 00FBBB  3d 01 00                  cmp     ax, 1
+0E92:029E  file 00FBBE  74 05                     je      0x2a5
+0E92:02A0  file 00FBC0  b8 01 00                  mov     ax, 1
+0E92:02A3  file 00FBC3  eb 02                     jmp     0x2a7
+0E92:02A5  file 00FBC5  33 c0                     xor     ax, ax
+0E92:02A7  file 00FBC7  89 46 fe                  mov     word ptr [bp - 2], ax
+0E92:02AA  file 00FBCA  0b c0                     or      ax, ax
+0E92:02AC  file 00FBCC  75 2f                     jne     0x2dd
+0E92:02AE  file 00FBCE  c7 06 fd 40 02 00         mov     word ptr [0x40fd], 2
+0E92:02B4  file 00FBD4  a0 fc 40                  mov     al, byte ptr [0x40fc]
+0E92:02B7  file 00FBD7  b4 00                     mov     ah, 0
+0E92:02B9  file 00FBD9  b1 04                     mov     cl, 4
+0E92:02BB  file 00FBDB  d3 f8                     sar     ax, cl
+0E92:02BD  file 00FBDD  eb 0b                     jmp     0x2ca
+0E92:02BF  file 00FBDF  c7 06 fd 40 01 00         mov     word ptr [0x40fd], 1
+0E92:02C5  file 00FBE5  a0 fc 40                  mov     al, byte ptr [0x40fc]
+0E92:02C8  file 00FBE8  24 0f                     and     al, 0xf
+0E92:02CA  file 00FBEA  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:02CD  file 00FBED  26 88 07                  mov     byte ptr es:[bx], al
+0E92:02D0  file 00FBF0  ff 46 06                  inc     word ptr [bp + 6]
+0E92:02D3  file 00FBF3  8b 46 0a                  mov     ax, word ptr [bp + 0xa]
+0E92:02D6  file 00FBF6  ff 4e 0a                  dec     word ptr [bp + 0xa]
+0E92:02D9  file 00FBF9  0b c0                     or      ax, ax
+0E92:02DB  file 00FBFB  75 8d                     jne     0x26a
+0E92:02DD  file 00FBFD  83 7e fe 00               cmp     word ptr [bp - 2], 0
+0E92:02E1  file 00FC01  74 0c                     je      0x2ef
+0E92:02E3  file 00FC03  1e                        push    ds
+0E92:02E4  file 00FC04  b8 d2 0e                  mov     ax, 0xed2
+0E92:02E7  file 00FC07  50                        push    ax
+0E92:02E8  file 00FC08  9a 03 00 33 0b            lcall   0xb33, 3
+0E92:02ED  file 00FC0D  59                        pop     cx
+0E92:02EE  file 00FC0E  59                        pop     cx
+0E92:02EF  file 00FC0F  8b e5                     mov     sp, bp
+0E92:02F1  file 00FC11  5d                        pop     bp
+0E92:02F2  file 00FC12  cb                        retf    
+
+E11 rec_write_bytes_as_nibbles  0E92:02F3  file 0xFC13  length 142
+0E92:02F3  file 00FC13  55                        push    bp
+0E92:02F4  file 00FC14  8b ec                     mov     bp, sp
+0E92:02F6  file 00FC16  83 ec 6a                  sub     sp, 0x6a
+0E92:02F9  file 00FC19  83 3e fa 40 00            cmp     word ptr [0x40fa], 0
+0E92:02FE  file 00FC1E  75 0b                     jne     0x30b
+0E92:0300  file 00FC20  ff 76 0a                  push    word ptr [bp + 0xa]
+0E92:0303  file 00FC23  ff 76 08                  push    word ptr [bp + 8]
+0E92:0306  file 00FC26  ff 76 06                  push    word ptr [bp + 6]
+0E92:0309  file 00FC29  eb 6b                     jmp     0x376
+0E92:030B  file 00FC2B  8b 46 0a                  mov     ax, word ptr [bp + 0xa]
+0E92:030E  file 00FC2E  d1 e0                     shl     ax, 1
+0E92:0310  file 00FC30  89 46 fe                  mov     word ptr [bp - 2], ax
+0E92:0313  file 00FC33  8d 46 96                  lea     ax, [bp - 0x6a]
+0E92:0316  file 00FC36  8c 56 fc                  mov     word ptr [bp - 4], ss
+0E92:0319  file 00FC39  89 46 fa                  mov     word ptr [bp - 6], ax
+0E92:031C  file 00FC3C  83 7e fe 64               cmp     word ptr [bp - 2], 0x64
+0E92:0320  file 00FC40  7e 3f                     jle     0x361
+0E92:0322  file 00FC42  1e                        push    ds
+0E92:0323  file 00FC43  b8 e9 0e                  mov     ax, 0xee9
+0E92:0326  file 00FC46  50                        push    ax
+0E92:0327  file 00FC47  9a 03 00 33 0b            lcall   0xb33, 3
+0E92:032C  file 00FC4C  59                        pop     cx
+0E92:032D  file 00FC4D  59                        pop     cx
+0E92:032E  file 00FC4E  eb 31                     jmp     0x361
+0E92:0330  file 00FC50  eb 2f                     jmp     0x361
+0E92:0332  file 00FC52  f7 46 fe 01 00            test    word ptr [bp - 2], 1
+0E92:0337  file 00FC57  74 14                     je      0x34d
+0E92:0339  file 00FC59  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:033C  file 00FC5C  26 8a 07                  mov     al, byte ptr es:[bx]
+0E92:033F  file 00FC5F  b4 00                     mov     ah, 0
+0E92:0341  file 00FC61  b1 04                     mov     cl, 4
+0E92:0343  file 00FC63  d3 f8                     sar     ax, cl
+0E92:0345  file 00FC65  c4 5e fa                  les     bx, ptr [bp - 6]
+0E92:0348  file 00FC68  26 88 07                  mov     byte ptr es:[bx], al
+0E92:034B  file 00FC6B  eb 11                     jmp     0x35e
+0E92:034D  file 00FC6D  c4 5e 06                  les     bx, ptr [bp + 6]
+0E92:0350  file 00FC70  26 8a 07                  mov     al, byte ptr es:[bx]
+0E92:0353  file 00FC73  24 0f                     and     al, 0xf
+0E92:0355  file 00FC75  c4 5e fa                  les     bx, ptr [bp - 6]
+0E92:0358  file 00FC78  26 88 07                  mov     byte ptr es:[bx], al
+0E92:035B  file 00FC7B  ff 46 06                  inc     word ptr [bp + 6]
+0E92:035E  file 00FC7E  ff 46 fa                  inc     word ptr [bp - 6]
+0E92:0361  file 00FC81  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0E92:0364  file 00FC84  ff 4e fe                  dec     word ptr [bp - 2]
+0E92:0367  file 00FC87  0b c0                     or      ax, ax
+0E92:0369  file 00FC89  75 c7                     jne     0x332
+0E92:036B  file 00FC8B  8b 46 0a                  mov     ax, word ptr [bp + 0xa]
+0E92:036E  file 00FC8E  d1 e0                     shl     ax, 1
+0E92:0370  file 00FC90  50                        push    ax
+0E92:0371  file 00FC91  16                        push    ss
+0E92:0372  file 00FC92  8d 46 96                  lea     ax, [bp - 0x6a]
+0E92:0375  file 00FC95  50                        push    ax
+0E92:0376  file 00FC96  0e                        push    cs
+0E92:0377  file 00FC97  e8 90 fd                  call    0x10a
+0E92:037A  file 00FC9A  83 c4 06                  add     sp, 6
+0E92:037D  file 00FC9D  8b e5                     mov     sp, bp
+0E92:037F  file 00FC9F  5d                        pop     bp
+0E92:0380  file 00FCA0  cb                        retf    
+
+E12 rec_header_read_write_call_sites  0729:24EC  file 0xA77C  length 241
+0729:24EC  file 00A77C  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:24F1  file 00A781  74 57                     je      0x254a
+0729:24F3  file 00A783  b8 01 00                  mov     ax, 1
+0729:24F6  file 00A786  50                        push    ax
+0729:24F7  file 00A787  16                        push    ss
+0729:24F8  file 00A788  8d 46 f5                  lea     ax, [bp - 0xb]
+0729:24FB  file 00A78B  50                        push    ax
+0729:24FC  file 00A78C  9a 0a 02 92 0e            lcall   0xe92, 0x20a
+0729:2501  file 00A791  83 c4 06                  add     sp, 6
+0729:2504  file 00A794  80 7e f5 0c               cmp     byte ptr [bp - 0xb], 0xc
+0729:2508  file 00A798  74 3b                     je      0x2545
+0729:250A  file 00A79A  8a 46 f5                  mov     al, byte ptr [bp - 0xb]
+0729:250D  file 00A79D  98                        cwde    
+0729:250E  file 00A79E  89 46 fe                  mov     word ptr [bp - 2], ax
+0729:2511  file 00A7A1  b8 c1 05                  mov     ax, 0x5c1
+0729:2514  file 00A7A4  50                        push    ax
+0729:2515  file 00A7A5  9a 2a 00 33 0b            lcall   0xb33, 0x2a
+0729:251A  file 00A7AA  59                        pop     cx
+0729:251B  file 00A7AB  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:251E  file 00A7AE  b1 02                     mov     cl, 2
+0729:2520  file 00A7B0  d3 e3                     shl     bx, cl
+0729:2522  file 00A7B2  89 97 d9 34               mov     word ptr [bx + 0x34d9], dx
+0729:2526  file 00A7B6  89 87 d7 34               mov     word ptr [bx + 0x34d7], ax
+0729:252A  file 00A7BA  b8 69 00                  mov     ax, 0x69
+0729:252D  file 00A7BD  50                        push    ax
+0729:252E  file 00A7BE  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:2531  file 00A7C1  d3 e3                     shl     bx, cl
+0729:2533  file 00A7C3  ff b7 d9 34               push    word ptr [bx + 0x34d9]
+0729:2537  file 00A7C7  ff b7 d7 34               push    word ptr [bx + 0x34d7]
+0729:253B  file 00A7CB  9a 0a 02 92 0e            lcall   0xe92, 0x20a
+0729:2540  file 00A7D0  83 c4 06                  add     sp, 6
+0729:2543  file 00A7D3  eb ae                     jmp     0x24f3
+0729:2545  file 00A7D5  9a f8 00 92 0e            lcall   0xe92, 0xf8
+0729:254A  file 00A7DA  83 3e 01 41 00            cmp     word ptr [0x4101], 0
+0729:254F  file 00A7DF  75 03                     jne     0x2554
+0729:2551  file 00A7E1  e9 89 00                  jmp     0x25dd
+0729:2554  file 00A7E4  1e                        push    ds
+0729:2555  file 00A7E5  b8 48 05                  mov     ax, 0x548
+0729:2558  file 00A7E8  50                        push    ax
+0729:2559  file 00A7E9  9a 67 00 92 0e            lcall   0xe92, 0x67
+0729:255E  file 00A7EE  59                        pop     cx
+0729:255F  file 00A7EF  59                        pop     cx
+0729:2560  file 00A7F0  0b c0                     or      ax, ax
+0729:2562  file 00A7F2  75 0c                     jne     0x2570
+0729:2564  file 00A7F4  1e                        push    ds
+0729:2565  file 00A7F5  b8 50 05                  mov     ax, 0x550
+0729:2568  file 00A7F8  50                        push    ax
+0729:2569  file 00A7F9  9a 03 00 33 0b            lcall   0xb33, 3
+0729:256E  file 00A7FE  59                        pop     cx
+0729:256F  file 00A7FF  59                        pop     cx
+0729:2570  file 00A800  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0729:2575  file 00A805  eb 46                     jmp     0x25bd
+0729:2577  file 00A807  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:257A  file 00A80A  b1 02                     mov     cl, 2
+0729:257C  file 00A80C  d3 e3                     shl     bx, cl
+0729:257E  file 00A80E  8b 87 d7 34               mov     ax, word ptr [bx + 0x34d7]
+0729:2582  file 00A812  0b 87 d9 34               or      ax, word ptr [bx + 0x34d9]
+0729:2586  file 00A816  74 32                     je      0x25ba
+0729:2588  file 00A818  8a 46 fe                  mov     al, byte ptr [bp - 2]
+0729:258B  file 00A81B  88 46 f5                  mov     byte ptr [bp - 0xb], al
+0729:258E  file 00A81E  b8 01 00                  mov     ax, 1
+0729:2591  file 00A821  50                        push    ax
+0729:2592  file 00A822  16                        push    ss
+0729:2593  file 00A823  8d 46 f5                  lea     ax, [bp - 0xb]
+0729:2596  file 00A826  50                        push    ax
+0729:2597  file 00A827  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:259C  file 00A82C  83 c4 06                  add     sp, 6
+0729:259F  file 00A82F  b8 69 00                  mov     ax, 0x69
+0729:25A2  file 00A832  50                        push    ax
+0729:25A3  file 00A833  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:25A6  file 00A836  b1 02                     mov     cl, 2
+0729:25A8  file 00A838  d3 e3                     shl     bx, cl
+0729:25AA  file 00A83A  ff b7 d9 34               push    word ptr [bx + 0x34d9]
+0729:25AE  file 00A83E  ff b7 d7 34               push    word ptr [bx + 0x34d7]
+0729:25B2  file 00A842  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:25B7  file 00A847  83 c4 06                  add     sp, 6
+0729:25BA  file 00A84A  ff 46 fe                  inc     word ptr [bp - 2]
+0729:25BD  file 00A84D  83 7e fe 04               cmp     word ptr [bp - 2], 4
+0729:25C1  file 00A851  7c b4                     jl      0x2577
+0729:25C3  file 00A853  c6 46 f5 0c               mov     byte ptr [bp - 0xb], 0xc
+0729:25C7  file 00A857  b8 01 00                  mov     ax, 1
+0729:25CA  file 00A85A  50                        push    ax
+0729:25CB  file 00A85B  16                        push    ss
+0729:25CC  file 00A85C  8d 46 f5                  lea     ax, [bp - 0xb]
+0729:25CF  file 00A85F  50                        push    ax
+0729:25D0  file 00A860  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:25D5  file 00A865  83 c4 06                  add     sp, 6
+0729:25D8  file 00A868  9a f8 00 92 0e            lcall   0xe92, 0xf8
+
+E13 rec_read_write_scores  0729:046E  file 0x86FE  length 176
+0729:046E  file 0086FE  55                        push    bp
+0729:046F  file 0086FF  8b ec                     mov     bp, sp
+0729:0471  file 008701  83 ec 06                  sub     sp, 6
+0729:0474  file 008704  ff 06 0d 34               inc     word ptr [0x340d]
+0729:0478  file 008708  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0729:047D  file 00870D  eb 43                     jmp     0x4c2
+0729:047F  file 00870F  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:0482  file 008712  b1 02                     mov     cl, 2
+0729:0484  file 008714  d3 e3                     shl     bx, cl
+0729:0486  file 008716  8b 87 d7 34               mov     ax, word ptr [bx + 0x34d7]
+0729:048A  file 00871A  0b 87 d9 34               or      ax, word ptr [bx + 0x34d9]
+0729:048E  file 00871E  74 2f                     je      0x4bf
+0729:0490  file 008720  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0729:0493  file 008723  ba a5 00                  mov     dx, 0xa5
+0729:0496  file 008726  f7 ea                     imul    dx
+0729:0498  file 008728  05 71 31                  add     ax, 0x3171
+0729:049B  file 00872B  8c 5e fc                  mov     word ptr [bp - 4], ds
+0729:049E  file 00872E  89 46 fa                  mov     word ptr [bp - 6], ax
+0729:04A1  file 008731  b8 02 00                  mov     ax, 2
+0729:04A4  file 008734  50                        push    ax
+0729:04A5  file 008735  8b 46 fa                  mov     ax, word ptr [bp - 6]
+0729:04A8  file 008738  05 02 00                  add     ax, 2
+0729:04AB  file 00873B  ff 76 fc                  push    word ptr [bp - 4]
+0729:04AE  file 00873E  50                        push    ax
+0729:04AF  file 00873F  9a 81 03 92 0e            lcall   0xe92, 0x381
+0729:04B4  file 008744  83 c4 06                  add     sp, 6
+0729:04B7  file 008747  ff 76 fe                  push    word ptr [bp - 2]
+0729:04BA  file 00874A  0e                        push    cs
+0729:04BB  file 00874B  e8 20 ff                  call    0x3de
+0729:04BE  file 00874E  59                        pop     cx
+0729:04BF  file 00874F  ff 46 fe                  inc     word ptr [bp - 2]
+0729:04C2  file 008752  83 7e fe 04               cmp     word ptr [bp - 2], 4
+0729:04C6  file 008756  7c b7                     jl      0x47f
+0729:04C8  file 008758  8b e5                     mov     sp, bp
+0729:04CA  file 00875A  5d                        pop     bp
+0729:04CB  file 00875B  cb                        retf    
+0729:04CC  file 00875C  55                        push    bp
+0729:04CD  file 00875D  8b ec                     mov     bp, sp
+0729:04CF  file 00875F  83 ec 06                  sub     sp, 6
+0729:04D2  file 008762  c7 46 fe 00 00            mov     word ptr [bp - 2], 0
+0729:04D7  file 008767  eb 3b                     jmp     0x514
+0729:04D9  file 008769  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:04DC  file 00876C  b1 02                     mov     cl, 2
+0729:04DE  file 00876E  d3 e3                     shl     bx, cl
+0729:04E0  file 008770  8b 87 d7 34               mov     ax, word ptr [bx + 0x34d7]
+0729:04E4  file 008774  0b 87 d9 34               or      ax, word ptr [bx + 0x34d9]
+0729:04E8  file 008778  74 27                     je      0x511
+0729:04EA  file 00877A  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0729:04ED  file 00877D  ba a5 00                  mov     dx, 0xa5
+0729:04F0  file 008780  f7 ea                     imul    dx
+0729:04F2  file 008782  05 71 31                  add     ax, 0x3171
+0729:04F5  file 008785  8c 5e fc                  mov     word ptr [bp - 4], ds
+0729:04F8  file 008788  89 46 fa                  mov     word ptr [bp - 6], ax
+0729:04FB  file 00878B  b8 02 00                  mov     ax, 2
+0729:04FE  file 00878E  50                        push    ax
+0729:04FF  file 00878F  8b 46 fa                  mov     ax, word ptr [bp - 6]
+0729:0502  file 008792  05 02 00                  add     ax, 2
+0729:0505  file 008795  ff 76 fc                  push    word ptr [bp - 4]
+0729:0508  file 008798  50                        push    ax
+0729:0509  file 008799  9a f3 02 92 0e            lcall   0xe92, 0x2f3
+0729:050E  file 00879E  83 c4 06                  add     sp, 6
+0729:0511  file 0087A1  ff 46 fe                  inc     word ptr [bp - 2]
+0729:0514  file 0087A4  83 7e fe 04               cmp     word ptr [bp - 2], 4
+0729:0518  file 0087A8  7c bf                     jl      0x4d9
+0729:051A  file 0087AA  8b e5                     mov     sp, bp
+0729:051C  file 0087AC  5d                        pop     bp
+0729:051D  file 0087AD  cb                        retf    
+
+E14 rec_mover_selection  0729:0F27  file 0x91B7  length 219
+0729:0F27  file 0091B7  55                        push    bp
+0729:0F28  file 0091B8  8b ec                     mov     bp, sp
+0729:0F2A  file 0091BA  83 ec 04                  sub     sp, 4
+0729:0F2D  file 0091BD  83 3e 43 1b 00            cmp     word ptr [0x1b43], 0
+0729:0F32  file 0091C2  75 3b                     jne     0xf6f
+0729:0F34  file 0091C4  33 c0                     xor     ax, ax
+0729:0F36  file 0091C6  ba 01 00                  mov     dx, 1
+0729:0F39  file 0091C9  50                        push    ax
+0729:0F3A  file 0091CA  52                        push    dx
+0729:0F3B  file 0091CB  ff 36 07 34               push    word ptr [0x3407]
+0729:0F3F  file 0091CF  ff 36 05 34               push    word ptr [0x3405]
+0729:0F43  file 0091D3  9a 16 00 10 0c            lcall   0xc10, 0x16
+0729:0F48  file 0091D8  83 c4 08                  add     sp, 8
+0729:0F4B  file 0091DB  9a 0a 00 10 0c            lcall   0xc10, 0xa
+0729:0F50  file 0091E0  89 16 07 34               mov     word ptr [0x3407], dx
+0729:0F54  file 0091E4  a3 05 34                  mov     word ptr [0x3405], ax
+0729:0F57  file 0091E7  b8 45 1b                  mov     ax, 0x1b45
+0729:0F5A  file 0091EA  1e                        push    ds
+0729:0F5B  file 0091EB  50                        push    ax
+0729:0F5C  file 0091EC  b8 4d 1b                  mov     ax, 0x1b4d
+0729:0F5F  file 0091EF  1e                        push    ds
+0729:0F60  file 0091F0  50                        push    ax
+0729:0F61  file 0091F1  b9 08 00                  mov     cx, 8
+0729:0F64  file 0091F4  9a a9 03 00 00            lcall   0, 0x3a9
+0729:0F69  file 0091F9  a1 41 1b                  mov     ax, word ptr [0x1b41]
+0729:0F6C  file 0091FC  a3 43 1b                  mov     word ptr [0x1b43], ax
+0729:0F6F  file 0091FF  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:0F74  file 009204  74 2a                     je      0xfa0
+0729:0F76  file 009206  b8 01 00                  mov     ax, 1
+0729:0F79  file 009209  50                        push    ax
+0729:0F7A  file 00920A  16                        push    ss
+0729:0F7B  file 00920B  8d 46 fd                  lea     ax, [bp - 3]
+0729:0F7E  file 00920E  50                        push    ax
+0729:0F7F  file 00920F  9a 0a 02 92 0e            lcall   0xe92, 0x20a
+0729:0F84  file 009214  83 c4 06                  add     sp, 6
+0729:0F87  file 009217  8a 46 fd                  mov     al, byte ptr [bp - 3]
+0729:0F8A  file 00921A  98                        cwde    
+0729:0F8B  file 00921B  89 46 fe                  mov     word ptr [bp - 2], ax
+0729:0F8E  file 00921E  a2 40 1b                  mov     byte ptr [0x1b40], al
+0729:0F91  file 009221  80 3e 40 1b 0e            cmp     byte ptr [0x1b40], 0xe
+0729:0F96  file 009226  75 30                     jne     0xfc8
+0729:0F98  file 009228  0e                        push    cs
+0729:0F99  file 009229  e8 d2 f4                  call    0x46e
+0729:0F9C  file 00922C  eb 2a                     jmp     0xfc8
+0729:0F9E  file 00922E  eb 28                     jmp     0xfc8
+0729:0FA0  file 009230  b8 04 00                  mov     ax, 4
+0729:0FA3  file 009233  50                        push    ax
+0729:0FA4  file 009234  9a 8f 0d 33 0b            lcall   0xb33, 0xd8f
+0729:0FA9  file 009239  59                        pop     cx
+0729:0FAA  file 00923A  89 46 fe                  mov     word ptr [bp - 2], ax
+0729:0FAD  file 00923D  eb 0d                     jmp     0xfbc
+0729:0FAF  file 00923F  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0729:0FB2  file 009242  40                        inc     ax
+0729:0FB3  file 009243  bb 04 00                  mov     bx, 4
+0729:0FB6  file 009246  99                        cdq     
+0729:0FB7  file 009247  f7 fb                     idiv    bx
+0729:0FB9  file 009249  89 56 fe                  mov     word ptr [bp - 2], dx
+0729:0FBC  file 00924C  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:0FBF  file 00924F  d1 e3                     shl     bx, 1
+0729:0FC1  file 009251  83 bf 45 1b 00            cmp     word ptr [bx + 0x1b45], 0
+0729:0FC6  file 009256  74 e7                     je      0xfaf
+0729:0FC8  file 009258  83 3e 01 41 00            cmp     word ptr [0x4101], 0
+0729:0FCD  file 00925D  74 17                     je      0xfe6
+0729:0FCF  file 00925F  8a 46 fe                  mov     al, byte ptr [bp - 2]
+0729:0FD2  file 009262  88 46 fd                  mov     byte ptr [bp - 3], al
+0729:0FD5  file 009265  b8 01 00                  mov     ax, 1
+0729:0FD8  file 009268  50                        push    ax
+0729:0FD9  file 009269  16                        push    ss
+0729:0FDA  file 00926A  8d 46 fd                  lea     ax, [bp - 3]
+0729:0FDD  file 00926D  50                        push    ax
+0729:0FDE  file 00926E  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:0FE3  file 009273  83 c4 06                  add     sp, 6
+0729:0FE6  file 009276  83 7e fe 04               cmp     word ptr [bp - 2], 4
+0729:0FEA  file 00927A  7d 0f                     jge     0xffb
+0729:0FEC  file 00927C  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:0FEF  file 00927F  d1 e3                     shl     bx, 1
+0729:0FF1  file 009281  c7 87 45 1b 00 00         mov     word ptr [bx + 0x1b45], 0
+0729:0FF7  file 009287  ff 0e 43 1b               dec     word ptr [0x1b43]
+0729:0FFB  file 00928B  8b 46 fe                  mov     ax, word ptr [bp - 2]
+0729:0FFE  file 00928E  8b e5                     mov     sp, bp
+0729:1000  file 009290  5d                        pop     bp
+0729:1001  file 009291  cb                        retf    
+
+E15 rec_direction_read_blocked_case  0729:15C3  file 0x9853  length 88
+0729:15C3  file 009853  83 7e ea 00               cmp     word ptr [bp - 0x16], 0
+0729:15C7  file 009857  75 03                     jne     0x15cc
+0729:15C9  file 009859  e9 f8 02                  jmp     0x18c4
+0729:15CC  file 00985C  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:15D1  file 009861  74 2f                     je      0x1602
+0729:15D3  file 009863  b8 01 00                  mov     ax, 1
+0729:15D6  file 009866  50                        push    ax
+0729:15D7  file 009867  16                        push    ss
+0729:15D8  file 009868  8d 46 b9                  lea     ax, [bp - 0x47]
+0729:15DB  file 00986B  50                        push    ax
+0729:15DC  file 00986C  9a 0a 02 92 0e            lcall   0xe92, 0x20a
+0729:15E1  file 009871  83 c4 06                  add     sp, 6
+0729:15E4  file 009874  8a 46 b9                  mov     al, byte ptr [bp - 0x47]
+0729:15E7  file 009877  98                        cwde    
+0729:15E8  file 009878  89 46 d0                  mov     word ptr [bp - 0x30], ax
+0729:15EB  file 00987B  a2 40 1b                  mov     byte ptr [0x1b40], al
+0729:15EE  file 00987E  80 3e 40 1b 0e            cmp     byte ptr [0x1b40], 0xe
+0729:15F3  file 009883  74 03                     je      0x15f8
+0729:15F5  file 009885  e9 08 02                  jmp     0x1800
+0729:15F8  file 009888  0e                        push    cs
+0729:15F9  file 009889  e8 72 ee                  call    0x46e
+0729:15FC  file 00988C  e9 01 02                  jmp     0x1800
+0729:15FF  file 00988F  e9 fe 01                  jmp     0x1800
+0729:1602  file 009892  c7 46 e4 ff ff            mov     word ptr [bp - 0x1c], 0xffff
+0729:1607  file 009897  a1 9e 04                  mov     ax, word ptr [0x49e]
+0729:160A  file 00989A  8b 16 9c 04               mov     dx, word ptr [0x49c]
+0729:160E  file 00989E  89 46 c8                  mov     word ptr [bp - 0x38], ax
+0729:1611  file 0098A1  89 56 c6                  mov     word ptr [bp - 0x3a], dx
+0729:1614  file 0098A4  8b 5e 06                  mov     bx, word ptr [bp + 6]
+0729:1617  file 0098A7  b1 02                     mov     cl, 2
+0729:1619  file 0098A9  d3 e3                     shl     bx, cl
+
+E16 rec_direction_write  0729:18BC  file 0x9B4C  length 38
+0729:18BC  file 009B4C  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:18C1  file 009B51  83 c4 06                  add     sp, 6
+0729:18C4  file 009B54  ff 4e 08                  dec     word ptr [bp + 8]
+0729:18C7  file 009B57  7e 03                     jle     0x18cc
+0729:18C9  file 009B59  e9 78 fb                  jmp     0x1444
+0729:18CC  file 009B5C  33 c0                     xor     ax, ax
+0729:18CE  file 009B5E  5e                        pop     si
+0729:18CF  file 009B5F  8b e5                     mov     sp, bp
+0729:18D1  file 009B61  5d                        pop     bp
+0729:18D2  file 009B62  cb                        retf    
+0729:18D3  file 009B63  95                        xchg    bp, ax
+0729:18D4  file 009B64  18 95 18 8c               sbb     byte ptr [di - 0x73e8], dl
+0729:18D8  file 009B68  18 68 18                  sbb     byte ptr [bx + si + 0x18], ch
+0729:18DB  file 009B6B  85 18                     test    word ptr [bx + si], bx
+0729:18DD  file 009B6D  a6                        cmpsb   byte ptr [si], byte ptr es:[di]
+0729:18DE  file 009B6E  15 ba 15                  adc     ax, 0x15ba
+
+E17 rec_round_marker_and_playback_stop  0729:2A7E  file 0xAD0E  length 297
+0729:2A7E  file 00AD0E  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:2A83  file 00AD13  74 29                     je      0x2aae
+0729:2A85  file 00AD15  b8 01 00                  mov     ax, 1
+0729:2A88  file 00AD18  50                        push    ax
+0729:2A89  file 00AD19  1e                        push    ds
+0729:2A8A  file 00AD1A  b8 40 1b                  mov     ax, 0x1b40
+0729:2A8D  file 00AD1D  50                        push    ax
+0729:2A8E  file 00AD1E  9a 0a 02 92 0e            lcall   0xe92, 0x20a
+0729:2A93  file 00AD23  83 c4 06                  add     sp, 6
+0729:2A96  file 00AD26  1e                        push    ds
+0729:2A97  file 00AD27  b8 40 1b                  mov     ax, 0x1b40
+0729:2A9A  file 00AD2A  50                        push    ax
+0729:2A9B  file 00AD2B  9a f6 01 92 0e            lcall   0xe92, 0x1f6
+0729:2AA0  file 00AD30  59                        pop     cx
+0729:2AA1  file 00AD31  59                        pop     cx
+0729:2AA2  file 00AD32  80 3e 40 1b 0d            cmp     byte ptr [0x1b40], 0xd
+0729:2AA7  file 00AD37  75 09                     jne     0x2ab2
+0729:2AA9  file 00AD39  e9 fb 00                  jmp     0x2ba7
+0729:2AAC  file 00AD3C  eb 04                     jmp     0x2ab2
+0729:2AAE  file 00AD3E  ff 06 0d 34               inc     word ptr [0x340d]
+0729:2AB2  file 00AD42  0e                        push    cs
+0729:2AB3  file 00AD43  e8 fa f0                  call    0x1bb0
+0729:2AB6  file 00AD46  c7 06 11 34 01 00         mov     word ptr [0x3411], 1
+0729:2ABC  file 00AD4C  c7 06 0b 34 00 00         mov     word ptr [0x340b], 0
+0729:2AC2  file 00AD52  9a 47 02 f2 03            lcall   0x3f2, 0x247
+0729:2AC7  file 00AD57  fa                        cli     
+0729:2AC8  file 00AD58  b8 29 07                  mov     ax, 0x729
+0729:2ACB  file 00AD5B  50                        push    ax
+0729:2ACC  file 00AD5C  b8 d5 22                  mov     ax, 0x22d5
+0729:2ACF  file 00AD5F  50                        push    ax
+0729:2AD0  file 00AD60  9a 7f 00 f6 0d            lcall   0xdf6, 0x7f
+0729:2AD5  file 00AD65  59                        pop     cx
+0729:2AD6  file 00AD66  59                        pop     cx
+0729:2AD7  file 00AD67  89 16 3a 1b               mov     word ptr [0x1b3a], dx
+0729:2ADB  file 00AD6B  a3 38 1b                  mov     word ptr [0x1b38], ax
+0729:2ADE  file 00AD6E  c7 06 b2 0d 01 00         mov     word ptr [0xdb2], 1
+0729:2AE4  file 00AD74  fb                        sti     
+0729:2AE5  file 00AD75  0e                        push    cs
+0729:2AE6  file 00AD76  e8 3a f6                  call    0x2123
+0729:2AE9  file 00AD79  89 46 f4                  mov     word ptr [bp - 0xc], ax
+0729:2AEC  file 00AD7C  83 7e f4 00               cmp     word ptr [bp - 0xc], 0
+0729:2AF0  file 00AD80  75 33                     jne     0x2b25
+0729:2AF2  file 00AD82  0e                        push    cs
+0729:2AF3  file 00AD83  e8 31 e4                  call    0xf27
+0729:2AF6  file 00AD86  89 46 f2                  mov     word ptr [bp - 0xe], ax
+0729:2AF9  file 00AD89  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:2AFE  file 00AD8E  74 0b                     je      0x2b0b
+0729:2B00  file 00AD90  83 7e f2 04               cmp     word ptr [bp - 0xe], 4
+0729:2B04  file 00AD94  7c 05                     jl      0x2b0b
+0729:2B06  file 00AD96  89 46 f4                  mov     word ptr [bp - 0xc], ax
+0729:2B09  file 00AD99  eb 1a                     jmp     0x2b25
+0729:2B0B  file 00AD9B  b8 01 00                  mov     ax, 1
+0729:2B0E  file 00AD9E  50                        push    ax
+0729:2B0F  file 00AD9F  ff 76 f2                  push    word ptr [bp - 0xe]
+0729:2B12  file 00ADA2  0e                        push    cs
+0729:2B13  file 00ADA3  e8 26 e9                  call    0x143c
+0729:2B16  file 00ADA6  59                        pop     cx
+0729:2B17  file 00ADA7  59                        pop     cx
+0729:2B18  file 00ADA8  89 46 f4                  mov     word ptr [bp - 0xc], ax
+0729:2B1B  file 00ADAB  83 7e f4 00               cmp     word ptr [bp - 0xc], 0
+0729:2B1F  file 00ADAF  74 c4                     je      0x2ae5
+0729:2B21  file 00ADB1  eb 02                     jmp     0x2b25
+0729:2B23  file 00ADB3  eb c0                     jmp     0x2ae5
+0729:2B25  file 00ADB5  fa                        cli     
+0729:2B26  file 00ADB6  ff 36 3a 1b               push    word ptr [0x1b3a]
+0729:2B2A  file 00ADBA  ff 36 38 1b               push    word ptr [0x1b38]
+0729:2B2E  file 00ADBE  9a 7f 00 f6 0d            lcall   0xdf6, 0x7f
+0729:2B33  file 00ADC3  59                        pop     cx
+0729:2B34  file 00ADC4  59                        pop     cx
+0729:2B35  file 00ADC5  c7 06 b2 0d 00 00         mov     word ptr [0xdb2], 0
+0729:2B3B  file 00ADCB  fb                        sti     
+0729:2B3C  file 00ADCC  0e                        push    cs
+0729:2B3D  file 00ADCD  e8 56 f7                  call    0x2296
+0729:2B40  file 00ADD0  83 3e 01 41 00            cmp     word ptr [0x4101], 0
+0729:2B45  file 00ADD5  74 19                     je      0x2b60
+0729:2B47  file 00ADD7  c6 46 f1 0e               mov     byte ptr [bp - 0xf], 0xe
+0729:2B4B  file 00ADDB  b8 01 00                  mov     ax, 1
+0729:2B4E  file 00ADDE  50                        push    ax
+0729:2B4F  file 00ADDF  16                        push    ss
+0729:2B50  file 00ADE0  8d 46 f1                  lea     ax, [bp - 0xf]
+0729:2B53  file 00ADE3  50                        push    ax
+0729:2B54  file 00ADE4  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:2B59  file 00ADE9  83 c4 06                  add     sp, 6
+0729:2B5C  file 00ADEC  0e                        push    cs
+0729:2B5D  file 00ADED  e8 6c d9                  call    0x4cc
+0729:2B60  file 00ADF0  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:2B65  file 00ADF5  74 2f                     je      0x2b96
+0729:2B67  file 00ADF7  83 7e f4 04               cmp     word ptr [bp - 0xc], 4
+0729:2B6B  file 00ADFB  74 3a                     je      0x2ba7
+0729:2B6D  file 00ADFD  80 3e 40 1b 0e            cmp     byte ptr [0x1b40], 0xe
+0729:2B72  file 00AE02  75 07                     jne     0x2b7b
+0729:2B74  file 00AE04  c7 46 f4 02 00            mov     word ptr [bp - 0xc], 2
+0729:2B79  file 00AE09  eb 1b                     jmp     0x2b96
+0729:2B7B  file 00AE0B  80 3e 40 1b 0d            cmp     byte ptr [0x1b40], 0xd
+0729:2B80  file 00AE10  75 07                     jne     0x2b89
+0729:2B82  file 00AE12  c7 46 f4 04 00            mov     word ptr [bp - 0xc], 4
+0729:2B87  file 00AE17  eb 0d                     jmp     0x2b96
+0729:2B89  file 00AE19  83 7e f4 04               cmp     word ptr [bp - 0xc], 4
+0729:2B8D  file 00AE1D  74 07                     je      0x2b96
+0729:2B8F  file 00AE1F  0e                        push    cs
+0729:2B90  file 00AE20  e8 8b d9                  call    0x51e
+0729:2B93  file 00AE23  89 46 f4                  mov     word ptr [bp - 0xc], ax
+0729:2B96  file 00AE26  83 7e f4 04               cmp     word ptr [bp - 0xc], 4
+0729:2B9A  file 00AE2A  74 03                     je      0x2b9f
+0729:2B9C  file 00AE2C  e9 de fd                  jmp     0x297d
+0729:2B9F  file 00AE2F  eb 06                     jmp     0x2ba7
+0729:2BA1  file 00AE31  e9 d9 fd                  jmp     0x297d
+0729:2BA4  file 00AE34  e9 dc fd                  jmp     0x2983
+
+E18 round_count_and_rating  0729:2BE9  file 0xAE79  length 155
+0729:2BE9  file 00AE79  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:2BEC  file 00AE7C  b1 02                     mov     cl, 2
+0729:2BEE  file 00AE7E  d3 e3                     shl     bx, cl
+0729:2BF0  file 00AE80  8b 87 d7 34               mov     ax, word ptr [bx + 0x34d7]
+0729:2BF4  file 00AE84  0b 87 d9 34               or      ax, word ptr [bx + 0x34d9]
+0729:2BF8  file 00AE88  75 03                     jne     0x2bfd
+0729:2BFA  file 00AE8A  e9 ae 00                  jmp     0x2cab
+0729:2BFD  file 00AE8D  8b 5e fe                  mov     bx, word ptr [bp - 2]
+0729:2C00  file 00AE90  d3 e3                     shl     bx, cl
+0729:2C02  file 00AE92  8b 87 d9 34               mov     ax, word ptr [bx + 0x34d9]
+0729:2C06  file 00AE96  8b 97 d7 34               mov     dx, word ptr [bx + 0x34d7]
+0729:2C0A  file 00AE9A  89 46 ec                  mov     word ptr [bp - 0x14], ax
+0729:2C0D  file 00AE9D  89 56 ea                  mov     word ptr [bp - 0x16], dx
+0729:2C10  file 00AEA0  c4 5e ea                  les     bx, ptr [bp - 0x16]
+0729:2C13  file 00AEA3  a1 0d 34                  mov     ax, word ptr [0x340d]
+0729:2C16  file 00AEA6  26 01 47 06               add     word ptr es:[bx + 6], ax
+0729:2C1A  file 00AEAA  c4 5e ee                  les     bx, ptr [bp - 0x12]
+0729:2C1D  file 00AEAD  26 8b 47 02               mov     ax, word ptr es:[bx + 2]
+0729:2C21  file 00AEB1  50                        push    ax
+0729:2C22  file 00AEB2  a1 0d 34                  mov     ax, word ptr [0x340d]
+0729:2C25  file 00AEB5  ba 0a 00                  mov     dx, 0xa
+0729:2C28  file 00AEB8  f7 ea                     imul    dx
+0729:2C2A  file 00AEBA  5a                        pop     dx
+0729:2C2B  file 00AEBB  2b d0                     sub     dx, ax
+0729:2C2D  file 00AEBD  89 56 e8                  mov     word ptr [bp - 0x18], dx
+0729:2C30  file 00AEC0  c4 5e ea                  les     bx, ptr [bp - 0x16]
+0729:2C33  file 00AEC3  8b 46 e8                  mov     ax, word ptr [bp - 0x18]
+0729:2C36  file 00AEC6  99                        cdq     
+0729:2C37  file 00AEC7  26 f7 7f 06               idiv    word ptr es:[bx + 6]
+0729:2C3B  file 00AECB  89 46 e6                  mov     word ptr [bp - 0x1a], ax
+0729:2C3E  file 00AECE  83 7e e6 00               cmp     word ptr [bp - 0x1a], 0
+0729:2C42  file 00AED2  75 18                     jne     0x2c5c
+0729:2C44  file 00AED4  83 7e e8 00               cmp     word ptr [bp - 0x18], 0
+0729:2C48  file 00AED8  7e 07                     jle     0x2c51
+0729:2C4A  file 00AEDA  c7 46 e6 01 00            mov     word ptr [bp - 0x1a], 1
+0729:2C4F  file 00AEDF  eb 0b                     jmp     0x2c5c
+0729:2C51  file 00AEE1  83 7e e8 00               cmp     word ptr [bp - 0x18], 0
+0729:2C55  file 00AEE5  7d 05                     jge     0x2c5c
+0729:2C57  file 00AEE7  c7 46 e6 ff ff            mov     word ptr [bp - 0x1a], 0xffff
+0729:2C5C  file 00AEEC  c4 5e ea                  les     bx, ptr [bp - 0x16]
+0729:2C5F  file 00AEEF  8b 46 e6                  mov     ax, word ptr [bp - 0x1a]
+0729:2C62  file 00AEF2  26 01 47 08               add     word ptr es:[bx + 8], ax
+0729:2C66  file 00AEF6  83 3e ff 40 00            cmp     word ptr [0x40ff], 0
+0729:2C6B  file 00AEFB  75 16                     jne     0x2c83
+0729:2C6D  file 00AEFD  ff 76 ec                  push    word ptr [bp - 0x14]
+0729:2C70  file 00AF00  53                        push    bx
+0729:2C71  file 00AF01  8b 46 ea                  mov     ax, word ptr [bp - 0x16]
+0729:2C74  file 00AF04  05 15 00                  add     ax, 0x15
+0729:2C77  file 00AF07  ff 76 ec                  push    word ptr [bp - 0x14]
+0729:2C7A  file 00AF0A  50                        push    ax
+0729:2C7B  file 00AF0B  9a 6b 0c 33 0b            lcall   0xb33, 0xc6b
+0729:2C80  file 00AF10  83 c4 08                  add     sp, 8
+
+E19 rec_end_markers_and_close  0729:2DC2  file 0xB052  length 50
+0729:2DC2  file 00B052  83 3e 01 41 00            cmp     word ptr [0x4101], 0
+0729:2DC7  file 00B057  74 2b                     je      0x2df4
+0729:2DC9  file 00B059  c6 46 f5 0d               mov     byte ptr [bp - 0xb], 0xd
+0729:2DCD  file 00B05D  b8 01 00                  mov     ax, 1
+0729:2DD0  file 00B060  50                        push    ax
+0729:2DD1  file 00B061  16                        push    ss
+0729:2DD2  file 00B062  8d 46 f5                  lea     ax, [bp - 0xb]
+0729:2DD5  file 00B065  50                        push    ax
+0729:2DD6  file 00B066  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:2DDB  file 00B06B  83 c4 06                  add     sp, 6
+0729:2DDE  file 00B06E  b8 01 00                  mov     ax, 1
+0729:2DE1  file 00B071  50                        push    ax
+0729:2DE2  file 00B072  16                        push    ss
+0729:2DE3  file 00B073  8d 46 f5                  lea     ax, [bp - 0xb]
+0729:2DE6  file 00B076  50                        push    ax
+0729:2DE7  file 00B077  9a 0a 01 92 0e            lcall   0xe92, 0x10a
+0729:2DEC  file 00B07C  83 c4 06                  add     sp, 6
+0729:2DEF  file 00B07F  9a c1 00 92 0e            lcall   0xe92, 0xc1
+
+E20 crt_conditional_truncate  0000:2D99  file 0x3D99  length 10
+0000:2D99  file 003D99  f7 c6 00 02               test    si, 0x200
+0000:2D9D  file 003D9D  74 04                     je      0x2da3
+0000:2D9F  file 003D9F  57                        push    di
+0000:2DA0  file 003DA0  e8 e0 fe                  call    0x2c83
+
+E21 GROUP_AND DS1679:04B7 file0x17C47: 01 00 00 00 00 00 01 00 01 00

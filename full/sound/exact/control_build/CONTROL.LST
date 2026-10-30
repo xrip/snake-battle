@@ -1,0 +1,2480 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 1
+CONTROL.ASM
+
+
+
+      1				     ; Executable mnemonic specification of the	sound control/init ranges.
+      2				     ; 53 procedures, 3528 bytes: 3454 instruction bytes and 37	jump-table words.
+      3				     ; SOUND.C remains the separate C reconstruction. This file	does not establish
+      4				     ; historical ASM authorship and is	not counted as compiler-matched	C.
+      5				     ; See PROVENANCE.md. Builds read source only, never the reference executable.
+      6				     ; SCxxxx contributions are	combined in native order with the other	sound
+      7				     ; fragments. They share one CS frame in the final executable.
+      8				     ; Every jump-table	entry is a symbolic near pointer.
+      9				     .286
+     10				     extrn _snd_00B4:near
+     11				     extrn _snd_00E7:near
+     12				     extrn _snd_0DB9:near
+     13				     extrn _snd_0E6A:near
+     14				     extrn _snd_0E7C:near
+     15				     extrn _snd_101E:near
+     16				     extrn _snd_1041:near
+     17				     extrn _snd_1086:near
+     18				     extrn _snd_11F0:near
+     19				     extrn _snd_1263:near
+     20				     extrn _snd_12D8:near
+     21				     extrn _snd_15DF:near
+     22				     extrn _snd_162A:near
+     23				     extrn _snd_167E:near
+     24				     extrn _snd_1684:near
+     25				     extrn _snd_16A5:near
+     26				     extrn _snd_17FC:near
+     27				     extrn _snd_183E:near
+     28				     extrn _snd_1D6D:near
+     29				     extrn _snd_1DDB:near
+     30				     extrn _snd_1E1A:near
+     31				     extrn _snd_1FCC:near
+     32				     extrn _snd_20E7:near
+     33				     extrn _snd_21EF:near
+     34				     extrn _snd_2209:near
+     35				     extrn _snd_22F1:near
+     36				     extrn _snd_235A:near
+     37				     extrn _snd_23D1:near
+     38				     extrn _snd_23D2:near
+     39				     extrn _snd_247E:near
+     40				     extrn _snd_261A:near
+     41				     extrn _snd_3179:near
+     42				     extrn _snd_320A:near
+     43
+     44	0000			     SC000C segment byte public	'CODE'
+     45				     assume cs:CGROUP, ds:DGROUP
+     46
+     47				     ; far initialize wrapper; original	CS:000C
+     48				     public _snd_000C
+     49	0000			     _snd_000C label far
+     50	0000			     control_000C:
+     51	0000  C8 0000 00		 enter 0, 0 ; 000C
+     52	0004  FF 76 08			 push word ptr [bp + 8]	; 0010
+     53	0007  FF 76 06			 push word ptr [bp + 6]	; 0013
+     54	000A  E8 005Ar			 call near ptr _snd_0158 ; 0016
+     55	000D  83 C4 04			 add sp, 4 ; 0019
+     56	0010  C9			 leave ; 001C
+     57	0011  CB			 retf ;	001D
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 2
+CONTROL.ASM
+
+
+
+     58
+     59				     ; far shutdown wrapper; original CS:001E
+     60				     public _snd_001E
+     61	0012			     _snd_001E label far
+     62	0012			     control_001E:
+     63	0012  E8 00A9r			 call near ptr _snd_01A7 ; 001E
+     64	0015  CB			 retf ;	0021
+     65
+     66				     ; far pause wrapper; original CS:0022
+     67				     public _snd_0022
+     68	0016			     _snd_0022 label far
+     69	0016			     control_0022:
+     70	0016  E8 00CDr			 call near ptr _snd_01CB ; 0022
+     71	0019  CB			 retf ;	0025
+     72
+     73				     ; far resume wrapper; original CS:0026
+     74				     public _snd_0026
+     75	001A			     _snd_0026 label far
+     76	001A			     control_0026:
+     77	001A  E8 00D7r			 call near ptr _snd_01D5 ; 0026
+     78	001D  CB			 retf ;	0029
+     79
+     80				     ; far start-sound wrapper;	original CS:002A
+     81				     public _snd_002A
+     82	001E			     _snd_002A label far
+     83	001E			     control_002A:
+     84	001E  C8 0000 00		 enter 0, 0 ; 002A
+     85	0022  FF 76 06			 push word ptr [bp + 6]	; 002E
+     86	0025  E8 011Er			 call near ptr _snd_021C ; 0031
+     87	0028  83 C4 02			 add sp, 2 ; 0034
+     88	002B  C9			 leave ; 0037
+     89	002C  CB			 retf ;	0038
+     90
+     91				     ; far stop-sound wrapper; original	CS:0039
+     92				     public _snd_0039
+     93	002D			     _snd_0039 label far
+     94	002D			     control_0039:
+     95	002D  C8 0000 00		 enter 0, 0 ; 0039
+     96	0031  FF 76 06			 push word ptr [bp + 6]	; 003D
+     97	0034  E8 016Br			 call near ptr _snd_0269 ; 0040
+     98	0037  83 C4 02			 add sp, 2 ; 0043
+     99	003A  C9			 leave ; 0046
+    100	003B  CB			 retf ;	0047
+    101
+    102				     ; far sound-status	wrapper; original CS:0048
+    103				     public _snd_0048
+    104	003C			     _snd_0048 label far
+    105	003C			     control_0048:
+    106	003C  C8 0000 00		 enter 0, 0 ; 0048
+    107	0040  FF 76 06			 push word ptr [bp + 6]	; 004C
+    108	0043  E8 01B9r			 call near ptr _snd_02B7 ; 004F
+    109	0046  83 C4 02			 add sp, 2 ; 0052
+    110	0049  C9			 leave ; 0055
+    111	004A  CB			 retf ;	0056
+    112
+    113				     ; far fade	wrapper; original CS:0057
+    114				     public _snd_0057
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 3
+CONTROL.ASM
+
+
+
+    115	004B			     _snd_0057 label far
+    116	004B			     control_0057:
+    117	004B  C8 0000 00		 enter 0, 0 ; 0057
+    118	004F  FF 76 0A			 push word ptr [bp + 0Ah] ; 005B
+    119	0052  FF 76 08			 push word ptr [bp + 8]	; 005E
+    120	0055  FF 76 06			 push word ptr [bp + 6]	; 0061
+    121	0058  6A 0D			 push 0Dh ; 0064
+    122	005A  E8 01E6r			 call near ptr _snd_02E4 ; 0066
+    123	005D  83 C4 08			 add sp, 8 ; 0069
+    124	0060  C9			 leave ; 006C
+    125	0061  CB			 retf ;	006D
+    126	0062			     SC000C ends
+    127
+    128	0000			     SC00FE segment byte public	'CODE'
+    129				     assume cs:CGROUP, ds:DGROUP
+    130
+    131				     ; command dispatcher; original CS:00FE
+    132				     public _snd_00FE
+    133	0000			     _snd_00FE label far
+    134	0000			     control_00FE:
+    135	0000  C8 0000 00		 enter 0, 0 ; 00FE
+    136	0004  56			 push si ; 0102
+    137	0005  8A 46 07			 mov al, byte ptr [bp +	7] ; 0103
+    138	0008  8B 76 06			 mov si, word ptr [bp +	6] ; 0106
+    139	000B  81 E6 00FF		 and si, 0FFh ;	0109
+    140	000F  3C 01			 cmp al, 1 ; 010D
+    141	0011  77 21			 ja short control_0132 ; 010F
+    142	0013  74 25			 je short control_0138 ; 0111
+    143	0015  83 FE 0E			 cmp si, 0Eh ; 0113
+    144	0018  73 1A			 jae short control_0132	; 0116
+    145	001A  D1 E6			 shl si, 1 ; 0118
+    146	001C  8B 84 0000e		 mov ax, word ptr [si +	_snd_basic_commands] ; 011A
+    147	0020  0B C0			 or ax,	ax ; 011E
+    148	0022  74 10			 je short control_0132 ; 0120
+    149	0024  FF 76 0C			 push word ptr [bp + 0Ch] ; 0122
+    150	0027  FF 76 0A			 push word ptr [bp + 0Ah] ; 0125
+    151	002A  FF 76 08			 push word ptr [bp + 8]	; 0128
+    152	002D  FF D0			 call ax ; 012B
+    153	002F  83 C4 06			 add sp, 6 ; 012D
+    154	0032  EB 23			 jmp short control_0155	; 0130
+    155	0034			     control_0132:
+    156	0034  B8 FFFF			 mov ax, 0FFFFh	; 0132
+    157	0037  99			 cwd ; 0135
+    158	0038  EB 1D			 jmp short control_0155	; 0136
+    159	003A			     control_0138:
+    160	003A  FF 76 14			 push word ptr [bp + 014h] ; 0138
+    161	003D  FF 76 12			 push word ptr [bp + 012h] ; 013B
+    162	0040  FF 76 10			 push word ptr [bp + 010h] ; 013E
+    163	0043  FF 76 0E			 push word ptr [bp + 0Eh] ; 0141
+    164	0046  FF 76 0C			 push word ptr [bp + 0Ch] ; 0144
+    165	0049  FF 76 0A			 push word ptr [bp + 0Ah] ; 0147
+    166	004C  FF 76 08			 push word ptr [bp + 8]	; 014A
+    167	004F  56			 push si ; 014D
+    168	0050  E8 0193			 call near ptr _snd_02E4 ; 014E
+    169	0053  83 C4 10			 add sp, 010h ;	0151
+    170	0056  99			 cwd ; 0154
+    171	0057			     control_0155:
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 4
+CONTROL.ASM
+
+
+
+    172	0057  5E			 pop si	; 0155
+    173	0058  C9			 leave ; 0156
+    174	0059  CB			 retf ;	0157
+    175
+    176				     ; initialize sound	system;	original CS:0158
+    177				     public _snd_0158
+    178	005A			     _snd_0158 label near
+    179	005A			     control_0158:
+    180	005A  C8 0000 00		 enter 0, 0 ; 0158
+    181	005E  E8 0000e			 call near ptr _snd_320A ; 015C
+    182	0061  0B C0			 or ax,	ax ; 015F
+    183	0063  75 3E			 jne short control_01A1	; 0161
+    184	0065  8B 46 04			 mov ax, word ptr [bp +	4] ; 0163
+    185	0068  8B 56 06			 mov dx, word ptr [bp +	6] ; 0166
+    186	006B  A3 0000e			 mov word ptr [_snd_resources],	ax ; 0169
+    187	006E  89 16 0002e		 mov word ptr [_snd_resources+2], dx ; 016C
+    188	0072  C7 06 0000e 007F		 mov word ptr [_snd_master_volume], 07Fh ; 0170
+    189	0078  E8 0000r			 call near ptr _snd_3283 ; 0176
+    190	007B  E8 002Cr			 call near ptr _snd_32AF ; 0179
+    191	007E  E8 00DFr			 call near ptr _snd_3362 ; 017C
+    192	0081  E8 004Cr			 call near ptr _snd_32CF ; 017F
+    193	0084  E8 0068r			 call near ptr _snd_32EB ; 0182
+    194	0087  E8 0080r			 call near ptr _snd_3303 ; 0185
+    195	008A  E8 00ACr			 call near ptr _snd_332F ; 0188
+    196	008D  33 C0			 xor ax, ax ; 018B
+    197	008F  A3 0000e			 mov word ptr [_snd_scanning], ax ; 018D
+    198	0092  A3 0000e			 mov word ptr [_snd_paused], ax	; 0190
+    199	0095  A3 0000e			 mov word ptr [_snd_disabled], ax ; 0193
+    200	0098  E8 0000e			 call near ptr _snd_00B4 ; 0196
+    201	009B  33 C0			 xor ax, ax ; 0199
+    202	009D  A3 0000e			 mov word ptr [_snd_basic_commands], ax	; 019B
+    203	00A0  99			 cwd ; 019E
+    204	00A1  C9			 leave ; 019F
+    205	00A2  C3			 ret ; 01A0
+    206	00A3			     control_01A1:
+    207	00A3  B8 FFFF			 mov ax, 0FFFFh	; 01A1
+    208	00A6  99			 cwd ; 01A4
+    209	00A7  C9			 leave ; 01A5
+    210	00A8  C3			 ret ; 01A6
+    211
+    212				     ; shutdown	sound system; original CS:01A7
+    213				     public _snd_01A7
+    214	00A9			     _snd_01A7 label near
+    215	00A9			     control_01A7:
+    216	00A9  B8 0001			 mov ax, 1 ; 01A7
+    217	00AC  A3 0000e			 mov word ptr [_snd_paused], ax	; 01AA
+    218	00AF  A3 0000e			 mov word ptr [_snd_disabled], ax ; 01AD
+    219	00B2  E8 0000e			 call near ptr _snd_00E7 ; 01B0
+    220	00B5  E8 0000e			 call near ptr _snd_1FCC ; 01B3
+    221	00B8  E8 0000e			 call near ptr _snd_167E ; 01B6
+    222	00BB  C6 06 0000e 64		 mov byte ptr [_snd_parse_nesting], 064h ; 01B9
+    223	00C0  E8 00DA			 call near ptr _snd_029B ; 01BE
+    224	00C3  C7 06 0000e 005Ar		 mov word ptr [_snd_basic_commands], offset _snd_0158 ;	01C1
+    225	00C9  33 C0			 xor ax, ax ; 01C7
+    226	00CB  99			 cwd ; 01C9
+    227	00CC  C3			 ret ; 01CA
+    228
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 5
+CONTROL.ASM
+
+
+
+    229				     ; pause sequence advancement; original CS:01CB
+    230				     public _snd_01CB
+    231	00CD			     _snd_01CB label near
+    232	00CD			     control_01CB:
+    233	00CD  C7 06 0000e 0001		 mov word ptr [_snd_paused], 1 ; 01CB
+    234	00D3  33 C0			 xor ax, ax ; 01D1
+    235	00D5  99			 cwd ; 01D3
+    236	00D6  C3			 ret ; 01D4
+    237
+    238				     ; resume sequence advancement; original CS:01D5
+    239				     public _snd_01D5
+    240	00D7			     _snd_01D5 label near
+    241	00D7			     control_01D5:
+    242	00D7  33 C0			 xor ax, ax ; 01D5
+    243	00D9  A3 0000e			 mov word ptr [_snd_paused], ax	; 01D7
+    244	00DC  99			 cwd ; 01DA
+    245	00DD  C3			 ret ; 01DB
+    246
+    247				     ; set master volume; original CS:01DC
+    248				     public _snd_01DC
+    249	00DE			     _snd_01DC label near
+    250	00DE			     control_01DC:
+    251	00DE  C8 0000 00		 enter 0, 0 ; 01DC
+    252	00E2  57			 push di ; 01E0
+    253	00E3  56			 push si ; 01E1
+    254	00E4  80 7E 04 7F		 cmp byte ptr [bp + 4],	07Fh ; 01E2
+    255	00E8  76 04			 jbe short control_01EC	; 01E6
+    256	00EA  C6 46 04 7F		 mov byte ptr [bp + 4],	07Fh ; 01E8
+    257	00EE			     control_01EC:
+    258	00EE  8A 46 04			 mov al, byte ptr [bp +	4] ; 01EC
+    259	00F1  98			 cbw ; 01EF
+    260	00F2  A3 0000e			 mov word ptr [_snd_master_volume], ax ; 01F0
+    261	00F5  BE 0000e			 mov si, offset	_snd_players ; 01F3
+    262	00F8  BF 0002			 mov di, 2 ; 01F6
+    263	00FB			     control_01F9:
+    264	00FB  80 7C 06 00		 cmp byte ptr [si + 6],	0 ; 01F9
+    265	00FF  74 0B			 je short control_020A ; 01FD
+    266	0101  8A 44 0D			 mov al, byte ptr [si +	0Dh] ; 01FF
+    267	0104  50			 push ax ; 0202
+    268	0105  56			 push si ; 0203
+    269	0106  E8 0200r			 call near ptr _snd_075E ; 0204
+    270	0109  83 C4 04			 add sp, 4 ; 0207
+    271	010C			     control_020A:
+    272	010C  83 C6 12			 add si, 012h ;	020A
+    273	010F  4F			 dec di	; 020D
+    274	0110  75 E9			 jne short control_01F9	; 020E
+    275	0112  33 C0			 xor ax, ax ; 0210
+    276	0114  99			 cwd ; 0212
+    277	0115  5E			 pop si	; 0213
+    278	0116  5F			 pop di	; 0214
+    279	0117  C9			 leave ; 0215
+    280	0118  C3			 ret ; 0216
+    281
+    282				     ; get master volume; original CS:0217
+    283				     public _snd_0217
+    284	0119			     _snd_0217 label near
+    285	0119			     control_0217:
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 6
+CONTROL.ASM
+
+
+
+    286	0119  A1 0000e			 mov ax, word ptr [_snd_master_volume] ; 0217
+    287	011C  99			 cwd ; 021A
+    288	011D  C3			 ret ; 021B
+    289
+    290				     ; start sound; original CS:021C
+    291				     public _snd_021C
+    292	011E			     _snd_021C label near
+    293	011E			     control_021C:
+    294	011E  C8 0000 00		 enter 0, 0 ; 021C
+    295	0122  57			 push di ; 0220
+    296	0123  56			 push si ; 0221
+    297	0124  8B 7E 04			 mov di, word ptr [bp +	4] ; 0222
+    298	0127  6A 00			 push 0	; 0225
+    299	0129  FF 36 0002e		 push word ptr [_snd_midi_tags+2] ; 0227
+    300	012D  FF 36 0000e		 push word ptr [_snd_midi_tags]	; 022B
+    301	0131  57			 push di ; 022F
+    302	0132  E8 01D3			 call near ptr _snd_0406 ; 0230
+    303	0135  83 C4 08			 add sp, 8 ; 0233
+    304	0138  0B C2			 or ax,	dx ; 0236
+    305	013A  74 27			 je short control_0261 ; 0238
+    306	013C  68 0080			 push 080h ; 023A
+    307	013F  E8 0048r			 call near ptr _snd_05A6 ; 023D
+    308	0142  44			 inc sp	; 0240
+    309	0143  44			 inc sp	; 0241
+    310	0144  0B C0			 or ax,	ax ; 0242
+    311	0146  74 1B			 je short control_0261 ; 0244
+    312	0148  8B F0			 mov si, ax ; 0246
+    313	014A  56			 push si ; 0248
+    314	014B  E8 00E5r			 call near ptr _snd_0643 ; 0249
+    315	014E  44			 inc sp	; 024C
+    316	014F  44			 inc sp	; 024D
+    317	0150  57			 push di ; 024E
+    318	0151  56			 push si ; 024F
+    319	0152  E8 008Ar			 call near ptr _snd_05E8 ; 0250
+    320	0155  83 C4 04			 add sp, 4 ; 0253
+    321	0158  0B C0			 or ax,	ax ; 0256
+    322	015A  74 07			 je short control_0261 ; 0258
+    323	015C  33 C0			 xor ax, ax ; 025A
+    324	015E  99			 cwd ; 025C
+    325	015F  5E			 pop si	; 025D
+    326	0160  5F			 pop di	; 025E
+    327	0161  C9			 leave ; 025F
+    328	0162  C3			 ret ; 0260
+    329	0163			     control_0261:
+    330	0163  B8 FFFF			 mov ax, 0FFFFh	; 0261
+    331	0166  99			 cwd ; 0264
+    332	0167  5E			 pop si	; 0265
+    333	0168  5F			 pop di	; 0266
+    334	0169  C9			 leave ; 0267
+    335	016A  C3			 ret ; 0268
+    336
+    337				     ; stop matching sound; original CS:0269
+    338				     public _snd_0269
+    339	016B			     _snd_0269 label near
+    340	016B			     control_0269:
+    341	016B  C8 0000 00		 enter 0, 0 ; 0269
+    342	016F  57			 push di ; 026D
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 7
+CONTROL.ASM
+
+
+
+    343	0170  56			 push si ; 026E
+    344	0171  BE 0000e			 mov si, offset	_snd_players ; 026F
+    345	0174  BF FFFF			 mov di, 0FFFFh	; 0272
+    346	0177			     control_0275:
+    347	0177  80 7C 06 01		 cmp byte ptr [si + 6],	1 ; 0275
+    348	017B  75 10			 jne short control_028B	; 0279
+    349	017D  8B 46 04			 mov ax, word ptr [bp +	4] ; 027B
+    350	0180  3B 44 08			 cmp ax, word ptr [si +	8] ; 027E
+    351	0183  75 08			 jne short control_028B	; 0281
+    352	0185  56			 push si ; 0283
+    353	0186  E8 00E5r			 call near ptr _snd_0643 ; 0284
+    354	0189  44			 inc sp	; 0287
+    355	018A  44			 inc sp	; 0288
+    356	018B  33 FF			 xor di, di ; 0289
+    357	018D			     control_028B:
+    358	018D  83 C6 12			 add si, 012h ;	028B
+    359	0190  81 FE 0024e		 cmp si, offset	_snd_players+36	; 028E
+    360	0194  72 E1			 jb short control_0275 ; 0292
+    361	0196  8B C7			 mov ax, di ; 0294
+    362	0198  99			 cwd ; 0296
+    363	0199  5E			 pop si	; 0297
+    364	019A  5F			 pop di	; 0298
+    365	019B  C9			 leave ; 0299
+    366	019C  C3			 ret ; 029A
+    367
+    368				     ; stop all	sounds;	original CS:029B
+    369				     public _snd_029B
+    370	019D			     _snd_029B label near
+    371	019D			     control_029B:
+    372	019D  56			 push si ; 029B
+    373	019E  E8 084Ar			 call near ptr _snd_0DA8 ; 029C
+    374	01A1  BE 0000e			 mov si, offset	_snd_players ; 029F
+    375	01A4			     control_02A2:
+    376	01A4  56			 push si ; 02A2
+    377	01A5  E8 00E5r			 call near ptr _snd_0643 ; 02A3
+    378	01A8  83 C4 02			 add sp, 2 ; 02A6
+    379	01AB  83 C6 12			 add si, 012h ;	02A9
+    380	01AE  81 FE 0024e		 cmp si, offset	_snd_players+36	; 02AC
+    381	01B2  72 F0			 jb short control_02A2 ; 02B0
+    382	01B4  33 C0			 xor ax, ax ; 02B2
+    383	01B6  99			 cwd ; 02B4
+    384	01B7  5E			 pop si	; 02B5
+    385	01B8  C3			 ret ; 02B6
+    386
+    387				     ; test sound activity; original CS:02B7
+    388				     public _snd_02B7
+    389	01B9			     _snd_02B7 label near
+    390	01B9			     control_02B7:
+    391	01B9  C8 0000 00		 enter 0, 0 ; 02B7
+    392	01BD  BB 0000e			 mov bx, offset	_snd_players ; 02BB
+    393	01C0  8B 56 04			 mov dx, word ptr [bp +	4] ; 02BE
+    394	01C3  B9 0002			 mov cx, 2 ; 02C1
+    395	01C6			     control_02C4:
+    396	01C6  80 7F 06 01		 cmp byte ptr [bx + 6],	1 ; 02C4
+    397	01CA  75 05			 jne short control_02CF	; 02C8
+    398	01CC  39 57 08			 cmp word ptr [bx + 8],	dx ; 02CA
+    399	01CF  74 0F			 je short control_02DE ; 02CD
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 8
+CONTROL.ASM
+
+
+
+    400	01D1			     control_02CF:
+    401	01D1  83 C3 12			 add bx, 012h ;	02CF
+    402	01D4  E2 F0			 loop control_02C4 ; 02D2
+    403	01D6  52			 push dx ; 02D4
+    404	01D7  E8 0000e			 call near ptr _snd_17FC ; 02D5
+    405	01DA  83 C4 02			 add sp, 2 ; 02D8
+    406	01DD  99			 cwd ; 02DB
+    407	01DE  C9			 leave ; 02DC
+    408	01DF  C3			 ret ; 02DD
+    409	01E0			     control_02DE:
+    410	01E0  B8 0001			 mov ax, 1 ; 02DE
+    411	01E3  99			 cwd ; 02E1
+    412	01E4  C9			 leave ; 02E2
+    413	01E5  C3			 ret ; 02E3
+    414
+    415				     ; dispatch	extended command by argument kind; original CS:02E4
+    416				     public _snd_02E4
+    417	01E6			     _snd_02E4 label near
+    418	01E6			     control_02E4:
+    419	01E6  C8 0000 00		 enter 0, 0 ; 02E4
+    420	01EA  56			 push si ; 02E8
+    421	01EB  8B 56 04			 mov dx, word ptr [bp +	4] ; 02E9
+    422	01EE  83 FA 18			 cmp dx, 018h ;	02EC
+    423	01F1  7C 03			 jl short control_02F4 ; 02EF
+    424	01F3  E9 010C			 jmp near ptr control_0400 ; 02F1
+    425	01F6			     control_02F4:
+    426	01F6  8B DA			 mov bx, dx ; 02F4
+    427	01F8  D1 E3			 shl bx, 1 ; 02F6
+    428	01FA  8B B7 0000e		 mov si, word ptr [bx +	_snd_extended_commands]	; 02F8
+    429	01FE  0B F6			 or si,	si ; 02FC
+    430	0200  75 03			 jne short control_0303	; 02FE
+    431	0202  E9 00FD			 jmp near ptr control_0400 ; 0300
+    432	0205			     control_0303:
+    433	0205  8B DA			 mov bx, dx ; 0303
+    434	0207  8A 87 0000e		 mov al, byte ptr [bx +	_snd_command_kinds] ; 0305
+    435	020B  32 E4			 xor ah, ah ; 0309
+    436	020D  D1 E0			 shl ax, 1 ; 030B
+    437	020F  93			 xchg bx, ax ; 030D
+    438	0210  2E: FF A7	0216r		 jmp word ptr cs:[bx + control_0314] ; 030E
+    439	0215  90			 nop ; 0313
+    440	0216			     control_0314:
+    441					 ; 7 near destinations,	indexed	by twice the selector
+    442	0216  0224r 0242r 0262r	  +	 dw offset control_0322, offset	control_0340, offset control_0360, offset control_038E
+    443	      0290r
+    444	021E  02ACr 02D0r 02E6r		 dw offset control_03AA, offset	control_03CE, offset control_03E4
+    445	0224			     control_0322:
+    446	0224  FF 76 12			 push word ptr [bp + 012h] ; 0322
+    447	0227  FF 76 10			 push word ptr [bp + 010h] ; 0325
+    448	022A  FF 76 0E			 push word ptr [bp + 0Eh] ; 0328
+    449	022D  FF 76 0C			 push word ptr [bp + 0Ch] ; 032B
+    450	0230  FF 76 0A			 push word ptr [bp + 0Ah] ; 032E
+    451	0233  FF 76 08			 push word ptr [bp + 8]	; 0331
+    452	0236  FF 76 06			 push word ptr [bp + 6]	; 0334
+    453	0239  FF D6			 call si ; 0337
+    454	023B  83 C4 0E			 add sp, 0Eh ; 0339
+    455	023E  5E			 pop si	; 033C
+    456	023F  C9			 leave ; 033D
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 9
+CONTROL.ASM
+
+
+
+    457	0240  C3			 ret ; 033E
+    458	0241  90			 nop ; 033F
+    459	0242			     control_0340:
+    460	0242  FF 76 06			 push word ptr [bp + 6]	; 0340
+    461	0245  E8 0016r			 call near ptr _snd_0574 ; 0343
+    462	0248  83 C4 02			 add sp, 2 ; 0346
+    463	024B  0B C0			 or ax,	ax ; 0349
+    464	024D  75 03			 jne short control_0350	; 034B
+    465	024F  E9 00B0			 jmp near ptr control_0400 ; 034D
+    466	0252			     control_0350:
+    467	0252  FF 76 0A			 push word ptr [bp + 0Ah] ; 0350
+    468	0255  FF 76 08			 push word ptr [bp + 8]	; 0353
+    469	0258  50			 push ax ; 0356
+    470	0259  FF D6			 call si ; 0357
+    471	025B  83 C4 06			 add sp, 6 ; 0359
+    472	025E  5E			 pop si	; 035C
+    473	025F  C9			 leave ; 035D
+    474	0260  C3			 ret ; 035E
+    475	0261  90			 nop ; 035F
+    476	0262			     control_0360:
+    477	0262  FF 76 06			 push word ptr [bp + 6]	; 0360
+    478	0265  E8 0016r			 call near ptr _snd_0574 ; 0363
+    479	0268  83 C4 02			 add sp, 2 ; 0366
+    480	026B  0B C0			 or ax,	ax ; 0369
+    481	026D  75 03			 jne short control_0370	; 036B
+    482	026F  E9 0090			 jmp near ptr control_0400 ; 036D
+    483	0272			     control_0370:
+    484	0272  8B D8			 mov bx, ax ; 0370
+    485	0274  FF 76 12			 push word ptr [bp + 012h] ; 0372
+    486	0277  FF 76 10			 push word ptr [bp + 010h] ; 0375
+    487	027A  FF 76 0E			 push word ptr [bp + 0Eh] ; 0378
+    488	027D  FF 76 0C			 push word ptr [bp + 0Ch] ; 037B
+    489	0280  FF 76 0A			 push word ptr [bp + 0Ah] ; 037E
+    490	0283  FF 76 08			 push word ptr [bp + 8]	; 0381
+    491	0286  FF 37			 push word ptr [bx] ; 0384
+    492	0288  FF D6			 call si ; 0386
+    493	028A  83 C4 0E			 add sp, 0Eh ; 0388
+    494	028D  5E			 pop si	; 038B
+    495	028E  C9			 leave ; 038C
+    496	028F  C3			 ret ; 038D
+    497	0290			     control_038E:
+    498	0290  FF 76 06			 push word ptr [bp + 6]	; 038E
+    499	0293  E8 0016r			 call near ptr _snd_0574 ; 0391
+    500	0296  83 C4 02			 add sp, 2 ; 0394
+    501	0299  0B C0			 or ax,	ax ; 0397
+    502	029B  74 65			 je short control_0400 ; 0399
+    503	029D  FF 76 0A			 push word ptr [bp + 0Ah] ; 039B
+    504	02A0  FF 76 08			 push word ptr [bp + 8]	; 039E
+    505	02A3  50			 push ax ; 03A1
+    506	02A4  FF D6			 call si ; 03A2
+    507	02A6  83 C4 06			 add sp, 6 ; 03A4
+    508	02A9  5E			 pop si	; 03A7
+    509	02AA  C9			 leave ; 03A8
+    510	02AB  C3			 ret ; 03A9
+    511	02AC			     control_03AA:
+    512	02AC  FF 76 06			 push word ptr [bp + 6]	; 03AA
+    513	02AF  E8 0016r			 call near ptr _snd_0574 ; 03AD
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 10
+CONTROL.ASM
+
+
+
+    514	02B2  83 C4 02			 add sp, 2 ; 03B0
+    515	02B5  0B C0			 or ax,	ax ; 03B3
+    516	02B7  74 49			 je short control_0400 ; 03B5
+    517	02B9  8B D8			 mov bx, ax ; 03B7
+    518	02BB  FF 76 0C			 push word ptr [bp + 0Ch] ; 03B9
+    519	02BE  FF 76 0A			 push word ptr [bp + 0Ah] ; 03BC
+    520	02C1  FF 76 08			 push word ptr [bp + 8]	; 03BF
+    521	02C4  FF 77 02			 push word ptr [bx + 2]	; 03C2
+    522	02C7  FF D6			 call si ; 03C5
+    523	02C9  83 C4 08			 add sp, 8 ; 03C7
+    524	02CC  5E			 pop si	; 03CA
+    525	02CD  C9			 leave ; 03CB
+    526	02CE  C3			 ret ; 03CC
+    527	02CF  90			 nop ; 03CD
+    528	02D0			     control_03CE:
+    529	02D0  33 C0			 xor ax, ax ; 03CE
+    530	02D2  0B C0			 or ax,	ax ; 03D0
+    531	02D4  74 2C			 je short control_0400 ; 03D2
+    532	02D6  FF 76 08			 push word ptr [bp + 8]	; 03D4
+    533	02D9  FF 76 06			 push word ptr [bp + 6]	; 03D7
+    534	02DC  50			 push ax ; 03DA
+    535	02DD  FF D6			 call si ; 03DB
+    536	02DF  83 C4 06			 add sp, 6 ; 03DD
+    537	02E2  5E			 pop si	; 03E0
+    538	02E3  C9			 leave ; 03E1
+    539	02E4  C3			 ret ; 03E2
+    540	02E5  90			 nop ; 03E3
+    541	02E6			     control_03E4:
+    542	02E6  33 C0			 xor ax, ax ; 03E4
+    543	02E8  0B C0			 or ax,	ax ; 03E6
+    544	02EA  74 16			 je short control_0400 ; 03E8
+    545	02EC  8B D8			 mov bx, ax ; 03EA
+    546	02EE  FF 76 0A			 push word ptr [bp + 0Ah] ; 03EC
+    547	02F1  FF 76 08			 push word ptr [bp + 8]	; 03EF
+    548	02F4  FF 76 06			 push word ptr [bp + 6]	; 03F2
+    549	02F7  FF 77 02			 push word ptr [bx + 2]	; 03F5
+    550	02FA  FF D6			 call si ; 03F8
+    551	02FC  83 C4 08			 add sp, 8 ; 03FA
+    552	02FF  5E			 pop si	; 03FD
+    553	0300  C9			 leave ; 03FE
+    554	0301  C3			 ret ; 03FF
+    555	0302			     control_0400:
+    556	0302  B8 FFFF			 mov ax, 0FFFFh	; 0400
+    557	0305  5E			 pop si	; 0403
+    558	0306  C9			 leave ; 0404
+    559	0307  C3			 ret ; 0405
+    560
+    561				     ; locate MIDI chunk in resource; original CS:0406
+    562				     public _snd_0406
+    563	0308			     _snd_0406 label near
+    564	0308			     control_0406:
+    565	0308  C8 0004 00		 enter 4, 0 ; 0406
+    566	030C  8B 46 04			 mov ax, word ptr [bp +	4] ; 040A
+    567	030F  C1 E0 02			 shl ax, 2 ; 040D
+    568	0312  C4 1E 0000e		 les bx, dword ptr [_snd_resources] ; 0410
+    569	0316  03 D8			 add bx, ax ; 0414
+    570	0318  26: 8B 07			 mov ax, word ptr es:[bx] ; 0416
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 11
+CONTROL.ASM
+
+
+
+    571	031B  26: 8B 57	02		 mov dx, word ptr es:[bx + 2] ;	0419
+    572	031F  89 46 FC			 mov word ptr [bp - 4],	ax ; 041D
+    573	0322  89 56 FE			 mov word ptr [bp - 2],	dx ; 0420
+    574	0325  0B C2			 or ax,	dx ; 0423
+    575	0327  74 20			 je short control_0447 ; 0425
+    576	0329  C4 5E FC			 les bx, dword ptr [bp - 4] ; 0427
+    577	032C  26: 81 3F	544D		 cmp word ptr es:[bx], 0544Dh ;	042A
+    578	0331  75 16			 jne short control_0447	; 042F
+    579	0333  26: 81 7F	02 6468		 cmp word ptr es:[bx + 2], 06468h ; 0431
+    580	0339  75 0E			 jne short control_0447	; 0437
+    581	033B  83 C3 08			 add bx, 8 ; 0439
+    582	033E  81 7E 08 6468		 cmp word ptr [bp + 8],	06468h ; 043C
+    583	0343  75 09			 jne short control_044C	; 0441
+    584	0345  8B C3			 mov ax, bx ; 0443
+    585	0347  C9			 leave ; 0445
+    586	0348  C3			 ret ; 0446
+    587	0349			     control_0447:
+    588	0349  33 C0			 xor ax, ax ; 0447
+    589	034B  99			 cwd ; 0449
+    590	034C  C9			 leave ; 044A
+    591	034D  C3			 ret ; 044B
+    592	034E			     control_044C:
+    593	034E  26: 8B 47	02		 mov ax, word ptr es:[bx + 2] ;	044C
+    594	0352  86 C4			 xchg al, ah ; 0450
+    595	0354  3B 46 0A			 cmp ax, word ptr [bp +	0Ah] ; 0452
+    596	0357  77 05			 ja short control_045C ; 0455
+    597	0359  C7 46 0A 0000		 mov word ptr [bp + 0Ah], 0 ; 0457
+    598	035E			     control_045C:
+    599	035E  83 46 FC 04		 add word ptr [bp - 4],	4 ; 045C
+    600	0362  FF 76 FE			 push word ptr [bp - 2]	; 0460
+    601	0365  FF 76 FC			 push word ptr [bp - 4]	; 0463
+    602	0368  E8 0000r			 call near ptr _snd_04B8 ; 0466
+    603	036B  83 C4 04			 add sp, 4 ; 0469
+    604	036E  05 0004			 add ax, 4 ; 046C
+    605	0371  01 46 FC			 add word ptr [bp - 4],	ax ; 046F
+    606	0374  C4 5E FC			 les bx, dword ptr [bp - 4] ; 0472
+    607	0377  FF 4E 0A			 dec word ptr [bp + 0Ah] ; 0475
+    608	037A  79 E2			 jns short control_045C	; 0478
+    609	037C  26: 8B 07			 mov ax, word ptr es:[bx] ; 047A
+    610	037F  26: 8B 57	02		 mov dx, word ptr es:[bx + 2] ;	047D
+    611	0383  3B 46 06			 cmp ax, word ptr [bp +	6] ; 0481
+    612	0386  75 C1			 jne short control_0447	; 0484
+    613	0388  3B 56 08			 cmp dx, word ptr [bp +	8] ; 0486
+    614	038B  75 BC			 jne short control_0447	; 0489
+    615	038D  8B 46 FC			 mov ax, word ptr [bp -	4] ; 048B
+    616	0390  8B 56 FE			 mov dx, word ptr [bp -	2] ; 048E
+    617	0393  05 0008			 add ax, 8 ; 0491
+    618	0396  C9			 leave ; 0494
+    619	0397  C3			 ret ; 0495
+    620	0398			     SC00FE ends
+    621
+    622	0000			     SC04B8 segment byte public	'CODE'
+    623				     assume cs:CGROUP, ds:DGROUP
+    624
+    625				     ; read big-endian far dword; original CS:04B8
+    626				     public _snd_04B8
+    627	0000			     _snd_04B8 label near
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 12
+CONTROL.ASM
+
+
+
+    628	0000			     control_04B8:
+    629	0000  C8 0000 00		 enter 0, 0 ; 04B8
+    630	0004  C4 5E 04			 les bx, dword ptr [bp + 4] ; 04BC
+    631	0007  26: 8B 17			 mov dx, word ptr es:[bx] ; 04BF
+    632	000A  26: 8B 47	02		 mov ax, word ptr es:[bx + 2] ;	04C2
+    633	000E  86 D6			 xchg dl, dh ; 04C6
+    634	0010  86 C4			 xchg al, ah ; 04C8
+    635	0012  C9			 leave ; 04CA
+    636	0013  C3			 ret ; 04CB
+    637
+    638				     ; read big-endian near word; original CS:04CC
+    639				     public _snd_04CC
+    640	0014			     _snd_04CC label near
+    641	0014			     control_04CC:
+    642	0014  C8 0000 00		 enter 0, 0 ; 04CC
+    643	0018  8B 5E 04			 mov bx, word ptr [bp +	4] ; 04D0
+    644	001B  8B 07			 mov ax, word ptr [bx] ; 04D3
+    645	001D  86 C4			 xchg al, ah ; 04D5
+    646	001F  C9			 leave ; 04D7
+    647	0020  C3			 ret ; 04D8
+    648
+    649				     ; clamp signed value; original CS:04D9
+    650				     public _snd_04D9
+    651	0021			     _snd_04D9 label near
+    652	0021			     control_04D9:
+    653	0021  C8 0000 00		 enter 0, 0 ; 04D9
+    654	0025  8B 56 04			 mov dx, word ptr [bp +	4] ; 04DD
+    655	0028  8B 5E 06			 mov bx, word ptr [bp +	6] ; 04E0
+    656	002B  3B DA			 cmp bx, dx ; 04E3
+    657	002D  7F 07			 jg short control_04EE ; 04E5
+    658	002F  8B 5E 08			 mov bx, word ptr [bp +	8] ; 04E7
+    659	0032  3B DA			 cmp bx, dx ; 04EA
+    660	0034  7D 02			 jge short control_04F0	; 04EC
+    661	0036			     control_04EE:
+    662	0036  8B D3			 mov dx, bx ; 04EE
+    663	0038			     control_04F0:
+    664	0038  8B C2			 mov ax, dx ; 04F0
+    665	003A  C9			 leave ; 04F2
+    666	003B  C3			 ret ; 04F3
+    667
+    668				     ; wrap note value in octaves; original CS:04F4
+    669				     public _snd_04F4
+    670	003C			     _snd_04F4 label near
+    671	003C			     control_04F4:
+    672	003C  C8 0000 00		 enter 0, 0 ; 04F4
+    673	0040  8B 5E 04			 mov bx, word ptr [bp +	4] ; 04F8
+    674	0043  3B 5E 06			 cmp bx, word ptr [bp +	6] ; 04FB
+    675	0046  7F 1A			 jg short control_051A ; 04FE
+    676	0048  8B 46 06			 mov ax, word ptr [bp +	6] ; 0500
+    677	004B  2B C3			 sub ax, bx ; 0503
+    678	004D  05 000B			 add ax, 0Bh ; 0505
+    679	0050  B9 000C			 mov cx, 0Ch ; 0508
+    680	0053  33 D2			 xor dx, dx ; 050B
+    681	0055  F7 F1			 div cx	; 050D
+    682	0057  8B D0			 mov dx, ax ; 050F
+    683	0059  D1 E0			 shl ax, 1 ; 0511
+    684	005B  03 C2			 add ax, dx ; 0513
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 13
+CONTROL.ASM
+
+
+
+    685	005D  C1 E0 02			 shl ax, 2 ; 0515
+    686	0060  03 D8			 add bx, ax ; 0518
+    687	0062			     control_051A:
+    688	0062  39 5E 08			 cmp word ptr [bp + 8],	bx ; 051A
+    689	0065  7D 1A			 jge short control_0539	; 051D
+    690	0067  8B C3			 mov ax, bx ; 051F
+    691	0069  2B 46 08			 sub ax, word ptr [bp +	8] ; 0521
+    692	006C  05 000B			 add ax, 0Bh ; 0524
+    693	006F  B9 000C			 mov cx, 0Ch ; 0527
+    694	0072  33 D2			 xor dx, dx ; 052A
+    695	0074  F7 F1			 div cx	; 052C
+    696	0076  8B D0			 mov dx, ax ; 052E
+    697	0078  D1 E0			 shl ax, 1 ; 0530
+    698	007A  03 C2			 add ax, dx ; 0532
+    699	007C  C1 E0 02			 shl ax, 2 ; 0534
+    700	007F  2B D8			 sub bx, ax ; 0537
+    701	0081			     control_0539:
+    702	0081  8B C3			 mov ax, bx ; 0539
+    703	0083  C9			 leave ; 053B
+    704	0084  C3			 ret ; 053C
+    705	0085			     SC04B8 ends
+    706
+    707	0000			     SC055E segment byte public	'CODE'
+    708				     assume cs:CGROUP, ds:DGROUP
+    709
+    710				     ; timer work dispatcher; original CS:055E
+    711				     public _snd_055E
+    712	0000			     _snd_055E label near
+    713	0000			     control_055E:
+    714	0000  A1 0000e			 mov ax, word ptr [_snd_disabled] ; 055E
+    715	0003  0B 06 0000e		 or ax,	word ptr [_snd_paused] ; 0561
+    716	0007  75 0C			 jne short control_0573	; 0565
+    717	0009  E8 0000e			 call near ptr _snd_0E7C ; 0567
+    718	000C  E8 0000e			 call near ptr _snd_1263 ; 056A
+    719	000F  E8 0000e			 call near ptr _snd_1E1A ; 056D
+    720	0012  E8 0000e			 call near ptr _snd_16A5 ; 0570
+    721	0015			     control_0573:
+    722	0015  C3			 ret ; 0573
+    723
+    724				     ; find unique matching player; original CS:0574
+    725				     public _snd_0574
+    726	0016			     _snd_0574 label near
+    727	0016			     control_0574:
+    728	0016  C8 0000 00		 enter 0, 0 ; 0574
+    729	001A  57			 push di ; 0578
+    730	001B  8B 46 04			 mov ax, word ptr [bp +	4] ; 0579
+    731	001E  BA FFFF			 mov dx, 0FFFFh	; 057C
+    732	0021  BB 0000e			 mov bx, offset	_snd_players ; 057F
+    733	0024  B9 0002			 mov cx, 2 ; 0582
+    734	0027			     control_0585:
+    735	0027  80 7F 06 01		 cmp byte ptr [bx + 6],	1 ; 0585
+    736	002B  75 08			 jne short control_0593	; 0589
+    737	002D  3B 47 08			 cmp ax, word ptr [bx +	8] ; 058B
+    738	0030  75 03			 jne short control_0593	; 058E
+    739	0032  8B FB			 mov di, bx ; 0590
+    740	0034  42			 inc dx	; 0592
+    741	0035			     control_0593:
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 14
+CONTROL.ASM
+
+
+
+    742	0035  83 C3 12			 add bx, 012h ;	0593
+    743	0038  E2 ED			 loop control_0585 ; 0596
+    744	003A  0B D2			 or dx,	dx ; 0598
+    745	003C  74 05			 je short control_05A1 ; 059A
+    746	003E  33 C0			 xor ax, ax ; 059C
+    747	0040  5F			 pop di	; 059E
+    748	0041  C9			 leave ; 059F
+    749	0042  C3			 ret ; 05A0
+    750	0043			     control_05A1:
+    751	0043  8B C7			 mov ax, di ; 05A1
+    752	0045  5F			 pop di	; 05A3
+    753	0046  C9			 leave ; 05A4
+    754	0047  C3			 ret ; 05A5
+    755
+    756				     ; choose idle or lower-priority player; original CS:05A6
+    757				     public _snd_05A6
+    758	0048			     _snd_05A6 label near
+    759	0048			     control_05A6:
+    760	0048  C8 0000 00		 enter 0, 0 ; 05A6
+    761	004C  56			 push si ; 05AA
+    762	004D  BE 0000e			 mov si, offset	_snd_players ; 05AB
+    763	0050  33 C9			 xor cx, cx ; 05AE
+    764	0052  33 D2			 xor dx, dx ; 05B0
+    765	0054  B4 FF			 mov ah, 0FFh ;	05B2
+    766	0056			     control_05B4:
+    767	0056  80 7C 06 00		 cmp byte ptr [si + 6],	0 ; 05B4
+    768	005A  74 24			 je short control_05DE ; 05B8
+    769	005C  80 7C 06 01		 cmp byte ptr [si + 6],	1 ; 05BA
+    770	0060  75 0B			 jne short control_05CB	; 05BE
+    771	0062  8A 44 0C			 mov al, byte ptr [si +	0Ch] ; 05C0
+    772	0065  3A C4			 cmp al, ah ; 05C3
+    773	0067  77 04			 ja short control_05CB ; 05C5
+    774	0069  8A E0			 mov ah, al ; 05C7
+    775	006B  8B CE			 mov cx, si ; 05C9
+    776	006D			     control_05CB:
+    777	006D  83 C6 12			 add si, 012h ;	05CB
+    778	0070  42			 inc dx	; 05CE
+    779	0071  83 FA 02			 cmp dx, 2 ; 05CF
+    780	0074  7C E0			 jl short control_05B4 ; 05D2
+    781	0076  38 66 04			 cmp byte ptr [bp + 4],	ah ; 05D4
+    782	0079  72 0A			 jb short control_05E3 ; 05D7
+    783	007B  8B C1			 mov ax, cx ; 05D9
+    784	007D  5E			 pop si	; 05DB
+    785	007E  C9			 leave ; 05DC
+    786	007F  C3			 ret ; 05DD
+    787	0080			     control_05DE:
+    788	0080  8B C6			 mov ax, si ; 05DE
+    789	0082  5E			 pop si	; 05E0
+    790	0083  C9			 leave ; 05E1
+    791	0084  C3			 ret ; 05E2
+    792	0085			     control_05E3:
+    793	0085  33 C0			 xor ax, ax ; 05E3
+    794	0087  5E			 pop si	; 05E5
+    795	0088  C9			 leave ; 05E6
+    796	0089  C3			 ret ; 05E7
+    797
+    798				     ; initialize selected player; original CS:05E8
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 15
+CONTROL.ASM
+
+
+
+    799				     public _snd_05E8
+    800	008A			     _snd_05E8 label near
+    801	008A			     control_05E8:
+    802	008A  C8 0000 00		 enter 0, 0 ; 05E8
+    803	008E  57			 push di ; 05EC
+    804	008F  56			 push si ; 05ED
+    805	0090  8B 7E 06			 mov di, word ptr [bp +	6] ; 05EE
+    806	0093  8B 76 04			 mov si, word ptr [bp +	4] ; 05F1
+    807	0096  C7 44 04 0000		 mov word ptr [si + 4],	0 ; 05F4
+    808	009B  C6 44 06 01		 mov byte ptr [si + 6],	1 ; 05F9
+    809	009F  89 7C 08			 mov word ptr [si + 8],	di ; 05FD
+    810	00A2  C6 44 0C 80		 mov byte ptr [si + 0Ch], 080h ; 0600
+    811	00A6  C6 44 0D 7F		 mov byte ptr [si + 0Dh], 07Fh ; 0604
+    812	00AA  C7 44 0A FFFF		 mov word ptr [si + 0Ah], 0FFFFh ; 0608
+    813	00AF  A1 0000e			 mov ax, word ptr [_snd_master_volume] ; 060D
+    814	00B2  C1 E0 07			 shl ax, 7 ; 0610
+    815	00B5  C1 F8 07			 sar ax, 7 ; 0613
+    816	00B8  88 44 0E			 mov byte ptr [si + 0Eh], al ; 0616
+    817	00BB  C6 44 0F 00		 mov byte ptr [si + 0Fh], 0 ; 0619
+    818	00BF  C6 44 10 00		 mov byte ptr [si + 010h], 0 ; 061D
+    819	00C3  C6 44 11 00		 mov byte ptr [si + 011h], 0 ; 0621
+    820	00C7  FF 74 02			 push word ptr [si + 2]	; 0625
+    821	00CA  E8 0000e			 call near ptr _snd_1086 ; 0628
+    822	00CD  44			 inc sp	; 062B
+    823	00CE  44			 inc sp	; 062C
+    824	00CF  57			 push di ; 062D
+    825	00D0  FF 34			 push word ptr [si] ; 062E
+    826	00D2  E8 0000e			 call near ptr _snd_0DB9 ; 0630
+    827	00D5  83 C4 04			 add sp, 4 ; 0633
+    828	00D8  0B C0			 or ax,	ax ; 0636
+    829	00DA  75 05			 jne short control_063F	; 0638
+    830	00DC  33 C0			 xor ax, ax ; 063A
+    831	00DE  88 44 06			 mov byte ptr [si + 6],	al ; 063C
+    832	00E1			     control_063F:
+    833	00E1  5E			 pop si	; 063F
+    834	00E2  5F			 pop di	; 0640
+    835	00E3  C9			 leave ; 0641
+    836	00E4  C3			 ret ; 0642
+    837
+    838				     ; release selected	player;	original CS:0643
+    839				     public _snd_0643
+    840	00E5			     _snd_0643 label near
+    841	00E5			     control_0643:
+    842	00E5  C8 0000 00		 enter 0, 0 ; 0643
+    843	00E9  56			 push si ; 0647
+    844	00EA  8B 76 04			 mov si, word ptr [bp +	4] ; 0648
+    845	00ED  80 7C 06 01		 cmp byte ptr [si + 6],	1 ; 064B
+    846	00F1  75 17			 jne short control_0668	; 064F
+    847	00F3  FF 34			 push word ptr [si] ; 0651
+    848	00F5  E8 0000e			 call near ptr _snd_0E6A ; 0653
+    849	00F8  44			 inc sp	; 0656
+    850	00F9  44			 inc sp	; 0657
+    851	00FA  56			 push si ; 0658
+    852	00FB  E8 0000e			 call near ptr _snd_1684 ; 0659
+    853	00FE  44			 inc sp	; 065C
+    854	00FF  44			 inc sp	; 065D
+    855	0100  56			 push si ; 065E
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 16
+CONTROL.ASM
+
+
+
+    856	0101  E8 0000e			 call near ptr _snd_20E7 ; 065F
+    857	0104  44			 inc sp	; 0662
+    858	0105  44			 inc sp	; 0663
+    859	0106  C6 44 06 00		 mov byte ptr [si + 6],	0 ; 0664
+    860	010A			     control_0668:
+    861	010A  5E			 pop si	; 0668
+    862	010B  C9			 leave ; 0669
+    863	010C  C3			 ret ; 066A
+    864
+    865				     ; query player or sequence	property; original CS:066B
+    866				     public _snd_066B
+    867	010D			     _snd_066B label near
+    868	010D			     control_066B:
+    869	010D  C8 0000 00		 enter 0, 0 ; 066B
+    870	0111  8B 5E 06			 mov bx, word ptr [bp +	6] ; 066F
+    871	0114  83 FB 17			 cmp bx, 017h ;	0672
+    872	0117  77 3F			 ja short control_06B6 ; 0675
+    873	0119  D1 E3			 shl bx, 1 ; 0677
+    874	011B  2E: 8B 97	0128r		 mov dx, word ptr cs:[bx + control_0686] ; 0679
+    875	0120  33 C0			 xor ax, ax ; 067E
+    876	0122  8B 5E 04			 mov bx, word ptr [bp +	4] ; 0680
+    877	0125  FF E2			 jmp dx	; 0683
+    878	0127  90			 nop ; 0685
+    879	0128			     control_0686:
+    880					 ; 24 near destinations, indexed by twice the selector
+    881	0128  015Er 0164r 016Ar	  +	 dw offset control_06BC, offset	control_06C2, offset control_06C8, offset control_06CE
+    882	      0170r
+    883	0130  0176r 017Cr 0184r	  +	 dw offset control_06D4, offset	control_06DA, offset control_06E2, offset control_06EA
+    884	      018Cr
+    885	0138  0194r 019Cr 01A4r	  +	 dw offset control_06F2, offset	control_06FA, offset control_0702, offset control_070A
+    886	      01ACr
+    887	0140  01B4r 01BCr 01C4r	  +	 dw offset control_0712, offset	control_071A, offset control_0722, offset control_0722
+    888	      01C4r
+    889	0148  01C4r 01C4r 01D4r	  +	 dw offset control_0722, offset	control_0722, offset control_0732, offset control_0732
+    890	      01D4r
+    891	0150  01D4r 01D4r 01D4r	  +	 dw offset control_0732, offset	control_0732, offset control_0732, offset control_0732
+    892	      01D4r
+    893	0158			     control_06B6:
+    894	0158  B8 FFFF			 mov ax, 0FFFFh	; 06B6
+    895	015B  C9			 leave ; 06B9
+    896	015C  C3			 ret ; 06BA
+    897	015D  90			 nop ; 06BB
+    898	015E			     control_06BC:
+    899	015E  8A 47 0C			 mov al, byte ptr [bx +	0Ch] ; 06BC
+    900	0161  C9			 leave ; 06BF
+    901	0162  C3			 ret ; 06C0
+    902	0163  90			 nop ; 06C1
+    903	0164			     control_06C2:
+    904	0164  8A 47 0D			 mov al, byte ptr [bx +	0Dh] ; 06C2
+    905	0167  C9			 leave ; 06C5
+    906	0168  C3			 ret ; 06C6
+    907	0169  90			 nop ; 06C7
+    908	016A			     control_06C8:
+    909	016A  8A 47 0F			 mov al, byte ptr [bx +	0Fh] ; 06C8
+    910	016D  C9			 leave ; 06CB
+    911	016E  C3			 ret ; 06CC
+    912	016F  90			 nop ; 06CD
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 17
+CONTROL.ASM
+
+
+
+    913	0170			     control_06CE:
+    914	0170  8A 47 10			 mov al, byte ptr [bx +	010h] ;	06CE
+    915	0173  C9			 leave ; 06D1
+    916	0174  C3			 ret ; 06D2
+    917	0175  90			 nop ; 06D3
+    918	0176			     control_06D4:
+    919	0176  8A 47 11			 mov al, byte ptr [bx +	011h] ;	06D4
+    920	0179  C9			 leave ; 06D7
+    921	017A  C3			 ret ; 06D8
+    922	017B  90			 nop ; 06D9
+    923	017C			     control_06DA:
+    924	017C  8B 1F			 mov bx, word ptr [bx] ; 06DA
+    925	017E  8A 47 24			 mov al, byte ptr [bx +	024h] ;	06DC
+    926	0181  C9			 leave ; 06DF
+    927	0182  C3			 ret ; 06E0
+    928	0183  90			 nop ; 06E1
+    929	0184			     control_06E2:
+    930	0184  8B 1F			 mov bx, word ptr [bx] ; 06E2
+    931	0186  8B 47 0A			 mov ax, word ptr [bx +	0Ah] ; 06E4
+    932	0189  C9			 leave ; 06E7
+    933	018A  C3			 ret ; 06E8
+    934	018B  90			 nop ; 06E9
+    935	018C			     control_06EA:
+    936	018C  8B 1F			 mov bx, word ptr [bx] ; 06EA
+    937	018E  8B 47 0C			 mov ax, word ptr [bx +	0Ch] ; 06EC
+    938	0191  C9			 leave ; 06EF
+    939	0192  C3			 ret ; 06F0
+    940	0193  90			 nop ; 06F1
+    941	0194			     control_06F2:
+    942	0194  8B 1F			 mov bx, word ptr [bx] ; 06F2
+    943	0196  8B 47 0E			 mov ax, word ptr [bx +	0Eh] ; 06F4
+    944	0199  C9			 leave ; 06F7
+    945	019A  C3			 ret ; 06F8
+    946	019B  90			 nop ; 06F9
+    947	019C			     control_06FA:
+    948	019C  8B 1F			 mov bx, word ptr [bx] ; 06FA
+    949	019E  8B 47 2A			 mov ax, word ptr [bx +	02Ah] ;	06FC
+    950	01A1  C9			 leave ; 06FF
+    951	01A2  C3			 ret ; 0700
+    952	01A3  90			 nop ; 0701
+    953	01A4			     control_0702:
+    954	01A4  8B 1F			 mov bx, word ptr [bx] ; 0702
+    955	01A6  8B 47 2C			 mov ax, word ptr [bx +	02Ch] ;	0704
+    956	01A9  C9			 leave ; 0707
+    957	01AA  C3			 ret ; 0708
+    958	01AB  90			 nop ; 0709
+    959	01AC			     control_070A:
+    960	01AC  8B 1F			 mov bx, word ptr [bx] ; 070A
+    961	01AE  8B 47 2E			 mov ax, word ptr [bx +	02Eh] ;	070C
+    962	01B1  C9			 leave ; 070F
+    963	01B2  C3			 ret ; 0710
+    964	01B3  90			 nop ; 0711
+    965	01B4			     control_0712:
+    966	01B4  8B 1F			 mov bx, word ptr [bx] ; 0712
+    967	01B6  8B 47 30			 mov ax, word ptr [bx +	030h] ;	0714
+    968	01B9  C9			 leave ; 0717
+    969	01BA  C3			 ret ; 0718
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 18
+CONTROL.ASM
+
+
+
+    970	01BB  90			 nop ; 0719
+    971	01BC			     control_071A:
+    972	01BC  8B 1F			 mov bx, word ptr [bx] ; 071A
+    973	01BE  8B 47 32			 mov ax, word ptr [bx +	032h] ;	071C
+    974	01C1  C9			 leave ; 071F
+    975	01C2  C3			 ret ; 0720
+    976	01C3  90			 nop ; 0721
+    977	01C4			     control_0722:
+    978	01C4  FF 76 08			 push word ptr [bp + 8]	; 0722
+    979	01C7  FF 76 06			 push word ptr [bp + 6]	; 0725
+    980	01CA  53			 push bx ; 0728
+    981	01CB  E8 0000e			 call near ptr _snd_261A ; 0729
+    982	01CE  83 C4 06			 add sp, 6 ; 072C
+    983	01D1  C9			 leave ; 072F
+    984	01D2  C3			 ret ; 0730
+    985	01D3  90			 nop ; 0731
+    986	01D4			     control_0732:
+    987	01D4  FF 76 08			 push word ptr [bp + 8]	; 0732
+    988	01D7  FF 76 06			 push word ptr [bp + 6]	; 0735
+    989	01DA  FF 77 02			 push word ptr [bx + 2]	; 0738
+    990	01DD  E8 0000e			 call near ptr _snd_11F0 ; 073B
+    991	01E0  83 C4 06			 add sp, 6 ; 073E
+    992	01E3  C9			 leave ; 0741
+    993	01E4  C3			 ret ; 0742
+    994
+    995				     ; set player priority; original CS:0743
+    996				     public _snd_0743
+    997	01E5			     _snd_0743 label near
+    998	01E5			     control_0743:
+    999	01E5  C8 0000 00		 enter 0, 0 ; 0743
+   1000	01E9  8B 5E 04			 mov bx, word ptr [bp +	4] ; 0747
+   1001	01EC  8A 46 06			 mov al, byte ptr [bp +	6] ; 074A
+   1002	01EF  88 47 0C			 mov byte ptr [bx + 0Ch], al ; 074D
+   1003	01F2  50			 push ax ; 0750
+   1004	01F3  6A 10			 push 010h ; 0751
+   1005	01F5  53			 push bx ; 0753
+   1006	01F6  E8 0000e			 call near ptr _snd_22F1 ; 0754
+   1007	01F9  83 C4 06			 add sp, 6 ; 0757
+   1008	01FC  33 C0			 xor ax, ax ; 075A
+   1009	01FE  C9			 leave ; 075C
+   1010	01FF  C3			 ret ; 075D
+   1011
+   1012				     ; set player volume; original CS:075E
+   1013				     public _snd_075E
+   1014	0200			     _snd_075E label near
+   1015	0200			     control_075E:
+   1016	0200  C8 0000 00		 enter 0, 0 ; 075E
+   1017	0204  80 7E 06 7F		 cmp byte ptr [bp + 6],	07Fh ; 0762
+   1018	0208  76 04			 jbe short control_076C	; 0766
+   1019	020A  C6 46 06 7F		 mov byte ptr [bp + 6],	07Fh ; 0768
+   1020	020E			     control_076C:
+   1021	020E  8B 5E 04			 mov bx, word ptr [bp +	4] ; 076C
+   1022	0211  8A 46 06			 mov al, byte ptr [bp +	6] ; 076F
+   1023	0214  98			 cbw ; 0772
+   1024	0215  88 47 0D			 mov byte ptr [bx + 0Dh], al ; 0773
+   1025	0218  40			 inc ax	; 0776
+   1026	0219  F7 2E 0000e		 imul word ptr [_snd_master_volume] ; 0777
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 19
+CONTROL.ASM
+
+
+
+   1027	021D  C1 F8 07			 sar ax, 7 ; 077B
+   1028	0220  88 47 0E			 mov byte ptr [bx + 0Eh], al ; 077E
+   1029	0223  50			 push ax ; 0781
+   1030	0224  6A 10			 push 010h ; 0782
+   1031	0226  53			 push bx ; 0784
+   1032	0227  E8 0000e			 call near ptr _snd_235A ; 0785
+   1033	022A  83 C4 06			 add sp, 6 ; 0788
+   1034	022D  33 C0			 xor ax, ax ; 078B
+   1035	022F  C9			 leave ; 078D
+   1036	0230  C3			 ret ; 078E
+   1037
+   1038				     ; set player pan; original	CS:078F
+   1039				     public _snd_078F
+   1040	0231			     _snd_078F label near
+   1041	0231			     control_078F:
+   1042	0231  C8 0000 00		 enter 0, 0 ; 078F
+   1043	0235  8B 5E 04			 mov bx, word ptr [bp +	4] ; 0793
+   1044	0238  8A 46 06			 mov al, byte ptr [bp +	6] ; 0796
+   1045	023B  88 47 0F			 mov byte ptr [bx + 0Fh], al ; 0799
+   1046	023E  50			 push ax ; 079C
+   1047	023F  6A 10			 push 010h ; 079D
+   1048	0241  53			 push bx ; 079F
+   1049	0242  E8 0000e			 call near ptr _snd_23D1 ; 07A0
+   1050	0245  83 C4 06			 add sp, 6 ; 07A3
+   1051	0248  33 C0			 xor ax, ax ; 07A6
+   1052	024A  C9			 leave ; 07A8
+   1053	024B  C3			 ret ; 07A9
+   1054
+   1055				     ; set player transpose; original CS:07AA
+   1056				     public _snd_07AA
+   1057	024C			     _snd_07AA label near
+   1058	024C			     control_07AA:
+   1059	024C  C8 0000 00		 enter 0, 0 ; 07AA
+   1060	0250  56			 push si ; 07AE
+   1061	0251  80 7E 08 18		 cmp byte ptr [bp + 8],	018h ; 07AF
+   1062	0255  7F 3E			 jg short control_07F3 ; 07B3
+   1063	0257  80 7E 08 E8		 cmp byte ptr [bp + 8],	0E8h ; 07B5
+   1064	025B  7C 38			 jl short control_07F3 ; 07B9
+   1065	025D  8B 76 04			 mov si, word ptr [bp +	4] ; 07BB
+   1066	0260  8A 46 08			 mov al, byte ptr [bp +	8] ; 07BE
+   1067	0263  80 7E 06 01		 cmp byte ptr [bp + 6],	1 ; 07C1
+   1068	0267  77 2C			 ja short control_07F3 ; 07C5
+   1069	0269  72 14			 jb short control_07DD ; 07C7
+   1070	026B  98			 cbw ; 07C9
+   1071	026C  8B C8			 mov cx, ax ; 07CA
+   1072	026E  8A 44 10			 mov al, byte ptr [si +	010h] ;	07CC
+   1073	0271  98			 cbw ; 07CF
+   1074	0272  03 C8			 add cx, ax ; 07D0
+   1075	0274  6A 07			 push 7	; 07D2
+   1076	0276  6A F9			 push -7 ; 07D4
+   1077	0278  51			 push cx ; 07D6
+   1078	0279  E8 003Cr			 call near ptr _snd_04F4 ; 07D7
+   1079	027C  83 C4 06			 add sp, 6 ; 07DA
+   1080	027F			     control_07DD:
+   1081	027F  88 44 10			 mov byte ptr [si + 010h], al ;	07DD
+   1082	0282  50			 push ax ; 07E0
+   1083	0283  8A 46 06			 mov al, byte ptr [bp +	6] ; 07E1
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 20
+CONTROL.ASM
+
+
+
+   1084	0286  50			 push ax ; 07E4
+   1085	0287  6A 10			 push 010h ; 07E5
+   1086	0289  56			 push si ; 07E7
+   1087	028A  E8 0000e			 call near ptr _snd_23D2 ; 07E8
+   1088	028D  83 C4 08			 add sp, 8 ; 07EB
+   1089	0290  33 C0			 xor ax, ax ; 07EE
+   1090	0292  5E			 pop si	; 07F0
+   1091	0293  C9			 leave ; 07F1
+   1092	0294  C3			 ret ; 07F2
+   1093	0295			     control_07F3:
+   1094	0295  B8 FFFF			 mov ax, 0FFFFh	; 07F3
+   1095	0298  5E			 pop si	; 07F6
+   1096	0299  C9			 leave ; 07F7
+   1097	029A  C3			 ret ; 07F8
+   1098
+   1099				     ; set player detune; original CS:07F9
+   1100				     public _snd_07F9
+   1101	029B			     _snd_07F9 label near
+   1102	029B			     control_07F9:
+   1103	029B  C8 0000 00		 enter 0, 0 ; 07F9
+   1104	029F  8B 5E 04			 mov bx, word ptr [bp +	4] ; 07FD
+   1105	02A2  8A 46 06			 mov al, byte ptr [bp +	6] ; 0800
+   1106	02A5  88 47 11			 mov byte ptr [bx + 011h], al ;	0803
+   1107	02A8  50			 push ax ; 0806
+   1108	02A9  6A 10			 push 010h ; 0807
+   1109	02AB  53			 push bx ; 0809
+   1110	02AC  E8 0000e			 call near ptr _snd_247E ; 080A
+   1111	02AF  83 C4 06			 add sp, 6 ; 080D
+   1112	02B2  33 C0			 xor ax, ax ; 0810
+   1113	02B4  C9			 leave ; 0812
+   1114	02B5  C3			 ret ; 0813
+   1115
+   1116				     ; set sequence speed and tick rate; original CS:0814
+   1117				     public _snd_0814
+   1118	02B6			     _snd_0814 label near
+   1119	02B6			     control_0814:
+   1120	02B6  C8 0000 00		 enter 0, 0 ; 0814
+   1121	02BA  56			 push si ; 0818
+   1122	02BB  8B 76 04			 mov si, word ptr [bp +	4] ; 0819
+   1123	02BE  8A 46 06			 mov al, byte ptr [bp +	6] ; 081C
+   1124	02C1  88 44 24			 mov byte ptr [si + 024h], al ;	081F
+   1125	02C4  32 E4			 xor ah, ah ; 0822
+   1126	02C6  6A 00			 push 0	; 0824
+   1127	02C8  50			 push ax ; 0826
+   1128	02C9  FF 74 22			 push word ptr [si + 022h] ; 0827
+   1129	02CC  FF 74 20			 push word ptr [si + 020h] ; 082A
+   1130	02CF  E8 0000e			 call near ptr _snd_3179 ; 082D
+   1131	02D2  D1 EA			 shr dx, 1 ; 0830
+   1132	02D4  D1 D8			 rcr ax, 1 ; 0832
+   1133	02D6  D1 EA			 shr dx, 1 ; 0834
+   1134	02D8  D1 D8			 rcr ax, 1 ; 0836
+   1135	02DA  D1 EA			 shr dx, 1 ; 0838
+   1136	02DC  D1 D8			 rcr ax, 1 ; 083A
+   1137	02DE  D1 EA			 shr dx, 1 ; 083C
+   1138	02E0  D1 D8			 rcr ax, 1 ; 083E
+   1139	02E2  D1 EA			 shr dx, 1 ; 0840
+   1140	02E4  D1 D8			 rcr ax, 1 ; 0842
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 21
+CONTROL.ASM
+
+
+
+   1141	02E6  D1 EA			 shr dx, 1 ; 0844
+   1142	02E8  D1 D8			 rcr ax, 1 ; 0846
+   1143	02EA  D1 EA			 shr dx, 1 ; 0848
+   1144	02EC  D1 D8			 rcr ax, 1 ; 084A
+   1145	02EE  89 44 26			 mov word ptr [si + 026h], ax ;	084C
+   1146	02F1  89 54 28			 mov word ptr [si + 028h], dx ;	084F
+   1147	02F4  33 C0			 xor ax, ax ; 0852
+   1148	02F6  5E			 pop si	; 0854
+   1149	02F7  C9			 leave ; 0855
+   1150	02F8  C3			 ret ; 0856
+   1151
+   1152				     ; seek sequence to	track/beat/tick; original CS:0857
+   1153				     public _snd_0857
+   1154	02F9			     _snd_0857 label near
+   1155	02F9			     control_0857:
+   1156	02F9  C8 0014 00		 enter 014h, 0 ; 0857
+   1157	02FD  56			 push si ; 085B
+   1158	02FE  8B 76 04			 mov si, word ptr [bp +	4] ; 085C
+   1159	0301  80 7C 02 00		 cmp byte ptr [si + 2],	0 ; 085F
+   1160	0305  75 06			 jne short control_086B	; 0863
+   1161	0307			     control_0865:
+   1162	0307  B8 FFFF			 mov ax, 0FFFFh	; 0865
+   1163	030A  5E			 pop si	; 0868
+   1164	030B  C9			 leave ; 0869
+   1165	030C  C3			 ret ; 086A
+   1166	030D			     control_086B:
+   1167	030D  FF 76 06			 push word ptr [bp + 6]	; 086B
+   1168	0310  FF 36 0006e		 push word ptr [_snd_midi_tags+6] ; 086E
+   1169	0314  FF 36 0004e		 push word ptr [_snd_midi_tags+4] ; 0872
+   1170	0318  FF 74 04			 push word ptr [si + 4]	; 0876
+   1171	031B  E8 0308r			 call near ptr _snd_0406 ; 0879
+   1172	031E  83 C4 08			 add sp, 8 ; 087C
+   1173	0321  89 46 FC			 mov word ptr [bp - 4],	ax ; 087F
+   1174	0324  89 56 FE			 mov word ptr [bp - 2],	dx ; 0882
+   1175	0327  0B D0			 or dx,	ax ; 0885
+   1176	0329  74 DC			 je short control_0865 ; 0887
+   1177	032B  FF 74 0A			 push word ptr [si + 0Ah] ; 0889
+   1178	032E  FF 36 0006e		 push word ptr [_snd_midi_tags+6] ; 088C
+   1179	0332  FF 36 0004e		 push word ptr [_snd_midi_tags+4] ; 0890
+   1180	0336  FF 74 04			 push word ptr [si + 4]	; 0894
+   1181	0339  E8 0308r			 call near ptr _snd_0406 ; 0897
+   1182	033C  83 C4 08			 add sp, 8 ; 089A
+   1183	033F  89 46 F8			 mov word ptr [bp - 8],	ax ; 089D
+   1184	0342  89 56 FA			 mov word ptr [bp - 6],	dx ; 08A0
+   1185	0345  0B D0			 or dx,	ax ; 08A3
+   1186	0347  74 BE			 je short control_0865 ; 08A5
+   1187	0349  FE 06 0000e		 inc byte ptr [_snd_parse_nesting] ; 08A7
+   1188	034D  83 7E 08 00		 cmp word ptr [bp + 8],	0 ; 08AB
+   1189	0351  75 05			 jne short control_08B6	; 08AF
+   1190	0353  C7 46 08 0001		 mov word ptr [bp + 8],	1 ; 08B1
+   1191	0358			     control_08B6:
+   1192	0358  8B 46 08			 mov ax, word ptr [bp +	8] ; 08B6
+   1193	035B  48			 dec ax	; 08B9
+   1194	035C  B9 01E0			 mov cx, 01E0h ; 08BA
+   1195	035F  F7 E1			 mul cx	; 08BD
+   1196	0361  03 46 0A			 add ax, word ptr [bp +	0Ah] ; 08BF
+   1197	0364  83 D2 00			 adc dx, 0 ; 08C2
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 22
+CONTROL.ASM
+
+
+
+   1198	0367  89 46 F4			 mov word ptr [bp - 0Ch], ax ; 08C5
+   1199	036A  89 56 F6			 mov word ptr [bp - 0Ah], dx ; 08C8
+   1200	036D  8B 46 06			 mov ax, word ptr [bp +	6] ; 08CB
+   1201	0370  39 44 0A			 cmp word ptr [si + 0Ah], ax ; 08CE
+   1202	0373  75 27			 jne short control_08FA	; 08D1
+   1203	0375  8B 46 F4			 mov ax, word ptr [bp -	0Ch] ; 08D3
+   1204	0378  39 54 12			 cmp word ptr [si + 012h], dx ;	08D6
+   1205	037B  77 1F			 ja short control_08FA ; 08D9
+   1206	037D  72 05			 jb short control_08E2 ; 08DB
+   1207	037F  39 44 10			 cmp word ptr [si + 010h], ax ;	08DD
+   1208	0382  77 18			 ja short control_08FA ; 08E0
+   1209	0384			     control_08E2:
+   1210	0384  8B 44 06			 mov ax, word ptr [si +	6] ; 08E2
+   1211	0387  03 46 FC			 add ax, word ptr [bp -	4] ; 08E5
+   1212	038A  8B 56 FE			 mov dx, word ptr [bp -	2] ; 08E8
+   1213	038D  A3 0000e			 mov word ptr [_snd_parse_cursor], ax ;	08EB
+   1214	0390  89 16 0002e		 mov word ptr [_snd_parse_cursor+2], dx	; 08EE
+   1215	0394  8B 44 14			 mov ax, word ptr [si +	014h] ;	08F2
+   1216	0397  8B 54 16			 mov dx, word ptr [si +	016h] ;	08F5
+   1217	039A  EB 15			 jmp short control_090F	; 08F8
+   1218	039C			     control_08FA:
+   1219	039C  8B 46 FC			 mov ax, word ptr [bp -	4] ; 08FA
+   1220	039F  8B 56 FE			 mov dx, word ptr [bp -	2] ; 08FD
+   1221	03A2  A3 0000e			 mov word ptr [_snd_parse_cursor], ax ;	0900
+   1222	03A5  89 16 0002e		 mov word ptr [_snd_parse_cursor+2], dx	; 0903
+   1223	03A9  68 0000e			 push offset _snd_parse_cursor ; 0907
+   1224	03AC  E8 0000e			 call near ptr _snd_101E ; 090A
+   1225	03AF  44			 inc sp	; 090D
+   1226	03B0  44			 inc sp	; 090E
+   1227	03B1			     control_090F:
+   1228	03B1  89 46 F0			 mov word ptr [bp - 010h], ax ;	090F
+   1229	03B4  89 56 F2			 mov word ptr [bp - 0Eh], dx ; 0912
+   1230	03B7			     control_0915:
+   1231	03B7  8B 46 F4			 mov ax, word ptr [bp -	0Ch] ; 0915
+   1232	03BA  8B 56 F6			 mov dx, word ptr [bp -	0Ah] ; 0918
+   1233	03BD  39 56 F2			 cmp word ptr [bp - 0Eh], dx ; 091B
+   1234	03C0  77 2F			 ja short control_094F ; 091E
+   1235	03C2  72 05			 jb short control_0927 ; 0920
+   1236	03C4  39 46 F0			 cmp word ptr [bp - 010h], ax ;	0922
+   1237	03C7  73 28			 jae short control_094F	; 0925
+   1238	03C9			     control_0927:
+   1239	03C9  68 0000e			 push offset _snd_parse_cursor ; 0927
+   1240	03CC  E8 0000e			 call near ptr _snd_1D6D ; 092A
+   1241	03CF  44			 inc sp	; 092D
+   1242	03D0  44			 inc sp	; 092E
+   1243	03D1  A1 0002e			 mov ax, word ptr [_snd_parse_cursor+2]	; 092F
+   1244	03D4  0B 06 0000e		 or ax,	word ptr [_snd_parse_cursor] ; 0932
+   1245	03D8  74 10			 je short control_0948 ; 0936
+   1246	03DA  68 0000e			 push offset _snd_parse_cursor ; 0938
+   1247	03DD  E8 0000e			 call near ptr _snd_101E ; 093B
+   1248	03E0  44			 inc sp	; 093E
+   1249	03E1  44			 inc sp	; 093F
+   1250	03E2  01 46 F0			 add word ptr [bp - 010h], ax ;	0940
+   1251	03E5  11 56 F2			 adc word ptr [bp - 0Eh], dx ; 0943
+   1252	03E8  EB CD			 jmp short control_0915	; 0946
+   1253	03EA			     control_0948:
+   1254	03EA  FE 0E 0000e		 dec byte ptr [_snd_parse_nesting] ; 0948
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 23
+CONTROL.ASM
+
+
+
+   1255	03EE  E9 FF16			 jmp near ptr control_0865 ; 094C
+   1256	03F1			     control_094F:
+   1257	03F1  FF 76 FE			 push word ptr [bp - 2]	; 094F
+   1258	03F4  FF 76 FC			 push word ptr [bp - 4]	; 0952
+   1259	03F7  FF 36 0002e		 push word ptr [_snd_parse_cursor+2] ; 0955
+   1260	03FB  FF 36 0000e		 push word ptr [_snd_parse_cursor] ; 0959
+   1261	03FF  E8 0000e			 call near ptr _snd_1041 ; 095D
+   1262	0402  83 C4 08			 add sp, 8 ; 0960
+   1263	0405  89 46 EC			 mov word ptr [bp - 014h], ax ;	0963
+   1264	0408  89 56 EE			 mov word ptr [bp - 012h], dx ;	0966
+   1265	040B  8B 1C			 mov bx, word ptr [si] ; 0969
+   1266	040D  FF 77 04			 push word ptr [bx + 4]	; 096B
+   1267	0410  E8 0000e			 call near ptr _snd_2209 ; 096E
+   1268	0413  44			 inc sp	; 0971
+   1269	0414  44			 inc sp	; 0972
+   1270	0415  8B 46 F0			 mov ax, word ptr [bp -	010h] ;	0973
+   1271	0418  8B 56 F2			 mov dx, word ptr [bp -	0Eh] ; 0976
+   1272	041B  2B 46 F4			 sub ax, word ptr [bp -	0Ch] ; 0979
+   1273	041E  1B 56 F6			 sbb dx, word ptr [bp -	0Ah] ; 097C
+   1274	0421  52			 push dx ; 097F
+   1275	0422  50			 push ax ; 0980
+   1276	0423  8B 46 EC			 mov ax, word ptr [bp -	014h] ;	0981
+   1277	0426  03 46 FC			 add ax, word ptr [bp -	4] ; 0984
+   1278	0429  8B 56 FE			 mov dx, word ptr [bp -	2] ; 0987
+   1279	042C  52			 push dx ; 098A
+   1280	042D  50			 push ax ; 098B
+   1281	042E  8B 44 06			 mov ax, word ptr [si +	6] ; 098C
+   1282	0431  03 46 F8			 add ax, word ptr [bp -	8] ; 098F
+   1283	0434  8B 56 FA			 mov dx, word ptr [bp -	6] ; 0992
+   1284	0437  52			 push dx ; 0995
+   1285	0438  50			 push ax ; 0996
+   1286	0439  56			 push si ; 0997
+   1287	043A  E8 0000e			 call near ptr _snd_12D8 ; 0998
+   1288	043D  83 C4 0E			 add sp, 0Eh ; 099B
+   1289	0440  8B 46 08			 mov ax, word ptr [bp +	8] ; 099E
+   1290	0443  89 44 0C			 mov word ptr [si + 0Ch], ax ; 09A1
+   1291	0446  8B 46 0A			 mov ax, word ptr [bp +	0Ah] ; 09A4
+   1292	0449  89 44 0E			 mov word ptr [si + 0Eh], ax ; 09A7
+   1293	044C  8B 46 F4			 mov ax, word ptr [bp -	0Ch] ; 09AA
+   1294	044F  8B 56 F6			 mov dx, word ptr [bp -	0Ah] ; 09AD
+   1295	0452  89 44 10			 mov word ptr [si + 010h], ax ;	09B0
+   1296	0455  89 54 12			 mov word ptr [si + 012h], dx ;	09B3
+   1297	0458  8B 46 F0			 mov ax, word ptr [bp -	010h] ;	09B6
+   1298	045B  8B 56 F2			 mov dx, word ptr [bp -	0Eh] ; 09B9
+   1299	045E  89 44 14			 mov word ptr [si + 014h], ax ;	09BC
+   1300	0461  89 54 16			 mov word ptr [si + 016h], dx ;	09BF
+   1301	0464  33 C0			 xor ax, ax ; 09C2
+   1302	0466  89 44 1A			 mov word ptr [si + 01Ah], ax ;	09C4
+   1303	0469  89 44 18			 mov word ptr [si + 018h], ax ;	09C7
+   1304	046C  8B 46 EC			 mov ax, word ptr [bp -	014h] ;	09CA
+   1305	046F  8B 56 EE			 mov dx, word ptr [bp -	012h] ;	09CD
+   1306	0472  89 44 06			 mov word ptr [si + 6],	ax ; 09D0
+   1307	0475  89 54 08			 mov word ptr [si + 8],	dx ; 09D3
+   1308	0478  8B 46 06			 mov ax, word ptr [bp +	6] ; 09D6
+   1309	047B  39 44 0A			 cmp word ptr [si + 0Ah], ax ; 09D9
+   1310	047E  74 08			 je short control_09E6 ; 09DC
+   1311	0480  89 44 0A			 mov word ptr [si + 0Ah], ax ; 09DE
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 24
+CONTROL.ASM
+
+
+
+   1312	0483  C7 44 2A 0000		 mov word ptr [si + 02Ah], 0 ; 09E1
+   1313	0488			     control_09E6:
+   1314	0488  C6 06 0000e 01		 mov byte ptr [_snd_parse_finished], 1 ; 09E6
+   1315	048D  FE 0E 0000e		 dec byte ptr [_snd_parse_nesting] ; 09EB
+   1316	0491  33 C0			 xor ax, ax ; 09EF
+   1317	0493  5E			 pop si	; 09F1
+   1318	0494  C9			 leave ; 09F2
+   1319	0495  C3			 ret ; 09F3
+   1320
+   1321				     ; scan sequence with held-note preservation; original CS:09F4
+   1322				     public _snd_09F4
+   1323	0496			     _snd_09F4 label near
+   1324	0496			     control_09F4:
+   1325	0496  C8 0010 00		 enter 010h, 0 ; 09F4
+   1326	049A  56			 push si ; 09F8
+   1327	049B  8B 76 04			 mov si, word ptr [bp +	4] ; 09F9
+   1328	049E  80 7C 02 00		 cmp byte ptr [si + 2],	0 ; 09FC
+   1329	04A2  75 06			 jne short control_0A08	; 0A00
+   1330	04A4			     control_0A02:
+   1331	04A4  35 FFFF			 xor ax, 0FFFFh	; 0A02
+   1332	04A7  5E			 pop si	; 0A05
+   1333	04A8  C9			 leave ; 0A06
+   1334	04A9  C3			 ret ; 0A07
+   1335	04AA			     control_0A08:
+   1336	04AA  FF 76 06			 push word ptr [bp + 6]	; 0A08
+   1337	04AD  FF 36 0006e		 push word ptr [_snd_midi_tags+6] ; 0A0B
+   1338	04B1  FF 36 0004e		 push word ptr [_snd_midi_tags+4] ; 0A0F
+   1339	04B5  FF 74 04			 push word ptr [si + 4]	; 0A13
+   1340	04B8  E8 0308r			 call near ptr _snd_0406 ; 0A16
+   1341	04BB  83 C4 08			 add sp, 8 ; 0A19
+   1342	04BE  89 46 FC			 mov word ptr [bp - 4],	ax ; 0A1C
+   1343	04C1  89 56 FE			 mov word ptr [bp - 2],	dx ; 0A1F
+   1344	04C4  0B D0			 or dx,	ax ; 0A22
+   1345	04C6  74 DC			 je short control_0A02 ; 0A24
+   1346	04C8  FE 06 0000e		 inc byte ptr [_snd_parse_nesting] ; 0A26
+   1347	04CC  83 7E 08 00		 cmp word ptr [bp + 8],	0 ; 0A2A
+   1348	04D0  75 05			 jne short control_0A35	; 0A2E
+   1349	04D2  C7 46 08 0001		 mov word ptr [bp + 8],	1 ; 0A30
+   1350	04D7			     control_0A35:
+   1351	04D7  8B 46 08			 mov ax, word ptr [bp +	8] ; 0A35
+   1352	04DA  48			 dec ax	; 0A38
+   1353	04DB  B9 01E0			 mov cx, 01E0h ; 0A39
+   1354	04DE  F7 E1			 mul cx	; 0A3C
+   1355	04E0  03 46 0A			 add ax, word ptr [bp +	0Ah] ; 0A3E
+   1356	04E3  83 D2 00			 adc dx, 0 ; 0A41
+   1357	04E6  89 46 F8			 mov word ptr [bp - 8],	ax ; 0A44
+   1358	04E9  89 56 FA			 mov word ptr [bp - 6],	dx ; 0A47
+   1359	04EC  8B 1C			 mov bx, word ptr [si] ; 0A4A
+   1360	04EE  FF 77 04			 push word ptr [bx + 4]	; 0A4C
+   1361	04F1  E8 0000e			 call near ptr _snd_21EF ; 0A4F
+   1362	04F4  44			 inc sp	; 0A52
+   1363	04F5  44			 inc sp	; 0A53
+   1364	04F6  E8 0000e			 call near ptr _snd_15DF ; 0A54
+   1365	04F9  C7 06 0000e 0001		 mov word ptr [_snd_scanning], 1 ; 0A57
+   1366	04FF  8B 46 FC			 mov ax, word ptr [bp -	4] ; 0A5D
+   1367	0502  8B 56 FE			 mov dx, word ptr [bp -	2] ; 0A60
+   1368	0505  A3 0000e			 mov word ptr [_snd_parse_cursor], ax ;	0A63
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 25
+CONTROL.ASM
+
+
+
+   1369	0508  89 16 0002e		 mov word ptr [_snd_parse_cursor+2], dx	; 0A66
+   1370	050C  68 0000e			 push offset _snd_parse_cursor ; 0A6A
+   1371	050F  E8 0000e			 call near ptr _snd_101E ; 0A6D
+   1372	0512  44			 inc sp	; 0A70
+   1373	0513  44			 inc sp	; 0A71
+   1374	0514  89 46 F4			 mov word ptr [bp - 0Ch], ax ; 0A72
+   1375	0517  89 56 F6			 mov word ptr [bp - 0Ah], dx ; 0A75
+   1376	051A			     control_0A78:
+   1377	051A  8B 46 F8			 mov ax, word ptr [bp -	8] ; 0A78
+   1378	051D  8B 56 FA			 mov dx, word ptr [bp -	6] ; 0A7B
+   1379	0520  3B 56 F6			 cmp dx, word ptr [bp -	0Ah] ; 0A7E
+   1380	0523  77 07			 ja short control_0A8A ; 0A81
+   1381	0525  72 36			 jb short control_0ABB ; 0A83
+   1382	0527  3B 46 F4			 cmp ax, word ptr [bp -	0Ch] ; 0A85
+   1383	052A  76 31			 jbe short control_0ABB	; 0A88
+   1384	052C			     control_0A8A:
+   1385	052C  68 0000e			 push offset _snd_parse_cursor ; 0A8A
+   1386	052F  FF 34			 push word ptr [si] ; 0A8D
+   1387	0531  E8 0000e			 call near ptr _snd_183E ; 0A8F
+   1388	0534  83 C4 04			 add sp, 4 ; 0A92
+   1389	0537  A1 0002e			 mov ax, word ptr [_snd_parse_cursor+2]	; 0A95
+   1390	053A  0B 06 0000e		 or ax,	word ptr [_snd_parse_cursor] ; 0A98
+   1391	053E  74 10			 je short control_0AAE ; 0A9C
+   1392	0540  68 0000e			 push offset _snd_parse_cursor ; 0A9E
+   1393	0543  E8 0000e			 call near ptr _snd_101E ; 0AA1
+   1394	0546  44			 inc sp	; 0AA4
+   1395	0547  44			 inc sp	; 0AA5
+   1396	0548  01 46 F4			 add word ptr [bp - 0Ch], ax ; 0AA6
+   1397	054B  11 56 F6			 adc word ptr [bp - 0Ah], dx ; 0AA9
+   1398	054E  EB CA			 jmp short control_0A78	; 0AAC
+   1399	0550			     control_0AAE:
+   1400	0550  FE 0E 0000e		 dec byte ptr [_snd_parse_nesting] ; 0AAE
+   1401	0554  C7 06 0000e 0000		 mov word ptr [_snd_scanning], 0 ; 0AB2
+   1402	055A  E9 FF47			 jmp near ptr control_0A02 ; 0AB8
+   1403	055D			     control_0ABB:
+   1404	055D  FF 76 FE			 push word ptr [bp - 2]	; 0ABB
+   1405	0560  FF 76 FC			 push word ptr [bp - 4]	; 0ABE
+   1406	0563  FF 36 0002e		 push word ptr [_snd_parse_cursor+2] ; 0AC1
+   1407	0567  FF 36 0000e		 push word ptr [_snd_parse_cursor] ; 0AC5
+   1408	056B  E8 0000e			 call near ptr _snd_1041 ; 0AC9
+   1409	056E  83 C4 08			 add sp, 8 ; 0ACC
+   1410	0571  89 46 F0			 mov word ptr [bp - 010h], ax ;	0ACF
+   1411	0574  89 56 F2			 mov word ptr [bp - 0Eh], dx ; 0AD2
+   1412	0577  C7 06 0000e 0000		 mov word ptr [_snd_scanning], 0 ; 0AD5
+   1413	057D  FF 34			 push word ptr [si] ; 0ADB
+   1414	057F  E8 0000e			 call near ptr _snd_162A ; 0ADD
+   1415	0582  44			 inc sp	; 0AE0
+   1416	0583  44			 inc sp	; 0AE1
+   1417	0584  8B 46 08			 mov ax, word ptr [bp +	8] ; 0AE2
+   1418	0587  89 44 0C			 mov word ptr [si + 0Ch], ax ; 0AE5
+   1419	058A  8B 46 0A			 mov ax, word ptr [bp +	0Ah] ; 0AE8
+   1420	058D  89 44 0E			 mov word ptr [si + 0Eh], ax ; 0AEB
+   1421	0590  8B 46 F8			 mov ax, word ptr [bp -	8] ; 0AEE
+   1422	0593  8B 56 FA			 mov dx, word ptr [bp -	6] ; 0AF1
+   1423	0596  89 44 10			 mov word ptr [si + 010h], ax ;	0AF4
+   1424	0599  89 54 12			 mov word ptr [si + 012h], dx ;	0AF7
+   1425	059C  8B 46 F4			 mov ax, word ptr [bp -	0Ch] ; 0AFA
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 26
+CONTROL.ASM
+
+
+
+   1426	059F  8B 56 F6			 mov dx, word ptr [bp -	0Ah] ; 0AFD
+   1427	05A2  89 44 14			 mov word ptr [si + 014h], ax ;	0B00
+   1428	05A5  89 54 16			 mov word ptr [si + 016h], dx ;	0B03
+   1429	05A8  33 C0			 xor ax, ax ; 0B06
+   1430	05AA  89 44 1A			 mov word ptr [si + 01Ah], ax ;	0B08
+   1431	05AD  89 44 18			 mov word ptr [si + 018h], ax ;	0B0B
+   1432	05B0  8B 46 F0			 mov ax, word ptr [bp -	010h] ;	0B0E
+   1433	05B3  8B 56 F2			 mov dx, word ptr [bp -	0Eh] ; 0B11
+   1434	05B6  89 44 06			 mov word ptr [si + 6],	ax ; 0B14
+   1435	05B9  89 54 08			 mov word ptr [si + 8],	dx ; 0B17
+   1436	05BC  8B 46 06			 mov ax, word ptr [bp +	6] ; 0B1A
+   1437	05BF  39 44 0A			 cmp word ptr [si + 0Ah], ax ; 0B1D
+   1438	05C2  74 03			 je short control_0B25 ; 0B20
+   1439	05C4  89 44 0A			 mov word ptr [si + 0Ah], ax ; 0B22
+   1440	05C7			     control_0B25:
+   1441	05C7  FE 0E 0000e		 dec byte ptr [_snd_parse_nesting] ; 0B25
+   1442	05CB  33 C0			 xor ax, ax ; 0B29
+   1443	05CD  5E			 pop si	; 0B2B
+   1444	05CE  C9			 leave ; 0B2C
+   1445	05CF  C3			 ret ; 0B2D
+   1446
+   1447				     ; set sequence loop count and start/end beat/tick;	original CS:0B2E
+   1448				     public _snd_0B2E
+   1449	05D0			     _snd_0B2E label near
+   1450	05D0			     control_0B2E:
+   1451	05D0  C8 0000 00		 enter 0, 0 ; 0B2E
+   1452	05D4  8B 56 08			 mov dx, word ptr [bp +	8] ; 0B32
+   1453	05D7  8B C2			 mov ax, dx ; 0B35
+   1454	05D9  40			 inc ax	; 0B37
+   1455	05DA  3B 46 0C			 cmp ax, word ptr [bp +	0Ch] ; 0B38
+   1456	05DD  72 05			 jb short control_0B42 ; 0B3B
+   1457	05DF  B8 FFFF			 mov ax, 0FFFFh	; 0B3D
+   1458	05E2  C9			 leave ; 0B40
+   1459	05E3  C3			 ret ; 0B41
+   1460	05E4			     control_0B42:
+   1461	05E4  0B D2			 or dx,	dx ; 0B42
+   1462	05E6  75 01			 jne short control_0B47	; 0B44
+   1463	05E8  42			 inc dx	; 0B46
+   1464	05E9			     control_0B47:
+   1465	05E9  8B 5E 04			 mov bx, word ptr [bp +	4] ; 0B47
+   1466	05EC  C7 47 2A 0000		 mov word ptr [bx + 02Ah], 0 ; 0B4A
+   1467	05F1  89 57 2C			 mov word ptr [bx + 02Ch], dx ;	0B4F
+   1468	05F4  8B 46 0A			 mov ax, word ptr [bp +	0Ah] ; 0B52
+   1469	05F7  89 47 2E			 mov word ptr [bx + 02Eh], ax ;	0B55
+   1470	05FA  8B 46 0C			 mov ax, word ptr [bp +	0Ch] ; 0B58
+   1471	05FD  89 47 30			 mov word ptr [bx + 030h], ax ;	0B5B
+   1472	0600  8B 46 0E			 mov ax, word ptr [bp +	0Eh] ; 0B5E
+   1473	0603  89 47 32			 mov word ptr [bx + 032h], ax ;	0B61
+   1474	0606  8B 46 06			 mov ax, word ptr [bp +	6] ; 0B64
+   1475	0609  89 47 2A			 mov word ptr [bx + 02Ah], ax ;	0B67
+   1476	060C  33 C0			 xor ax, ax ; 0B6A
+   1477	060E  C9			 leave ; 0B6C
+   1478	060F  C3			 ret ; 0B6D
+   1479
+   1480				     ; clear sequence loop count; original CS:0B6E
+   1481				     public _snd_0B6E
+   1482	0610			     _snd_0B6E label near
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 27
+CONTROL.ASM
+
+
+
+   1483	0610			     control_0B6E:
+   1484	0610  C8 0000 00		 enter 0, 0 ; 0B6E
+   1485	0614  33 C0			 xor ax, ax ; 0B72
+   1486	0616  8B 5E 04			 mov bx, word ptr [bp +	4] ; 0B74
+   1487	0619  89 47 2A			 mov word ptr [bx + 02Ah], ax ;	0B77
+   1488	061C  33 C0			 xor ax, ax ; 0B7A
+   1489	061E  C9			 leave ; 0B7C
+   1490	061F  C3			 ret ; 0B7D
+   1491
+   1492				     ; set global or per-channel hook; original	CS:0B7E
+   1493				     public _snd_0B7E
+   1494	0620			     _snd_0B7E label near
+   1495	0620			     control_0B7E:
+   1496	0620  C8 0000 00		 enter 0, 0 ; 0B7E
+   1497	0624  57			 push di ; 0B82
+   1498	0625  8A 5E 06			 mov bl, byte ptr [bp +	6] ; 0B83
+   1499	0628  32 FF			 xor bh, bh ; 0B86
+   1500	062A  83 FB 05			 cmp bx, 5 ; 0B88
+   1501	062D  77 1D			 ja short control_0BAA ; 0B8B
+   1502	062F  D1 E3			 shl bx, 1 ; 0B8D
+   1503	0631  2E: 8B 97	0640r		 mov dx, word ptr cs:[bx + control_0B9E] ; 0B8F
+   1504	0636  8A 46 08			 mov al, byte ptr [bp +	8] ; 0B94
+   1505	0639  32 E4			 xor ah, ah ; 0B97
+   1506	063B  8B 5E 04			 mov bx, word ptr [bp +	4] ; 0B99
+   1507	063E  FF E2			 jmp dx	; 0B9C
+   1508	0640			     control_0B9E:
+   1509					 ; 6 near destinations,	indexed	by twice the selector
+   1510	0640  0652r 0658r 065Er	  +	 dw offset control_0BB0, offset	control_0BB6, offset control_0BBC, offset control_0BDA
+   1511	      067Cr
+   1512	0648  069Ar 06B8r		 dw offset control_0BF8, offset	control_0C16
+   1513	064C			     control_0BAA:
+   1514	064C  B8 FFFF			 mov ax, 0FFFFh	; 0BAA
+   1515	064F  5F			 pop di	; 0BAD
+   1516	0650  C9			 leave ; 0BAE
+   1517	0651  C3			 ret ; 0BAF
+   1518	0652			     control_0BB0:
+   1519	0652  88 07			 mov byte ptr [bx], al ; 0BB0
+   1520	0654  E9 0083			 jmp near ptr control_0C38 ; 0BB2
+   1521	0657  90			 nop ; 0BB5
+   1522	0658			     control_0BB6:
+   1523	0658  88 47 01			 mov byte ptr [bx + 1],	al ; 0BB6
+   1524	065B  EB 7D			 jmp short control_0C38	; 0BB9
+   1525	065D  90			 nop ; 0BBB
+   1526	065E			     control_0BBC:
+   1527	065E  80 7E 0A 10		 cmp byte ptr [bp + 0Ah], 010h ; 0BBC
+   1528	0662  77 E8			 ja short control_0BAA ; 0BC0
+   1529	0664  74 0C			 je short control_0BD0 ; 0BC2
+   1530	0666  8A 4E 0A			 mov cl, byte ptr [bp +	0Ah] ; 0BC4
+   1531	0669  32 ED			 xor ch, ch ; 0BC7
+   1532	066B  03 D9			 add bx, cx ; 0BC9
+   1533	066D  88 47 02			 mov byte ptr [bx + 2],	al ; 0BCB
+   1534	0670  EB 68			 jmp short control_0C38	; 0BCE
+   1535	0672			     control_0BD0:
+   1536	0672  8A E0			 mov ah, al ; 0BD0
+   1537	0674  B9 0008			 mov cx, 8 ; 0BD2
+   1538	0677  8D 7F 02			 lea di, [bx + 2] ; 0BD5
+   1539	067A  EB 58			 jmp short control_0C32	; 0BD8
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 28
+CONTROL.ASM
+
+
+
+   1540	067C			     control_0BDA:
+   1541	067C  80 7E 0A 10		 cmp byte ptr [bp + 0Ah], 010h ; 0BDA
+   1542	0680  77 CA			 ja short control_0BAA ; 0BDE
+   1543	0682  74 0C			 je short control_0BEE ; 0BE0
+   1544	0684  8A 4E 0A			 mov cl, byte ptr [bp +	0Ah] ; 0BE2
+   1545	0687  32 ED			 xor ch, ch ; 0BE5
+   1546	0689  03 D9			 add bx, cx ; 0BE7
+   1547	068B  88 47 12			 mov byte ptr [bx + 012h], al ;	0BE9
+   1548	068E  EB 4A			 jmp short control_0C38	; 0BEC
+   1549	0690			     control_0BEE:
+   1550	0690  8A E0			 mov ah, al ; 0BEE
+   1551	0692  B9 0008			 mov cx, 8 ; 0BF0
+   1552	0695  8D 7F 12			 lea di, [bx + 012h] ; 0BF3
+   1553	0698  EB 3A			 jmp short control_0C32	; 0BF6
+   1554	069A			     control_0BF8:
+   1555	069A  80 7E 0A 10		 cmp byte ptr [bp + 0Ah], 010h ; 0BF8
+   1556	069E  77 AC			 ja short control_0BAA ; 0BFC
+   1557	06A0  74 0C			 je short control_0C0C ; 0BFE
+   1558	06A2  8A 4E 0A			 mov cl, byte ptr [bp +	0Ah] ; 0C00
+   1559	06A5  32 ED			 xor ch, ch ; 0C03
+   1560	06A7  03 D9			 add bx, cx ; 0C05
+   1561	06A9  88 47 22			 mov byte ptr [bx + 022h], al ;	0C07
+   1562	06AC  EB 2C			 jmp short control_0C38	; 0C0A
+   1563	06AE			     control_0C0C:
+   1564	06AE  8A E0			 mov ah, al ; 0C0C
+   1565	06B0  B9 0008			 mov cx, 8 ; 0C0E
+   1566	06B3  8D 7F 22			 lea di, [bx + 022h] ; 0C11
+   1567	06B6  EB 1C			 jmp short control_0C32	; 0C14
+   1568	06B8			     control_0C16:
+   1569	06B8  80 7E 0A 10		 cmp byte ptr [bp + 0Ah], 010h ; 0C16
+   1570	06BC  77 8E			 ja short control_0BAA ; 0C1A
+   1571	06BE  74 0C			 je short control_0C2A ; 0C1C
+   1572	06C0  8A 4E 0A			 mov cl, byte ptr [bp +	0Ah] ; 0C1E
+   1573	06C3  32 ED			 xor ch, ch ; 0C21
+   1574	06C5  03 D9			 add bx, cx ; 0C23
+   1575	06C7  88 47 32			 mov byte ptr [bx + 032h], al ;	0C25
+   1576	06CA  EB 0E			 jmp short control_0C38	; 0C28
+   1577	06CC			     control_0C2A:
+   1578	06CC  8A E0			 mov ah, al ; 0C2A
+   1579	06CE  B9 0008			 mov cx, 8 ; 0C2C
+   1580	06D1  8D 7F 32			 lea di, [bx + 032h] ; 0C2F
+   1581	06D4			     control_0C32:
+   1582	06D4  8C D8			 mov ax, ds ; 0C32
+   1583	06D6  8E C0			 mov es, ax ; 0C34
+   1584	06D8  F3> AB			 rep stosw ; 0C36
+   1585	06DA			     control_0C38:
+   1586	06DA  33 C0			 xor ax, ax ; 0C38
+   1587	06DC  5F			 pop di	; 0C3A
+   1588	06DD  C9			 leave ; 0C3B
+   1589	06DE  C3			 ret ; 0C3C
+   1590
+   1591				     ; allocate	timed volume fade; original CS:0C3D
+   1592				     public _snd_0C3D
+   1593	06DF			     _snd_0C3D label near
+   1594	06DF			     control_0C3D:
+   1595	06DF  C8 0000 00		 enter 0, 0 ; 0C3D
+   1596	06E3  56			 push si ; 0C41
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 29
+CONTROL.ASM
+
+
+
+   1597	06E4  8B 76 04			 mov si, word ptr [bp +	4] ; 0C42
+   1598	06E7  56			 push si ; 0C45
+   1599	06E8  E8 0000e			 call near ptr _snd_1684 ; 0C46
+   1600	06EB  44			 inc sp	; 0C49
+   1601	06EC  44			 inc sp	; 0C4A
+   1602	06ED  83 7E 08 00		 cmp word ptr [bp + 8],	0 ; 0C4B
+   1603	06F1  75 0D			 jne short control_0C5E	; 0C4F
+   1604	06F3  8A 46 06			 mov al, byte ptr [bp +	6] ; 0C51
+   1605	06F6  50			 push ax ; 0C54
+   1606	06F7  56			 push si ; 0C55
+   1607	06F8  E8 FB05			 call near ptr _snd_075E ; 0C56
+   1608	06FB  83 C4 04			 add sp, 4 ; 0C59
+   1609	06FE  EB 60			 jmp short control_0CBE	; 0C5C
+   1610	0700			     control_0C5E:
+   1611	0700  C6 06 0000e 01		 mov byte ptr [_snd_fade_state], 1 ; 0C5E
+   1612	0705  BE 0000e			 mov si, offset	_snd_fades ; 0C63
+   1613	0708  B9 0002			 mov cx, 2 ; 0C66
+   1614	070B			     control_0C69:
+   1615	070B  38 2C			 cmp byte ptr [si], ch ; 0C69
+   1616	070D  74 0B			 je short control_0C78 ; 0C6B
+   1617	070F  83 C6 10			 add si, 010h ;	0C6D
+   1618	0712  E2 F7			 loop control_0C69 ; 0C70
+   1619	0714  B8 FFFF			 mov ax, 0FFFFh	; 0C72
+   1620	0717  5E			 pop si	; 0C75
+   1621	0718  C9			 leave ; 0C76
+   1622	0719  C3			 ret ; 0C77
+   1623	071A			     control_0C78:
+   1624	071A  8B 46 04			 mov ax, word ptr [bp +	4] ; 0C78
+   1625	071D  89 44 02			 mov word ptr [si + 2],	ax ; 0C7B
+   1626	0720  8B 4E 08			 mov cx, word ptr [bp +	8] ; 0C7E
+   1627	0723  89 4C 06			 mov word ptr [si + 6],	cx ; 0C81
+   1628	0726  89 4C 08			 mov word ptr [si + 8],	cx ; 0C84
+   1629	0729  B9 0001			 mov cx, 1 ; 0C87
+   1630	072C  88 0C			 mov byte ptr [si], cl ; 0C8A
+   1631	072E  51			 push cx ; 0C8C
+   1632	072F  50			 push ax ; 0C8D
+   1633	0730  E8 F9DA			 call near ptr _snd_066B ; 0C8E
+   1634	0733  83 C4 04			 add sp, 4 ; 0C91
+   1635	0736  88 44 04			 mov byte ptr [si + 4],	al ; 0C94
+   1636	0739  32 E4			 xor ah, ah ; 0C97
+   1637	073B  8A 5E 06			 mov bl, byte ptr [bp +	6] ; 0C99
+   1638	073E  32 FF			 xor bh, bh ; 0C9C
+   1639	0740  2B D8			 sub bx, ax ; 0C9E
+   1640	0742  8B C3			 mov ax, bx ; 0CA0
+   1641	0744  99			 cwd ; 0CA2
+   1642	0745  F7 7E 08			 idiv word ptr [bp + 8]	; 0CA3
+   1643	0748  88 44 0A			 mov byte ptr [si + 0Ah], al ; 0CA6
+   1644	074B  B0 01			 mov al, 1 ; 0CA9
+   1645	074D  0B DB			 or bx,	bx ; 0CAB
+   1646	074F  7D 04			 jge short control_0CB3	; 0CAD
+   1647	0751  F7 DA			 neg dx	; 0CAF
+   1648	0753  F6 D8			 neg al	; 0CB1
+   1649	0755			     control_0CB3:
+   1650	0755  88 44 0B			 mov byte ptr [si + 0Bh], al ; 0CB3
+   1651	0758  88 54 0C			 mov byte ptr [si + 0Ch], dl ; 0CB6
+   1652	075B  C7 44 0E 0000		 mov word ptr [si + 0Eh], 0 ; 0CB9
+   1653	0760			     control_0CBE:
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 30
+CONTROL.ASM
+
+
+
+   1654	0760  33 C0			 xor ax, ax ; 0CBE
+   1655	0762  5E			 pop si	; 0CC0
+   1656	0763  C9			 leave ; 0CC1
+   1657	0764  C3			 ret ; 0CC2
+   1658
+   1659				     ; begin queued command list; original CS:0CC3
+   1660				     public _snd_0CC3
+   1661	0765			     _snd_0CC3 label near
+   1662	0765			     control_0CC3:
+   1663	0765  C8 0000 00		 enter 0, 0 ; 0CC3
+   1664	0769  56			 push si ; 0CC7
+   1665	076A  8A 46 06			 mov al, byte ptr [bp +	6] ; 0CC8
+   1666	076D  32 E4			 xor ah, ah ; 0CCB
+   1667	076F  8B 56 04			 mov dx, word ptr [bp +	4] ; 0CCD
+   1668	0772  8B 36 0000e		 mov si, word ptr [_snd_queue_write] ; 0CD0
+   1669	0776  8B DE			 mov bx, si ; 0CD4
+   1670	0778  C1 E3 04			 shl bx, 4 ; 0CD6
+   1671	077B  C7 87 0000e 0000		 mov word ptr [bx + _snd_queue], 0 ; 0CD9
+   1672	0781  89 97 0002e		 mov word ptr [bx + _snd_queue+2], dx ;	0CDF
+   1673	0785  89 87 0004e		 mov word ptr [bx + _snd_queue+4], ax ;	0CE3
+   1674	0789  46			 inc si	; 0CE7
+   1675	078A  83 FE 40			 cmp si, 040h ;	0CE8
+   1676	078D  7C 02			 jl short control_0CEF ; 0CEB
+   1677	078F  33 F6			 xor si, si ; 0CED
+   1678	0791			     control_0CEF:
+   1679	0791  39 36 0000e		 cmp word ptr [_snd_queue_read], si ; 0CEF
+   1680	0795  75 15			 jne short control_0D0A	; 0CF3
+   1681	0797  4E			 dec si	; 0CF5
+   1682	0798  89 36 0000e		 mov word ptr [_snd_queue_write], si ; 0CF6
+   1683	079C  0B F6			 or si,	si ; 0CFA
+   1684	079E  7D 06			 jge short control_0D04	; 0CFC
+   1685	07A0  C7 06 0000e 003F		 mov word ptr [_snd_queue_write], 03Fh ; 0CFE
+   1686	07A6			     control_0D04:
+   1687	07A6  B8 FFFF			 mov ax, 0FFFFh	; 0D04
+   1688	07A9  5E			 pop si	; 0D07
+   1689	07AA  C9			 leave ; 0D08
+   1690	07AB  C3			 ret ; 0D09
+   1691	07AC			     control_0D0A:
+   1692	07AC  89 36 0000e		 mov word ptr [_snd_queue_write], si ; 0D0A
+   1693	07B0  89 16 0000e		 mov word ptr [_snd_queued_sound], dx ;	0D0E
+   1694	07B4  A2 0000e			 mov byte ptr [_snd_queued_marker], al ; 0D12
+   1695	07B7  C6 06 0000e 01		 mov byte ptr [_snd_building_queue], 1 ; 0D15
+   1696	07BC  33 C0			 xor ax, ax ; 0D1A
+   1697	07BE  5E			 pop si	; 0D1C
+   1698	07BF  C9			 leave ; 0D1D
+   1699	07C0  C3			 ret ; 0D1E
+   1700
+   1701				     ; append queued command or	close list; original CS:0D1F
+   1702				     public _snd_0D1F
+   1703	07C1			     _snd_0D1F label near
+   1704	07C1			     control_0D1F:
+   1705	07C1  C8 0000 00		 enter 0, 0 ; 0D1F
+   1706	07C5  56			 push si ; 0D23
+   1707	07C6  8B 36 0000e		 mov si, word ptr [_snd_queue_write] ; 0D24
+   1708	07CA  3B 36 0000e		 cmp si, word ptr [_snd_queue_read] ; 0D28
+   1709	07CE  75 06			 jne short control_0D34	; 0D2C
+   1710	07D0			     control_0D2E:
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 31
+CONTROL.ASM
+
+
+
+   1711	07D0  B8 FFFF			 mov ax, 0FFFFh	; 0D2E
+   1712	07D3  5E			 pop si	; 0D31
+   1713	07D4  C9			 leave ; 0D32
+   1714	07D5  C3			 ret ; 0D33
+   1715	07D6			     control_0D34:
+   1716	07D6  8B 56 04			 mov dx, word ptr [bp +	4] ; 0D34
+   1717	07D9  83 FA FF			 cmp dx, -1 ; 0D37
+   1718	07DC  75 0B			 jne short control_0D47	; 0D3A
+   1719	07DE  C6 06 0000e 00		 mov byte ptr [_snd_building_queue], 0 ; 0D3C
+   1720	07E3  FF 06 0000e		 inc word ptr [_snd_trigger_count] ; 0D41
+   1721	07E7  EB 5C			 jmp short control_0DA3	; 0D45
+   1722	07E9			     control_0D47:
+   1723	07E9  8B DE			 mov bx, si ; 0D47
+   1724	07EB  C1 E3 04			 shl bx, 4 ; 0D49
+   1725	07EE  C7 87 0000e 0001		 mov word ptr [bx + _snd_queue], 1 ; 0D4C
+   1726	07F4  89 97 0002e		 mov word ptr [bx + _snd_queue+2], dx ;	0D52
+   1727	07F8  8B 46 06			 mov ax, word ptr [bp +	6] ; 0D56
+   1728	07FB  89 87 0004e		 mov word ptr [bx + _snd_queue+4], ax ;	0D59
+   1729	07FF  8B 46 08			 mov ax, word ptr [bp +	8] ; 0D5D
+   1730	0802  89 87 0006e		 mov word ptr [bx + _snd_queue+6], ax ;	0D60
+   1731	0806  8B 46 0A			 mov ax, word ptr [bp +	0Ah] ; 0D64
+   1732	0809  89 87 0008e		 mov word ptr [bx + _snd_queue+8], ax ;	0D67
+   1733	080D  8B 46 0C			 mov ax, word ptr [bp +	0Ch] ; 0D6B
+   1734	0810  89 87 000Ae		 mov word ptr [bx + _snd_queue+0Ah], ax	; 0D6E
+   1735	0814  8B 46 0E			 mov ax, word ptr [bp +	0Eh] ; 0D72
+   1736	0817  89 87 000Ce		 mov word ptr [bx + _snd_queue+0Ch], ax	; 0D75
+   1737	081B  8B 46 10			 mov ax, word ptr [bp +	010h] ;	0D79
+   1738	081E  89 87 000Ee		 mov word ptr [bx + _snd_queue+0Eh], ax	; 0D7C
+   1739	0822  46			 inc si	; 0D80
+   1740	0823  83 FE 40			 cmp si, 040h ;	0D81
+   1741	0826  7C 02			 jl short control_0D88 ; 0D84
+   1742	0828  33 F6			 xor si, si ; 0D86
+   1743	082A			     control_0D88:
+   1744	082A  3B 36 0000e		 cmp si, word ptr [_snd_queue_read] ; 0D88
+   1745	082E  75 11			 jne short control_0D9F	; 0D8C
+   1746	0830  4E			 dec si	; 0D8E
+   1747	0831  89 36 0000e		 mov word ptr [_snd_queue_write], si ; 0D8F
+   1748	0835  0B F6			 or si,	si ; 0D93
+   1749	0837  7D 97			 jge short control_0D2E	; 0D95
+   1750	0839  C7 06 0000e 003F		 mov word ptr [_snd_queue_write], 03Fh ; 0D97
+   1751	083F  EB 8F			 jmp short control_0D2E	; 0D9D
+   1752	0841			     control_0D9F:
+   1753	0841  89 36 0000e		 mov word ptr [_snd_queue_write], si ; 0D9F
+   1754	0845			     control_0DA3:
+   1755	0845  33 C0			 xor ax, ax ; 0DA3
+   1756	0847  5E			 pop si	; 0DA5
+   1757	0848  C9			 leave ; 0DA6
+   1758	0849  C3			 ret ; 0DA7
+   1759
+   1760				     ; clear queued command state; original CS:0DA8
+   1761				     public _snd_0DA8
+   1762	084A			     _snd_0DA8 label near
+   1763	084A			     control_0DA8:
+   1764	084A  33 C0			 xor ax, ax ; 0DA8
+   1765	084C  A2 0000e			 mov byte ptr [_snd_building_queue], al	; 0DAA
+   1766	084F  A3 0000e			 mov word ptr [_snd_queue_write], ax ; 0DAD
+   1767	0852  A3 0000e			 mov word ptr [_snd_queue_read], ax ; 0DB0
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 32
+CONTROL.ASM
+
+
+
+   1768	0855  A3 0000e			 mov word ptr [_snd_trigger_count], ax ; 0DB3
+   1769	0858  33 C0			 xor ax, ax ; 0DB6
+   1770	085A  C3			 ret ; 0DB8
+   1771	085B			     SC055E ends
+   1772
+   1773	0000			     SC3283 segment byte public	'CODE'
+   1774				     assume cs:CGROUP, ds:DGROUP
+   1775
+   1776				     ; bind player, sequence and hook storage; original	CS:3283
+   1777				     public _snd_3283
+   1778	0000			     _snd_3283 label near
+   1779	0000			     control_3283:
+   1780	0000  56			 push si ; 3283
+   1781	0001  BE 0000e			 mov si, offset	_snd_players ; 3284
+   1782	0004  33 C9			 xor cx, cx ; 3287
+   1783	0006			     control_3289:
+   1784	0006  C6 44 06 00		 mov byte ptr [si + 6],	0 ; 3289
+   1785	000A  B0 34			 mov al, 034h ;	328D
+   1786	000C  F6 E1			 mul cl	; 328F
+   1787	000E  05 0000e			 add ax, offset	_snd_sequences ; 3291
+   1788	0011  89 04			 mov word ptr [si], ax ; 3294
+   1789	0013  8B D8			 mov bx, ax ; 3296
+   1790	0015  89 37			 mov word ptr [bx], si ; 3298
+   1791	0017  B0 42			 mov al, 042h ;	329A
+   1792	0019  F6 E1			 mul cl	; 329C
+   1793	001B  05 0000e			 add ax, offset	_snd_hooks ; 329E
+   1794	001E  89 44 02			 mov word ptr [si + 2],	ax ; 32A1
+   1795	0021  83 C6 12			 add si, 012h ;	32A4
+   1796	0024  41			 inc cx	; 32A7
+   1797	0025  83 F9 02			 cmp cx, 2 ; 32A8
+   1798	0028  72 DC			 jb short control_3289 ; 32AB
+   1799	002A  5E			 pop si	; 32AD
+   1800	002B  C3			 ret ; 32AE
+   1801
+   1802				     ; initialize sequences and	timer period; original CS:32AF
+   1803				     public _snd_32AF
+   1804	002C			     _snd_32AF label near
+   1805	002C			     control_32AF:
+   1806	002C  BB 0000e			 mov bx, offset	_snd_sequences ; 32AF
+   1807	002F  B9 0002			 mov cx, 2 ; 32B2
+   1808	0032  33 C0			 xor ax, ax ; 32B5
+   1809	0034			     control_32B7:
+   1810	0034  88 47 02			 mov byte ptr [bx + 2],	al ; 32B7
+   1811	0037  83 C3 34			 add bx, 034h ;	32BA
+   1812	003A  E2 F8			 loop control_32B7 ; 32BD
+   1813	003C  C7 06 0000e 8C77		 mov word ptr [_snd_tick_period], 08C77h ; 32BF
+   1814	0042  C7 06 0002e 0024		 mov word ptr [_snd_tick_period+2], 024h ; 32C5
+   1815	0048  A2 0000e			 mov byte ptr [_snd_parse_nesting], al ; 32CB
+   1816	004B  C3			 ret ; 32CE
+   1817
+   1818				     ; initialize held-note free list; original	CS:32CF
+   1819				     public _snd_32CF
+   1820	004C			     _snd_32CF label near
+   1821	004C			     control_32CF:
+   1822	004C  33 C0			 xor ax, ax ; 32CF
+   1823	004E  A3 0000e			 mov word ptr [_snd_held_cursor], ax ; 32D1
+   1824	0051  A3 0000e			 mov word ptr [_snd_held_active], ax ; 32D4
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 33
+CONTROL.ASM
+
+
+
+   1825	0054  BB 0000e			 mov bx, offset	_snd_held_notes	; 32D7
+   1826	0057  B9 0018			 mov cx, 018h ;	32DA
+   1827	005A			     control_32DD:
+   1828	005A  89 47 02			 mov word ptr [bx + 2],	ax ; 32DD
+   1829	005D  8B C3			 mov ax, bx ; 32E0
+   1830	005F  83 C3 14			 add bx, 014h ;	32E2
+   1831	0062  E2 F6			 loop control_32DD ; 32E5
+   1832	0064  A3 0000e			 mov word ptr [_snd_held_free],	ax ; 32E7
+   1833	0067  C3			 ret ; 32EA
+   1834
+   1835				     ; initialize fade slots; original CS:32EB
+   1836				     public _snd_32EB
+   1837	0068			     _snd_32EB label near
+   1838	0068			     control_32EB:
+   1839	0068  BB 0000e			 mov bx, offset	_snd_fades ; 32EB
+   1840	006B  B9 0002			 mov cx, 2 ; 32EE
+   1841	006E			     control_32F1:
+   1842	006E  88 2F			 mov byte ptr [bx], ch ; 32F1
+   1843	0070  83 C3 10			 add bx, 010h ;	32F3
+   1844	0073  E2 F9			 loop control_32F1 ; 32F6
+   1845	0075  88 0E 0000e		 mov byte ptr [_snd_fade_state], cl ; 32F8
+   1846	0079  C7 06 0000e 0001		 mov word ptr [_snd_fade_tick_scale], 1	; 32FC
+   1847	007F  C3			 ret ; 3302
+   1848
+   1849				     ; initialize part/instrument links	and voices; original CS:3303
+   1850				     public _snd_3303
+   1851	0080			     _snd_3303 label near
+   1852	0080			     control_3303:
+   1853	0080  56			 push si ; 3303
+   1854	0081  BE 0000e			 mov si, offset	_snd_parts ; 3304
+   1855	0084  33 C9			 xor cx, cx ; 3307
+   1856	0086			     control_3309:
+   1857	0086  33 C0			 xor ax, ax ; 3309
+   1858	0088  89 04			 mov word ptr [si], ax ; 330B
+   1859	008A  89 44 02			 mov word ptr [si + 2],	ax ; 330D
+   1860	008D  89 44 04			 mov word ptr [si + 4],	ax ; 3310
+   1861	0090  89 44 06			 mov word ptr [si + 6],	ax ; 3313
+   1862	0093  B0 1E			 mov al, 01Eh ;	3316
+   1863	0095  F6 E1			 mul cl	; 3318
+   1864	0097  05 0000e			 add ax, offset	_snd_part_instruments ;	331A
+   1865	009A  89 44 08			 mov word ptr [si + 8],	ax ; 331D
+   1866	009D  83 C6 20			 add si, 020h ;	3320
+   1867	00A0  41			 inc cx	; 3323
+   1868	00A1  83 F9 20			 cmp cx, 020h ;	3324
+   1869	00A4  72 E0			 jb short control_3309 ; 3327
+   1870	00A6  0E			 push cs ; 3329
+   1871	00A7  E8 0000e			 call near ptr _snd_1DDB ; 332A
+   1872	00AA  5E			 pop si	; 332D
+   1873	00AB  C3			 ret ; 332E
+   1874
+   1875				     ; build volume-product lookup table; original CS:332F
+   1876				     public _snd_332F
+   1877	00AC			     _snd_332F label near
+   1878	00AC			     control_332F:
+   1879	00AC  56			 push si ; 332F
+   1880	00AD  33 F6			 xor si, si ; 3330
+   1881	00AF  33 C9			 xor cx, cx ; 3332
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 34
+CONTROL.ASM
+
+
+
+   1882	00B1			     control_3334:
+   1883	00B1  33 DB			 xor bx, bx ; 3334
+   1884	00B3  8B D1			 mov dx, cx ; 3336
+   1885	00B5			     control_3338:
+   1886	00B5  8B C2			 mov ax, dx ; 3338
+   1887	00B7  C1 F8 05			 sar ax, 5 ; 333A
+   1888	00BA  88 80 0000e		 mov byte ptr [bx + si + _snd_volume_products],	al ; 333D
+   1889	00BE  03 D1			 add dx, cx ; 3341
+   1890	00C0  43			 inc bx	; 3343
+   1891	00C1  83 FB 20			 cmp bx, 020h ;	3344
+   1892	00C4  7C EF			 jl short control_3338 ; 3347
+   1893	00C6  41			 inc cx	; 3349
+   1894	00C7  83 C6 20			 add si, 020h ;	334A
+   1895	00CA  81 FE 0800		 cmp si, 0800h ; 334D
+   1896	00CE  7C E1			 jl short control_3334 ; 3351
+   1897	00D0  BB 0000e			 mov bx, offset	_snd_volume_products ; 3353
+   1898	00D3  B9 0040			 mov cx, 040h ;	3356
+   1899	00D6			     control_3359:
+   1900	00D6  88 2F			 mov byte ptr [bx], ch ; 3359
+   1901	00D8  83 C3 20			 add bx, 020h ;	335B
+   1902	00DB  E2 F9			 loop control_3359 ; 335E
+   1903	00DD  5E			 pop si	; 3360
+   1904	00DE  C3			 ret ; 3361
+   1905
+   1906				     ; initialize command queue; original CS:3362
+   1907				     public _snd_3362
+   1908	00DF			     _snd_3362 label near
+   1909	00DF			     control_3362:
+   1910	00DF  33 C0			 xor ax, ax ; 3362
+   1911	00E1  A2 0000e			 mov byte ptr [_snd_building_queue], al	; 3364
+   1912	00E4  A3 0000e			 mov word ptr [_snd_queue_write], ax ; 3367
+   1913	00E7  A3 0000e			 mov word ptr [_snd_queue_read], ax ; 336A
+   1914	00EA  A3 0000e			 mov word ptr [_snd_trigger_count], ax ; 336D
+   1915	00ED  C3			 ret ; 3370
+   1916	00EE			     SC3283 ends
+   1917
+   1918	0000			     _DATA segment word	public 'DATA'
+   1919				     extrn _snd_basic_commands:byte
+   1920				     extrn _snd_building_queue:byte
+   1921				     extrn _snd_command_kinds:byte
+   1922				     extrn _snd_disabled:byte
+   1923				     extrn _snd_extended_commands:byte
+   1924				     extrn _snd_fade_state:byte
+   1925				     extrn _snd_fade_tick_scale:byte
+   1926				     extrn _snd_fades:byte
+   1927				     extrn _snd_held_active:byte
+   1928				     extrn _snd_held_cursor:byte
+   1929				     extrn _snd_held_free:byte
+   1930				     extrn _snd_held_notes:byte
+   1931				     extrn _snd_hooks:byte
+   1932				     extrn _snd_master_volume:byte
+   1933				     extrn _snd_midi_tags:byte
+   1934				     extrn _snd_parse_cursor:byte
+   1935				     extrn _snd_parse_finished:byte
+   1936				     extrn _snd_parse_nesting:byte
+   1937				     extrn _snd_part_instruments:byte
+   1938				     extrn _snd_parts:byte
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 35
+CONTROL.ASM
+
+
+
+   1939				     extrn _snd_paused:byte
+   1940				     extrn _snd_players:byte
+   1941				     extrn _snd_queue:byte
+   1942				     extrn _snd_queue_read:byte
+   1943				     extrn _snd_queue_write:byte
+   1944				     extrn _snd_queued_marker:byte
+   1945				     extrn _snd_queued_sound:byte
+   1946				     extrn _snd_resources:byte
+   1947				     extrn _snd_scanning:byte
+   1948				     extrn _snd_sequences:byte
+   1949				     extrn _snd_tick_period:byte
+   1950				     extrn _snd_trigger_count:byte
+   1951				     extrn _snd_volume_products:byte
+   1952	0000			     _DATA ends
+   1953	0000			     _BSS segment word public 'BSS'
+   1954	0000			     _BSS ends
+   1955				     DGROUP group _DATA, _BSS
+   1956				     CGROUP group SC000C, SC00FE, SC04B8, SC055E, SC3283
+   1957				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 36
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "CONTROL "
+??time				  Text	 "18:46:05"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 CONTROL
+@WordSize			  Text	 2
+@curseg				  Text	 _BSS
+_snd_000C			  Far	 SC000C:0000
+_snd_001E			  Far	 SC000C:0012
+_snd_0022			  Far	 SC000C:0016
+_snd_0026			  Far	 SC000C:001A
+_snd_002A			  Far	 SC000C:001E
+_snd_0039			  Far	 SC000C:002D
+_snd_0048			  Far	 SC000C:003C
+_snd_0057			  Far	 SC000C:004B
+_snd_00B4			  Near	 ----:---- Extern
+_snd_00E7			  Near	 ----:---- Extern
+_snd_00FE			  Far	 SC00FE:0000
+_snd_0158			  Near	 SC00FE:005A
+_snd_01A7			  Near	 SC00FE:00A9
+_snd_01CB			  Near	 SC00FE:00CD
+_snd_01D5			  Near	 SC00FE:00D7
+_snd_01DC			  Near	 SC00FE:00DE
+_snd_0217			  Near	 SC00FE:0119
+_snd_021C			  Near	 SC00FE:011E
+_snd_0269			  Near	 SC00FE:016B
+_snd_029B			  Near	 SC00FE:019D
+_snd_02B7			  Near	 SC00FE:01B9
+_snd_02E4			  Near	 SC00FE:01E6
+_snd_0406			  Near	 SC00FE:0308
+_snd_04B8			  Near	 SC04B8:0000
+_snd_04CC			  Near	 SC04B8:0014
+_snd_04D9			  Near	 SC04B8:0021
+_snd_04F4			  Near	 SC04B8:003C
+_snd_055E			  Near	 SC055E:0000
+_snd_0574			  Near	 SC055E:0016
+_snd_05A6			  Near	 SC055E:0048
+_snd_05E8			  Near	 SC055E:008A
+_snd_0643			  Near	 SC055E:00E5
+_snd_066B			  Near	 SC055E:010D
+_snd_0743			  Near	 SC055E:01E5
+_snd_075E			  Near	 SC055E:0200
+_snd_078F			  Near	 SC055E:0231
+_snd_07AA			  Near	 SC055E:024C
+_snd_07F9			  Near	 SC055E:029B
+_snd_0814			  Near	 SC055E:02B6
+_snd_0857			  Near	 SC055E:02F9
+_snd_09F4			  Near	 SC055E:0496
+_snd_0B2E			  Near	 SC055E:05D0
+_snd_0B6E			  Near	 SC055E:0610
+_snd_0B7E			  Near	 SC055E:0620
+_snd_0C3D			  Near	 SC055E:06DF
+_snd_0CC3			  Near	 SC055E:0765
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 37
+Symbol Table
+
+
+
+_snd_0D1F			  Near	 SC055E:07C1
+_snd_0DA8			  Near	 SC055E:084A
+_snd_0DB9			  Near	 ----:---- Extern
+_snd_0E6A			  Near	 ----:---- Extern
+_snd_0E7C			  Near	 ----:---- Extern
+_snd_101E			  Near	 ----:---- Extern
+_snd_1041			  Near	 ----:---- Extern
+_snd_1086			  Near	 ----:---- Extern
+_snd_11F0			  Near	 ----:---- Extern
+_snd_1263			  Near	 ----:---- Extern
+_snd_12D8			  Near	 ----:---- Extern
+_snd_15DF			  Near	 ----:---- Extern
+_snd_162A			  Near	 ----:---- Extern
+_snd_167E			  Near	 ----:---- Extern
+_snd_1684			  Near	 ----:---- Extern
+_snd_16A5			  Near	 ----:---- Extern
+_snd_17FC			  Near	 ----:---- Extern
+_snd_183E			  Near	 ----:---- Extern
+_snd_1D6D			  Near	 ----:---- Extern
+_snd_1DDB			  Near	 ----:---- Extern
+_snd_1E1A			  Near	 ----:---- Extern
+_snd_1FCC			  Near	 ----:---- Extern
+_snd_20E7			  Near	 ----:---- Extern
+_snd_21EF			  Near	 ----:---- Extern
+_snd_2209			  Near	 ----:---- Extern
+_snd_22F1			  Near	 ----:---- Extern
+_snd_235A			  Near	 ----:---- Extern
+_snd_23D1			  Near	 ----:---- Extern
+_snd_23D2			  Near	 ----:---- Extern
+_snd_247E			  Near	 ----:---- Extern
+_snd_261A			  Near	 ----:---- Extern
+_snd_3179			  Near	 ----:---- Extern
+_snd_320A			  Near	 ----:---- Extern
+_snd_3283			  Near	 SC3283:0000
+_snd_32AF			  Near	 SC3283:002C
+_snd_32CF			  Near	 SC3283:004C
+_snd_32EB			  Near	 SC3283:0068
+_snd_3303			  Near	 SC3283:0080
+_snd_332F			  Near	 SC3283:00AC
+_snd_3362			  Near	 SC3283:00DF
+_snd_basic_commands		  Byte	 _DATA:---- Extern
+_snd_building_queue		  Byte	 _DATA:---- Extern
+_snd_command_kinds		  Byte	 _DATA:---- Extern
+_snd_disabled			  Byte	 _DATA:---- Extern
+_snd_extended_commands		  Byte	 _DATA:---- Extern
+_snd_fade_state			  Byte	 _DATA:---- Extern
+_snd_fade_tick_scale		  Byte	 _DATA:---- Extern
+_snd_fades			  Byte	 _DATA:---- Extern
+_snd_held_active		  Byte	 _DATA:---- Extern
+_snd_held_cursor		  Byte	 _DATA:---- Extern
+_snd_held_free			  Byte	 _DATA:---- Extern
+_snd_held_notes			  Byte	 _DATA:---- Extern
+_snd_hooks			  Byte	 _DATA:---- Extern
+_snd_master_volume		  Byte	 _DATA:---- Extern
+_snd_midi_tags			  Byte	 _DATA:---- Extern
+_snd_parse_cursor		  Byte	 _DATA:---- Extern
+_snd_parse_finished		  Byte	 _DATA:---- Extern
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 38
+Symbol Table
+
+
+
+_snd_parse_nesting		  Byte	 _DATA:---- Extern
+_snd_part_instruments		  Byte	 _DATA:---- Extern
+_snd_parts			  Byte	 _DATA:---- Extern
+_snd_paused			  Byte	 _DATA:---- Extern
+_snd_players			  Byte	 _DATA:---- Extern
+_snd_queue			  Byte	 _DATA:---- Extern
+_snd_queue_read			  Byte	 _DATA:---- Extern
+_snd_queue_write		  Byte	 _DATA:---- Extern
+_snd_queued_marker		  Byte	 _DATA:---- Extern
+_snd_queued_sound		  Byte	 _DATA:---- Extern
+_snd_resources			  Byte	 _DATA:---- Extern
+_snd_scanning			  Byte	 _DATA:---- Extern
+_snd_sequences			  Byte	 _DATA:---- Extern
+_snd_tick_period		  Byte	 _DATA:---- Extern
+_snd_trigger_count		  Byte	 _DATA:---- Extern
+_snd_volume_products		  Byte	 _DATA:---- Extern
+control_000C			  Near	 SC000C:0000
+control_001E			  Near	 SC000C:0012
+control_0022			  Near	 SC000C:0016
+control_0026			  Near	 SC000C:001A
+control_002A			  Near	 SC000C:001E
+control_0039			  Near	 SC000C:002D
+control_0048			  Near	 SC000C:003C
+control_0057			  Near	 SC000C:004B
+control_00FE			  Near	 SC00FE:0000
+control_0132			  Near	 SC00FE:0034
+control_0138			  Near	 SC00FE:003A
+control_0155			  Near	 SC00FE:0057
+control_0158			  Near	 SC00FE:005A
+control_01A1			  Near	 SC00FE:00A3
+control_01A7			  Near	 SC00FE:00A9
+control_01CB			  Near	 SC00FE:00CD
+control_01D5			  Near	 SC00FE:00D7
+control_01DC			  Near	 SC00FE:00DE
+control_01EC			  Near	 SC00FE:00EE
+control_01F9			  Near	 SC00FE:00FB
+control_020A			  Near	 SC00FE:010C
+control_0217			  Near	 SC00FE:0119
+control_021C			  Near	 SC00FE:011E
+control_0261			  Near	 SC00FE:0163
+control_0269			  Near	 SC00FE:016B
+control_0275			  Near	 SC00FE:0177
+control_028B			  Near	 SC00FE:018D
+control_029B			  Near	 SC00FE:019D
+control_02A2			  Near	 SC00FE:01A4
+control_02B7			  Near	 SC00FE:01B9
+control_02C4			  Near	 SC00FE:01C6
+control_02CF			  Near	 SC00FE:01D1
+control_02DE			  Near	 SC00FE:01E0
+control_02E4			  Near	 SC00FE:01E6
+control_02F4			  Near	 SC00FE:01F6
+control_0303			  Near	 SC00FE:0205
+control_0314			  Near	 SC00FE:0216
+control_0322			  Near	 SC00FE:0224
+control_0340			  Near	 SC00FE:0242
+control_0350			  Near	 SC00FE:0252
+control_0360			  Near	 SC00FE:0262
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 39
+Symbol Table
+
+
+
+control_0370			  Near	 SC00FE:0272
+control_038E			  Near	 SC00FE:0290
+control_03AA			  Near	 SC00FE:02AC
+control_03CE			  Near	 SC00FE:02D0
+control_03E4			  Near	 SC00FE:02E6
+control_0400			  Near	 SC00FE:0302
+control_0406			  Near	 SC00FE:0308
+control_0447			  Near	 SC00FE:0349
+control_044C			  Near	 SC00FE:034E
+control_045C			  Near	 SC00FE:035E
+control_04B8			  Near	 SC04B8:0000
+control_04CC			  Near	 SC04B8:0014
+control_04D9			  Near	 SC04B8:0021
+control_04EE			  Near	 SC04B8:0036
+control_04F0			  Near	 SC04B8:0038
+control_04F4			  Near	 SC04B8:003C
+control_051A			  Near	 SC04B8:0062
+control_0539			  Near	 SC04B8:0081
+control_055E			  Near	 SC055E:0000
+control_0573			  Near	 SC055E:0015
+control_0574			  Near	 SC055E:0016
+control_0585			  Near	 SC055E:0027
+control_0593			  Near	 SC055E:0035
+control_05A1			  Near	 SC055E:0043
+control_05A6			  Near	 SC055E:0048
+control_05B4			  Near	 SC055E:0056
+control_05CB			  Near	 SC055E:006D
+control_05DE			  Near	 SC055E:0080
+control_05E3			  Near	 SC055E:0085
+control_05E8			  Near	 SC055E:008A
+control_063F			  Near	 SC055E:00E1
+control_0643			  Near	 SC055E:00E5
+control_0668			  Near	 SC055E:010A
+control_066B			  Near	 SC055E:010D
+control_0686			  Near	 SC055E:0128
+control_06B6			  Near	 SC055E:0158
+control_06BC			  Near	 SC055E:015E
+control_06C2			  Near	 SC055E:0164
+control_06C8			  Near	 SC055E:016A
+control_06CE			  Near	 SC055E:0170
+control_06D4			  Near	 SC055E:0176
+control_06DA			  Near	 SC055E:017C
+control_06E2			  Near	 SC055E:0184
+control_06EA			  Near	 SC055E:018C
+control_06F2			  Near	 SC055E:0194
+control_06FA			  Near	 SC055E:019C
+control_0702			  Near	 SC055E:01A4
+control_070A			  Near	 SC055E:01AC
+control_0712			  Near	 SC055E:01B4
+control_071A			  Near	 SC055E:01BC
+control_0722			  Near	 SC055E:01C4
+control_0732			  Near	 SC055E:01D4
+control_0743			  Near	 SC055E:01E5
+control_075E			  Near	 SC055E:0200
+control_076C			  Near	 SC055E:020E
+control_078F			  Near	 SC055E:0231
+control_07AA			  Near	 SC055E:024C
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 40
+Symbol Table
+
+
+
+control_07DD			  Near	 SC055E:027F
+control_07F3			  Near	 SC055E:0295
+control_07F9			  Near	 SC055E:029B
+control_0814			  Near	 SC055E:02B6
+control_0857			  Near	 SC055E:02F9
+control_0865			  Near	 SC055E:0307
+control_086B			  Near	 SC055E:030D
+control_08B6			  Near	 SC055E:0358
+control_08E2			  Near	 SC055E:0384
+control_08FA			  Near	 SC055E:039C
+control_090F			  Near	 SC055E:03B1
+control_0915			  Near	 SC055E:03B7
+control_0927			  Near	 SC055E:03C9
+control_0948			  Near	 SC055E:03EA
+control_094F			  Near	 SC055E:03F1
+control_09E6			  Near	 SC055E:0488
+control_09F4			  Near	 SC055E:0496
+control_0A02			  Near	 SC055E:04A4
+control_0A08			  Near	 SC055E:04AA
+control_0A35			  Near	 SC055E:04D7
+control_0A78			  Near	 SC055E:051A
+control_0A8A			  Near	 SC055E:052C
+control_0AAE			  Near	 SC055E:0550
+control_0ABB			  Near	 SC055E:055D
+control_0B25			  Near	 SC055E:05C7
+control_0B2E			  Near	 SC055E:05D0
+control_0B42			  Near	 SC055E:05E4
+control_0B47			  Near	 SC055E:05E9
+control_0B6E			  Near	 SC055E:0610
+control_0B7E			  Near	 SC055E:0620
+control_0B9E			  Near	 SC055E:0640
+control_0BAA			  Near	 SC055E:064C
+control_0BB0			  Near	 SC055E:0652
+control_0BB6			  Near	 SC055E:0658
+control_0BBC			  Near	 SC055E:065E
+control_0BD0			  Near	 SC055E:0672
+control_0BDA			  Near	 SC055E:067C
+control_0BEE			  Near	 SC055E:0690
+control_0BF8			  Near	 SC055E:069A
+control_0C0C			  Near	 SC055E:06AE
+control_0C16			  Near	 SC055E:06B8
+control_0C2A			  Near	 SC055E:06CC
+control_0C32			  Near	 SC055E:06D4
+control_0C38			  Near	 SC055E:06DA
+control_0C3D			  Near	 SC055E:06DF
+control_0C5E			  Near	 SC055E:0700
+control_0C69			  Near	 SC055E:070B
+control_0C78			  Near	 SC055E:071A
+control_0CB3			  Near	 SC055E:0755
+control_0CBE			  Near	 SC055E:0760
+control_0CC3			  Near	 SC055E:0765
+control_0CEF			  Near	 SC055E:0791
+control_0D04			  Near	 SC055E:07A6
+control_0D0A			  Near	 SC055E:07AC
+control_0D1F			  Near	 SC055E:07C1
+control_0D2E			  Near	 SC055E:07D0
+control_0D34			  Near	 SC055E:07D6
+Turbo Assembler	 Version 3.1	    10/21/26 18:46:05	    Page 41
+Symbol Table
+
+
+
+control_0D47			  Near	 SC055E:07E9
+control_0D88			  Near	 SC055E:082A
+control_0D9F			  Near	 SC055E:0841
+control_0DA3			  Near	 SC055E:0845
+control_0DA8			  Near	 SC055E:084A
+control_3283			  Near	 SC3283:0000
+control_3289			  Near	 SC3283:0006
+control_32AF			  Near	 SC3283:002C
+control_32B7			  Near	 SC3283:0034
+control_32CF			  Near	 SC3283:004C
+control_32DD			  Near	 SC3283:005A
+control_32EB			  Near	 SC3283:0068
+control_32F1			  Near	 SC3283:006E
+control_3303			  Near	 SC3283:0080
+control_3309			  Near	 SC3283:0086
+control_332F			  Near	 SC3283:00AC
+control_3334			  Near	 SC3283:00B1
+control_3338			  Near	 SC3283:00B5
+control_3359			  Near	 SC3283:00D6
+control_3362			  Near	 SC3283:00DF
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CGROUP				  Group
+  SC000C			  16  0062 Byte	  Public  CODE
+  SC00FE			  16  0398 Byte	  Public  CODE
+  SC04B8			  16  0085 Byte	  Public  CODE
+  SC055E			  16  085B Byte	  Public  CODE
+  SC3283			  16  00EE Byte	  Public  CODE
+DGROUP				  Group
+  _BSS				  16  0000 Word	  Public  BSS
+  _DATA				  16  0000 Word	  Public  DATA
+

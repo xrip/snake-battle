@@ -1,0 +1,9 @@
+ALSA lib seq_hw.c:528:(snd_seq_hw_open) open /dev/snd/seq failed: No such file or directory
+DOSBox version 0.74-3
+Copyright 2002-2019 DOSBox Team, published under GNU GPL.
+---
+CONFIG: Using default settings. Create a configfile to change them
+ALSA:Can't open sequencer
+MIDI:Opened device:none
+SHELL:Redirect output to EGA.LOG
+SHELL:Redirect output to ASMOK.TXT

@@ -1,0 +1,80 @@
+{
+  "functions": {
+    "_blo_0009": {
+      "address": "0D9F:0009",
+      "length": 15,
+      "module": "BLO"
+    },
+    "_blo_0018": {
+      "address": "0D9F:0018",
+      "length": 67,
+      "module": "BLO"
+    },
+    "_blo_005b": {
+      "address": "0D9F:005B",
+      "length": 39,
+      "module": "BLO"
+    },
+    "_blo_0082": {
+      "address": "0D9F:0082",
+      "length": 20,
+      "module": "BLO"
+    },
+    "_blo_0096": {
+      "address": "0D9F:0096",
+      "length": 362,
+      "module": "BLO"
+    },
+    "_blo_0200": {
+      "address": "0D9F:0200",
+      "length": 279,
+      "module": "BLO"
+    },
+    "_blo_0317": {
+      "address": "0D9F:0317",
+      "length": 167,
+      "module": "BLO"
+    },
+    "_blo_03be": {
+      "address": "0D9F:03BE",
+      "length": 11,
+      "module": "BLO"
+    },
+    "_chunk_0009": {
+      "address": "0DDB:0009",
+      "length": 159,
+      "module": "CHUNK"
+    },
+    "_chunk_00a8": {
+      "address": "0DDB:00A8",
+      "length": 159,
+      "module": "CHUNK"
+    },
+    "_para_0007": {
+      "address": "0DEF:0007",
+      "length": 78,
+      "module": "PARA"
+    },
+    "_para_0055": {
+      "address": "0DEF:0055",
+      "length": 32,
+      "module": "PARA"
+    }
+  },
+  "externals": {
+    "_g_40c0": "1679:40C0",
+    "_g_40c4": "1679:40C4",
+    "_g_0e4c": "1679:0E4C",
+    "_g_0e4f": "1679:0E4F",
+    "_g_0e64": "1679:0E64",
+    "_g_0e74": "1679:0E74",
+    "_g_0e78": "1679:0E78",
+    "_g_0e88": "1679:0E88",
+    "_f_0b33_0003": "0b33:0003",
+    "_f_0c21_00f5": "0c21:00f5",
+    "_f_0ddb_0009": "0ddb:0009",
+    "_f_0ddb_00a8": "0ddb:00a8",
+    "_f_0def_0007": "0def:0007"
+  },
+  "segments": {}
+}

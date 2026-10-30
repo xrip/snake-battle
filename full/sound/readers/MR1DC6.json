@@ -1,0 +1,130 @@
+{
+  "object": "work/midi-analysis/build/MR1DC6.OBJ",
+  "object_sha256": "c7e59e1416a7b19174d11ed9f449855464873a5c481fcb9b5e2a80e192142ef9",
+  "module": "MR1DC6.ASM",
+  "segment_index": 1,
+  "segment_name": "_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4929,
+    "offset": 7622,
+    "image_offset": 86486,
+    "address": "1341:1DC6"
+  },
+  "file_offset": 90582,
+  "object_size": 21,
+  "expected_size": 21,
+  "public_bindings": [
+    {
+      "name": "_snd_1DC6",
+      "object_offset": 0,
+      "expected": {
+        "segment": 4929,
+        "offset": 7622,
+        "image_offset": 86486,
+        "address": "1341:1DC6"
+      },
+      "binding": {
+        "segment": 4929,
+        "offset": 7622,
+        "image_offset": 86486,
+        "address": "1341:1DC6"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      21
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 8,
+      "function_offset": 8,
+      "omf_fixup": {
+        "record_offset": 261,
+        "subrecord_offset": 0,
+        "offset": 8,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "_TEXT"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_snd_3164"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 12644,
+        "image_offset": 91508,
+        "address": "1341:3164"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "9413",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 14,
+      "function_offset": 14,
+      "omf_fixup": {
+        "record_offset": 261,
+        "subrecord_offset": 5,
+        "offset": 14,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "_TEXT"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_snd_0496"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 1174,
+        "image_offset": 80038,
+        "address": "1341:0496"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "c0e6",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "40d4a6fa48ea65445db23f5df1bb305a03a1732a92cdbc32fdf8e75dbc7ad60c",
+  "original_sha256": "40d4a6fa48ea65445db23f5df1bb305a03a1732a92cdbc32fdf8e75dbc7ad60c",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

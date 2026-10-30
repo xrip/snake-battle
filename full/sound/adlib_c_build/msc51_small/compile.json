@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "SMALL.C": "95d49916fa42ffaa7f29a25c134aa601a110b716dd3c4d6df98b34950c04c93b",
+    "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9"
+  },
+  "flags": "/AS /G2 /Gs /Zp /Oi /Os",
+  "seconds": 0.806,
+  "files": [
+    "SMALL.C"
+  ],
+  "dpmi": null
+}

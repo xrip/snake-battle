@@ -1,0 +1,61 @@
+{
+  "built": {
+    "path": "snake-battle-recovered/full/build/exact/native/SNAKE.EXE",
+    "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+    "size": 102326,
+    "fields": {
+      "signature": 23117,
+      "last_page_bytes": 438,
+      "pages": 200,
+      "relocations": 879,
+      "header_paragraphs": 256,
+      "minimum_extra_paragraphs": 1199,
+      "maximum_extra_paragraphs": 65535,
+      "initial_ss": 7330,
+      "initial_sp": 128,
+      "checksum": 0,
+      "initial_ip": 0,
+      "initial_cs": 0,
+      "relocation_table_offset": 62,
+      "overlay_number": 0
+    },
+    "header_size": 4096,
+    "image_size": 98230
+  },
+  "reference": {
+    "path": "snake-battle-recovered/original/SNAKE.EXE",
+    "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+    "size": 102326,
+    "fields": {
+      "signature": 23117,
+      "last_page_bytes": 438,
+      "pages": 200,
+      "relocations": 879,
+      "header_paragraphs": 256,
+      "minimum_extra_paragraphs": 1199,
+      "maximum_extra_paragraphs": 65535,
+      "initial_ss": 7330,
+      "initial_sp": 128,
+      "checksum": 0,
+      "initial_ip": 0,
+      "initial_cs": 0,
+      "relocation_table_offset": 62,
+      "overlay_number": 0
+    },
+    "header_size": 4096,
+    "image_size": 98230
+  },
+  "complete_executable_proven": true,
+  "file_byte_exact": true,
+  "image_byte_exact": true,
+  "mz_header_exact": true,
+  "mz_field_differences": [],
+  "relocation_representation_and_order_exact": true,
+  "relocation_sites_equal": true,
+  "differing_file_bytes": 0,
+  "differing_image_bytes": 0,
+  "first_differing_file_offset": null,
+  "file_difference_spans": [],
+  "image_difference_spans": [],
+  "modifies_executable": false
+}

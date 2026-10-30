@@ -1,0 +1,48 @@
+{
+  "compiler": "Borland C++ 3.1 (1992), 16-bit DOS C mode",
+  "flags": "-ml -a- -k -M -O -r- -Z -G-",
+  "original_exe_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "rebuilt_verification_exe_sha256": "a17278ae97ec25991d3d9f11f4fc7f0458b0d8f25d27c3bf9401e4dc17903e04",
+  "map_sha256": "cc2f6349e683aa583ddde617bb00537123ca2edaa4d655fe9b82562dcae50df9",
+  "source_sha256": {
+    "snkrec.c": "31d2eee48f08b8b401454e1e687f56d3dffe1904067d489ab2e371bad17080b8",
+    "snkrec.h": "0ab2278cb6a043a6fed25cb9a8354cbc2524bf1abfddf9483c0c6d5ce47b5842"
+  },
+  "comparison": "raw bytes, no masking or normalization",
+  "procedures": [
+    {
+      "c_symbol": "snk_encode",
+      "original_cs_ip": "0B2B:000F",
+      "original_file_offset": 49855,
+      "compiled_cs_ip": "02A8:0004",
+      "compiled_file_offset": 11396,
+      "complete_routine_bytes": 55,
+      "sha256": "f70ca82c19679c35d04b416fd60148259b04ace56bb3e21719c6ffdf587bea25",
+      "byte_identical": true
+    },
+    {
+      "c_symbol": "snk_decode",
+      "original_cs_ip": "0B2B:0046",
+      "original_file_offset": 49910,
+      "compiled_cs_ip": "02A8:003B",
+      "compiled_file_offset": 11451,
+      "complete_routine_bytes": 61,
+      "sha256": "ca25284a83413074338756664ca1efd8d4d745b6a1c7e6622e508ef2524aec43",
+      "byte_identical": true
+    },
+    {
+      "c_symbol": "snk_complement_password",
+      "original_cs_ip": "044D:022F",
+      "original_file_offset": 22271,
+      "compiled_cs_ip": "02A8:0078",
+      "compiled_file_offset": 11512,
+      "complete_routine_bytes": 30,
+      "sha256": "5c959c2bc5f6bbe466a17c1cc6cdc59f2b505180dc3a33895893dd60edd72bed",
+      "byte_identical": true
+    }
+  ],
+  "all_byte_identical": true,
+  "complete_routines": 3,
+  "total_identical_bytes": 146,
+  "scope": "three complete reconstructed C procedures, not the whole game executable"
+}

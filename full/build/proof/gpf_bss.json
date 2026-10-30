@@ -1,0 +1,53 @@
+{
+  "module": "gpf.c",
+  "segment_name": "_BSS",
+  "object_size": 56,
+  "expected_size": 56,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 16644,
+    "image_offset": 108692,
+    "address": "1679:4104"
+  },
+  "public_bindings": [
+    {
+      "name": "_gpf_entry",
+      "object_offset": 34,
+      "actual": {
+        "segment": 5753,
+        "offset": 16678,
+        "image_offset": 108726,
+        "address": "1679:4126"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 16678,
+        "image_offset": 108726,
+        "address": "1679:4126"
+      },
+      "equal": true
+    },
+    {
+      "name": "_gpf_header",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 16644,
+        "image_offset": 108692,
+        "address": "1679:4104"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 16644,
+        "image_offset": 108692,
+        "address": "1679:4104"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

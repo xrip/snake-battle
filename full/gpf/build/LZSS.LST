@@ -1,0 +1,145 @@
+Turbo Assembler	 Version 3.1	    10/21/26 17:30:22	    Page 1
+LZSS.ASM
+
+
+
+      1				     ; Original	8086 LZSS decoder, reconstructed as instructions and symbolic data.
+      2				     ; The 4096	bytes preceding	the entry are a	writable circular dictionary in
+      3				     ; the CODE	segment.  They are not an encoded executable payload.
+      4				     ;
+      5				     ; void far	lzss_decode(char far *source, void far *destination,
+      6				     ;			   unsigned packed_length);
+      7				     ;
+      8				     ; C calling convention: caller removes 10 argument	bytes.	Source/destination
+      9				     ; are 16:16 real-mode pointers.  Input length counts compressed bytes.
+     10
+     11	0000			     LZSS_TEXT segment byte public 'CODE'
+     12					 assume	cs:LZSS_TEXT
+     13
+     14	0000  1000*(00)		     window db 4096 dup	(0)
+     15
+     16				     public _lzss_decode
+     17	1000			     _lzss_decode proc far
+     18	1000  55			 push bp
+     19	1001  8B EC			 mov bp, sp
+     20	1003  1E			 push ds
+     21	1004  06			 push es
+     22	1005  56			 push si
+     23	1006  57			 push di
+     24	1007  52			 push dx
+     25	1008  51			 push cx
+     26	1009  53			 push bx
+     27	100A  0E			 push cs
+     28	100B  07			 pop es
+     29	100C  FC			 cld
+     30	100D  B9 0FEE			 mov cx, 0FEEh
+     31	1010  8B D9			 mov bx, cx
+     32	1012  B0 20			 mov al, 20h
+     33	1014  BF 0000r			 mov di, offset	window
+     34	1017  F3> AA			 rep stosb
+     35	1019  C5 76 06			 lds si, [bp+6]
+     36	101C  C4 7E 0A			 les di, [bp+10]
+     37	101F  8B 4E 0E			 mov cx, [bp+14]
+     38	1022  33 D2			 xor dx, dx
+     39
+     40	1024			     next_token:
+     41	1024  D1 EA			 shr dx, 1
+     42	1026  F7 C2 0100		 test dx, 100h
+     43	102A  75 07			 jnz have_flags
+     44	102C  AC			 lodsb
+     45	102D  49			 dec cx
+     46	102E  0D FF00			 or ax,	0FF00h
+     47	1031  8B D0			 mov dx, ax
+     48
+     49	1033			     have_flags:
+     50	1033  F7 C2 0001		 test dx, 1
+     51	1037  74 0E			 jz reference
+     52	1039  AC			 lodsb
+     53	103A  2E: 88 87	0000r		 mov cs:window[bx], al
+     54	103F  AA			 stosb
+     55	1040  43			 inc bx
+     56	1041  81 E3 0FFF		 and bx, 0FFFh
+     57	1045  EB 3A			 jmp short token_done
+Turbo Assembler	 Version 3.1	    10/21/26 17:30:22	    Page 2
+LZSS.ASM
+
+
+
+     58
+     59	1047			     reference:
+     60	1047  AC			 lodsb
+     61	1048  86 E0			 xchg ah, al
+     62	104A  49			 dec cx
+     63	104B  74 36			 jz finished
+     64	104D  AC			 lodsb
+     65	104E  56			 push si
+     66	104F  51			 push cx
+     67	1050  86 C4			 xchg al, ah
+     68	1052  8B F0			 mov si, ax
+     69	1054  81 E6 0FFF		 and si, 0FFFh
+     70	1058  D0 EC			 shr ah, 1
+     71	105A  D0 EC			 shr ah, 1
+     72	105C  D0 EC			 shr ah, 1
+     73	105E  D0 EC			 shr ah, 1
+     74	1060  8A CC			 mov cl, ah
+     75	1062  83 E1 0F			 and cx, 0Fh
+     76	1065  83 C1 03			 add cx, 3
+     77
+     78	1068			     copy_reference:
+     79	1068  2E: 8A 84	0000r		 mov al, cs:window[si]
+     80	106D  AA			 stosb
+     81	106E  2E: 88 87	0000r		 mov cs:window[bx], al
+     82	1073  43			 inc bx
+     83	1074  81 E3 0FFF		 and bx, 0FFFh
+     84	1078  46			 inc si
+     85	1079  81 E6 0FFF		 and si, 0FFFh
+     86	107D  E2 E9			 loop copy_reference
+     87	107F  59			 pop cx
+     88	1080  5E			 pop si
+     89
+     90	1081			     token_done:
+     91	1081  E2 A1			 loop next_token
+     92
+     93	1083			     finished:
+     94	1083  5B			 pop bx
+     95	1084  59			 pop cx
+     96	1085  5A			 pop dx
+     97	1086  5F			 pop di
+     98	1087  5E			 pop si
+     99	1088  07			 pop es
+    100	1089  1F			 pop ds
+    101	108A  8B E5			 mov sp, bp
+    102	108C  5D			 pop bp
+    103	108D  CB			 retf
+    104	108E			     _lzss_decode endp
+    105	108E			     LZSS_TEXT ends
+    106				     end
+Turbo Assembler	 Version 3.1	    10/21/26 17:30:22	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "LZSS	  "
+??time				  Text	 "17:30:22"
+??version			  Number 030A
+@Cpu				  Text	 0101H
+@FileName			  Text	 LZSS
+@WordSize			  Text	 2
+@curseg				  Text	 LZSS_TEXT
+_lzss_decode			  Far	 LZSS_TEXT:1000
+copy_reference			  Near	 LZSS_TEXT:1068
+finished			  Near	 LZSS_TEXT:1083
+have_flags			  Near	 LZSS_TEXT:1033
+next_token			  Near	 LZSS_TEXT:1024
+reference			  Near	 LZSS_TEXT:1047
+token_done			  Near	 LZSS_TEXT:1081
+window				  Byte	 LZSS_TEXT:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+LZSS_TEXT			  16  108E Byte	  Public  CODE
+

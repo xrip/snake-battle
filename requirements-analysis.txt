@@ -1,0 +1,5 @@
+# Optional dependencies for execution-based evidence and disassembly.
+# File parsing, SNK/REC roundtrips and GPF packing use Python's stdlib only.
+unicorn==2.1.4
+capstone==5.0.9
+# Optional PNG export: install Pillow separately.

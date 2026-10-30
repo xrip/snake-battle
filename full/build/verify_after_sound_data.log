@@ -1,0 +1,676 @@
+{
+  "modules": [
+    {
+      "module": "START",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 48,
+          "expected_size": 48,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/start_code.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 388,
+          "expected_size": 388,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/start_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "INPUT",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 1005,
+          "expected_size": 1005,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/input_code.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 22,
+          "expected_size": 22,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/input_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "MUSIC",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 461,
+          "expected_size": 461,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/music_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 52,
+          "expected_size": 52,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/music_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 8,
+          "expected_size": 8,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/music_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "UI",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 11712,
+          "expected_size": 11712,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/ui_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 740,
+          "expected_size": 740,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/ui_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 304,
+          "expected_size": 304,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/ui_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "GAME",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 11803,
+          "expected_size": 11803,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/game_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 451,
+          "expected_size": 451,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/game_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 6641,
+          "expected_size": 6641,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/game_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "CARDS",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 4379,
+          "expected_size": 4379,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/cards_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 1933,
+          "expected_size": 1933,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/cards_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 1494,
+          "expected_size": 1494,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/cards_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "ABOUT",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 236,
+          "expected_size": 236,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/about_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "XOR",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 116,
+          "expected_size": 116,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/xor_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "FILES",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 3543,
+          "expected_size": 3543,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/files_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 52,
+          "expected_size": 52,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/files_data.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "TICKS",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 226,
+          "expected_size": 226,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/ticks_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 4,
+          "expected_size": 4,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/ticks_data.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "NUMBER",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 42,
+          "expected_size": 42,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/number_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 4,
+          "expected_size": 4,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/number_data.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "ASSERT",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 253,
+          "expected_size": 253,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/assert_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 60,
+          "expected_size": 60,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/assert_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 2,
+          "expected_size": 2,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/assert_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "FORMAT",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 264,
+          "expected_size": 264,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/format_code.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 256,
+          "expected_size": 256,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/format_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "VIDEO",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 107,
+          "expected_size": 107,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/video_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "REGISTER",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 980,
+          "expected_size": 980,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/register_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 59,
+          "expected_size": 59,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/register_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 128,
+          "expected_size": 128,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/register_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "RENDER",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 4511,
+          "expected_size": 4511,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/render_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 154,
+          "expected_size": 154,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/render_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 1150,
+          "expected_size": 1150,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/render_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "BLO",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 960,
+          "expected_size": 960,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/blo_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 43,
+          "expected_size": 43,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/blo_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 8,
+          "expected_size": 8,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/blo_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "CHUNK",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 318,
+          "expected_size": 318,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/chunk_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "PARA",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 110,
+          "expected_size": 110,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/para_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 39,
+          "expected_size": 39,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/para_data.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "HW",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 2499,
+          "expected_size": 2499,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/hw_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 25,
+          "expected_size": 25,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/hw_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 45,
+          "expected_size": 45,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/hw_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "REC",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 1032,
+          "expected_size": 1032,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/rec_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 76,
+          "expected_size": 76,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/rec_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 13,
+          "expected_size": 13,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/rec_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "RETRACE",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 34,
+          "expected_size": 34,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/retrace_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "EGA",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 12374,
+          "expected_size": 12374,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/ega_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "GPF",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 1495,
+          "expected_size": 1495,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/gpf_code.json"
+        },
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 2,
+          "expected_size": 2,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/gpf_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 56,
+          "expected_size": 56,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/gpf_bss.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "LZSS",
+      "contributions": [
+        {
+          "storage": "code",
+          "passed": true,
+          "size": 4238,
+          "expected_size": 4238,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/lzss_code.json"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "module": "SNDATA",
+      "contributions": [
+        {
+          "storage": "data",
+          "passed": true,
+          "size": 1092,
+          "expected_size": 1092,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/sndata_data.json"
+        },
+        {
+          "storage": "bss",
+          "passed": true,
+          "size": 8378,
+          "expected_size": 8378,
+          "byte_differences": 0,
+          "unresolved": [],
+          "report": "proof/sndata_bss.json"
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "missing_modules": [
+    "SOUND"
+  ],
+  "proven_modules": 26,
+  "available_modules": 26,
+  "proven_code_bytes": 62746,
+  "proven_data_bytes": 4786,
+  "proven_bss_bytes": 18893,
+  "all_available_contributions_exact": true,
+  "all_modules_present": false,
+  "complete_executable_proven": false,
+  "reference_used_only_for_verification": true
+}

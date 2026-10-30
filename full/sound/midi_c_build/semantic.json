@@ -1,0 +1,261 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/midi_c_build/MIDISND.OBJ",
+  "object_sha256": "d6afdbe204207337b819f67df654fc3905fd17ccf9f9e9c9e694924781991231",
+  "reference_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "cs": "1341",
+  "ds": "1679",
+  "patch_offset": "F000",
+  "result_kind": "differential procedure semantics; not compiler byte matching",
+  "stack_segment": "9000",
+  "data_segment": "1679",
+  "scope": "Bounded differential semantic checks of selected ordinary MIDI C procedures; no full semantic or compiler-byte proof",
+  "compiler_profile": "/AM /G2 /Gs /Ox /Zp1 /NTSOUND_TEXT /Fc",
+  "input_hashes": {
+    "MIDISND.C": "6aeadcfb519229793f15d462a506143b7ea4659d723d68d5436509a0a25c3e76",
+    "MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+    "MIDISND.OBJ": "d6afdbe204207337b819f67df654fc3905fd17ccf9f9e9c9e694924781991231",
+    "MIDISND.COD": "074ddc908dff45a6ad484606d575305efd0280c563e70f58f51028d0eca47188"
+  },
+  "verifier_sha256": "7621e9d3518bea5ed482cd954efbc25c6a7ad1bb75383ed8d08007bc92374965",
+  "vm_sha256": "f40d22399007fda3d8f30cf2a1a481dc2af6c06756ee016e2459c71f7e797f3b",
+  "bindings_sha256": "12fe82757c0ba1014adc61b947b31abdd6e511803ac36b66dca574ce343b3883",
+  "crt_symbol_bindings_sha256": "26fc464325e7b41aa5b277ac33ee173d12df1745968dc82350d4535e14c5ba5e",
+  "stub_parameter_masks": {
+    "0857": [
+      "FFFF",
+      "FFFF",
+      "FFFF",
+      "FFFF"
+    ],
+    "07AA": [
+      "FFFF",
+      "00FF",
+      "00FF"
+    ],
+    "2509": [
+      "FFFF",
+      "00FF",
+      "00FF"
+    ],
+    "235A": [
+      "FFFF",
+      "00FF",
+      "00FF"
+    ],
+    "2277": [
+      "FFFF",
+      "00FF",
+      "00FF"
+    ],
+    "23D2": [
+      "FFFF",
+      "00FF",
+      "00FF",
+      "00FF"
+    ],
+    "075E": [
+      "FFFF",
+      "00FF"
+    ],
+    "0643": [
+      "FFFF"
+    ],
+    "21A2": [
+      "FFFF",
+      "00FF",
+      "00FF"
+    ],
+    "01CB": [],
+    "01D5": [],
+    "01DC": [
+      "00FF"
+    ]
+  },
+  "limitations": [
+    "Selected deterministic cases, not exhaustive branches or valid input space.",
+    "Each C procedure runs with original callees; called procedures are not recursively replaced with C.",
+    "Selected side-effect callees are stubbed and typed call arguments compared; byte arguments ignore unspecified AH.",
+    "Queue tests retain the real far dispatcher but stub pause/resume/master-volume leaves.",
+    "Comparison covers the full DS window, ABI-preserved registers, declared return values, calls and port logs; scratch stack bytes are excluded.",
+    "No hardware playback, full gameplay run or compiler byte-match claim."
+  ],
+  "functions": [
+    {
+      "function": "_snd_0E6A",
+      "address": "1341:0E6A",
+      "cases": 3,
+      "passed": 3,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1041",
+      "address": "1341:1041",
+      "cases": 6,
+      "passed": 6,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1086",
+      "address": "1341:1086",
+      "cases": 1,
+      "passed": 1,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_109C",
+      "address": "1341:109C",
+      "cases": 3,
+      "passed": 3,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_10E7",
+      "address": "1341:10E7",
+      "cases": 3,
+      "passed": 3,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1118",
+      "address": "1341:1118",
+      "cases": 9,
+      "passed": 9,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_114D",
+      "address": "1341:114D",
+      "cases": 9,
+      "passed": 9,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1182",
+      "address": "1341:1182",
+      "cases": 9,
+      "passed": 9,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_11B7",
+      "address": "1341:11B7",
+      "cases": 9,
+      "passed": 9,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_11F0",
+      "address": "1341:11F0",
+      "cases": 32,
+      "passed": 32,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_15DF",
+      "address": "1341:15DF",
+      "cases": 1,
+      "passed": 1,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_15F0",
+      "address": "1341:15F0",
+      "cases": 9,
+      "passed": 9,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_160C",
+      "address": "1341:160C",
+      "cases": 9,
+      "passed": 9,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_167E",
+      "address": "1341:167E",
+      "cases": 3,
+      "passed": 3,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1684",
+      "address": "1341:1684",
+      "cases": 8,
+      "passed": 8,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_16A5",
+      "address": "1341:16A5",
+      "cases": 16,
+      "passed": 16,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_171D",
+      "address": "1341:171D",
+      "cases": 8,
+      "passed": 8,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1263",
+      "address": "1341:1263",
+      "cases": 5,
+      "passed": 5,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_17BB",
+      "address": "1341:17BB",
+      "cases": 10,
+      "passed": 10,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_17FC",
+      "address": "1341:17FC",
+      "cases": 7,
+      "passed": 7,
+      "all_cases_equal": true,
+      "failures": []
+    },
+    {
+      "function": "_snd_1D6D",
+      "address": "1341:1D6D",
+      "cases": 12,
+      "passed": 12,
+      "all_cases_equal": true,
+      "failures": []
+    }
+  ],
+  "summary": {
+    "functions": 21,
+    "passed_functions": 21,
+    "cases": 172,
+    "passed_cases": 172,
+    "all_selected_cases_equal": true,
+    "complete_module_semantics_proven": false,
+    "compiler_byte_exact_proven": false
+  }
+}

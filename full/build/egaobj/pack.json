@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "assembly_object_sha256": "8f422da162c00686cc8534ac327e8048e345d35a95cd959276689935e9cf77ba",
+  "plaintext_size": 12374,
+  "plaintext_sha256": "d5b7ff2423d41c282abf568849fe1b41432d3d444b5dc96f66b79b003c8e7bc6",
+  "encoded_payload_range": [
+    182,
+    12246
+  ],
+  "encoded_size": 12374,
+  "encoded_sha256": "a4acb6c24aefb5d8cb087b7d6e327d1ae2648d02293b005968218365cd6a2113",
+  "output_object_sha256": "b60892901964c2ef6f80bacafc51a3212cbf4c8b594d168d95b0f84b77c6f000",
+  "runtime_relocations": 0,
+  "ordinary_offset_fixups": 0,
+  "reference_executable_used_as_build_input": false
+}

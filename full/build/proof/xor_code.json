@@ -1,0 +1,109 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/XOR.OBJ",
+  "object_sha256": "7e904353d695653c91ae3ea0c927f2d472c59e3182335f63c4213713381ebf79",
+  "module": "xor.c",
+  "segment_index": 1,
+  "segment_name": "XOR_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 2859,
+    "offset": 15,
+    "image_offset": 45759,
+    "address": "0B2B:000F"
+  },
+  "file_offset": 49855,
+  "object_size": 116,
+  "expected_size": 116,
+  "public_bindings": [
+    {
+      "name": "_snk_decode",
+      "object_offset": 55,
+      "expected": {
+        "segment": 2859,
+        "offset": 70,
+        "image_offset": 45814,
+        "address": "0B2B:0046"
+      },
+      "binding": {
+        "segment": 2859,
+        "offset": 70,
+        "image_offset": 45814,
+        "address": "0B2B:0046"
+      },
+      "equal": true
+    },
+    {
+      "name": "_snk_encode",
+      "object_offset": 0,
+      "expected": {
+        "segment": 2859,
+        "offset": 15,
+        "image_offset": 45759,
+        "address": "0B2B:000F"
+      },
+      "binding": {
+        "segment": 2859,
+        "offset": 15,
+        "image_offset": 45759,
+        "address": "0B2B:000F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0b2b_000f",
+      "object_offset": 0,
+      "expected": {
+        "segment": 2859,
+        "offset": 15,
+        "image_offset": 45759,
+        "address": "0B2B:000F"
+      },
+      "binding": {
+        "segment": 2859,
+        "offset": 15,
+        "image_offset": 45759,
+        "address": "0B2B:000F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0b2b_0046",
+      "object_offset": 55,
+      "expected": {
+        "segment": 2859,
+        "offset": 70,
+        "image_offset": 45814,
+        "address": "0B2B:0046"
+      },
+      "binding": {
+        "segment": 2859,
+        "offset": 70,
+        "image_offset": 45814,
+        "address": "0B2B:0046"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      116
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "2f5af849f630aa0cae98de429fded992018c96d27f78b42655f16e37ff4e09b1",
+  "original_sha256": "2f5af849f630aa0cae98de429fded992018c96d27f78b42655f16e37ff4e09b1",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "code"
+}

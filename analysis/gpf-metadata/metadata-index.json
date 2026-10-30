@@ -1,0 +1,162 @@
+[
+  {
+    "name": "ENGINSTR.TXT",
+    "format": "DOS CP866 CRLF text",
+    "size": 11447
+  },
+  {
+    "name": "ENGLISH.TXT",
+    "format": "DOS CP866 CRLF text",
+    "size": 1699
+  },
+  {
+    "name": "MOOD.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 4218,
+    "observed_command_count": 1075,
+    "observed_total_ticks": 17880,
+    "declared_command_count": 1092,
+    "declared_total_ticks": 17880
+  },
+  {
+    "name": "MOOD.SND",
+    "format": "AdLib timbre bank",
+    "size": 721,
+    "count": 11
+  },
+  {
+    "name": "MUS1.MID",
+    "format": "Standard MIDI File",
+    "size": 44146,
+    "track_count": 1
+  },
+  {
+    "name": "MUS1.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 619,
+    "observed_command_count": 153,
+    "observed_total_ticks": 7680,
+    "declared_command_count": 153,
+    "declared_total_ticks": 7680
+  },
+  {
+    "name": "MUS1.SND",
+    "format": "AdLib timbre bank",
+    "size": 461,
+    "count": 7
+  },
+  {
+    "name": "MUS2.MID",
+    "format": "Standard MIDI File",
+    "size": 36433,
+    "track_count": 1
+  },
+  {
+    "name": "MUS2.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 7493,
+    "observed_command_count": 1947,
+    "observed_total_ticks": 42240,
+    "declared_command_count": 1948,
+    "declared_total_ticks": 42000
+  },
+  {
+    "name": "MUS2.SND",
+    "format": "AdLib timbre bank",
+    "size": 656,
+    "count": 10
+  },
+  {
+    "name": "MUS3.MID",
+    "format": "Standard MIDI File",
+    "size": 15857,
+    "track_count": 1
+  },
+  {
+    "name": "MUS3.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 4024,
+    "observed_command_count": 1019,
+    "observed_total_ticks": 11520,
+    "declared_command_count": 1019,
+    "declared_total_ticks": 11520
+  },
+  {
+    "name": "MUS3.SND",
+    "format": "AdLib timbre bank",
+    "size": 786,
+    "count": 12
+  },
+  {
+    "name": "PASSW.ENG",
+    "format": "GAMOS five-column word grid",
+    "size": 1802,
+    "count": 100
+  },
+  {
+    "name": "PASSW.RUS",
+    "format": "GAMOS five-column word grid",
+    "size": 1802,
+    "count": 100
+  },
+  {
+    "name": "RUSINSTR.TXT",
+    "format": "DOS CP866 CRLF text",
+    "size": 11896
+  },
+  {
+    "name": "RUSSIAN.TXT",
+    "format": "DOS CP866 CRLF text",
+    "size": 1728
+  },
+  {
+    "name": "SN_BATT.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 4024,
+    "observed_command_count": 1019,
+    "observed_total_ticks": 11520,
+    "declared_command_count": 1019,
+    "declared_total_ticks": 11520
+  },
+  {
+    "name": "SN_BATT.SND",
+    "format": "AdLib timbre bank",
+    "size": 786,
+    "count": 12
+  },
+  {
+    "name": "SN_GAME.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 7493,
+    "observed_command_count": 1947,
+    "observed_total_ticks": 42240,
+    "declared_command_count": 1948,
+    "declared_total_ticks": 42000
+  },
+  {
+    "name": "SN_GAME.SND",
+    "format": "AdLib timbre bank",
+    "size": 656,
+    "count": 10
+  },
+  {
+    "name": "SN_TITL.MUS",
+    "format": "AdLib MUS 1.0",
+    "size": 619,
+    "observed_command_count": 153,
+    "observed_total_ticks": 7680,
+    "declared_command_count": 153,
+    "declared_total_ticks": 7680
+  },
+  {
+    "name": "SN_TITL.SND",
+    "format": "AdLib timbre bank",
+    "size": 461,
+    "count": 7
+  },
+  {
+    "name": "SWEDEN.TXT",
+    "format": "DOS CP866 CRLF text",
+    "size": 1655
+  }
+]

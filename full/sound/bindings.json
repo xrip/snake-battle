@@ -1,0 +1,554 @@
+{
+  "functions": {
+    "_snd_0158": {
+      "address": "1341:0158"
+    },
+    "_snd_01A7": {
+      "address": "1341:01A7"
+    },
+    "_snd_01CB": {
+      "address": "1341:01CB"
+    },
+    "_snd_01D5": {
+      "address": "1341:01D5"
+    },
+    "_snd_01DC": {
+      "address": "1341:01DC"
+    },
+    "_snd_0217": {
+      "address": "1341:0217"
+    },
+    "_snd_021C": {
+      "address": "1341:021C"
+    },
+    "_snd_0269": {
+      "address": "1341:0269"
+    },
+    "_snd_029B": {
+      "address": "1341:029B"
+    },
+    "_snd_02B7": {
+      "address": "1341:02B7"
+    },
+    "_snd_066B": {
+      "address": "1341:066B"
+    },
+    "_snd_0857": {
+      "address": "1341:0857"
+    },
+    "_snd_0C3D": {
+      "address": "1341:0C3D"
+    },
+    "_snd_235A": {
+      "address": "1341:235A"
+    },
+    "_snd_000C": {
+      "address": "1341:000C"
+    },
+    "_snd_001E": {
+      "address": "1341:001E"
+    },
+    "_snd_0022": {
+      "address": "1341:0022"
+    },
+    "_snd_0026": {
+      "address": "1341:0026"
+    },
+    "_snd_002A": {
+      "address": "1341:002A"
+    },
+    "_snd_0039": {
+      "address": "1341:0039"
+    },
+    "_snd_0048": {
+      "address": "1341:0048"
+    },
+    "_snd_0057": {
+      "address": "1341:0057"
+    },
+    "_snd_00B4": {
+      "address": "1341:00B4"
+    },
+    "_snd_00E7": {
+      "address": "1341:00E7"
+    },
+    "_snd_00FE": {
+      "address": "1341:00FE"
+    },
+    "_snd_02E4": {
+      "address": "1341:02E4"
+    },
+    "_snd_0406": {
+      "address": "1341:0406"
+    },
+    "_snd_0496": {
+      "address": "1341:0496"
+    },
+    "_snd_04B8": {
+      "address": "1341:04B8"
+    },
+    "_snd_04CC": {
+      "address": "1341:04CC"
+    },
+    "_snd_04D9": {
+      "address": "1341:04D9"
+    },
+    "_snd_04F4": {
+      "address": "1341:04F4"
+    },
+    "_snd_053D": {
+      "address": "1341:053D"
+    },
+    "_snd_0574": {
+      "address": "1341:0574"
+    },
+    "_snd_05A6": {
+      "address": "1341:05A6"
+    },
+    "_snd_05E8": {
+      "address": "1341:05E8"
+    },
+    "_snd_0643": {
+      "address": "1341:0643"
+    },
+    "_snd_0743": {
+      "address": "1341:0743"
+    },
+    "_snd_075E": {
+      "address": "1341:075E"
+    },
+    "_snd_078F": {
+      "address": "1341:078F"
+    },
+    "_snd_07AA": {
+      "address": "1341:07AA"
+    },
+    "_snd_07F9": {
+      "address": "1341:07F9"
+    },
+    "_snd_0814": {
+      "address": "1341:0814"
+    },
+    "_snd_09F4": {
+      "address": "1341:09F4"
+    },
+    "_snd_0B2E": {
+      "address": "1341:0B2E"
+    },
+    "_snd_0B6E": {
+      "address": "1341:0B6E"
+    },
+    "_snd_0B7E": {
+      "address": "1341:0B7E"
+    },
+    "_snd_0CC3": {
+      "address": "1341:0CC3"
+    },
+    "_snd_0D1F": {
+      "address": "1341:0D1F"
+    },
+    "_snd_0DA8": {
+      "address": "1341:0DA8"
+    },
+    "_snd_0DB9": {
+      "address": "1341:0DB9"
+    },
+    "_snd_0E6A": {
+      "address": "1341:0E6A"
+    },
+    "_snd_0E7C": {
+      "address": "1341:0E7C"
+    },
+    "_snd_0FBE": {
+      "address": "1341:0FBE"
+    },
+    "_snd_101E": {
+      "address": "1341:101E"
+    },
+    "_snd_1041": {
+      "address": "1341:1041"
+    },
+    "_snd_1086": {
+      "address": "1341:1086"
+    },
+    "_snd_109C": {
+      "address": "1341:109C"
+    },
+    "_snd_10E7": {
+      "address": "1341:10E7"
+    },
+    "_snd_1118": {
+      "address": "1341:1118"
+    },
+    "_snd_114D": {
+      "address": "1341:114D"
+    },
+    "_snd_1182": {
+      "address": "1341:1182"
+    },
+    "_snd_11B7": {
+      "address": "1341:11B7"
+    },
+    "_snd_11F0": {
+      "address": "1341:11F0"
+    },
+    "_snd_12D8": {
+      "address": "1341:12D8"
+    },
+    "_snd_1537": {
+      "address": "1341:1537"
+    },
+    "_snd_15DF": {
+      "address": "1341:15DF"
+    },
+    "_snd_15F0": {
+      "address": "1341:15F0"
+    },
+    "_snd_160C": {
+      "address": "1341:160C"
+    },
+    "_snd_162A": {
+      "address": "1341:162A"
+    },
+    "_snd_167E": {
+      "address": "1341:167E"
+    },
+    "_snd_1684": {
+      "address": "1341:1684"
+    },
+    "_snd_171D": {
+      "address": "1341:171D"
+    },
+    "_snd_17BB": {
+      "address": "1341:17BB"
+    },
+    "_snd_17FC": {
+      "address": "1341:17FC"
+    },
+    "_snd_183E": {
+      "address": "1341:183E"
+    },
+    "_snd_1A4A": {
+      "address": "1341:1A4A"
+    },
+    "_snd_1D49": {
+      "address": "1341:1D49"
+    },
+    "_snd_1D6D": {
+      "address": "1341:1D6D"
+    },
+    "_snd_1DC6": {
+      "address": "1341:1DC6"
+    },
+    "_snd_1DDB": {
+      "address": "1341:1DDB"
+    },
+    "_snd_1E83": {
+      "address": "1341:1E83"
+    },
+    "_snd_1FA2": {
+      "address": "1341:1FA2"
+    },
+    "_snd_1FCC": {
+      "address": "1341:1FCC"
+    },
+    "_snd_1FE4": {
+      "address": "1341:1FE4"
+    },
+    "_snd_20AA": {
+      "address": "1341:20AA"
+    },
+    "_snd_20E7": {
+      "address": "1341:20E7"
+    },
+    "_snd_2102": {
+      "address": "1341:2102"
+    },
+    "_snd_2129": {
+      "address": "1341:2129"
+    },
+    "_snd_216C": {
+      "address": "1341:216C"
+    },
+    "_snd_21A2": {
+      "address": "1341:21A2"
+    },
+    "_snd_21EF": {
+      "address": "1341:21EF"
+    },
+    "_snd_2209": {
+      "address": "1341:2209"
+    },
+    "_snd_222F": {
+      "address": "1341:222F"
+    },
+    "_snd_2277": {
+      "address": "1341:2277"
+    },
+    "_snd_22A4": {
+      "address": "1341:22A4"
+    },
+    "_snd_22CD": {
+      "address": "1341:22CD"
+    },
+    "_snd_22F1": {
+      "address": "1341:22F1"
+    },
+    "_snd_23D1": {
+      "address": "1341:23D1"
+    },
+    "_snd_23D2": {
+      "address": "1341:23D2"
+    },
+    "_snd_247E": {
+      "address": "1341:247E"
+    },
+    "_snd_2509": {
+      "address": "1341:2509"
+    },
+    "_snd_253C": {
+      "address": "1341:253C"
+    },
+    "_snd_2567": {
+      "address": "1341:2567"
+    },
+    "_snd_2594": {
+      "address": "1341:2594"
+    },
+    "_snd_25E7": {
+      "address": "1341:25E7"
+    },
+    "_snd_261A": {
+      "address": "1341:261A"
+    },
+    "_snd_2665": {
+      "address": "1341:2665"
+    },
+    "_snd_2679": {
+      "address": "1341:2679"
+    },
+    "_snd_269B": {
+      "address": "1341:269B"
+    },
+    "_snd_26C3": {
+      "address": "1341:26C3"
+    },
+    "_snd_2709": {
+      "address": "1341:2709"
+    },
+    "_snd_2750": {
+      "address": "1341:2750"
+    },
+    "_snd_2772": {
+      "address": "1341:2772"
+    },
+    "_snd_278D": {
+      "address": "1341:278D"
+    },
+    "_snd_28BD": {
+      "address": "1341:28BD"
+    },
+    "_snd_28DB": {
+      "address": "1341:28DB"
+    },
+    "_snd_28FB": {
+      "address": "1341:28FB"
+    },
+    "_snd_29A1": {
+      "address": "1341:29A1"
+    },
+    "_snd_2A5E": {
+      "address": "1341:2A5E"
+    },
+    "_snd_2A87": {
+      "address": "1341:2A87"
+    },
+    "_snd_2AD9": {
+      "address": "1341:2AD9"
+    },
+    "_snd_2B03": {
+      "address": "1341:2B03"
+    },
+    "_snd_2B3F": {
+      "address": "1341:2B3F"
+    },
+    "_snd_2B6C": {
+      "address": "1341:2B6C"
+    },
+    "_snd_2BC4": {
+      "address": "1341:2BC4"
+    },
+    "_snd_2BF6": {
+      "address": "1341:2BF6"
+    },
+    "_snd_2C59": {
+      "address": "1341:2C59"
+    },
+    "_snd_2D33": {
+      "address": "1341:2D33"
+    },
+    "_snd_2DD3": {
+      "address": "1341:2DD3"
+    },
+    "_snd_2E7A": {
+      "address": "1341:2E7A"
+    },
+    "_snd_2E9B": {
+      "address": "1341:2E9B"
+    },
+    "_snd_2F48": {
+      "address": "1341:2F48"
+    },
+    "_snd_2F6F": {
+      "address": "1341:2F6F"
+    },
+    "_snd_2F94": {
+      "address": "1341:2F94"
+    },
+    "_snd_2FA0": {
+      "address": "1341:2FA0"
+    },
+    "_snd_2FB1": {
+      "address": "1341:2FB1"
+    },
+    "_snd_304C": {
+      "address": "1341:304C"
+    },
+    "_snd_30C4": {
+      "address": "1341:30C4"
+    },
+    "_snd_312B": {
+      "address": "1341:312B"
+    },
+    "_snd_3164": {
+      "address": "1341:3164"
+    },
+    "_snd_316E": {
+      "address": "1341:316E"
+    },
+    "_snd_3179": {
+      "address": "1341:3179"
+    },
+    "_snd_31AA": {
+      "address": "1341:31AA"
+    },
+    "_snd_320A": {
+      "address": "1341:320A"
+    },
+    "_snd_3283": {
+      "address": "1341:3283"
+    },
+    "_snd_32AF": {
+      "address": "1341:32AF"
+    },
+    "_snd_32CF": {
+      "address": "1341:32CF"
+    },
+    "_snd_32EB": {
+      "address": "1341:32EB"
+    },
+    "_snd_3303": {
+      "address": "1341:3303"
+    },
+    "_snd_332F": {
+      "address": "1341:332F"
+    },
+    "_snd_3362": {
+      "address": "1341:3362"
+    },
+    "_snd_0074": {
+      "address": "1341:0074"
+    },
+    "_snd_055E": {
+      "address": "1341:055E"
+    },
+    "_snd_1263": {
+      "address": "1341:1263"
+    },
+    "_snd_16A5": {
+      "address": "1341:16A5"
+    },
+    "_snd_1E1A": {
+      "address": "1341:1E1A"
+    }
+  },
+  "externals": {
+    "_snd_basic_commands": "1679:0F08",
+    "_snd_midi_tags": "1679:0F24",
+    "_snd_paused": "1679:0F2C",
+    "_snd_disabled": "1679:0F2E",
+    "_snd_extended_commands": "1679:0F30",
+    "_snd_command_kinds": "1679:0F60",
+    "_snd_midi_lengths": "1679:0F78",
+    "_snd_channel_masks": "1679:0F80",
+    "_snd_default_instrument": "1679:0FA0",
+    "_snd_instrument_fields": "1679:0FBE",
+    "_snd_parameter_map": "1679:10D2",
+    "_snd_max_values": "1679:10E2",
+    "_snd_step_counts": "1679:1102",
+    "_snd_opl_index_delay": "1679:1142",
+    "_snd_opl_data_delay": "1679:1144",
+    "_snd_modulator_slots": "1679:1146",
+    "_snd_carrier_slots": "1679:114F",
+    "_snd_channel_frequency": "1679:1158",
+    "_snd_register_fields": "1679:117C",
+    "_snd_frequencies": "1679:11B8",
+    "_snd_octaves": "1679:1248",
+    "_snd_semitones": "1679:12C8",
+    "_snd_master_volume": "1679:413C",
+    "_snd_resources": "1679:413E",
+    "_snd_timer_accumulator": "1679:4142",
+    "_snd_tick_period": "1679:4144",
+    "_snd_parse_nesting": "1679:4148",
+    "_snd_parse_finished": "1679:4149",
+    "_snd_parse_cursor": "1679:414A",
+    "_snd_event_channel": "1679:414E",
+    "_snd_event_note": "1679:4150",
+    "_snd_event_velocity": "1679:4152",
+    "_snd_scan_note_count": "1679:4154",
+    "_snd_scan_end_tick": "1679:4156",
+    "_snd_note_channels": "1679:415A",
+    "_snd_sysex_buffer": "1679:425A",
+    "_snd_players": "1679:42DA",
+    "_snd_sequences": "1679:42FE",
+    "_snd_hooks": "1679:4366",
+    "_snd_held_notes": "1679:43EA",
+    "_snd_held_active": "1679:45CA",
+    "_snd_held_free": "1679:45CC",
+    "_snd_held_cursor": "1679:45CE",
+    "_snd_fade_tick_scale": "1679:45D0",
+    "_snd_fade_state": "1679:45D2",
+    "_snd_fades": "1679:45D4",
+    "_snd_queue_read": "1679:45F4",
+    "_snd_queue": "1679:45F6",
+    "_snd_queue_write": "1679:49F6",
+    "_snd_building_queue": "1679:49F8",
+    "_snd_queued_marker": "1679:49F9",
+    "_snd_queued_sound": "1679:49FA",
+    "_snd_trigger_count": "1679:49FC",
+    "_snd_scanning": "1679:49FE",
+    "_snd_parts": "1679:4A00",
+    "_snd_part_instruments": "1679:4E00",
+    "_snd_global_instruments": "1679:51C0",
+    "_snd_voices": "1679:5580",
+    "_snd_voice_counter": "1679:58F4",
+    "_snd_opl_cache": "1679:58F6",
+    "_snd_volume_products": "1679:59F6",
+    "_snd_voice_tick": "1679:58F2",
+    "_snd_voice_tick_pad": "1679:58F3",
+    "_snd_isr_count": "1341:006E",
+    "_snd_old_int8": "1341:0070",
+    "__aNulmul": "1341:3179",
+    "__aFuldiv": "1341:31AA",
+    "_snd_random_seed": "1679:1100",
+    "_snd_voice_counter_pad": "1679:58F5"
+  },
+  "segments": {
+    "_DATA": "1679:0F08",
+    "_BSS": "1679:413C",
+    "_TEXT": "1341:0000"
+  },
+  "groups": {
+    "DGROUP": "1679:0000"
+  }
+}

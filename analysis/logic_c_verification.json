@@ -1,0 +1,11 @@
+{
+  "compiler": "GCC -std=c89 -Wall -Wextra -Werror",
+  "scope": "C functions compared to Python translations. Python mirror/rotate/matcher/comparator were differentially checked against original EXE; selector has no original-code differential claim yet.",
+  "checks": {
+    "mirror": 200,
+    "rotate": 200,
+    "matcher": 200,
+    "selector": 200
+  },
+  "passed": true
+}

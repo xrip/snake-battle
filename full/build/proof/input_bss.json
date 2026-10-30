@@ -1,0 +1,206 @@
+{
+  "module": "input.c",
+  "segment_name": "_BSS",
+  "object_size": 22,
+  "expected_size": 22,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 6570,
+    "image_offset": 98618,
+    "address": "1679:19AA"
+  },
+  "public_bindings": [
+    {
+      "name": "_sb_input_state",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6570,
+        "image_offset": 98618,
+        "address": "1679:19AA"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6570,
+        "image_offset": 98618,
+        "address": "1679:19AA"
+      },
+      "equal": true
+    },
+    {
+      "name": "_input_state",
+      "object_offset": 2,
+      "actual": {
+        "segment": 5753,
+        "offset": 6572,
+        "image_offset": 98620,
+        "address": "1679:19AC"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6572,
+        "image_offset": 98620,
+        "address": "1679:19AC"
+      },
+      "equal": true
+    },
+    {
+      "name": "_input_buttons",
+      "object_offset": 18,
+      "actual": {
+        "segment": 5753,
+        "offset": 6588,
+        "image_offset": 98636,
+        "address": "1679:19BC"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6588,
+        "image_offset": 98636,
+        "address": "1679:19BC"
+      },
+      "equal": true
+    },
+    {
+      "name": "_input_modifiers",
+      "object_offset": 20,
+      "actual": {
+        "segment": 5753,
+        "offset": 6590,
+        "image_offset": 98638,
+        "address": "1679:19BE"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6590,
+        "image_offset": 98638,
+        "address": "1679:19BE"
+      },
+      "equal": true
+    },
+    {
+      "name": "_input_key",
+      "object_offset": 21,
+      "actual": {
+        "segment": 5753,
+        "offset": 6591,
+        "image_offset": 98639,
+        "address": "1679:19BF"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6591,
+        "image_offset": 98639,
+        "address": "1679:19BF"
+      },
+      "equal": true
+    },
+    {
+      "name": "_sound_enabled",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6570,
+        "image_offset": 98618,
+        "address": "1679:19AA"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6570,
+        "image_offset": 98618,
+        "address": "1679:19AA"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_19aa",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6570,
+        "image_offset": 98618,
+        "address": "1679:19AA"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6570,
+        "image_offset": 98618,
+        "address": "1679:19AA"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_19bc",
+      "object_offset": 18,
+      "actual": {
+        "segment": 5753,
+        "offset": 6588,
+        "image_offset": 98636,
+        "address": "1679:19BC"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6588,
+        "image_offset": 98636,
+        "address": "1679:19BC"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_19ae",
+      "object_offset": 4,
+      "actual": {
+        "segment": 5753,
+        "offset": 6574,
+        "image_offset": 98622,
+        "address": "1679:19AE"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6574,
+        "image_offset": 98622,
+        "address": "1679:19AE"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_19b0",
+      "object_offset": 6,
+      "actual": {
+        "segment": 5753,
+        "offset": 6576,
+        "image_offset": 98624,
+        "address": "1679:19B0"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6576,
+        "image_offset": 98624,
+        "address": "1679:19B0"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_19bf",
+      "object_offset": 21,
+      "actual": {
+        "segment": 5753,
+        "offset": 6591,
+        "image_offset": 98639,
+        "address": "1679:19BF"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6591,
+        "image_offset": 98639,
+        "address": "1679:19BF"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "1341:1E1A..30C4",
+  "c_source": "ADLIB.C",
+  "c_header": "ADLIB.H",
+  "c_function_count": 52,
+  "c_reference_bytes": 4225,
+  "c_recompiled_byte_exact": false,
+  "c_status": "All 52 definitions are present: 50 ordinary C procedures and 2 with short AH register-ABI bridges. The full sound C compiler profile is unproven.",
+  "assembler_source": "ADIO.ASM",
+  "assembler_reference_bytes": 553,
+  "assembler_recompiled_byte_exact": true,
+  "assembler_report": "module_adio.json",
+  "independent_recovery": "ADLIB.C/H were reconstructed from the executable and decompiler reference before the following corroborating source was discovered.",
+  "corroborating_source": {
+    "url": "https://lists.scummvm.org/pipermail/scummvm-git-logs/2001-December/000086.html",
+    "description": "Primary ScummVM CVS commit dated 19 December 2001: AdlibSoundDriver reconstruction, iMUSE synthesis tables and algorithms.",
+    "agreements": [
+      "The 16-entry parameter-selector map matches the executable exactly.",
+      "The 32-entry envelope duration table matches the executable exactly.",
+      "Register-field masks, OPL operator mappings, 34-byte envelope and 8-byte work layouts correspond.",
+      "The byte LFSR uses the same 0xB8 feedback constant and initial seed 1.",
+      "The timer returns immediately after expiring one voice; this unusual behavior is shared."
+    ],
+    "limitations": "These matches establish close algorithmic ancestry, not an exact historical source text, compiler version, vendor license, or game-specific binary provenance. No ScummVM source text is copied into ADLIB.C."
+  },
+  "c_coverage_report": "adlib_c_coverage.json",
+  "c_source_sha256": "6ee15d5f6c3518060a7b0042a0122ab2a202f508a96a47da14b8b007cf739811",
+  "c_header_sha256": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+  "c_diagnostic_object_sha256": "132fbc1809fa81710569d620c9d3fd3ea71b1cf8edffe9971d29469dc264e904",
+  "c_diagnostic_code_bytes": 4548,
+  "c_semantic_verification": {
+    "procedures": 52,
+    "cases": 2404,
+    "passed": 2404,
+    "report": "adlib_c_build/semantic.json",
+    "scope": "One compiled procedure with original callees; sampled states, not all branches or full compiled integration."
+  },
+  "isolated_c_exact": {
+    "entry": "1341:2665",
+    "bytes": 20,
+    "compiler": "Microsoft C 5.1",
+    "flags": "/AS /G2 /Gs /Zp /Oi /Os",
+    "report": "adlib_c_build/msc51_small/verify_2665.json",
+    "proves_whole_module": false
+  },
+  "symbolic_executable_specification": {
+    "source": "exact/ADLIB.ASM",
+    "bytes": 4225,
+    "byte_exact": true,
+    "report": "exact/module_adlib.json",
+    "historical_asm_source_proven": false,
+    "proves_c_recompilation": false
+  }
+}

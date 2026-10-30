@@ -1,0 +1,57 @@
+{
+  "object": "work/midi-analysis/build/MR1D49.OBJ",
+  "object_sha256": "9f39243707e5155f1f6e06201a1afa3889b43481de86c57a37ad0a9b4dee1a46",
+  "module": "MR1D49.ASM",
+  "segment_index": 1,
+  "segment_name": "_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4929,
+    "offset": 7497,
+    "image_offset": 86361,
+    "address": "1341:1D49"
+  },
+  "file_offset": 90457,
+  "object_size": 36,
+  "expected_size": 36,
+  "public_bindings": [
+    {
+      "name": "_snd_1D49",
+      "object_offset": 0,
+      "expected": {
+        "segment": 4929,
+        "offset": 7497,
+        "image_offset": 86361,
+        "address": "1341:1D49"
+      },
+      "binding": {
+        "segment": 4929,
+        "offset": 7497,
+        "image_offset": 86361,
+        "address": "1341:1D49"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      36
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "3a51ccb3571880ba8c36572a7a0bc0f9f8a8b24bd1eb8ddc3ec97bd7a1eaf210",
+  "original_sha256": "3a51ccb3571880ba8c36572a7a0bc0f9f8a8b24bd1eb8ddc3ec97bd7a1eaf210",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

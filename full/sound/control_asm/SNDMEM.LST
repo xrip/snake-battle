@@ -1,0 +1,53 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 1
+SNDMEM.ASM
+
+
+
+      1				     ; Original	near-memory copy primitive. CDECL (destination,source,length).
+      2				     ; Returns zero in AX. DS=ES is established	explicitly; DF follows caller ABI.
+      3				     .286
+      4	0000			     _TEXT segment byte	public 'CODE'
+      5				     assume cs:_TEXT
+      6				     public _snd_053D
+      7	0000			     _snd_053D label near
+      8	0000  C8 0000 00		 enter 0,0
+      9	0004  57			 push di
+     10	0005  56			 push si
+     11	0006  8B 76 06			 mov si,[bp+6]
+     12	0009  8B 7E 04			 mov di,[bp+4]
+     13	000C  8B 4E 08			 mov cx,[bp+8]
+     14	000F  8C D8			 mov ax,ds
+     15	0011  8E C0			 mov es,ax
+     16	0013  D1 E9			 shr cx,1
+     17	0015  F3> A5			 rep movsw
+     18	0017  13 C9			 adc cx,cx
+     19	0019  F3> A4			 rep movsb
+     20	001B  8B C1			 mov ax,cx
+     21	001D  5E			 pop si
+     22	001E  5F			 pop di
+     23	001F  C9			 leave
+     24	0020  C3			 ret
+     25	0021			     _TEXT ends
+     26				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "SNDMEM  "
+??time				  Text	 "18:15:27"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 SNDMEM
+@WordSize			  Text	 2
+@curseg				  Text	 _TEXT
+_snd_053D			  Near	 _TEXT:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+_TEXT				  16  0021 Byte	  Public  CODE
+

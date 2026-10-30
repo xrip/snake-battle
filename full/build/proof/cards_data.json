@@ -1,0 +1,211 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/CARDS.OBJ",
+  "object_sha256": "5ab95ca9e8c97b56cf2123fc5f739070c79f8d7fbdedd31bd4422892f42e3ac0",
+  "module": "cards.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 1392,
+    "image_offset": 93440,
+    "address": "1679:0570"
+  },
+  "file_offset": 97536,
+  "object_size": 1933,
+  "expected_size": 1933,
+  "public_bindings": [
+    {
+      "name": "_sb_card_defaults",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 1392,
+        "image_offset": 93440,
+        "address": "1679:0570"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1392,
+        "image_offset": 93440,
+        "address": "1679:0570"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_actions",
+      "object_offset": 1839,
+      "expected": {
+        "segment": 5753,
+        "offset": 3231,
+        "image_offset": 95279,
+        "address": "1679:0C9F"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3231,
+        "image_offset": 95279,
+        "address": "1679:0C9F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_rects",
+      "object_offset": 1663,
+      "expected": {
+        "segment": 5753,
+        "offset": 3055,
+        "image_offset": 95103,
+        "address": "1679:0BEF"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3055,
+        "image_offset": 95103,
+        "address": "1679:0BEF"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_colors",
+      "object_offset": 1653,
+      "expected": {
+        "segment": 5753,
+        "offset": 3045,
+        "image_offset": 95093,
+        "address": "1679:0BE5"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3045,
+        "image_offset": 95093,
+        "address": "1679:0BE5"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g057a",
+      "object_offset": 10,
+      "expected": {
+        "segment": 5753,
+        "offset": 1402,
+        "image_offset": 93450,
+        "address": "1679:057A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1402,
+        "image_offset": 93450,
+        "address": "1679:057A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_057a",
+      "object_offset": 10,
+      "expected": {
+        "segment": 5753,
+        "offset": 1402,
+        "image_offset": 93450,
+        "address": "1679:057A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1402,
+        "image_offset": 93450,
+        "address": "1679:057A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_default_header",
+      "object_offset": 180,
+      "expected": {
+        "segment": 5753,
+        "offset": 1572,
+        "image_offset": 93620,
+        "address": "1679:0624"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1572,
+        "image_offset": 93620,
+        "address": "1679:0624"
+      },
+      "equal": true
+    },
+    {
+      "name": "_default_card",
+      "object_offset": 10,
+      "expected": {
+        "segment": 5753,
+        "offset": 1402,
+        "image_offset": 93450,
+        "address": "1679:057A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1402,
+        "image_offset": 93450,
+        "address": "1679:057A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_group_and",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 1392,
+        "image_offset": 93440,
+        "address": "1679:0570"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1392,
+        "image_offset": 93440,
+        "address": "1679:0570"
+      },
+      "equal": true
+    },
+    {
+      "name": "_default_empty_cell",
+      "object_offset": 162,
+      "expected": {
+        "segment": 5753,
+        "offset": 1554,
+        "image_offset": 93602,
+        "address": "1679:0612"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 1554,
+        "image_offset": 93602,
+        "address": "1679:0612"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      1933
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "4d0750b3892258ce28fbb305226061168decde2b167476b14c660797924e6682",
+  "original_sha256": "4d0750b3892258ce28fbb305226061168decde2b167476b14c660797924e6682",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

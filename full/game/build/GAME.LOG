@@ -1,0 +1,8 @@
+Borland C++  Version 3.1 Copyright (c) 1992 Borland International
+game.c:
+Warning game.c 606: Parameter 'unused' is never used in function game_18eb
+Warning game.c 852: Nonportable pointer conversion in function game_2327
+Warning game.c 954: Nonportable pointer conversion in function game_2327
+Warning game.c 1013: Unreachable code in function game_2327
+
+	Available memory 4054500

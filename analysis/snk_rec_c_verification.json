@@ -1,0 +1,148 @@
+{
+  "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "language": "C89",
+  "files": [
+    {
+      "filename": "ANTONY.REC",
+      "size": 1755,
+      "sha256": "ed6d76a2e53beced4ecd2eeaa869f3acff52d5372f601fc4f5dc341ce5f173d5",
+      "byte_exact": true,
+      "driver": "REC participants=4 live_score_records=1"
+    },
+    {
+      "filename": "ANTONY.SNK",
+      "size": 867,
+      "sha256": "6e8e5fba6ae819ad3675d18f14c0ea720f1776dc8082b9b6781faed983f0ffb9",
+      "byte_exact": true,
+      "driver": "SNK cards=5 rating=1054"
+    },
+    {
+      "filename": "CHORUS.SNK",
+      "size": 1323,
+      "sha256": "599bbe5cf5024c3a99abb062f91f326325a374fdd6a008e3cc5a84e02110cc9d",
+      "byte_exact": true,
+      "driver": "SNK cards=8 rating=1070"
+    },
+    {
+      "filename": "HANTER.REC",
+      "size": 1733,
+      "sha256": "5bbe286061aca5fc33e6ad8ed02ea198a3b522540eadeae2521fd60150da532d",
+      "byte_exact": true,
+      "driver": "REC participants=4 live_score_records=1"
+    },
+    {
+      "filename": "HANTER.SNK",
+      "size": 259,
+      "sha256": "e5fa1e066e5b017145a375a6f2b2b4e6ce09f9876b6902d3d071f3a525efa3f1",
+      "byte_exact": true,
+      "driver": "SNK cards=1 rating=959"
+    },
+    {
+      "filename": "IGOR_I.SNK",
+      "size": 1323,
+      "sha256": "244f98e587915a263dc760ffd6cc11c7b7c33de72aaec3115b1388c1cf95e8fb",
+      "byte_exact": true,
+      "driver": "SNK cards=8 rating=986"
+    },
+    {
+      "filename": "JOKER.REC",
+      "size": 1762,
+      "sha256": "5ac745b778b47a1ace5bacc79e96095e11ed66e5bdf768a87a1ceaeb3fd85c7d",
+      "byte_exact": true,
+      "driver": "REC participants=4 live_score_records=1"
+    },
+    {
+      "filename": "JOKER.SNK",
+      "size": 411,
+      "sha256": "598d131a29afcc5fbf846e2b6c6d05cc14787ecd172e25f4c4945fa48cc25142",
+      "byte_exact": true,
+      "driver": "SNK cards=2 rating=1004"
+    },
+    {
+      "filename": "OLEG.SNK",
+      "size": 259,
+      "sha256": "a5045c3ab6bed08b365a5cbcdf48f7a166caa32a6bb698d42f0830fef123bb50",
+      "byte_exact": true,
+      "driver": "SNK cards=1 rating=995"
+    },
+    {
+      "filename": "PAU1.SNK",
+      "size": 1475,
+      "sha256": "6b7f332ee965daf9e18b10c1d0d82e4d0bc5010a4060504e9197582e930a03da",
+      "byte_exact": true,
+      "driver": "SNK cards=9 rating=993"
+    },
+    {
+      "filename": "PAU2.SNK",
+      "size": 1323,
+      "sha256": "d677518c6b56095c63897d3ff3aa44722eaa0148120afd61234417010635e10b",
+      "byte_exact": true,
+      "driver": "SNK cards=8 rating=988"
+    },
+    {
+      "filename": "PAU3.SNK",
+      "size": 1475,
+      "sha256": "f5601e197bfff8733cbfa90394448c9484ae282228a8795e5ad5ba52787485ab",
+      "byte_exact": true,
+      "driver": "SNK cards=9 rating=1008"
+    },
+    {
+      "filename": "PAU4.SNK",
+      "size": 1475,
+      "sha256": "d25989a7d674b7ddea03bdd701092f84e40976103bbdf9f5ac800d304c5a395b",
+      "byte_exact": true,
+      "driver": "SNK cards=9 rating=993"
+    },
+    {
+      "filename": "REMBO.REC",
+      "size": 2041,
+      "sha256": "4d239fafa0281650cbb27eee90e4eee6969573c583f0e24e9683f355d12a745b",
+      "byte_exact": true,
+      "driver": "REC participants=4 live_score_records=1"
+    },
+    {
+      "filename": "REMBO.SNK",
+      "size": 1475,
+      "sha256": "94148839d07667feabf4e9a44b0914541a6bb549e055d7704a2c4232029b7aae",
+      "byte_exact": true,
+      "driver": "SNK cards=9 rating=1098"
+    },
+    {
+      "filename": "SS-20.SNK",
+      "size": 1323,
+      "sha256": "edb4f2a37006bf834bbf6dc98dfdd102340cfcf7d50156ca28289924d2540fa7",
+      "byte_exact": true,
+      "driver": "SNK cards=8 rating=1021"
+    },
+    {
+      "filename": "SS.REC",
+      "size": 1726,
+      "sha256": "aa313597887faf3a47f05f578e1c3af730072e55413f6976ebcdd4da45239cf4",
+      "byte_exact": true,
+      "driver": "REC participants=4 live_score_records=1"
+    },
+    {
+      "filename": "SUCKER.SNK",
+      "size": 1019,
+      "sha256": "10b3593deab61a54d1723f29b1e08977a709044906c3e7521fa2e8483c697bb9",
+      "byte_exact": true,
+      "driver": "SNK cards=6 rating=990"
+    },
+    {
+      "filename": "TEST.SNK",
+      "size": 259,
+      "sha256": "6375842fb9b1fa0ef7459d69fb19438b63f231a55658d98b123b1d05ddda957c",
+      "byte_exact": true,
+      "driver": "SNK cards=1 rating=1000"
+    },
+    {
+      "filename": "TRENTY.SNK",
+      "size": 1475,
+      "sha256": "6049bb35cfec6cc6b75f45ace4ced0288bb523ad894da72af1d195fff8abb43f",
+      "byte_exact": true,
+      "driver": "SNK cards=9 rating=999"
+    }
+  ],
+  "file_count": 20,
+  "all_byte_exact": true
+}

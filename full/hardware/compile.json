@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+    "HW.C": "4af3f76ffa1571957eb1bfdf66b4d234c19bd9706828f8f36f1104e25be13920"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G- -B",
+  "seconds": 1.261,
+  "files": [
+    "HW.C"
+  ]
+}

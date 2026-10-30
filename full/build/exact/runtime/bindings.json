@@ -1,0 +1,1249 @@
+{
+  "externals": {
+    "_main": {
+      "segment": 1007,
+      "offset": 3,
+      "image_offset": 16115,
+      "address": "03EF:0003"
+    },
+    "__ScanTodVector": {
+      "segment": 5753,
+      "offset": 6146,
+      "image_offset": 98194,
+      "address": "1679:1802"
+    },
+    "__AHSHIFT": {
+      "segment": 0,
+      "offset": 12,
+      "image_offset": 12,
+      "address": "0000:000C"
+    },
+    "__RealCvtVector": {
+      "segment": 5753,
+      "offset": 6144,
+      "image_offset": 98192,
+      "address": "1679:1800"
+    },
+    "__MMODEL": {
+      "segment": 0,
+      "offset": 659,
+      "image_offset": 659,
+      "address": "0000:0293"
+    },
+    "___brklvl": {
+      "segment": 5753,
+      "offset": 133,
+      "image_offset": 92181,
+      "address": "1679:0085"
+    },
+    "__terminate": {
+      "segment": 0,
+      "offset": 363,
+      "image_offset": 363,
+      "address": "0000:016B"
+    },
+    "__C0argc": {
+      "segment": 5753,
+      "offset": 107,
+      "image_offset": 92155,
+      "address": "1679:006B"
+    },
+    "__C0argv": {
+      "segment": 5753,
+      "offset": 109,
+      "image_offset": 92157,
+      "address": "1679:006D"
+    },
+    "__envseg": {
+      "segment": 5753,
+      "offset": 119,
+      "image_offset": 92167,
+      "address": "1679:0077"
+    },
+    "__heaptop": {
+      "segment": 5753,
+      "offset": 143,
+      "image_offset": 92191,
+      "address": "1679:008F"
+    },
+    "__envSize": {
+      "segment": 5753,
+      "offset": 121,
+      "image_offset": 92169,
+      "address": "1679:0079"
+    },
+    "_abort": {
+      "segment": 0,
+      "offset": 634,
+      "image_offset": 634,
+      "address": "0000:027A"
+    },
+    "__osversion": {
+      "segment": 5753,
+      "offset": 125,
+      "image_offset": 92173,
+      "address": "1679:007D"
+    },
+    "__osminor": {
+      "segment": 5753,
+      "offset": 126,
+      "image_offset": 92174,
+      "address": "1679:007E"
+    },
+    "__psp": {
+      "segment": 5753,
+      "offset": 123,
+      "image_offset": 92171,
+      "address": "1679:007B"
+    },
+    "__restorezero": {
+      "segment": 0,
+      "offset": 448,
+      "image_offset": 448,
+      "address": "0000:01C0"
+    },
+    "DATASEG@": {
+      "segment": 5753,
+      "offset": 0,
+      "image_offset": 92048,
+      "address": "1679:0000"
+    },
+    "__cleanup": {
+      "segment": 0,
+      "offset": 343,
+      "image_offset": 343,
+      "address": "0000:0157"
+    },
+    "__Int4Vector": {
+      "segment": 5753,
+      "offset": 95,
+      "image_offset": 92143,
+      "address": "1679:005F"
+    },
+    "__Int0Vector": {
+      "segment": 5753,
+      "offset": 91,
+      "image_offset": 92139,
+      "address": "1679:005B"
+    },
+    "__Int5Vector": {
+      "segment": 5753,
+      "offset": 99,
+      "image_offset": 92147,
+      "address": "1679:0063"
+    },
+    "__Int6Vector": {
+      "segment": 5753,
+      "offset": 103,
+      "image_offset": 92151,
+      "address": "1679:0067"
+    },
+    "__heapbase": {
+      "segment": 5753,
+      "offset": 135,
+      "image_offset": 92183,
+      "address": "1679:0087"
+    },
+    "__AHINCR": {
+      "segment": 0,
+      "offset": 4096,
+      "image_offset": 4096,
+      "address": "0000:1000"
+    },
+    "DGROUP@": {
+      "segment": 0,
+      "offset": 657,
+      "image_offset": 657,
+      "address": "0000:0291"
+    },
+    "__envLng": {
+      "segment": 5753,
+      "offset": 117,
+      "image_offset": 92165,
+      "address": "1679:0075"
+    },
+    "__brklvl": {
+      "segment": 5753,
+      "offset": 139,
+      "image_offset": 92187,
+      "address": "1679:008B"
+    },
+    "__C0environ": {
+      "segment": 5753,
+      "offset": 113,
+      "image_offset": 92161,
+      "address": "1679:0071"
+    },
+    "_errno": {
+      "segment": 5753,
+      "offset": 127,
+      "image_offset": 92175,
+      "address": "1679:007F"
+    },
+    "__StartTime": {
+      "segment": 5753,
+      "offset": 129,
+      "image_offset": 92177,
+      "address": "1679:0081"
+    },
+    "__osmajor": {
+      "segment": 5753,
+      "offset": 125,
+      "image_offset": 92173,
+      "address": "1679:007D"
+    },
+    "__version": {
+      "segment": 5753,
+      "offset": 125,
+      "image_offset": 92173,
+      "address": "1679:007D"
+    },
+    "__checknull": {
+      "segment": 0,
+      "offset": 362,
+      "image_offset": 362,
+      "address": "0000:016A"
+    },
+    "__atexittbl": {
+      "segment": 5753,
+      "offset": 25078,
+      "image_offset": 117126,
+      "address": "1679:61F6"
+    },
+    "__atexitcnt": {
+      "segment": 5753,
+      "offset": 4940,
+      "image_offset": 96988,
+      "address": "1679:134C"
+    },
+    "_atexit": {
+      "segment": 0,
+      "offset": 661,
+      "image_offset": 661,
+      "address": "0000:0295"
+    },
+    "__ctype": {
+      "segment": 5753,
+      "offset": 4942,
+      "image_offset": 96990,
+      "address": "1679:134E"
+    },
+    "__dos_getfileattr": {
+      "segment": 0,
+      "offset": 706,
+      "image_offset": 706,
+      "address": "0000:02C2"
+    },
+    "__dos_setfileattr": {
+      "segment": 0,
+      "offset": 738,
+      "image_offset": 738,
+      "address": "0000:02E2"
+    },
+    "__c_exit": {
+      "segment": 0,
+      "offset": 902,
+      "image_offset": 902,
+      "address": "0000:0386"
+    },
+    "__cexit": {
+      "segment": 0,
+      "offset": 888,
+      "image_offset": 888,
+      "address": "0000:0378"
+    },
+    "__exitopen": {
+      "segment": 5753,
+      "offset": 5208,
+      "image_offset": 97256,
+      "address": "1679:1458"
+    },
+    "__exitfopen": {
+      "segment": 5753,
+      "offset": 5204,
+      "image_offset": 97252,
+      "address": "1679:1454"
+    },
+    "__exitbuf": {
+      "segment": 5753,
+      "offset": 5200,
+      "image_offset": 97248,
+      "address": "1679:1450"
+    },
+    "__exit": {
+      "segment": 0,
+      "offset": 870,
+      "image_offset": 870,
+      "address": "0000:0366"
+    },
+    "_exit": {
+      "segment": 0,
+      "offset": 855,
+      "image_offset": 855,
+      "address": "0000:0357"
+    },
+    "__streams": {
+      "segment": 5753,
+      "offset": 5212,
+      "image_offset": 97260,
+      "address": "1679:145C"
+    },
+    "__openfd": {
+      "segment": 5753,
+      "offset": 5614,
+      "image_offset": 97662,
+      "address": "1679:15EE"
+    },
+    "__nfile": {
+      "segment": 5753,
+      "offset": 5612,
+      "image_offset": 97660,
+      "address": "1679:15EC"
+    },
+    "__notUmask": {
+      "segment": 5753,
+      "offset": 5656,
+      "image_offset": 97704,
+      "address": "1679:1618"
+    },
+    "__fmode": {
+      "segment": 5753,
+      "offset": 5654,
+      "image_offset": 97702,
+      "address": "1679:1616"
+    },
+    "LXMUL@": {
+      "segment": 0,
+      "offset": 914,
+      "image_offset": 914,
+      "address": "0000:0392"
+    },
+    "F_LXMUL@": {
+      "segment": 0,
+      "offset": 914,
+      "image_offset": 914,
+      "address": "0000:0392"
+    },
+    "SCOPY@": {
+      "segment": 0,
+      "offset": 937,
+      "image_offset": 937,
+      "address": "0000:03A9"
+    },
+    "F_SCOPY@": {
+      "segment": 0,
+      "offset": 937,
+      "image_offset": 937,
+      "address": "0000:03A9"
+    },
+    "_gettime": {
+      "segment": 0,
+      "offset": 984,
+      "image_offset": 984,
+      "address": "0000:03D8"
+    },
+    "_getdate": {
+      "segment": 0,
+      "offset": 965,
+      "image_offset": 965,
+      "address": "0000:03C5"
+    },
+    "_setvect": {
+      "segment": 0,
+      "offset": 1018,
+      "image_offset": 1018,
+      "address": "0000:03FA"
+    },
+    "_getvect": {
+      "segment": 0,
+      "offset": 1003,
+      "image_offset": 1003,
+      "address": "0000:03EB"
+    },
+    "LUMOD@": {
+      "segment": 0,
+      "offset": 1061,
+      "image_offset": 1061,
+      "address": "0000:0425"
+    },
+    "LDIV@": {
+      "segment": 0,
+      "offset": 1038,
+      "image_offset": 1038,
+      "address": "0000:040E"
+    },
+    "F_LUMOD@": {
+      "segment": 0,
+      "offset": 1061,
+      "image_offset": 1061,
+      "address": "0000:0425"
+    },
+    "N_LUMOD@": {
+      "segment": 0,
+      "offset": 1058,
+      "image_offset": 1058,
+      "address": "0000:0422"
+    },
+    "N_LMOD@": {
+      "segment": 0,
+      "offset": 1050,
+      "image_offset": 1050,
+      "address": "0000:041A"
+    },
+    "F_LMOD@": {
+      "segment": 0,
+      "offset": 1053,
+      "image_offset": 1053,
+      "address": "0000:041D"
+    },
+    "LMOD@": {
+      "segment": 0,
+      "offset": 1053,
+      "image_offset": 1053,
+      "address": "0000:041D"
+    },
+    "N_LUDIV@": {
+      "segment": 0,
+      "offset": 1042,
+      "image_offset": 1042,
+      "address": "0000:0412"
+    },
+    "F_LUDIV@": {
+      "segment": 0,
+      "offset": 1045,
+      "image_offset": 1045,
+      "address": "0000:0415"
+    },
+    "LUDIV@": {
+      "segment": 0,
+      "offset": 1045,
+      "image_offset": 1045,
+      "address": "0000:0415"
+    },
+    "N_LDIV@": {
+      "segment": 0,
+      "offset": 1035,
+      "image_offset": 1035,
+      "address": "0000:040B"
+    },
+    "F_LDIV@": {
+      "segment": 0,
+      "offset": 1038,
+      "image_offset": 1038,
+      "address": "0000:040E"
+    },
+    "LXLSH@": {
+      "segment": 0,
+      "offset": 1212,
+      "image_offset": 1212,
+      "address": "0000:04BC"
+    },
+    "N_LXLSH@": {
+      "segment": 0,
+      "offset": 1209,
+      "image_offset": 1209,
+      "address": "0000:04B9"
+    },
+    "F_LXLSH@": {
+      "segment": 0,
+      "offset": 1212,
+      "image_offset": 1212,
+      "address": "0000:04BC"
+    },
+    "N_PADA@": {
+      "segment": 0,
+      "offset": 1242,
+      "image_offset": 1242,
+      "address": "0000:04DA"
+    },
+    "F_PADA@": {
+      "segment": 0,
+      "offset": 1245,
+      "image_offset": 1245,
+      "address": "0000:04DD"
+    },
+    "PSBA@": {
+      "segment": 0,
+      "offset": 1313,
+      "image_offset": 1313,
+      "address": "0000:0521"
+    },
+    "F_PSBA@": {
+      "segment": 0,
+      "offset": 1313,
+      "image_offset": 1313,
+      "address": "0000:0521"
+    },
+    "N_PSBA@": {
+      "segment": 0,
+      "offset": 1310,
+      "image_offset": 1310,
+      "address": "0000:051E"
+    },
+    "PADA@": {
+      "segment": 0,
+      "offset": 1245,
+      "image_offset": 1245,
+      "address": "0000:04DD"
+    },
+    "F_PADD@": {
+      "segment": 0,
+      "offset": 1381,
+      "image_offset": 1381,
+      "address": "0000:0565"
+    },
+    "N_PADD@": {
+      "segment": 0,
+      "offset": 1378,
+      "image_offset": 1378,
+      "address": "0000:0562"
+    },
+    "F_PSUB@": {
+      "segment": 0,
+      "offset": 1428,
+      "image_offset": 1428,
+      "address": "0000:0594"
+    },
+    "N_PSUB@": {
+      "segment": 0,
+      "offset": 1425,
+      "image_offset": 1425,
+      "address": "0000:0591"
+    },
+    "PSUB@": {
+      "segment": 0,
+      "offset": 1428,
+      "image_offset": 1428,
+      "address": "0000:0594"
+    },
+    "PADD@": {
+      "segment": 0,
+      "offset": 1381,
+      "image_offset": 1381,
+      "address": "0000:0565"
+    },
+    "__IOERROR": {
+      "segment": 0,
+      "offset": 1474,
+      "image_offset": 1474,
+      "address": "0000:05C2"
+    },
+    "__dosErrorToSV": {
+      "segment": 5753,
+      "offset": 5660,
+      "image_offset": 97708,
+      "address": "1679:161C"
+    },
+    "__doserrno": {
+      "segment": 5753,
+      "offset": 5658,
+      "image_offset": 97706,
+      "address": "1679:161A"
+    },
+    "__DOSERROR": {
+      "segment": 0,
+      "offset": 1531,
+      "image_offset": 1531,
+      "address": "0000:05FB"
+    },
+    "_isatty": {
+      "segment": 0,
+      "offset": 1549,
+      "image_offset": 1549,
+      "address": "0000:060D"
+    },
+    "__UTOA": {
+      "segment": 0,
+      "offset": 1696,
+      "image_offset": 1696,
+      "address": "0000:06A0"
+    },
+    "__LONGTOA": {
+      "segment": 0,
+      "offset": 1566,
+      "image_offset": 1566,
+      "address": "0000:061E"
+    },
+    "_lseek": {
+      "segment": 0,
+      "offset": 1728,
+      "image_offset": 1728,
+      "address": "0000:06C0"
+    },
+    "__TMPNAM": {
+      "segment": 0,
+      "offset": 1862,
+      "image_offset": 1862,
+      "address": "0000:0746"
+    },
+    "__MKNAME": {
+      "segment": 0,
+      "offset": 1769,
+      "image_offset": 1769,
+      "address": "0000:06E9"
+    },
+    "N_LXMUL@": {
+      "segment": 0,
+      "offset": 1951,
+      "image_offset": 1951,
+      "address": "0000:079F"
+    },
+    "N_PCMP@": {
+      "segment": 0,
+      "offset": 1974,
+      "image_offset": 1974,
+      "address": "0000:07B6"
+    },
+    "_srand": {
+      "segment": 0,
+      "offset": 2007,
+      "image_offset": 2007,
+      "address": "0000:07D7"
+    },
+    "_rand": {
+      "segment": 0,
+      "offset": 2024,
+      "image_offset": 2024,
+      "address": "0000:07E8"
+    },
+    "__read": {
+      "segment": 0,
+      "offset": 2062,
+      "image_offset": 2062,
+      "address": "0000:080E"
+    },
+    "__scanner": {
+      "segment": 0,
+      "offset": 2109,
+      "image_offset": 2109,
+      "address": "0000:083D"
+    },
+    "__scantol": {
+      "segment": 0,
+      "offset": 3420,
+      "image_offset": 3420,
+      "address": "0000:0D5C"
+    },
+    "_setdate": {
+      "segment": 0,
+      "offset": 3838,
+      "image_offset": 3838,
+      "address": "0000:0EFE"
+    },
+    "_settime": {
+      "segment": 0,
+      "offset": 3859,
+      "image_offset": 3859,
+      "address": "0000:0F13"
+    },
+    "__setupio": {
+      "segment": 0,
+      "offset": 3880,
+      "image_offset": 3880,
+      "address": "0000:0F28"
+    },
+    "_stime": {
+      "segment": 0,
+      "offset": 4066,
+      "image_offset": 4066,
+      "address": "0000:0FE2"
+    },
+    "_time": {
+      "segment": 0,
+      "offset": 4130,
+      "image_offset": 4130,
+      "address": "0000:1022"
+    },
+    "__stklen": {
+      "segment": 5753,
+      "offset": 5892,
+      "image_offset": 97940,
+      "address": "1679:1704"
+    },
+    "_toupper": {
+      "segment": 0,
+      "offset": 4218,
+      "image_offset": 4218,
+      "address": "0000:107A"
+    },
+    "_unlink": {
+      "segment": 0,
+      "offset": 4262,
+      "image_offset": 4262,
+      "address": "0000:10A6"
+    },
+    "__VPRINTER": {
+      "segment": 0,
+      "offset": 4310,
+      "image_offset": 4310,
+      "address": "0000:10D6"
+    },
+    "__stpcpy": {
+      "segment": 0,
+      "offset": 5529,
+      "image_offset": 5529,
+      "address": "0000:1599"
+    },
+    "__cvtfak": {
+      "segment": 0,
+      "offset": 0,
+      "image_offset": 0,
+      "address": "0000:0000"
+    },
+    "_delay": {
+      "segment": 0,
+      "offset": 5672,
+      "image_offset": 5672,
+      "address": "0000:1628"
+    },
+    "_farmalloc": {
+      "segment": 0,
+      "offset": 6365,
+      "image_offset": 6365,
+      "address": "0000:18DD"
+    },
+    "_farfree": {
+      "segment": 0,
+      "offset": 6089,
+      "image_offset": 6089,
+      "address": "0000:17C9"
+    },
+    "_free": {
+      "segment": 0,
+      "offset": 6089,
+      "image_offset": 6089,
+      "address": "0000:17C9"
+    },
+    "_malloc": {
+      "segment": 0,
+      "offset": 6355,
+      "image_offset": 6355,
+      "address": "0000:18D3"
+    },
+    "___rover": {
+      "segment": 0,
+      "offset": 5773,
+      "image_offset": 5773,
+      "address": "0000:168D"
+    },
+    "_farrealloc": {
+      "segment": 0,
+      "offset": 6721,
+      "image_offset": 6721,
+      "address": "0000:1A41"
+    },
+    "_realloc": {
+      "segment": 0,
+      "offset": 6714,
+      "image_offset": 6714,
+      "address": "0000:1A3A"
+    },
+    "___last": {
+      "segment": 0,
+      "offset": 5771,
+      "image_offset": 5771,
+      "address": "0000:168B"
+    },
+    "___first": {
+      "segment": 0,
+      "offset": 5769,
+      "image_offset": 5769,
+      "address": "0000:1689"
+    },
+    "__sbrk": {
+      "segment": 0,
+      "offset": 7024,
+      "image_offset": 7024,
+      "address": "0000:1B70"
+    },
+    "__brk": {
+      "segment": 0,
+      "offset": 6961,
+      "image_offset": 6961,
+      "address": "0000:1B31"
+    },
+    "_farcalloc": {
+      "segment": 0,
+      "offset": 7163,
+      "image_offset": 7163,
+      "address": "0000:1BFB"
+    },
+    "_intr": {
+      "segment": 0,
+      "offset": 7305,
+      "image_offset": 7305,
+      "address": "0000:1C89"
+    },
+    "_ioctl": {
+      "segment": 0,
+      "offset": 7469,
+      "image_offset": 7469,
+      "address": "0000:1D2D"
+    },
+    "__REALCVT": {
+      "segment": 0,
+      "offset": 7510,
+      "image_offset": 7510,
+      "address": "0000:1D56"
+    },
+    "__scantod": {
+      "segment": 0,
+      "offset": 7514,
+      "image_offset": 7514,
+      "address": "0000:1D5A"
+    },
+    "__scanpop": {
+      "segment": 0,
+      "offset": 7522,
+      "image_offset": 7522,
+      "address": "0000:1D62"
+    },
+    "__scanrslt": {
+      "segment": 0,
+      "offset": 7518,
+      "image_offset": 7518,
+      "address": "0000:1D5E"
+    },
+    "__setargv__": {
+      "segment": 0,
+      "offset": 0,
+      "image_offset": 0,
+      "address": "0000:0000"
+    },
+    "__argv": {
+      "segment": 5753,
+      "offset": 6056,
+      "image_offset": 98104,
+      "address": "1679:17A8"
+    },
+    "__argc": {
+      "segment": 5753,
+      "offset": 6054,
+      "image_offset": 98102,
+      "address": "1679:17A6"
+    },
+    "_setblock": {
+      "segment": 0,
+      "offset": 7825,
+      "image_offset": 7825,
+      "address": "0000:1E91"
+    },
+    "__setenvp__": {
+      "segment": 0,
+      "offset": 0,
+      "image_offset": 0,
+      "address": "0000:0000"
+    },
+    "_environ": {
+      "segment": 5753,
+      "offset": 6070,
+      "image_offset": 98118,
+      "address": "1679:17B6"
+    },
+    "_sound": {
+      "segment": 0,
+      "offset": 7941,
+      "image_offset": 7941,
+      "address": "0000:1F05"
+    },
+    "_nosound": {
+      "segment": 0,
+      "offset": 7985,
+      "image_offset": 7985,
+      "address": "0000:1F31"
+    },
+    "_atoi": {
+      "segment": 0,
+      "offset": 8109,
+      "image_offset": 8109,
+      "address": "0000:1FAD"
+    },
+    "_atol": {
+      "segment": 0,
+      "offset": 7992,
+      "image_offset": 7992,
+      "address": "0000:1F38"
+    },
+    "__chmod": {
+      "segment": 0,
+      "offset": 8126,
+      "image_offset": 8126,
+      "address": "0000:1FBE"
+    },
+    "_close": {
+      "segment": 0,
+      "offset": 8155,
+      "image_offset": 8155,
+      "address": "0000:1FDB"
+    },
+    "__close": {
+      "segment": 0,
+      "offset": 8195,
+      "image_offset": 8195,
+      "address": "0000:2003"
+    },
+    "_eof": {
+      "segment": 0,
+      "offset": 8225,
+      "image_offset": 8225,
+      "address": "0000:2021"
+    },
+    "_fclose": {
+      "segment": 0,
+      "offset": 8344,
+      "image_offset": 8344,
+      "address": "0000:2098"
+    },
+    "_fflush": {
+      "segment": 0,
+      "offset": 8528,
+      "image_offset": 8528,
+      "address": "0000:2150"
+    },
+    "_fgets": {
+      "segment": 0,
+      "offset": 8733,
+      "image_offset": 8733,
+      "address": "0000:221D"
+    },
+    "_findfirst": {
+      "segment": 0,
+      "offset": 8889,
+      "image_offset": 8889,
+      "address": "0000:22B9"
+    },
+    "_findnext": {
+      "segment": 0,
+      "offset": 8940,
+      "image_offset": 8940,
+      "address": "0000:22EC"
+    },
+    "_flushall": {
+      "segment": 0,
+      "offset": 8985,
+      "image_offset": 8985,
+      "address": "0000:2319"
+    },
+    "__GETFP": {
+      "segment": 0,
+      "offset": 9448,
+      "image_offset": 9448,
+      "address": "0000:24E8"
+    },
+    "__OPENFP": {
+      "segment": 0,
+      "offset": 9239,
+      "image_offset": 9239,
+      "address": "0000:2417"
+    },
+    "_fopen": {
+      "segment": 0,
+      "offset": 9522,
+      "image_offset": 9522,
+      "address": "0000:2532"
+    },
+    "_fread": {
+      "segment": 0,
+      "offset": 9819,
+      "image_offset": 9819,
+      "address": "0000:265B"
+    },
+    "_ftell": {
+      "segment": 0,
+      "offset": 10219,
+      "image_offset": 10219,
+      "address": "0000:27EB"
+    },
+    "_fseek": {
+      "segment": 0,
+      "offset": 10091,
+      "image_offset": 10091,
+      "address": "0000:276B"
+    },
+    "_fwrite": {
+      "segment": 0,
+      "offset": 10443,
+      "image_offset": 10443,
+      "address": "0000:28CB"
+    },
+    "__Nfgetc": {
+      "segment": 0,
+      "offset": 10785,
+      "image_offset": 10785,
+      "address": "0000:2A21"
+    },
+    "__fgetc": {
+      "segment": 0,
+      "offset": 10764,
+      "image_offset": 10764,
+      "address": "0000:2A0C"
+    },
+    "_fgetc": {
+      "segment": 0,
+      "offset": 10788,
+      "image_offset": 10788,
+      "address": "0000:2A24"
+    },
+    "_fgetchar": {
+      "segment": 0,
+      "offset": 11026,
+      "image_offset": 11026,
+      "address": "0000:2B12"
+    },
+    "_getenv": {
+      "segment": 0,
+      "offset": 11038,
+      "image_offset": 11038,
+      "address": "0000:2B1E"
+    },
+    "_memcpy": {
+      "segment": 0,
+      "offset": 11150,
+      "image_offset": 11150,
+      "address": "0000:2B8E"
+    },
+    "_setmem": {
+      "segment": 0,
+      "offset": 11186,
+      "image_offset": 11186,
+      "address": "0000:2BB2"
+    },
+    "_memset": {
+      "segment": 0,
+      "offset": 11222,
+      "image_offset": 11222,
+      "address": "0000:2BD6"
+    },
+    "_movmem": {
+      "segment": 0,
+      "offset": 11253,
+      "image_offset": 11253,
+      "address": "0000:2BF5"
+    },
+    "_memmove": {
+      "segment": 0,
+      "offset": 11335,
+      "image_offset": 11335,
+      "address": "0000:2C47"
+    },
+    "_open": {
+      "segment": 0,
+      "offset": 11413,
+      "image_offset": 11413,
+      "address": "0000:2C95"
+    },
+    "__open": {
+      "segment": 0,
+      "offset": 11780,
+      "image_offset": 11780,
+      "address": "0000:2E04"
+    },
+    "_printf": {
+      "segment": 0,
+      "offset": 11859,
+      "image_offset": 11859,
+      "address": "0000:2E53"
+    },
+    "__FPUTN": {
+      "segment": 0,
+      "offset": 12339,
+      "image_offset": 12339,
+      "address": "0000:3033"
+    },
+    "__fputc": {
+      "segment": 0,
+      "offset": 11886,
+      "image_offset": 11886,
+      "address": "0000:2E6E"
+    },
+    "_fputchar": {
+      "segment": 0,
+      "offset": 12319,
+      "image_offset": 12319,
+      "address": "0000:301F"
+    },
+    "_fputc": {
+      "segment": 0,
+      "offset": 11914,
+      "image_offset": 11914,
+      "address": "0000:2E8A"
+    },
+    "___read": {
+      "segment": 0,
+      "offset": 12854,
+      "image_offset": 12854,
+      "address": "0000:3236"
+    },
+    "_read": {
+      "segment": 0,
+      "offset": 13063,
+      "image_offset": 13063,
+      "address": "0000:3307"
+    },
+    "_rewind": {
+      "segment": 0,
+      "offset": 13066,
+      "image_offset": 13066,
+      "address": "0000:330A"
+    },
+    "_setvbuf": {
+      "segment": 0,
+      "offset": 13104,
+      "image_offset": 13104,
+      "address": "0000:3330"
+    },
+    "_vsprintf": {
+      "segment": 0,
+      "offset": 13487,
+      "image_offset": 13487,
+      "address": "0000:34AF"
+    },
+    "_sprintf": {
+      "segment": 0,
+      "offset": 13453,
+      "image_offset": 13453,
+      "address": "0000:348D"
+    },
+    "_strcat": {
+      "segment": 0,
+      "offset": 13520,
+      "image_offset": 13520,
+      "address": "0000:34D0"
+    },
+    "_strcmp": {
+      "segment": 0,
+      "offset": 13583,
+      "image_offset": 13583,
+      "address": "0000:350F"
+    },
+    "_strcpy": {
+      "segment": 0,
+      "offset": 13631,
+      "image_offset": 13631,
+      "address": "0000:353F"
+    },
+    "_strcspn": {
+      "segment": 0,
+      "offset": 13672,
+      "image_offset": 13672,
+      "address": "0000:3568"
+    },
+    "_strlen": {
+      "segment": 0,
+      "offset": 13741,
+      "image_offset": 13741,
+      "address": "0000:35AD"
+    },
+    "_strncat": {
+      "segment": 0,
+      "offset": 13772,
+      "image_offset": 13772,
+      "address": "0000:35CC"
+    },
+    "_strncpy": {
+      "segment": 0,
+      "offset": 13871,
+      "image_offset": 13871,
+      "address": "0000:362F"
+    },
+    "_unixtodos": {
+      "segment": 0,
+      "offset": 14218,
+      "image_offset": 14218,
+      "address": "0000:378A"
+    },
+    "_dostounix": {
+      "segment": 0,
+      "offset": 13920,
+      "image_offset": 13920,
+      "address": "0000:3660"
+    },
+    "__ISDST": {
+      "segment": 0,
+      "offset": 15228,
+      "image_offset": 15228,
+      "address": "0000:3B7C"
+    },
+    "_tzname": {
+      "segment": 5753,
+      "offset": 6118,
+      "image_offset": 98166,
+      "address": "1679:17E6"
+    },
+    "_timezone": {
+      "segment": 5753,
+      "offset": 6126,
+      "image_offset": 98174,
+      "address": "1679:17EE"
+    },
+    "_tzset": {
+      "segment": 0,
+      "offset": 14734,
+      "image_offset": 14734,
+      "address": "0000:398E"
+    },
+    "_daylight": {
+      "segment": 5753,
+      "offset": 6130,
+      "image_offset": 98178,
+      "address": "1679:17F2"
+    },
+    "__monthDay": {
+      "segment": 5753,
+      "offset": 6092,
+      "image_offset": 98140,
+      "address": "1679:17CC"
+    },
+    "__Nungetc": {
+      "segment": 0,
+      "offset": 15451,
+      "image_offset": 15451,
+      "address": "0000:3C5B"
+    },
+    "_ungetc": {
+      "segment": 0,
+      "offset": 15454,
+      "image_offset": 15454,
+      "address": "0000:3C5E"
+    },
+    "_vfscanf": {
+      "segment": 0,
+      "offset": 15561,
+      "image_offset": 15561,
+      "address": "0000:3CC9"
+    },
+    "___write": {
+      "segment": 0,
+      "offset": 15598,
+      "image_offset": 15598,
+      "address": "0000:3CEE"
+    },
+    "__write": {
+      "segment": 0,
+      "offset": 15935,
+      "image_offset": 15935,
+      "address": "0000:3E3F"
+    },
+    "_write": {
+      "segment": 0,
+      "offset": 15995,
+      "image_offset": 15995,
+      "address": "0000:3E7B"
+    },
+    "__xfclose": {
+      "segment": 0,
+      "offset": 15998,
+      "image_offset": 15998,
+      "address": "0000:3E7E"
+    },
+    "__xfflush": {
+      "segment": 0,
+      "offset": 16059,
+      "image_offset": 16059,
+      "address": "0000:3EBB"
+    }
+  },
+  "groups": {
+    "DGROUP": "1679:0000"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_93a5e47c3ccbcb2e554cfd0a05210162e2021a4253beb0c0bbe7d5a2c2cf27dc\",\"subject\":{\"name\":\"SNAKE.EXE\",\"digest\":{\"sha256\":\"c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821\"},\"local_path\":\"/workspace/scratch/488b0609771f/work/original/SNAKE.EXE\",\"format\":\"dos-mz\",\"architecture\":\"x86\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"dos-mz\",\"architecture\":\"x86\",\"available_architectures\":[\"x86\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"function-body-call-coverage-v5\",\"function_dossier_coverage\":\"observed-facets-and-call-relationships-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"procedure_file_offset_resolution\":\"address-first-unique-target-source-mapping-v2\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-without-synthetic-entry-v2\",\"function_boundary_observations\":\"ghidra-function-boundary-limitations-v4\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"load_image_evidence\":\"independent-mz-mapping-relocations-v2\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"MzLoader\",\"language_id\":\"x86:LE:16:Real Mode\",\"compiler_spec_id\":\"default\",\"load_segment\":\"0x1000\",\"address_coordinates\":\"linear-byte-offset\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"00872daa045ec4c4f503e0aa00aa9e560f42b5c7fcdcd08e54830338c2ca16b7\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_pseudo_code\",\"parameters\":{\"procedure\":\"0x1398e\"},\"raw_result\":{\"value\":\"\\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\\n\\nvoid __cdecl16far FUN_1000_398e(void)\\n\\n{\\n  char *pcVar1;\\n  uint uVar2;\\n  int in_DX;\\n  int iVar3;\\n  undefined4 uVar4;\\n  undefined4 local_6;\\n  \\n  pcVar1 = (char *)FUN_1000_2b1e(0x17f4,0x2679);\\n  local_6 = (char *)CONCAT22(in_DX,pcVar1);\\n  if (((((pcVar1 == (char *)0x0 && in_DX == 0) || (uVar2 = FUN_1000_35ad(pcVar1,in_DX), uVar2 < 4))\\n       || ((*(byte *)(*local_6 + 0x134f) & 0xc) == 0)) ||\\n      ((((*(byte *)(pcVar1[1] + 0x134f) & 0xc) == 0 || ((*(byte *)(pcVar1[2] + 0x134f) & 0xc) == 0))\\n       || ((pcVar1[3] != '-' && ((pcVar1[3] != '+' && ((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0)))))\\n       ))) || (((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0 &&\\n               ((*(byte *)(pcVar1[4] + 0x134f) & 2) == 0)))) {\\n    DAT_2679_17f2 = 1;\\n    DAT_2679_17f0 = 0;\\n    DAT_2679_17ee = 18000;\\n    FUN_1000_353f(DAT_2679_17e6,DAT_2679_17e8,0x17f7,0x2679);\\n    FUN_1000_353f(DAT_2679_17ea,_DAT_2679_17ec,0x17fb,0x2679);\\n    uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\\n  }\\n  else {\\n    FUN_1000_2bd6(DAT_2679_17ea,_DAT_2679_17ec,0,4);\\n    FUN_1000_362f(DAT_2679_17e6,DAT_2679_17e8,pcVar1,in_DX,3);\\n    *(undefined1 *)((int)_DAT_2679_17e6 + 3) = 0;\\n    FUN_1000_1f38(pcVar1 + 3,in_DX);\\n    uVar4 = FUN_1000_079f();\\n    DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\\n    DAT_2679_17ee = (undefined2)uVar4;\\n    DAT_2679_17f2 = 0;\\n    for (iVar3 = 3; pcVar1[iVar3] != '\\\\0'; iVar3 = iVar3 + 1) {\\n      if ((*(byte *)(pcVar1[iVar3] + 0x134f) & 0xc) != 0) {\\n        uVar2 = FUN_1000_35ad(pcVar1 + iVar3,in_DX);\\n        uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\\n        if (((2 < uVar2) &&\\n            (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\\n            (*(byte *)(pcVar1[iVar3 + 1] + 0x134f) & 0xc) != 0)) &&\\n           (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\\n           (*(byte *)(pcVar1[iVar3 + 2] + 0x134f) & 0xc) != 0)) {\\n          FUN_1000_362f(DAT_2679_17ea,_DAT_2679_17ec,pcVar1 + iVar3,in_DX,3);\\n          *(undefined1 *)((int)_DAT_2679_17ea + 3) = 0;\\n          uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\\n          DAT_2679_17f2 = 1;\\n        }\\n        break;\\n      }\\n    }\\n  }\\n  DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\\n  DAT_2679_17ee = (undefined2)uVar4;\\n  return;\\n}\\n\\n\",\"limitations\":[]},\"normalized_result\":\"\\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\\n\\nvoid __cdecl16far FUN_1000_398e(void)\\n\\n{\\n  char *pcVar1;\\n  uint uVar2;\\n  int in_DX;\\n  int iVar3;\\n  undefined4 uVar4;\\n  undefined4 local_6;\\n  \\n  pcVar1 = (char *)FUN_1000_2b1e(0x17f4,0x2679);\\n  local_6 = (char *)CONCAT22(in_DX,pcVar1);\\n  if (((((pcVar1 == (char *)0x0 && in_DX == 0) || (uVar2 = FUN_1000_35ad(pcVar1,in_DX), uVar2 < 4))\\n       || ((*(byte *)(*local_6 + 0x134f) & 0xc) == 0)) ||\\n      ((((*(byte *)(pcVar1[1] + 0x134f) & 0xc) == 0 || ((*(byte *)(pcVar1[2] + 0x134f) & 0xc) == 0))\\n       || ((pcVar1[3] != '-' && ((pcVar1[3] != '+' && ((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0)))))\\n       ))) || (((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0 &&\\n               ((*(byte *)(pcVar1[4] + 0x134f) & 2) == 0)))) {\\n    DAT_2679_17f2 = 1;\\n    DAT_2679_17f0 = 0;\\n    DAT_2679_17ee = 18000;\\n    FUN_1000_353f(DAT_2679_17e6,DAT_2679_17e8,0x17f7,0x2679);\\n    FUN_1000_353f(DAT_2679_17ea,_DAT_2679_17ec,0x17fb,0x2679);\\n    uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\\n  }\\n  else {\\n    FUN_1000_2bd6(DAT_2679_17ea,_DAT_2679_17ec,0,4);\\n    FUN_1000_362f(DAT_2679_17e6,DAT_2679_17e8,pcVar1,in_DX,3);\\n    *(undefined1 *)((int)_DAT_2679_17e6 + 3) = 0;\\n    FUN_1000_1f38(pcVar1 + 3,in_DX);\\n    uVar4 = FUN_1000_079f();\\n    DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\\n    DAT_2679_17ee = (undefined2)uVar4;\\n    DAT_2679_17f2 = 0;\\n    for (iVar3 = 3; pcVar1[iVar3] != '\\\\0'; iVar3 = iVar3 + 1) {\\n      if ((*(byte *)(pcVar1[iVar3] + 0x134f) & 0xc) != 0) {\\n        uVar2 = FUN_1000_35ad(pcVar1 + iVar3,in_DX);\\n        uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\\n        if (((2 < uVar2) &&\\n            (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\\n            (*(byte *)(pcVar1[iVar3 + 1] + 0x134f) & 0xc) != 0)) &&\\n           (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\\n           (*(byte *)(pcVar1[iVar3 + 2] + 0x134f) & 0xc) != 0)) {\\n          FUN_1000_362f(DAT_2679_17ea,_DAT_2679_17ec,pcVar1 + iVar3,in_DX,3);\\n          *(undefined1 *)((int)_DAT_2679_17ea + 3) = 0;\\n          uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\\n          DAT_2679_17f2 = 1;\\n        }\\n        break;\\n      }\\n    }\\n  }\\n  DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\\n  DAT_2679_17ee = (undefined2)uVar4;\\n  return;\\n}\\n\\n\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.\",\"External functions and functions without an analyzable body return null; other decompiler failures remain explicit.\",\"DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.\",\"Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_93a5e47c3ccbcb2e554cfd0a05210162e2021a4253beb0c0bbe7d5a2c2cf27dc",
+    "subject": {
+      "name": "SNAKE.EXE",
+      "digest": {
+        "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821"
+      },
+      "local_path": "/workspace/scratch/488b0609771f/work/original/SNAKE.EXE",
+      "format": "dos-mz",
+      "architecture": "x86"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "dos-mz",
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "function-body-call-coverage-v5",
+        "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-without-synthetic-entry-v2",
+        "function_boundary_observations": "ghidra-function-boundary-limitations-v4",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "load_image_evidence": "independent-mz-mapping-relocations-v2",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "MzLoader",
+        "language_id": "x86:LE:16:Real Mode",
+        "compiler_spec_id": "default",
+        "load_segment": "0x1000",
+        "address_coordinates": "linear-byte-offset",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "00872daa045ec4c4f503e0aa00aa9e560f42b5c7fcdcd08e54830338c2ca16b7"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x1398e"
+    },
+    "raw_result": {
+      "value": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nvoid __cdecl16far FUN_1000_398e(void)\n\n{\n  char *pcVar1;\n  uint uVar2;\n  int in_DX;\n  int iVar3;\n  undefined4 uVar4;\n  undefined4 local_6;\n  \n  pcVar1 = (char *)FUN_1000_2b1e(0x17f4,0x2679);\n  local_6 = (char *)CONCAT22(in_DX,pcVar1);\n  if (((((pcVar1 == (char *)0x0 && in_DX == 0) || (uVar2 = FUN_1000_35ad(pcVar1,in_DX), uVar2 < 4))\n       || ((*(byte *)(*local_6 + 0x134f) & 0xc) == 0)) ||\n      ((((*(byte *)(pcVar1[1] + 0x134f) & 0xc) == 0 || ((*(byte *)(pcVar1[2] + 0x134f) & 0xc) == 0))\n       || ((pcVar1[3] != '-' && ((pcVar1[3] != '+' && ((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0)))))\n       ))) || (((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0 &&\n               ((*(byte *)(pcVar1[4] + 0x134f) & 2) == 0)))) {\n    DAT_2679_17f2 = 1;\n    DAT_2679_17f0 = 0;\n    DAT_2679_17ee = 18000;\n    FUN_1000_353f(DAT_2679_17e6,DAT_2679_17e8,0x17f7,0x2679);\n    FUN_1000_353f(DAT_2679_17ea,_DAT_2679_17ec,0x17fb,0x2679);\n    uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\n  }\n  else {\n    FUN_1000_2bd6(DAT_2679_17ea,_DAT_2679_17ec,0,4);\n    FUN_1000_362f(DAT_2679_17e6,DAT_2679_17e8,pcVar1,in_DX,3);\n    *(undefined1 *)((int)_DAT_2679_17e6 + 3) = 0;\n    FUN_1000_1f38(pcVar1 + 3,in_DX);\n    uVar4 = FUN_1000_079f();\n    DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\n    DAT_2679_17ee = (undefined2)uVar4;\n    DAT_2679_17f2 = 0;\n    for (iVar3 = 3; pcVar1[iVar3] != '\\0'; iVar3 = iVar3 + 1) {\n      if ((*(byte *)(pcVar1[iVar3] + 0x134f) & 0xc) != 0) {\n        uVar2 = FUN_1000_35ad(pcVar1 + iVar3,in_DX);\n        uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\n        if (((2 < uVar2) &&\n            (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\n            (*(byte *)(pcVar1[iVar3 + 1] + 0x134f) & 0xc) != 0)) &&\n           (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\n           (*(byte *)(pcVar1[iVar3 + 2] + 0x134f) & 0xc) != 0)) {\n          FUN_1000_362f(DAT_2679_17ea,_DAT_2679_17ec,pcVar1 + iVar3,in_DX,3);\n          *(undefined1 *)((int)_DAT_2679_17ea + 3) = 0;\n          uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\n          DAT_2679_17f2 = 1;\n        }\n        break;\n      }\n    }\n  }\n  DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\n  DAT_2679_17ee = (undefined2)uVar4;\n  return;\n}\n\n",
+      "limitations": []
+    },
+    "normalized_result": "\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\n\nvoid __cdecl16far FUN_1000_398e(void)\n\n{\n  char *pcVar1;\n  uint uVar2;\n  int in_DX;\n  int iVar3;\n  undefined4 uVar4;\n  undefined4 local_6;\n  \n  pcVar1 = (char *)FUN_1000_2b1e(0x17f4,0x2679);\n  local_6 = (char *)CONCAT22(in_DX,pcVar1);\n  if (((((pcVar1 == (char *)0x0 && in_DX == 0) || (uVar2 = FUN_1000_35ad(pcVar1,in_DX), uVar2 < 4))\n       || ((*(byte *)(*local_6 + 0x134f) & 0xc) == 0)) ||\n      ((((*(byte *)(pcVar1[1] + 0x134f) & 0xc) == 0 || ((*(byte *)(pcVar1[2] + 0x134f) & 0xc) == 0))\n       || ((pcVar1[3] != '-' && ((pcVar1[3] != '+' && ((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0)))))\n       ))) || (((*(byte *)(pcVar1[3] + 0x134f) & 2) == 0 &&\n               ((*(byte *)(pcVar1[4] + 0x134f) & 2) == 0)))) {\n    DAT_2679_17f2 = 1;\n    DAT_2679_17f0 = 0;\n    DAT_2679_17ee = 18000;\n    FUN_1000_353f(DAT_2679_17e6,DAT_2679_17e8,0x17f7,0x2679);\n    FUN_1000_353f(DAT_2679_17ea,_DAT_2679_17ec,0x17fb,0x2679);\n    uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\n  }\n  else {\n    FUN_1000_2bd6(DAT_2679_17ea,_DAT_2679_17ec,0,4);\n    FUN_1000_362f(DAT_2679_17e6,DAT_2679_17e8,pcVar1,in_DX,3);\n    *(undefined1 *)((int)_DAT_2679_17e6 + 3) = 0;\n    FUN_1000_1f38(pcVar1 + 3,in_DX);\n    uVar4 = FUN_1000_079f();\n    DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\n    DAT_2679_17ee = (undefined2)uVar4;\n    DAT_2679_17f2 = 0;\n    for (iVar3 = 3; pcVar1[iVar3] != '\\0'; iVar3 = iVar3 + 1) {\n      if ((*(byte *)(pcVar1[iVar3] + 0x134f) & 0xc) != 0) {\n        uVar2 = FUN_1000_35ad(pcVar1 + iVar3,in_DX);\n        uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\n        if (((2 < uVar2) &&\n            (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\n            (*(byte *)(pcVar1[iVar3 + 1] + 0x134f) & 0xc) != 0)) &&\n           (uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee),\n           (*(byte *)(pcVar1[iVar3 + 2] + 0x134f) & 0xc) != 0)) {\n          FUN_1000_362f(DAT_2679_17ea,_DAT_2679_17ec,pcVar1 + iVar3,in_DX,3);\n          *(undefined1 *)((int)_DAT_2679_17ea + 3) = 0;\n          uVar4 = CONCAT22(DAT_2679_17f0,DAT_2679_17ee);\n          DAT_2679_17f2 = 1;\n        }\n        break;\n      }\n    }\n  }\n  DAT_2679_17f0 = (undefined2)((ulong)uVar4 >> 0x10);\n  DAT_2679_17ee = (undefined2)uVar4;\n  return;\n}\n\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.",
+      "Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "globals": [
+    {
+      "name": "g_40c0",
+      "omf_symbol": "_g_40c0",
+      "address": "1679:40C0",
+      "declaration": "extern DriverEntry g_40c0;",
+      "extent": 4,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_40c4",
+      "omf_symbol": "_g_40c4",
+      "address": "1679:40C4",
+      "declaration": "extern DriverEntry g_40c4;",
+      "extent": 4,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_0e4c",
+      "omf_symbol": "_g_0e4c",
+      "address": "1679:0E4C",
+      "declaration": "extern char g_0e4c[];",
+      "extent": 3,
+      "storage": "initialized",
+      "initializer_hex": "726200"
+    },
+    {
+      "name": "g_0e4f",
+      "omf_symbol": "_g_0e4f",
+      "address": "1679:0E4F",
+      "declaration": "extern char g_0e4f[];",
+      "extent": 21,
+      "storage": "initialized",
+      "initializer_hex": "67616d65206e6f742066756c6c2e2066696c652000"
+    },
+    {
+      "name": "g_0e64",
+      "omf_symbol": "_g_0e64",
+      "address": "1679:0E64",
+      "declaration": "extern char g_0e64[];",
+      "extent": 16,
+      "storage": "initialized",
+      "initializer_hex": "77726f6e672067616d652066696c6500"
+    },
+    {
+      "name": "g_0e74",
+      "omf_symbol": "_g_0e74",
+      "address": "1679:0E74",
+      "declaration": "extern char g_0e74[];",
+      "extent": 3,
+      "storage": "initialized",
+      "initializer_hex": "776200"
+    },
+    {
+      "name": "g_0e78",
+      "omf_symbol": "_g_0e78",
+      "address": "1679:0E78",
+      "declaration": "extern char g_0e78[];",
+      "extent": 16,
+      "storage": "initialized",
+      "initializer_hex": "6e6f742066726565206d656d6f727900"
+    },
+    {
+      "name": "g_0e88",
+      "omf_symbol": "_g_0e88",
+      "address": "1679:0E88",
+      "declaration": "extern char g_0e88[];",
+      "extent": 23,
+      "storage": "initialized",
+      "initializer_hex": "6572726f7220696e20616c6c6f636d656d626c6f636b00"
+    }
+  ],
+  "compiler_generated_data": []
+}

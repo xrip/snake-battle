@@ -1,0 +1,58 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/NUMBER.OBJ",
+  "object_sha256": "b98d3eb50ff877a16d5d0319a609834430647c9efea166276d8ea51b7f9f37fb",
+  "module": "number.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3382,
+    "image_offset": 95430,
+    "address": "1679:0D36"
+  },
+  "file_offset": 99526,
+  "object_size": 4,
+  "expected_size": 4,
+  "public_bindings": [
+    {
+      "name": "_fmt_number_format",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3382,
+        "image_offset": 95430,
+        "address": "1679:0D36"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3382,
+        "image_offset": 95430,
+        "address": "1679:0D36"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      4
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "c13936bf4a9afd3983348878302f727d21fc06de9ebb93beda40b5de0b70d0bb",
+  "original_sha256": "c13936bf4a9afd3983348878302f727d21fc06de9ebb93beda40b5de0b70d0bb",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

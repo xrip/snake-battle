@@ -1,0 +1,7 @@
+Borland C++  Version 3.1 Copyright (c) 1992 Borland International
+files.c:
+Warning files.c 241: Unreachable code in function fmt_edit
+Warning files.c 256: Unreachable code in function fmt_edit
+Warning files.c 410: 'previous' is assigned a value that is never used in function fmt_save
+
+	Available memory 4099136

@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+    "BLO.C": "05c0d2b7ddbe28aa03ce3dad9af7fa2da2693781d6f3a18cb1762c45ced1d030",
+    "PARA.C": "818a52c67b3e7a27b575afa6b7fc1a58f6b959c98c280c10f17655eb758d0e94",
+    "CHUNK.C": "2422f90e93e5621043653e3267fae6f36788404b534a721507ccdea5027748c7"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G-",
+  "seconds": 1.213,
+  "files": [
+    "BLO.C",
+    "CHUNK.C",
+    "PARA.C"
+  ]
+}

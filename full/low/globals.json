@@ -1,0 +1,184 @@
+{
+  "globals": [
+    {
+      "name": "g_0d3a",
+      "omf_symbol": "_g_0d3a",
+      "address": "1679:0D3A",
+      "declaration": "extern char g_0d3a[],g_0d3e[],g_0d4f[],g_0d57[],g_0d5e[],g_0d64[];",
+      "extent": 4,
+      "storage": "initialized",
+      "initializer_hex": "25730a00"
+    },
+    {
+      "name": "g_0d3e",
+      "omf_symbol": "_g_0d3e",
+      "address": "1679:0D3E",
+      "declaration": "extern char g_0d3a[],g_0d3e[],g_0d4f[],g_0d57[],g_0d5e[],g_0d64[];",
+      "extent": 17,
+      "storage": "initialized",
+      "initializer_hex": "25732076696f6c6174696f6e3a20257300"
+    },
+    {
+      "name": "g_0d4f",
+      "omf_symbol": "_g_0d4f",
+      "address": "1679:0D4F",
+      "declaration": "extern char g_0d3a[],g_0d3e[],g_0d4f[],g_0d57[],g_0d5e[],g_0d64[];",
+      "extent": 8,
+      "storage": "initialized",
+      "initializer_hex": "5245515549524500"
+    },
+    {
+      "name": "g_0d57",
+      "omf_symbol": "_g_0d57",
+      "address": "1679:0D57",
+      "declaration": "extern char g_0d3a[],g_0d3e[],g_0d4f[],g_0d57[],g_0d5e[],g_0d64[];",
+      "extent": 7,
+      "storage": "initialized",
+      "initializer_hex": "454e5355524500"
+    },
+    {
+      "name": "g_0d5e",
+      "omf_symbol": "_g_0d5e",
+      "address": "1679:0D5E",
+      "declaration": "extern char g_0d3a[],g_0d3e[],g_0d4f[],g_0d57[],g_0d5e[],g_0d64[];",
+      "extent": 6,
+      "storage": "initialized",
+      "initializer_hex": "434845434b00"
+    },
+    {
+      "name": "g_0d64",
+      "omf_symbol": "_g_0d64",
+      "address": "1679:0D64",
+      "declaration": "extern char g_0d3a[],g_0d3e[],g_0d4f[],g_0d57[],g_0d5e[],g_0d64[];",
+      "extent": 18,
+      "storage": "initialized",
+      "initializer_hex": "457863657074696f6e203a20257320257300"
+    },
+    {
+      "name": "g_3ac0",
+      "omf_symbol": "_g_3ac0",
+      "address": "1679:3AC0",
+      "declaration": "extern int g_3ac0;",
+      "extent": 2,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_3ac2",
+      "omf_symbol": "_g_3ac2",
+      "address": "1679:3AC2",
+      "declaration": "extern char g_3ac2[256];",
+      "extent": 256,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_0d76",
+      "omf_symbol": "_g_0d76",
+      "address": "1679:0D76",
+      "declaration": "extern char *g_0d76;",
+      "extent": 4,
+      "storage": "initialized",
+      "initializer_hex": "840d7916"
+    },
+    {
+      "name": "g_0d7a",
+      "omf_symbol": "_g_0d7a",
+      "address": "1679:0D7A",
+      "declaration": "extern int g_0d7a,g_1af6;",
+      "extent": 2,
+      "storage": "initialized",
+      "initializer_hex": "0100"
+    },
+    {
+      "name": "g_1af6",
+      "omf_symbol": "_g_1af6",
+      "address": "1679:1AF6",
+      "declaration": "extern int g_0d7a,g_1af6;",
+      "extent": 2,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_0d8e",
+      "omf_symbol": "_g_0d8e",
+      "address": "1679:0D8E",
+      "declaration": "extern char g_0d8e[],g_0d91[],g_0d97[],g_0d9a[],g_0da4[],g_0dae[];",
+      "extent": 3,
+      "storage": "initialized",
+      "initializer_hex": "5c2a00"
+    },
+    {
+      "name": "g_0d91",
+      "omf_symbol": "_g_0d91",
+      "address": "1679:0D91",
+      "declaration": "extern char g_0d8e[],g_0d91[],g_0d97[],g_0d9a[],g_0da4[],g_0dae[];",
+      "extent": 6,
+      "storage": "initialized",
+      "initializer_hex": "2a2e65786500"
+    },
+    {
+      "name": "g_0d97",
+      "omf_symbol": "_g_0d97",
+      "address": "1679:0D97",
+      "declaration": "extern char g_0d8e[],g_0d91[],g_0d97[],g_0d9a[],g_0da4[],g_0dae[];",
+      "extent": 3,
+      "storage": "initialized",
+      "initializer_hex": "726200"
+    },
+    {
+      "name": "g_0d9a",
+      "omf_symbol": "_g_0d9a",
+      "address": "1679:0D9A",
+      "declaration": "extern char g_0d8e[],g_0d91[],g_0d97[],g_0d9a[],g_0da4[],g_0dae[];",
+      "extent": 10,
+      "storage": "initialized",
+      "initializer_hex": "70617373772e72757300"
+    },
+    {
+      "name": "g_0da4",
+      "omf_symbol": "_g_0da4",
+      "address": "1679:0DA4",
+      "declaration": "extern char g_0d8e[],g_0d91[],g_0d97[],g_0d9a[],g_0da4[],g_0dae[];",
+      "extent": 10,
+      "storage": "initialized",
+      "initializer_hex": "70617373772e656e6700"
+    },
+    {
+      "name": "g_0dae",
+      "omf_symbol": "_g_0dae",
+      "address": "1679:0DAE",
+      "declaration": "extern char g_0d8e[],g_0d91[],g_0d97[],g_0d9a[],g_0da4[],g_0dae[];",
+      "extent": 3,
+      "storage": "initialized",
+      "initializer_hex": "776200"
+    },
+    {
+      "name": "g_3bc2",
+      "omf_symbol": "_g_3bc2",
+      "address": "1679:3BC2",
+      "declaration": "extern Stamp g_3bc2[15];",
+      "extent": 120,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_3c3a",
+      "omf_symbol": "_g_3c3a",
+      "address": "1679:3C3A",
+      "declaration": "extern Challenge *g_3c3a;",
+      "extent": 4,
+      "storage": "BSS"
+    },
+    {
+      "name": "g_3c3e",
+      "omf_symbol": "_g_3c3e",
+      "address": "1679:3C3E",
+      "declaration": "extern ChallengeList *g_3c3e;",
+      "extent": 4,
+      "storage": "BSS"
+    }
+  ],
+  "compiler_generated_data": {
+    "address": "1679:0D7C",
+    "extent": 8,
+    "proof": "register_data.json",
+    "declaration": "static Stamp zero_stamp={0,0,0L};"
+  }
+}

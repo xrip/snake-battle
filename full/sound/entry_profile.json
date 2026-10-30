@@ -1,0 +1,1269 @@
+{
+  "counts": {
+    "known_entries": 157,
+    "odd_entries": 76,
+    "even_entries": 81,
+    "enter_entries": 120,
+    "enter_zero": 108,
+    "push_bp_mov_bp": 0
+  },
+  "entries": [
+    {
+      "offset": 12,
+      "address": "1341:000C",
+      "file_offset": 82972,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 30,
+      "address": "1341:001E",
+      "file_offset": 82990,
+      "odd": false,
+      "first": "call 0x1a7",
+      "prefix": "e88601cb"
+    },
+    {
+      "offset": 34,
+      "address": "1341:0022",
+      "file_offset": 82994,
+      "odd": false,
+      "first": "call 0x1cb",
+      "prefix": "e8a601cb"
+    },
+    {
+      "offset": 38,
+      "address": "1341:0026",
+      "file_offset": 82998,
+      "odd": false,
+      "first": "call 0x1d5",
+      "prefix": "e8ac01cb"
+    },
+    {
+      "offset": 42,
+      "address": "1341:002A",
+      "file_offset": 83002,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 57,
+      "address": "1341:0039",
+      "file_offset": 83017,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 72,
+      "address": "1341:0048",
+      "file_offset": 83032,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 87,
+      "address": "1341:0057",
+      "file_offset": 83047,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 116,
+      "address": "1341:0074",
+      "file_offset": 83076,
+      "odd": false,
+      "first": "pushaw ",
+      "prefix": "601e062e"
+    },
+    {
+      "offset": 180,
+      "address": "1341:00B4",
+      "file_offset": 83140,
+      "odd": false,
+      "first": "push ds",
+      "prefix": "1e06b808"
+    },
+    {
+      "offset": 231,
+      "address": "1341:00E7",
+      "file_offset": 83191,
+      "odd": true,
+      "first": "push ds",
+      "prefix": "1e33c0e6"
+    },
+    {
+      "offset": 254,
+      "address": "1341:00FE",
+      "file_offset": 83214,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 344,
+      "address": "1341:0158",
+      "file_offset": 83304,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 423,
+      "address": "1341:01A7",
+      "file_offset": 83383,
+      "odd": true,
+      "first": "mov ax, 1",
+      "prefix": "b80100a3"
+    },
+    {
+      "offset": 459,
+      "address": "1341:01CB",
+      "file_offset": 83419,
+      "odd": true,
+      "first": "mov word ptr [0xf2c], 1",
+      "prefix": "c7062c0f"
+    },
+    {
+      "offset": 469,
+      "address": "1341:01D5",
+      "file_offset": 83429,
+      "odd": true,
+      "first": "xor ax, ax",
+      "prefix": "33c0a32c"
+    },
+    {
+      "offset": 476,
+      "address": "1341:01DC",
+      "file_offset": 83436,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 535,
+      "address": "1341:0217",
+      "file_offset": 83495,
+      "odd": true,
+      "first": "mov ax, word ptr [0x413c]",
+      "prefix": "a13c4199"
+    },
+    {
+      "offset": 540,
+      "address": "1341:021C",
+      "file_offset": 83500,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 617,
+      "address": "1341:0269",
+      "file_offset": 83577,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 667,
+      "address": "1341:029B",
+      "file_offset": 83627,
+      "odd": true,
+      "first": "push si",
+      "prefix": "56e8090b"
+    },
+    {
+      "offset": 695,
+      "address": "1341:02B7",
+      "file_offset": 83655,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 740,
+      "address": "1341:02E4",
+      "file_offset": 83700,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1030,
+      "address": "1341:0406",
+      "file_offset": 83990,
+      "odd": false,
+      "first": "enter 4, 0",
+      "prefix": "c8040000"
+    },
+    {
+      "offset": 1174,
+      "address": "1341:0496",
+      "file_offset": 84134,
+      "odd": false,
+      "first": "push ax",
+      "prefix": "50510bdb"
+    },
+    {
+      "offset": 1208,
+      "address": "1341:04B8",
+      "file_offset": 84168,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1228,
+      "address": "1341:04CC",
+      "file_offset": 84188,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1241,
+      "address": "1341:04D9",
+      "file_offset": 84201,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1268,
+      "address": "1341:04F4",
+      "file_offset": 84228,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1341,
+      "address": "1341:053D",
+      "file_offset": 84301,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1374,
+      "address": "1341:055E",
+      "file_offset": 84334,
+      "odd": false,
+      "first": "mov ax, word ptr [0xf2e]",
+      "prefix": "a12e0f0b"
+    },
+    {
+      "offset": 1396,
+      "address": "1341:0574",
+      "file_offset": 84356,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1446,
+      "address": "1341:05A6",
+      "file_offset": 84406,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1512,
+      "address": "1341:05E8",
+      "file_offset": 84472,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1603,
+      "address": "1341:0643",
+      "file_offset": 84563,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1643,
+      "address": "1341:066B",
+      "file_offset": 84603,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1859,
+      "address": "1341:0743",
+      "file_offset": 84819,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1886,
+      "address": "1341:075E",
+      "file_offset": 84846,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1935,
+      "address": "1341:078F",
+      "file_offset": 84895,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 1962,
+      "address": "1341:07AA",
+      "file_offset": 84922,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 2041,
+      "address": "1341:07F9",
+      "file_offset": 85001,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 2068,
+      "address": "1341:0814",
+      "file_offset": 85028,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 2135,
+      "address": "1341:0857",
+      "file_offset": 85095,
+      "odd": true,
+      "first": "enter 0x14, 0",
+      "prefix": "c8140000"
+    },
+    {
+      "offset": 2548,
+      "address": "1341:09F4",
+      "file_offset": 85508,
+      "odd": false,
+      "first": "enter 0x10, 0",
+      "prefix": "c8100000"
+    },
+    {
+      "offset": 2862,
+      "address": "1341:0B2E",
+      "file_offset": 85822,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 2926,
+      "address": "1341:0B6E",
+      "file_offset": 85886,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 2942,
+      "address": "1341:0B7E",
+      "file_offset": 85902,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 3133,
+      "address": "1341:0C3D",
+      "file_offset": 86093,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 3267,
+      "address": "1341:0CC3",
+      "file_offset": 86227,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 3359,
+      "address": "1341:0D1F",
+      "file_offset": 86319,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 3496,
+      "address": "1341:0DA8",
+      "file_offset": 86456,
+      "odd": false,
+      "first": "xor ax, ax",
+      "prefix": "33c0a2f8"
+    },
+    {
+      "offset": 3513,
+      "address": "1341:0DB9",
+      "file_offset": 86473,
+      "odd": true,
+      "first": "enter 4, 0",
+      "prefix": "c8040000"
+    },
+    {
+      "offset": 3690,
+      "address": "1341:0E6A",
+      "file_offset": 86650,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 3708,
+      "address": "1341:0E7C",
+      "file_offset": 86668,
+      "odd": false,
+      "first": "enter 4, 0",
+      "prefix": "c8040000"
+    },
+    {
+      "offset": 4030,
+      "address": "1341:0FBE",
+      "file_offset": 86990,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4126,
+      "address": "1341:101E",
+      "file_offset": 87086,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4161,
+      "address": "1341:1041",
+      "file_offset": 87121,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4230,
+      "address": "1341:1086",
+      "file_offset": 87190,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4252,
+      "address": "1341:109C",
+      "file_offset": 87212,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4327,
+      "address": "1341:10E7",
+      "file_offset": 87287,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4376,
+      "address": "1341:1118",
+      "file_offset": 87336,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4429,
+      "address": "1341:114D",
+      "file_offset": 87389,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4482,
+      "address": "1341:1182",
+      "file_offset": 87442,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4535,
+      "address": "1341:11B7",
+      "file_offset": 87495,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4592,
+      "address": "1341:11F0",
+      "file_offset": 87552,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 4707,
+      "address": "1341:1263",
+      "file_offset": 87667,
+      "odd": true,
+      "first": "push di",
+      "prefix": "57568b36"
+    },
+    {
+      "offset": 4824,
+      "address": "1341:12D8",
+      "file_offset": 87784,
+      "odd": false,
+      "first": "enter 8, 0",
+      "prefix": "c8080000"
+    },
+    {
+      "offset": 5431,
+      "address": "1341:1537",
+      "file_offset": 88391,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 5599,
+      "address": "1341:15DF",
+      "file_offset": 88559,
+      "odd": true,
+      "first": "push di",
+      "prefix": "57bf5a41"
+    },
+    {
+      "offset": 5616,
+      "address": "1341:15F0",
+      "file_offset": 88576,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 5644,
+      "address": "1341:160C",
+      "file_offset": 88604,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 5674,
+      "address": "1341:162A",
+      "file_offset": 88634,
+      "odd": false,
+      "first": "enter 4, 0",
+      "prefix": "c8040000"
+    },
+    {
+      "offset": 5758,
+      "address": "1341:167E",
+      "file_offset": 88718,
+      "odd": false,
+      "first": "xor ax, ax",
+      "prefix": "33c0a2d2"
+    },
+    {
+      "offset": 5764,
+      "address": "1341:1684",
+      "file_offset": 88724,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 5797,
+      "address": "1341:16A5",
+      "file_offset": 88757,
+      "odd": true,
+      "first": "push di",
+      "prefix": "5756803e"
+    },
+    {
+      "offset": 5917,
+      "address": "1341:171D",
+      "file_offset": 88877,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 6075,
+      "address": "1341:17BB",
+      "file_offset": 89035,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 6140,
+      "address": "1341:17FC",
+      "file_offset": 89100,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 6206,
+      "address": "1341:183E",
+      "file_offset": 89166,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 6730,
+      "address": "1341:1A4A",
+      "file_offset": 89690,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 7497,
+      "address": "1341:1D49",
+      "file_offset": 90457,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 7533,
+      "address": "1341:1D6D",
+      "file_offset": 90493,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 7622,
+      "address": "1341:1DC6",
+      "file_offset": 90582,
+      "odd": false,
+      "first": "xor ax, ax",
+      "prefix": "33c0b900"
+    },
+    {
+      "offset": 7643,
+      "address": "1341:1DDB",
+      "file_offset": 90603,
+      "odd": true,
+      "first": "mov bx, 0x5580",
+      "prefix": "bb805533"
+    },
+    {
+      "offset": 7706,
+      "address": "1341:1E1A",
+      "file_offset": 90666,
+      "odd": false,
+      "first": "push di",
+      "prefix": "57568006"
+    },
+    {
+      "offset": 7811,
+      "address": "1341:1E83",
+      "file_offset": 90771,
+      "odd": true,
+      "first": "enter 2, 0",
+      "prefix": "c8020000"
+    },
+    {
+      "offset": 8098,
+      "address": "1341:1FA2",
+      "file_offset": 91058,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8140,
+      "address": "1341:1FCC",
+      "file_offset": 91100,
+      "odd": false,
+      "first": "push si",
+      "prefix": "56be004a"
+    },
+    {
+      "offset": 8164,
+      "address": "1341:1FE4",
+      "file_offset": 91124,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8362,
+      "address": "1341:20AA",
+      "file_offset": 91322,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8423,
+      "address": "1341:20E7",
+      "file_offset": 91383,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8450,
+      "address": "1341:2102",
+      "file_offset": 91410,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8489,
+      "address": "1341:2129",
+      "file_offset": 91449,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8556,
+      "address": "1341:216C",
+      "file_offset": 91516,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8610,
+      "address": "1341:21A2",
+      "file_offset": 91570,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8687,
+      "address": "1341:21EF",
+      "file_offset": 91647,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8713,
+      "address": "1341:2209",
+      "file_offset": 91673,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8751,
+      "address": "1341:222F",
+      "file_offset": 91711,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8823,
+      "address": "1341:2277",
+      "file_offset": 91783,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8868,
+      "address": "1341:22A4",
+      "file_offset": 91828,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8909,
+      "address": "1341:22CD",
+      "file_offset": 91869,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 8945,
+      "address": "1341:22F1",
+      "file_offset": 91905,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9050,
+      "address": "1341:235A",
+      "file_offset": 92010,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9169,
+      "address": "1341:23D1",
+      "file_offset": 92129,
+      "odd": true,
+      "first": "ret ",
+      "prefix": "c3c80000"
+    },
+    {
+      "offset": 9170,
+      "address": "1341:23D2",
+      "file_offset": 92130,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9342,
+      "address": "1341:247E",
+      "file_offset": 92302,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9481,
+      "address": "1341:2509",
+      "file_offset": 92441,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9532,
+      "address": "1341:253C",
+      "file_offset": 92492,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9575,
+      "address": "1341:2567",
+      "file_offset": 92535,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9620,
+      "address": "1341:2594",
+      "file_offset": 92580,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9703,
+      "address": "1341:25E7",
+      "file_offset": 92663,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9754,
+      "address": "1341:261A",
+      "file_offset": 92714,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9829,
+      "address": "1341:2665",
+      "file_offset": 92789,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9849,
+      "address": "1341:2679",
+      "file_offset": 92809,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9883,
+      "address": "1341:269B",
+      "file_offset": 92843,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9923,
+      "address": "1341:26C3",
+      "file_offset": 92883,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 9993,
+      "address": "1341:2709",
+      "file_offset": 92953,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10064,
+      "address": "1341:2750",
+      "file_offset": 93024,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10098,
+      "address": "1341:2772",
+      "file_offset": 93058,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10125,
+      "address": "1341:278D",
+      "file_offset": 93085,
+      "odd": true,
+      "first": "enter 4, 0",
+      "prefix": "c8040000"
+    },
+    {
+      "offset": 10429,
+      "address": "1341:28BD",
+      "file_offset": 93389,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10459,
+      "address": "1341:28DB",
+      "file_offset": 93419,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10491,
+      "address": "1341:28FB",
+      "file_offset": 93451,
+      "odd": true,
+      "first": "enter 2, 0",
+      "prefix": "c8020000"
+    },
+    {
+      "offset": 10657,
+      "address": "1341:29A1",
+      "file_offset": 93617,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10846,
+      "address": "1341:2A5E",
+      "file_offset": 93806,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10887,
+      "address": "1341:2A87",
+      "file_offset": 93847,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 10969,
+      "address": "1341:2AD9",
+      "file_offset": 93929,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11011,
+      "address": "1341:2B03",
+      "file_offset": 93971,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11071,
+      "address": "1341:2B3F",
+      "file_offset": 94031,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11116,
+      "address": "1341:2B6C",
+      "file_offset": 94076,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11204,
+      "address": "1341:2BC4",
+      "file_offset": 94164,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11254,
+      "address": "1341:2BF6",
+      "file_offset": 94214,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11353,
+      "address": "1341:2C59",
+      "file_offset": 94313,
+      "odd": true,
+      "first": "enter 0xc, 0",
+      "prefix": "c80c0000"
+    },
+    {
+      "offset": 11571,
+      "address": "1341:2D33",
+      "file_offset": 94531,
+      "odd": true,
+      "first": "enter 2, 0",
+      "prefix": "c8020000"
+    },
+    {
+      "offset": 11731,
+      "address": "1341:2DD3",
+      "file_offset": 94691,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11898,
+      "address": "1341:2E7A",
+      "file_offset": 94858,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 11931,
+      "address": "1341:2E9B",
+      "file_offset": 94891,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12104,
+      "address": "1341:2F48",
+      "file_offset": 95064,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12143,
+      "address": "1341:2F6F",
+      "file_offset": 95103,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12180,
+      "address": "1341:2F94",
+      "file_offset": 95140,
+      "odd": false,
+      "first": "add ah, 0xb0",
+      "prefix": "80c4b0e8"
+    },
+    {
+      "offset": 12192,
+      "address": "1341:2FA0",
+      "file_offset": 95152,
+      "odd": false,
+      "first": "add ah, 0xb0",
+      "prefix": "80c4b0e8"
+    },
+    {
+      "offset": 12209,
+      "address": "1341:2FB1",
+      "file_offset": 95169,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12364,
+      "address": "1341:304C",
+      "file_offset": 95324,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12484,
+      "address": "1341:30C4",
+      "file_offset": 95444,
+      "odd": false,
+      "first": "mov ch, bl",
+      "prefix": "8aebd1e0"
+    },
+    {
+      "offset": 12587,
+      "address": "1341:312B",
+      "file_offset": 95547,
+      "odd": true,
+      "first": "push ax",
+      "prefix": "50535152"
+    },
+    {
+      "offset": 12644,
+      "address": "1341:3164",
+      "file_offset": 95604,
+      "odd": false,
+      "first": "push ax",
+      "prefix": "50535152"
+    },
+    {
+      "offset": 12654,
+      "address": "1341:316E",
+      "file_offset": 95614,
+      "odd": false,
+      "first": "push bx",
+      "prefix": "5332ff8a"
+    },
+    {
+      "offset": 12665,
+      "address": "1341:3179",
+      "file_offset": 95625,
+      "odd": true,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12714,
+      "address": "1341:31AA",
+      "file_offset": 95674,
+      "odd": false,
+      "first": "enter 0, 0",
+      "prefix": "c8000000"
+    },
+    {
+      "offset": 12810,
+      "address": "1341:320A",
+      "file_offset": 95770,
+      "odd": false,
+      "first": "mov ax, 0x460",
+      "prefix": "b86004e8"
+    },
+    {
+      "offset": 12931,
+      "address": "1341:3283",
+      "file_offset": 95891,
+      "odd": true,
+      "first": "push si",
+      "prefix": "56beda42"
+    },
+    {
+      "offset": 12975,
+      "address": "1341:32AF",
+      "file_offset": 95935,
+      "odd": true,
+      "first": "mov bx, 0x42fe",
+      "prefix": "bbfe42b9"
+    },
+    {
+      "offset": 13007,
+      "address": "1341:32CF",
+      "file_offset": 95967,
+      "odd": true,
+      "first": "xor ax, ax",
+      "prefix": "33c0a3ce"
+    },
+    {
+      "offset": 13035,
+      "address": "1341:32EB",
+      "file_offset": 95995,
+      "odd": true,
+      "first": "mov bx, 0x45d4",
+      "prefix": "bbd445b9"
+    },
+    {
+      "offset": 13059,
+      "address": "1341:3303",
+      "file_offset": 96019,
+      "odd": true,
+      "first": "push si",
+      "prefix": "56be004a"
+    },
+    {
+      "offset": 13103,
+      "address": "1341:332F",
+      "file_offset": 96063,
+      "odd": true,
+      "first": "push si",
+      "prefix": "5633f633"
+    },
+    {
+      "offset": 13154,
+      "address": "1341:3362",
+      "file_offset": 96114,
+      "odd": false,
+      "first": "xor ax, ax",
+      "prefix": "33c0a2f8"
+    }
+  ],
+  "scope": "Known native entry points; includes one-byte hardware stubs and register-ABI helpers, not an authorial source/module map."
+}

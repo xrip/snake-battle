@@ -1,0 +1,58 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/TICKS.OBJ",
+  "object_sha256": "65a6849ee6bd0b7719ea133ed7ccb0d357d26d682a13321cbab36064b0b99c46",
+  "module": "ticks.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3378,
+    "image_offset": 95426,
+    "address": "1679:0D32"
+  },
+  "file_offset": 99522,
+  "object_size": 4,
+  "expected_size": 4,
+  "public_bindings": [
+    {
+      "name": "_tick_pointer",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      4
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "17614e8421e7701151c2f7eaa5f1bb33236764a896aa0cd3d609af41600910a8",
+  "original_sha256": "17614e8421e7701151c2f7eaa5f1bb33236764a896aa0cd3d609af41600910a8",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

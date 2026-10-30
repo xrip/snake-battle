@@ -1,0 +1,57 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/control_asm/SNDWAIT.OBJ",
+  "object_sha256": "5e4bbb63127b8651f7b7997427ea3075309fa52830d8f1bc7c15e5d9082489b4",
+  "module": "SNDWAIT.ASM",
+  "segment_index": 1,
+  "segment_name": "_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4929,
+    "offset": 1174,
+    "image_offset": 80038,
+    "address": "1341:0496"
+  },
+  "file_offset": 84134,
+  "object_size": 34,
+  "expected_size": 34,
+  "public_bindings": [
+    {
+      "name": "_snd_0496",
+      "object_offset": 0,
+      "expected": {
+        "segment": 4929,
+        "offset": 1174,
+        "image_offset": 80038,
+        "address": "1341:0496"
+      },
+      "binding": {
+        "segment": 4929,
+        "offset": 1174,
+        "image_offset": 80038,
+        "address": "1341:0496"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      34
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "665bb7d0b8ad29115fa41730f3b208d5513836c356bb55548fc0c4755991941d",
+  "original_sha256": "665bb7d0b8ad29115fa41730f3b208d5513836c356bb55548fc0c4755991941d",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

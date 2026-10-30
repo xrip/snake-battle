@@ -1,0 +1,508 @@
+{
+  "offset_convention": "driver-relative offset, original-file equivalent = 0xFD66 + offset; initialized runtime CS base = load_image + 0xED50",
+  "plain_block_sha256": "cb9278a159438196a3160d0bd6608d96f1d4e16017005e159dd6ae1aedd3e3ad",
+  "size": 12368,
+  "range_coverage_exact": true,
+  "ranges": [
+    {
+      "start": 0,
+      "end": 3,
+      "length": 3,
+      "start_hex": "0000",
+      "end_hex": "0003",
+      "kind": "code",
+      "name": "protected_entry",
+      "instruction_count": 1
+    },
+    {
+      "start": 3,
+      "end": 176,
+      "length": 173,
+      "start_hex": "0003",
+      "end_hex": "00B0",
+      "kind": "header",
+      "name": "protected_header_and_identity"
+    },
+    {
+      "start": 176,
+      "end": 258,
+      "length": 82,
+      "start_hex": "00B0",
+      "end_hex": "0102",
+      "kind": "code",
+      "name": "dispatch_pascal",
+      "instruction_count": 44
+    },
+    {
+      "start": 258,
+      "end": 276,
+      "length": 18,
+      "start_hex": "0102",
+      "end_hex": "0114",
+      "kind": "word_table",
+      "name": "dispatch_targets",
+      "words": [
+        10100,
+        9696,
+        11104,
+        11264,
+        10868,
+        10488,
+        11456,
+        11536,
+        11812
+      ]
+    },
+    {
+      "start": 276,
+      "end": 294,
+      "length": 18,
+      "start_hex": "0114",
+      "end_hex": "0126",
+      "kind": "word_table",
+      "name": "argument_cleanup_bytes",
+      "words": [
+        10,
+        14,
+        20,
+        26,
+        10,
+        12,
+        12,
+        10,
+        8
+      ]
+    },
+    {
+      "start": 294,
+      "end": 312,
+      "length": 18,
+      "start_hex": "0126",
+      "end_hex": "0138",
+      "kind": "word_table",
+      "name": "command_local_bytes",
+      "words": [
+        12,
+        30,
+        0,
+        4,
+        0,
+        0,
+        0,
+        14,
+        6
+      ]
+    },
+    {
+      "start": 312,
+      "end": 316,
+      "length": 4,
+      "start_hex": "0138",
+      "end_hex": "013C",
+      "kind": "code",
+      "name": "return_error_2",
+      "instruction_count": 2
+    },
+    {
+      "start": 316,
+      "end": 322,
+      "length": 6,
+      "start_hex": "013C",
+      "end_hex": "0142",
+      "kind": "workspace",
+      "name": "state_words"
+    },
+    {
+      "start": 322,
+      "end": 1122,
+      "length": 800,
+      "start_hex": "0142",
+      "end_hex": "0462",
+      "kind": "generated_code_buffer",
+      "name": "scanline_scratch_800_nops",
+      "instruction_count": 800
+    },
+    {
+      "start": 1122,
+      "end": 1345,
+      "length": 223,
+      "start_hex": "0462",
+      "end_hex": "0541",
+      "kind": "code",
+      "name": "graphics_controller_helpers",
+      "instruction_count": 99
+    },
+    {
+      "start": 1345,
+      "end": 2559,
+      "length": 1214,
+      "start_hex": "0541",
+      "end_hex": "09FF",
+      "kind": "code_templates",
+      "name": "specialized_plane_operations",
+      "instruction_count": 549
+    },
+    {
+      "start": 2559,
+      "end": 8388,
+      "length": 5829,
+      "start_hex": "09FF",
+      "end_hex": "20C4",
+      "kind": "code",
+      "name": "scanline_emitter_and_four_builders",
+      "instruction_count": 2420
+    },
+    {
+      "start": 8388,
+      "end": 8396,
+      "length": 8,
+      "start_hex": "20C4",
+      "end_hex": "20CC",
+      "kind": "word_table",
+      "name": "mask_combination_builders",
+      "words": [
+        2588,
+        3975,
+        5422,
+        6875
+      ]
+    },
+    {
+      "start": 8396,
+      "end": 8466,
+      "length": 70,
+      "start_hex": "20CC",
+      "end_hex": "2112",
+      "kind": "code",
+      "name": "generic_blit_rows",
+      "instruction_count": 34
+    },
+    {
+      "start": 8466,
+      "end": 8511,
+      "length": 45,
+      "start_hex": "2112",
+      "end_hex": "213F",
+      "kind": "code_templates",
+      "name": "plain_copy_fragments",
+      "instruction_count": 25
+    },
+    {
+      "start": 8511,
+      "end": 8847,
+      "length": 336,
+      "start_hex": "213F",
+      "end_hex": "228F",
+      "kind": "code",
+      "name": "plain_blit_builder_and_rows",
+      "instruction_count": 152
+    },
+    {
+      "start": 8847,
+      "end": 8894,
+      "length": 47,
+      "start_hex": "228F",
+      "end_hex": "22BE",
+      "kind": "code_templates",
+      "name": "ega_mask_fragments",
+      "instruction_count": 28
+    },
+    {
+      "start": 8894,
+      "end": 9664,
+      "length": 770,
+      "start_hex": "22BE",
+      "end_hex": "25C0",
+      "kind": "code",
+      "name": "ega_two_pass_masked_blit",
+      "instruction_count": 343
+    },
+    {
+      "start": 9664,
+      "end": 9696,
+      "length": 32,
+      "start_hex": "25C0",
+      "end_hex": "25E0",
+      "kind": "word_table",
+      "name": "blit_kind_table",
+      "words": [
+        8511,
+        8396,
+        8511,
+        8396,
+        8396,
+        8396,
+        8396,
+        8396,
+        8511,
+        9592,
+        8511,
+        8396,
+        8396,
+        8396,
+        8396,
+        8396
+      ]
+    },
+    {
+      "start": 9696,
+      "end": 10083,
+      "length": 387,
+      "start_hex": "25E0",
+      "end_hex": "2763",
+      "kind": "code",
+      "name": "blit_clip_and_dispatch",
+      "instruction_count": 163
+    },
+    {
+      "start": 10083,
+      "end": 10096,
+      "length": 13,
+      "start_hex": "2763",
+      "end_hex": "2770",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 10096,
+      "end": 10100,
+      "length": 4,
+      "start_hex": "2770",
+      "end_hex": "2774",
+      "kind": "word_table",
+      "name": "create_mask_storage_table",
+      "words": [
+        10240,
+        10471
+      ]
+    },
+    {
+      "start": 10100,
+      "end": 10472,
+      "length": 372,
+      "start_hex": "2774",
+      "end_hex": "28E8",
+      "kind": "code",
+      "name": "create_mask",
+      "instruction_count": 168
+    },
+    {
+      "start": 10472,
+      "end": 10480,
+      "length": 8,
+      "start_hex": "28E8",
+      "end_hex": "28F0",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 10480,
+      "end": 10488,
+      "length": 8,
+      "start_hex": "28F0",
+      "end_hex": "28F8",
+      "kind": "word_table",
+      "name": "put_pixel_storage_table",
+      "words": [
+        10623,
+        10656,
+        10572,
+        10713
+      ]
+    },
+    {
+      "start": 10488,
+      "end": 10861,
+      "length": 373,
+      "start_hex": "28F8",
+      "end_hex": "2A6D",
+      "kind": "code",
+      "name": "put_pixel",
+      "instruction_count": 179
+    },
+    {
+      "start": 10861,
+      "end": 10864,
+      "length": 3,
+      "start_hex": "2A6D",
+      "end_hex": "2A70",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 10864,
+      "end": 10868,
+      "length": 4,
+      "start_hex": "2A70",
+      "end_hex": "2A74",
+      "kind": "word_table",
+      "name": "get_pixel_storage_table",
+      "words": [
+        10989,
+        10961
+      ]
+    },
+    {
+      "start": 10868,
+      "end": 11090,
+      "length": 222,
+      "start_hex": "2A74",
+      "end_hex": "2B52",
+      "kind": "code",
+      "name": "get_pixel",
+      "instruction_count": 111
+    },
+    {
+      "start": 11090,
+      "end": 11104,
+      "length": 14,
+      "start_hex": "2B52",
+      "end_hex": "2B60",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 11104,
+      "end": 11251,
+      "length": 147,
+      "start_hex": "2B60",
+      "end_hex": "2BF3",
+      "kind": "code",
+      "name": "initialize_image",
+      "instruction_count": 63
+    },
+    {
+      "start": 11251,
+      "end": 11264,
+      "length": 13,
+      "start_hex": "2BF3",
+      "end_hex": "2C00",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 11264,
+      "end": 11448,
+      "length": 184,
+      "start_hex": "2C00",
+      "end_hex": "2CB8",
+      "kind": "code",
+      "name": "create_image_view",
+      "instruction_count": 81
+    },
+    {
+      "start": 11448,
+      "end": 11456,
+      "length": 8,
+      "start_hex": "2CB8",
+      "end_hex": "2CC0",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 11456,
+      "end": 11527,
+      "length": 71,
+      "start_hex": "2CC0",
+      "end_hex": "2D07",
+      "kind": "code",
+      "name": "measure_image_paragraphs",
+      "instruction_count": 33
+    },
+    {
+      "start": 11527,
+      "end": 11536,
+      "length": 9,
+      "start_hex": "2D07",
+      "end_hex": "2D10",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 11536,
+      "end": 11799,
+      "length": 263,
+      "start_hex": "2D10",
+      "end_hex": "2E17",
+      "kind": "code",
+      "name": "mirror_image_x",
+      "instruction_count": 118
+    },
+    {
+      "start": 11799,
+      "end": 11808,
+      "length": 9,
+      "start_hex": "2E17",
+      "end_hex": "2E20",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 11808,
+      "end": 11812,
+      "length": 4,
+      "start_hex": "2E20",
+      "end_hex": "2E24",
+      "kind": "word_table",
+      "name": "fill_storage_table",
+      "words": [
+        11936,
+        12039
+      ]
+    },
+    {
+      "start": 11812,
+      "end": 12131,
+      "length": 319,
+      "start_hex": "2E24",
+      "end_hex": "2F63",
+      "kind": "code",
+      "name": "fill_image",
+      "instruction_count": 151
+    },
+    {
+      "start": 12131,
+      "end": 12144,
+      "length": 13,
+      "start_hex": "2F63",
+      "end_hex": "2F70",
+      "kind": "zero_padding",
+      "name": "align"
+    },
+    {
+      "start": 12144,
+      "end": 12240,
+      "length": 96,
+      "start_hex": "2F70",
+      "end_hex": "2FD0",
+      "kind": "code",
+      "name": "relocate_and_install",
+      "instruction_count": 42
+    },
+    {
+      "start": 12240,
+      "end": 12367,
+      "length": 127,
+      "start_hex": "2FD0",
+      "end_hex": "304F",
+      "kind": "code",
+      "name": "decrypt_wrapper",
+      "instruction_count": 63
+    },
+    {
+      "start": 12367,
+      "end": 12368,
+      "length": 1,
+      "start_hex": "304F",
+      "end_hex": "3050",
+      "kind": "trailing_data",
+      "name": "checksum_extent_final_byte"
+    }
+  ],
+  "notes": [
+    "The final byte304F is data, not a MOV SI opcode: decrypt wrapper ends with RETF304E and the next separate C module begins at3050 (11DB:0006).",
+    "Header word+9 equals1828; the checksum input length is3050 bytes, including byte304F=BE.",
+    "NOP214E is unreachable alignment within code. Checksum error branch301C..3020 is unreachable in this input because301A is unconditional JMP.",
+    "Template fragments are decoded as instructions for assembly. They execute only after copying and patching into0142 scratch. Code/template boundaries do not imply original source text identity."
+  ]
+}

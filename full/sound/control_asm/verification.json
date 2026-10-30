@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "assembler": "Borland TASM 3.1",
+  "flags": "/ml",
+  "source_hashes": {
+    "SNDIRQ.ASM": "f3e394d594b50bb2c446801abaa85d96ddfc95961e781c2becb8ba75a556d641",
+    "SNDWAIT.ASM": "47b98af359e5e74844c6a2228cf1765d7f077600ba13e6969bc81fca810fd2b5",
+    "SNDMEM.ASM": "104caee71165ab74316f80830a2359e917a8970a967c37832734de3189418fe9",
+    "SNDTAIL.ASM": "fe485d527e81b331a5e1ee7bf3b21ce83548685d60dff3c9399fed4844724a5f"
+  },
+  "verification": [
+    {
+      "name": "SNDIRQ",
+      "expected_bytes": 144,
+      "compiled_bytes": 144,
+      "passed": true,
+      "differences": 0,
+      "unresolved": []
+    },
+    {
+      "name": "SNDWAIT",
+      "expected_bytes": 34,
+      "compiled_bytes": 34,
+      "passed": true,
+      "differences": 0,
+      "unresolved": []
+    },
+    {
+      "name": "SNDMEM",
+      "expected_bytes": 33,
+      "compiled_bytes": 33,
+      "passed": true,
+      "differences": 0,
+      "unresolved": []
+    },
+    {
+      "name": "SNDTAIL",
+      "expected_bytes": 447,
+      "compiled_bytes": 447,
+      "passed": true,
+      "differences": 0,
+      "unresolved": []
+    }
+  ],
+  "all_verified": true
+}

@@ -1,0 +1,57 @@
+{
+  "object": "work/retrace/RETRACE.OBJ",
+  "object_sha256": "5ee1436f8f0cc21c98d8ffa3cac20f03255d75c78d5603e90ad803b886df4ede",
+  "module": "retrace.c",
+  "segment_index": 1,
+  "segment_name": "RETRACE_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 3795,
+    "offset": 0,
+    "image_offset": 60720,
+    "address": "0ED3:0000"
+  },
+  "file_offset": 64816,
+  "object_size": 34,
+  "expected_size": 34,
+  "public_bindings": [
+    {
+      "name": "_wait_retrace",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3795,
+        "offset": 0,
+        "image_offset": 60720,
+        "address": "0ED3:0000"
+      },
+      "binding": {
+        "segment": 3795,
+        "offset": 0,
+        "image_offset": 60720,
+        "address": "0ED3:0000"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      34
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "05af878356b615038adc977457cd6f21e8a015424480518ac60e95be3605c39f",
+  "original_sha256": "05af878356b615038adc977457cd6f21e8a015424480518ac60e95be3605c39f",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

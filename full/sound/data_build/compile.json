@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "SOUND.C": "93a0df23d9a3ecc0de3a14f43bc6b4e5800460aa3914cd83031bcfe5c41651ed",
+    "SNDATA.C": "90454db95bf77ffa5de2c2bea06c2af2105a6b0667a6c8dc74634f581951a020",
+    "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+    "MIDISND.C": "6aeadcfb519229793f15d462a506143b7ea4659d723d68d5436509a0a25c3e76",
+    "ADLIB.C": "7353adc9bdd012a1ed10b8e5a8dc77b8ba4cc9a1910b893a530590b2937baef8",
+    "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+    "MIDISND.H": "447a798d98474b3c3f078ea8a78a903ea835738d8232d742cabfb7b9646febe9",
+    "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G- -Id:\\include",
+  "seconds": 1.248,
+  "files": [
+    "SNDATA.C"
+  ],
+  "dpmi": null
+}

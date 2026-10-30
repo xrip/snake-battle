@@ -1,0 +1,214 @@
+{
+  "source_hashes": {
+    "ui/INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+    "ui/UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+    "game/GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+    "render/RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+    "formats/cards.h": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+    "formats/fmtabi.h": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+    "graphics/LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+    "low/SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+    "gpf/GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+    "hardware/HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+    "sound/SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+    "sound/SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+    "sound/MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+    "sound/ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+    "ui/START.C": "39d535182c3b3387b4f91abe6d418751e41eda1e2120b49bbd5ff84124fdca14",
+    "ui/INPUT.C": "5784b09e313c3b05f4a8ac688073f64e1a481bd2e452f2d77dd738ac942a9884",
+    "ui/MUSIC.C": "18f332426bccb5bbdbb0fc822cf202a8419f6eeaeb4595018dccbe8310f4c192",
+    "ui/UI.C": "df247e2fdf469fb04870390cf5c5fc93c0d927cb9225d90445996fb3b181f5db",
+    "game/GAME.C": "48cbc763807af8fed80885e20fcc433370db1afdfb78b75c121d947387200391",
+    "formats/cards.c": "7041102ca01f84fedf089e507c94a0df6aa735e63cf6190816995b4511ff2c30",
+    "formats/about.c": "cf2e1fbd81f41d0cb695662976908354aaf1581b063d856902a379f12bff1b6e",
+    "formats/xor.c": "35f709cf291803898fb0a0ab4cb61563055625cdefe790b19b1011c3a6496414",
+    "formats/files.c": "f6f6b40513f5bed7fa06def36f4703cb897e18442789e06fdb4d43407e0b1e71",
+    "formats/ticks.c": "4468bdac54b9896a1974986c5402e9efa01e19e170533609eddb9a405172ba09",
+    "formats/number.c": "ff5829e068225c5b50cd6e0b7858681d42913f9965f9ced0f9a9813553919d9d",
+    "low/ASSERT.C": "cbcdf71b10a3526079b98294f89f1a9edac8764ebc206ab8e15170948fb191f7",
+    "low/FORMAT.C": "5a0b8664110929e089e3542e4c4499d229bfe8454661ace940e56673904835b4",
+    "low/VIDEO.C": "a84b30474ab9861dca46f603499abcf6d563b4f01faceb1d4c95200ccc40e4a6",
+    "low/REGISTER.C": "e5c0bb98361a3954cf243ee467a9b85f0450bcf777fd855603b162dd0632a9b1",
+    "render/RENDER.C": "6dfb028f88e29f27f0c9e17bbd8e140a89f1266eb1191a3a6285d530ee75c149",
+    "graphics/BLO.C": "05c0d2b7ddbe28aa03ce3dad9af7fa2da2693781d6f3a18cb1762c45ced1d030",
+    "graphics/CHUNK.C": "2422f90e93e5621043653e3267fae6f36788404b534a721507ccdea5027748c7",
+    "graphics/PARA.C": "818a52c67b3e7a27b575afa6b7fc1a58f6b959c98c280c10f17655eb758d0e94",
+    "hardware/HW.C": "4af3f76ffa1571957eb1bfdf66b4d234c19bd9706828f8f36f1104e25be13920",
+    "formats/rec.c": "78570958b100b6e8dba40a9c024bd012814cf940bc2cedff420bab3f649a9d23",
+    "ega/RETRACE.C": "5fd5ba9d6b4cff50468d5715e0f09378a73338de065a316e8079f7eb92a33dd4",
+    "ega/EGA.ASM": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40",
+    "gpf/GPF.C": "b9fe78b0c8606aeb65f53109982e4669eeb297367cf3748daa5dae4a6965f753",
+    "gpf/LZSS.ASM": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07",
+    "sound/SNDATA.C": "90454db95bf77ffa5de2c2bea06c2af2105a6b0667a6c8dc74634f581951a020"
+  },
+  "staged": [
+    {
+      "name": "START",
+      "source": "src/START.C",
+      "sha256": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+      "compiler": "bc31"
+    },
+    {
+      "name": "INPUT",
+      "source": "src/INPUT.C",
+      "sha256": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+      "compiler": "bc31"
+    },
+    {
+      "name": "MUSIC",
+      "source": "src/MUSIC.C",
+      "sha256": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+      "compiler": "bc31"
+    },
+    {
+      "name": "UI",
+      "source": "src/UI.C",
+      "sha256": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+      "compiler": "bc31"
+    },
+    {
+      "name": "GAME",
+      "source": "src/GAME.C",
+      "sha256": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+      "compiler": "bc31"
+    },
+    {
+      "name": "CARDS",
+      "source": "src/CARDS.C",
+      "sha256": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+      "compiler": "bc31"
+    },
+    {
+      "name": "ABOUT",
+      "source": "src/ABOUT.C",
+      "sha256": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+      "compiler": "bc31"
+    },
+    {
+      "name": "XOR",
+      "source": "src/XOR.C",
+      "sha256": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24",
+      "compiler": "bc31"
+    },
+    {
+      "name": "FILES",
+      "source": "src/FILES.C",
+      "sha256": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+      "compiler": "bc31"
+    },
+    {
+      "name": "TICKS",
+      "source": "src/TICKS.C",
+      "sha256": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+      "compiler": "bc31"
+    },
+    {
+      "name": "NUMBER",
+      "source": "src/NUMBER.C",
+      "sha256": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+      "compiler": "bc31"
+    },
+    {
+      "name": "ASSERT",
+      "source": "src/ASSERT.C",
+      "sha256": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+      "compiler": "bc31"
+    },
+    {
+      "name": "FORMAT",
+      "source": "src/FORMAT.C",
+      "sha256": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+      "compiler": "bc31"
+    },
+    {
+      "name": "VIDEO",
+      "source": "src/VIDEO.C",
+      "sha256": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+      "compiler": "bc31"
+    },
+    {
+      "name": "REGISTER",
+      "source": "src/REGISTER.C",
+      "sha256": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+      "compiler": "bc31"
+    },
+    {
+      "name": "RENDER",
+      "source": "src/RENDER.C",
+      "sha256": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+      "compiler": "bc31"
+    },
+    {
+      "name": "BLO",
+      "source": "src/BLO.C",
+      "sha256": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+      "compiler": "bc31"
+    },
+    {
+      "name": "CHUNK",
+      "source": "src/CHUNK.C",
+      "sha256": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+      "compiler": "bc31"
+    },
+    {
+      "name": "PARA",
+      "source": "src/PARA.C",
+      "sha256": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+      "compiler": "bc31"
+    },
+    {
+      "name": "HW",
+      "source": "src/HW.C",
+      "sha256": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+      "compiler": "bc31"
+    },
+    {
+      "name": "REC",
+      "source": "src/REC.C",
+      "sha256": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+      "compiler": "bc31"
+    },
+    {
+      "name": "RETRACE",
+      "source": "src/RETRACE.C",
+      "sha256": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+      "compiler": "bc31"
+    },
+    {
+      "name": "EGA",
+      "source": "src/EGA.ASM",
+      "sha256": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40",
+      "compiler": "tasm31-ega"
+    },
+    {
+      "name": "GPF",
+      "source": "src/GPF.C",
+      "sha256": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+      "compiler": "bc2"
+    },
+    {
+      "name": "LZSS",
+      "source": "src/LZSS.ASM",
+      "sha256": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07",
+      "compiler": "tasm31"
+    },
+    {
+      "name": "SNDATA",
+      "source": "src/SNDATA.C",
+      "sha256": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+      "compiler": "bc31"
+    }
+  ],
+  "uses_original_executable_as_input": false,
+  "missing_modules": [
+    {
+      "name": "SOUND",
+      "owner": "gpf_resources",
+      "code": "1341:000C",
+      "size": 13172,
+      "pending": true,
+      "data_size": 0,
+      "bss_size": 0
+    }
+  ]
+}

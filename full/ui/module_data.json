@@ -1,0 +1,74 @@
+{
+  "object": "snake-battle-recovered/full/ui/build/UI.OBJ",
+  "object_sha256": "65768e18f7cce3e8e868010677cae5c632930718d7642263f2a1aef7ec241256",
+  "module": "ui.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 576,
+    "image_offset": 92624,
+    "address": "1679:0240"
+  },
+  "file_offset": 96720,
+  "object_size": 107,
+  "expected_size": 107,
+  "public_bindings": [
+    {
+      "name": "_g0294",
+      "object_offset": 84,
+      "expected": {
+        "segment": 5753,
+        "offset": 660,
+        "image_offset": 92708,
+        "address": "1679:0294"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 660,
+        "image_offset": 92708,
+        "address": "1679:0294"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g0246",
+      "object_offset": 6,
+      "expected": {
+        "segment": 5753,
+        "offset": 582,
+        "image_offset": 92630,
+        "address": "1679:0246"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 582,
+        "image_offset": 92630,
+        "address": "1679:0246"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      107
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "9902d169023676c855fb3c56f42fdc8ca16d5ec4722b8c9039770ec868cffabe",
+  "original_sha256": "9902d169023676c855fb3c56f42fdc8ca16d5ec4722b8c9039770ec868cffabe",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

@@ -1,0 +1,361 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:10:43	    Page 1
+ADIO.ASM
+
+
+
+      1				     ; Recovered original register-ABI OPL operations, segment1341:2E9B..30C4.
+      2				     ; These hardware routines use AH=register,	AL=value; calls	preserve AX/BX/CX/DX.
+      3				     ; Every executable	byte is	an instruction assembled by TASM; no code-byte data.
+      4				     .286
+      5	0000			     _TEXT segment word	public 'CODE'
+      6				     assume cs:_TEXT, ds:DGROUP
+      7				     extrn _snd_30C4:near, _snd_312B:near, _snd_316E:near
+      8
+      9				     public _snd_2E9B
+     10	0000			     _snd_2E9B label near
+     11	0000  C8 0000 00		 enter 0, 0 ; 2E9B
+     12	0004  8B 5E 04			 mov bx, word ptr [bp +	4] ; 2E9F
+     13	0007  8A 5F 07			 mov bl, byte ptr [bx +	7] ; 2EA2
+     14	000A  32 FF			 xor bh, bh ; 2EA5
+     15	000C  8A 97 0000e		 mov dl, byte ptr [bx +	_snd_modulator_slots] ;	2EA7
+     16	0010  8B CB			 mov cx, bx ; 2EAB
+     17	0012  8B 5E 06			 mov bx, word ptr [bp +	6] ; 2EAD
+     18	0015  8A 07			 mov al, byte ptr [bx] ; 2EB0
+     19	0017  8A E2			 mov ah, dl ; 2EB2
+     20	0019  80 C4 20			 add ah, 020h ;	2EB4
+     21	001C  E8 0000e			 call near ptr _snd_312B ; 2EB7
+     22	001F  43			 inc bx	; 2EBA
+     23	0020  8A 66 08			 mov ah, byte ptr [bp +	8] ; 2EBB
+     24	0023  8A 07			 mov al, byte ptr [bx] ; 2EBE
+     25	0025  0C 3F			 or al,	03Fh ; 2EC0
+     26	0027  2A C4			 sub al, ah ; 2EC2
+     27	0029  8A E2			 mov ah, dl ; 2EC4
+     28	002B  80 C4 40			 add ah, 040h ;	2EC6
+     29	002E  E8 0000e			 call near ptr _snd_312B ; 2EC9
+     30	0031  43			 inc bx	; 2ECC
+     31	0032  8A 07			 mov al, byte ptr [bx] ; 2ECD
+     32	0034  F6 D0			 not al	; 2ECF
+     33	0036  8A E2			 mov ah, dl ; 2ED1
+     34	0038  80 C4 60			 add ah, 060h ;	2ED3
+     35	003B  E8 0000e			 call near ptr _snd_312B ; 2ED6
+     36	003E  43			 inc bx	; 2ED9
+     37	003F  8A 07			 mov al, byte ptr [bx] ; 2EDA
+     38	0041  F6 D0			 not al	; 2EDC
+     39	0043  8A E2			 mov ah, dl ; 2EDE
+     40	0045  80 C4 80			 add ah, 080h ;	2EE0
+     41	0048  E8 0000e			 call near ptr _snd_312B ; 2EE3
+     42	004B  43			 inc bx	; 2EE6
+     43	004C  8A 07			 mov al, byte ptr [bx] ; 2EE7
+     44	004E  8A E2			 mov ah, dl ; 2EE9
+     45	0050  80 C4 E0			 add ah, 0E0h ;	2EEB
+     46	0053  E8 0000e			 call near ptr _snd_312B ; 2EEE
+     47	0056  43			 inc bx	; 2EF1
+     48	0057  87 D9			 xchg bx, cx ; 2EF2
+     49	0059  8A 97 0000e		 mov dl, byte ptr [bx +	_snd_carrier_slots] ; 2EF4
+     50	005D  87 D9			 xchg bx, cx ; 2EF8
+     51	005F  8A 07			 mov al, byte ptr [bx] ; 2EFA
+     52	0061  8A E2			 mov ah, dl ; 2EFC
+     53	0063  80 C4 20			 add ah, 020h ;	2EFE
+     54	0066  E8 0000e			 call near ptr _snd_312B ; 2F01
+     55	0069  43			 inc bx	; 2F04
+     56	006A  8A 66 0A			 mov ah, byte ptr [bp +	0Ah] ; 2F05
+     57	006D  8A 07			 mov al, byte ptr [bx] ; 2F08
+Turbo Assembler	 Version 3.1	    10/21/26 18:10:43	    Page 2
+ADIO.ASM
+
+
+
+     58	006F  0C 3F			 or al,	03Fh ; 2F0A
+     59	0071  2A C4			 sub al, ah ; 2F0C
+     60	0073  8A E2			 mov ah, dl ; 2F0E
+     61	0075  80 C4 40			 add ah, 040h ;	2F10
+     62	0078  E8 0000e			 call near ptr _snd_312B ; 2F13
+     63	007B  43			 inc bx	; 2F16
+     64	007C  8A 07			 mov al, byte ptr [bx] ; 2F17
+     65	007E  F6 D0			 not al	; 2F19
+     66	0080  8A E2			 mov ah, dl ; 2F1B
+     67	0082  80 C4 60			 add ah, 060h ;	2F1D
+     68	0085  E8 0000e			 call near ptr _snd_312B ; 2F20
+     69	0088  43			 inc bx	; 2F23
+     70	0089  8A 07			 mov al, byte ptr [bx] ; 2F24
+     71	008B  F6 D0			 not al	; 2F26
+     72	008D  8A E2			 mov ah, dl ; 2F28
+     73	008F  80 C4 80			 add ah, 080h ;	2F2A
+     74	0092  E8 0000e			 call near ptr _snd_312B ; 2F2D
+     75	0095  43			 inc bx	; 2F30
+     76	0096  8A 07			 mov al, byte ptr [bx] ; 2F31
+     77	0098  8A E2			 mov ah, dl ; 2F33
+     78	009A  80 C4 E0			 add ah, 0E0h ;	2F35
+     79	009D  E8 0000e			 call near ptr _snd_312B ; 2F38
+     80	00A0  43			 inc bx	; 2F3B
+     81	00A1  8A 07			 mov al, byte ptr [bx] ; 2F3C
+     82	00A3  8A E1			 mov ah, cl ; 2F3E
+     83	00A5  80 C4 C0			 add ah, 0C0h ;	2F40
+     84	00A8  E8 0000e			 call near ptr _snd_312B ; 2F43
+     85	00AB  C9			 leave	; 2F46
+     86	00AC  C3			 ret  ;	2F47
+     87
+     88				     public _snd_2F48
+     89	00AD			     _snd_2F48 label near
+     90	00AD  C8 0000 00		 enter 0, 0 ; 2F48
+     91	00B1  8A 46 06			 mov al, byte ptr [bp +	6] ; 2F4C
+     92	00B4  32 E4			 xor ah, ah ; 2F4F
+     93	00B6  C1 E0 07			 shl ax, 7 ; 2F51
+     94	00B9  03 46 08			 add ax, word ptr [bp +	8] ; 2F54
+     95	00BC  8A 5E 04			 mov bl, byte ptr [bp +	4] ; 2F57
+     96	00BF  32 FF			 xor bh, bh ; 2F5A
+     97	00C1  D1 E3			 shl bx, 1 ; 2F5C
+     98	00C3  89 87 0000e		 mov word ptr [bx + _snd_channel_frequency], ax	; 2F5E
+     99	00C7  C7 87 0012e 0000		 mov word ptr [bx + _snd_channel_frequency+18],	0 ; 2F62
+    100	00CD  D1 EB			 shr bx, 1 ; 2F68
+    101	00CF  E8 0000e			 call near ptr _snd_30C4 ; 2F6A
+    102	00D2  C9			 leave	; 2F6D
+    103	00D3  C3			 ret  ;	2F6E
+    104
+    105				     public _snd_2F6F
+    106	00D4			     _snd_2F6F label near
+    107	00D4  C8 0000 00		 enter 0, 0 ; 2F6F
+    108	00D8  8A 46 06			 mov al, byte ptr [bp +	6] ; 2F73
+    109	00DB  32 E4			 xor ah, ah ; 2F76
+    110	00DD  C1 E0 07			 shl ax, 7 ; 2F78
+    111	00E0  03 46 08			 add ax, word ptr [bp +	8] ; 2F7B
+    112	00E3  8A 5E 04			 mov bl, byte ptr [bp +	4] ; 2F7E
+    113	00E6  32 FF			 xor bh, bh ; 2F81
+    114	00E8  D1 E3			 shl bx, 1 ; 2F83
+Turbo Assembler	 Version 3.1	    10/21/26 18:10:43	    Page 3
+ADIO.ASM
+
+
+
+    115	00EA  89 87 0000e		 mov word ptr [bx + _snd_channel_frequency], ax	; 2F85
+    116	00EE  03 87 0012e		 add ax, word ptr [bx +	_snd_channel_frequency+18] ; 2F89
+    117	00F2  D1 EB			 shr bx, 1 ; 2F8D
+    118	00F4  E8 0000e			 call near ptr _snd_30C4 ; 2F8F
+    119	00F7  C9			 leave	; 2F92
+    120	00F8  C3			 ret  ;	2F93
+    121
+    122				     public _snd_2F94
+    123	00F9			     _snd_2F94 label near
+    124	00F9  80 C4 B0			 add ah, 0B0h ;	2F94
+    125	00FC  E8 0000e			 call near ptr _snd_316E ; 2F97
+    126	00FF  24 DF			 and al, 0DFh ;	2F9A
+    127	0101  E8 0000e			 call near ptr _snd_312B ; 2F9C
+    128	0104  C3			 ret  ;	2F9F
+    129
+    130				     public _snd_2FA0
+    131	0105			     _snd_2FA0 label near
+    132	0105  80 C4 B0			 add ah, 0B0h ;	2FA0
+    133	0108  E8 0000e			 call near ptr _snd_316E ; 2FA3
+    134	010B  24 DF			 and al, 0DFh ;	2FA6
+    135	010D  E8 0000e			 call near ptr _snd_312B ; 2FA8
+    136	0110  0C 20			 or al,	020h ; 2FAB
+    137	0112  E8 0000e			 call near ptr _snd_312B ; 2FAD
+    138	0115  C3			 ret  ;	2FB0
+    139
+    140				     public _snd_2FB1
+    141	0116			     _snd_2FB1 label near
+    142	0116  C8 0000 00		 enter 0, 0 ; 2FB1
+    143	011A  56			 push si ; 2FB5
+    144	011B  8B 76 04			 mov si, word ptr [bp +	4] ; 2FB6
+    145	011E  8A 46 06			 mov al, byte ptr [bp +	6] ; 2FB9
+    146	0121  32 E4			 xor ah, ah ; 2FBC
+    147	0123  3C 0C			 cmp al, 0Ch ; 2FBE
+    148	0125  76 13			 jbe short L2FD5 ; 2FC0
+    149	0127  3C 19			 cmp al, 019h ;	2FC2
+    150	0129  76 1A			 jbe short L2FE0 ; 2FC4
+    151	012B  3C 1B			 cmp al, 01Bh ;	2FC6
+    152	012D  76 23			 jbe short L2FED ; 2FC8
+    153	012F  3C 1C			 cmp al, 01Ch ;	2FCA
+    154	0131  74 56			 je short L3024	; 2FCC
+    155	0133  3C 1D			 cmp al, 01Dh ;	2FCE
+    156	0135  74 5A			 je short L302C	; 2FD0
+    157	0137  5E			 pop si	; 2FD2
+    158	0138  C9			 leave	; 2FD3
+    159	0139  C3			 ret  ;	2FD4
+    160	013A			     L2FD5:
+    161	013A  8A 5C 07			 mov bl, byte ptr [si +	7] ; 2FD5
+    162	013D  32 FF			 xor bh, bh ; 2FD8
+    163	013F  8A 97 0000e		 mov dl, byte ptr [bx +	_snd_carrier_slots] ; 2FDA
+    164	0143  EB 12			 jmp short L2FF2 ; 2FDE
+    165	0145			     L2FE0:
+    166	0145  2C 0D			 sub al, 0Dh ; 2FE0
+    167	0147  8A 5C 07			 mov bl, byte ptr [si +	7] ; 2FE2
+    168	014A  32 FF			 xor bh, bh ; 2FE5
+    169	014C  8A 97 0000e		 mov dl, byte ptr [bx +	_snd_modulator_slots] ;	2FE7
+    170	0150  EB 05			 jmp short L2FF2 ; 2FEB
+    171	0152			     L2FED:
+Turbo Assembler	 Version 3.1	    10/21/26 18:10:43	    Page 4
+ADIO.ASM
+
+
+
+    172	0152  2C 0D			 sub al, 0Dh ; 2FED
+    173	0154  8A 54 07			 mov dl, byte ptr [si +	7] ; 2FEF
+    174	0157			     L2FF2:
+    175	0157  8A 76 08			 mov dh, byte ptr [bp +	8] ; 2FF2
+    176	015A  8B D8			 mov bx, ax ; 2FF5
+    177	015C  C1 E3 02			 shl bx, 2 ; 2FF7
+    178	015F  8A 87 0003e		 mov al, byte ptr [bx +	_snd_register_fields+3]	; 2FFA
+    179	0163  0A C0			 or al,	al ; 2FFE
+    180	0165  74 04			 je short L3006	; 3000
+    181	0167  2A C6			 sub al, dh ; 3002
+    182	0169  8A F0			 mov dh, al ; 3004
+    183	016B			     L3006:
+    184	016B  8A 8F 0001e		 mov cl, byte ptr [bx +	_snd_register_fields+1]	; 3006
+    185	016F  D2 E6			 shl dh, cl ; 300A
+    186	0171  8A A7 0000e		 mov ah, byte ptr [bx +	_snd_register_fields] ;	300C
+    187	0175  02 E2			 add ah, dl ; 3010
+    188	0177  E8 0000e			 call near ptr _snd_316E ; 3012
+    189	017A  8A 8F 0002e		 mov cl, byte ptr [bx +	_snd_register_fields+2]	; 3015
+    190	017E  F6 D1			 not cl	; 3019
+    191	0180  22 C1			 and al, cl ; 301B
+    192	0182  0A C6			 or al,	dh ; 301D
+    193	0184  E8 0000e			 call near ptr _snd_312B ; 301F
+    194	0187  EB 25			 jmp short L3049 ; 3022
+    195	0189			     L3024:
+    196	0189  8B 46 08			 mov ax, word ptr [bp +	8] ; 3024
+    197	018C  2D 000F			 sub ax, 0Fh ; 3027
+    198	018F  EB 06			 jmp short L3032 ; 302A
+    199	0191			     L302C:
+    200	0191  8B 46 08			 mov ax, word ptr [bp +	8] ; 302C
+    201	0194  2D 017F			 sub ax, 017Fh ; 302F
+    202	0197			     L3032:
+    203	0197  C1 E0 04			 shl ax, 4 ; 3032
+    204	019A  8A 5C 07			 mov bl, byte ptr [si +	7] ; 3035
+    205	019D  32 FF			 xor bh, bh ; 3038
+    206	019F  D1 E3			 shl bx, 1 ; 303A
+    207	01A1  89 87 0012e		 mov word ptr [bx + _snd_channel_frequency+18],	ax ; 303C
+    208	01A5  03 87 0000e		 add ax, word ptr [bx +	_snd_channel_frequency]	; 3040
+    209	01A9  D1 EB			 shr bx, 1 ; 3044
+    210	01AB  E8 0000e			 call near ptr _snd_30C4 ; 3046
+    211	01AE			     L3049:
+    212	01AE  5E			 pop si	; 3049
+    213	01AF  C9			 leave	; 304A
+    214	01B0  C3			 ret  ;	304B
+    215
+    216				     public _snd_304C
+    217	01B1			     _snd_304C label near
+    218	01B1  C8 0000 00		 enter 0, 0 ; 304C
+    219	01B5  57			 push di ; 3050
+    220	01B6  56			 push si ; 3051
+    221	01B7  8A 46 06			 mov al, byte ptr [bp +	6] ; 3052
+    222	01BA  32 E4			 xor ah, ah ; 3055
+    223	01BC  3C 0C			 cmp al, 0Ch ; 3057
+    224	01BE  76 14			 jbe short L306F ; 3059
+    225	01C0  3C 19			 cmp al, 019h ;	305B
+    226	01C2  76 1B			 jbe short L307A ; 305D
+    227	01C4  3C 1B			 cmp al, 01Bh ;	305F
+    228	01C6  76 24			 jbe short L3087 ; 3061
+Turbo Assembler	 Version 3.1	    10/21/26 18:10:43	    Page 5
+ADIO.ASM
+
+
+
+    229	01C8  3C 1C			 cmp al, 01Ch ;	3063
+    230	01CA  74 51			 je short L30B8	; 3065
+    231	01CC  3C 1D			 cmp al, 01Dh ;	3067
+    232	01CE  74 52			 je short L30BD	; 3069
+    233	01D0  33 C0			 xor ax, ax ; 306B
+    234	01D2  EB 51			 jmp short L30C0 ; 306D
+    235	01D4			     L306F:
+    236	01D4  8A 5E 04			 mov bl, byte ptr [bp +	4] ; 306F
+    237	01D7  32 FF			 xor bh, bh ; 3072
+    238	01D9  8A 97 0000e		 mov dl, byte ptr [bx +	_snd_carrier_slots] ; 3074
+    239	01DD  EB 14			 jmp short L308E ; 3078
+    240	01DF			     L307A:
+    241	01DF  2C 0D			 sub al, 0Dh ; 307A
+    242	01E1  8A 5E 04			 mov bl, byte ptr [bp +	4] ; 307C
+    243	01E4  32 FF			 xor bh, bh ; 307F
+    244	01E6  8A 97 0000e		 mov dl, byte ptr [bx +	_snd_modulator_slots] ;	3081
+    245	01EA  EB 07			 jmp short L308E ; 3085
+    246	01EC			     L3087:
+    247	01EC  2C 0D			 sub al, 0Dh ; 3087
+    248	01EE  8A 5E 04			 mov bl, byte ptr [bp +	4] ; 3089
+    249	01F1  8A D3			 mov dl, bl ; 308C
+    250	01F3			     L308E:
+    251	01F3  8B D8			 mov bx, ax ; 308E
+    252	01F5  C1 E3 02			 shl bx, 2 ; 3090
+    253	01F8  8A A7 0000e		 mov ah, byte ptr [bx +	_snd_register_fields] ;	3093
+    254	01FC  02 E2			 add ah, dl ; 3097
+    255	01FE  E8 0000e			 call near ptr _snd_316E ; 3099
+    256	0201  32 E4			 xor ah, ah ; 309C
+    257	0203  8A 8F 0002e		 mov cl, byte ptr [bx +	_snd_register_fields+2]	; 309E
+    258	0207  22 C1			 and al, cl ; 30A2
+    259	0209  8A 8F 0001e		 mov cl, byte ptr [bx +	_snd_register_fields+1]	; 30A4
+    260	020D  D2 E8			 shr al, cl ; 30A8
+    261	020F  8A 8F 0003e		 mov cl, byte ptr [bx +	_snd_register_fields+3]	; 30AA
+    262	0213  0A C9			 or cl,	cl ; 30AE
+    263	0215  74 0E			 je short L30C0	; 30B0
+    264	0217  2A C8			 sub cl, al ; 30B2
+    265	0219  8A C1			 mov al, cl ; 30B4
+    266	021B  EB 08			 jmp short L30C0 ; 30B6
+    267	021D			     L30B8:
+    268	021D  B8 000F			 mov ax, 0Fh ; 30B8
+    269	0220  EB 03			 jmp short L30C0 ; 30BB
+    270	0222			     L30BD:
+    271	0222  B8 017F			 mov ax, 017Fh ; 30BD
+    272	0225			     L30C0:
+    273	0225  5E			 pop si	; 30C0
+    274	0226  5F			 pop di	; 30C1
+    275	0227  C9			 leave	; 30C2
+    276	0228  C3			 ret  ;	30C3
+    277	0229			     _TEXT ends
+    278	0000			     _DATA segment word	public 'DATA'
+    279				     extrn _snd_modulator_slots:byte, _snd_carrier_slots:byte
+    280				     extrn _snd_channel_frequency:word,	_snd_register_fields:byte
+    281	0000			     _DATA ends
+    282				     DGROUP group _DATA
+    283				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:10:43	    Page 6
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "ADIO	  "
+??time				  Text	 "18:10:43"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 ADIO
+@WordSize			  Text	 2
+@curseg				  Text	 _DATA
+L2FD5				  Near	 _TEXT:013A
+L2FE0				  Near	 _TEXT:0145
+L2FED				  Near	 _TEXT:0152
+L2FF2				  Near	 _TEXT:0157
+L3006				  Near	 _TEXT:016B
+L3024				  Near	 _TEXT:0189
+L302C				  Near	 _TEXT:0191
+L3032				  Near	 _TEXT:0197
+L3049				  Near	 _TEXT:01AE
+L306F				  Near	 _TEXT:01D4
+L307A				  Near	 _TEXT:01DF
+L3087				  Near	 _TEXT:01EC
+L308E				  Near	 _TEXT:01F3
+L30B8				  Near	 _TEXT:021D
+L30BD				  Near	 _TEXT:0222
+L30C0				  Near	 _TEXT:0225
+_snd_2E9B			  Near	 _TEXT:0000
+_snd_2F48			  Near	 _TEXT:00AD
+_snd_2F6F			  Near	 _TEXT:00D4
+_snd_2F94			  Near	 _TEXT:00F9
+_snd_2FA0			  Near	 _TEXT:0105
+_snd_2FB1			  Near	 _TEXT:0116
+_snd_304C			  Near	 _TEXT:01B1
+_snd_30C4			  Near	 _TEXT:---- Extern
+_snd_312B			  Near	 _TEXT:---- Extern
+_snd_316E			  Near	 _TEXT:---- Extern
+_snd_carrier_slots		  Byte	 _DATA:---- Extern
+_snd_channel_frequency		  Word	 _DATA:---- Extern
+_snd_modulator_slots		  Byte	 _DATA:---- Extern
+_snd_register_fields		  Byte	 _DATA:---- Extern
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+_TEXT				  16  0229 Word	  Public  CODE
+

@@ -1,0 +1,2048 @@
+{
+  "kind": "Symbolic sound specification with compiler-built game C and original CRT",
+  "source": {
+    "source_sha256": {
+      "exact/CONTROL.ASM": "01f6fda4ff28570871d5e4ddf4ec26b52a3f0f55c0fb9991e78c5d1c653a3843",
+      "SNDIRQ.ASM": "f3e394d594b50bb2c446801abaa85d96ddfc95961e781c2becb8ba75a556d641",
+      "SNDWAIT.ASM": "47b98af359e5e74844c6a2228cf1765d7f077600ba13e6969bc81fca810fd2b5",
+      "SNDMEM.ASM": "104caee71165ab74316f80830a2359e917a8970a967c37832734de3189418fe9",
+      "exact/MIDI.ASM": "2a6d9655afc21393a979decdadee84b58cd93cba88018e20d734fce417bbd900",
+      "exact/ADLIB.ASM": "f6f0f65b3916a2ffc5f0d6241a6fb7784968c678d9f8540bc67c97624e14c3cc",
+      "ADIO.ASM": "bfc202e2b9d872b4166d92476a589d94ef3615c92ddbc0887990240d6fb58b50",
+      "SNDTAIL.ASM": "fe485d527e81b331a5e1ee7bf3b21ce83548685d60dff3c9399fed4844724a5f"
+    },
+    "pieces": [
+      {
+        "source": "exact/CONTROL.ASM",
+        "segment": "SC000C",
+        "origin": 12,
+        "end": 110,
+        "kind": "symbolic specification",
+        "publics": [
+          "_snd_000C",
+          "_snd_001E",
+          "_snd_0022",
+          "_snd_0026",
+          "_snd_002A",
+          "_snd_0039",
+          "_snd_0048",
+          "_snd_0057"
+        ]
+      },
+      {
+        "source": "SNDIRQ.ASM",
+        "segment": "_TEXT",
+        "origin": 110,
+        "end": 254,
+        "kind": "register-ABI source",
+        "publics": [
+          "_snd_isr_count",
+          "_snd_old_int8",
+          "_snd_0074",
+          "_snd_00B4",
+          "_snd_00E7"
+        ]
+      },
+      {
+        "source": "exact/CONTROL.ASM",
+        "segment": "SC00FE",
+        "origin": 254,
+        "end": 1174,
+        "kind": "symbolic specification",
+        "publics": [
+          "_snd_00FE",
+          "_snd_0158",
+          "_snd_01A7",
+          "_snd_01CB",
+          "_snd_01D5",
+          "_snd_01DC",
+          "_snd_0217",
+          "_snd_021C",
+          "_snd_0269",
+          "_snd_029B",
+          "_snd_02B7",
+          "_snd_02E4",
+          "_snd_0406"
+        ]
+      },
+      {
+        "source": "SNDWAIT.ASM",
+        "segment": "_TEXT",
+        "origin": 1174,
+        "end": 1208,
+        "kind": "register-ABI source",
+        "publics": [
+          "_snd_0496"
+        ]
+      },
+      {
+        "source": "exact/CONTROL.ASM",
+        "segment": "SC04B8",
+        "origin": 1208,
+        "end": 1341,
+        "kind": "symbolic specification",
+        "publics": [
+          "_snd_04B8",
+          "_snd_04CC",
+          "_snd_04D9",
+          "_snd_04F4"
+        ]
+      },
+      {
+        "source": "SNDMEM.ASM",
+        "segment": "_TEXT",
+        "origin": 1341,
+        "end": 1374,
+        "kind": "register-ABI source",
+        "publics": [
+          "_snd_053D"
+        ]
+      },
+      {
+        "source": "exact/CONTROL.ASM",
+        "segment": "SC055E",
+        "origin": 1374,
+        "end": 3513,
+        "kind": "symbolic specification",
+        "publics": [
+          "_snd_055E",
+          "_snd_0574",
+          "_snd_05A6",
+          "_snd_05E8",
+          "_snd_0643",
+          "_snd_066B",
+          "_snd_0743",
+          "_snd_075E",
+          "_snd_078F",
+          "_snd_07AA",
+          "_snd_07F9",
+          "_snd_0814",
+          "_snd_0857",
+          "_snd_09F4",
+          "_snd_0B2E",
+          "_snd_0B6E",
+          "_snd_0B7E",
+          "_snd_0C3D",
+          "_snd_0CC3",
+          "_snd_0D1F",
+          "_snd_0DA8"
+        ]
+      },
+      {
+        "source": "exact/MIDI.ASM",
+        "segment": "_TEXT",
+        "origin": 3513,
+        "end": 7706,
+        "kind": "symbolic specification and register-ABI readers",
+        "publics": [
+          "_snd_0DB9",
+          "_snd_0E6A",
+          "_snd_0E7C",
+          "_snd_0FBE",
+          "_snd_101E",
+          "_snd_1041",
+          "_snd_1086",
+          "_snd_109C",
+          "_snd_10E7",
+          "_snd_1118",
+          "_snd_114D",
+          "_snd_1182",
+          "_snd_11B7",
+          "_snd_11F0",
+          "_snd_1263",
+          "_snd_12D8",
+          "_snd_1537",
+          "_snd_15DF",
+          "_snd_15F0",
+          "_snd_160C",
+          "_snd_162A",
+          "_snd_167E",
+          "_snd_1684",
+          "_snd_16A5",
+          "_snd_171D",
+          "_snd_17BB",
+          "_snd_17FC",
+          "_snd_183E",
+          "_snd_1A4A",
+          "_snd_1D49",
+          "_snd_1D6D",
+          "_snd_1DC6",
+          "_snd_1DDB"
+        ]
+      },
+      {
+        "source": "exact/ADLIB.ASM",
+        "segment": "_TEXT",
+        "origin": 7706,
+        "end": 11931,
+        "kind": "symbolic specification",
+        "publics": [
+          "_snd_1E1A",
+          "_snd_1E83",
+          "_snd_1FA2",
+          "_snd_1FCC",
+          "_snd_1FE4",
+          "_snd_20AA",
+          "_snd_20E7",
+          "_snd_2102",
+          "_snd_2129",
+          "_snd_216C",
+          "_snd_21A2",
+          "_snd_21EF",
+          "_snd_2209",
+          "_snd_222F",
+          "_snd_2277",
+          "_snd_22A4",
+          "_snd_22CD",
+          "_snd_22F1",
+          "_snd_235A",
+          "_snd_23D1",
+          "_snd_23D2",
+          "_snd_247E",
+          "_snd_2509",
+          "_snd_253C",
+          "_snd_2567",
+          "_snd_2594",
+          "_snd_25E7",
+          "_snd_261A",
+          "_snd_2665",
+          "_snd_2679",
+          "_snd_269B",
+          "_snd_26C3",
+          "_snd_2709",
+          "_snd_2750",
+          "_snd_2772",
+          "_snd_278D",
+          "_snd_28BD",
+          "_snd_28DB",
+          "_snd_28FB",
+          "_snd_29A1",
+          "_snd_2A5E",
+          "_snd_2A87",
+          "_snd_2AD9",
+          "_snd_2B03",
+          "_snd_2B3F",
+          "_snd_2B6C",
+          "_snd_2BC4",
+          "_snd_2BF6",
+          "_snd_2C59",
+          "_snd_2D33",
+          "_snd_2DD3",
+          "_snd_2E7A"
+        ]
+      },
+      {
+        "source": "ADIO.ASM",
+        "segment": "_TEXT",
+        "origin": 11931,
+        "end": 12484,
+        "kind": "register-ABI source",
+        "publics": [
+          "_snd_2E9B",
+          "_snd_2F48",
+          "_snd_2F6F",
+          "_snd_2F94",
+          "_snd_2FA0",
+          "_snd_2FB1",
+          "_snd_304C"
+        ]
+      },
+      {
+        "source": "SNDTAIL.ASM",
+        "segment": "_TEXT",
+        "origin": 12484,
+        "end": 12931,
+        "kind": "register-ABI source",
+        "publics": [
+          "_snd_30C4",
+          "_snd_312B",
+          "_snd_3164",
+          "_snd_316E",
+          "_snd_3179",
+          "_snd_31AA",
+          "_snd_320A",
+          "__aNulmul",
+          "__aFuldiv"
+        ]
+      },
+      {
+        "source": "exact/CONTROL.ASM",
+        "segment": "SC3283",
+        "origin": 12931,
+        "end": 13169,
+        "kind": "symbolic specification",
+        "publics": [
+          "_snd_3283",
+          "_snd_32AF",
+          "_snd_32CF",
+          "_snd_32EB",
+          "_snd_3303",
+          "_snd_332F",
+          "_snd_3362"
+        ]
+      }
+    ],
+    "code_origin": "1341:000C",
+    "code_end": "1341:3371",
+    "expected_code_size": 13157,
+    "expected_linker_alignment_before_dgroup": 15,
+    "remaining_external_names": [
+      "_snd_basic_commands",
+      "_snd_building_queue",
+      "_snd_carrier_slots",
+      "_snd_channel_frequency",
+      "_snd_channel_masks",
+      "_snd_command_kinds",
+      "_snd_default_instrument",
+      "_snd_disabled",
+      "_snd_event_channel",
+      "_snd_event_note",
+      "_snd_event_velocity",
+      "_snd_extended_commands",
+      "_snd_fade_state",
+      "_snd_fade_tick_scale",
+      "_snd_fades",
+      "_snd_frequencies",
+      "_snd_global_instruments",
+      "_snd_held_active",
+      "_snd_held_cursor",
+      "_snd_held_free",
+      "_snd_held_notes",
+      "_snd_hooks",
+      "_snd_instrument_fields",
+      "_snd_master_volume",
+      "_snd_max_values",
+      "_snd_midi_lengths",
+      "_snd_midi_tags",
+      "_snd_modulator_slots",
+      "_snd_note_channels",
+      "_snd_octaves",
+      "_snd_opl_cache",
+      "_snd_opl_data_delay",
+      "_snd_opl_index_delay",
+      "_snd_parameter_map",
+      "_snd_parse_cursor",
+      "_snd_parse_finished",
+      "_snd_parse_nesting",
+      "_snd_part_instruments",
+      "_snd_parts",
+      "_snd_paused",
+      "_snd_players",
+      "_snd_queue",
+      "_snd_queue_read",
+      "_snd_queue_write",
+      "_snd_queued_marker",
+      "_snd_queued_sound",
+      "_snd_random_seed",
+      "_snd_register_fields",
+      "_snd_resources",
+      "_snd_scan_end_tick",
+      "_snd_scan_note_count",
+      "_snd_scanning",
+      "_snd_semitones",
+      "_snd_sequences",
+      "_snd_step_counts",
+      "_snd_sysex_buffer",
+      "_snd_tick_period",
+      "_snd_timer_accumulator",
+      "_snd_trigger_count",
+      "_snd_voice_counter",
+      "_snd_voice_tick",
+      "_snd_voices",
+      "_snd_volume_products"
+    ],
+    "reads_reference_executable": false,
+    "emits_opcode_arrays": false,
+    "historical_sound_source_language_proven": false,
+    "ordinary_sound_C_compiler_match_proven": false,
+    "generated_assembly_sha256": "7fa2833d965164ed6176911ae6bd386586dbb68d5a6b4039beae52282e582dcf"
+  },
+  "assembly": {
+    "passed": true,
+    "assembler": "Borland TASM 3.1",
+    "flags": "/ml /m3 /l"
+  },
+  "native_link": {
+    "passed": true,
+    "seconds": 1.069,
+    "executable_produced": true,
+    "diagnostics": "Turbo Link  Version 5.1 Copyright (c) 1992 Borland International\n"
+  },
+  "runtime_extracted_from_original_compiler_this_run": true,
+  "runtime_extraction": {
+    "compiler": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC",
+    "layout_manifest": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/link/runtime/layout.json",
+    "layout_manifest_sha256": "37c8640283b502b912022aa69e179e470a62ff7e067e97b5ba351cee8ce3b264",
+    "original_library": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC/LIB/CL.LIB",
+    "library_sha256": "57a3103f5df4d6965c0cb809f0b7cf209a1b8f63a13db87d2f4aadcacddd8124",
+    "original_startup": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC/LIB/C0L.OBJ",
+    "startup_sha256": "1004f6318f4c0854fc84a02b1c954517dbde408d0d3cad76887764b0336a591a",
+    "library_member_count": 91,
+    "object_count": 92,
+    "objects": [
+      {
+        "object": "C0L.OBJ",
+        "module": "c0.ASM",
+        "source": "C0L.OBJ",
+        "source_offset": 0,
+        "source_end": 2362,
+        "size": 2362,
+        "sha256": "1004f6318f4c0854fc84a02b1c954517dbde408d0d3cad76887764b0336a591a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "ATEXIT.OBJ",
+        "module": "ATEXIT",
+        "source": "CL.LIB",
+        "source_offset": 352,
+        "source_end": 599,
+        "size": 247,
+        "sha256": "e66cf565f921c5b85556af55a8884361a2b9f47ff34d39676e7c527557e3075e",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "CTYPE.OBJ",
+        "module": "CTYPE",
+        "source": "CL.LIB",
+        "source_offset": 2800,
+        "source_end": 3178,
+        "size": 378,
+        "sha256": "e0a8e6b9397d790a401e98a8a57fcf8617736d13537a7e62b9afeb7e4684985d",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "DOSFATTR.OBJ",
+        "module": "DOSFATTR",
+        "source": "CL.LIB",
+        "source_offset": 5728,
+        "source_end": 6002,
+        "size": 274,
+        "sha256": "43b3a9c57cf54694bd0e5bed12caade236dc1e6b09d138f84e33ae91cc9b3a9f",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "EXIT.OBJ",
+        "module": "EXIT",
+        "source": "CL.LIB",
+        "source_offset": 10320,
+        "source_end": 10868,
+        "size": 548,
+        "sha256": "e5415bcde5ae18ee8c7319b14fabd16c749281ffe9cade743579da6e343d0d1a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FILES.OBJ",
+        "module": "FILES",
+        "source": "CL.LIB",
+        "source_offset": 11536,
+        "source_end": 12088,
+        "size": 552,
+        "sha256": "86ef6f390471757d67567332a19a60eddb90f6942964ff93a6bfc6c73f169d2e",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FILES2.OBJ",
+        "module": "FILES2",
+        "source": "CL.LIB",
+        "source_offset": 12096,
+        "source_end": 12278,
+        "size": 182,
+        "sha256": "09df2b8f3564e1040768f95474c3ce273db78908a2eeea40bfe54b28b04b52c9",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FMODE.OBJ",
+        "module": "FMODE",
+        "source": "CL.LIB",
+        "source_offset": 12288,
+        "source_end": 12433,
+        "size": 145,
+        "sha256": "510d1f0e86b60b0dfbdae74edeecf626b5bf04bf291e403e9fee2b60c3e7223c",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "F_LXMUL.OBJ",
+        "module": "F_LXMUL",
+        "source": "CL.LIB",
+        "source_offset": 12768,
+        "source_end": 12928,
+        "size": 160,
+        "sha256": "ee45a455d181d26306bc3daadb8282093b7de0e240366f90189a73d2df67d8ba",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "F_SCOPY.OBJ",
+        "module": "F_SCOPY",
+        "source": "CL.LIB",
+        "source_offset": 13104,
+        "source_end": 13269,
+        "size": 165,
+        "sha256": "8f2da1e738279c3acdb235936b6fcd1e68e639c28ef854fbfe5079dda1abb58a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "GETDATE.OBJ",
+        "module": "GETDATE",
+        "source": "CL.LIB",
+        "source_offset": 13664,
+        "source_end": 13844,
+        "size": 180,
+        "sha256": "8b524a887b6b317f9bdad543eddef6d44d9158b49e1ce1bb8bd91c338c1ad053",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "GETVECT.OBJ",
+        "module": "GETVECT",
+        "source": "CL.LIB",
+        "source_offset": 15088,
+        "source_end": 15284,
+        "size": 196,
+        "sha256": "e7c031a24ef61bea8bab22d5467ae6718a3d09df326b3cbd14ffd1a529250ff0",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "H_LDIV.OBJ",
+        "module": "H_LDIV",
+        "source": "CL.LIB",
+        "source_offset": 15888,
+        "source_end": 16366,
+        "size": 478,
+        "sha256": "67017c7587bb61233351ec3706b2f5872afab064651b6980d1c2a79c62afdf24",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "H_LLSH.OBJ",
+        "module": "H_LLSH",
+        "source": "CL.LIB",
+        "source_offset": 16368,
+        "source_end": 16555,
+        "size": 187,
+        "sha256": "4c62a96a8be3b5bb2cbfb1c3e9afbda068b61b031bdc1888c7527175e64e7056",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "H_PADA.OBJ",
+        "module": "H_PADA",
+        "source": "CL.LIB",
+        "source_offset": 16944,
+        "source_end": 17280,
+        "size": 336,
+        "sha256": "1b02ebd7393b7f33a24d95f499af5a73d8077b244ff1a6c4fe3555a9dd2c6a70",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "H_PADD.OBJ",
+        "module": "H_PADD",
+        "source": "CL.LIB",
+        "source_offset": 17280,
+        "source_end": 17576,
+        "size": 296,
+        "sha256": "cd0efdb14632532dd2665534a68475d642f10d645a27a981bb108240014e35a1",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "IOERROR.OBJ",
+        "module": "IOERROR",
+        "source": "CL.LIB",
+        "source_offset": 18688,
+        "source_end": 19108,
+        "size": 420,
+        "sha256": "184c7b514c675ed235b05b7785ebfd71733dcd2573d0ec1fc0ea6afc4be8b4ca",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "ISATTY.OBJ",
+        "module": "ISATTY",
+        "source": "CL.LIB",
+        "source_offset": 20160,
+        "source_end": 20321,
+        "size": 161,
+        "sha256": "bb53ebbed0ac71ab9db129e59f59486254a708a366f59cad2c8dbff2881ed784",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "LONGTOA.OBJ",
+        "module": "LONGTOA",
+        "source": "CL.LIB",
+        "source_offset": 20496,
+        "source_end": 20821,
+        "size": 325,
+        "sha256": "e45ca8f4dddcb66f9e8b3d5a6e69174ea4b0c02ed515edd6c4e06dce5785b336",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "LSEEK.OBJ",
+        "module": "LSEEK",
+        "source": "CL.LIB",
+        "source_offset": 21184,
+        "source_end": 21406,
+        "size": 222,
+        "sha256": "5ab83dd71c4b7e9be9230b9f623eef20f6c2df53fbe890b113fe8846267b0c65",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "MKNAME.OBJ",
+        "module": "MKNAME",
+        "source": "CL.LIB",
+        "source_offset": 21600,
+        "source_end": 22024,
+        "size": 424,
+        "sha256": "f535d3b1785258d915a2a85984846052f00c705d342edb627c9c97fb0130d33a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "N_LXMUL.OBJ",
+        "module": "N_LXMUL",
+        "source": "CL.LIB",
+        "source_offset": 22656,
+        "source_end": 22800,
+        "size": 144,
+        "sha256": "a40546689d43081cf2a3aacfc54701f39efd4235fde6629ff1b663245ea0be1a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "N_PCMP.OBJ",
+        "module": "N_PCMP",
+        "source": "CL.LIB",
+        "source_offset": 22800,
+        "source_end": 22952,
+        "size": 152,
+        "sha256": "3ea606ef46230351f3802cb2206133d6707ee5e00cebd7adbe11c366dcec751f",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "RAND.OBJ",
+        "module": "RAND",
+        "source": "CL.LIB",
+        "source_offset": 24272,
+        "source_end": 24529,
+        "size": 257,
+        "sha256": "e23d02d6c9c98e9aba7f9b74456d6c067194877a24831553d8a3105822a4c3c6",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "READA.OBJ",
+        "module": "READA",
+        "source": "CL.LIB",
+        "source_offset": 24544,
+        "source_end": 24772,
+        "size": 228,
+        "sha256": "7e2cf494c3b92481eb1d5e78f2ae90ff3b2ebb41634a1ae8d744bf849ca55dfc",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SCANNER.OBJ",
+        "module": "SCANNER",
+        "source": "CL.LIB",
+        "source_offset": 25744,
+        "source_end": 27500,
+        "size": 1756,
+        "sha256": "700652307d7abe63d9d517c299421bc31088bc1955cea444e80b9f7fc7a4a7b5",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SCANTOL.OBJ",
+        "module": "SCANTOL",
+        "source": "CL.LIB",
+        "source_offset": 27504,
+        "source_end": 28133,
+        "size": 629,
+        "sha256": "5ae594f3d3acc1d198240a90bea201be472b9098e011f05b45acd27bd9aee359",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SETDATE.OBJ",
+        "module": "SETDATE",
+        "source": "CL.LIB",
+        "source_offset": 29968,
+        "source_end": 30174,
+        "size": 206,
+        "sha256": "a8948f62af6e5564f6a6af03f794d183bb700c57e2bc6e257ffe60c39fe2fbc3",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SETUPIO.OBJ",
+        "module": "SETUPIO",
+        "source": "CL.LIB",
+        "source_offset": 30544,
+        "source_end": 31071,
+        "size": 527,
+        "sha256": "a8b9ee436816c7897359f0691bc512eb3cbeb3500eea17f404236eb2f2c46028",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STIME.OBJ",
+        "module": "STIME",
+        "source": "CL.LIB",
+        "source_offset": 31728,
+        "source_end": 32111,
+        "size": 383,
+        "sha256": "d3104cf91fb2f76ba48643cf9a490661eb9b81b2faafdbbb4e9ead095bf29071",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STKLEN.OBJ",
+        "module": "STKLEN",
+        "source": "CL.LIB",
+        "source_offset": 32112,
+        "source_end": 32237,
+        "size": 125,
+        "sha256": "cbd6f89678ba935010017e4c3ba3bd1bc52bd05e6c1d295927646b79021e866d",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "TOUPPER.OBJ",
+        "module": "TOUPPER",
+        "source": "CL.LIB",
+        "source_offset": 33216,
+        "source_end": 33406,
+        "size": 190,
+        "sha256": "8866ad9cde21327446f8032fb5e704465f11f80a2f9a44d14c4eb74b504eab35",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "UNLINK.OBJ",
+        "module": "UNLINK",
+        "source": "CL.LIB",
+        "source_offset": 33584,
+        "source_end": 33776,
+        "size": 192,
+        "sha256": "ea347a832fbc4ee65439fba49c8400be23b92cfa173cc9a1839c0b934e2308e9",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "VPRINTER.OBJ",
+        "module": "VPRINTER",
+        "source": "CL.LIB",
+        "source_offset": 40832,
+        "source_end": 42495,
+        "size": 1663,
+        "sha256": "8e8d0778e9e62e5b60759ec7405c13bd94e583b81a7179c43c05dd7a55ad095a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "_STPCPY.OBJ",
+        "module": "_STPCPY",
+        "source": "CL.LIB",
+        "source_offset": 44640,
+        "source_end": 44850,
+        "size": 210,
+        "sha256": "c9ac544c2dfaa33a128539cd7b1531012b77df62f5ce2e6b300b0d86a25c4b5f",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "CVTFAK.OBJ",
+        "module": "CVTFAK",
+        "source": "CL.LIB",
+        "source_offset": 56304,
+        "source_end": 56649,
+        "size": 345,
+        "sha256": "a46ce6446ada49bc17b92f028909fcdc7f1802b2652d89c6c3c1fd3d90f6e482",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "DELAY.OBJ",
+        "module": "DELAY",
+        "source": "CL.LIB",
+        "source_offset": 56656,
+        "source_end": 57060,
+        "size": 404,
+        "sha256": "7cd84f1f7b119ddc37eb44977326b297f1d89c574c75c665fdd5e7bff78ed696",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FARHEAP.OBJ",
+        "module": "FARHEAP",
+        "source": "CL.LIB",
+        "source_offset": 59920,
+        "source_end": 61481,
+        "size": 1561,
+        "sha256": "4b7e6d309d78b1b65695e4f608eb83de1ce28ed6292b6371cae00af082840fb3",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FBRK.OBJ",
+        "module": "FBRK",
+        "source": "CL.LIB",
+        "source_offset": 61488,
+        "source_end": 62196,
+        "size": 708,
+        "sha256": "b22374e8297c68dc9c538cf26fed9ea5ac2f963f2291c98b4c319d2fa4eeb366",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FCALLOC.OBJ",
+        "module": "FCALLOC",
+        "source": "CL.LIB",
+        "source_offset": 62208,
+        "source_end": 62564,
+        "size": 356,
+        "sha256": "b88f286beb1cc2cd7478c932f225dbfee8a3034433e3a45e70fc7f4de21d3eea",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "INTR.OBJ",
+        "module": "INTR",
+        "source": "CL.LIB",
+        "source_offset": 68336,
+        "source_end": 68640,
+        "size": 304,
+        "sha256": "219d164dedd6deb8cf54de9595bb16c03bd2b80f38c182f640b514a7417546f1",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "IOCTL.OBJ",
+        "module": "IOCTL",
+        "source": "CL.LIB",
+        "source_offset": 68640,
+        "source_end": 68847,
+        "size": 207,
+        "sha256": "fc7f6c2c1a75a601e94ab9ee9c05f53a29040c4709c3b6aff3452af1921d6cdc",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "REALCVT.OBJ",
+        "module": "REALCVT",
+        "source": "CL.LIB",
+        "source_offset": 70688,
+        "source_end": 70882,
+        "size": 194,
+        "sha256": "fc67b0e92b4e21bed9c76d505d54ae5ed314cade760c4ef3d1e3fe76ff3d7dc9",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SCANTOD.OBJ",
+        "module": "SCANTOD",
+        "source": "CL.LIB",
+        "source_offset": 70896,
+        "source_end": 71145,
+        "size": 249,
+        "sha256": "56b875bc3e00fa38d371cafd0e9fb3520e18e44e3f4172b153dfb3bb84730c93",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SETARGV.OBJ",
+        "module": "SETARGV",
+        "source": "CL.LIB",
+        "source_offset": 72528,
+        "source_end": 73243,
+        "size": 715,
+        "sha256": "a879352e6effe075cd2cf6c65ab7060a94f2524f75729767a6b2c21a024f7598",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SETBLOCK.OBJ",
+        "module": "SETBLOCK",
+        "source": "CL.LIB",
+        "source_offset": 73248,
+        "source_end": 73448,
+        "size": 200,
+        "sha256": "6a911a87856d60eec4e07635878b8bcb17ee972bd3c826735ca5ffde1d2c7acc",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SETENVP.OBJ",
+        "module": "SETENVP",
+        "source": "CL.LIB",
+        "source_offset": 73456,
+        "source_end": 73861,
+        "size": 405,
+        "sha256": "6e6aca713c31d9d18b68692953c04c6679a40b49e34f1145cd601bcca89b3cb2",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SOUND.OBJ",
+        "module": "SOUND",
+        "source": "CL.LIB",
+        "source_offset": 76096,
+        "source_end": 76307,
+        "size": 211,
+        "sha256": "20c03a64eccfc4ad593e175c32aa6fd37e072a09afcba5e3abe7281a110e7075",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "ATOL.OBJ",
+        "module": "ATOL",
+        "source": "CL.LIB",
+        "source_offset": 81264,
+        "source_end": 81574,
+        "size": 310,
+        "sha256": "0c6259c818f1ef630a1e81243c3230791d53a5d4bab0bcdce5ec44a8b5967c9f",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "CHMODA.OBJ",
+        "module": "CHMODA",
+        "source": "CL.LIB",
+        "source_offset": 83888,
+        "source_end": 84085,
+        "size": 197,
+        "sha256": "59cee840c5beea16b34a1178a1bd685e416c3c14bed251a4928d55ac96f43d58",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "CLOSE.OBJ",
+        "module": "CLOSE",
+        "source": "CL.LIB",
+        "source_offset": 84480,
+        "source_end": 84705,
+        "size": 225,
+        "sha256": "a39c30ad56500cbe726043d32692611c3f6ff4ffe7c778a138dd37d77c56e211",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "CLOSEA.OBJ",
+        "module": "CLOSEA",
+        "source": "CL.LIB",
+        "source_offset": 84720,
+        "source_end": 84933,
+        "size": 213,
+        "sha256": "971decfd9abf6c9e38c2b9acf9f562a33338fe907e356970e7e87c9153876fe9",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "EOF.OBJ",
+        "module": "EOF",
+        "source": "CL.LIB",
+        "source_offset": 102080,
+        "source_end": 102390,
+        "size": 310,
+        "sha256": "65b1217195b16442b41a9b80ccbedc86385bf7232a50c1d4796a97520ceddcff",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FCLOSE.OBJ",
+        "module": "FCLOSE",
+        "source": "CL.LIB",
+        "source_offset": 102400,
+        "source_end": 102777,
+        "size": 377,
+        "sha256": "7719753b3a794e2d68878c231b04b6328d86268af6a48422692597517e04a6b3",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FFLUSH.OBJ",
+        "module": "FFLUSH",
+        "source": "CL.LIB",
+        "source_offset": 103008,
+        "source_end": 103372,
+        "size": 364,
+        "sha256": "8f9cc6fb2605f65a86ff6eec3e9087da169884a337bbfef18c93e9c449ab07db",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FGETS.OBJ",
+        "module": "FGETS",
+        "source": "CL.LIB",
+        "source_offset": 103376,
+        "source_end": 103673,
+        "size": 297,
+        "sha256": "7ff83ecbc4f344f66ec4b6a27d1cbb92396d8ea1ff0ff8bce0bc23510e0175ba",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FINDFIRS.OBJ",
+        "module": "FINDFIRS",
+        "source": "CL.LIB",
+        "source_offset": 103680,
+        "source_end": 103973,
+        "size": 293,
+        "sha256": "25e691b3e9a17cddf1d6d2384997c234cb2fc8946cabf949e9bd329cf017b3fc",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FLUSHALL.OBJ",
+        "module": "FLUSHALL",
+        "source": "CL.LIB",
+        "source_offset": 104224,
+        "source_end": 104467,
+        "size": 243,
+        "sha256": "60a45ba0376ba0de096bfdce637a2bcec29c38fa6cd3e28b3e5a71a55adc8359",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FOPEN.OBJ",
+        "module": "FOPEN",
+        "source": "CL.LIB",
+        "source_offset": 104864,
+        "source_end": 105693,
+        "size": 829,
+        "sha256": "3de1d9603be9397d869cfa74f080d0d90998fadaf5834a78866db258155bb8c7",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FREAD.OBJ",
+        "module": "FREAD",
+        "source": "CL.LIB",
+        "source_offset": 106128,
+        "source_end": 106718,
+        "size": 590,
+        "sha256": "fe8795a11b43689cf19eadf5b7ef6a9f5c0daaa580dfe5a3a98be5afd042a0bd",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FSEEK.OBJ",
+        "module": "FSEEK",
+        "source": "CL.LIB",
+        "source_offset": 107168,
+        "source_end": 107846,
+        "size": 678,
+        "sha256": "f180762c69029016a6eaaa37702d67758c06114ab1de1b59c93d327457e57c7d",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "FWRITE.OBJ",
+        "module": "FWRITE",
+        "source": "CL.LIB",
+        "source_offset": 109568,
+        "source_end": 109907,
+        "size": 339,
+        "sha256": "ca2c9f345010d1c68a611edfb903994069ff086546b03ecda6dd60d5b23b671a",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "GETC.OBJ",
+        "module": "GETC",
+        "source": "CL.LIB",
+        "source_offset": 109920,
+        "source_end": 110655,
+        "size": 735,
+        "sha256": "f0fb804cc5f3d51f0e5c614827b6568dd2d1210b88ea9651937038bd422819ff",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "GETENV.OBJ",
+        "module": "GETENV",
+        "source": "CL.LIB",
+        "source_offset": 111408,
+        "source_end": 111686,
+        "size": 278,
+        "sha256": "09b5add8d81b2c7f6d67ec0cab4d1959a9b7c0dad6de5cb88f1a93b1551f1376",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "MEMCPY.OBJ",
+        "module": "MEMCPY",
+        "source": "CL.LIB",
+        "source_offset": 115168,
+        "source_end": 115348,
+        "size": 180,
+        "sha256": "395eb5952835841039939eac1d0a3c235007b0d9ec10a37f03e63e83229872e2",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "MEMSET.OBJ",
+        "module": "MEMSET",
+        "source": "CL.LIB",
+        "source_offset": 115584,
+        "source_end": 115812,
+        "size": 228,
+        "sha256": "f47b1e74ae3bfdd9cabeadea2d94803011176ba96c246bc13ed6d50c7723a54c",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "MOVMEM.OBJ",
+        "module": "MOVMEM",
+        "source": "CL.LIB",
+        "source_offset": 116464,
+        "source_end": 116763,
+        "size": 299,
+        "sha256": "3c6c951eb1a43ef05807516889f93fd1851801f7c752a90c39674a8577472898",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "OPEN.OBJ",
+        "module": "OPEN",
+        "source": "CL.LIB",
+        "source_offset": 117184,
+        "source_end": 117896,
+        "size": 712,
+        "sha256": "5e28da64e3a6d04753243d1b307834f2af0d02d6296100c024f0ecb0d39dd4e5",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "OPENA.OBJ",
+        "module": "OPENA",
+        "source": "CL.LIB",
+        "source_offset": 117904,
+        "source_end": 118164,
+        "size": 260,
+        "sha256": "3405d8d2ae7e635ed8d7997933942f5036f3f116b78f4d57fd5f187843c9e1d5",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "PRINTF.OBJ",
+        "module": "PRINTF",
+        "source": "CL.LIB",
+        "source_offset": 119488,
+        "source_end": 119690,
+        "size": 202,
+        "sha256": "6ab5bcdb7a53dae24b63e22a1c8c328adb97a89b87997e9183399882608a1b8b",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "PUTC.OBJ",
+        "module": "PUTC",
+        "source": "CL.LIB",
+        "source_offset": 119696,
+        "source_end": 121053,
+        "size": 1357,
+        "sha256": "b4cb0a8e8e00736a354b6239f391b2e6134cf53829cbd42f21d311040c5268fc",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "READ.OBJ",
+        "module": "READ",
+        "source": "CL.LIB",
+        "source_offset": 123120,
+        "source_end": 123562,
+        "size": 442,
+        "sha256": "c965810d055ac33ca3f81454c59a227ef4b55c26ab323e946193b83a65b30b73",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "READU.OBJ",
+        "module": "READU",
+        "source": "CL.LIB",
+        "source_offset": 123568,
+        "source_end": 123709,
+        "size": 141,
+        "sha256": "587c6f803df05a8021338e873d9422509a9a3937ef84c16ef0b6cac4c9a22e52",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "REWIND.OBJ",
+        "module": "REWIND",
+        "source": "CL.LIB",
+        "source_offset": 123920,
+        "source_end": 124100,
+        "size": 180,
+        "sha256": "95be4f80e2a302577ddc3771ee52e46a06b24433548cd510a123710e1dcdebcd",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SETVBUF.OBJ",
+        "module": "SETVBUF",
+        "source": "CL.LIB",
+        "source_offset": 124608,
+        "source_end": 125153,
+        "size": 545,
+        "sha256": "a36f131e46c343c93f18bd7d948c55a39e0074f194f739c3bc432d7d466233a5",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "SPRINTF.OBJ",
+        "module": "SPRINTF",
+        "source": "CL.LIB",
+        "source_offset": 126160,
+        "source_end": 126483,
+        "size": 323,
+        "sha256": "20615751426b990646f05e8b451d2c6f780f1963e649c714399118b251abb4ef",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRCAT.OBJ",
+        "module": "STRCAT",
+        "source": "CL.LIB",
+        "source_offset": 127488,
+        "source_end": 127695,
+        "size": 207,
+        "sha256": "8d6c21d58dd36ff83f0fc1cbc7875865c9e7901b65a72bd98df9545a3c65e21c",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRCMP.OBJ",
+        "module": "STRCMP",
+        "source": "CL.LIB",
+        "source_offset": 127904,
+        "source_end": 128096,
+        "size": 192,
+        "sha256": "8604782cfa954520340f5072ad266aad269e298ea1c01b23a5efcdf2529c50d3",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRCPY.OBJ",
+        "module": "STRCPY",
+        "source": "CL.LIB",
+        "source_offset": 128096,
+        "source_end": 128281,
+        "size": 185,
+        "sha256": "ddc59280f9bc345a4e084ead0a456a65abbf4ad609989e35698cb2951acac540",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRCSPN.OBJ",
+        "module": "STRCSPN",
+        "source": "CL.LIB",
+        "source_offset": 128288,
+        "source_end": 128481,
+        "size": 193,
+        "sha256": "364b5d4ec37461f75bb6e485f6dd3009d51196d9f29c2e176e3a3a2741a91d78",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRLEN.OBJ",
+        "module": "STRLEN",
+        "source": "CL.LIB",
+        "source_offset": 129888,
+        "source_end": 130063,
+        "size": 175,
+        "sha256": "31be69771d6c03b8918162fd63d79c1fd3e2d9199cd51c81e4b75da53aaa126b",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRNCAT.OBJ",
+        "module": "STRNCAT",
+        "source": "CL.LIB",
+        "source_offset": 130256,
+        "source_end": 130517,
+        "size": 261,
+        "sha256": "c4a4f461d7a938e042eddc1f8a9ef52fda55c017ab097c61ef3f49453751f167",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "STRNCPY.OBJ",
+        "module": "STRNCPY",
+        "source": "CL.LIB",
+        "source_offset": 130736,
+        "source_end": 130931,
+        "size": 195,
+        "sha256": "7dd56312129e57b870f02bf0826f5b7ec0c94f0d2f78ff2b8d4d229727854597",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "TIMECVT.OBJ",
+        "module": "TIMECVT",
+        "source": "CL.LIB",
+        "source_offset": 135024,
+        "source_end": 136203,
+        "size": 1179,
+        "sha256": "a89d6e39d665788450fcd66f599e73a818c6d535d1ae4d31cf756047f0d83ec8",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "TZSET.OBJ",
+        "module": "TZSET",
+        "source": "CL.LIB",
+        "source_offset": 136688,
+        "source_end": 138058,
+        "size": 1370,
+        "sha256": "d2903019cde5d4edffaf052a9b5bafd65095532d1b74f7c84a993045d2b3c5c0",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "UNGETC.OBJ",
+        "module": "UNGETC",
+        "source": "CL.LIB",
+        "source_offset": 138064,
+        "source_end": 138337,
+        "size": 273,
+        "sha256": "39a5fe80cbadc5ab496bf0726838ed05c0fa7bdc4edf88fb116538571727e8b6",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "VFSCANF.OBJ",
+        "module": "VFSCANF",
+        "source": "CL.LIB",
+        "source_offset": 139584,
+        "source_end": 139797,
+        "size": 213,
+        "sha256": "bd73464085bcedb40e357a06f4cfb5feebd4bfc63d0c92d03655bc02f37a4cd1",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "WRITE.OBJ",
+        "module": "WRITE",
+        "source": "CL.LIB",
+        "source_offset": 140256,
+        "source_end": 140810,
+        "size": 554,
+        "sha256": "9b52199c11ee9443fce2d589332fb4d238f37d0be2e34d1700141e61d8723515",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "WRITEA.OBJ",
+        "module": "WRITEA",
+        "source": "CL.LIB",
+        "source_offset": 140816,
+        "source_end": 141064,
+        "size": 248,
+        "sha256": "c96b13945d42176f9c1e6dc38f2bb7dd74ed3b73713fcf470fcc263fd2a12810",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "WRITEU.OBJ",
+        "module": "WRITEU",
+        "source": "CL.LIB",
+        "source_offset": 141072,
+        "source_end": 141216,
+        "size": 144,
+        "sha256": "c6c9bd4ac9c2404c3d6358d8b1725d7e5bd2af50e26905561a3d847f8c738e6f",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "XFCLOSE.OBJ",
+        "module": "XFCLOSE",
+        "source": "CL.LIB",
+        "source_offset": 141216,
+        "source_end": 141458,
+        "size": 242,
+        "sha256": "f2f56c990b8a9f615b3d29bac4e667bee8542c607728f9e5b2704cd81c9b2fb5",
+        "omf_records_unchanged": true
+      },
+      {
+        "object": "XFFLUSH.OBJ",
+        "module": "XFFLUSH",
+        "source": "CL.LIB",
+        "source_offset": 141472,
+        "source_end": 141690,
+        "size": 218,
+        "sha256": "171bcd88fe53f7835428be4d088ec1f443b21bf21731479cb7063f93a9fed67f",
+        "omf_records_unchanged": true
+      }
+    ],
+    "reads_reference_executable": false,
+    "reads_previously_extracted_objects": false,
+    "modifies_omf_records": false
+  },
+  "provenance_file": "provenance.json",
+  "core_compiled_from_sources_this_run": true,
+  "core_compilation": {
+    "preparation": {
+      "source_hashes": {
+        "ui/INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+        "ui/UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+        "game/GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+        "render/RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+        "formats/cards.h": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+        "formats/fmtabi.h": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+        "graphics/LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+        "low/SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+        "gpf/GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+        "hardware/HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+        "sound/SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+        "sound/SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+        "sound/MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+        "sound/ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+        "ui/START.C": "39d535182c3b3387b4f91abe6d418751e41eda1e2120b49bbd5ff84124fdca14",
+        "ui/INPUT.C": "5784b09e313c3b05f4a8ac688073f64e1a481bd2e452f2d77dd738ac942a9884",
+        "ui/MUSIC.C": "18f332426bccb5bbdbb0fc822cf202a8419f6eeaeb4595018dccbe8310f4c192",
+        "ui/UI.C": "df247e2fdf469fb04870390cf5c5fc93c0d927cb9225d90445996fb3b181f5db",
+        "game/GAME.C": "48cbc763807af8fed80885e20fcc433370db1afdfb78b75c121d947387200391",
+        "formats/cards.c": "7041102ca01f84fedf089e507c94a0df6aa735e63cf6190816995b4511ff2c30",
+        "formats/about.c": "cf2e1fbd81f41d0cb695662976908354aaf1581b063d856902a379f12bff1b6e",
+        "formats/xor.c": "35f709cf291803898fb0a0ab4cb61563055625cdefe790b19b1011c3a6496414",
+        "formats/files.c": "f6f6b40513f5bed7fa06def36f4703cb897e18442789e06fdb4d43407e0b1e71",
+        "formats/ticks.c": "4468bdac54b9896a1974986c5402e9efa01e19e170533609eddb9a405172ba09",
+        "formats/number.c": "ff5829e068225c5b50cd6e0b7858681d42913f9965f9ced0f9a9813553919d9d",
+        "low/ASSERT.C": "cbcdf71b10a3526079b98294f89f1a9edac8764ebc206ab8e15170948fb191f7",
+        "low/FORMAT.C": "5a0b8664110929e089e3542e4c4499d229bfe8454661ace940e56673904835b4",
+        "low/VIDEO.C": "a84b30474ab9861dca46f603499abcf6d563b4f01faceb1d4c95200ccc40e4a6",
+        "low/REGISTER.C": "e5c0bb98361a3954cf243ee467a9b85f0450bcf777fd855603b162dd0632a9b1",
+        "render/RENDER.C": "6dfb028f88e29f27f0c9e17bbd8e140a89f1266eb1191a3a6285d530ee75c149",
+        "graphics/BLO.C": "05c0d2b7ddbe28aa03ce3dad9af7fa2da2693781d6f3a18cb1762c45ced1d030",
+        "graphics/CHUNK.C": "2422f90e93e5621043653e3267fae6f36788404b534a721507ccdea5027748c7",
+        "graphics/PARA.C": "818a52c67b3e7a27b575afa6b7fc1a58f6b959c98c280c10f17655eb758d0e94",
+        "hardware/HW.C": "4af3f76ffa1571957eb1bfdf66b4d234c19bd9706828f8f36f1104e25be13920",
+        "formats/rec.c": "78570958b100b6e8dba40a9c024bd012814cf940bc2cedff420bab3f649a9d23",
+        "ega/RETRACE.C": "5fd5ba9d6b4cff50468d5715e0f09378a73338de065a316e8079f7eb92a33dd4",
+        "ega/EGA.ASM": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40",
+        "gpf/GPF.C": "b9fe78b0c8606aeb65f53109982e4669eeb297367cf3748daa5dae4a6965f753",
+        "gpf/LZSS.ASM": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07",
+        "sound/SNDATA.C": "90454db95bf77ffa5de2c2bea06c2af2105a6b0667a6c8dc74634f581951a020"
+      },
+      "staged": [
+        {
+          "name": "START",
+          "source": "src/START.C",
+          "sha256": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+          "compiler": "bc31"
+        },
+        {
+          "name": "INPUT",
+          "source": "src/INPUT.C",
+          "sha256": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+          "compiler": "bc31"
+        },
+        {
+          "name": "MUSIC",
+          "source": "src/MUSIC.C",
+          "sha256": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+          "compiler": "bc31"
+        },
+        {
+          "name": "UI",
+          "source": "src/UI.C",
+          "sha256": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+          "compiler": "bc31"
+        },
+        {
+          "name": "GAME",
+          "source": "src/GAME.C",
+          "sha256": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+          "compiler": "bc31"
+        },
+        {
+          "name": "CARDS",
+          "source": "src/CARDS.C",
+          "sha256": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+          "compiler": "bc31"
+        },
+        {
+          "name": "ABOUT",
+          "source": "src/ABOUT.C",
+          "sha256": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+          "compiler": "bc31"
+        },
+        {
+          "name": "XOR",
+          "source": "src/XOR.C",
+          "sha256": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24",
+          "compiler": "bc31"
+        },
+        {
+          "name": "FILES",
+          "source": "src/FILES.C",
+          "sha256": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+          "compiler": "bc31"
+        },
+        {
+          "name": "TICKS",
+          "source": "src/TICKS.C",
+          "sha256": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+          "compiler": "bc31"
+        },
+        {
+          "name": "NUMBER",
+          "source": "src/NUMBER.C",
+          "sha256": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+          "compiler": "bc31"
+        },
+        {
+          "name": "ASSERT",
+          "source": "src/ASSERT.C",
+          "sha256": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+          "compiler": "bc31"
+        },
+        {
+          "name": "FORMAT",
+          "source": "src/FORMAT.C",
+          "sha256": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+          "compiler": "bc31"
+        },
+        {
+          "name": "VIDEO",
+          "source": "src/VIDEO.C",
+          "sha256": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+          "compiler": "bc31"
+        },
+        {
+          "name": "REGISTER",
+          "source": "src/REGISTER.C",
+          "sha256": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+          "compiler": "bc31"
+        },
+        {
+          "name": "RENDER",
+          "source": "src/RENDER.C",
+          "sha256": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+          "compiler": "bc31"
+        },
+        {
+          "name": "BLO",
+          "source": "src/BLO.C",
+          "sha256": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+          "compiler": "bc31"
+        },
+        {
+          "name": "CHUNK",
+          "source": "src/CHUNK.C",
+          "sha256": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+          "compiler": "bc31"
+        },
+        {
+          "name": "PARA",
+          "source": "src/PARA.C",
+          "sha256": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+          "compiler": "bc31"
+        },
+        {
+          "name": "HW",
+          "source": "src/HW.C",
+          "sha256": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+          "compiler": "bc31"
+        },
+        {
+          "name": "REC",
+          "source": "src/REC.C",
+          "sha256": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+          "compiler": "bc31"
+        },
+        {
+          "name": "RETRACE",
+          "source": "src/RETRACE.C",
+          "sha256": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+          "compiler": "bc31"
+        },
+        {
+          "name": "EGA",
+          "source": "src/EGA.ASM",
+          "sha256": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40",
+          "compiler": "tasm31-ega"
+        },
+        {
+          "name": "GPF",
+          "source": "src/GPF.C",
+          "sha256": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+          "compiler": "bc2"
+        },
+        {
+          "name": "LZSS",
+          "source": "src/LZSS.ASM",
+          "sha256": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07",
+          "compiler": "tasm31"
+        },
+        {
+          "name": "SNDATA",
+          "source": "src/SNDATA.C",
+          "sha256": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+          "compiler": "bc31"
+        }
+      ],
+      "uses_original_executable_as_input": false,
+      "missing_modules": [
+        {
+          "name": "SOUND",
+          "owner": "gpf_resources",
+          "code": "1341:000C",
+          "size": 13172,
+          "pending": true,
+          "data_size": 0,
+          "bss_size": 0
+        }
+      ]
+    },
+    "compilation": [
+      {
+        "passed": true,
+        "source_hashes": {
+          "START.C": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+          "UI.C": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+          "SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+          "INPUT.C": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+          "MUSIC.C": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+          "GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+          "REGISTER.C": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+          "ASSERT.C": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+          "FILES.C": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+          "RENDER.C": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+          "ABOUT.C": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+          "RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+          "GAME.C": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+          "CARDS.H": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+          "FORMAT.C": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+          "CARDS.C": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+          "INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+          "LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+          "BLO.C": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+          "GPF.C": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+          "VIDEO.C": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+          "HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+          "GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+          "SNDATA.C": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+          "RETRACE.C": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+          "FMTABI.H": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+          "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+          "PARA.C": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+          "REC.C": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+          "TICKS.C": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+          "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+          "MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+          "HW.C": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+          "NUMBER.C": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+          "CHUNK.C": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+          "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+          "UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+          "XOR.C": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24"
+        },
+        "flags": "-ml -a- -k -O -r- -Z -G-",
+        "seconds": 1.064,
+        "files": [
+          "START.C"
+        ]
+      },
+      {
+        "passed": true,
+        "source_hashes": {
+          "START.C": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+          "UI.C": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+          "SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+          "INPUT.C": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+          "MUSIC.C": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+          "GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+          "REGISTER.C": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+          "ASSERT.C": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+          "FILES.C": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+          "RENDER.C": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+          "ABOUT.C": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+          "RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+          "GAME.C": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+          "CARDS.H": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+          "FORMAT.C": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+          "CARDS.C": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+          "INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+          "LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+          "BLO.C": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+          "GPF.C": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+          "VIDEO.C": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+          "HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+          "GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+          "SNDATA.C": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+          "RETRACE.C": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+          "FMTABI.H": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+          "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+          "PARA.C": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+          "REC.C": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+          "TICKS.C": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+          "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+          "MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+          "HW.C": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+          "NUMBER.C": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+          "CHUNK.C": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+          "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+          "UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+          "XOR.C": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24"
+        },
+        "flags": "-ml -a- -k- -O -r- -Z -G-",
+        "seconds": 4.674,
+        "files": [
+          "INPUT.C",
+          "MUSIC.C",
+          "UI.C",
+          "GAME.C",
+          "CARDS.C",
+          "ABOUT.C",
+          "XOR.C",
+          "FILES.C",
+          "TICKS.C",
+          "NUMBER.C",
+          "ASSERT.C",
+          "FORMAT.C",
+          "VIDEO.C",
+          "REGISTER.C",
+          "RENDER.C",
+          "BLO.C",
+          "CHUNK.C",
+          "PARA.C",
+          "REC.C",
+          "SNDATA.C"
+        ]
+      },
+      {
+        "passed": true,
+        "source_hashes": {
+          "START.C": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+          "UI.C": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+          "SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+          "INPUT.C": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+          "MUSIC.C": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+          "GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+          "REGISTER.C": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+          "ASSERT.C": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+          "FILES.C": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+          "RENDER.C": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+          "ABOUT.C": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+          "RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+          "GAME.C": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+          "CARDS.H": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+          "FORMAT.C": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+          "CARDS.C": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+          "INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+          "LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+          "BLO.C": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+          "GPF.C": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+          "VIDEO.C": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+          "HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+          "GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+          "SNDATA.C": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+          "RETRACE.C": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+          "FMTABI.H": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+          "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+          "PARA.C": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+          "REC.C": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+          "TICKS.C": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+          "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+          "MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+          "HW.C": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+          "NUMBER.C": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+          "CHUNK.C": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+          "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+          "UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+          "XOR.C": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24"
+        },
+        "flags": "-ml -a- -k- -O -r- -Z -G- -B",
+        "seconds": 1.301,
+        "files": [
+          "HW.C"
+        ]
+      },
+      {
+        "passed": true,
+        "source_hashes": {
+          "START.C": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+          "UI.C": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+          "SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+          "INPUT.C": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+          "MUSIC.C": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+          "GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+          "REGISTER.C": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+          "ASSERT.C": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+          "FILES.C": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+          "RENDER.C": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+          "ABOUT.C": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+          "RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+          "GAME.C": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+          "CARDS.H": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+          "FORMAT.C": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+          "CARDS.C": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+          "INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+          "LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+          "BLO.C": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+          "GPF.C": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+          "VIDEO.C": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+          "HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+          "GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+          "SNDATA.C": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+          "RETRACE.C": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+          "FMTABI.H": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+          "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+          "PARA.C": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+          "REC.C": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+          "TICKS.C": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+          "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+          "MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+          "HW.C": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+          "NUMBER.C": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+          "CHUNK.C": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+          "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+          "UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+          "XOR.C": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24"
+        },
+        "flags": "-ml -a- -k -O -r- -Z -G- -B",
+        "seconds": 0.889,
+        "files": [
+          "RETRACE.C"
+        ]
+      },
+      {
+        "passed": true,
+        "source_hashes": {
+          "START.C": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+          "UI.C": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+          "SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+          "INPUT.C": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+          "MUSIC.C": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+          "GPF.H": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987",
+          "REGISTER.C": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+          "ASSERT.C": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+          "FILES.C": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+          "RENDER.C": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+          "ABOUT.C": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+          "RENDER.H": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287",
+          "GAME.C": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+          "CARDS.H": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1",
+          "FORMAT.C": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+          "CARDS.C": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+          "INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+          "LOW.H": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db",
+          "BLO.C": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+          "GPF.C": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+          "VIDEO.C": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+          "HW.H": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968",
+          "GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf",
+          "SNDATA.C": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+          "RETRACE.C": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+          "FMTABI.H": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf",
+          "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+          "PARA.C": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+          "REC.C": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+          "TICKS.C": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+          "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+          "MIDISND.H": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84",
+          "HW.C": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+          "NUMBER.C": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+          "CHUNK.C": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+          "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+          "UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13",
+          "XOR.C": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24"
+        },
+        "flags": "-ml -a- -k- -O- -r- -Z- -G- -K",
+        "seconds": 0.872,
+        "files": [
+          "GPF.C"
+        ]
+      },
+      {
+        "passed": true,
+        "source_sha256": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40",
+        "assembler": "Borland TASM 3.1",
+        "flags": "/ml"
+      },
+      {
+        "passed": true,
+        "assembly_object_sha256": "8f422da162c00686cc8534ac327e8048e345d35a95cd959276689935e9cf77ba",
+        "plaintext_size": 12374,
+        "plaintext_sha256": "d5b7ff2423d41c282abf568849fe1b41432d3d444b5dc96f66b79b003c8e7bc6",
+        "encoded_payload_range": [
+          182,
+          12246
+        ],
+        "encoded_size": 12374,
+        "encoded_sha256": "a4acb6c24aefb5d8cb087b7d6e327d1ae2648d02293b005968218365cd6a2113",
+        "output_object_sha256": "b60892901964c2ef6f80bacafc51a3212cbf4c8b594d168d95b0f84b77c6f000",
+        "runtime_relocations": 0,
+        "ordinary_offset_fixups": 0,
+        "reference_executable_used_as_build_input": false
+      },
+      {
+        "passed": true,
+        "source_sha256": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07",
+        "assembler": "original Borland TASM",
+        "flags": "/ml"
+      }
+    ],
+    "alias_objects": 26,
+    "public_layout_mismatches": [],
+    "missing_externals": [
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_0057",
+        "address": "1341:0057"
+      },
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_0039",
+        "address": "1341:0039"
+      },
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_002a",
+        "address": "1341:002A"
+      },
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_0026",
+        "address": "1341:0026"
+      },
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_0022",
+        "address": "1341:0022"
+      },
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_001e",
+        "address": "1341:001E"
+      },
+      {
+        "module": "MUSIC",
+        "symbol": "_f_1341_000c",
+        "address": "1341:000C"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_235A",
+        "address": "1341:235A"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_0C3D",
+        "address": "1341:0C3D"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_0857",
+        "address": "1341:0857"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_066B",
+        "address": "1341:066B"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_02B7",
+        "address": "1341:02B7"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_029B",
+        "address": "1341:029B"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_0269",
+        "address": "1341:0269"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_021C",
+        "address": "1341:021C"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_0217",
+        "address": "1341:0217"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_01DC",
+        "address": "1341:01DC"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_01D5",
+        "address": "1341:01D5"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_01CB",
+        "address": "1341:01CB"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_01A7",
+        "address": "1341:01A7"
+      },
+      {
+        "module": "SNDATA",
+        "symbol": "_snd_0158",
+        "address": "1341:0158"
+      }
+    ],
+    "pending_modules": [
+      "SOUND"
+    ],
+    "native_link": null,
+    "uses_reference_executable_as_input": false,
+    "contains_placeholder_code": false,
+    "complete_executable_proven": false
+  },
+  "linked_input_objects": [
+    {
+      "module": "START",
+      "sha256": "d5185748eda89af6c238f6807e948c7a1fca76ae262ac6873fc42ab7d6ff90e9"
+    },
+    {
+      "module": "INPUT",
+      "sha256": "320845e097930bf394c23640a696d3682139b71077f4216a4ac0f0838fece2e7"
+    },
+    {
+      "module": "MUSIC",
+      "sha256": "8cd1d7062a0622123fa245b51b8d5fde7ae7e84256b01c34d67a22a7a43b763d"
+    },
+    {
+      "module": "UI",
+      "sha256": "6e67f0eb1d4704fb90ba0381f6204239abc3122a2b4de1a6abeacf3cbf62ac1a"
+    },
+    {
+      "module": "GAME",
+      "sha256": "77c1f0c725f538800566659a0d6ce8a1b443ea6dd0c1e017357a649f4ad49ac6"
+    },
+    {
+      "module": "CARDS",
+      "sha256": "f23e9395fa62e34d683299d18e3aacd8adfc80b1f4dc7a82fa1ca44f41ef2420"
+    },
+    {
+      "module": "ABOUT",
+      "sha256": "9462a9a01de596afdb2413f3de16f4155c6a2ef826bd33c548e562bfbe84c379"
+    },
+    {
+      "module": "XOR",
+      "sha256": "0abf4bde909595fa9444ed77b4ef80f9f5c2f3d9dfd215f45c1da2fa33231cc1"
+    },
+    {
+      "module": "FILES",
+      "sha256": "ece00dd1a013748ddb64d9a1bd5a1155fddd7a325a4f82f9c4500cff5e21cd69"
+    },
+    {
+      "module": "TICKS",
+      "sha256": "87cd23ad0d7669a103df0adc9754a633711ffb7d07ee8cd77738e7e7c7d60cca"
+    },
+    {
+      "module": "NUMBER",
+      "sha256": "29c3fc1892083d917ff6ffb5e18886a647c10ce27c2e2083d68fd073d01d42ca"
+    },
+    {
+      "module": "ASSERT",
+      "sha256": "36a81aa127ecfa2bda2fda7f35777799605ea547847200ff8883ed2be524a52c"
+    },
+    {
+      "module": "FORMAT",
+      "sha256": "c203f531a39fa7f3bc4ccd735e598ea23ec30e532147dc5b5a482a8a87738d1f"
+    },
+    {
+      "module": "VIDEO",
+      "sha256": "481d9190d1ce077d9ff5b901e1b7d4b6a930b8bdfe0a89161321f5541c3dd0e6"
+    },
+    {
+      "module": "REGISTER",
+      "sha256": "37d09255ed4ecd382f9835aba155c59e6d2e346efd3be8153e798a18a8bedb3c"
+    },
+    {
+      "module": "RENDER",
+      "sha256": "1aa37ace629a9403062fef019d4da38a8f84868e4e5d4abb267824189de090b6"
+    },
+    {
+      "module": "BLO",
+      "sha256": "98af8e8734f195ccc449c02a627f56cb31d068d966a1a95b4500b517bee7b65b"
+    },
+    {
+      "module": "CHUNK",
+      "sha256": "8a2572791ce328c8d705371e12b03cba125dd7adfde3857d8b380e37f17a6d0c"
+    },
+    {
+      "module": "PARA",
+      "sha256": "1edb66027341ec5b341947350fc29e96ac147707bb6fdc27d68643e20077d06c"
+    },
+    {
+      "module": "HW",
+      "sha256": "b4ca5290e39fe2e580e6b3b1a2c7a3bd501af748f1113388fe9e8b9d214ef248"
+    },
+    {
+      "module": "REC",
+      "sha256": "64b519d3831d1ee93995f1d17457719cb804bf52d7a7a5e6af4b6df494d4b193"
+    },
+    {
+      "module": "RETRACE",
+      "sha256": "ef2806c504b12b647caf55a4c7fb86216466e75db6b9c5672f7c160c174b9745"
+    },
+    {
+      "module": "EGA",
+      "sha256": "971f3b61b7be4369879dcfa4b177bf40695a37e9816fce805e8728ba63c24932"
+    },
+    {
+      "module": "GPF",
+      "sha256": "b167968f57973d58fa358d8ae70e9a24a2fa9e0e67487995cb208e4e861c66fc"
+    },
+    {
+      "module": "LZSS",
+      "sha256": "5993163a9b2f16a562d241e2597f2c9aefa44897b386dc202058147249270a85"
+    },
+    {
+      "module": "SNDATA",
+      "sha256": "847cbc27cb090ab45f2499b069f5ccda0e6968bcf43e7ab4f668fa9507f53194"
+    },
+    {
+      "module": "SOUND",
+      "sha256": "b1f01611a905f7ae3d8376e4b8c3d581c0d126eb703ea868f63407904012de49"
+    }
+  ],
+  "missing_externals": [],
+  "public_layout_mismatches": [],
+  "no_reference_executable_build_input": true,
+  "no_executable_patches": true,
+  "historical_sound_source_language_proven": false,
+  "ordinary_sound_C_compiler_match_proven": false,
+  "full_file_equality_checked_by_separate_verifier": false
+}

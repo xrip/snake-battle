@@ -1,0 +1,11 @@
+{
+  "original_size": 269593,
+  "rebuilt_size": 269593,
+  "original_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+  "rebuilt_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+  "byte_exact": true,
+  "member_count": 82,
+  "lzss_streams": 94,
+  "method": "recompress each decoded resource with ordered match-tree encoder",
+  "compressed_original_bytes_needed_by_rebuild": false
+}

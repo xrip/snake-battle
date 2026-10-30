@@ -1,0 +1,818 @@
+{
+  "module": "game.c",
+  "segment_name": "_BSS",
+  "object_size": 6641,
+  "expected_size": 6641,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 6904,
+    "image_offset": 98952,
+    "address": "1679:1AF8"
+  },
+  "public_bindings": [
+    {
+      "name": "_sb_game_state",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6904,
+        "image_offset": 98952,
+        "address": "1679:1AF8"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6904,
+        "image_offset": 98952,
+        "address": "1679:1AF8"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g34e7",
+      "object_offset": 6639,
+      "actual": {
+        "segment": 5753,
+        "offset": 13543,
+        "image_offset": 105591,
+        "address": "1679:34E7"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13543,
+        "image_offset": 105591,
+        "address": "1679:34E7"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g34d7",
+      "object_offset": 6623,
+      "actual": {
+        "segment": 5753,
+        "offset": 13527,
+        "image_offset": 105575,
+        "address": "1679:34D7"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13527,
+        "image_offset": 105575,
+        "address": "1679:34D7"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g34d3",
+      "object_offset": 6619,
+      "actual": {
+        "segment": 5753,
+        "offset": 13523,
+        "image_offset": 105571,
+        "address": "1679:34D3"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13523,
+        "image_offset": 105571,
+        "address": "1679:34D3"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g34d5",
+      "object_offset": 6621,
+      "actual": {
+        "segment": 5753,
+        "offset": 13525,
+        "image_offset": 105573,
+        "address": "1679:34D5"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13525,
+        "image_offset": 105573,
+        "address": "1679:34D5"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1af8",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 6904,
+        "image_offset": 98952,
+        "address": "1679:1AF8"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6904,
+        "image_offset": 98952,
+        "address": "1679:1AF8"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b00",
+      "object_offset": 8,
+      "actual": {
+        "segment": 5753,
+        "offset": 6912,
+        "image_offset": 98960,
+        "address": "1679:1B00"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6912,
+        "image_offset": 98960,
+        "address": "1679:1B00"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b08",
+      "object_offset": 16,
+      "actual": {
+        "segment": 5753,
+        "offset": 6920,
+        "image_offset": 98968,
+        "address": "1679:1B08"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6920,
+        "image_offset": 98968,
+        "address": "1679:1B08"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b10",
+      "object_offset": 24,
+      "actual": {
+        "segment": 5753,
+        "offset": 6928,
+        "image_offset": 98976,
+        "address": "1679:1B10"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6928,
+        "image_offset": 98976,
+        "address": "1679:1B10"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b18",
+      "object_offset": 32,
+      "actual": {
+        "segment": 5753,
+        "offset": 6936,
+        "image_offset": 98984,
+        "address": "1679:1B18"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6936,
+        "image_offset": 98984,
+        "address": "1679:1B18"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b20",
+      "object_offset": 40,
+      "actual": {
+        "segment": 5753,
+        "offset": 6944,
+        "image_offset": 98992,
+        "address": "1679:1B20"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6944,
+        "image_offset": 98992,
+        "address": "1679:1B20"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b28",
+      "object_offset": 48,
+      "actual": {
+        "segment": 5753,
+        "offset": 6952,
+        "image_offset": 99000,
+        "address": "1679:1B28"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6952,
+        "image_offset": 99000,
+        "address": "1679:1B28"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b30",
+      "object_offset": 56,
+      "actual": {
+        "segment": 5753,
+        "offset": 6960,
+        "image_offset": 99008,
+        "address": "1679:1B30"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6960,
+        "image_offset": 99008,
+        "address": "1679:1B30"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b38",
+      "object_offset": 64,
+      "actual": {
+        "segment": 5753,
+        "offset": 6968,
+        "image_offset": 99016,
+        "address": "1679:1B38"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6968,
+        "image_offset": 99016,
+        "address": "1679:1B38"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b3c",
+      "object_offset": 68,
+      "actual": {
+        "segment": 5753,
+        "offset": 6972,
+        "image_offset": 99020,
+        "address": "1679:1B3C"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6972,
+        "image_offset": 99020,
+        "address": "1679:1B3C"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b40",
+      "object_offset": 72,
+      "actual": {
+        "segment": 5753,
+        "offset": 6976,
+        "image_offset": 99024,
+        "address": "1679:1B40"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6976,
+        "image_offset": 99024,
+        "address": "1679:1B40"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b41",
+      "object_offset": 73,
+      "actual": {
+        "segment": 5753,
+        "offset": 6977,
+        "image_offset": 99025,
+        "address": "1679:1B41"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6977,
+        "image_offset": 99025,
+        "address": "1679:1B41"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b43",
+      "object_offset": 75,
+      "actual": {
+        "segment": 5753,
+        "offset": 6979,
+        "image_offset": 99027,
+        "address": "1679:1B43"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6979,
+        "image_offset": 99027,
+        "address": "1679:1B43"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b45",
+      "object_offset": 77,
+      "actual": {
+        "segment": 5753,
+        "offset": 6981,
+        "image_offset": 99029,
+        "address": "1679:1B45"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6981,
+        "image_offset": 99029,
+        "address": "1679:1B45"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b4d",
+      "object_offset": 85,
+      "actual": {
+        "segment": 5753,
+        "offset": 6989,
+        "image_offset": 99037,
+        "address": "1679:1B4D"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6989,
+        "image_offset": 99037,
+        "address": "1679:1B4D"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_1b55",
+      "object_offset": 93,
+      "actual": {
+        "segment": 5753,
+        "offset": 6997,
+        "image_offset": 99045,
+        "address": "1679:1B55"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 6997,
+        "image_offset": 99045,
+        "address": "1679:1B55"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_30b9",
+      "object_offset": 5569,
+      "actual": {
+        "segment": 5753,
+        "offset": 12473,
+        "image_offset": 104521,
+        "address": "1679:30B9"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12473,
+        "image_offset": 104521,
+        "address": "1679:30B9"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_30d9",
+      "object_offset": 5601,
+      "actual": {
+        "segment": 5753,
+        "offset": 12505,
+        "image_offset": 104553,
+        "address": "1679:30D9"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12505,
+        "image_offset": 104553,
+        "address": "1679:30D9"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_30f9",
+      "object_offset": 5633,
+      "actual": {
+        "segment": 5753,
+        "offset": 12537,
+        "image_offset": 104585,
+        "address": "1679:30F9"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12537,
+        "image_offset": 104585,
+        "address": "1679:30F9"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3119",
+      "object_offset": 5665,
+      "actual": {
+        "segment": 5753,
+        "offset": 12569,
+        "image_offset": 104617,
+        "address": "1679:3119"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12569,
+        "image_offset": 104617,
+        "address": "1679:3119"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3139",
+      "object_offset": 5697,
+      "actual": {
+        "segment": 5753,
+        "offset": 12601,
+        "image_offset": 104649,
+        "address": "1679:3139"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12601,
+        "image_offset": 104649,
+        "address": "1679:3139"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3159",
+      "object_offset": 5729,
+      "actual": {
+        "segment": 5753,
+        "offset": 12633,
+        "image_offset": 104681,
+        "address": "1679:3159"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12633,
+        "image_offset": 104681,
+        "address": "1679:3159"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3169",
+      "object_offset": 5745,
+      "actual": {
+        "segment": 5753,
+        "offset": 12649,
+        "image_offset": 104697,
+        "address": "1679:3169"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12649,
+        "image_offset": 104697,
+        "address": "1679:3169"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_316d",
+      "object_offset": 5749,
+      "actual": {
+        "segment": 5753,
+        "offset": 12653,
+        "image_offset": 104701,
+        "address": "1679:316D"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12653,
+        "image_offset": 104701,
+        "address": "1679:316D"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3171",
+      "object_offset": 5753,
+      "actual": {
+        "segment": 5753,
+        "offset": 12657,
+        "image_offset": 104705,
+        "address": "1679:3171"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 12657,
+        "image_offset": 104705,
+        "address": "1679:3171"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_340d",
+      "object_offset": 6421,
+      "actual": {
+        "segment": 5753,
+        "offset": 13325,
+        "image_offset": 105373,
+        "address": "1679:340D"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13325,
+        "image_offset": 105373,
+        "address": "1679:340D"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_340f",
+      "object_offset": 6423,
+      "actual": {
+        "segment": 5753,
+        "offset": 13327,
+        "image_offset": 105375,
+        "address": "1679:340F"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13327,
+        "image_offset": 105375,
+        "address": "1679:340F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3411",
+      "object_offset": 6425,
+      "actual": {
+        "segment": 5753,
+        "offset": 13329,
+        "image_offset": 105377,
+        "address": "1679:3411"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13329,
+        "image_offset": 105377,
+        "address": "1679:3411"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3413",
+      "object_offset": 6427,
+      "actual": {
+        "segment": 5753,
+        "offset": 13331,
+        "image_offset": 105379,
+        "address": "1679:3413"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13331,
+        "image_offset": 105379,
+        "address": "1679:3413"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3415",
+      "object_offset": 6429,
+      "actual": {
+        "segment": 5753,
+        "offset": 13333,
+        "image_offset": 105381,
+        "address": "1679:3415"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13333,
+        "image_offset": 105381,
+        "address": "1679:3415"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34ad",
+      "object_offset": 6581,
+      "actual": {
+        "segment": 5753,
+        "offset": 13485,
+        "image_offset": 105533,
+        "address": "1679:34AD"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13485,
+        "image_offset": 105533,
+        "address": "1679:34AD"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34af",
+      "object_offset": 6583,
+      "actual": {
+        "segment": 5753,
+        "offset": 13487,
+        "image_offset": 105535,
+        "address": "1679:34AF"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13487,
+        "image_offset": 105535,
+        "address": "1679:34AF"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34b1",
+      "object_offset": 6585,
+      "actual": {
+        "segment": 5753,
+        "offset": 13489,
+        "image_offset": 105537,
+        "address": "1679:34B1"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13489,
+        "image_offset": 105537,
+        "address": "1679:34B1"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34b3",
+      "object_offset": 6587,
+      "actual": {
+        "segment": 5753,
+        "offset": 13491,
+        "image_offset": 105539,
+        "address": "1679:34B3"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13491,
+        "image_offset": 105539,
+        "address": "1679:34B3"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34c3",
+      "object_offset": 6603,
+      "actual": {
+        "segment": 5753,
+        "offset": 13507,
+        "image_offset": 105555,
+        "address": "1679:34C3"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13507,
+        "image_offset": 105555,
+        "address": "1679:34C3"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34d3",
+      "object_offset": 6619,
+      "actual": {
+        "segment": 5753,
+        "offset": 13523,
+        "image_offset": 105571,
+        "address": "1679:34D3"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13523,
+        "image_offset": 105571,
+        "address": "1679:34D3"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34d5",
+      "object_offset": 6621,
+      "actual": {
+        "segment": 5753,
+        "offset": 13525,
+        "image_offset": 105573,
+        "address": "1679:34D5"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13525,
+        "image_offset": 105573,
+        "address": "1679:34D5"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34d7",
+      "object_offset": 6623,
+      "actual": {
+        "segment": 5753,
+        "offset": 13527,
+        "image_offset": 105575,
+        "address": "1679:34D7"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13527,
+        "image_offset": 105575,
+        "address": "1679:34D7"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_34e7",
+      "object_offset": 6639,
+      "actual": {
+        "segment": 5753,
+        "offset": 13543,
+        "image_offset": 105591,
+        "address": "1679:34E7"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13543,
+        "image_offset": 105591,
+        "address": "1679:34E7"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3405",
+      "object_offset": 6413,
+      "actual": {
+        "segment": 5753,
+        "offset": 13317,
+        "image_offset": 105365,
+        "address": "1679:3405"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13317,
+        "image_offset": 105365,
+        "address": "1679:3405"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3409",
+      "object_offset": 6417,
+      "actual": {
+        "segment": 5753,
+        "offset": 13321,
+        "image_offset": 105369,
+        "address": "1679:3409"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13321,
+        "image_offset": 105369,
+        "address": "1679:3409"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_340b",
+      "object_offset": 6419,
+      "actual": {
+        "segment": 5753,
+        "offset": 13323,
+        "image_offset": 105371,
+        "address": "1679:340B"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13323,
+        "image_offset": 105371,
+        "address": "1679:340B"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

@@ -1,0 +1,790 @@
+{
+  "abi": {
+    "compiler": "Borland C++ 3.1 C89",
+    "model": "large",
+    "alignment": 1,
+    "int": 2,
+    "long": 4,
+    "data_pointer": 4
+  },
+  "globals": [
+    {
+      "name": "g_03ac",
+      "omf_symbol": "_g_03ac",
+      "address": "1679:03AC",
+      "declaration": "extern Rect g_03ac[4],g_03cc[4],g_03ec[4],g_040c[6],g_047c[4];",
+      "extent": 32,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "d8010700f9011400d8011c00f9012900d8013100f9013e00d8014600f9015300"
+    },
+    {
+      "name": "g_03cc",
+      "omf_symbol": "_g_03cc",
+      "address": "1679:03CC",
+      "declaration": "extern Rect g_03ac[4],g_03cc[4],g_03ec[4],g_040c[6],g_047c[4];",
+      "extent": 32,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "060209004f02130006021e004f022800060233004f023d00060248004f025200"
+    },
+    {
+      "name": "g_03ec",
+      "omf_symbol": "_g_03ec",
+      "address": "1679:03EC",
+      "declaration": "extern Rect g_03ac[4],g_03cc[4],g_03ec[4],g_040c[6],g_047c[4];",
+      "extent": 32,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "5c020a007c0212005c021f007c0227005c0234007c023c005c0249007c025100"
+    },
+    {
+      "name": "g_040c",
+      "omf_symbol": "_g_040c",
+      "address": "1679:040C",
+      "declaration": "extern Rect g_03ac[4],g_03cc[4],g_03ec[4],g_040c[6],g_047c[4];",
+      "extent": 48,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "ec01730066028900ec018c006602a200ec01a5006602bb00ec01be006602d400ec01d7006602ed00d10173006602ed00"
+    },
+    {
+      "name": "g_043c",
+      "omf_symbol": "_g_043c",
+      "address": "1679:043C",
+      "declaration": "extern int g_043c[4],g_0444[4];",
+      "extent": 8,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "000001000000ffff"
+    },
+    {
+      "name": "g_0444",
+      "omf_symbol": "_g_0444",
+      "address": "1679:0444",
+      "declaration": "extern int g_043c[4],g_0444[4];",
+      "extent": 8,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "ffff000001000000"
+    },
+    {
+      "name": "g_044c",
+      "omf_symbol": "_g_044c",
+      "address": "1679:044C",
+      "declaration": "extern Gate g_044c[4];",
+      "extent": 48,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "db002d01f5003201c0002d01180097001c00ac0018008100db001100f5001600f6001100b3019700b701ac00b301ad00"
+    },
+    {
+      "name": "g_047c",
+      "omf_symbol": "_g_047c",
+      "address": "1679:047C",
+      "declaration": "extern Rect g_03ac[4],g_03cc[4],g_03ec[4],g_040c[6],g_047c[4];",
+      "extent": 32,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "e0002b01ef00340118009c002000a700e0000f00ef001800b1019c00ba01a700"
+    },
+    {
+      "name": "g_049c",
+      "omf_symbol": "_g_049c",
+      "address": "1679:049C",
+      "declaration": "extern Match g_049c;",
+      "extent": 4,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "00000000"
+    },
+    {
+      "name": "g_04e9",
+      "omf_symbol": "_g_04e9",
+      "address": "1679:04E9",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 12,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "626f6479616c6c2e626c6f00"
+    },
+    {
+      "name": "g_04f5",
+      "omf_symbol": "_g_04f5",
+      "address": "1679:04F5",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 5,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "6d75733100"
+    },
+    {
+      "name": "g_04fa",
+      "omf_symbol": "_g_04fa",
+      "address": "1679:04FA",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 10,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "706c616e332e626c6f00"
+    },
+    {
+      "name": "g_0504",
+      "omf_symbol": "_g_0504",
+      "address": "1679:0504",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 9,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "636172642e626c6f00"
+    },
+    {
+      "name": "g_050d",
+      "omf_symbol": "_g_050d",
+      "address": "1679:050D",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 9,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "74696d652e626c6f00"
+    },
+    {
+      "name": "g_0516",
+      "omf_symbol": "_g_0516",
+      "address": "1679:0516",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 12,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "766f726f7461312e626c6f00"
+    },
+    {
+      "name": "g_0522",
+      "omf_symbol": "_g_0522",
+      "address": "1679:0522",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 12,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "766f726f7461322e626c6f00"
+    },
+    {
+      "name": "g_052e",
+      "omf_symbol": "_g_052e",
+      "address": "1679:052E",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 12,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "766f726f7461332e626c6f00"
+    },
+    {
+      "name": "g_053a",
+      "omf_symbol": "_g_053a",
+      "address": "1679:053A",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 12,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "766f726f7461342e626c6f00"
+    },
+    {
+      "name": "g_0545",
+      "omf_symbol": "_g_0545",
+      "address": "1679:0545",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 1,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "00"
+    },
+    {
+      "name": "g_0546",
+      "omf_symbol": "_g_0546",
+      "address": "1679:0546",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 1,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "00"
+    },
+    {
+      "name": "g_0548",
+      "omf_symbol": "_g_0548",
+      "address": "1679:0548",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 8,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "736e6b2e72656300"
+    },
+    {
+      "name": "g_0550",
+      "omf_symbol": "_g_0550",
+      "address": "1679:0550",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 26,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "63616e6e2774206f70656e2070726f746f636f6c2066696c6500"
+    },
+    {
+      "name": "g_056a",
+      "omf_symbol": "_g_056a",
+      "address": "1679:056A",
+      "declaration": "extern char g_04e9[],g_04f5[],g_04fa[],g_0504[],g_050d[],g_0516[],g_0522[],g_052e[],g_053a[],g_0545[],g_0546[],g_0548[],g_0550[],g_056a[];",
+      "extent": 5,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "6d75733300"
+    },
+    {
+      "name": "g_057a",
+      "omf_symbol": "_g_057a",
+      "address": "1679:057A",
+      "declaration": "extern Card g_057a;",
+      "extent": 152,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "0003000300030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030008030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009030009"
+    },
+    {
+      "name": "g_0db2",
+      "omf_symbol": "_g_0db2",
+      "address": "1679:0DB2",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "initialized",
+      "access": "GAME.C",
+      "initializer_hex": "0000"
+    },
+    {
+      "name": "g_1862",
+      "omf_symbol": "_g_1862",
+      "address": "1679:1862",
+      "declaration": "extern char *g_1862[5];",
+      "extent": 20,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_198a",
+      "omf_symbol": "_g_198a",
+      "address": "1679:198A",
+      "declaration": "extern Image *g_198a,*g_198e;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_198e",
+      "omf_symbol": "_g_198e",
+      "address": "1679:198E",
+      "declaration": "extern Image *g_198a,*g_198e;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_19a2",
+      "omf_symbol": "_g_19a2",
+      "address": "1679:19A2",
+      "declaration": "extern Image *g_19a2,*g_19a6,*g_40b2;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_19a6",
+      "omf_symbol": "_g_19a6",
+      "address": "1679:19A6",
+      "declaration": "extern Image *g_19a2,*g_19a6,*g_40b2;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_19aa",
+      "omf_symbol": "_g_19aa",
+      "address": "1679:19AA",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_19ae",
+      "omf_symbol": "_g_19ae",
+      "address": "1679:19AE",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_19b0",
+      "omf_symbol": "_g_19b0",
+      "address": "1679:19B0",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_19bc",
+      "omf_symbol": "_g_19bc",
+      "address": "1679:19BC",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1af2",
+      "omf_symbol": "_g_1af2",
+      "address": "1679:1AF2",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1af4",
+      "omf_symbol": "_g_1af4",
+      "address": "1679:1AF4",
+      "declaration": "extern int g_19aa,g_19bc,g_19ae,g_19b0,g_0db2,g_1af2,g_1af4;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1af8",
+      "omf_symbol": "_g_1af8",
+      "address": "1679:1AF8",
+      "declaration": "extern int g_1af8[4],g_1b00[4],g_1b08[4],g_1b10[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b00",
+      "omf_symbol": "_g_1b00",
+      "address": "1679:1B00",
+      "declaration": "extern int g_1af8[4],g_1b00[4],g_1b08[4],g_1b10[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b08",
+      "omf_symbol": "_g_1b08",
+      "address": "1679:1B08",
+      "declaration": "extern int g_1af8[4],g_1b00[4],g_1b08[4],g_1b10[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b10",
+      "omf_symbol": "_g_1b10",
+      "address": "1679:1B10",
+      "declaration": "extern int g_1af8[4],g_1b00[4],g_1b08[4],g_1b10[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b18",
+      "omf_symbol": "_g_1b18",
+      "address": "1679:1B18",
+      "declaration": "extern int g_1b18[4],g_1b20[4],g_1b28[4],g_1b30[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b20",
+      "omf_symbol": "_g_1b20",
+      "address": "1679:1B20",
+      "declaration": "extern int g_1b18[4],g_1b20[4],g_1b28[4],g_1b30[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b28",
+      "omf_symbol": "_g_1b28",
+      "address": "1679:1B28",
+      "declaration": "extern int g_1b18[4],g_1b20[4],g_1b28[4],g_1b30[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b30",
+      "omf_symbol": "_g_1b30",
+      "address": "1679:1B30",
+      "declaration": "extern int g_1b18[4],g_1b20[4],g_1b28[4],g_1b30[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b38",
+      "omf_symbol": "_g_1b38",
+      "address": "1679:1B38",
+      "declaration": "extern Callback g_1b38;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b3c",
+      "omf_symbol": "_g_1b3c",
+      "address": "1679:1B3C",
+      "declaration": "extern Card (*g_1b3c)[4][2][9];",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b40",
+      "omf_symbol": "_g_1b40",
+      "address": "1679:1B40",
+      "declaration": "extern char g_1b40;",
+      "extent": 1,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b41",
+      "omf_symbol": "_g_1b41",
+      "address": "1679:1B41",
+      "declaration": "extern int g_1b41,g_1b43,g_1b45[4],g_1b4d[4];",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b43",
+      "omf_symbol": "_g_1b43",
+      "address": "1679:1B43",
+      "declaration": "extern int g_1b41,g_1b43,g_1b45[4],g_1b4d[4];",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b45",
+      "omf_symbol": "_g_1b45",
+      "address": "1679:1B45",
+      "declaration": "extern int g_1b41,g_1b43,g_1b45[4],g_1b4d[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b4d",
+      "omf_symbol": "_g_1b4d",
+      "address": "1679:1B4D",
+      "declaration": "extern int g_1b41,g_1b43,g_1b45[4],g_1b4d[4];",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_1b55",
+      "omf_symbol": "_g_1b55",
+      "address": "1679:1B55",
+      "declaration": "extern BoardCell g_1b55[37][37];",
+      "extent": 5476,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_30b9",
+      "omf_symbol": "_g_30b9",
+      "address": "1679:30B9",
+      "declaration": "extern Image g_30b9,g_30d9,g_30f9,g_3119,g_3139;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_30d9",
+      "omf_symbol": "_g_30d9",
+      "address": "1679:30D9",
+      "declaration": "extern Image g_30b9,g_30d9,g_30f9,g_3119,g_3139;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_30f9",
+      "omf_symbol": "_g_30f9",
+      "address": "1679:30F9",
+      "declaration": "extern Image g_30b9,g_30d9,g_30f9,g_3119,g_3139;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3119",
+      "omf_symbol": "_g_3119",
+      "address": "1679:3119",
+      "declaration": "extern Image g_30b9,g_30d9,g_30f9,g_3119,g_3139;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3139",
+      "omf_symbol": "_g_3139",
+      "address": "1679:3139",
+      "declaration": "extern Image g_30b9,g_30d9,g_30f9,g_3119,g_3139;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3159",
+      "omf_symbol": "_g_3159",
+      "address": "1679:3159",
+      "declaration": "extern Image *g_3159[4],*g_3169,*g_316d;",
+      "extent": 16,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3169",
+      "omf_symbol": "_g_3169",
+      "address": "1679:3169",
+      "declaration": "extern Image *g_3159[4],*g_3169,*g_316d;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_316d",
+      "omf_symbol": "_g_316d",
+      "address": "1679:316D",
+      "declaration": "extern Image *g_3159[4],*g_3169,*g_316d;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3171",
+      "omf_symbol": "_g_3171",
+      "address": "1679:3171",
+      "declaration": "extern Snake g_3171[4];",
+      "extent": 660,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3405",
+      "omf_symbol": "_g_3405",
+      "address": "1679:3405",
+      "declaration": "extern long g_3405;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3409",
+      "omf_symbol": "_g_3409",
+      "address": "1679:3409",
+      "declaration": "extern int g_3409,g_340b;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_340b",
+      "omf_symbol": "_g_340b",
+      "address": "1679:340B",
+      "declaration": "extern int g_3409,g_340b;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_340d",
+      "omf_symbol": "_g_340d",
+      "address": "1679:340D",
+      "declaration": "extern int g_340d,g_340f,g_3411,g_3413;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_340f",
+      "omf_symbol": "_g_340f",
+      "address": "1679:340F",
+      "declaration": "extern int g_340d,g_340f,g_3411,g_3413;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3411",
+      "omf_symbol": "_g_3411",
+      "address": "1679:3411",
+      "declaration": "extern int g_340d,g_340f,g_3411,g_3413;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3413",
+      "omf_symbol": "_g_3413",
+      "address": "1679:3413",
+      "declaration": "extern int g_340d,g_340f,g_3411,g_3413;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_3415",
+      "omf_symbol": "_g_3415",
+      "address": "1679:3415",
+      "declaration": "extern Card g_3415;",
+      "extent": 152,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34ad",
+      "omf_symbol": "_g_34ad",
+      "address": "1679:34AD",
+      "declaration": "extern int g_34ad,g_34af,g_34b1;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34af",
+      "omf_symbol": "_g_34af",
+      "address": "1679:34AF",
+      "declaration": "extern int g_34ad,g_34af,g_34b1;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34b1",
+      "omf_symbol": "_g_34b1",
+      "address": "1679:34B1",
+      "declaration": "extern int g_34ad,g_34af,g_34b1;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34b3",
+      "omf_symbol": "_g_34b3",
+      "address": "1679:34B3",
+      "declaration": "extern Image *g_34b3[4],*g_34c3[4];",
+      "extent": 16,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34c3",
+      "omf_symbol": "_g_34c3",
+      "address": "1679:34C3",
+      "declaration": "extern Image *g_34b3[4],*g_34c3[4];",
+      "extent": 16,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34d3",
+      "omf_symbol": "_g_34d3",
+      "address": "1679:34D3",
+      "declaration": "extern int g_34d3,g_34d5;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34d5",
+      "omf_symbol": "_g_34d5",
+      "address": "1679:34D5",
+      "declaration": "extern int g_34d3,g_34d5;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34d7",
+      "omf_symbol": "_g_34d7",
+      "address": "1679:34D7",
+      "declaration": "extern Profile *g_34d7[4];",
+      "extent": 16,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_34e7",
+      "omf_symbol": "_g_34e7",
+      "address": "1679:34E7",
+      "declaration": "extern int g_34e7;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_40b2",
+      "omf_symbol": "_g_40b2",
+      "address": "1679:40B2",
+      "declaration": "extern Image *g_19a2,*g_19a6,*g_40b2;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_40b8",
+      "omf_symbol": "_g_40b8",
+      "address": "1679:40B8",
+      "declaration": "extern Image *g_40b8,*g_40bc;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_40bc",
+      "omf_symbol": "_g_40bc",
+      "address": "1679:40BC",
+      "declaration": "extern Image *g_40b8,*g_40bc;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_40ff",
+      "omf_symbol": "_g_40ff",
+      "address": "1679:40FF",
+      "declaration": "extern int g_40ff,g_4101;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    },
+    {
+      "name": "g_4101",
+      "omf_symbol": "_g_4101",
+      "address": "1679:4101",
+      "declaration": "extern int g_40ff,g_4101;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "GAME.C"
+    }
+  ],
+  "compiler_generated_data": {
+    "address": "1679:04A0",
+    "extent": 73,
+    "proof": "module_data.json",
+    "declarations": "Automatic initialized arrays and structs in GAME.C; generated by compiler, not a machine-code byte table."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "object": "snake-battle-recovered/full/game/build/GAME.OBJ",
+  "object_sha256": "5d1890bee231607e6725bd5920af1087c786ff937b15b9a37e1ca7dad1129200",
+  "module": "game.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 1184,
+    "image_offset": 93232,
+    "address": "1679:04A0"
+  },
+  "file_offset": 97328,
+  "object_size": 73,
+  "expected_size": 73,
+  "public_bindings": [],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      73
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "00ac87ea09d7e490b66807ab4cdf081e370809ad545fe1387eb406a57f4defb8",
+  "original_sha256": "00ac87ea09d7e490b66807ab4cdf081e370809ad545fe1387eb406a57f4defb8",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

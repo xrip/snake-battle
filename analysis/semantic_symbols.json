@@ -1,0 +1,542 @@
+{
+  "source": "SNAKE.EXE",
+  "source_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "address_convention": "MZ-relative segments before load-segment relocation; image=16*segment+offset; file=image+0x1000. Driver relocates itself and has a separate runtime mapping.",
+  "naming": "Independent semantic names, not recovered original debug symbols.",
+  "symbols": {
+    "0x03ef3": {
+      "name": "game_main",
+      "description": "Главная функция: инициализация, интерфейс, завершение.",
+      "cs_ip": "03EF:0003",
+      "image_offset": 16115,
+      "file_offset": 20211,
+      "evidence": "static"
+    },
+    "0x06803": {
+      "name": "main_menu_loop",
+      "description": "Главный цикл меню и переходы к игровым операциям.",
+      "cs_ip": "044D:2333",
+      "image_offset": 26627,
+      "file_offset": 30723,
+      "evidence": "static"
+    },
+    "0x0729d": {
+      "name": "sb_mirror_x",
+      "description": "Отражение карты 7x7 по X с переносом якоря.",
+      "cs_ip": "0729:000D",
+      "image_offset": 29341,
+      "file_offset": 33437,
+      "evidence": "native-differential",
+      "borland31_codegen": {
+        "size": 167,
+        "raw_equal": false,
+        "raw_difference_count": 3,
+        "equal_after_declared_link_bindings": true,
+        "report": "analysis/logic_codegen_verification.json"
+      }
+    },
+    "0x07344": {
+      "name": "sb_rotate_clockwise",
+      "description": "Поворот карты 7x7 на90 градусов с переносом якоря.",
+      "cs_ip": "0729:00B4",
+      "image_offset": 29508,
+      "file_offset": 33604,
+      "evidence": "native-differential",
+      "borland31_codegen": {
+        "size": 167,
+        "raw_equal": false,
+        "raw_difference_count": 3,
+        "equal_after_declared_link_bindings": true,
+        "report": "analysis/logic_codegen_verification.json"
+      }
+    },
+    "0x073eb": {
+      "name": "prepare_card_orientations",
+      "description": "Выделяет43776байт и строит кэш4слота×4поворота×2отражения×9карт.",
+      "cs_ip": "0729:015B",
+      "image_offset": 29675,
+      "file_offset": 33771,
+      "evidence": "static"
+    },
+    "0x0766e": {
+      "name": "draw_snake_score",
+      "description": "Обновление отображаемого счёта участника.",
+      "cs_ip": "0729:03DE",
+      "image_offset": 30318,
+      "file_offset": 34414,
+      "evidence": "static"
+    },
+    "0x076fe": {
+      "name": "read_replay_scores",
+      "description": "Читает16битный счёт каждого присутствующего участника.",
+      "cs_ip": "0729:046E",
+      "image_offset": 30462,
+      "file_offset": 34558,
+      "evidence": "static"
+    },
+    "0x0775c": {
+      "name": "write_replay_scores",
+      "description": "Пишет16битный счёт каждого присутствующего участника.",
+      "cs_ip": "0729:04CC",
+      "image_offset": 30556,
+      "file_offset": 34652,
+      "evidence": "static"
+    },
+    "0x077ae": {
+      "name": "scan_replay_to_marker",
+      "description": "Пропускает токены доE(счёт) илиD(завершение).",
+      "cs_ip": "0729:051E",
+      "image_offset": 30638,
+      "file_offset": 34734,
+      "evidence": "static"
+    },
+    "0x077eb": {
+      "name": "draw_selected_rule",
+      "description": "Вывод карты, выбранной ИИ, в обучающем интерфейсе.",
+      "cs_ip": "0729:055B",
+      "image_offset": 30699,
+      "file_offset": 34795,
+      "evidence": "static"
+    },
+    "0x07983": {
+      "name": "clear_selected_rule_display",
+      "description": "Очистка области отображения выбранной карты.",
+      "cs_ip": "0729:06F3",
+      "image_offset": 31107,
+      "file_offset": 35203,
+      "evidence": "static"
+    },
+    "0x07a24": {
+      "name": "clear_player_profile_pointers",
+      "description": "Сброс четырёх указателей профилей.",
+      "cs_ip": "0729:0794",
+      "image_offset": 31268,
+      "file_offset": 35364,
+      "evidence": "static"
+    },
+    "0x07a57": {
+      "name": "select_snake_sprite_color",
+      "description": "Связь цвета участника с дескриптором графики.",
+      "cs_ip": "0729:07C7",
+      "image_offset": 31319,
+      "file_offset": 35415,
+      "evidence": "static"
+    },
+    "0x07aac": {
+      "name": "initialize_board",
+      "description": "Инициализация типов клеток поля37x37 внутри заданных границ.",
+      "cs_ip": "0729:081C",
+      "image_offset": 31404,
+      "file_offset": 35500,
+      "evidence": "static"
+    },
+    "0x07b6e": {
+      "name": "clear_board_graphics",
+      "description": "Очистка/перерисовка поверхности поля.",
+      "cs_ip": "0729:08DE",
+      "image_offset": 31598,
+      "file_offset": 35694,
+      "evidence": "static"
+    },
+    "0x07bdb": {
+      "name": "clear_snake_graphics",
+      "description": "Очистка изображений сегментов змеи.",
+      "cs_ip": "0729:094B",
+      "image_offset": 31707,
+      "file_offset": 35803,
+      "evidence": "static"
+    },
+    "0x07cb0": {
+      "name": "draw_snake_segment",
+      "description": "Рисование сегмента змеи по положению, типу и направлению.",
+      "cs_ip": "0729:0A20",
+      "image_offset": 31920,
+      "file_offset": 36016,
+      "evidence": "static"
+    },
+    "0x07d1b": {
+      "name": "relabel_tail_and_draw",
+      "description": "Назначает новый хвост в кольце41элемента и обновляет графику.",
+      "cs_ip": "0729:0A8B",
+      "image_offset": 32027,
+      "file_offset": 36123,
+      "evidence": "native-differential-via-move"
+    },
+    "0x07dd4": {
+      "name": "trim_tail_and_draw",
+      "description": "Убирает хвост: типклетки0, длина--, счёт--; обновляет новый хвост.",
+      "cs_ip": "0729:0B44",
+      "image_offset": 32212,
+      "file_offset": 36308,
+      "evidence": "native-differential-via-move"
+    },
+    "0x07e7c": {
+      "name": "apply_move_and_draw",
+      "description": "Полный ход: новая голова, поедание хвоста/обычное перемещение, счёт, активность, графика.",
+      "cs_ip": "0729:0BEC",
+      "image_offset": 32380,
+      "file_offset": 36476,
+      "evidence": "native-differential-state"
+    },
+    "0x081b7": {
+      "name": "select_next_player",
+      "description": "Планировщик активных участников с воспроизведением/записью выбранного слота.",
+      "cs_ip": "0729:0F27",
+      "image_offset": 33207,
+      "file_offset": 37303,
+      "evidence": "static"
+    },
+    "0x08292": {
+      "name": "sb_compare_matches",
+      "description": "Сравнение пары {matched,score}; возвращает0/1/2.",
+      "cs_ip": "0729:1002",
+      "image_offset": 33426,
+      "file_offset": 37522,
+      "evidence": "native-differential",
+      "borland31_codegen": {
+        "size": 86,
+        "raw_equal": true,
+        "raw_difference_count": 0,
+        "equal_after_declared_link_bindings": true,
+        "report": "analysis/logic_codegen_verification.json"
+      }
+    },
+    "0x082e8": {
+      "name": "sb_match_card",
+      "description": "Полный групповой сопоставитель карты7x7 и обзора13x13.",
+      "cs_ip": "0729:1058",
+      "image_offset": 33512,
+      "file_offset": 37608,
+      "evidence": "native-differential",
+      "borland31_codegen": {
+        "size": 530,
+        "raw_equal": false,
+        "raw_difference_count": 13,
+        "equal_after_declared_link_bindings": true,
+        "report": "analysis/logic_codegen_verification.json"
+      }
+    },
+    "0x084fa": {
+      "name": "handle_battle_controls",
+      "description": "Обработка элементов управления боем.",
+      "cs_ip": "0729:126A",
+      "image_offset": 34042,
+      "file_offset": 38138,
+      "evidence": "static"
+    },
+    "0x086cc": {
+      "name": "decide_and_apply_player_move",
+      "description": "Формирует обзор, отбирает направления и карты, выбирает ход, пишет/читаетREC, двигает змею.",
+      "cs_ip": "0729:143C",
+      "image_offset": 34508,
+      "file_offset": 38604,
+      "evidence": "static"
+    },
+    "0x08b7b": {
+      "name": "seed_snake_step",
+      "description": "Начальное выращивание змеи до10сегментов.",
+      "cs_ip": "0729:18EB",
+      "image_offset": 35707,
+      "file_offset": 39803,
+      "evidence": "static"
+    },
+    "0x08c4d": {
+      "name": "animate_entry_gate_step",
+      "description": "Один шаг анимации ворот/места появления.",
+      "cs_ip": "0729:19BD",
+      "image_offset": 35917,
+      "file_offset": 40013,
+      "evidence": "static"
+    },
+    "0x08e40": {
+      "name": "initialize_round_animation",
+      "description": "Инициализация входных позиций и анимированное выращивание участников.",
+      "cs_ip": "0729:1BB0",
+      "image_offset": 36416,
+      "file_offset": 40512,
+      "evidence": "static"
+    },
+    "0x093b3": {
+      "name": "check_round_completion",
+      "description": "Проверка состояния раунда и условий завершения.",
+      "cs_ip": "0729:2123",
+      "image_offset": 37811,
+      "file_offset": 41907,
+      "evidence": "static"
+    },
+    "0x0944f": {
+      "name": "initialize_snake_records",
+      "description": "Начальная инициализация рабочих записей змей и цветов.",
+      "cs_ip": "0729:21BF",
+      "image_offset": 37967,
+      "file_offset": 42063,
+      "evidence": "static"
+    },
+    "0x0949a": {
+      "name": "load_body_images",
+      "description": "Загрузка изображений частей змей.",
+      "cs_ip": "0729:220A",
+      "image_offset": 38042,
+      "file_offset": 42138,
+      "evidence": "static"
+    },
+    "0x09519": {
+      "name": "free_body_images",
+      "description": "Освобождение изображений частей змей.",
+      "cs_ip": "0729:2289",
+      "image_offset": 38169,
+      "file_offset": 42265,
+      "evidence": "static"
+    },
+    "0x095b7": {
+      "name": "run_battle",
+      "description": "Оркестрация боя: ресурсы, раунды, ход, интерфейс, запись и статистика.",
+      "cs_ip": "0729:2327",
+      "image_offset": 38327,
+      "file_offset": 42423,
+      "evidence": "static"
+    },
+    "0x0b35a": {
+      "name": "allocate_or_fail",
+      "description": "Выделение памяти с обработкой ошибки.",
+      "cs_ip": "0B33:002A",
+      "image_offset": 45914,
+      "file_offset": 50010,
+      "evidence": "static"
+    },
+    "0x0bd7c": {
+      "name": "load_snake_profile",
+      "description": "Чтение и декодирование105-байтного заголовка и152-байтных картSNK.",
+      "cs_ip": "0B33:0A4C",
+      "image_offset": 48508,
+      "file_offset": 52604,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0bf9b": {
+      "name": "save_snake_profile",
+      "description": "Кодирование и сохранение профиляSNK.",
+      "cs_ip": "0B33:0C6B",
+      "image_offset": 49051,
+      "file_offset": 53147,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0c0bf": {
+      "name": "random_below",
+      "description": "Масштабирование генератора случайных чисел под диапазон.",
+      "cs_ip": "0B33:0D8F",
+      "image_offset": 49343,
+      "file_offset": 53439,
+      "evidence": "static"
+    },
+    "0x0d3d3": {
+      "name": "sprite_update",
+      "description": "Обёртка обновления графической поверхности/спрайта.",
+      "cs_ip": "0C85:0B83",
+      "image_offset": 54227,
+      "file_offset": 58323,
+      "evidence": "static"
+    },
+    "0x0ea18": {
+      "name": "replay_switch_to_nibbles",
+      "description": "Переключение с заголовка на поток4-битных токенов.",
+      "cs_ip": "0E92:00F8",
+      "image_offset": 59928,
+      "file_offset": 64024,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0ea2a": {
+      "name": "write_replay_nibble",
+      "description": "Упаковка токеновREC старшим полубайтом вперёд.",
+      "cs_ip": "0E92:010A",
+      "image_offset": 59946,
+      "file_offset": 64042,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0eb16": {
+      "name": "unread_replay_nibble",
+      "description": "Возврат токена во входной потокREC.",
+      "cs_ip": "0E92:01F6",
+      "image_offset": 60182,
+      "file_offset": 64278,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0eb2a": {
+      "name": "read_replay_nibble",
+      "description": "Чтение полубайтаREC.",
+      "cs_ip": "0E92:020A",
+      "image_offset": 60202,
+      "file_offset": 64298,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0eca1": {
+      "name": "read_replay_score_word",
+      "description": "Чтение16-битного счёта из четырёх полубайтов.",
+      "cs_ip": "0E92:0381",
+      "image_offset": 60577,
+      "file_offset": 64673,
+      "evidence": "cross-analysis-snk-rec"
+    },
+    "0x0ed66": {
+      "name": "sprite_driver_encoded_entry",
+      "description": "ИсходныйCALL в заголовке драйвера, файл0xFD66; послеинициализации заменяетсяfarJMP.",
+      "cs_ip": "0ED6:0006",
+      "image_offset": 60774,
+      "file_offset": 64870,
+      "evidence": "native-initialization"
+    },
+    "0x11d36": {
+      "name": "sprite_driver_decode_wrapper",
+      "description": "Проверка заголовка, контрольнаясумма, штатное декодирование, вызовинициализатора.",
+      "cs_ip": "0ED6:2FD6",
+      "image_offset": 73014,
+      "file_offset": 77110,
+      "evidence": "native-initialization"
+    }
+  },
+  "data_symbols": {
+    "0x16bcc": {
+      "name": "direction_dx",
+      "description": "int16[4]={0,1,0,-1}",
+      "ds_offset": "1679:043C",
+      "image_offset": 93132,
+      "file_offset": 97228,
+      "size": 8,
+      "file_backed": true
+    },
+    "0x16bd4": {
+      "name": "direction_dy",
+      "description": "int16[4]={-1,0,1,0}",
+      "ds_offset": "1679:0444",
+      "image_offset": 93140,
+      "file_offset": 97236,
+      "size": 8,
+      "file_backed": true
+    },
+    "0x182cc": {
+      "name": "oriented_card_cache",
+      "description": "far pointer to43776-byte cache",
+      "ds_offset": "1679:1B3C",
+      "image_offset": 99020,
+      "file_offset": null,
+      "size": 4,
+      "file_backed": false
+    },
+    "0x182d1": {
+      "name": "active_count",
+      "description": "Количество активных участников",
+      "ds_offset": "1679:1B41",
+      "image_offset": 99025,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    },
+    "0x182d3": {
+      "name": "pending_count",
+      "description": "Количество участников, ожидающих хода в текущем цикле",
+      "ds_offset": "1679:1B43",
+      "image_offset": 99027,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    },
+    "0x182d5": {
+      "name": "pending_flags",
+      "description": "int16[4] ожидающих хода",
+      "ds_offset": "1679:1B45",
+      "image_offset": 99029,
+      "file_offset": null,
+      "size": 8,
+      "file_backed": false
+    },
+    "0x182dd": {
+      "name": "active_flags",
+      "description": "int16[4] активных участников",
+      "ds_offset": "1679:1B4D",
+      "image_offset": 99037,
+      "file_offset": null,
+      "size": 8,
+      "file_backed": false
+    },
+    "0x182e5": {
+      "name": "board",
+      "description": "[37][37] пар int16{owner,kind}, x-major",
+      "ds_offset": "1679:1B55",
+      "image_offset": 99045,
+      "file_offset": null,
+      "size": 5476,
+      "file_backed": false
+    },
+    "0x19901": {
+      "name": "snake_states",
+      "description": "4записи по165байт",
+      "ds_offset": "1679:3171",
+      "image_offset": 104705,
+      "file_offset": null,
+      "size": 660,
+      "file_backed": false
+    },
+    "0x19b9d": {
+      "name": "completed_rounds",
+      "description": "Количество завершённых раундов текущего боя",
+      "ds_offset": "1679:340D",
+      "image_offset": 105373,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    },
+    "0x19b9f": {
+      "name": "alive_count",
+      "description": "Количество ещё существующих змей, включая остаток длины1",
+      "ds_offset": "1679:340F",
+      "image_offset": 105375,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    },
+    "0x19ba1": {
+      "name": "moved_flag",
+      "description": "Был ли выполнен ход",
+      "ds_offset": "1679:3411",
+      "image_offset": 105377,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    },
+    "0x19c67": {
+      "name": "profile_pointers",
+      "description": "4far-указателя на профили",
+      "ds_offset": "1679:34D7",
+      "image_offset": 105575,
+      "file_offset": null,
+      "size": 16,
+      "file_backed": false
+    },
+    "0x1a854": {
+      "name": "sprite_driver_dispatch_pointer",
+      "description": "far pointer to graphics dispatcher",
+      "ds_offset": "1679:40C4",
+      "image_offset": 108628,
+      "file_offset": null,
+      "size": 4,
+      "file_backed": false
+    },
+    "0x1a88f": {
+      "name": "replay_mode",
+      "description": "Режим воспроизведенияREC",
+      "ds_offset": "1679:40FF",
+      "image_offset": 108687,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    },
+    "0x1a891": {
+      "name": "record_mode",
+      "description": "Режим записиREC",
+      "ds_offset": "1679:4101",
+      "image_offset": 108689,
+      "file_offset": null,
+      "size": 2,
+      "file_backed": false
+    }
+  }
+}

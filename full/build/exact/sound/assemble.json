@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "assembler": "Borland TASM 3.1",
+  "flags": "/ml /m3 /l"
+}

@@ -1,0 +1,307 @@
+[
+  {
+    "source": "CONTROL.ASM",
+    "segment": "SC000C",
+    "address": "1341:000C",
+    "length": 98,
+    "functions": [
+      {
+        "name": "_snd_000C",
+        "address": "1341:000C",
+        "length": 18
+      },
+      {
+        "name": "_snd_001E",
+        "address": "1341:001E",
+        "length": 4
+      },
+      {
+        "name": "_snd_0022",
+        "address": "1341:0022",
+        "length": 4
+      },
+      {
+        "name": "_snd_0026",
+        "address": "1341:0026",
+        "length": 4
+      },
+      {
+        "name": "_snd_002A",
+        "address": "1341:002A",
+        "length": 15
+      },
+      {
+        "name": "_snd_0039",
+        "address": "1341:0039",
+        "length": 15
+      },
+      {
+        "name": "_snd_0048",
+        "address": "1341:0048",
+        "length": 15
+      },
+      {
+        "name": "_snd_0057",
+        "address": "1341:0057",
+        "length": 23
+      }
+    ]
+  },
+  {
+    "source": "CONTROL.ASM",
+    "segment": "SC00FE",
+    "address": "1341:00FE",
+    "length": 920,
+    "functions": [
+      {
+        "name": "_snd_00FE",
+        "address": "1341:00FE",
+        "length": 90
+      },
+      {
+        "name": "_snd_0158",
+        "address": "1341:0158",
+        "length": 79
+      },
+      {
+        "name": "_snd_01A7",
+        "address": "1341:01A7",
+        "length": 36
+      },
+      {
+        "name": "_snd_01CB",
+        "address": "1341:01CB",
+        "length": 10
+      },
+      {
+        "name": "_snd_01D5",
+        "address": "1341:01D5",
+        "length": 7
+      },
+      {
+        "name": "_snd_01DC",
+        "address": "1341:01DC",
+        "length": 59
+      },
+      {
+        "name": "_snd_0217",
+        "address": "1341:0217",
+        "length": 5
+      },
+      {
+        "name": "_snd_021C",
+        "address": "1341:021C",
+        "length": 77
+      },
+      {
+        "name": "_snd_0269",
+        "address": "1341:0269",
+        "length": 50
+      },
+      {
+        "name": "_snd_029B",
+        "address": "1341:029B",
+        "length": 28
+      },
+      {
+        "name": "_snd_02B7",
+        "address": "1341:02B7",
+        "length": 45
+      },
+      {
+        "name": "_snd_02E4",
+        "address": "1341:02E4",
+        "length": 290
+      },
+      {
+        "name": "_snd_0406",
+        "address": "1341:0406",
+        "length": 144
+      }
+    ]
+  },
+  {
+    "source": "CONTROL.ASM",
+    "segment": "SC04B8",
+    "address": "1341:04B8",
+    "length": 133,
+    "functions": [
+      {
+        "name": "_snd_04B8",
+        "address": "1341:04B8",
+        "length": 20
+      },
+      {
+        "name": "_snd_04CC",
+        "address": "1341:04CC",
+        "length": 13
+      },
+      {
+        "name": "_snd_04D9",
+        "address": "1341:04D9",
+        "length": 27
+      },
+      {
+        "name": "_snd_04F4",
+        "address": "1341:04F4",
+        "length": 73
+      }
+    ]
+  },
+  {
+    "source": "CONTROL.ASM",
+    "segment": "SC055E",
+    "address": "1341:055E",
+    "length": 2139,
+    "functions": [
+      {
+        "name": "_snd_055E",
+        "address": "1341:055E",
+        "length": 22
+      },
+      {
+        "name": "_snd_0574",
+        "address": "1341:0574",
+        "length": 50
+      },
+      {
+        "name": "_snd_05A6",
+        "address": "1341:05A6",
+        "length": 66
+      },
+      {
+        "name": "_snd_05E8",
+        "address": "1341:05E8",
+        "length": 91
+      },
+      {
+        "name": "_snd_0643",
+        "address": "1341:0643",
+        "length": 40
+      },
+      {
+        "name": "_snd_066B",
+        "address": "1341:066B",
+        "length": 216
+      },
+      {
+        "name": "_snd_0743",
+        "address": "1341:0743",
+        "length": 27
+      },
+      {
+        "name": "_snd_075E",
+        "address": "1341:075E",
+        "length": 49
+      },
+      {
+        "name": "_snd_078F",
+        "address": "1341:078F",
+        "length": 27
+      },
+      {
+        "name": "_snd_07AA",
+        "address": "1341:07AA",
+        "length": 79
+      },
+      {
+        "name": "_snd_07F9",
+        "address": "1341:07F9",
+        "length": 27
+      },
+      {
+        "name": "_snd_0814",
+        "address": "1341:0814",
+        "length": 67
+      },
+      {
+        "name": "_snd_0857",
+        "address": "1341:0857",
+        "length": 413
+      },
+      {
+        "name": "_snd_09F4",
+        "address": "1341:09F4",
+        "length": 314
+      },
+      {
+        "name": "_snd_0B2E",
+        "address": "1341:0B2E",
+        "length": 64
+      },
+      {
+        "name": "_snd_0B6E",
+        "address": "1341:0B6E",
+        "length": 16
+      },
+      {
+        "name": "_snd_0B7E",
+        "address": "1341:0B7E",
+        "length": 191
+      },
+      {
+        "name": "_snd_0C3D",
+        "address": "1341:0C3D",
+        "length": 134
+      },
+      {
+        "name": "_snd_0CC3",
+        "address": "1341:0CC3",
+        "length": 92
+      },
+      {
+        "name": "_snd_0D1F",
+        "address": "1341:0D1F",
+        "length": 137
+      },
+      {
+        "name": "_snd_0DA8",
+        "address": "1341:0DA8",
+        "length": 17
+      }
+    ]
+  },
+  {
+    "source": "CONTROL.ASM",
+    "segment": "SC3283",
+    "address": "1341:3283",
+    "length": 238,
+    "functions": [
+      {
+        "name": "_snd_3283",
+        "address": "1341:3283",
+        "length": 44
+      },
+      {
+        "name": "_snd_32AF",
+        "address": "1341:32AF",
+        "length": 32
+      },
+      {
+        "name": "_snd_32CF",
+        "address": "1341:32CF",
+        "length": 28
+      },
+      {
+        "name": "_snd_32EB",
+        "address": "1341:32EB",
+        "length": 24
+      },
+      {
+        "name": "_snd_3303",
+        "address": "1341:3303",
+        "length": 44
+      },
+      {
+        "name": "_snd_332F",
+        "address": "1341:332F",
+        "length": 51
+      },
+      {
+        "name": "_snd_3362",
+        "address": "1341:3362",
+        "length": 15
+      }
+    ]
+  }
+]

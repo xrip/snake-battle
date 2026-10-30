@@ -1,0 +1,353 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 1
+SNDTAIL.ASM
+
+
+
+      1				     ; Reconstructed hardware/math support at original 1341:30C4..3283.
+      2				     ; The OPL interface uses AH=register, AL=value. The unsigned long helpers
+      3				     ; retain the observed near/far callee-clean conventions of	this driver.
+      4				     .286
+      5	0000			     _TEXT segment byte	public 'CODE'
+      6				     assume cs:_TEXT,ds:DGROUP
+      7				     public _snd_30C4,_snd_312B,_snd_3164,_snd_316E
+      8				     public _snd_3179,_snd_31AA,_snd_320A,__aNulmul,__aFuldiv
+      9
+     10				     ; AX=pitch	in 1/128 semitones, BL=OPL voice.
+     11	0000			     _snd_30C4 label near
+     12	0000  8A EB			 mov ch,bl
+     13	0002  D1 E0			 shl ax,1
+     14	0004  80 EC 04			 sub ah,4
+     15	0007  8A DC			 mov bl,ah
+     16	0009  32 FF			 xor bh,bh
+     17	000B  C0 E8 05			 shr al,5
+     18	000E  8A D0			 mov dl,al
+     19	0010  8A 8F 0000e		 mov cl,byte ptr [bx+_snd_octaves]
+     20	0014  C0 E1 02			 shl cl,2
+     21	0017  8A B7 0000e		 mov dh,byte ptr [bx+_snd_semitones]
+     22	001B  B4 B0			 mov ah,0b0h
+     23	001D  02 E5			 add ah,ch
+     24	001F  E8 0088			 call near ptr _snd_316E
+     25	0022  8A E8			 mov ch,al
+     26	0024  24 20			 and al,020h
+     27	0026  74 23			 jz short make_frequency
+     28	0028  80 E5 DF			 and ch,0dfh
+     29	002B  3A CD			 cmp cl,ch
+     30	002D  77 04			 ja short rising_octave
+     31	002F  72 0F			 jb short falling_octave
+     32	0031  EB 18			 jmp short make_frequency
+     33	0033			     rising_octave:
+     34	0033  80 FE 06			 cmp dh,6
+     35	0036  73 13			 jae short make_frequency
+     36	0038  80 C6 0C			 add dh,12
+     37	003B  80 E9 04			 sub cl,4
+     38	003E  EB 0B			 jmp short make_frequency
+     39	0040			     falling_octave:
+     40	0040  80 FE 0B			 cmp dh,11
+     41	0043  76 06			 jbe short make_frequency
+     42	0045  80 EE 0C			 sub dh,12
+     43	0048  80 C1 04			 add cl,4
+     44	004B			     make_frequency:
+     45	004B  C0 E6 03			 shl dh,3
+     46	004E  02 F2			 add dh,dl
+     47	0050  8A DE			 mov bl,dh
+     48	0052  8A 87 0000e		 mov al,byte ptr [bx+_snd_frequencies]
+     49	0056  80 EC 10			 sub ah,010h
+     50	0059  E8 000B			 call near ptr _snd_312B
+     51	005C  8A C1			 mov al,cl
+     52	005E  0C 20			 or al,020h
+     53	0060  80 C4 10			 add ah,010h
+     54	0063  E8 0001			 call near ptr _snd_312B
+     55	0066  C3			 ret
+     56
+     57				     ; Cached write: skip identical values. Preserve AX/BX/CX/DX.
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 2
+SNDTAIL.ASM
+
+
+
+     58	0067			     _snd_312B label near
+     59	0067  50			 push ax
+     60	0068  53			 push bx
+     61	0069  51			 push cx
+     62	006A  52			 push dx
+     63	006B  32 FF			 xor bh,bh
+     64	006D  8A DC			 mov bl,ah
+     65	006F  3A 87 0000e		 cmp al,byte ptr [bx+_snd_opl_cache]
+     66	0073  74 26			 je short opl_write_done
+     67	0075			     opl_write:
+     68	0075  88 87 0000e		 mov byte ptr [bx+_snd_opl_cache],al
+     69	0079  86 C4			 xchg al,ah
+     70	007B  BA 0388			 mov dx,0388h
+     71	007E  EE			 out dx,al
+     72	007F  8B 0E 0000e		 mov cx,word ptr _snd_opl_index_delay
+     73	0083  90			 nop
+     74	0084			     opl_index_wait:
+     75	0084  EC			 in al,dx
+     76	0085  24 00			 and al,0
+     77	0087  3C FF			 cmp al,0ffh
+     78	0089  E0 F9			 loopne	opl_index_wait
+     79	008B  86 C4			 xchg al,ah
+     80	008D  42			 inc dx
+     81	008E  EE			 out dx,al
+     82	008F  4A			 dec dx
+     83	0090  8B 0E 0000e		 mov cx,word ptr _snd_opl_data_delay
+     84	0094			     opl_data_wait:
+     85	0094  EC			 in al,dx
+     86	0095  24 00			 and al,0
+     87	0097  3C FF			 cmp al,0ffh
+     88	0099  E0 F9			 loopne	opl_data_wait
+     89	009B			     opl_write_done:
+     90	009B  5A			 pop dx
+     91	009C  59			 pop cx
+     92	009D  5B			 pop bx
+     93	009E  58			 pop ax
+     94	009F  C3			 ret
+     95
+     96				     ; Uncached	write shares the same timing and cache-update path.
+     97	00A0			     _snd_3164 label near
+     98	00A0  50			 push ax
+     99	00A1  53			 push bx
+    100	00A2  51			 push cx
+    101	00A3  52			 push dx
+    102	00A4  32 FF			 xor bh,bh
+    103	00A6  8A DC			 mov bl,ah
+    104	00A8  EB CB			 jmp short opl_write
+    105	00AA			     _snd_316E label near
+    106	00AA  53			 push bx
+    107	00AB  32 FF			 xor bh,bh
+    108	00AD  8A DC			 mov bl,ah
+    109	00AF  8A 87 0000e		 mov al,byte ptr [bx+_snd_opl_cache]
+    110	00B3  5B			 pop bx
+    111	00B4  C3			 ret
+    112
+    113				     ; Low 32 bits of an unsigned 32x32	multiplication,	RET 8.
+    114	00B5			     __aNulmul label near
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 3
+SNDTAIL.ASM
+
+
+
+    115	00B5			     _snd_3179 label near
+    116	00B5  C8 0000 00		 enter 0,0
+    117	00B9  8B 46 06			 mov ax,[bp+6]
+    118	00BC  8B 4E 0A			 mov cx,[bp+0ah]
+    119	00BF  0B C8			 or cx,ax
+    120	00C1  8B 4E 08			 mov cx,[bp+8]
+    121	00C4  75 09			 jnz short multiply_wide
+    122	00C6  8B 46 04			 mov ax,[bp+4]
+    123	00C9  F7 E1			 mul cx
+    124	00CB  C9			 leave
+    125	00CC  C2 0008			 ret 8
+    126	00CF			     multiply_wide:
+    127	00CF  F7 E1			 mul cx
+    128	00D1  8B D8			 mov bx,ax
+    129	00D3  8B 46 04			 mov ax,[bp+4]
+    130	00D6  F7 66 0A			 mul word ptr [bp+0ah]
+    131	00D9  03 D8			 add bx,ax
+    132	00DB  8B 46 04			 mov ax,[bp+4]
+    133	00DE  F7 E1			 mul cx
+    134	00E0  03 D3			 add dx,bx
+    135	00E2  C9			 leave
+    136	00E3  C2 0008			 ret 8
+    137
+    138				     ; Original	unsigned division helper with far return, RETF 8.
+    139	00E6			     __aFuldiv label far
+    140	00E6			     _snd_31AA label far
+    141	00E6  C8 0000 00		 enter 0,0
+    142	00EA  53			 push bx
+    143	00EB  56			 push si
+    144	00EC  8B 46 0C			 mov ax,[bp+0ch]
+    145	00EF  0B C0			 or ax,ax
+    146	00F1  75 15			 jnz short divide_wide
+    147	00F3  8B 4E 0A			 mov cx,[bp+0ah]
+    148	00F6  8B 46 08			 mov ax,[bp+8]
+    149	00F9  33 D2			 xor dx,dx
+    150	00FB  F7 F1			 div cx
+    151	00FD  8B D8			 mov bx,ax
+    152	00FF  8B 46 06			 mov ax,[bp+6]
+    153	0102  F7 F1			 div cx
+    154	0104  8B D3			 mov dx,bx
+    155	0106  EB 38			 jmp short divide_done
+    156	0108			     divide_wide:
+    157	0108  8B C8			 mov cx,ax
+    158	010A  8B 5E 0A			 mov bx,[bp+0ah]
+    159	010D  8B 56 08			 mov dx,[bp+8]
+    160	0110  8B 46 06			 mov ax,[bp+6]
+    161	0113			     divide_normalize:
+    162	0113  D1 E9			 shr cx,1
+    163	0115  D1 DB			 rcr bx,1
+    164	0117  D1 EA			 shr dx,1
+    165	0119  D1 D8			 rcr ax,1
+    166	011B  0B C9			 or cx,cx
+    167	011D  75 F4			 jnz short divide_normalize
+    168	011F  F7 F3			 div bx
+    169	0121  8B F0			 mov si,ax
+    170	0123  F7 66 0C			 mul word ptr [bp+0ch]
+    171	0126  91			 xchg cx,ax
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 4
+SNDTAIL.ASM
+
+
+
+    172	0127  8B 46 0A			 mov ax,[bp+0ah]
+    173	012A  F7 E6			 mul si
+    174	012C  03 D1			 add dx,cx
+    175	012E  72 0C			 jc short quotient_high
+    176	0130  3B 56 08			 cmp dx,[bp+8]
+    177	0133  77 07			 ja short quotient_high
+    178	0135  72 06			 jb short quotient_ready
+    179	0137  3B 46 06			 cmp ax,[bp+6]
+    180	013A  76 01			 jbe short quotient_ready
+    181	013C			     quotient_high:
+    182	013C  4E			 dec si
+    183	013D			     quotient_ready:
+    184	013D  33 D2			 xor dx,dx
+    185	013F  96			 xchg si,ax
+    186	0140			     divide_done:
+    187	0140  5E			 pop si
+    188	0141  5B			 pop bx
+    189	0142  C9			 leave
+    190	0143  CA 0008			 retf 8
+    191
+    192				     ; Probe AdLib timer status	and calibrate the register/data	I/O waits.
+    193	0146			     _snd_320A label near
+    194	0146  B8 0460			 mov ax,0460h
+    195	0149  E8 FF54			 call near ptr _snd_3164
+    196	014C  B8 0480			 mov ax,0480h
+    197	014F  E8 FF4E			 call near ptr _snd_3164
+    198	0152  BA 0388			 mov dx,0388h
+    199	0155  EC			 in al,dx
+    200	0156  24 E0			 and al,0e0h
+    201	0158  75 61			 jnz short no_opl
+    202	015A  B8 02C0			 mov ax,02c0h
+    203	015D  E8 FF40			 call near ptr _snd_3164
+    204	0160  B9 0014			 mov cx,20
+    205	0163  B8 2104			 mov ax,02104h
+    206	0166  EE			 out dx,al
+    207	0167  90			 nop
+    208	0168			     probe_initial_wait:
+    209	0168  EC			 in al,dx
+    210	0169  E2 FD			 loop probe_initial_wait
+    211	016B  8A C4			 mov al,ah
+    212	016D  42			 inc dx
+    213	016E  FA			 cli
+    214	016F  EE			 out dx,al
+    215	0170  4A			 dec dx
+    216	0171  90			 nop
+    217	0172			     probe_timer_wait:
+    218	0172  EC			 in al,dx
+    219	0173  24 E0			 and al,0e0h
+    220	0175  3C C0			 cmp al,0c0h
+    221	0177  E0 F9			 loopne	probe_timer_wait
+    222	0179  FB			 sti
+    223	017A  75 3F			 jne short no_opl
+    224	017C  B8 0460			 mov ax,0460h
+    225	017F  E8 FF1E			 call near ptr _snd_3164
+    226	0182  B8 0480			 mov ax,0480h
+    227	0185  E8 FF18			 call near ptr _snd_3164
+    228	0188  F7 D9			 neg cx
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 5
+SNDTAIL.ASM
+
+
+
+    229	018A  8B C1			 mov ax,cx
+    230	018C  33 D2			 xor dx,dx
+    231	018E  BB 00E4			 mov bx,228
+    232	0191  F7 F3			 div bx
+    233	0193  0B C0			 or ax,ax
+    234	0195  74 06			 jz short round_data_up
+    235	0197  D1 E2			 shl dx,1
+    236	0199  3B D3			 cmp dx,bx
+    237	019B  72 01			 jb short store_data_wait
+    238	019D			     round_data_up:
+    239	019D  40			 inc ax
+    240	019E			     store_data_wait:
+    241	019E  A3 0000e			 mov word ptr _snd_opl_data_delay,ax
+    242	01A1  8B C1			 mov ax,cx
+    243	01A3  33 D2			 xor dx,dx
+    244	01A5  BB 060F			 mov bx,1551
+    245	01A8  F7 F3			 div bx
+    246	01AA  0B C0			 or ax,ax
+    247	01AC  74 06			 jz short round_index_up
+    248	01AE  D1 E2			 shl dx,1
+    249	01B0  3B D3			 cmp dx,bx
+    250	01B2  72 01			 jb short store_index_wait
+    251	01B4			     round_index_up:
+    252	01B4  40			 inc ax
+    253	01B5			     store_index_wait:
+    254	01B5  A3 0000e			 mov word ptr _snd_opl_index_delay,ax
+    255	01B8  33 C0			 xor ax,ax
+    256	01BA  C3			 ret
+    257	01BB			     no_opl:
+    258	01BB  B8 FFFF			 mov ax,-1
+    259	01BE  C3			 ret
+    260	01BF			     _TEXT ends
+    261	0000			     _DATA segment word	public 'DATA'
+    262				     extrn _snd_octaves:byte,_snd_semitones:byte,_snd_frequencies:byte
+    263				     extrn _snd_opl_index_delay:word,_snd_opl_data_delay:word
+    264	0000			     _DATA ends
+    265	0000			     _BSS segment word public 'BSS'
+    266				     extrn _snd_opl_cache:byte
+    267	0000			     _BSS ends
+    268				     DGROUP group _DATA,_BSS
+    269				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 6
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "SNDTAIL "
+??time				  Text	 "18:15:27"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 SNDTAIL
+@WordSize			  Text	 2
+@curseg				  Text	 _BSS
+__aFuldiv			  Far	 _TEXT:00E6
+__aNulmul			  Near	 _TEXT:00B5
+_snd_30C4			  Near	 _TEXT:0000
+_snd_312B			  Near	 _TEXT:0067
+_snd_3164			  Near	 _TEXT:00A0
+_snd_316E			  Near	 _TEXT:00AA
+_snd_3179			  Near	 _TEXT:00B5
+_snd_31AA			  Far	 _TEXT:00E6
+_snd_320A			  Near	 _TEXT:0146
+_snd_frequencies		  Byte	 _DATA:---- Extern
+_snd_octaves			  Byte	 _DATA:---- Extern
+_snd_opl_cache			  Byte	 _BSS:---- Extern
+_snd_opl_data_delay		  Word	 _DATA:---- Extern
+_snd_opl_index_delay		  Word	 _DATA:---- Extern
+_snd_semitones			  Byte	 _DATA:---- Extern
+divide_done			  Near	 _TEXT:0140
+divide_normalize		  Near	 _TEXT:0113
+divide_wide			  Near	 _TEXT:0108
+falling_octave			  Near	 _TEXT:0040
+make_frequency			  Near	 _TEXT:004B
+multiply_wide			  Near	 _TEXT:00CF
+no_opl				  Near	 _TEXT:01BB
+opl_data_wait			  Near	 _TEXT:0094
+opl_index_wait			  Near	 _TEXT:0084
+opl_write			  Near	 _TEXT:0075
+opl_write_done			  Near	 _TEXT:009B
+probe_initial_wait		  Near	 _TEXT:0168
+probe_timer_wait		  Near	 _TEXT:0172
+quotient_high			  Near	 _TEXT:013C
+quotient_ready			  Near	 _TEXT:013D
+rising_octave			  Near	 _TEXT:0033
+round_data_up			  Near	 _TEXT:019D
+round_index_up			  Near	 _TEXT:01B4
+store_data_wait			  Near	 _TEXT:019E
+store_index_wait		  Near	 _TEXT:01B5
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _BSS				  16  0000 Word	  Public  BSS
+  _DATA				  16  0000 Word	  Public  DATA
+_TEXT				  16  01BF Byte	  Public  CODE
+

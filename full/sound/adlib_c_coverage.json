@@ -1,0 +1,6177 @@
+{
+  "scope": "1341:1E1A..2E9B",
+  "original_bytes": 4225,
+  "source": "full/sound/ADLIB.C",
+  "source_sha256": "6ee15d5f6c3518060a7b0042a0122ab2a202f508a96a47da14b8b007cf739811",
+  "header_sha256": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+  "function_count": 52,
+  "c_definitions": 52,
+  "pure_c_definitions": 50,
+  "inline_register_abi_bridges": 2,
+  "canonical_c_compile": {
+    "compiler": "Microsoft C 8.00 / Visual C++ 1.0, DOS 16-bit diagnostic candidate",
+    "original_compiler_proven": false,
+    "flags": "/AS /G2 /Gs /Oe /Ot /Zp1",
+    "object": "full/sound/adlib_c_build/ADLIB.OBJ",
+    "object_sha256": "132fbc1809fa81710569d620c9d3fd3ea71b1cf8edffe9971d29469dc264e904",
+    "compiled_code_bytes": 4548,
+    "original_code_bytes": 4225,
+    "delta_bytes": 323,
+    "byte_exact_functions": 0,
+    "module_byte_exact": false,
+    "report": "full/sound/adlib_c_build/verify.json"
+  },
+  "independent_small_c_probe": {
+    "compiler": "Microsoft C 5.1",
+    "flags": "/AS /G2 /Gs /Zp /Oi /Os",
+    "source": "full/sound/adlib_c_build/msc51_small/SMALL.C",
+    "exact_functions": [
+      {
+        "function": "_snd_2665",
+        "bytes": 20,
+        "report": "full/sound/adlib_c_build/msc51_small/verify_2665.json"
+      }
+    ],
+    "limitation": "One isolated function, not a whole-module compiler profile. Empty23D1 has trailing alignment NOP in this short object."
+  },
+  "executable_specification": {
+    "source": "full/sound/exact/ADLIB.ASM",
+    "source_kind": "symbolic executable specification, not historical source",
+    "bytes": 4225,
+    "byte_exact": true,
+    "report": "full/sound/exact/module_adlib.json",
+    "native_assembler": "Borland TASM3.1",
+    "proves_c_recompilation": false
+  },
+  "semantic_verification": {
+    "procedures": 52,
+    "cases": 2404,
+    "passed": 2404,
+    "report": "full/sound/adlib_c_build/semantic.json",
+    "harness": "full/sound/adlib_semantic_test.py",
+    "engine": "full/sound/semantic_vm.py",
+    "original_callees": true,
+    "complete_compiled_sound_integration_test": false,
+    "stubs": {
+      "1341:0496": "Timer wait in1FCC only; return without changing AX.",
+      "1341:2A5E": "Record exact3 arguments only for26C3/22CD; malformed table-derived pointer is not followed."
+    },
+    "limitations": [
+      "No full gameplay run or compiler-matching claim.",
+      "Inputs and branches are sampled, not exhaustive. Recursive calls also use reference callees.",
+      "Functions 26C3/22CD stub 2A5E to compare its exact three arguments safely.",
+      "Function 1FCC stubs hardware timer delay0496, retaining OPL reset writes."
+    ],
+    "harness_sha256": "2b623c2585f32b6aef61bfabcc1ffe90240478b9796539507925fec2c92e4107",
+    "engine_sha256": "f40d22399007fda3d8f30cf2a1a481dc2af6c06756ee016e2459c71f7e797f3b"
+  },
+  "functions": [
+    {
+      "function": "_snd_1E1A",
+      "entry": "1341:1E1A",
+      "description_ru": "Такт голосов: таймауты и две огибающие",
+      "c_definition_present": true,
+      "c_definition_line": 7,
+      "c_body_sha256": "8618195d545dbf80b9691d49e9a83d8a355758941f7225c3f4502a538ee2f6f4",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 105,
+      "compiled_bytes": 108,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 17,
+      "internal_calls_rebased_diagnostic_differing_bytes": 17,
+      "difference_categories": [
+        "stack-cleanup",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "1E1A",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "1E1B",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1E1C",
+          "bytes": "8006f25803",
+          "text": "add byte ptr [0x58f2], 3"
+        },
+        {
+          "address": "1E21",
+          "bytes": "803ef2580a",
+          "text": "cmp byte ptr [0x58f2], 0xa"
+        },
+        {
+          "address": "1E26",
+          "bytes": "7258",
+          "text": "jb 0x1e80"
+        },
+        {
+          "address": "1E28",
+          "bytes": "802ef2580a",
+          "text": "sub byte ptr [0x58f2], 0xa"
+        },
+        {
+          "address": "1E2D",
+          "bytes": "be8055",
+          "text": "mov si, 0x5580"
+        },
+        {
+          "address": "1E30",
+          "bytes": "bf0900",
+          "text": "mov di, 9"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "1E1A",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "1E1B",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1E1C",
+          "bytes": "8006f25803",
+          "text": "add byte ptr [0x58f2], 3"
+        },
+        {
+          "address": "1E21",
+          "bytes": "803ef2580a",
+          "text": "cmp byte ptr [0x58f2], 0xa"
+        },
+        {
+          "address": "1E26",
+          "bytes": "725b",
+          "text": "jb 0x1e83"
+        },
+        {
+          "address": "1E28",
+          "bytes": "802ef2580a",
+          "text": "sub byte ptr [0x58f2], 0xa"
+        },
+        {
+          "address": "1E2D",
+          "bytes": "be8055",
+          "text": "mov si, 0x5580"
+        },
+        {
+          "address": "1E30",
+          "bytes": "bf0900",
+          "text": "mov di, 9"
+        }
+      ],
+      "semantic_cases": 2,
+      "semantic_cases_passed": 2,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_1E83",
+      "entry": "1341:1E83",
+      "description_ru": "Создать партию из пресета и применить программу",
+      "c_definition_present": true,
+      "c_definition_line": 34,
+      "c_body_sha256": "9088cc2724aab6451bd9490fc86c18314c503abfa104c88292b6a21c2f34d66e",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 287,
+      "compiled_bytes": 296,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 270,
+      "internal_calls_rebased_diagnostic_differing_bytes": 270,
+      "difference_categories": [
+        "stack-cleanup",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "1E83",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "1E87",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "1E88",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1E89",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "1E8C",
+          "bytes": "8a4502",
+          "text": "mov al, byte ptr [di + 2]"
+        },
+        {
+          "address": "1E8F",
+          "bytes": "98",
+          "text": "cwde "
+        },
+        {
+          "address": "1E90",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "1E93",
+          "bytes": "8a4f0c",
+          "text": "mov cl, byte ptr [bx + 0xc]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "1E83",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "1E87",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "1E88",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1E89",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "1E8C",
+          "bytes": "68ff00",
+          "text": "push 0xff"
+        },
+        {
+          "address": "1E8F",
+          "bytes": "6a00",
+          "text": "push 0"
+        },
+        {
+          "address": "1E91",
+          "bytes": "8a4502",
+          "text": "mov al, byte ptr [di + 2]"
+        },
+        {
+          "address": "1E94",
+          "bytes": "98",
+          "text": "cwde "
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_1FA2",
+      "entry": "1341:1FA2",
+      "description_ru": "Рекурсивно удалить партии указанного канала",
+      "c_definition_present": true,
+      "c_definition_line": 64,
+      "c_body_sha256": "9d1fbe0d0f69ca1ba56ae5391c6849206eb161b42ac95d8e45af112379b89025",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 42,
+      "compiled_bytes": 42,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 39,
+      "internal_calls_rebased_diagnostic_differing_bytes": 39,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "1FA2",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "1FA6",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FA7",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "1FAA",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "1FAC",
+          "bytes": "741b",
+          "text": "je 0x1fc9"
+        },
+        {
+          "address": "1FAE",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "1FB1",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "1FB2",
+          "bytes": "ff7404",
+          "text": "push word ptr [si + 4]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "1FA2",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "1FA3",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "1FA5",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FA6",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "1FA9",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "1FAB",
+          "bytes": "741c",
+          "text": "je 0x1fc9"
+        },
+        {
+          "address": "1FAD",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "1FB0",
+          "bytes": "50",
+          "text": "push ax"
+        }
+      ],
+      "semantic_cases": 2,
+      "semantic_cases_passed": 2,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_1FCC",
+      "entry": "1341:1FCC",
+      "description_ru": "Снять все 32 партии и сбросить регистры OPL",
+      "c_definition_present": true,
+      "c_definition_line": 72,
+      "c_body_sha256": "c84765df0c6115206b19421c29473ade56965d8e2816efef0e0e70841b330a11",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 24,
+      "compiled_bytes": 28,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 23,
+      "internal_calls_rebased_diagnostic_differing_bytes": 23,
+      "difference_categories": [
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "push si"
+      ],
+      "compiled_frame": [
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "1FCC",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FCD",
+          "bytes": "be004a",
+          "text": "mov si, 0x4a00"
+        },
+        {
+          "address": "1FD0",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FD1",
+          "bytes": "e8d600",
+          "text": "call 0x20aa"
+        },
+        {
+          "address": "1FD4",
+          "bytes": "44",
+          "text": "inc sp"
+        },
+        {
+          "address": "1FD5",
+          "bytes": "44",
+          "text": "inc sp"
+        },
+        {
+          "address": "1FD6",
+          "bytes": "83c620",
+          "text": "add si, 0x20"
+        },
+        {
+          "address": "1FD9",
+          "bytes": "81fe004e",
+          "text": "cmp si, 0x4e00"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "1FCC",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FCD",
+          "bytes": "be004a",
+          "text": "mov si, 0x4a00"
+        },
+        {
+          "address": "1FD0",
+          "bytes": "eb0a",
+          "text": "jmp 0x1fdc"
+        },
+        {
+          "address": "1FD2",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FD3",
+          "bytes": "e8d400",
+          "text": "call 0x20aa"
+        },
+        {
+          "address": "1FD6",
+          "bytes": "83c402",
+          "text": "add sp, 2"
+        },
+        {
+          "address": "1FD9",
+          "bytes": "83c620",
+          "text": "add si, 0x20"
+        },
+        {
+          "address": "1FDC",
+          "bytes": "81fe004e",
+          "text": "cmp si, 0x4e00"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_1FE4",
+      "entry": "1341:1FE4",
+      "description_ru": "Найти либо выделить партию канала",
+      "c_definition_present": true,
+      "c_definition_line": 79,
+      "c_body_sha256": "83bb505609fd0cf37e8baee51002fe3213275a5fb3db5d39cdc4769148b186eb",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 198,
+      "compiled_bytes": 210,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 198,
+      "internal_calls_rebased_diagnostic_differing_bytes": 198,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si",
+        "push di"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "1FE4",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "1FE8",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FE9",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "1FEA",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "1FED",
+          "bytes": "8b7504",
+          "text": "mov si, word ptr [di + 4]"
+        },
+        {
+          "address": "1FF0",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "1FF2",
+          "bytes": "7410",
+          "text": "je 0x2004"
+        },
+        {
+          "address": "1FF4",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "1FE4",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "1FE5",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "1FE7",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "1FE8",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "1FE9",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "1FEC",
+          "bytes": "8b7504",
+          "text": "mov si, word ptr [di + 4]"
+        },
+        {
+          "address": "1FEF",
+          "bytes": "eb0f",
+          "text": "jmp 0x2000"
+        },
+        {
+          "address": "1FF1",
+          "bytes": "90",
+          "text": "nop "
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_20AA",
+      "entry": "1341:20AA",
+      "description_ru": "Удалить партию из двусвязного списка",
+      "c_definition_present": true,
+      "c_definition_line": 114,
+      "c_body_sha256": "c0e209f33ada5e1ea0b05d698bca54c70f29ae605662dac9739c97fae1d37cf7",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 61,
+      "compiled_bytes": 68,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 63,
+      "internal_calls_rebased_diagnostic_differing_bytes": 63,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "20AA",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "20AE",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "20AF",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "20B2",
+          "bytes": "833c00",
+          "text": "cmp word ptr [si], 0"
+        },
+        {
+          "address": "20B5",
+          "bytes": "742d",
+          "text": "je 0x20e4"
+        },
+        {
+          "address": "20B7",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "20B8",
+          "bytes": "e8b706",
+          "text": "call 0x2772"
+        },
+        {
+          "address": "20BB",
+          "bytes": "44",
+          "text": "inc sp"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "20AA",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "20AE",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "20AF",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "20B0",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "20B3",
+          "bytes": "833c00",
+          "text": "cmp word ptr [si], 0"
+        },
+        {
+          "address": "20B6",
+          "bytes": "7431",
+          "text": "je 0x20e9"
+        },
+        {
+          "address": "20B8",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "20B9",
+          "bytes": "e8b606",
+          "text": "call 0x2772"
+        }
+      ],
+      "semantic_cases": 2,
+      "semantic_cases_passed": 2,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_20E7",
+      "entry": "1341:20E7",
+      "description_ru": "Удалить все партии проигрывателя",
+      "c_definition_present": true,
+      "c_definition_line": 130,
+      "c_body_sha256": "b25954b1f25ee34edc487f738df81ef9624bf5f1ae77929aaea205ee22638cd5",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 27,
+      "compiled_bytes": 26,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 27,
+      "internal_calls_rebased_diagnostic_differing_bytes": 27,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "20E7",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "20EB",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "20EC",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "20EF",
+          "bytes": "eb08",
+          "text": "jmp 0x20f9"
+        },
+        {
+          "address": "20F1",
+          "bytes": "ff7404",
+          "text": "push word ptr [si + 4]"
+        },
+        {
+          "address": "20F4",
+          "bytes": "e8b3ff",
+          "text": "call 0x20aa"
+        },
+        {
+          "address": "20F7",
+          "bytes": "44",
+          "text": "inc sp"
+        },
+        {
+          "address": "20F8",
+          "bytes": "44",
+          "text": "inc sp"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "20E7",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "20E8",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "20EA",
+          "bytes": "eb09",
+          "text": "jmp 0x20f5"
+        },
+        {
+          "address": "20EC",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "20ED",
+          "bytes": "ff7704",
+          "text": "push word ptr [bx + 4]"
+        },
+        {
+          "address": "20F0",
+          "bytes": "e8b0ff",
+          "text": "call 0x20a3"
+        },
+        {
+          "address": "20F3",
+          "bytes": "8be5",
+          "text": "mov sp, bp"
+        },
+        {
+          "address": "20F5",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        }
+      ],
+      "semantic_cases": 2,
+      "semantic_cases_passed": 2,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2102",
+      "entry": "1341:2102",
+      "description_ru": "Вставить партию в начало списка",
+      "c_definition_present": true,
+      "c_definition_line": 138,
+      "c_body_sha256": "41471b80420670cecdb77b550fde267fe8e7034dd9de897aeb645d8c126b8355",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 39,
+      "compiled_bytes": 42,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 38,
+      "internal_calls_rebased_diagnostic_differing_bytes": 38,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2102",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2106",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2107",
+          "bytes": "8b5e06",
+          "text": "mov bx, word ptr [bp + 6]"
+        },
+        {
+          "address": "210A",
+          "bytes": "c747020000",
+          "text": "mov word ptr [bx + 2], 0"
+        },
+        {
+          "address": "210F",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2112",
+          "bytes": "8937",
+          "text": "mov word ptr [bx], si"
+        },
+        {
+          "address": "2114",
+          "bytes": "8b4404",
+          "text": "mov ax, word ptr [si + 4]"
+        },
+        {
+          "address": "2117",
+          "bytes": "894704",
+          "text": "mov word ptr [bx + 4], ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2102",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2103",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2105",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2106",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2107",
+          "bytes": "8b5e06",
+          "text": "mov bx, word ptr [bp + 6]"
+        },
+        {
+          "address": "210A",
+          "bytes": "8b5604",
+          "text": "mov dx, word ptr [bp + 4]"
+        },
+        {
+          "address": "210D",
+          "bytes": "c747020000",
+          "text": "mov word ptr [bx + 2], 0"
+        },
+        {
+          "address": "2112",
+          "bytes": "8bf2",
+          "text": "mov si, dx"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2129",
+      "entry": "1341:2129",
+      "description_ru": "Выбрать свободную партию или вытеснить по приоритету",
+      "c_definition_present": true,
+      "c_definition_line": 149,
+      "c_body_sha256": "6e351a44c67532e6dad9d0000d90cf07a1e9d572fda80275901978979944bdc1",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 67,
+      "compiled_bytes": 68,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 60,
+      "internal_calls_rebased_diagnostic_differing_bytes": 60,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si",
+        "push di"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2129",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "212D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "212E",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "212F",
+          "bytes": "be004a",
+          "text": "mov si, 0x4a00"
+        },
+        {
+          "address": "2132",
+          "bytes": "33ff",
+          "text": "xor di, di"
+        },
+        {
+          "address": "2134",
+          "bytes": "33d2",
+          "text": "xor dx, dx"
+        },
+        {
+          "address": "2136",
+          "bytes": "833c00",
+          "text": "cmp word ptr [si], 0"
+        },
+        {
+          "address": "2139",
+          "bytes": "741b",
+          "text": "je 0x2156"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2129",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "212A",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "212C",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "212D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "212E",
+          "bytes": "33ff",
+          "text": "xor di, di"
+        },
+        {
+          "address": "2130",
+          "bytes": "be004a",
+          "text": "mov si, 0x4a00"
+        },
+        {
+          "address": "2133",
+          "bytes": "33d2",
+          "text": "xor dx, dx"
+        },
+        {
+          "address": "2135",
+          "bytes": "83fa20",
+          "text": "cmp dx, 0x20"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_216C",
+      "entry": "1341:216C",
+      "description_ru": "Событие note-on с проверкой состояния партии",
+      "c_definition_present": true,
+      "c_definition_line": 165,
+      "c_body_sha256": "35c56fab9535af41ac839780090b28f7f8d5984d5baec45732c56c1f0187f4e9",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 54,
+      "compiled_bytes": 54,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 54,
+      "internal_calls_rebased_diagnostic_differing_bytes": 54,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "216C",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2170",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2171",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2174",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2175",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2178",
+          "bytes": "e869fe",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "217B",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "217E",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "216C",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "216D",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "216F",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2170",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2173",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2174",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2177",
+          "bytes": "e854fe",
+          "text": "call 0x1fce"
+        },
+        {
+          "address": "217A",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_21A2",
+      "entry": "1341:21A2",
+      "description_ru": "Событие note-off с учётом sustain",
+      "c_definition_present": true,
+      "c_definition_line": 171,
+      "c_body_sha256": "4cbc2668f163e3fae4584a84bb7819891574f02c1d6cc124467da3e53737a366",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 77,
+      "compiled_bytes": 74,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 76,
+      "internal_calls_rebased_diagnostic_differing_bytes": 76,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "21A2",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "21A6",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "21A7",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "21AA",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "21AD",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "21AF",
+          "bytes": "743b",
+          "text": "je 0x21ec"
+        },
+        {
+          "address": "21B1",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "21B4",
+          "bytes": "38440b",
+          "text": "cmp byte ptr [si + 0xb], al"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "21A2",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "21A3",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "21A5",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "21A6",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "21A9",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "21AC",
+          "bytes": "eb36",
+          "text": "jmp 0x21e4"
+        },
+        {
+          "address": "21AE",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "21B1",
+          "bytes": "38440b",
+          "text": "cmp byte ptr [si + 0xb], al"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_21EF",
+      "entry": "1341:21EF",
+      "description_ru": "Остановить голоса списка партий",
+      "c_definition_present": true,
+      "c_definition_line": 182,
+      "c_body_sha256": "ab84a6247ec1321d92c0ea2485304341355c6c9458c434716d043d858e4c1fa1",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 26,
+      "compiled_bytes": 28,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 27,
+      "internal_calls_rebased_diagnostic_differing_bytes": 27,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "21EF",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "21F3",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "21F4",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "21F7",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "21F9",
+          "bytes": "740b",
+          "text": "je 0x2206"
+        },
+        {
+          "address": "21FB",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "21FC",
+          "bytes": "e87305",
+          "text": "call 0x2772"
+        },
+        {
+          "address": "21FF",
+          "bytes": "44",
+          "text": "inc sp"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "21EF",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "21F0",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "21F2",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "21F3",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "21F6",
+          "bytes": "eb0b",
+          "text": "jmp 0x2203"
+        },
+        {
+          "address": "21F8",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "21F9",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "21FA",
+          "bytes": "e87505",
+          "text": "call 0x2772"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2209",
+      "entry": "1341:2209",
+      "description_ru": "Снять sustain и освободить удержанные голоса",
+      "c_definition_present": true,
+      "c_definition_line": 187,
+      "c_body_sha256": "35682eafbc120d647e4605f9972f60853c4c1006f72e96e16870fd9ece47143f",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 38,
+      "compiled_bytes": 40,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 40,
+      "internal_calls_rebased_diagnostic_differing_bytes": 40,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2209",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "220D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "220E",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2211",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "2213",
+          "bytes": "7417",
+          "text": "je 0x222c"
+        },
+        {
+          "address": "2215",
+          "bytes": "807c1900",
+          "text": "cmp byte ptr [si + 0x19], 0"
+        },
+        {
+          "address": "2219",
+          "bytes": "740c",
+          "text": "je 0x2227"
+        },
+        {
+          "address": "221B",
+          "bytes": "c6441900",
+          "text": "mov byte ptr [si + 0x19], 0"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2209",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "220A",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "220C",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "220D",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2210",
+          "bytes": "eb17",
+          "text": "jmp 0x2229"
+        },
+        {
+          "address": "2212",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "2213",
+          "bytes": "807c1900",
+          "text": "cmp byte ptr [si + 0x19], 0"
+        },
+        {
+          "address": "2217",
+          "bytes": "740d",
+          "text": "je 0x2226"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_222F",
+      "entry": "1341:222F",
+      "description_ru": "Собрать маски активных нот по каналам",
+      "c_definition_present": true,
+      "c_definition_line": 196,
+      "c_body_sha256": "cbe390190cd547099902e496d4cb527739a735af6eef0a611d6faea23d5fbb41",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 72,
+      "compiled_bytes": 86,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 76,
+      "internal_calls_rebased_diagnostic_differing_bytes": 76,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "222F",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2233",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2234",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2235",
+          "bytes": "8b5606",
+          "text": "mov dx, word ptr [bp + 6]"
+        },
+        {
+          "address": "2238",
+          "bytes": "8b4e08",
+          "text": "mov cx, word ptr [bp + 8]"
+        },
+        {
+          "address": "223B",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "223E",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "2240",
+          "bytes": "7431",
+          "text": "je 0x2273"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "222F",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "2233",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2234",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2235",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "2238",
+          "bytes": "8b4e08",
+          "text": "mov cx, word ptr [bp + 8]"
+        },
+        {
+          "address": "223B",
+          "bytes": "eb3d",
+          "text": "jmp 0x227a"
+        },
+        {
+          "address": "223D",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2240",
+          "bytes": "8b7706",
+          "text": "mov si, word ptr [bx + 6]"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2277",
+      "entry": "1341:2277",
+      "description_ru": "Установить номер программы партии",
+      "c_definition_present": true,
+      "c_definition_line": 215,
+      "c_body_sha256": "f1372ae8ee0dc6eb666bf4696774d4f27b81ca60311f4072b82e93117acc6ecf",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 45,
+      "compiled_bytes": 44,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 45,
+      "internal_calls_rebased_diagnostic_differing_bytes": 45,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2277",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "227B",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "227C",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "227F",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2280",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2283",
+          "bytes": "e85efd",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "2286",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "2289",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2277",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2278",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "227A",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "227B",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "227E",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "227F",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2282",
+          "bytes": "e83afd",
+          "text": "call 0x1fbf"
+        },
+        {
+          "address": "2285",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_22A4",
+      "entry": "1341:22A4",
+      "description_ru": "Скопировать 30-байтный инструмент в партию",
+      "c_definition_present": true,
+      "c_definition_line": 225,
+      "c_body_sha256": "689ab9ad1a19af0de1f661f355a25572f18c71358cabdfe2b32248df77914319",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 41,
+      "compiled_bytes": 40,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 41,
+      "internal_calls_rebased_diagnostic_differing_bytes": 41,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "22A4",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "22A8",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "22A9",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "22AC",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "22AD",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "22B0",
+          "bytes": "e831fd",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "22B3",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "22B6",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "22A4",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "22A5",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "22A7",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "22A8",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "22AB",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "22AC",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "22AF",
+          "bytes": "e80efd",
+          "text": "call 0x1fc0"
+        },
+        {
+          "address": "22B2",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_22CD",
+      "entry": "1341:22CD",
+      "description_ru": "Изменить поле инструмента выбранной партии",
+      "c_definition_present": true,
+      "c_definition_line": 234,
+      "c_body_sha256": "ec02d11116467ba2ea24d68733d5c4c0145a83824437554451f0dae386c468be",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 36,
+      "compiled_bytes": 34,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 9,
+      "internal_calls_rebased_diagnostic_differing_bytes": 7,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "enter 2, 0"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "22CD",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "22D1",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "22D4",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "22D5",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "22D8",
+          "bytes": "e809fd",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "22DB",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "22DE",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        },
+        {
+          "address": "22E0",
+          "bytes": "740d",
+          "text": "je 0x22ef"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "22CD",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "22D1",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "22D4",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "22D5",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "22D8",
+          "bytes": "e8e6fc",
+          "text": "call 0x1fc1"
+        },
+        {
+          "address": "22DB",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "22DE",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        },
+        {
+          "address": "22E0",
+          "bytes": "740a",
+          "text": "je 0x22ec"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_22F1",
+      "entry": "1341:22F1",
+      "description_ru": "Установить относительный/эффективный приоритет",
+      "c_definition_present": true,
+      "c_definition_line": 240,
+      "c_body_sha256": "0213ff38dc7062934ddbe5c3a492eadaa0b8414bd639decfc8174ca4b7b46931",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 105,
+      "compiled_bytes": 106,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 74,
+      "internal_calls_rebased_diagnostic_differing_bytes": 73,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "22F1",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "22F5",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "22F6",
+          "bytes": "807e0610",
+          "text": "cmp byte ptr [bp + 6], 0x10"
+        },
+        {
+          "address": "22FA",
+          "bytes": "7529",
+          "text": "jne 0x2325"
+        },
+        {
+          "address": "22FC",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "22FF",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "2302",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "2304",
+          "bytes": "7451",
+          "text": "je 0x2357"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "22F1",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "22F2",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "22F4",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "22F5",
+          "bytes": "807e0610",
+          "text": "cmp byte ptr [bp + 6], 0x10"
+        },
+        {
+          "address": "22F9",
+          "bytes": "752a",
+          "text": "jne 0x2325"
+        },
+        {
+          "address": "22FB",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "22FE",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "2301",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_235A",
+      "entry": "1341:235A",
+      "description_ru": "Изменить громкость партии или всех партий",
+      "c_definition_present": true,
+      "c_definition_line": 255,
+      "c_body_sha256": "ec549604efcab30ba7830ed50bb56dbf8ffb743629492b3cdea7d444757b59d4",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 119,
+      "compiled_bytes": 120,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 117,
+      "internal_calls_rebased_diagnostic_differing_bytes": 117,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "235A",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "235E",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "235F",
+          "bytes": "807e0610",
+          "text": "cmp byte ptr [bp + 6], 0x10"
+        },
+        {
+          "address": "2363",
+          "bytes": "752c",
+          "text": "jne 0x2391"
+        },
+        {
+          "address": "2365",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2368",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "236B",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "236D",
+          "bytes": "7457",
+          "text": "je 0x23c6"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "235A",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "235B",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "235D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "235E",
+          "bytes": "807e0610",
+          "text": "cmp byte ptr [bp + 6], 0x10"
+        },
+        {
+          "address": "2362",
+          "bytes": "752c",
+          "text": "jne 0x2390"
+        },
+        {
+          "address": "2364",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2367",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "236A",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_23D1",
+      "entry": "1341:23D1",
+      "description_ru": "Пустая зарезервированная процедура RET",
+      "c_definition_present": true,
+      "c_definition_line": 273,
+      "c_body_sha256": "3201043d16cb3e306770bceaecc308a18766c9b195b99c7c7777fa03e1d20394",
+      "source_kind": "empty C function",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 1,
+      "compiled_bytes": 2,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 1,
+      "internal_calls_rebased_diagnostic_differing_bytes": 1,
+      "difference_categories": [
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [],
+      "compiled_frame": [],
+      "original_initial_instructions": [
+        {
+          "address": "23D1",
+          "bytes": "c3",
+          "text": "ret "
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "23D1",
+          "bytes": "c3",
+          "text": "ret "
+        },
+        {
+          "address": "23D2",
+          "bytes": "90",
+          "text": "nop "
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_23D2",
+      "entry": "1341:23D2",
+      "description_ru": "Изменить транспозицию с циклическим ограничением",
+      "c_definition_present": true,
+      "c_definition_line": 275,
+      "c_body_sha256": "54d6c5c47212d28c3272bee107302985d74b99c60db4cd8f2c202df25e6045fa",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 172,
+      "compiled_bytes": 178,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 178,
+      "internal_calls_rebased_diagnostic_differing_bytes": 178,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "23D2",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "23D6",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "23D7",
+          "bytes": "807e0a18",
+          "text": "cmp byte ptr [bp + 0xa], 0x18"
+        },
+        {
+          "address": "23DB",
+          "bytes": "7e03",
+          "text": "jle 0x23e0"
+        },
+        {
+          "address": "23DD",
+          "bytes": "e99b00",
+          "text": "jmp 0x247b"
+        },
+        {
+          "address": "23E0",
+          "bytes": "807e0ae8",
+          "text": "cmp byte ptr [bp + 0xa], 0xe8"
+        },
+        {
+          "address": "23E4",
+          "bytes": "7d03",
+          "text": "jge 0x23e9"
+        },
+        {
+          "address": "23E6",
+          "bytes": "e99200",
+          "text": "jmp 0x247b"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "23D2",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "23D3",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "23D5",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "23D6",
+          "bytes": "807e0a19",
+          "text": "cmp byte ptr [bp + 0xa], 0x19"
+        },
+        {
+          "address": "23DA",
+          "bytes": "7c03",
+          "text": "jl 0x23df"
+        },
+        {
+          "address": "23DC",
+          "bytes": "e9a100",
+          "text": "jmp 0x2480"
+        },
+        {
+          "address": "23DF",
+          "bytes": "807e0ae7",
+          "text": "cmp byte ptr [bp + 0xa], 0xe7"
+        },
+        {
+          "address": "23E3",
+          "bytes": "7f03",
+          "text": "jg 0x23e8"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_247E",
+      "entry": "1341:247E",
+      "description_ru": "Изменить расстройку и обновить высоту голосов",
+      "c_definition_present": true,
+      "c_definition_line": 296,
+      "c_body_sha256": "f50284b46219298693fe9aadd6b3884deeb18637ec32e4947d2033d420e6e2cc",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 139,
+      "compiled_bytes": 138,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 139,
+      "internal_calls_rebased_diagnostic_differing_bytes": 139,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "247E",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2482",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2483",
+          "bytes": "807e0610",
+          "text": "cmp byte ptr [bp + 6], 0x10"
+        },
+        {
+          "address": "2487",
+          "bytes": "753a",
+          "text": "jne 0x24c3"
+        },
+        {
+          "address": "2489",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "248C",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "248F",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "2491",
+          "bytes": "7473",
+          "text": "je 0x2506"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "247E",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "247F",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2481",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2482",
+          "bytes": "807e0610",
+          "text": "cmp byte ptr [bp + 6], 0x10"
+        },
+        {
+          "address": "2486",
+          "bytes": "753a",
+          "text": "jne 0x24c2"
+        },
+        {
+          "address": "2488",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "248B",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "248E",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2509",
+      "entry": "1341:2509",
+      "description_ru": "Разрешить/запретить партию, при запрете снять голоса",
+      "c_definition_present": true,
+      "c_definition_line": 316,
+      "c_body_sha256": "bfb273e451d097c8230f4fd38d648861a3cd7d45efac281c7200905b9ecf7faf",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 51,
+      "compiled_bytes": 52,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 52,
+      "internal_calls_rebased_diagnostic_differing_bytes": 52,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2509",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "250D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "250E",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2511",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2512",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2515",
+          "bytes": "e8ccfa",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "2518",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "251B",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2509",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "250A",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "250C",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "250D",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2510",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2511",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2514",
+          "bytes": "e8a4fa",
+          "text": "call 0x1fbb"
+        },
+        {
+          "address": "2517",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_253C",
+      "entry": "1341:253C",
+      "description_ru": "Установить глубину модуляции партии",
+      "c_definition_present": true,
+      "c_definition_line": 325,
+      "c_body_sha256": "d93ecf4e4bac27df61a4ab2c58e9e903efa533cc1c371bc43da0dc67d113787d",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 43,
+      "compiled_bytes": 42,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 43,
+      "internal_calls_rebased_diagnostic_differing_bytes": 43,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "253C",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2540",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2541",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2544",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2545",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2548",
+          "bytes": "e899fa",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "254B",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "254E",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "253C",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "253D",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "253F",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2540",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2543",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2544",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2547",
+          "bytes": "e870fa",
+          "text": "call 0x1fba"
+        },
+        {
+          "address": "254A",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2567",
+      "entry": "1341:2567",
+      "description_ru": "Установить педаль sustain",
+      "c_definition_present": true,
+      "c_definition_line": 334,
+      "c_body_sha256": "6985baa5aca4ccb7bad5cca32f9310fa1d50a6cfdcb97311d59d4e03fec44b6c",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 45,
+      "compiled_bytes": 46,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 43,
+      "internal_calls_rebased_diagnostic_differing_bytes": 43,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2567",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "256B",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "256C",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "256F",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2570",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2573",
+          "bytes": "e86efa",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "2576",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "2579",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2567",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2568",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "256A",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "256B",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "256E",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "256F",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "2572",
+          "bytes": "e846fa",
+          "text": "call 0x1fbb"
+        },
+        {
+          "address": "2575",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2594",
+      "entry": "1341:2594",
+      "description_ru": "Применить pitch bend с текущим диапазоном",
+      "c_definition_present": true,
+      "c_definition_line": 343,
+      "c_body_sha256": "eef27e8894329d771d7eeee852dcf2cb69d9b3885ebee17a8e919ed5700b7c70",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 83,
+      "compiled_bytes": 82,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 83,
+      "internal_calls_rebased_diagnostic_differing_bytes": 83,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2594",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2598",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2599",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "259C",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "259D",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "25A0",
+          "bytes": "e841fa",
+          "text": "call 0x1fe4"
+        },
+        {
+          "address": "25A3",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "25A6",
+          "bytes": "0bc0",
+          "text": "or ax, ax"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2594",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2595",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2597",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2598",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "259B",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "259C",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "259F",
+          "bytes": "e818fa",
+          "text": "call 0x1fba"
+        },
+        {
+          "address": "25A2",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_25E7",
+      "entry": "1341:25E7",
+      "description_ru": "Изменить диапазон bend; сохранить странный channel",
+      "c_definition_present": true,
+      "c_definition_line": 353,
+      "c_body_sha256": "5ccc29a3ac97f47d540ab7484cc7125cb4963e13487e87a98f1cc6fb7e870f27",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 51,
+      "compiled_bytes": 52,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 45,
+      "internal_calls_rebased_diagnostic_differing_bytes": 45,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "25E7",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "25EB",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "25EC",
+          "bytes": "807e080c",
+          "text": "cmp byte ptr [bp + 8], 0xc"
+        },
+        {
+          "address": "25F0",
+          "bytes": "7725",
+          "text": "ja 0x2617"
+        },
+        {
+          "address": "25F2",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "25F5",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "25F6",
+          "bytes": "ff7604",
+          "text": "push word ptr [bp + 4]"
+        },
+        {
+          "address": "25F9",
+          "bytes": "e8e8f9",
+          "text": "call 0x1fe4"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "25E7",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "25E8",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "25EA",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "25EB",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "25EC",
+          "bytes": "807e080d",
+          "text": "cmp byte ptr [bp + 8], 0xd"
+        },
+        {
+          "address": "25F0",
+          "bytes": "7324",
+          "text": "jae 0x2616"
+        },
+        {
+          "address": "25F2",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "25F5",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_261A",
+      "entry": "1341:261A",
+      "description_ru": "Прочитать параметр партии либо вернуть код отсутствия",
+      "c_definition_present": true,
+      "c_definition_line": 366,
+      "c_body_sha256": "267d9ab5a255f628ec6db5a49e67b6c7147adbf021d1a8aee38e1f91e4f1785a",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 75,
+      "compiled_bytes": 84,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 76,
+      "internal_calls_rebased_diagnostic_differing_bytes": 76,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "261A",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "261E",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2621",
+          "bytes": "8b5f04",
+          "text": "mov bx, word ptr [bx + 4]"
+        },
+        {
+          "address": "2624",
+          "bytes": "8a4608",
+          "text": "mov al, byte ptr [bp + 8]"
+        },
+        {
+          "address": "2627",
+          "bytes": "0bdb",
+          "text": "or bx, bx"
+        },
+        {
+          "address": "2629",
+          "bytes": "7436",
+          "text": "je 0x2661"
+        },
+        {
+          "address": "262B",
+          "bytes": "38470b",
+          "text": "cmp byte ptr [bx + 0xb], al"
+        },
+        {
+          "address": "262E",
+          "bytes": "7405",
+          "text": "je 0x2635"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "261A",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "261B",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "261D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "261E",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2621",
+          "bytes": "8b7704",
+          "text": "mov si, word ptr [bx + 4]"
+        },
+        {
+          "address": "2624",
+          "bytes": "eb0b",
+          "text": "jmp 0x2631"
+        },
+        {
+          "address": "2626",
+          "bytes": "8a4608",
+          "text": "mov al, byte ptr [bp + 8]"
+        },
+        {
+          "address": "2629",
+          "bytes": "38440b",
+          "text": "cmp byte ptr [si + 0xb], al"
+        }
+      ],
+      "semantic_cases": 9,
+      "semantic_cases_passed": 9,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2665",
+      "entry": "1341:2665",
+      "description_ru": "Скопировать инструмент в память партии",
+      "c_definition_present": true,
+      "c_definition_line": 381,
+      "c_body_sha256": "797e9f2deb112dfa24e4144c5e6486be472792a21f14bf4e296a4fa2fda057a4",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 20,
+      "compiled_bytes": 20,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 20,
+      "internal_calls_rebased_diagnostic_differing_bytes": 20,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2665",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2669",
+          "bytes": "6a1e",
+          "text": "push 0x1e"
+        },
+        {
+          "address": "266B",
+          "bytes": "ff7606",
+          "text": "push word ptr [bp + 6]"
+        },
+        {
+          "address": "266E",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2671",
+          "bytes": "ff7708",
+          "text": "push word ptr [bx + 8]"
+        },
+        {
+          "address": "2674",
+          "bytes": "e8c6de",
+          "text": "call 0x53d"
+        },
+        {
+          "address": "2677",
+          "bytes": "c9",
+          "text": "leave "
+        },
+        {
+          "address": "2678",
+          "bytes": "c3",
+          "text": "ret "
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2665",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2666",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2668",
+          "bytes": "6a1e",
+          "text": "push 0x1e"
+        },
+        {
+          "address": "266A",
+          "bytes": "ff7606",
+          "text": "push word ptr [bp + 6]"
+        },
+        {
+          "address": "266D",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2670",
+          "bytes": "ff7708",
+          "text": "push word ptr [bx + 8]"
+        },
+        {
+          "address": "2673",
+          "bytes": "e8c7de",
+          "text": "call 0x53d"
+        },
+        {
+          "address": "2676",
+          "bytes": "c9",
+          "text": "leave "
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2679",
+      "entry": "1341:2679",
+      "description_ru": "Сохранить инструмент в глобальном банке 32 пресетов",
+      "c_definition_present": true,
+      "c_definition_line": 386,
+      "c_body_sha256": "3a46200e134816b54e323e65cf8e5c00fbb2524f3c589c84a99cdb18cdfe3672",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 34,
+      "compiled_bytes": 28,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 34,
+      "internal_calls_rebased_diagnostic_differing_bytes": 34,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2679",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "267D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "267E",
+          "bytes": "8a4604",
+          "text": "mov al, byte ptr [bp + 4]"
+        },
+        {
+          "address": "2681",
+          "bytes": "3c20",
+          "text": "cmp al, 0x20"
+        },
+        {
+          "address": "2683",
+          "bytes": "7313",
+          "text": "jae 0x2698"
+        },
+        {
+          "address": "2685",
+          "bytes": "b91e00",
+          "text": "mov cx, 0x1e"
+        },
+        {
+          "address": "2688",
+          "bytes": "f6e1",
+          "text": "mul cl"
+        },
+        {
+          "address": "268A",
+          "bytes": "05c051",
+          "text": "add ax, 0x51c0"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2679",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "267A",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "267C",
+          "bytes": "807e0420",
+          "text": "cmp byte ptr [bp + 4], 0x20"
+        },
+        {
+          "address": "2680",
+          "bytes": "7311",
+          "text": "jae 0x2693"
+        },
+        {
+          "address": "2682",
+          "bytes": "6a1e",
+          "text": "push 0x1e"
+        },
+        {
+          "address": "2684",
+          "bytes": "ff7606",
+          "text": "push word ptr [bp + 6]"
+        },
+        {
+          "address": "2687",
+          "bytes": "b01e",
+          "text": "mov al, 0x1e"
+        },
+        {
+          "address": "2689",
+          "bytes": "f66604",
+          "text": "mul byte ptr [bp + 4]"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_269B",
+      "entry": "1341:269B",
+      "description_ru": "Загрузить инструмент банка либо стандартный",
+      "c_definition_present": true,
+      "c_definition_line": 391,
+      "c_body_sha256": "f09a59b037edca2496e3003b55fc4d5822e8f43d871553db3fe9de10a1343391",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 40,
+      "compiled_bytes": 46,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 46,
+      "internal_calls_rebased_diagnostic_differing_bytes": 46,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "269B",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "269F",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "26A2",
+          "bytes": "b91e00",
+          "text": "mov cx, 0x1e"
+        },
+        {
+          "address": "26A5",
+          "bytes": "3c20",
+          "text": "cmp al, 0x20"
+        },
+        {
+          "address": "26A7",
+          "bytes": "7307",
+          "text": "jae 0x26b0"
+        },
+        {
+          "address": "26A9",
+          "bytes": "f6e1",
+          "text": "mul cl"
+        },
+        {
+          "address": "26AB",
+          "bytes": "05c051",
+          "text": "add ax, 0x51c0"
+        },
+        {
+          "address": "26AE",
+          "bytes": "eb03",
+          "text": "jmp 0x26b3"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "269B",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "269C",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "269E",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "269F",
+          "bytes": "6a1e",
+          "text": "push 0x1e"
+        },
+        {
+          "address": "26A1",
+          "bytes": "807e0620",
+          "text": "cmp byte ptr [bp + 6], 0x20"
+        },
+        {
+          "address": "26A5",
+          "bytes": "730e",
+          "text": "jae 0x26b5"
+        },
+        {
+          "address": "26A7",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "26AA",
+          "bytes": "2ae4",
+          "text": "sub ah, ah"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_26C3",
+      "entry": "1341:26C3",
+      "description_ru": "Изменить битовое поле инструмента; сохранить DI-clobber",
+      "c_definition_present": true,
+      "c_definition_line": 399,
+      "c_body_sha256": "c62093e2c339bc8fe3732f1d7a105f5044e44bfdb8fae79b142ba2ce94df8d18",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 70,
+      "compiled_bytes": 78,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 68,
+      "internal_calls_rebased_diagnostic_differing_bytes": 68,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 6, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "26C3",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "26C7",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "26C8",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "26C9",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "26CC",
+          "bytes": "8b7606",
+          "text": "mov si, word ptr [bp + 6]"
+        },
+        {
+          "address": "26CF",
+          "bytes": "c1e602",
+          "text": "shl si, 2"
+        },
+        {
+          "address": "26D2",
+          "bytes": "81c6be0f",
+          "text": "add si, 0xfbe"
+        },
+        {
+          "address": "26D6",
+          "bytes": "8d5c01",
+          "text": "lea bx, [si + 1]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "26C3",
+          "bytes": "c8060000",
+          "text": "enter 6, 0"
+        },
+        {
+          "address": "26C7",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "26C8",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "26C9",
+          "bytes": "8b5608",
+          "text": "mov dx, word ptr [bp + 8]"
+        },
+        {
+          "address": "26CC",
+          "bytes": "8b7606",
+          "text": "mov si, word ptr [bp + 6]"
+        },
+        {
+          "address": "26CF",
+          "bytes": "8bc6",
+          "text": "mov ax, si"
+        },
+        {
+          "address": "26D1",
+          "bytes": "c1e602",
+          "text": "shl si, 2"
+        },
+        {
+          "address": "26D4",
+          "bytes": "81c6be0f",
+          "text": "add si, 0xfbe"
+        }
+      ],
+      "semantic_cases": 70,
+      "semantic_cases_passed": 70,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2709",
+      "entry": "1341:2709",
+      "description_ru": "Выделить и присоединить голос для новой ноты",
+      "c_definition_present": true,
+      "c_definition_line": 412,
+      "c_body_sha256": "996b25fa05758c68db5f3a45bb1532c8a137a06fd653d929395b40d41834d1a0",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 71,
+      "compiled_bytes": 86,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 81,
+      "internal_calls_rebased_diagnostic_differing_bytes": 81,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 2, 0",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2709",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "270D",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "270E",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "270F",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2712",
+          "bytes": "8a450f",
+          "text": "mov al, byte ptr [di + 0xf]"
+        },
+        {
+          "address": "2715",
+          "bytes": "32e4",
+          "text": "xor ah, ah"
+        },
+        {
+          "address": "2717",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2718",
+          "bytes": "e85104",
+          "text": "call 0x2b6c"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2709",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "270D",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "270E",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2711",
+          "bytes": "8a470f",
+          "text": "mov al, byte ptr [bx + 0xf]"
+        },
+        {
+          "address": "2714",
+          "bytes": "50",
+          "text": "push ax"
+        },
+        {
+          "address": "2715",
+          "bytes": "e85404",
+          "text": "call 0x2b6c"
+        },
+        {
+          "address": "2718",
+          "bytes": "83c402",
+          "text": "add sp, 2"
+        },
+        {
+          "address": "271B",
+          "bytes": "8946fe",
+          "text": "mov word ptr [bp - 2], ax"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2750",
+      "entry": "1341:2750",
+      "description_ru": "Снять голоса с данным номером ноты",
+      "c_definition_present": true,
+      "c_definition_line": 427,
+      "c_body_sha256": "3102206ea1166bcc6f217424282b97589ac65d87df71dc57e4bdebb381d7c445",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 34,
+      "compiled_bytes": 36,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 36,
+      "internal_calls_rebased_diagnostic_differing_bytes": 36,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2750",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2754",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2755",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2758",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "275A",
+          "bytes": "7413",
+          "text": "je 0x276f"
+        },
+        {
+          "address": "275C",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "275F",
+          "bytes": "384408",
+          "text": "cmp byte ptr [si + 8], al"
+        },
+        {
+          "address": "2762",
+          "bytes": "7506",
+          "text": "jne 0x276a"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2750",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2751",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2753",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2754",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2757",
+          "bytes": "eb13",
+          "text": "jmp 0x276c"
+        },
+        {
+          "address": "2759",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "275A",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "275D",
+          "bytes": "384408",
+          "text": "cmp byte ptr [si + 8], al"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2772",
+      "entry": "1341:2772",
+      "description_ru": "Снять все голоса одной партии",
+      "c_definition_present": true,
+      "c_definition_line": 432,
+      "c_body_sha256": "7e150d9dc37da60e22d2d0fd6d250fd1f60c2e9cf3adbc6ac358c42442994fe4",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 27,
+      "compiled_bytes": 26,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 27,
+      "internal_calls_rebased_diagnostic_differing_bytes": 27,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2772",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2776",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2777",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "277A",
+          "bytes": "837c0600",
+          "text": "cmp word ptr [si + 6], 0"
+        },
+        {
+          "address": "277E",
+          "bytes": "740a",
+          "text": "je 0x278a"
+        },
+        {
+          "address": "2780",
+          "bytes": "ff7406",
+          "text": "push word ptr [si + 6]"
+        },
+        {
+          "address": "2783",
+          "bytes": "e83e04",
+          "text": "call 0x2bc4"
+        },
+        {
+          "address": "2786",
+          "bytes": "44",
+          "text": "inc sp"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2772",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2773",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2775",
+          "bytes": "eb09",
+          "text": "jmp 0x2780"
+        },
+        {
+          "address": "2777",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "2778",
+          "bytes": "ff7706",
+          "text": "push word ptr [bx + 6]"
+        },
+        {
+          "address": "277B",
+          "bytes": "e84604",
+          "text": "call 0x2bc4"
+        },
+        {
+          "address": "277E",
+          "bytes": "8be5",
+          "text": "mov sp, bp"
+        },
+        {
+          "address": "2780",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        }
+      ],
+      "semantic_cases": 2,
+      "semantic_cases_passed": 2,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_278D",
+      "entry": "1341:278D",
+      "description_ru": "Программировать инструмент, уровни и две огибающие",
+      "c_definition_present": true,
+      "c_definition_line": 439,
+      "c_body_sha256": "8db4d579d748d540c9fa4456116081a20ca2a094137ab6bc905cfbf6543edd51",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 304,
+      "compiled_bytes": 308,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 292,
+      "internal_calls_rebased_diagnostic_differing_bytes": 292,
+      "difference_categories": [
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 4, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 4, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "278D",
+          "bytes": "c8040000",
+          "text": "enter 4, 0"
+        },
+        {
+          "address": "2791",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2792",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2793",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2796",
+          "bytes": "8b7606",
+          "text": "mov si, word ptr [bp + 6]"
+        },
+        {
+          "address": "2799",
+          "bytes": "8b5d08",
+          "text": "mov bx, word ptr [di + 8]"
+        },
+        {
+          "address": "279C",
+          "bytes": "895efe",
+          "text": "mov word ptr [bp - 2], bx"
+        },
+        {
+          "address": "279F",
+          "bytes": "8a470a",
+          "text": "mov al, byte ptr [bx + 0xa]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "278D",
+          "bytes": "c8040000",
+          "text": "enter 4, 0"
+        },
+        {
+          "address": "2791",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2792",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2793",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2796",
+          "bytes": "8b7f08",
+          "text": "mov di, word ptr [bx + 8]"
+        },
+        {
+          "address": "2799",
+          "bytes": "8b7606",
+          "text": "mov si, word ptr [bp + 6]"
+        },
+        {
+          "address": "279C",
+          "bytes": "8a450a",
+          "text": "mov al, byte ptr [di + 0xa]"
+        },
+        {
+          "address": "279F",
+          "bytes": "2401",
+          "text": "and al, 1"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_28BD",
+      "entry": "1341:28BD",
+      "description_ru": "Пометить голоса данной ноты как удержанные",
+      "c_definition_present": true,
+      "c_definition_line": 471,
+      "c_body_sha256": "7bcf674cc92f8cdd239459dad7eb874ca54e10558449bc10d7c471f553b828c8",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 30,
+      "compiled_bytes": 32,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 30,
+      "internal_calls_rebased_diagnostic_differing_bytes": 30,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "28BD",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "28C1",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "28C4",
+          "bytes": "0bdb",
+          "text": "or bx, bx"
+        },
+        {
+          "address": "28C6",
+          "bytes": "7411",
+          "text": "je 0x28d9"
+        },
+        {
+          "address": "28C8",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "28CB",
+          "bytes": "384708",
+          "text": "cmp byte ptr [bx + 8], al"
+        },
+        {
+          "address": "28CE",
+          "bytes": "7504",
+          "text": "jne 0x28d4"
+        },
+        {
+          "address": "28D0",
+          "bytes": "c6470b01",
+          "text": "mov byte ptr [bx + 0xb], 1"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "28BD",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "28BE",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "28C0",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "28C1",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "28C4",
+          "bytes": "eb10",
+          "text": "jmp 0x28d6"
+        },
+        {
+          "address": "28C6",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "28C7",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "28CA",
+          "bytes": "384408",
+          "text": "cmp byte ptr [si + 8], al"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_28DB",
+      "entry": "1341:28DB",
+      "description_ru": "Освободить удержанные голоса",
+      "c_definition_present": true,
+      "c_definition_line": 476,
+      "c_body_sha256": "31aca037ea29c1efa4d41fc638cd27cbd6b6aa0150c6455ca7d978d9d424dd82",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 32,
+      "compiled_bytes": 34,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 34,
+      "internal_calls_rebased_diagnostic_differing_bytes": 34,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "28DB",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "28DF",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "28E0",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "28E3",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "28E5",
+          "bytes": "7411",
+          "text": "je 0x28f8"
+        },
+        {
+          "address": "28E7",
+          "bytes": "807c0b00",
+          "text": "cmp byte ptr [si + 0xb], 0"
+        },
+        {
+          "address": "28EB",
+          "bytes": "7406",
+          "text": "je 0x28f3"
+        },
+        {
+          "address": "28ED",
+          "bytes": "56",
+          "text": "push si"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "28DB",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "28DC",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "28DE",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "28DF",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "28E2",
+          "bytes": "eb11",
+          "text": "jmp 0x28f5"
+        },
+        {
+          "address": "28E4",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "28E5",
+          "bytes": "807c0b00",
+          "text": "cmp byte ptr [si + 0xb], 0"
+        },
+        {
+          "address": "28E9",
+          "bytes": "7407",
+          "text": "je 0x28f2"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_28FB",
+      "entry": "1341:28FB",
+      "description_ru": "Применить изменения огибающей к OPL/соседней огибающей",
+      "c_definition_present": true,
+      "c_definition_line": 481,
+      "c_body_sha256": "b05e7d41fa06294a44ef3d568c59b977210f5242cd97117df7c4e168e2e3edb2",
+      "source_kind": "C with short AH register-ABI bridge",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 166,
+      "compiled_bytes": 226,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 220,
+      "internal_calls_rebased_diagnostic_differing_bytes": 220,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 4, 0",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "28FB",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "28FF",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2900",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2901",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2904",
+          "bytes": "8b7608",
+          "text": "mov si, word ptr [bp + 8]"
+        },
+        {
+          "address": "2907",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2908",
+          "bytes": "ff7606",
+          "text": "push word ptr [bp + 6]"
+        },
+        {
+          "address": "290B",
+          "bytes": "e82504",
+          "text": "call 0x2d33"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "28FB",
+          "bytes": "c8040000",
+          "text": "enter 4, 0"
+        },
+        {
+          "address": "28FF",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2900",
+          "bytes": "ff7608",
+          "text": "push word ptr [bp + 8]"
+        },
+        {
+          "address": "2903",
+          "bytes": "ff7606",
+          "text": "push word ptr [bp + 6]"
+        },
+        {
+          "address": "2906",
+          "bytes": "e82a04",
+          "text": "call 0x2d33"
+        },
+        {
+          "address": "2909",
+          "bytes": "83c404",
+          "text": "add sp, 4"
+        },
+        {
+          "address": "290C",
+          "bytes": "8846fe",
+          "text": "mov byte ptr [bp - 2], al"
+        },
+        {
+          "address": "290F",
+          "bytes": "a801",
+          "text": "test al, 1"
+        }
+      ],
+      "semantic_cases": 7,
+      "semantic_cases_passed": 7,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_29A1",
+      "entry": "1341:29A1",
+      "description_ru": "Настроить маршрутизацию и базу одной огибающей",
+      "c_definition_present": true,
+      "c_definition_line": 518,
+      "c_body_sha256": "290bfea19714a2f73799f73a8530a24149d3615340436fa839ef8f720e940705",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 189,
+      "compiled_bytes": 216,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 201,
+      "internal_calls_rebased_diagnostic_differing_bytes": 201,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "29A1",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "29A5",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "29A6",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "29A7",
+          "bytes": "8b5608",
+          "text": "mov dx, word ptr [bp + 8]"
+        },
+        {
+          "address": "29AA",
+          "bytes": "8b7606",
+          "text": "mov si, word ptr [bp + 6]"
+        },
+        {
+          "address": "29AD",
+          "bytes": "8bda",
+          "text": "mov bx, dx"
+        },
+        {
+          "address": "29AF",
+          "bytes": "c7070000",
+          "text": "mov word ptr [bx], 0"
+        },
+        {
+          "address": "29B3",
+          "bytes": "8a460a",
+          "text": "mov al, byte ptr [bp + 0xa]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "29A1",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "29A2",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "29A4",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "29A5",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "29A6",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "29A9",
+          "bytes": "8b5608",
+          "text": "mov dx, word ptr [bp + 8]"
+        },
+        {
+          "address": "29AC",
+          "bytes": "8bda",
+          "text": "mov bx, dx"
+        },
+        {
+          "address": "29AE",
+          "bytes": "c7070000",
+          "text": "mov word ptr [bx], 0"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2A5E",
+      "entry": "1341:2A5E",
+      "description_ru": "Установить поле OPL у списка голосов",
+      "c_definition_present": true,
+      "c_definition_line": 538,
+      "c_body_sha256": "683a3e7dc5f15d6078e07a1b473cf6d476f2ea4164491d7d0272a499c3f82e21",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 41,
+      "compiled_bytes": 40,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 40,
+      "internal_calls_rebased_diagnostic_differing_bytes": 40,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2A5E",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2A62",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2A63",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2A64",
+          "bytes": "8b7606",
+          "text": "mov si, word ptr [bp + 6]"
+        },
+        {
+          "address": "2A67",
+          "bytes": "83fe1c",
+          "text": "cmp si, 0x1c"
+        },
+        {
+          "address": "2A6A",
+          "bytes": "7d17",
+          "text": "jge 0x2a83"
+        },
+        {
+          "address": "2A6C",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2A6F",
+          "bytes": "0bff",
+          "text": "or di, di"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2A5E",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2A5F",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2A61",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2A62",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2A63",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "2A66",
+          "bytes": "83ff1c",
+          "text": "cmp di, 0x1c"
+        },
+        {
+          "address": "2A69",
+          "bytes": "7d17",
+          "text": "jge 0x2a82"
+        },
+        {
+          "address": "2A6B",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2A87",
+      "entry": "1341:2A87",
+      "description_ru": "Обновить уровни carrier/modulator после громкости",
+      "c_definition_present": true,
+      "c_definition_line": 544,
+      "c_body_sha256": "53c9423b1ee49fa6cb4986caeaa18a1396266ef5165790873febc45f86c565e0",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 82,
+      "compiled_bytes": 96,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 96,
+      "internal_calls_rebased_diagnostic_differing_bytes": 96,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2A87",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2A8B",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2A8C",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2A8D",
+          "bytes": "8a4606",
+          "text": "mov al, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2A90",
+          "bytes": "c0e802",
+          "text": "shr al, 2"
+        },
+        {
+          "address": "2A93",
+          "bytes": "32e4",
+          "text": "xor ah, ah"
+        },
+        {
+          "address": "2A95",
+          "bytes": "8bf8",
+          "text": "mov di, ax"
+        },
+        {
+          "address": "2A97",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2A87",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2A88",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2A8A",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2A8B",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2A8C",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2A8F",
+          "bytes": "eb4d",
+          "text": "jmp 0x2ade"
+        },
+        {
+          "address": "2A91",
+          "bytes": "8a5e06",
+          "text": "mov bl, byte ptr [bp + 6]"
+        },
+        {
+          "address": "2A94",
+          "bytes": "c0eb02",
+          "text": "shr bl, 2"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2AD9",
+      "entry": "1341:2AD9",
+      "description_ru": "Перестроить высоту голосов после транспозиции",
+      "c_definition_present": true,
+      "c_definition_line": 553,
+      "c_body_sha256": "ce209fc1efa8a9a92f9c5fba55534e33d39f215815e7a842a2662b2376c51d05",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 42,
+      "compiled_bytes": 42,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 39,
+      "internal_calls_rebased_diagnostic_differing_bytes": 39,
+      "difference_categories": [
+        "frame/register-save",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2AD9",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2ADD",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2ADE",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2AE1",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "2AE3",
+          "bytes": "741b",
+          "text": "je 0x2b00"
+        },
+        {
+          "address": "2AE5",
+          "bytes": "8b1c",
+          "text": "mov bx, word ptr [si]"
+        },
+        {
+          "address": "2AE7",
+          "bytes": "ff771e",
+          "text": "push word ptr [bx + 0x1e]"
+        },
+        {
+          "address": "2AEA",
+          "bytes": "8a4408",
+          "text": "mov al, byte ptr [si + 8]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2AD9",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2ADA",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2ADC",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2ADD",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2AE0",
+          "bytes": "eb1a",
+          "text": "jmp 0x2afc"
+        },
+        {
+          "address": "2AE2",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "2AE3",
+          "bytes": "8b1c",
+          "text": "mov bx, word ptr [si]"
+        },
+        {
+          "address": "2AE5",
+          "bytes": "ff771e",
+          "text": "push word ptr [bx + 0x1e]"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2B03",
+      "entry": "1341:2B03",
+      "description_ru": "Обновить масштаб огибающих от modulation",
+      "c_definition_present": true,
+      "c_definition_line": 559,
+      "c_body_sha256": "39632f8ac0360ade3ca3e9a5aac67a8795ba8a0b7416dee37a7c62ab66d96aa2",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 60,
+      "compiled_bytes": 62,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 60,
+      "internal_calls_rebased_diagnostic_differing_bytes": 60,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2B03",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2B07",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2B0A",
+          "bytes": "0bdb",
+          "text": "or bx, bx"
+        },
+        {
+          "address": "2B0C",
+          "bytes": "742f",
+          "text": "je 0x2b3d"
+        },
+        {
+          "address": "2B0E",
+          "bytes": "807f0e00",
+          "text": "cmp byte ptr [bx + 0xe], 0"
+        },
+        {
+          "address": "2B12",
+          "bytes": "740f",
+          "text": "je 0x2b23"
+        },
+        {
+          "address": "2B14",
+          "bytes": "807f3300",
+          "text": "cmp byte ptr [bx + 0x33], 0"
+        },
+        {
+          "address": "2B18",
+          "bytes": "7409",
+          "text": "je 0x2b23"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2B03",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2B04",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2B06",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2B07",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2B0A",
+          "bytes": "eb2e",
+          "text": "jmp 0x2b3a"
+        },
+        {
+          "address": "2B0C",
+          "bytes": "90",
+          "text": "nop "
+        },
+        {
+          "address": "2B0D",
+          "bytes": "807c0e00",
+          "text": "cmp byte ptr [si + 0xe], 0"
+        },
+        {
+          "address": "2B11",
+          "bytes": "740f",
+          "text": "je 0x2b22"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2B3F",
+      "entry": "1341:2B3F",
+      "description_ru": "Перестроить высоту голосов после pitch bend",
+      "c_definition_present": true,
+      "c_definition_line": 567,
+      "c_body_sha256": "d1df5e41a19b01280c9a4653e45892e97e1d0544382fa7d83c939a9aff8cc0a7",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 45,
+      "compiled_bytes": 46,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 42,
+      "internal_calls_rebased_diagnostic_differing_bytes": 42,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2B3F",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2B43",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2B44",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2B45",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "2B48",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2B4B",
+          "bytes": "0bf6",
+          "text": "or si, si"
+        },
+        {
+          "address": "2B4D",
+          "bytes": "7419",
+          "text": "je 0x2b68"
+        },
+        {
+          "address": "2B4F",
+          "bytes": "57",
+          "text": "push di"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2B3F",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2B40",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2B42",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2B43",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2B44",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2B47",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "2B4A",
+          "bytes": "eb18",
+          "text": "jmp 0x2b64"
+        },
+        {
+          "address": "2B4C",
+          "bytes": "90",
+          "text": "nop "
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2B6C",
+      "entry": "1341:2B6C",
+      "description_ru": "Выделить голос: циклический поиск и приоритет",
+      "c_definition_present": true,
+      "c_definition_line": 573,
+      "c_body_sha256": "0e0416d87cfc5ecaf7127d36ec0d340ad19cf57b336df9618f943b596862c671",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 88,
+      "compiled_bytes": 104,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 83,
+      "internal_calls_rebased_diagnostic_differing_bytes": 83,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2B6C",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2B70",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2B71",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2B72",
+          "bytes": "8a5604",
+          "text": "mov dl, byte ptr [bp + 4]"
+        },
+        {
+          "address": "2B75",
+          "bytes": "33ff",
+          "text": "xor di, di"
+        },
+        {
+          "address": "2B77",
+          "bytes": "b90900",
+          "text": "mov cx, 9"
+        },
+        {
+          "address": "2B7A",
+          "bytes": "fe06f458",
+          "text": "inc byte ptr [0x58f4]"
+        },
+        {
+          "address": "2B7E",
+          "bytes": "803ef45809",
+          "text": "cmp byte ptr [0x58f4], 9"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2B6C",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "2B70",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2B71",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2B72",
+          "bytes": "c746fe0000",
+          "text": "mov word ptr [bp - 2], 0"
+        },
+        {
+          "address": "2B77",
+          "bytes": "bf0900",
+          "text": "mov di, 9"
+        },
+        {
+          "address": "2B7A",
+          "bytes": "fe06f458",
+          "text": "inc byte ptr [0x58f4]"
+        },
+        {
+          "address": "2B7E",
+          "bytes": "803ef45808",
+          "text": "cmp byte ptr [0x58f4], 8"
+        },
+        {
+          "address": "2B83",
+          "bytes": "7605",
+          "text": "jbe 0x2b8a"
+        }
+      ],
+      "semantic_cases": 13,
+      "semantic_cases_passed": 13,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2BC4",
+      "entry": "1341:2BC4",
+      "description_ru": "Key-off и удаление голоса из списка",
+      "c_definition_present": true,
+      "c_definition_line": 590,
+      "c_body_sha256": "08de93fb032a037a7f4530e685d633d27df6c6cf782fe3f396454ae6418f2fe6",
+      "source_kind": "C with short AH register-ABI bridge",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 50,
+      "compiled_bytes": 74,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 67,
+      "internal_calls_rebased_diagnostic_differing_bytes": 67,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 4, 0"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2BC4",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2BC8",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2BC9",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2BCA",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2BCD",
+          "bytes": "8a6507",
+          "text": "mov ah, byte ptr [di + 7]"
+        },
+        {
+          "address": "2BD0",
+          "bytes": "e8c103",
+          "text": "call 0x2f94"
+        },
+        {
+          "address": "2BD3",
+          "bytes": "8b5d02",
+          "text": "mov bx, word ptr [di + 2]"
+        },
+        {
+          "address": "2BD6",
+          "bytes": "8b7504",
+          "text": "mov si, word ptr [di + 4]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2BC4",
+          "bytes": "c8040000",
+          "text": "enter 4, 0"
+        },
+        {
+          "address": "2BC8",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2BCB",
+          "bytes": "8a6707",
+          "text": "mov ah, byte ptr [bx + 7]"
+        },
+        {
+          "address": "2BCE",
+          "bytes": "e8c303",
+          "text": "call 0x2f94"
+        },
+        {
+          "address": "2BD1",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2BD4",
+          "bytes": "8b4702",
+          "text": "mov ax, word ptr [bx + 2]"
+        },
+        {
+          "address": "2BD7",
+          "bytes": "8946fe",
+          "text": "mov word ptr [bp - 2], ax"
+        },
+        {
+          "address": "2BDA",
+          "bytes": "8b4f04",
+          "text": "mov cx, word ptr [bx + 4]"
+        }
+      ],
+      "semantic_cases": 2,
+      "semantic_cases_passed": 2,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2BF6",
+      "entry": "1341:2BF6",
+      "description_ru": "Распаковать 8 параметров и запустить огибающую",
+      "c_definition_present": true,
+      "c_definition_line": 606,
+      "c_body_sha256": "f306912ec3404f036cb054f927ab9beada9f4ca6651c379243bddfe72bbeeb87",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 99,
+      "compiled_bytes": 100,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 36,
+      "internal_calls_rebased_diagnostic_differing_bytes": 36,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2BF6",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2BFA",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2BFB",
+          "bytes": "8b5e06",
+          "text": "mov bx, word ptr [bp + 6]"
+        },
+        {
+          "address": "2BFE",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2C01",
+          "bytes": "c60401",
+          "text": "mov byte ptr [si], 1"
+        },
+        {
+          "address": "2C04",
+          "bytes": "c744020000",
+          "text": "mov word ptr [si + 2], 0"
+        },
+        {
+          "address": "2C09",
+          "bytes": "c644151f",
+          "text": "mov byte ptr [si + 0x15], 0x1f"
+        },
+        {
+          "address": "2C0D",
+          "bytes": "8a07",
+          "text": "mov al, byte ptr [bx]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2BF6",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2BF7",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2BF9",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2BFA",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2BFB",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2BFE",
+          "bytes": "8b7e06",
+          "text": "mov di, word ptr [bp + 6]"
+        },
+        {
+          "address": "2C01",
+          "bytes": "c60401",
+          "text": "mov byte ptr [si], 1"
+        },
+        {
+          "address": "2C04",
+          "bytes": "c744020000",
+          "text": "mov word ptr [si + 2], 0"
+        }
+      ],
+      "semantic_cases": 1,
+      "semantic_cases_passed": 1,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2C59",
+      "entry": "1341:2C59",
+      "description_ru": "Рассчитать шаг, остаток и длительность стадии",
+      "c_definition_present": true,
+      "c_definition_line": 624,
+      "c_body_sha256": "1c2c5a5c2b2c851328875dc03edd7030c3e759191f910094be6f6d4be4905c0b",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 218,
+      "compiled_bytes": 246,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 231,
+      "internal_calls_rebased_diagnostic_differing_bytes": 231,
+      "difference_categories": [
+        "frame/register-save",
+        "stack-cleanup",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0xc, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 0xa, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2C59",
+          "bytes": "c80c0000",
+          "text": "enter 0xc, 0"
+        },
+        {
+          "address": "2C5D",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2C5E",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2C5F",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2C62",
+          "bytes": "8a4513",
+          "text": "mov al, byte ptr [di + 0x13]"
+        },
+        {
+          "address": "2C65",
+          "bytes": "98",
+          "text": "cwde "
+        },
+        {
+          "address": "2C66",
+          "bytes": "8946f6",
+          "text": "mov word ptr [bp - 0xa], ax"
+        },
+        {
+          "address": "2C69",
+          "bytes": "8a1d",
+          "text": "mov bl, byte ptr [di]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2C59",
+          "bytes": "c80a0000",
+          "text": "enter 0xa, 0"
+        },
+        {
+          "address": "2C5D",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2C5E",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2C5F",
+          "bytes": "8b7e04",
+          "text": "mov di, word ptr [bp + 4]"
+        },
+        {
+          "address": "2C62",
+          "bytes": "8a05",
+          "text": "mov al, byte ptr [di]"
+        },
+        {
+          "address": "2C64",
+          "bytes": "fec8",
+          "text": "dec al"
+        },
+        {
+          "address": "2C66",
+          "bytes": "8846f7",
+          "text": "mov byte ptr [bp - 9], al"
+        },
+        {
+          "address": "2C69",
+          "bytes": "8bc8",
+          "text": "mov cx, ax"
+        }
+      ],
+      "semantic_cases": 151,
+      "semantic_cases_passed": 151,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2D33",
+      "entry": "1341:2D33",
+      "description_ru": "Выполнить шаг огибающей и переход стадии",
+      "c_definition_present": true,
+      "c_definition_line": 659,
+      "c_body_sha256": "5fea23168e02663e445ffb305c576e6f51c92464f6a0b722336f4528380c1b60",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 160,
+      "compiled_bytes": 192,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 171,
+      "internal_calls_rebased_diagnostic_differing_bytes": 171,
+      "difference_categories": [
+        "stack-cleanup",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "compiled_frame": [
+        "enter 2, 0",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2D33",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "2D37",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2D38",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2D39",
+          "bytes": "8b7604",
+          "text": "mov si, word ptr [bp + 4]"
+        },
+        {
+          "address": "2D3C",
+          "bytes": "c746fe0000",
+          "text": "mov word ptr [bp - 2], 0"
+        },
+        {
+          "address": "2D41",
+          "bytes": "837c0400",
+          "text": "cmp word ptr [si + 4], 0"
+        },
+        {
+          "address": "2D45",
+          "bytes": "7413",
+          "text": "je 0x2d5a"
+        },
+        {
+          "address": "2D47",
+          "bytes": "836c0411",
+          "text": "sub word ptr [si + 4], 0x11"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2D33",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "2D37",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2D38",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2D39",
+          "bytes": "c746fe0000",
+          "text": "mov word ptr [bp - 2], 0"
+        },
+        {
+          "address": "2D3E",
+          "bytes": "8b5e04",
+          "text": "mov bx, word ptr [bp + 4]"
+        },
+        {
+          "address": "2D41",
+          "bytes": "837f0400",
+          "text": "cmp word ptr [bx + 4], 0"
+        },
+        {
+          "address": "2D45",
+          "bytes": "7416",
+          "text": "je 0x2d5d"
+        },
+        {
+          "address": "2D47",
+          "bytes": "836f0411",
+          "text": "sub word ptr [bx + 4], 0x11"
+        }
+      ],
+      "semantic_cases": 151,
+      "semantic_cases_passed": 151,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2DD3",
+      "entry": "1341:2DD3",
+      "description_ru": "Знаковое масштабирование с таблицей малых значений",
+      "c_definition_present": true,
+      "c_definition_line": 701,
+      "c_body_sha256": "7bfbcf376805393b4c86afa395747b0478109510449c15081f8c9f7de45b8d2b",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 167,
+      "compiled_bytes": 180,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 169,
+      "internal_calls_rebased_diagnostic_differing_bytes": 169,
+      "difference_categories": [
+        "frame/register-save",
+        "alignment-padding",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0",
+        "push si"
+      ],
+      "compiled_frame": [
+        "push bp",
+        "mov bp, sp",
+        "push di",
+        "push si"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2DD3",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2DD7",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2DD8",
+          "bytes": "807e0600",
+          "text": "cmp byte ptr [bp + 6], 0"
+        },
+        {
+          "address": "2DDC",
+          "bytes": "7505",
+          "text": "jne 0x2de3"
+        },
+        {
+          "address": "2DDE",
+          "bytes": "33c0",
+          "text": "xor ax, ax"
+        },
+        {
+          "address": "2DE0",
+          "bytes": "5e",
+          "text": "pop si"
+        },
+        {
+          "address": "2DE1",
+          "bytes": "c9",
+          "text": "leave "
+        },
+        {
+          "address": "2DE2",
+          "bytes": "c3",
+          "text": "ret "
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2DD3",
+          "bytes": "55",
+          "text": "push bp"
+        },
+        {
+          "address": "2DD4",
+          "bytes": "8bec",
+          "text": "mov bp, sp"
+        },
+        {
+          "address": "2DD6",
+          "bytes": "57",
+          "text": "push di"
+        },
+        {
+          "address": "2DD7",
+          "bytes": "56",
+          "text": "push si"
+        },
+        {
+          "address": "2DD8",
+          "bytes": "807e0600",
+          "text": "cmp byte ptr [bp + 6], 0"
+        },
+        {
+          "address": "2DDC",
+          "bytes": "7507",
+          "text": "jne 0x2de5"
+        },
+        {
+          "address": "2DDE",
+          "bytes": "33c0",
+          "text": "xor ax, ax"
+        },
+        {
+          "address": "2DE0",
+          "bytes": "5e",
+          "text": "pop si"
+        }
+      ],
+      "semantic_cases": 568,
+      "semantic_cases_passed": 568,
+      "semantic_sampled_equal": true
+    },
+    {
+      "function": "_snd_2E7A",
+      "entry": "1341:2E7A",
+      "description_ru": "Обновить 8-битный LFSR и масштабировать случайно",
+      "c_definition_present": true,
+      "c_definition_line": 717,
+      "c_body_sha256": "c01b38912c73fba0f691f9497a8b8f428fb1033c4d8d4ff956169fbcc9e9d9f7",
+      "source_kind": "C",
+      "declared_algorithm_body_recovered": true,
+      "all_possible_paths_proven": false,
+      "original_bytes": 33,
+      "compiled_bytes": 40,
+      "raw_byte_exact": false,
+      "unresolved_bindings": [],
+      "positional_differing_bytes": 29,
+      "internal_calls_rebased_diagnostic_differing_bytes": 29,
+      "difference_categories": [
+        "frame/register-save",
+        "size",
+        "body/encoding/layout"
+      ],
+      "original_frame": [
+        "enter 0, 0"
+      ],
+      "compiled_frame": [
+        "enter 2, 0"
+      ],
+      "original_initial_instructions": [
+        {
+          "address": "2E7A",
+          "bytes": "c8000000",
+          "text": "enter 0, 0"
+        },
+        {
+          "address": "2E7E",
+          "bytes": "a00011",
+          "text": "mov al, byte ptr [0x1100]"
+        },
+        {
+          "address": "2E81",
+          "bytes": "d0e8",
+          "text": "shr al, 1"
+        },
+        {
+          "address": "2E83",
+          "bytes": "7302",
+          "text": "jae 0x2e87"
+        },
+        {
+          "address": "2E85",
+          "bytes": "34b8",
+          "text": "xor al, 0xb8"
+        },
+        {
+          "address": "2E87",
+          "bytes": "a20011",
+          "text": "mov byte ptr [0x1100], al"
+        },
+        {
+          "address": "2E8A",
+          "bytes": "32e4",
+          "text": "xor ah, ah"
+        },
+        {
+          "address": "2E8C",
+          "bytes": "f76e04",
+          "text": "imul word ptr [bp + 4]"
+        }
+      ],
+      "compiled_initial_instructions": [
+        {
+          "address": "2E7A",
+          "bytes": "c8020000",
+          "text": "enter 2, 0"
+        },
+        {
+          "address": "2E7E",
+          "bytes": "a00011",
+          "text": "mov al, byte ptr [0x1100]"
+        },
+        {
+          "address": "2E81",
+          "bytes": "d0e8",
+          "text": "shr al, 1"
+        },
+        {
+          "address": "2E83",
+          "bytes": "8846ff",
+          "text": "mov byte ptr [bp - 1], al"
+        },
+        {
+          "address": "2E86",
+          "bytes": "f606001101",
+          "text": "test byte ptr [0x1100], 1"
+        },
+        {
+          "address": "2E8B",
+          "bytes": "7404",
+          "text": "je 0x2e91"
+        },
+        {
+          "address": "2E8D",
+          "bytes": "8076ffb8",
+          "text": "xor byte ptr [bp - 1], 0xb8"
+        },
+        {
+          "address": "2E91",
+          "bytes": "8a46ff",
+          "text": "mov al, byte ptr [bp - 1]"
+        }
+      ],
+      "semantic_cases": 1281,
+      "semantic_cases_passed": 1281,
+      "semantic_sampled_equal": true
+    }
+  ],
+  "register_profile_report": "analysis/sound_register_profile.json"
+}

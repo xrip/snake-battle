@@ -1,0 +1,10 @@
+{
+  "source_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "vector_sha256": "4d72b9e9ad7c96483733875957b5e893400136b485aef068881bdcf752345775",
+  "count": 1064,
+  "mirror": 150,
+  "rotate": 150,
+  "matcher": 700,
+  "comparator": 64,
+  "expected_output": "Executed original real-mode machine code with Unicorn"
+}

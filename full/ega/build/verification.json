@@ -1,0 +1,14 @@
+{
+  "object": "work/semantics/tasm/full/EGA.OBJ",
+  "compiled_size": 12374,
+  "expected_size": 12374,
+  "fixups": [],
+  "mismatches": [],
+  "byte_exact": true,
+  "compiled_sha256": "d5b7ff2423d41c282abf568849fe1b41432d3d444b5dc96f66b79b003c8e7bc6",
+  "reference_sha256": "d5b7ff2423d41c282abf568849fe1b41432d3d444b5dc96f66b79b003c8e7bc6",
+  "template_jumps": {
+    "0x9df": "e90000",
+    "0x9ef": "e90000"
+  }
+}

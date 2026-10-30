@@ -1,0 +1,32 @@
+{
+  "object": "snake-battle-recovered/matching/AIMATCH.OBJ",
+  "object_sha256": "2f50e32609fc74ef9da452e529b3cb32c30bc3dd2c069d32b918980d6244c677",
+  "executable": "/workspace/scratch/488b0609771f/snake-battle-recovered/original/SNAKE.EXE",
+  "function": "_sb_compare_matches",
+  "module": "aimatch.c",
+  "object_segment": 1,
+  "object_start": 334,
+  "object_end": 420,
+  "target": {
+    "segment": 1833,
+    "offset": 4098,
+    "image_offset": 33426,
+    "address": "0729:1002"
+  },
+  "file_offset": 37522,
+  "compiled_size": 86,
+  "original_size": 86,
+  "unresolved": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "fixups": [],
+  "mismatches": [],
+  "compiled_relocated_sha256": "2f5beb3259668a1b42ae945d7d151df4ffd314734810c4bd5a393e8f8c3a2d46",
+  "original_sha256": "2f5beb3259668a1b42ae945d7d151df4ffd314734810c4bd5a393e8f8c3a2d46",
+  "byte_exact": true,
+  "complete_module_layout_proven": false,
+  "passed": true
+}

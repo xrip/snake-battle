@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/workspace/scratch/488b0609771f/snake-battle-recovered/analysis/rea/snapshot.json\",\"bytes\":4723102,\"primitive_entries\":0,\"workflow_entries\":0,\"evidence_records\":513}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/workspace/scratch/488b0609771f/snake-battle-recovered/analysis/rea/snapshot.json",
+      "bytes": 4723102,
+      "primitive_entries": 0,
+      "workflow_entries": 0,
+      "evidence_records": 513
+    }
+  }
+}

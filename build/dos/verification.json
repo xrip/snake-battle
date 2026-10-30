@@ -1,0 +1,206 @@
+{
+  "flags": "-ml -a- -k -O -r- -Z -G- -M",
+  "seconds": 94.416,
+  "sources": {
+    "src/gpfcodec.h": "df00787cd3bbc37fd0088e1ba104cf63b7c3d7ec79356f9c7f3d58215afbfc85",
+    "src/gpfbuild.c": "fdb0538fb11ecd71ad0c43949311d7d2e5b139ba7991749086f547478075680f",
+    "src/snkrec.c": "31d2eee48f08b8b401454e1e687f56d3dffe1904067d489ab2e371bad17080b8",
+    "src/logictst.c": "269d8014fb35cc582dbf6473e1c8155b37ac8066fcd1a9d461d4c60dbe5c4524",
+    "src/logic.h": "8d8c72ff041aeee647f2024a5cca6d1cd870ab095522c5d8620be6f595c88669",
+    "src/snkrec.h": "0ab2278cb6a043a6fed25cb9a8354cbc2524bf1abfddf9483c0c6d5ce47b5842",
+    "src/gpfindex.h": "5a27db25d3d55691704e43b2ba5314ce966f461ce80e44e9595a3ba61cea4c64",
+    "src/gpfcodec.c": "a549b004dde31ea07c7a32d7aeb4919859950a3be1c0aaebb86a159085147bbf",
+    "src/logic.c": "859be2579d9520250f4b036be70f097afd5b5d63dc0fd1a9bd53fe8a738f4a2a",
+    "src/gpftest.c": "53d19f55f0e7efc215c7595d3e41cda43c7fcb7ce7ef4ef9a50ffc5bf76f467b",
+    "tools/snkrtest.c": "5814704afcfbfd9d14b7e818ef9febc16ee481871523922ac47fc695cbb22022"
+  },
+  "compiler_files": {
+    "BIN/BCC.EXE": "87c6dfbad817eeca31c069043f08063f7122663e51932ad089e6d1c563450d3b",
+    "BIN/TLINK.EXE": "ab8b8b96c1bde5ff6f56c8be2c3b928d21ead7430e72b01e3b22f1fa179ad006",
+    "LIB/C0L.OBJ": "1004f6318f4c0854fc84a02b1c954517dbde408d0d3cad76887764b0336a591a",
+    "LIB/CL.LIB": "57a3103f5df4d6965c0cb809f0b7cf209a1b8f63a13db87d2f4aadcacddd8124"
+  },
+  "compiler_banners": {
+    "GPFTEST": [
+      "Borland C++  Version 3.1 Copyright (c) 1992 Borland International",
+      "gpftest.c:",
+      "gpfcodec.c:",
+      "Turbo Link  Version 5.1 Copyright (c) 1992 Borland International",
+      "",
+      "",
+      "\tAvailable memory 4140296",
+      ""
+    ],
+    "GPFBUILD": [
+      "Borland C++  Version 3.1 Copyright (c) 1992 Borland International",
+      "gpfbuild.c:",
+      "gpfcodec.c:",
+      "Turbo Link  Version 5.1 Copyright (c) 1992 Borland International",
+      "",
+      "",
+      "\tAvailable memory 4140296",
+      ""
+    ],
+    "SNKRTEST": [
+      "Borland C++  Version 3.1 Copyright (c) 1992 Borland International",
+      "snkrtest.c:",
+      "snkrec.c:",
+      "Turbo Link  Version 5.1 Copyright (c) 1992 Borland International",
+      "",
+      "",
+      "\tAvailable memory 4166280",
+      ""
+    ],
+    "LOGICTST": [
+      "Borland C++  Version 3.1 Copyright (c) 1992 Borland International",
+      "logictst.c:",
+      "logic.c:",
+      "Turbo Link  Version 5.1 Copyright (c) 1992 Borland International",
+      "",
+      "",
+      "\tAvailable memory 4169096",
+      ""
+    ]
+  },
+  "binaries": {
+    "GPFTEST.EXE": "fe351562b43cbcf31a3ffb4d09d1107c4f7725ee56e638d64c3cd51260fbad82",
+    "LOGICTST.EXE": "cedf112db0fed5498e1589b2de656f8935564a79fb421a135c6461b8b04afa9a",
+    "GPFBUILD.EXE": "fcd5d95bc408fa6df2fa6fa5ad8859c1afcf4b1fc9329a4e481aeb056feb2c4b",
+    "SNKRTEST.EXE": "a17278ae97ec25991d3d9f11f4fc7f0458b0d8f25d27c3bf9401e4dc17903e04"
+  },
+  "comparisons": [
+    {
+      "name": "ANTONY.REC",
+      "original_sha256": "ed6d76a2e53beced4ecd2eeaa869f3acff52d5372f601fc4f5dc341ce5f173d5",
+      "rebuilt_sha256": "ed6d76a2e53beced4ecd2eeaa869f3acff52d5372f601fc4f5dc341ce5f173d5",
+      "byte_exact": true
+    },
+    {
+      "name": "ANTONY.SNK",
+      "original_sha256": "6e8e5fba6ae819ad3675d18f14c0ea720f1776dc8082b9b6781faed983f0ffb9",
+      "rebuilt_sha256": "6e8e5fba6ae819ad3675d18f14c0ea720f1776dc8082b9b6781faed983f0ffb9",
+      "byte_exact": true
+    },
+    {
+      "name": "CHORUS.SNK",
+      "original_sha256": "599bbe5cf5024c3a99abb062f91f326325a374fdd6a008e3cc5a84e02110cc9d",
+      "rebuilt_sha256": "599bbe5cf5024c3a99abb062f91f326325a374fdd6a008e3cc5a84e02110cc9d",
+      "byte_exact": true
+    },
+    {
+      "name": "HANTER.REC",
+      "original_sha256": "5bbe286061aca5fc33e6ad8ed02ea198a3b522540eadeae2521fd60150da532d",
+      "rebuilt_sha256": "5bbe286061aca5fc33e6ad8ed02ea198a3b522540eadeae2521fd60150da532d",
+      "byte_exact": true
+    },
+    {
+      "name": "HANTER.SNK",
+      "original_sha256": "e5fa1e066e5b017145a375a6f2b2b4e6ce09f9876b6902d3d071f3a525efa3f1",
+      "rebuilt_sha256": "e5fa1e066e5b017145a375a6f2b2b4e6ce09f9876b6902d3d071f3a525efa3f1",
+      "byte_exact": true
+    },
+    {
+      "name": "IGOR_I.SNK",
+      "original_sha256": "244f98e587915a263dc760ffd6cc11c7b7c33de72aaec3115b1388c1cf95e8fb",
+      "rebuilt_sha256": "244f98e587915a263dc760ffd6cc11c7b7c33de72aaec3115b1388c1cf95e8fb",
+      "byte_exact": true
+    },
+    {
+      "name": "JOKER.REC",
+      "original_sha256": "5ac745b778b47a1ace5bacc79e96095e11ed66e5bdf768a87a1ceaeb3fd85c7d",
+      "rebuilt_sha256": "5ac745b778b47a1ace5bacc79e96095e11ed66e5bdf768a87a1ceaeb3fd85c7d",
+      "byte_exact": true
+    },
+    {
+      "name": "JOKER.SNK",
+      "original_sha256": "598d131a29afcc5fbf846e2b6c6d05cc14787ecd172e25f4c4945fa48cc25142",
+      "rebuilt_sha256": "598d131a29afcc5fbf846e2b6c6d05cc14787ecd172e25f4c4945fa48cc25142",
+      "byte_exact": true
+    },
+    {
+      "name": "OLEG.SNK",
+      "original_sha256": "a5045c3ab6bed08b365a5cbcdf48f7a166caa32a6bb698d42f0830fef123bb50",
+      "rebuilt_sha256": "a5045c3ab6bed08b365a5cbcdf48f7a166caa32a6bb698d42f0830fef123bb50",
+      "byte_exact": true
+    },
+    {
+      "name": "PAU1.SNK",
+      "original_sha256": "6b7f332ee965daf9e18b10c1d0d82e4d0bc5010a4060504e9197582e930a03da",
+      "rebuilt_sha256": "6b7f332ee965daf9e18b10c1d0d82e4d0bc5010a4060504e9197582e930a03da",
+      "byte_exact": true
+    },
+    {
+      "name": "PAU2.SNK",
+      "original_sha256": "d677518c6b56095c63897d3ff3aa44722eaa0148120afd61234417010635e10b",
+      "rebuilt_sha256": "d677518c6b56095c63897d3ff3aa44722eaa0148120afd61234417010635e10b",
+      "byte_exact": true
+    },
+    {
+      "name": "PAU3.SNK",
+      "original_sha256": "f5601e197bfff8733cbfa90394448c9484ae282228a8795e5ad5ba52787485ab",
+      "rebuilt_sha256": "f5601e197bfff8733cbfa90394448c9484ae282228a8795e5ad5ba52787485ab",
+      "byte_exact": true
+    },
+    {
+      "name": "PAU4.SNK",
+      "original_sha256": "d25989a7d674b7ddea03bdd701092f84e40976103bbdf9f5ac800d304c5a395b",
+      "rebuilt_sha256": "d25989a7d674b7ddea03bdd701092f84e40976103bbdf9f5ac800d304c5a395b",
+      "byte_exact": true
+    },
+    {
+      "name": "REMBO.REC",
+      "original_sha256": "4d239fafa0281650cbb27eee90e4eee6969573c583f0e24e9683f355d12a745b",
+      "rebuilt_sha256": "4d239fafa0281650cbb27eee90e4eee6969573c583f0e24e9683f355d12a745b",
+      "byte_exact": true
+    },
+    {
+      "name": "REMBO.SNK",
+      "original_sha256": "94148839d07667feabf4e9a44b0914541a6bb549e055d7704a2c4232029b7aae",
+      "rebuilt_sha256": "94148839d07667feabf4e9a44b0914541a6bb549e055d7704a2c4232029b7aae",
+      "byte_exact": true
+    },
+    {
+      "name": "SNAKE.GPF",
+      "original_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+      "rebuilt_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+      "byte_exact": true
+    },
+    {
+      "name": "SS-20.SNK",
+      "original_sha256": "edb4f2a37006bf834bbf6dc98dfdd102340cfcf7d50156ca28289924d2540fa7",
+      "rebuilt_sha256": "edb4f2a37006bf834bbf6dc98dfdd102340cfcf7d50156ca28289924d2540fa7",
+      "byte_exact": true
+    },
+    {
+      "name": "SS.REC",
+      "original_sha256": "aa313597887faf3a47f05f578e1c3af730072e55413f6976ebcdd4da45239cf4",
+      "rebuilt_sha256": "aa313597887faf3a47f05f578e1c3af730072e55413f6976ebcdd4da45239cf4",
+      "byte_exact": true
+    },
+    {
+      "name": "SUCKER.SNK",
+      "original_sha256": "10b3593deab61a54d1723f29b1e08977a709044906c3e7521fa2e8483c697bb9",
+      "rebuilt_sha256": "10b3593deab61a54d1723f29b1e08977a709044906c3e7521fa2e8483c697bb9",
+      "byte_exact": true
+    },
+    {
+      "name": "TEST.SNK",
+      "original_sha256": "6375842fb9b1fa0ef7459d69fb19438b63f231a55658d98b123b1d05ddda957c",
+      "rebuilt_sha256": "6375842fb9b1fa0ef7459d69fb19438b63f231a55658d98b123b1d05ddda957c",
+      "byte_exact": true
+    },
+    {
+      "name": "TRENTY.SNK",
+      "original_sha256": "6049bb35cfec6cc6b75f45ace4ced0288bb523ad894da72af1d195fff8abb43f",
+      "rebuilt_sha256": "6049bb35cfec6cc6b75f45ace4ced0288bb523ad894da72af1d195fff8abb43f",
+      "byte_exact": true
+    }
+  ],
+  "passed": true,
+  "full_game_reconstructed": false,
+  "scope": "Original-compiler builds of recovered C modules and utilities; GPF/SNK/REC byte-exact reconstruction and 1064 core logic vectors. These utility EXEs are not the original game executable.",
+  "GPFTEST.OUT": "PASS 82 members, 94 streams: decoded sizes and recompressed bytes exact.\n",
+  "GPFBUILD.OUT": "Rebuilt 82 resources from uncompressed data.\n",
+  "LOGICTST.OUT": "PASS 1064 vectors against original 16-bit machine code.\n",
+  "SNKREC.OUT": "REC participants=4 live_score_records=1\nSNK cards=5 rating=1054\nSNK cards=8 rating=1070\nREC participants=4 live_score_records=1\nSNK cards=1 rating=959\nSNK cards=8 rating=986\nREC participants=4 live_score_records=1\nSNK cards=2 rating=1004\nSNK cards=1 rating=995\nSNK cards=9 rating=993\nSNK cards=8 rating=988\nSNK cards=9 rating=1008\nSNK cards=9 rating=993\nREC participants=4 live_score_records=1\nSNK cards=9 rating=1098\nSNK cards=8 rating=1021\nREC participants=4 live_score_records=1\nSNK cards=6 rating=990\nSNK cards=1 rating=1000\nSNK cards=9 rating=999\n"
+}

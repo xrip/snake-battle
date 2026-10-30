@@ -1,0 +1,385 @@
+
+
+The  principle  of  this  game  is   significantly
+different  from  these of most of other games. The
+number of players is practically  unlimited.  Your
+task is to prepare your own snake for competitions
+(i.e.  to  create  and  to train it) but in battle
+itself you can be  only  a  spectator.  The  snake
+begins  to  live  its  own  life:  takes  part  in
+competitions, behaves according  to  the  strategy
+you have taught it, wins or loses and - who knows?
+-  may  yield you a profit and glory. Besides, you
+always have the opportunity  to  improve  fighting
+qualities  of  your snake (of course, if it is not
+engaged yet in a large tournament).
+
+
+
+%EndPage
+
+In one  combat  up  to  4  snakes  can  take  part
+simultaneously. They attack each other. If snake's
+head  touches  enemy's  tail  it will bite it off,
+thus shortening the enemy's body by one  cell  and
+adding  it  to  its own length. The winner has the
+maximum length at the end of the  battle.  Snake's
+length can be regarded as the amount of won points
+or dollars.
+
+To create a fighting snake - that is:
+     * to choose name for your snake,
+     * to choose its colour,
+     * to make passport for the snake,
+     * to programme its strategy on battle field,
+     * to set a password.
+Your  snake is your property, therefore nobody can
+change it or pry secrets of  its  program  without
+knowing your own password.
+%EndPage
+
+PICKING UP SNAKES.
+
+In  the  right  part  of screen there is a pile of
+cassettes, each of them connects full  information
+about one particular snake.
+
+In  the  four  upper  cells you put cassettes with
+snakes that you intend for next  round  of  battle
+(let's  call them "battle-pile"). The top cassette
+is  intended  also  for  work  (teaching,  editing
+passport, changing colour)
+
+In  the  lower  pile there is the bank of existing
+snakes.
+%EndPage
+
+Place arrow pointer on the snake you want  to  put
+into  competition  and  press Enter or click mouse
+button. Then point a position in the "battle-pile"
+and press Enter once more. If the cell was already
+filled, the previous  snake  will  return  to  the
+bank.
+
+To  see  the  next part of the list choose the red
+arrow.
+
+To begin creating a new snake choose the top  cell
+when  it  is  empty  and  type  a  new  name  when
+twinkling cursor appears. If you enter a name that
+already exists  then  the  corresponding  cassette
+from the bank will be loaded.
+
+%EndPage
+
+OPTIONS OF THE MAIN MENU. EDIT PASSPORT.
+
+%f"mkpass.blo"
+%L14
+
+To enter this regime you need to know the password
+of  the snake in the top cell. If you pick up this
+item with the top cell empty, you  will  be  asked
+for  a new name. Put the cursor on the picture and
+press ENTER or left  mouse  button  and  you  will
+enter the regime of filling your snake's passport.
+
+%EndPage
+
+EDIT PASSPORT.
+
+%f"pasopen.blo"
+%L13
+In  snake's  passport  there  is information about
+number of cards used in its program, rating, level
+of complexity of programming instrument.
+Rating is proportional to the  average  length  of
+the snake through all its battles and primarily is
+equal  to 1000. In the passport you can print your
+own  name  or  pseudonym,  motto  or   any   brief
+information you want.
+%EndPage
+
+OPTIONS OF THE MAIN MENU. CHOOSE SKIN.
+
+%f"mkcolor.blo"
+%L14
+After  entering the password you will see a little
+cage with  moving  snake.  Choose  its  colour  by
+"Left" and "Right".
+
+
+
+
+%EndPage
+
+OPTIONS OF THE MAIN MENU. BATTLE.
+
+%f"mkbattle.blo"
+%L14
+After entering this regime you will see the battle
+field  and  passports  of  snakes enlisted for the
+current battle. In the top right corner  there  is
+the  information  tableau  with names, colours and
+score number of fighting snakes. If several rounds
+of battle take place, score number for each  snake
+will be the total through all the rounds have been
+%EndPage
+
+held without returning to the main menu.
+   Below you can see  the  time  indicator  of the
+current battle. When time is up, the  battle  will
+be interrupted.
+   Control panel:
+
+%f"2-start.blo" x:30 y:4 sn1"PLAY"
+%x:130
+- begin the battle;
+%y:14 X:0
+%f"2-start.blo" x:30 y:4 sn1"SLOW"
+%y:22 X:0
+-  in  this  regime  execution  of  each game step
+requires pressing the SPACE bar or clicking  mouse
+button  (game  step means that all the snakes make
+one move each). Besides, if the  password  of  the
+"top  cell  snake"  was  input  correctly,  in the
+bottom right corner you will see  its  card  being
+executed  at  this  moment  (about  cards  see the
+section MAKE SNAKE'S BRAIN).
+%EndPage
+
+
+%f"2-stop.blo" x:30 y:4 sn1"STOP"
+%x:130
+- interrupts battle at
+%X:160
+  any moment.
+%X:0
+%f"2-sound.blo" x:30 y:4 sn1"SOUND"
+%x:130
+- toggle sound on and off.
+%X:0 y:14
+%f"2-exit.blo" x:30 y:4 sn1"MAIN MENU"
+%x:130
+- quit to the main menu.
+%X:0 y:22
+
+When the battle is over you can  either  start  it
+again  with  the same snakes or return to the main
+menu. Then the passport of the  snake-winner  with
+its  new rating will appear over the battle field.
+To quit BATTLE press ENTER or click mouse button.
+%EndPage
+
+OPTIONS OF THE MAIN MENU. MAKE SNAKE'S BRAIN.
+
+%f"mkbrain.blo"
+%L14
+
+This is the regime  of  programming  your  Snake's
+behaviour.
+
+%EndPage
+
+If this regime is entered for a new snake then you
+must  choose  the  complexity  level  of  teaching
+instruments.
+
+%X:10 Y:80  f"panel1.blo" x:7 y:5 fs"novice.blo"   x:33 y:-1 sn1"NOVICE"
+%X:10 Y:110 f"panel1.blo" x:7 y:5 fs"advanced.blo" x:33 y:-1 sn1"ADVANCED"
+%X:10 Y:140 f"panel1.blo" x:7 y:5 fs"expert.blo"   x:33 y:-1 sn1"EXPERT"
+%X:0 Y:170
+
+Then 9 cards and a control panel will appear.
+%EndPage
+
+PRINCIPLES OF CREATING A SNAKE-PROGRAM
+
+During the  battle  each  snake  moves  along  the
+cellular  field.  Before each game step the proper
+sequence of snakes moves is determined by  chance.
+Then each snake makes a move in its turn. The move
+means  either transportation on one empty cell, or
+biting off the opponent's tail with transportation
+to its place. If both  is  impossible,  the  snake
+remains motionless.
+
+Snake's  behaviour is programmed by means of cards
+consisting of 7*7 positions, which can  be  filled
+with   conventional   elements  described  on  the
+control panel. The player can  use  from  1  to  9
+cards.
+%EndPage
+
+At  every moment of time a snake takes a view of a
+field fragment of 7*7 cells around  its  head  and
+compares  it  with the first card of its behaviour
+(rotating it if necessary). The card is considered
+coincided   with   field   fragment    if    while
+superimposing  it  under  all  the elements of the
+card the same elements of the field are found.  If
+it  occurs,  the  direction of the snake's head on
+the card will show the direction of its motion  on
+the  next  step.
+
+If  not,  the  fragment  will be compared with the
+second card and so on, until the  proper  card  is
+found.  If  there  is  no  corresponding card, the
+direction of  snake's  movement  will  be  random.
+While  comparing  the  card  can be rotated in all
+directions, for example, it can be overturned with
+picture down. That is why you needn't  make  cards
+%EndPage
+
+with  symmetrical disposition of elements, because
+these cards will work exactly the same way.
+
+%f(0:15:155:38)"15-pict.blo" x:20 y:4 sn1"MAIN MENU"
+%l3 X:0
+by means of this screen button you can quit to the
+main menu.
+
+%EndPage
+
+Regime NOVICE.
+
+In  the  right  bottom  part of screen you see the
+indicator of work with cards which can be  in  one
+of the following conditions:
+
+%f(234:0:250:12)"15-pict.blo" x:40
+EDIT CARD
+%X:0 l:1
+%f(270:0:286:12)"15-pict.blo" x:40
+INSERT CARD
+%X:0 l:1
+%f(252:0:268:12)"15-pict.blo" x:40
+DELETE CARD
+%X:0 l:2
+Switching  of regimes is made by pressing ENTER or
+clicking mouse button while the  arrow  cursor  is
+placed on the indicator.
+%EndPage
+
+%f(234:0:250:12)"15-pict.blo" x:40
+EDIT CARD
+%X:0 l:1
+By  means  of arrow cursor activate the element on
+the control panel you want to put in a card.  Then
+point  the  position in the card where you want to
+place it and press ENTER or click mouse button. To
+delete the element press ENTER again.
+
+%f(270:0:286:12)"15-pict.blo" x:40
+INSERT CARD
+%X:0 l:1
+put the arrow cursor on the card before which  you
+want  to insert a new one and press ENTER or click
+mouse button.
+
+%f(252:0:268:12)"15-pict.blo" x:40
+DELETE CARD
+%X:0 l:1
+place the cursor on the card you  want  to  delete
+and press ENTER or click mouse button.
+
+Screen  buttons  FOR ADVANCED are not used in this
+regime.
+%EndPage
+
+Regime ADVANCED.
+
+This  part  is  for   players   who   regard   the
+instruments  suggested  in  the  regime NOVICE too
+simple.
+
+On the  control  panel two buttons are added:
+OR-COLOR and EXCEPT
+
+%f(162:0:178:12)"15-pict.blo" x:40
+OR-COLOR
+%X:0 l:1
+when this button with blue indicator is activated,
+you can change the colour of any element on  cards
+to  the colour of indicator. Point the element you
+want to repaint and press  ENTER  or  click  mouse
+button. To cancel OR-COLOR press the button again.
+
+%EndPage
+
+The  rules  of  comparing cards are different from
+these of regime NOVICE. For executing a card  with
+one  or several blue elements it is enough that at
+least one of such elements would coincide (at  the
+same   time   all   the   ordinary  elements  must
+coincide). If it occurs in  several  positions  of
+the  card  the  program  will choose one where the
+coincidence is more complete.
+
+%f(144:0:160:12)"15-pict.blo" x:40
+EXCEPT
+%X:0 l:1
+when this button is activated, the element pointed
+by cursor will be crossed out. This  element  will
+coincide  if in its place on the field any element
+except this one is found.
+
+The button EXPERT is not used in this regime.
+%EndPage
+
+Regime EXPERT.
+
+The regime for elite.
+
+On the control panel  the  button  is  added  with
+colour indicator:
+%y:5
+%f(180:0:196:12)"15-pict.blo" x:40
+AND-COLOR
+%X:0 l:2
+and  one more OR-COLOUR appears (now they are blue
+and green).
+
+The rules of comparing cards:
+
+All  the  elements  of  the  same   colour   (from
+AND-COLOUR set) must coincide simultaneously. Then
+it is considered that this colour group coincides.
+There  is  also  a possibility added to change the
+%EndPage
+
+colour of the frame encircling each card entirely.
+For this put the cursor on the  proper  indicator,
+pick up the colour, then put the cursor on the own
+head of your snake in chosen card and press ENTER.
+Along  with  the frame the colour of OWN HEAD will
+be changed. If the frame colour is  the  one  from
+AND-COLOUR  then the card is compared the same way
+as in ADVANCED regime. If it is from  OR-COLOUR  -
+then  the  card will coincide when at least one of
+the colour groups coincides.
+
+In this regime you can change the position of  OWN
+HEAD in cards.
+
+%EndPage
+
+OPTIONS OF THE MAIN MENU. HELP.
+
+Information about the authors of the game and game
+description.
+
+
+OPTIONS OF THE MAIN MENU. NEW PASSWORD.
+
+Here  you  can  change the password of your snake.
+Put the cursor on the screen button,  press  ENTER
+or  click  mouse  button and type in new password.
+The password is changed.
+
+
+OPTIONS OF THE MAIN MENU. EXIT.
+
+Interrupt the game and quit to DOS.
+%EndPage
+

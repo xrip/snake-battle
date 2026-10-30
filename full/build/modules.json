@@ -1,0 +1,279 @@
+[
+  {
+    "name": "START",
+    "source": "ui/START.C",
+    "compiler": "bc31",
+    "code": "03EF:0003",
+    "size": 48,
+    "bss": "1679:1826",
+    "flags": "-ml -a- -k -O -r- -Z -G-",
+    "data_size": 0,
+    "bss_size": 388
+  },
+  {
+    "name": "INPUT",
+    "source": "ui/INPUT.C",
+    "compiler": "bc31",
+    "code": "03F2:0003",
+    "size": 1005,
+    "bss": "1679:19AA",
+    "data_size": 0,
+    "bss_size": 22
+  },
+  {
+    "name": "MUSIC",
+    "source": "ui/MUSIC.C",
+    "compiler": "bc31",
+    "code": "0431:0000",
+    "size": 461,
+    "data": "1679:0094",
+    "bss": "1679:19C0",
+    "data_size": 52,
+    "bss_size": 8
+  },
+  {
+    "name": "UI",
+    "source": "ui/UI.C",
+    "compiler": "bc31",
+    "code": "044D:000D",
+    "size": 11712,
+    "data": "1679:00C8",
+    "bss": "1679:19C8",
+    "data_size": 740,
+    "bss_size": 304
+  },
+  {
+    "name": "GAME",
+    "source": "game/GAME.C",
+    "compiler": "bc31",
+    "code": "0729:000D",
+    "size": 11803,
+    "data": "1679:03AC",
+    "bss": "1679:1AF8",
+    "data_size": 451,
+    "bss_size": 6641
+  },
+  {
+    "name": "CARDS",
+    "source": "formats/cards.c",
+    "compiler": "bc31",
+    "code": "0A0B:0008",
+    "size": 4379,
+    "data": "1679:0570",
+    "bss": "1679:34EA",
+    "data_size": 1933,
+    "bss_size": 1494
+  },
+  {
+    "name": "ABOUT",
+    "source": "formats/about.c",
+    "compiler": "bc31",
+    "code": "0B1D:0003",
+    "size": 236,
+    "data_size": 0,
+    "bss_size": 0
+  },
+  {
+    "name": "XOR",
+    "source": "formats/xor.c",
+    "compiler": "bc31",
+    "code": "0B2B:000F",
+    "size": 116,
+    "data_size": 0,
+    "bss_size": 0
+  },
+  {
+    "name": "FILES",
+    "source": "formats/files.c",
+    "compiler": "bc31",
+    "code": "0B33:0003",
+    "size": 3543,
+    "data": "1679:0CFE",
+    "data_size": 52,
+    "bss_size": 0
+  },
+  {
+    "name": "TICKS",
+    "source": "formats/ticks.c",
+    "compiler": "bc31",
+    "code": "0C10:000A",
+    "size": 226,
+    "data": "1679:0D32",
+    "data_size": 4,
+    "bss_size": 0
+  },
+  {
+    "name": "NUMBER",
+    "source": "formats/number.c",
+    "compiler": "bc31",
+    "code": "0C1E:000C",
+    "size": 42,
+    "data": "1679:0D36",
+    "data_size": 4,
+    "bss_size": 0
+  },
+  {
+    "name": "ASSERT",
+    "source": "low/ASSERT.C",
+    "compiler": "bc31",
+    "code": "0C21:0006",
+    "size": 253,
+    "data": "1679:0D3A",
+    "bss": "1679:3AC0",
+    "data_size": 60,
+    "bss_size": 2
+  },
+  {
+    "name": "FORMAT",
+    "source": "low/FORMAT.C",
+    "compiler": "bc31",
+    "code": "0C31:0003",
+    "size": 264,
+    "bss": "1679:3AC2",
+    "data_size": 0,
+    "bss_size": 256
+  },
+  {
+    "name": "VIDEO",
+    "source": "low/VIDEO.C",
+    "compiler": "bc31",
+    "code": "0C41:000B",
+    "size": 107,
+    "data_size": 0,
+    "bss_size": 0
+  },
+  {
+    "name": "REGISTER",
+    "source": "low/REGISTER.C",
+    "compiler": "bc31",
+    "code": "0C48:0006",
+    "size": 980,
+    "data": "1679:0D76",
+    "bss": "1679:3BC2",
+    "data_size": 59,
+    "bss_size": 128
+  },
+  {
+    "name": "RENDER",
+    "source": "render/RENDER.C",
+    "compiler": "bc31",
+    "code": "0C85:000A",
+    "size": 4511,
+    "data": "1679:0DB2",
+    "bss": "1679:3C42",
+    "data_size": 154,
+    "bss_size": 1150
+  },
+  {
+    "name": "BLO",
+    "source": "graphics/BLO.C",
+    "compiler": "bc31",
+    "code": "0D9F:0009",
+    "size": 960,
+    "data": "1679:0E4C",
+    "bss": "1679:40C0",
+    "data_size": 43,
+    "bss_size": 8
+  },
+  {
+    "name": "CHUNK",
+    "source": "graphics/CHUNK.C",
+    "compiler": "bc31",
+    "code": "0DDB:0009",
+    "size": 318,
+    "data_size": 0,
+    "bss_size": 0
+  },
+  {
+    "name": "PARA",
+    "source": "graphics/PARA.C",
+    "compiler": "bc31",
+    "code": "0DEF:0007",
+    "size": 110,
+    "data": "1679:0E78",
+    "data_size": 39,
+    "bss_size": 0
+  },
+  {
+    "name": "HW",
+    "code": "0DF6:0005",
+    "size": 2499,
+    "data": "1679:0EA0",
+    "bss": "1679:40C8",
+    "data_size": 25,
+    "bss_size": 45,
+    "source": "hardware/HW.C",
+    "compiler": "bc31",
+    "flags": "-ml -a- -k- -O -r- -Z -G- -B"
+  },
+  {
+    "name": "REC",
+    "source": "formats/rec.c",
+    "compiler": "bc31",
+    "code": "0E92:0008",
+    "size": 1032,
+    "data": "1679:0EBA",
+    "bss": "1679:40F6",
+    "data_size": 76,
+    "bss_size": 13
+  },
+  {
+    "name": "RETRACE",
+    "code": "0ED3:0000",
+    "size": 34,
+    "data_size": 0,
+    "bss_size": 0,
+    "source": "ega/RETRACE.C",
+    "compiler": "bc31",
+    "flags": "-ml -a- -k -O -r- -Z -G- -B"
+  },
+  {
+    "name": "EGA",
+    "code": "0ED6:0000",
+    "size": 12374,
+    "data_size": 0,
+    "bss_size": 0,
+    "source": "ega/EGA.ASM",
+    "compiler": "tasm31-ega"
+  },
+  {
+    "name": "GPF",
+    "source": "gpf/GPF.C",
+    "compiler": "bc2",
+    "code": "11DB:0006",
+    "size": 1495,
+    "data": "1679:0F06",
+    "bss": "1679:4104",
+    "flags": "-ml -a- -k- -O- -r- -Z- -G- -K",
+    "data_size": 2,
+    "bss_size": 56
+  },
+  {
+    "name": "LZSS",
+    "source": "gpf/LZSS.ASM",
+    "compiler": "tasm31",
+    "code": "1238:000D",
+    "size": 4238,
+    "data_size": 0,
+    "bss_size": 0
+  },
+  {
+    "name": "SNDATA",
+    "source": "sound/SNDATA.C",
+    "compiler": "bc31",
+    "size": 0,
+    "data": "1679:0F08",
+    "data_size": 1092,
+    "bss": "1679:413C",
+    "bss_size": 8378
+  },
+  {
+    "name": "SOUND",
+    "owner": "gpf_resources",
+    "code": "1341:000C",
+    "size": 13172,
+    "pending": true,
+    "data_size": 0,
+    "bss_size": 0
+  }
+]

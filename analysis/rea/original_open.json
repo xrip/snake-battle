@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/workspace/scratch/488b0609771f/work/original/SNAKE.EXE\",\"format\":\"dos-mz\",\"kind\":\"executable\",\"sha256\":\"c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821\",\"architecture\":\"x86\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/workspace/scratch/488b0609771f/work/original/SNAKE.EXE",
+      "format": "dos-mz",
+      "kind": "executable",
+      "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+      "architecture": "x86"
+    }
+  }
+}

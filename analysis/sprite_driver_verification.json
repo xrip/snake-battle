@@ -1,0 +1,13 @@
+{
+  "source_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "range_file": [
+    65046,
+    77110
+  ],
+  "size": 12064,
+  "decoded_sha256": "329e58a15e80df4c559db734a719a2837346ad3e82a73ca29c8ddeda1d063c90",
+  "inverse_reencoding_exact": true,
+  "unicorn_original_wrapper_matches": true,
+  "stop_before_decoded_driver_init": "file:0x12DA2",
+  "emulation_scope": "Only supplied machine-code wrapper through checksum and decrypt loops, no DOS/hardware driver execution."
+}

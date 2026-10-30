@@ -1,0 +1,242 @@
+{
+  "repository": "https://github.com/davidly/dos_compilers",
+  "commit": "da3f15ce4912893a0dd9f8349dab29116a53ca59",
+  "subdirectory": "Microsoft C v6ax",
+  "files": [
+    {
+      "path": "BIN/C1.ERR",
+      "size": 19500,
+      "sha256": "637444915870f3283d5df41c5cdb1be8c32cc6c19b080f2bb3891edbc3751c6e"
+    },
+    {
+      "path": "BIN/C1.EXE",
+      "size": 146928,
+      "sha256": "645c86aff2d748b23c5fa98b2df5a20363aaa3d88ebd658b0e7a6ad1c0ee6877"
+    },
+    {
+      "path": "BIN/C1L.EXE",
+      "size": 213680,
+      "sha256": "d3db38b875a95048bca2809cd1f84783c6c070805f188fec9161054d6350ded3"
+    },
+    {
+      "path": "BIN/C2.EXE",
+      "size": 345721,
+      "sha256": "aba7a1acf37a9f1dbfbf8095abba4e33c3abc5d474586270b64a3528be90acf7"
+    },
+    {
+      "path": "BIN/C23.ERR",
+      "size": 3649,
+      "sha256": "22944a0dffef336c0ebb8f6d5aeb97b4dbeb5c9758a48759557176bff49d1151"
+    },
+    {
+      "path": "BIN/C2L.EXE",
+      "size": 473258,
+      "sha256": "62490de22e7b279ea59218a54d677bfc752cb5fc1287533d2e23d03519f155e0"
+    },
+    {
+      "path": "BIN/C3.EXE",
+      "size": 150076,
+      "sha256": "224727d55a715057288d56c00fdd524700f1354e79b487705f1888283c079344"
+    },
+    {
+      "path": "BIN/CL.ERR",
+      "size": 1656,
+      "sha256": "ca22f37e5e0c09faebde9e4d549dd1f53523cc6f23049d2239a040cd19a424e7"
+    },
+    {
+      "path": "BIN/CL.EXE",
+      "size": 81184,
+      "sha256": "92df4a0839aac77940189ce54f107381b829babe8103926cb05d1adffe947347"
+    },
+    {
+      "path": "BIN/CL.MSG",
+      "size": 2697,
+      "sha256": "3379f283aec74842bc82205e4c848d759e6e2dcbb6d4820eec9719f1297213ec"
+    },
+    {
+      "path": "BINB/LINK.EXE",
+      "size": 142015,
+      "sha256": "163d8b86c18b93ccae9b2380d850cd42a9a5e1fd89a163b16170979afbbabb07"
+    },
+    {
+      "path": "INCLUDE/ASSERT.H",
+      "size": 594,
+      "sha256": "55c174aec7e593e24c36768e5f542b564c4719f8155e49e2883560d511847c11"
+    },
+    {
+      "path": "INCLUDE/BIOS.H",
+      "size": 4499,
+      "sha256": "d144f91dd4ec686a38509842e35106e91af021487e2a45e7182ba350e35df66e"
+    },
+    {
+      "path": "INCLUDE/CONIO.H",
+      "size": 965,
+      "sha256": "2a7c54dc07ef767042861324a2f73ced293577f57ca2e4901cc16e1e2a7b7c27"
+    },
+    {
+      "path": "INCLUDE/CTYPE.H",
+      "size": 2979,
+      "sha256": "5e2bc8b6e5fa103dc9b51d6a711553d435446dd5f23f102f34e3d868236d00b6"
+    },
+    {
+      "path": "INCLUDE/DIRECT.H",
+      "size": 892,
+      "sha256": "c5f9f40f80bc538b253a8fe564cd1f264db515581e500c1b3ca7859b0ac621c2"
+    },
+    {
+      "path": "INCLUDE/DOS.H",
+      "size": 5343,
+      "sha256": "027e81abad4ceae2892863858b939694e42aa24d73bd96cab8278fcc868c0b33"
+    },
+    {
+      "path": "INCLUDE/ERRNO.H",
+      "size": 1428,
+      "sha256": "1db2af1fcfbcb33cf1be4f97430cdf8194bf1d60f586c1f432832d69aa5bfe91"
+    },
+    {
+      "path": "INCLUDE/FCNTL.H",
+      "size": 1126,
+      "sha256": "d3b8e59fc779acde127068898ee1233119d1d79fb1e1f919666b38556f2c02c7"
+    },
+    {
+      "path": "INCLUDE/FLOAT.H",
+      "size": 4911,
+      "sha256": "d5705d56bc25b990759f8c83669be2f99e404d6219f08fec0a45d8ae95b0c3b6"
+    },
+    {
+      "path": "INCLUDE/GRAPH.H",
+      "size": 15438,
+      "sha256": "dfc59cf76b6e25efe4a327063d2b7c9f4e7db243228c6e6e5d83ee05e1952869"
+    },
+    {
+      "path": "INCLUDE/IO.H",
+      "size": 1512,
+      "sha256": "f81a13f740240a05b48f6dc614e44e2269c6ecca07bae0393ab71fab30691f32"
+    },
+    {
+      "path": "INCLUDE/LIMITS.H",
+      "size": 1326,
+      "sha256": "53bb5efef276dfbe55628891764cc082fbb7b99f669c0055190d2ae8d0ab4a3b"
+    },
+    {
+      "path": "INCLUDE/LOCALE.H",
+      "size": 1519,
+      "sha256": "35d553ec119b669bf4fd0594c593fc8a6c48699afbf8bf60d106bbe485a940f7"
+    },
+    {
+      "path": "INCLUDE/MALLOC.H",
+      "size": 4008,
+      "sha256": "94d10282abde89eb57b7d533a9a029bc0444ab0aebea8064d61a86fd97678a24"
+    },
+    {
+      "path": "INCLUDE/MATH.H",
+      "size": 7881,
+      "sha256": "08f043122f5aff286a88bc1f4680c314347c3fae7c6b7ce0a78bea0a0d1083bc"
+    },
+    {
+      "path": "INCLUDE/MEMORY.H",
+      "size": 1628,
+      "sha256": "04af9356c798a0a8eb0274cf9e1e2660485ca972bd449a7ec3709b408400b196"
+    },
+    {
+      "path": "INCLUDE/PGCHART.H",
+      "size": 8749,
+      "sha256": "ff92f7c9b7e6d699d59dbed276b506368848e4c145ddb2a90f02726b74476ce7"
+    },
+    {
+      "path": "INCLUDE/PROCESS.H",
+      "size": 2829,
+      "sha256": "3a5f567651e9077b434c5e905b8c1308ea0f7557bb334bf40ef1d1cfd9e11119"
+    },
+    {
+      "path": "INCLUDE/SEARCH.H",
+      "size": 1159,
+      "sha256": "3bbc62866ae6f4d62db16d9a77ee3066418b38698aa9556f6836dedc4aac2f9e"
+    },
+    {
+      "path": "INCLUDE/SETJMP.H",
+      "size": 822,
+      "sha256": "99dd10459385315d95e2ba24091282eff815045e24027039e7790ddc4080648f"
+    },
+    {
+      "path": "INCLUDE/SHARE.H",
+      "size": 450,
+      "sha256": "0f632bbfc28e3ec3981e06e7ac27e1fabdf57b26dae3a805b75a00fed16d4e18"
+    },
+    {
+      "path": "INCLUDE/SIGNAL.H",
+      "size": 2019,
+      "sha256": "efff5cf9a3001b675def57dc4ec1bcf4e0475ae5fad10fc7e89f123deb0d204a"
+    },
+    {
+      "path": "INCLUDE/STDARG.H",
+      "size": 894,
+      "sha256": "e294f329eb9ae698502ec1d90989afb09b7a077804213d6edfd5442335d43e62"
+    },
+    {
+      "path": "INCLUDE/STDDEF.H",
+      "size": 1254,
+      "sha256": "1d6a31e2ca5c8453bfc18bfa94fd4e8a33425eb88214f55c920400c9d56a7ac2"
+    },
+    {
+      "path": "INCLUDE/STDIO.H",
+      "size": 6047,
+      "sha256": "9d3c3e54366c393dbd99982f90e1a2bca878fe4637eb8974fd3b6244c053e93b"
+    },
+    {
+      "path": "INCLUDE/STDLIB.H",
+      "size": 6539,
+      "sha256": "ff3c7aee2170b511396284608e61e11fb55c2976d4bf90d3ea58a539e55c9476"
+    },
+    {
+      "path": "INCLUDE/STRING.H",
+      "size": 4975,
+      "sha256": "ff36b60adcf99a547032981a149cc6d37f48cfa2f556cebe327c59d79c93823e"
+    },
+    {
+      "path": "INCLUDE/SYS/LOCKING.H",
+      "size": 468,
+      "sha256": "85e4a4663dd666f896ccdf3b76ac38dafa1d69a07b87d7ee9a2b418d904a213b"
+    },
+    {
+      "path": "INCLUDE/SYS/STAT.H",
+      "size": 1330,
+      "sha256": "095555066b4880a40e56ed868e403536be326cfd9da1e067ccf22faec5314051"
+    },
+    {
+      "path": "INCLUDE/SYS/TIMEB.H",
+      "size": 827,
+      "sha256": "5281bdb34fb8f86c17251362abbefbd289574deeb7ea8e21263fee252fc0f880"
+    },
+    {
+      "path": "INCLUDE/SYS/TYPES.H",
+      "size": 734,
+      "sha256": "8cd9efa8807be8dd811d840a56eca6baa7d7798d4b571d4fb05255454f264abe"
+    },
+    {
+      "path": "INCLUDE/SYS/UTIME.H",
+      "size": 968,
+      "sha256": "aa947a46dfba15c139cc7f043a545ee3a263255858d7f2f8e81b9448e6c2115c"
+    },
+    {
+      "path": "INCLUDE/TIME.H",
+      "size": 3069,
+      "sha256": "68204d55db0602d15263efddf0de7e77d789f9d7f3d4594416fedd4959e21c32"
+    },
+    {
+      "path": "INCLUDE/VARARGS.H",
+      "size": 922,
+      "sha256": "a71b1f4437d08073e0bbe5559a1cac64d63f2318677a827568b49ec12a99af7b"
+    },
+    {
+      "path": "LIB/SLIBCA.LIB",
+      "size": 220197,
+      "sha256": "c5bc1e8142bff4d6268820d13def979e94a230ecc97d99214a3d642eed77a1d2"
+    },
+    {
+      "path": "LIB/SLIBCE.LIB",
+      "size": 252235,
+      "sha256": "1bab0f576d0da8d1def3e94b3dcfd7a32a4cc71695c4bc6e7209e552237f0e12"
+    }
+  ]
+}

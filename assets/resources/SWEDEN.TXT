@@ -1,0 +1,83 @@
+  !@#$% &   _   QWERTYUIOP{}  ASDFGHJKL  ~  ZXCVBNM .  1234567890-   QWERTYUIOP    ASDFGHJKL '   ZXCVBNM .
+  !@#$%^&*()_+  QWERTYUIOP{}  ASDFGHJKL:"~ |ZXCVBNM<>? 1234567890-=\ qwertyuiop[]  asdfghjkl;'` \zxcvbnm,./ 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\[];',./ 
+abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:"<>? 
+ABCDEFGHIJKLMNOPQRSTUVWXYZèéô1234567890`-=\[];',./ 
+abcdefghijklmnopqrstuvwxyzÜÑî!@#$%^&*()~_+|{}:"<>? 
+BATTLE		
+MAKE SNAKE BRAIN
+CHOOSE COLOR
+EDIT PASSWORD
+ACKNOWLEDGEMENT
+Nya lîsen
+MAIL
+Avsluta
+NOVICE
+ADVANCED
+EXPERT
+Namn
+Betyg
+MÑrke
+ Starta
+LÜngsamt
+ Stop
+ Ljud
+Avsluta
+sin huvud
+fiendes huvud
+sin kropp
+fiendes kropp
+sin svans
+fiendes svans
+barriÑr
+obebodd fÑlt
+utestuting
+eller-fÑrg
+ock-fÑrg
+redigera
+INSERT CARD
+DELETE CARD
+huvud menu
+FOR EXPERT
+FOR ADVANCED
+Password:
+Nya lîsen
+Avsluta
+Wrong snake file
+Enter word
+Page %d
+Line %d
+Position %d
+Column %c
+Row %d
+Check_in number:
+Number of attempts:
+Net password:
+File for mail:
+Cann`t open file
+Not possible in demo version
+Not saved in demo version
+Demo version
+Author of idea and game designer: 
+     Jevgeni Sotnikov
+Programmer:
+     Viktor Luti
+Konstnarer:
+     Sergei Belov         Gennadi Denisov
+Take part in development:
+     Dmitry Maslov        Dmitry Dolgov
+Speciell ocksÜ till:
+     Mikail Nikolajenko   Dmitry Parskov
+     Natalja Dmitrijeva   Jelena Tumakova
+
+Other games developed by Gamos:
+     7Colors(Filler)      Branch
+     Wildsnake            Tetriller
+     Gamos logik serial   Regata
+
+Address: GAMOS, Ostrovityanova st., 37a,
+         Moskow, 117279, USSR
+Fax: SU(095)420-5311
+%
+
+

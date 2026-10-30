@@ -1,0 +1,1930 @@
+{
+  "format": "DOS CP866 CRLF text",
+  "lines": [
+    {
+      "index": 0,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 1,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 2,
+      "characters": 50,
+      "text": "The  principle  of  this  game  is   significantly"
+    },
+    {
+      "index": 3,
+      "characters": 50,
+      "text": "different  from  these of most of other games. The"
+    },
+    {
+      "index": 4,
+      "characters": 50,
+      "text": "number of players is practically  unlimited.  Your"
+    },
+    {
+      "index": 5,
+      "characters": 50,
+      "text": "task is to prepare your own snake for competitions"
+    },
+    {
+      "index": 6,
+      "characters": 50,
+      "text": "(i.e.  to  create  and  to train it) but in battle"
+    },
+    {
+      "index": 7,
+      "characters": 50,
+      "text": "itself you can be  only  a  spectator.  The  snake"
+    },
+    {
+      "index": 8,
+      "characters": 50,
+      "text": "begins  to  live  its  own  life:  takes  part  in"
+    },
+    {
+      "index": 9,
+      "characters": 50,
+      "text": "competitions, behaves according  to  the  strategy"
+    },
+    {
+      "index": 10,
+      "characters": 50,
+      "text": "you have taught it, wins or loses and - who knows?"
+    },
+    {
+      "index": 11,
+      "characters": 50,
+      "text": "-  may  yield you a profit and glory. Besides, you"
+    },
+    {
+      "index": 12,
+      "characters": 50,
+      "text": "always have the opportunity  to  improve  fighting"
+    },
+    {
+      "index": 13,
+      "characters": 50,
+      "text": "qualities  of  your snake (of course, if it is not"
+    },
+    {
+      "index": 14,
+      "characters": 35,
+      "text": "engaged yet in a large tournament)."
+    },
+    {
+      "index": 15,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 16,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 17,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 18,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 19,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 20,
+      "characters": 50,
+      "text": "In one  combat  up  to  4  snakes  can  take  part"
+    },
+    {
+      "index": 21,
+      "characters": 50,
+      "text": "simultaneously. They attack each other. If snake's"
+    },
+    {
+      "index": 22,
+      "characters": 50,
+      "text": "head  touches  enemy's  tail  it will bite it off,"
+    },
+    {
+      "index": 23,
+      "characters": 50,
+      "text": "thus shortening the enemy's body by one  cell  and"
+    },
+    {
+      "index": 24,
+      "characters": 50,
+      "text": "adding  it  to  its own length. The winner has the"
+    },
+    {
+      "index": 25,
+      "characters": 50,
+      "text": "maximum length at the end of the  battle.  Snake's"
+    },
+    {
+      "index": 26,
+      "characters": 50,
+      "text": "length can be regarded as the amount of won points"
+    },
+    {
+      "index": 27,
+      "characters": 11,
+      "text": "or dollars."
+    },
+    {
+      "index": 28,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 29,
+      "characters": 37,
+      "text": "To create a fighting snake - that is:"
+    },
+    {
+      "index": 30,
+      "characters": 37,
+      "text": "     * to choose name for your snake,"
+    },
+    {
+      "index": 31,
+      "characters": 28,
+      "text": "     * to choose its colour,"
+    },
+    {
+      "index": 32,
+      "characters": 38,
+      "text": "     * to make passport for the snake,"
+    },
+    {
+      "index": 33,
+      "characters": 49,
+      "text": "     * to programme its strategy on battle field,"
+    },
+    {
+      "index": 34,
+      "characters": 25,
+      "text": "     * to set a password."
+    },
+    {
+      "index": 35,
+      "characters": 50,
+      "text": "Your  snake is your property, therefore nobody can"
+    },
+    {
+      "index": 36,
+      "characters": 50,
+      "text": "change it or pry secrets of  its  program  without"
+    },
+    {
+      "index": 37,
+      "characters": 26,
+      "text": "knowing your own password."
+    },
+    {
+      "index": 38,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 39,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 40,
+      "characters": 18,
+      "text": "PICKING UP SNAKES."
+    },
+    {
+      "index": 41,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 42,
+      "characters": 50,
+      "text": "In  the  right  part  of screen there is a pile of"
+    },
+    {
+      "index": 43,
+      "characters": 50,
+      "text": "cassettes, each of them connects full  information"
+    },
+    {
+      "index": 44,
+      "characters": 27,
+      "text": "about one particular snake."
+    },
+    {
+      "index": 45,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 46,
+      "characters": 50,
+      "text": "In  the  four  upper  cells you put cassettes with"
+    },
+    {
+      "index": 47,
+      "characters": 50,
+      "text": "snakes that you intend for next  round  of  battle"
+    },
+    {
+      "index": 48,
+      "characters": 50,
+      "text": "(let's  call them \"battle-pile\"). The top cassette"
+    },
+    {
+      "index": 49,
+      "characters": 50,
+      "text": "is  intended  also  for  work  (teaching,  editing"
+    },
+    {
+      "index": 50,
+      "characters": 26,
+      "text": "passport, changing colour)"
+    },
+    {
+      "index": 51,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 52,
+      "characters": 50,
+      "text": "In  the  lower  pile there is the bank of existing"
+    },
+    {
+      "index": 53,
+      "characters": 7,
+      "text": "snakes."
+    },
+    {
+      "index": 54,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 55,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 56,
+      "characters": 50,
+      "text": "Place arrow pointer on the snake you want  to  put"
+    },
+    {
+      "index": 57,
+      "characters": 50,
+      "text": "into  competition  and  press Enter or click mouse"
+    },
+    {
+      "index": 58,
+      "characters": 50,
+      "text": "button. Then point a position in the \"battle-pile\""
+    },
+    {
+      "index": 59,
+      "characters": 50,
+      "text": "and press Enter once more. If the cell was already"
+    },
+    {
+      "index": 60,
+      "characters": 50,
+      "text": "filled, the previous  snake  will  return  to  the"
+    },
+    {
+      "index": 61,
+      "characters": 5,
+      "text": "bank."
+    },
+    {
+      "index": 62,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 63,
+      "characters": 50,
+      "text": "To  see  the  next part of the list choose the red"
+    },
+    {
+      "index": 64,
+      "characters": 6,
+      "text": "arrow."
+    },
+    {
+      "index": 65,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 66,
+      "characters": 50,
+      "text": "To begin creating a new snake choose the top  cell"
+    },
+    {
+      "index": 67,
+      "characters": 50,
+      "text": "when  it  is  empty  and  type  a  new  name  when"
+    },
+    {
+      "index": 68,
+      "characters": 50,
+      "text": "twinkling cursor appears. If you enter a name that"
+    },
+    {
+      "index": 69,
+      "characters": 50,
+      "text": "already exists  then  the  corresponding  cassette"
+    },
+    {
+      "index": 70,
+      "characters": 29,
+      "text": "from the bank will be loaded."
+    },
+    {
+      "index": 71,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 72,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 73,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 74,
+      "characters": 40,
+      "text": "OPTIONS OF THE MAIN MENU. EDIT PASSPORT."
+    },
+    {
+      "index": 75,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 76,
+      "characters": 14,
+      "text": "%f\"mkpass.blo\""
+    },
+    {
+      "index": 77,
+      "characters": 4,
+      "text": "%L14"
+    },
+    {
+      "index": 78,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 79,
+      "characters": 50,
+      "text": "To enter this regime you need to know the password"
+    },
+    {
+      "index": 80,
+      "characters": 50,
+      "text": "of  the snake in the top cell. If you pick up this"
+    },
+    {
+      "index": 81,
+      "characters": 50,
+      "text": "item with the top cell empty, you  will  be  asked"
+    },
+    {
+      "index": 82,
+      "characters": 50,
+      "text": "for  a new name. Put the cursor on the picture and"
+    },
+    {
+      "index": 83,
+      "characters": 50,
+      "text": "press ENTER or left  mouse  button  and  you  will"
+    },
+    {
+      "index": 84,
+      "characters": 50,
+      "text": "enter the regime of filling your snake's passport."
+    },
+    {
+      "index": 85,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 86,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 87,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 88,
+      "characters": 14,
+      "text": "EDIT PASSPORT."
+    },
+    {
+      "index": 89,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 90,
+      "characters": 15,
+      "text": "%f\"pasopen.blo\""
+    },
+    {
+      "index": 91,
+      "characters": 4,
+      "text": "%L13"
+    },
+    {
+      "index": 92,
+      "characters": 50,
+      "text": "In  snake's  passport  there  is information about"
+    },
+    {
+      "index": 93,
+      "characters": 50,
+      "text": "number of cards used in its program, rating, level"
+    },
+    {
+      "index": 94,
+      "characters": 40,
+      "text": "of complexity of programming instrument."
+    },
+    {
+      "index": 95,
+      "characters": 50,
+      "text": "Rating is proportional to the  average  length  of"
+    },
+    {
+      "index": 96,
+      "characters": 50,
+      "text": "the snake through all its battles and primarily is"
+    },
+    {
+      "index": 97,
+      "characters": 50,
+      "text": "equal  to 1000. In the passport you can print your"
+    },
+    {
+      "index": 98,
+      "characters": 50,
+      "text": "own  name  or  pseudonym,  motto  or   any   brief"
+    },
+    {
+      "index": 99,
+      "characters": 21,
+      "text": "information you want."
+    },
+    {
+      "index": 100,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 101,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 102,
+      "characters": 38,
+      "text": "OPTIONS OF THE MAIN MENU. CHOOSE SKIN."
+    },
+    {
+      "index": 103,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 104,
+      "characters": 15,
+      "text": "%f\"mkcolor.blo\""
+    },
+    {
+      "index": 105,
+      "characters": 4,
+      "text": "%L14"
+    },
+    {
+      "index": 106,
+      "characters": 50,
+      "text": "After  entering the password you will see a little"
+    },
+    {
+      "index": 107,
+      "characters": 50,
+      "text": "cage with  moving  snake.  Choose  its  colour  by"
+    },
+    {
+      "index": 108,
+      "characters": 19,
+      "text": "\"Left\" and \"Right\"."
+    },
+    {
+      "index": 109,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 110,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 111,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 112,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 113,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 114,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 115,
+      "characters": 33,
+      "text": "OPTIONS OF THE MAIN MENU. BATTLE."
+    },
+    {
+      "index": 116,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 117,
+      "characters": 16,
+      "text": "%f\"mkbattle.blo\""
+    },
+    {
+      "index": 118,
+      "characters": 4,
+      "text": "%L14"
+    },
+    {
+      "index": 119,
+      "characters": 50,
+      "text": "After entering this regime you will see the battle"
+    },
+    {
+      "index": 120,
+      "characters": 50,
+      "text": "field  and  passports  of  snakes enlisted for the"
+    },
+    {
+      "index": 121,
+      "characters": 50,
+      "text": "current battle. In the top right corner  there  is"
+    },
+    {
+      "index": 122,
+      "characters": 50,
+      "text": "the  information  tableau  with names, colours and"
+    },
+    {
+      "index": 123,
+      "characters": 50,
+      "text": "score number of fighting snakes. If several rounds"
+    },
+    {
+      "index": 124,
+      "characters": 50,
+      "text": "of battle take place, score number for each  snake"
+    },
+    {
+      "index": 125,
+      "characters": 50,
+      "text": "will be the total through all the rounds have been"
+    },
+    {
+      "index": 126,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 127,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 128,
+      "characters": 40,
+      "text": "held without returning to the main menu."
+    },
+    {
+      "index": 129,
+      "characters": 50,
+      "text": "   Below you can see  the  time  indicator  of the"
+    },
+    {
+      "index": 130,
+      "characters": 50,
+      "text": "current battle. When time is up, the  battle  will"
+    },
+    {
+      "index": 131,
+      "characters": 15,
+      "text": "be interrupted."
+    },
+    {
+      "index": 132,
+      "characters": 17,
+      "text": "   Control panel:"
+    },
+    {
+      "index": 133,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 134,
+      "characters": 34,
+      "text": "%f\"2-start.blo\" x:30 y:4 sn1\"PLAY\""
+    },
+    {
+      "index": 135,
+      "characters": 6,
+      "text": "%x:130"
+    },
+    {
+      "index": 136,
+      "characters": 19,
+      "text": "- begin the battle;"
+    },
+    {
+      "index": 137,
+      "characters": 9,
+      "text": "%y:14 X:0"
+    },
+    {
+      "index": 138,
+      "characters": 34,
+      "text": "%f\"2-start.blo\" x:30 y:4 sn1\"SLOW\""
+    },
+    {
+      "index": 139,
+      "characters": 9,
+      "text": "%y:22 X:0"
+    },
+    {
+      "index": 140,
+      "characters": 50,
+      "text": "-  in  this  regime  execution  of  each game step"
+    },
+    {
+      "index": 141,
+      "characters": 50,
+      "text": "requires pressing the SPACE bar or clicking  mouse"
+    },
+    {
+      "index": 142,
+      "characters": 50,
+      "text": "button  (game  step means that all the snakes make"
+    },
+    {
+      "index": 143,
+      "characters": 50,
+      "text": "one move each). Besides, if the  password  of  the"
+    },
+    {
+      "index": 144,
+      "characters": 50,
+      "text": "\"top  cell  snake\"  was  input  correctly,  in the"
+    },
+    {
+      "index": 145,
+      "characters": 50,
+      "text": "bottom right corner you will see  its  card  being"
+    },
+    {
+      "index": 146,
+      "characters": 50,
+      "text": "executed  at  this  moment  (about  cards  see the"
+    },
+    {
+      "index": 147,
+      "characters": 28,
+      "text": "section MAKE SNAKE'S BRAIN)."
+    },
+    {
+      "index": 148,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 149,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 150,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 151,
+      "characters": 33,
+      "text": "%f\"2-stop.blo\" x:30 y:4 sn1\"STOP\""
+    },
+    {
+      "index": 152,
+      "characters": 6,
+      "text": "%x:130"
+    },
+    {
+      "index": 153,
+      "characters": 22,
+      "text": "- interrupts battle at"
+    },
+    {
+      "index": 154,
+      "characters": 6,
+      "text": "%X:160"
+    },
+    {
+      "index": 155,
+      "characters": 13,
+      "text": "  any moment."
+    },
+    {
+      "index": 156,
+      "characters": 4,
+      "text": "%X:0"
+    },
+    {
+      "index": 157,
+      "characters": 35,
+      "text": "%f\"2-sound.blo\" x:30 y:4 sn1\"SOUND\""
+    },
+    {
+      "index": 158,
+      "characters": 6,
+      "text": "%x:130"
+    },
+    {
+      "index": 159,
+      "characters": 26,
+      "text": "- toggle sound on and off."
+    },
+    {
+      "index": 160,
+      "characters": 9,
+      "text": "%X:0 y:14"
+    },
+    {
+      "index": 161,
+      "characters": 38,
+      "text": "%f\"2-exit.blo\" x:30 y:4 sn1\"MAIN MENU\""
+    },
+    {
+      "index": 162,
+      "characters": 6,
+      "text": "%x:130"
+    },
+    {
+      "index": 163,
+      "characters": 24,
+      "text": "- quit to the main menu."
+    },
+    {
+      "index": 164,
+      "characters": 9,
+      "text": "%X:0 y:22"
+    },
+    {
+      "index": 165,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 166,
+      "characters": 50,
+      "text": "When the battle is over you can  either  start  it"
+    },
+    {
+      "index": 167,
+      "characters": 50,
+      "text": "again  with  the same snakes or return to the main"
+    },
+    {
+      "index": 168,
+      "characters": 50,
+      "text": "menu. Then the passport of the  snake-winner  with"
+    },
+    {
+      "index": 169,
+      "characters": 50,
+      "text": "its  new rating will appear over the battle field."
+    },
+    {
+      "index": 170,
+      "characters": 49,
+      "text": "To quit BATTLE press ENTER or click mouse button."
+    },
+    {
+      "index": 171,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 172,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 173,
+      "characters": 45,
+      "text": "OPTIONS OF THE MAIN MENU. MAKE SNAKE'S BRAIN."
+    },
+    {
+      "index": 174,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 175,
+      "characters": 15,
+      "text": "%f\"mkbrain.blo\""
+    },
+    {
+      "index": 176,
+      "characters": 4,
+      "text": "%L14"
+    },
+    {
+      "index": 177,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 178,
+      "characters": 50,
+      "text": "This is the regime  of  programming  your  Snake's"
+    },
+    {
+      "index": 179,
+      "characters": 10,
+      "text": "behaviour."
+    },
+    {
+      "index": 180,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 181,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 182,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 183,
+      "characters": 50,
+      "text": "If this regime is entered for a new snake then you"
+    },
+    {
+      "index": 184,
+      "characters": 50,
+      "text": "must  choose  the  complexity  level  of  teaching"
+    },
+    {
+      "index": 185,
+      "characters": 12,
+      "text": "instruments."
+    },
+    {
+      "index": 186,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 187,
+      "characters": 72,
+      "text": "%X:10 Y:80  f\"panel1.blo\" x:7 y:5 fs\"novice.blo\"   x:33 y:-1 sn1\"NOVICE\""
+    },
+    {
+      "index": 188,
+      "characters": 74,
+      "text": "%X:10 Y:110 f\"panel1.blo\" x:7 y:5 fs\"advanced.blo\" x:33 y:-1 sn1\"ADVANCED\""
+    },
+    {
+      "index": 189,
+      "characters": 72,
+      "text": "%X:10 Y:140 f\"panel1.blo\" x:7 y:5 fs\"expert.blo\"   x:33 y:-1 sn1\"EXPERT\""
+    },
+    {
+      "index": 190,
+      "characters": 10,
+      "text": "%X:0 Y:170"
+    },
+    {
+      "index": 191,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 192,
+      "characters": 45,
+      "text": "Then 9 cards and a control panel will appear."
+    },
+    {
+      "index": 193,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 194,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 195,
+      "characters": 38,
+      "text": "PRINCIPLES OF CREATING A SNAKE-PROGRAM"
+    },
+    {
+      "index": 196,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 197,
+      "characters": 50,
+      "text": "During the  battle  each  snake  moves  along  the"
+    },
+    {
+      "index": 198,
+      "characters": 50,
+      "text": "cellular  field.  Before each game step the proper"
+    },
+    {
+      "index": 199,
+      "characters": 50,
+      "text": "sequence of snakes moves is determined by  chance."
+    },
+    {
+      "index": 200,
+      "characters": 50,
+      "text": "Then each snake makes a move in its turn. The move"
+    },
+    {
+      "index": 201,
+      "characters": 50,
+      "text": "means  either transportation on one empty cell, or"
+    },
+    {
+      "index": 202,
+      "characters": 50,
+      "text": "biting off the opponent's tail with transportation"
+    },
+    {
+      "index": 203,
+      "characters": 50,
+      "text": "to its place. If both  is  impossible,  the  snake"
+    },
+    {
+      "index": 204,
+      "characters": 19,
+      "text": "remains motionless."
+    },
+    {
+      "index": 205,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 206,
+      "characters": 50,
+      "text": "Snake's  behaviour is programmed by means of cards"
+    },
+    {
+      "index": 207,
+      "characters": 50,
+      "text": "consisting of 7*7 positions, which can  be  filled"
+    },
+    {
+      "index": 208,
+      "characters": 50,
+      "text": "with   conventional   elements  described  on  the"
+    },
+    {
+      "index": 209,
+      "characters": 50,
+      "text": "control panel. The player can  use  from  1  to  9"
+    },
+    {
+      "index": 210,
+      "characters": 6,
+      "text": "cards."
+    },
+    {
+      "index": 211,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 212,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 213,
+      "characters": 50,
+      "text": "At  every moment of time a snake takes a view of a"
+    },
+    {
+      "index": 214,
+      "characters": 50,
+      "text": "field fragment of 7*7 cells around  its  head  and"
+    },
+    {
+      "index": 215,
+      "characters": 50,
+      "text": "compares  it  with the first card of its behaviour"
+    },
+    {
+      "index": 216,
+      "characters": 50,
+      "text": "(rotating it if necessary). The card is considered"
+    },
+    {
+      "index": 217,
+      "characters": 50,
+      "text": "coincided   with   field   fragment    if    while"
+    },
+    {
+      "index": 218,
+      "characters": 50,
+      "text": "superimposing  it  under  all  the elements of the"
+    },
+    {
+      "index": 219,
+      "characters": 50,
+      "text": "card the same elements of the field are found.  If"
+    },
+    {
+      "index": 220,
+      "characters": 50,
+      "text": "it  occurs,  the  direction of the snake's head on"
+    },
+    {
+      "index": 221,
+      "characters": 50,
+      "text": "the card will show the direction of its motion  on"
+    },
+    {
+      "index": 222,
+      "characters": 16,
+      "text": "the  next  step."
+    },
+    {
+      "index": 223,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 224,
+      "characters": 50,
+      "text": "If  not,  the  fragment  will be compared with the"
+    },
+    {
+      "index": 225,
+      "characters": 50,
+      "text": "second card and so on, until the  proper  card  is"
+    },
+    {
+      "index": 226,
+      "characters": 50,
+      "text": "found.  If  there  is  no  corresponding card, the"
+    },
+    {
+      "index": 227,
+      "characters": 50,
+      "text": "direction of  snake's  movement  will  be  random."
+    },
+    {
+      "index": 228,
+      "characters": 50,
+      "text": "While  comparing  the  card  can be rotated in all"
+    },
+    {
+      "index": 229,
+      "characters": 50,
+      "text": "directions, for example, it can be overturned with"
+    },
+    {
+      "index": 230,
+      "characters": 50,
+      "text": "picture down. That is why you needn't  make  cards"
+    },
+    {
+      "index": 231,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 232,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 233,
+      "characters": 50,
+      "text": "with  symmetrical disposition of elements, because"
+    },
+    {
+      "index": 234,
+      "characters": 43,
+      "text": "these cards will work exactly the same way."
+    },
+    {
+      "index": 235,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 236,
+      "characters": 52,
+      "text": "%f(0:15:155:38)\"15-pict.blo\" x:20 y:4 sn1\"MAIN MENU\""
+    },
+    {
+      "index": 237,
+      "characters": 7,
+      "text": "%l3 X:0"
+    },
+    {
+      "index": 238,
+      "characters": 50,
+      "text": "by means of this screen button you can quit to the"
+    },
+    {
+      "index": 239,
+      "characters": 10,
+      "text": "main menu."
+    },
+    {
+      "index": 240,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 241,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 242,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 243,
+      "characters": 14,
+      "text": "Regime NOVICE."
+    },
+    {
+      "index": 244,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 245,
+      "characters": 50,
+      "text": "In  the  right  bottom  part of screen you see the"
+    },
+    {
+      "index": 246,
+      "characters": 50,
+      "text": "indicator of work with cards which can be  in  one"
+    },
+    {
+      "index": 247,
+      "characters": 28,
+      "text": "of the following conditions:"
+    },
+    {
+      "index": 248,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 249,
+      "characters": 34,
+      "text": "%f(234:0:250:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 250,
+      "characters": 9,
+      "text": "EDIT CARD"
+    },
+    {
+      "index": 251,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 252,
+      "characters": 34,
+      "text": "%f(270:0:286:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 253,
+      "characters": 11,
+      "text": "INSERT CARD"
+    },
+    {
+      "index": 254,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 255,
+      "characters": 34,
+      "text": "%f(252:0:268:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 256,
+      "characters": 11,
+      "text": "DELETE CARD"
+    },
+    {
+      "index": 257,
+      "characters": 8,
+      "text": "%X:0 l:2"
+    },
+    {
+      "index": 258,
+      "characters": 50,
+      "text": "Switching  of regimes is made by pressing ENTER or"
+    },
+    {
+      "index": 259,
+      "characters": 50,
+      "text": "clicking mouse button while the  arrow  cursor  is"
+    },
+    {
+      "index": 260,
+      "characters": 24,
+      "text": "placed on the indicator."
+    },
+    {
+      "index": 261,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 262,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 263,
+      "characters": 34,
+      "text": "%f(234:0:250:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 264,
+      "characters": 9,
+      "text": "EDIT CARD"
+    },
+    {
+      "index": 265,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 266,
+      "characters": 50,
+      "text": "By  means  of arrow cursor activate the element on"
+    },
+    {
+      "index": 267,
+      "characters": 50,
+      "text": "the control panel you want to put in a card.  Then"
+    },
+    {
+      "index": 268,
+      "characters": 50,
+      "text": "point  the  position in the card where you want to"
+    },
+    {
+      "index": 269,
+      "characters": 50,
+      "text": "place it and press ENTER or click mouse button. To"
+    },
+    {
+      "index": 270,
+      "characters": 37,
+      "text": "delete the element press ENTER again."
+    },
+    {
+      "index": 271,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 272,
+      "characters": 34,
+      "text": "%f(270:0:286:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 273,
+      "characters": 11,
+      "text": "INSERT CARD"
+    },
+    {
+      "index": 274,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 275,
+      "characters": 50,
+      "text": "put the arrow cursor on the card before which  you"
+    },
+    {
+      "index": 276,
+      "characters": 50,
+      "text": "want  to insert a new one and press ENTER or click"
+    },
+    {
+      "index": 277,
+      "characters": 13,
+      "text": "mouse button."
+    },
+    {
+      "index": 278,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 279,
+      "characters": 34,
+      "text": "%f(252:0:268:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 280,
+      "characters": 11,
+      "text": "DELETE CARD"
+    },
+    {
+      "index": 281,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 282,
+      "characters": 50,
+      "text": "place the cursor on the card you  want  to  delete"
+    },
+    {
+      "index": 283,
+      "characters": 38,
+      "text": "and press ENTER or click mouse button."
+    },
+    {
+      "index": 284,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 285,
+      "characters": 50,
+      "text": "Screen  buttons  FOR ADVANCED are not used in this"
+    },
+    {
+      "index": 286,
+      "characters": 7,
+      "text": "regime."
+    },
+    {
+      "index": 287,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 288,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 289,
+      "characters": 16,
+      "text": "Regime ADVANCED."
+    },
+    {
+      "index": 290,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 291,
+      "characters": 50,
+      "text": "This  part  is  for   players   who   regard   the"
+    },
+    {
+      "index": 292,
+      "characters": 50,
+      "text": "instruments  suggested  in  the  regime NOVICE too"
+    },
+    {
+      "index": 293,
+      "characters": 7,
+      "text": "simple."
+    },
+    {
+      "index": 294,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 295,
+      "characters": 45,
+      "text": "On the  control  panel two buttons are added:"
+    },
+    {
+      "index": 296,
+      "characters": 19,
+      "text": "OR-COLOR and EXCEPT"
+    },
+    {
+      "index": 297,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 298,
+      "characters": 34,
+      "text": "%f(162:0:178:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 299,
+      "characters": 8,
+      "text": "OR-COLOR"
+    },
+    {
+      "index": 300,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 301,
+      "characters": 50,
+      "text": "when this button with blue indicator is activated,"
+    },
+    {
+      "index": 302,
+      "characters": 50,
+      "text": "you can change the colour of any element on  cards"
+    },
+    {
+      "index": 303,
+      "characters": 50,
+      "text": "to  the colour of indicator. Point the element you"
+    },
+    {
+      "index": 304,
+      "characters": 50,
+      "text": "want to repaint and press  ENTER  or  click  mouse"
+    },
+    {
+      "index": 305,
+      "characters": 50,
+      "text": "button. To cancel OR-COLOR press the button again."
+    },
+    {
+      "index": 306,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 307,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 308,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 309,
+      "characters": 50,
+      "text": "The  rules  of  comparing cards are different from"
+    },
+    {
+      "index": 310,
+      "characters": 50,
+      "text": "these of regime NOVICE. For executing a card  with"
+    },
+    {
+      "index": 311,
+      "characters": 50,
+      "text": "one  or several blue elements it is enough that at"
+    },
+    {
+      "index": 312,
+      "characters": 50,
+      "text": "least one of such elements would coincide (at  the"
+    },
+    {
+      "index": 313,
+      "characters": 50,
+      "text": "same   time   all   the   ordinary  elements  must"
+    },
+    {
+      "index": 314,
+      "characters": 50,
+      "text": "coincide). If it occurs in  several  positions  of"
+    },
+    {
+      "index": 315,
+      "characters": 50,
+      "text": "the  card  the  program  will choose one where the"
+    },
+    {
+      "index": 316,
+      "characters": 29,
+      "text": "coincidence is more complete."
+    },
+    {
+      "index": 317,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 318,
+      "characters": 34,
+      "text": "%f(144:0:160:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 319,
+      "characters": 6,
+      "text": "EXCEPT"
+    },
+    {
+      "index": 320,
+      "characters": 8,
+      "text": "%X:0 l:1"
+    },
+    {
+      "index": 321,
+      "characters": 50,
+      "text": "when this button is activated, the element pointed"
+    },
+    {
+      "index": 322,
+      "characters": 50,
+      "text": "by cursor will be crossed out. This  element  will"
+    },
+    {
+      "index": 323,
+      "characters": 50,
+      "text": "coincide  if in its place on the field any element"
+    },
+    {
+      "index": 324,
+      "characters": 25,
+      "text": "except this one is found."
+    },
+    {
+      "index": 325,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 326,
+      "characters": 45,
+      "text": "The button EXPERT is not used in this regime."
+    },
+    {
+      "index": 327,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 328,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 329,
+      "characters": 14,
+      "text": "Regime EXPERT."
+    },
+    {
+      "index": 330,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 331,
+      "characters": 21,
+      "text": "The regime for elite."
+    },
+    {
+      "index": 332,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 333,
+      "characters": 50,
+      "text": "On the control panel  the  button  is  added  with"
+    },
+    {
+      "index": 334,
+      "characters": 17,
+      "text": "colour indicator:"
+    },
+    {
+      "index": 335,
+      "characters": 4,
+      "text": "%y:5"
+    },
+    {
+      "index": 336,
+      "characters": 34,
+      "text": "%f(180:0:196:12)\"15-pict.blo\" x:40"
+    },
+    {
+      "index": 337,
+      "characters": 9,
+      "text": "AND-COLOR"
+    },
+    {
+      "index": 338,
+      "characters": 8,
+      "text": "%X:0 l:2"
+    },
+    {
+      "index": 339,
+      "characters": 50,
+      "text": "and  one more OR-COLOUR appears (now they are blue"
+    },
+    {
+      "index": 340,
+      "characters": 11,
+      "text": "and green)."
+    },
+    {
+      "index": 341,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 342,
+      "characters": 29,
+      "text": "The rules of comparing cards:"
+    },
+    {
+      "index": 343,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 344,
+      "characters": 50,
+      "text": "All  the  elements  of  the  same   colour   (from"
+    },
+    {
+      "index": 345,
+      "characters": 50,
+      "text": "AND-COLOUR set) must coincide simultaneously. Then"
+    },
+    {
+      "index": 346,
+      "characters": 50,
+      "text": "it is considered that this colour group coincides."
+    },
+    {
+      "index": 347,
+      "characters": 50,
+      "text": "There  is  also  a possibility added to change the"
+    },
+    {
+      "index": 348,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 349,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 350,
+      "characters": 50,
+      "text": "colour of the frame encircling each card entirely."
+    },
+    {
+      "index": 351,
+      "characters": 50,
+      "text": "For this put the cursor on the  proper  indicator,"
+    },
+    {
+      "index": 352,
+      "characters": 50,
+      "text": "pick up the colour, then put the cursor on the own"
+    },
+    {
+      "index": 353,
+      "characters": 50,
+      "text": "head of your snake in chosen card and press ENTER."
+    },
+    {
+      "index": 354,
+      "characters": 50,
+      "text": "Along  with  the frame the colour of OWN HEAD will"
+    },
+    {
+      "index": 355,
+      "characters": 50,
+      "text": "be changed. If the frame colour is  the  one  from"
+    },
+    {
+      "index": 356,
+      "characters": 50,
+      "text": "AND-COLOUR  then the card is compared the same way"
+    },
+    {
+      "index": 357,
+      "characters": 50,
+      "text": "as in ADVANCED regime. If it is from  OR-COLOUR  -"
+    },
+    {
+      "index": 358,
+      "characters": 50,
+      "text": "then  the  card will coincide when at least one of"
+    },
+    {
+      "index": 359,
+      "characters": 28,
+      "text": "the colour groups coincides."
+    },
+    {
+      "index": 360,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 361,
+      "characters": 50,
+      "text": "In this regime you can change the position of  OWN"
+    },
+    {
+      "index": 362,
+      "characters": 14,
+      "text": "HEAD in cards."
+    },
+    {
+      "index": 363,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 364,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 365,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 366,
+      "characters": 31,
+      "text": "OPTIONS OF THE MAIN MENU. HELP."
+    },
+    {
+      "index": 367,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 368,
+      "characters": 50,
+      "text": "Information about the authors of the game and game"
+    },
+    {
+      "index": 369,
+      "characters": 12,
+      "text": "description."
+    },
+    {
+      "index": 370,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 371,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 372,
+      "characters": 39,
+      "text": "OPTIONS OF THE MAIN MENU. NEW PASSWORD."
+    },
+    {
+      "index": 373,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 374,
+      "characters": 50,
+      "text": "Here  you  can  change the password of your snake."
+    },
+    {
+      "index": 375,
+      "characters": 50,
+      "text": "Put the cursor on the screen button,  press  ENTER"
+    },
+    {
+      "index": 376,
+      "characters": 50,
+      "text": "or  click  mouse  button and type in new password."
+    },
+    {
+      "index": 377,
+      "characters": 24,
+      "text": "The password is changed."
+    },
+    {
+      "index": 378,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 379,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 380,
+      "characters": 31,
+      "text": "OPTIONS OF THE MAIN MENU. EXIT."
+    },
+    {
+      "index": 381,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 382,
+      "characters": 35,
+      "text": "Interrupt the game and quit to DOS."
+    },
+    {
+      "index": 383,
+      "characters": 8,
+      "text": "%EndPage"
+    },
+    {
+      "index": 384,
+      "characters": 1,
+      "text": "\u001a"
+    }
+  ]
+}

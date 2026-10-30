@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "assembler": "Borland TASM 3.1",
+  "flags": "/ml",
+  "source_sha256": "01f6fda4ff28570871d5e4ddf4ec26b52a3f0f55c0fb9991e78c5d1c653a3843"
+}

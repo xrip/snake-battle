@@ -1,0 +1,44 @@
+[
+  {
+    "source": "MR101E.ASM",
+    "function": "_snd_101E",
+    "address": "1341:101E",
+    "length": 35
+  },
+  {
+    "source": "MR1537.ASM",
+    "function": "_snd_1537",
+    "address": "1341:1537",
+    "length": 168
+  },
+  {
+    "source": "MR183E.ASM",
+    "function": "_snd_183E",
+    "address": "1341:183E",
+    "length": 524
+  },
+  {
+    "source": "MR1A4A.ASM",
+    "function": "_snd_1A4A",
+    "address": "1341:1A4A",
+    "length": 767
+  },
+  {
+    "source": "MR1D49.ASM",
+    "function": "_snd_1D49",
+    "address": "1341:1D49",
+    "length": 36
+  },
+  {
+    "source": "MR1DC6.ASM",
+    "function": "_snd_1DC6",
+    "address": "1341:1DC6",
+    "length": 21
+  },
+  {
+    "source": "MR1DDB.ASM",
+    "function": "_snd_1DDB",
+    "address": "1341:1DDB",
+    "length": 63
+  }
+]

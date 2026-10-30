@@ -1,0 +1,574 @@
+{
+  "format": "snake-battle-snk-v1",
+  "seed": 76,
+  "header": {
+    "version": 1,
+    "editor_level": 2,
+    "card_count": 2,
+    "battle_count": 344,
+    "rating": 1004,
+    "password": {
+      "text": "JOKER",
+      "after_text_hex": "000000000000"
+    },
+    "name": {
+      "text": "JOKER",
+      "after_text_hex": "00000000"
+    },
+    "date": {
+      "text": "22.06.94",
+      "after_text_hex": "0000"
+    },
+    "comments": [
+      {
+        "text": "   Тупые мозги но   ",
+        "after_text_hex": "00"
+      },
+      {
+        "text": "   острый зуб!     ",
+        "after_text_hex": "0000"
+      },
+      {
+        "text": "  (C) ГЕЙМОС 1992",
+        "after_text_hex": "00000000"
+      }
+    ],
+    "color": 15
+  },
+  "cards": [
+    {
+      "group": 1,
+      "head_x": 3,
+      "head_y": 3,
+      "columns": [
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ],
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ],
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 7
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ],
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 8
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ],
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ],
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ],
+        [
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          },
+          {
+            "group": 3,
+            "negate": 1,
+            "tile": 4
+          }
+        ]
+      ]
+    },
+    {
+      "group": 4,
+      "head_x": 0,
+      "head_y": 6,
+      "columns": [
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 4,
+            "negate": 0,
+            "tile": 8
+          }
+        ],
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          }
+        ],
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          }
+        ],
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          }
+        ],
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          }
+        ],
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          }
+        ],
+        [
+          {
+            "group": 1,
+            "negate": 0,
+            "tile": 3
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          },
+          {
+            "group": 3,
+            "negate": 0,
+            "tile": 9
+          }
+        ]
+      ]
+    }
+  ],
+  "trailer": 139,
+  "_source_sha256": "598d131a29afcc5fbf846e2b6c6d05cc14787ecd172e25f4c4945fa48cc25142"
+}

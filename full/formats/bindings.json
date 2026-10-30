@@ -1,0 +1,284 @@
+{
+  "functions": {
+    "_rec_open_read": {
+      "address": "0E92:0008",
+      "length": 84
+    },
+    "_rec_close_read": {
+      "address": "0E92:005C",
+      "length": 11
+    },
+    "_rec_open_write": {
+      "address": "0E92:0067",
+      "length": 90
+    },
+    "_rec_close_write": {
+      "address": "0E92:00C1",
+      "length": 55
+    },
+    "_rec_packed": {
+      "address": "0E92:00F8",
+      "length": 18
+    },
+    "_rec_write_stream": {
+      "address": "0E92:010A",
+      "length": 236
+    },
+    "_rec_unget": {
+      "address": "0E92:01F6",
+      "length": 20
+    },
+    "_rec_read_stream": {
+      "address": "0E92:020A",
+      "length": 233
+    },
+    "_rec_write_bytes": {
+      "address": "0E92:02F3",
+      "length": 142
+    },
+    "_rec_read_bytes": {
+      "address": "0E92:0381",
+      "length": 143
+    },
+    "_snk_encode": {
+      "address": "0B2B:000F",
+      "length": 55
+    },
+    "_snk_decode": {
+      "address": "0B2B:0046",
+      "length": 61
+    },
+    "_fmt_fatal": {
+      "address": "0B33:0003",
+      "length": 39
+    },
+    "_fmt_alloc": {
+      "address": "0B33:002A",
+      "length": 57
+    },
+    "_fmt_free": {
+      "address": "0B33:0063",
+      "length": 18
+    },
+    "_fmt_date": {
+      "address": "0B33:0075",
+      "length": 115
+    },
+    "_fmt_snk_list": {
+      "address": "0B33:00E8",
+      "length": 280
+    },
+    "_fmt_key": {
+      "address": "0B33:0200",
+      "length": 395
+    },
+    "_fmt_edit": {
+      "address": "0B33:038B",
+      "length": 1641
+    },
+    "_fmt_pause": {
+      "address": "0B33:09F4",
+      "length": 88
+    },
+    "_fmt_load": {
+      "address": "0B33:0A4C",
+      "length": 543
+    },
+    "_fmt_save": {
+      "address": "0B33:0C6B",
+      "length": 292
+    },
+    "_fmt_random": {
+      "address": "0B33:0D8F",
+      "length": 75
+    },
+    "_tick_now": {
+      "address": "0C10:000A",
+      "length": 12
+    },
+    "_tick_wait": {
+      "address": "0C10:0016",
+      "length": 29
+    },
+    "_tick_active": {
+      "address": "0C10:0033",
+      "length": 185
+    },
+    "_fmt_number": {
+      "address": "0C1E:000C",
+      "length": 42
+    },
+    "_fmt_about": {
+      "address": "0B1D:0003",
+      "length": 236
+    },
+    "_card_flash_mode": {
+      "address": "0A0B:0008",
+      "length": 279
+    },
+    "_card_slot": {
+      "address": "0A0B:011F",
+      "length": 142
+    },
+    "_card_clear": {
+      "address": "0A0B:01AD",
+      "length": 68
+    },
+    "_card_cell": {
+      "address": "0A0B:01F1",
+      "length": 277
+    },
+    "_card_outline": {
+      "address": "0A0B:0306",
+      "length": 237
+    },
+    "_card_draw": {
+      "address": "0A0B:03F3",
+      "length": 176
+    },
+    "_card_draw_all": {
+      "address": "0A0B:04A3",
+      "length": 37
+    },
+    "_card_new": {
+      "address": "0A0B:04C8",
+      "length": 94
+    },
+    "_card_reset_stats": {
+      "address": "0A0B:0526",
+      "length": 25
+    },
+    "_card_button": {
+      "address": "0A0B:053F",
+      "length": 88
+    },
+    "_card_group": {
+      "address": "0A0B:0597",
+      "length": 130
+    },
+    "_card_edit": {
+      "address": "0A0B:0619",
+      "length": 2790
+    },
+    "_card_panel": {
+      "address": "0A0B:10FF",
+      "length": 36
+    }
+  },
+  "externals": {
+    "_read": "0000:3307",
+    "_write": "0000:3E7B",
+    "_fmt_fatal": "0B33:0003",
+    "_fmt_random": "0B33:0D8F",
+    "_rec_pushed": "1679:40F6",
+    "_rec_previous": "1679:40F7",
+    "_rec_handle": "1679:40F8",
+    "_rec_mode": "1679:40FA",
+    "_rec_buffer": "1679:40FC",
+    "_rec_phase": "1679:40FD",
+    "_rec_push_flag": "1679:0F04",
+    "_rec_error_write": "1679:0EBA",
+    "_rec_error_read": "1679:0ED2",
+    "_rec_error_packed": "1679:0EE9",
+    "_tick_pointer": "1679:0D32",
+    "_fmt_error_format": "1679:0D00",
+    "_fmt_error_memory": "1679:0D05",
+    "_fmt_date_format": "1679:0D17",
+    "_fmt_snk_glob": "1679:0D24",
+    "_fmt_snk_suffix": "1679:0D25",
+    "_fmt_dot": "1679:0D2A",
+    "_fmt_rb": "1679:0D2C",
+    "_fmt_wb": "1679:0D2F",
+    "_fmt_number_format": "1679:0D36",
+    "_screen_back": "1679:40B8",
+    "_input_buttons": "1679:19BC",
+    "_input_modifiers": "1679:19BE",
+    "_input_key": "1679:19BF",
+    "_input_error_beep": "03F2:0304",
+    "_input_poll": "03F2:0190",
+    "_input_hide": "03F2:0266",
+    "_screen_front": "1679:40BC",
+    "_resource_names": "1679:1826",
+    "_f_0c85_10ee": "0C85:10EE",
+    "_f_0c85_0fb1": "0C85:0FB1",
+    "_f_0c85_0f74": "0C85:0F74",
+    "_f_0c85_0ead": "0C85:0EAD",
+    "_f_0c85_0467": "0C85:0467",
+    "_f_0c85_049d": "0C85:049D",
+    "_f_0c85_0c0e": "0C85:0C0E",
+    "_f_0c31_004b": "0C31:004B",
+    "_fmt_caps": "1679:0CFE",
+    "_fmt_keymap": "1679:40AE",
+    "_fmt_cursor_enabled": "1679:0EB2",
+    "_f_0c85_0562": "0C85:0562",
+    "_f_0c85_0bb2": "0C85:0BB2",
+    "_card_colors": "1679:0BE5",
+    "_card_rects": "1679:0BEF",
+    "_card_actions": "1679:0C9F",
+    "_card_mode": "1679:34ED",
+    "_card_numbers": "1679:34EF",
+    "_card_icons": "1679:34F3",
+    "_card_background": "1679:34F7",
+    "_card_modified": "1679:34FB",
+    "_card_current": "1679:34FD",
+    "_card_snake": "1679:34FF",
+    "_default_header": "1679:0624",
+    "_default_card": "1679:057A",
+    "_group_and": "1679:0570",
+    "_button_background": "1679:1976",
+    "_card_slot_image": "1679:198E",
+    "_card_tiles": "1679:1992",
+    "_button_off": "1679:19A2",
+    "_button_on": "1679:19A6",
+    "_f_0c85_0b83": "0C85:0B83",
+    "_f_0c85_000a": "0C85:000A",
+    "_f_0c85_0958": "0C85:0958",
+    "_card_tool": "1679:34EA",
+    "_icons_by_level": "1679:197E",
+    "_cursor_image": "1679:40B2",
+    "_input_state": "1679:19AC",
+    "_default_empty_cell": "1679:0612",
+    "_f_0c85_0b2f": "0C85:0B2F",
+    "_f_0c85_078a": "0C85:078A",
+    "_f_0c85_0fe1": "0C85:0FE1",
+    "_input_draw": "03F2:0247"
+  },
+  "groups": {
+    "DGROUP": "1679:0000"
+  },
+  "segments": {
+    "CARDS_TEXT": "0A0B:0008",
+    "_DATA": "1679:0BE5"
+  },
+  "module_segments": {
+    "cards.c": {
+      "CARDS_TEXT": "0A0B:0008",
+      "_DATA": "1679:0BE5",
+      "_BSS": "1679:34EA"
+    },
+    "files.c": {
+      "FILES_TEXT": "0B33:0003",
+      "_DATA": "1679:0CFE",
+      "_BSS": "1679:40AE"
+    },
+    "rec.c": {
+      "REC_TEXT": "0E92:0008",
+      "_DATA": "1679:0EBA",
+      "_BSS": "1679:40F6"
+    },
+    "ticks.c": {
+      "TICKS_TEXT": "0C10:000A",
+      "_DATA": "1679:0D32"
+    },
+    "number.c": {
+      "NUMBER_TEXT": "0C1E:000C",
+      "_DATA": "1679:0D36"
+    },
+    "xor.c": {
+      "XOR_TEXT": "0B2B:000F"
+    },
+    "about.c": {
+      "ABOUT_TEXT": "0B1D:0003"
+    }
+  }
+}

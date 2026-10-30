@@ -1,0 +1,86 @@
+  !@#$% &   _   QWERTYUIOP{}  ASDFGHJKL  ~  ZXCVBNM .  1234567890-   QWERTYUIOP    ASDFGHJKL '   ZXCVBNM .
+  !@#$%^&*()_+  QWERTYUIOP{}  ASDFGHJKL:"~ |ZXCVBNM<>? 1234567890-=\ qwertyuiop[]  asdfghjkl;'` \zxcvbnm,./ 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\[];',./ 
+abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:"<>? 
+ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\[];',./ 
+abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:"<>? 
+BATTLE
+MAKE SNAKE BRAIN
+CHOOSE COLOR
+EDIT PASSWORD
+     HELP
+ACKNOWLEDGMENT
+NEW PASSWORD
+MAIL
+EXIT
+NOVICE
+ADVANCED
+EXPERT
+Name
+Raiting
+Comments
+  PLAY
+  SLOW
+  STOP
+ SOUND
+MAIN MENU
+own head
+enemy head
+own body
+enemy body
+own tail
+enemy tail
+barrier
+  space
+EXCEPT
+OR-COLOR
+AND-COLOR
+EDIT CARD
+INSERT CARD
+DELETE CARD
+MAIN MENU
+FOR EXPERT
+FOR ADVANCED
+Password:
+New password
+EXIT
+Wrong snake file
+Enter word
+Page %d
+Line %d
+Position %d
+Column %c
+Row %d
+Check_in number:
+Number of attempts:
+Net password:
+File for mail:
+Cann`t open file
+Not possible in demo version
+Not saved in demo version
+Demo version
+Not possible in demo
+Author of idea and game designer: 
+     Eugene SOTNIKOV
+Programmer:
+     Victor Lioutyi
+Painters:  
+     Sergey Belov         Gena Denisov
+Sound:
+     Konstantin Mironovitch
+Take part in development:
+     Dmitry Maslov        Dmitry Dolgov
+Special thanks to:
+     Mikle Nicolaenko     Dmitry Pashcov
+     Nataly Dmitrieva     Elena Tumakov
+
+Other games developed by Gamos:
+     7Colors(Filler), Branch, Wildsnake,
+     Tetriller, Gamos logik serial, Regata.
+Address: GAMOS, the Olympic Village, 27,
+         Moskow, 117602, Russia
+Fax: (095)437-5629, Phone: (095)437-5672
+%
+
+
+

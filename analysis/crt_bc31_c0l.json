@@ -1,0 +1,2421 @@
+{
+  "input": "work/gamemaker-tools/tools/BORLANDC/LIB/C0L.OBJ",
+  "sha256": "1004f6318f4c0854fc84a02b1c954517dbde408d0d3cad76887764b0336a591a",
+  "module_count": 1,
+  "exe": "work/original/SNAKE.EXE",
+  "exe_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "mz_header_size": 4096,
+  "mz_relocations": [
+    1,
+    94,
+    163,
+    335,
+    16159,
+    16154,
+    16149,
+    16141,
+    16127,
+    17155,
+    17147,
+    17127,
+    17118,
+    17037,
+    17029,
+    17009,
+    17000,
+    16929,
+    16920,
+    16872,
+    16848,
+    16835,
+    16825,
+    16803,
+    16769,
+    16754,
+    16706,
+    16678,
+    16597,
+    16553,
+    16503,
+    16431,
+    16415,
+    16394,
+    16365,
+    17626,
+    17611,
+    17597,
+    17588,
+    17559,
+    17537,
+    17511,
+    17503,
+    17472,
+    17450,
+    17421,
+    17413,
+    17398,
+    17382,
+    17352,
+    17342,
+    17295,
+    17273,
+    17263,
+    17253,
+    17227,
+    17203,
+    17188,
+    18649,
+    18561,
+    18466,
+    18389,
+    18288,
+    18227,
+    18166,
+    18097,
+    17994,
+    17945,
+    17905,
+    17865,
+    17825,
+    17791,
+    17783,
+    17746,
+    17738,
+    17698,
+    19655,
+    19650,
+    19643,
+    19627,
+    19598,
+    19551,
+    19415,
+    19314,
+    19304,
+    19227,
+    19220,
+    19208,
+    19196,
+    19160,
+    19129,
+    19119,
+    19063,
+    19038,
+    19027,
+    19019,
+    18986,
+    18978,
+    18960,
+    18939,
+    18917,
+    18868,
+    18858,
+    18840,
+    18811,
+    18803,
+    18766,
+    18737,
+    18676,
+    18657,
+    20667,
+    20613,
+    20242,
+    20207,
+    20171,
+    20135,
+    20099,
+    19889,
+    19807,
+    19753,
+    19713,
+    21715,
+    21679,
+    21672,
+    21600,
+    21582,
+    21574,
+    21543,
+    21491,
+    21398,
+    21316,
+    21292,
+    21226,
+    21208,
+    21203,
+    21195,
+    21164,
+    21102,
+    21097,
+    21062,
+    21044,
+    21039,
+    20978,
+    20967,
+    20924,
+    20897,
+    22691,
+    22647,
+    22639,
+    22595,
+    22590,
+    22579,
+    22571,
+    22515,
+    22496,
+    22472,
+    22429,
+    22414,
+    22304,
+    22295,
+    22287,
+    22223,
+    22180,
+    22142,
+    22075,
+    22058,
+    22035,
+    21984,
+    21977,
+    21906,
+    21899,
+    21864,
+    21857,
+    21787,
+    21780,
+    21722,
+    23753,
+    23737,
+    23694,
+    23673,
+    23471,
+    23463,
+    23327,
+    23315,
+    23296,
+    23221,
+    23193,
+    23162,
+    23127,
+    23103,
+    23097,
+    23085,
+    23008,
+    22999,
+    22987,
+    22947,
+    22935,
+    22907,
+    22895,
+    22878,
+    22850,
+    22804,
+    24787,
+    24747,
+    24654,
+    24604,
+    24486,
+    24409,
+    24397,
+    24370,
+    24360,
+    24294,
+    24267,
+    24254,
+    24242,
+    24227,
+    24199,
+    24176,
+    24153,
+    24130,
+    24107,
+    24084,
+    24061,
+    24038,
+    24018,
+    23965,
+    23946,
+    23938,
+    23870,
+    23862,
+    23812,
+    25797,
+    25777,
+    25720,
+    25692,
+    25466,
+    25447,
+    25407,
+    25388,
+    25305,
+    25198,
+    25182,
+    25154,
+    25130,
+    25076,
+    24978,
+    24960,
+    24942,
+    24914,
+    24905,
+    24821,
+    26818,
+    26796,
+    26774,
+    26752,
+    26730,
+    26707,
+    26700,
+    26672,
+    26654,
+    26619,
+    26608,
+    26587,
+    26567,
+    26543,
+    26514,
+    26472,
+    26421,
+    26368,
+    26350,
+    26285,
+    26275,
+    26245,
+    26237,
+    26165,
+    26109,
+    26091,
+    26078,
+    25998,
+    25944,
+    25834,
+    27847,
+    27720,
+    27707,
+    27702,
+    27694,
+    27687,
+    27672,
+    27612,
+    27577,
+    27558,
+    27550,
+    27502,
+    27460,
+    27447,
+    27404,
+    27378,
+    27332,
+    27299,
+    27286,
+    27242,
+    27224,
+    27219,
+    27202,
+    27115,
+    27097,
+    27075,
+    27053,
+    27031,
+    27000,
+    26982,
+    26959,
+    26941,
+    26916,
+    26898,
+    26880,
+    26862,
+    26840,
+    28854,
+    28768,
+    28729,
+    28712,
+    28689,
+    28674,
+    28624,
+    28611,
+    28522,
+    28454,
+    28439,
+    28402,
+    28395,
+    28238,
+    28231,
+    28195,
+    28188,
+    28153,
+    28146,
+    28093,
+    28060,
+    27976,
+    27971,
+    27966,
+    27950,
+    27922,
+    27915,
+    29293,
+    29288,
+    29277,
+    29197,
+    29189,
+    29181,
+    29116,
+    29101,
+    29067,
+    29033,
+    29001,
+    28955,
+    28934,
+    30338,
+    30313,
+    30191,
+    30035,
+    29894,
+    29827,
+    29698,
+    29666,
+    29627,
+    29499,
+    29460,
+    31378,
+    31259,
+    31180,
+    31137,
+    31059,
+    31036,
+    30941,
+    30725,
+    30656,
+    30620,
+    30530,
+    30457,
+    30445,
+    30393,
+    32322,
+    32018,
+    31851,
+    31655,
+    31589,
+    33393,
+    33335,
+    33298,
+    33271,
+    33246,
+    33238,
+    32803,
+    32795,
+    32774,
+    32726,
+    32705,
+    32654,
+    34453,
+    34407,
+    34396,
+    34374,
+    34296,
+    34288,
+    34232,
+    34191,
+    34158,
+    34059,
+    33571,
+    33553,
+    33535,
+    35424,
+    34927,
+    34575,
+    34476,
+    34469,
+    36457,
+    36439,
+    36397,
+    36348,
+    36015,
+    35663,
+    37305,
+    37268,
+    37248,
+    37139,
+    37071,
+    37018,
+    36878,
+    36859,
+    36841,
+    36798,
+    38523,
+    38505,
+    38487,
+    38469,
+    38451,
+    38433,
+    38411,
+    38393,
+    38388,
+    38374,
+    38364,
+    38359,
+    38354,
+    38314,
+    38304,
+    38275,
+    38227,
+    38209,
+    38198,
+    38177,
+    38163,
+    38127,
+    38091,
+    38055,
+    37943,
+    37715,
+    37673,
+    37655,
+    37612,
+    39556,
+    39515,
+    39503,
+    39437,
+    39305,
+    39204,
+    39019,
+    39011,
+    38981,
+    38954,
+    38908,
+    38892,
+    38872,
+    38862,
+    38824,
+    38799,
+    38776,
+    38765,
+    38726,
+    38685,
+    38632,
+    38560,
+    40423,
+    40385,
+    40291,
+    40281,
+    40277,
+    40238,
+    40225,
+    40192,
+    40187,
+    40179,
+    40127,
+    40078,
+    40073,
+    40052,
+    39914,
+    39802,
+    39777,
+    39759,
+    39754,
+    39746,
+    39655,
+    39591,
+    39568,
+    41128,
+    41114,
+    41104,
+    41099,
+    41090,
+    41082,
+    41065,
+    41010,
+    40959,
+    40938,
+    40912,
+    40900,
+    40888,
+    40876,
+    40860,
+    40848,
+    40838,
+    40832,
+    40820,
+    40718,
+    42127,
+    42084,
+    42027,
+    41984,
+    41901,
+    41828,
+    41774,
+    41655,
+    41624,
+    41556,
+    41490,
+    41397,
+    41376,
+    41321,
+    41208,
+    41153,
+    43183,
+    43122,
+    42964,
+    42862,
+    42826,
+    42794,
+    42762,
+    42744,
+    42726,
+    42711,
+    42706,
+    42672,
+    42558,
+    42474,
+    42447,
+    42395,
+    42380,
+    44114,
+    43890,
+    43849,
+    43804,
+    43719,
+    43663,
+    43629,
+    43445,
+    43436,
+    43431,
+    43423,
+    43416,
+    43401,
+    43303,
+    43230,
+    45224,
+    45127,
+    45120,
+    45083,
+    44977,
+    44954,
+    44906,
+    44758,
+    44676,
+    44625,
+    44500,
+    44432,
+    44403,
+    44288,
+    44246,
+    45517,
+    45435,
+    45423,
+    45411,
+    45401,
+    45391,
+    45383,
+    45335,
+    45322,
+    45307,
+    45259,
+    45235,
+    45747,
+    45741,
+    45732,
+    45724,
+    45674,
+    45635,
+    45605,
+    45575,
+    45543,
+    45538,
+    46858,
+    46808,
+    46767,
+    46442,
+    46393,
+    46303,
+    46277,
+    46234,
+    46146,
+    46095,
+    46076,
+    46033,
+    46003,
+    45983,
+    45934,
+    45909,
+    45897,
+    45881,
+    47868,
+    47814,
+    47698,
+    47644,
+    47493,
+    47439,
+    47230,
+    47176,
+    47060,
+    47006,
+    46927,
+    48902,
+    48875,
+    48841,
+    48801,
+    48718,
+    48674,
+    48640,
+    48603,
+    48565,
+    48547,
+    48529,
+    48495,
+    48429,
+    48366,
+    48312,
+    48215,
+    48161,
+    48051,
+    48023,
+    47969,
+    49380,
+    49373,
+    49359,
+    49332,
+    49297,
+    49264,
+    49240,
+    49210,
+    49158,
+    49107,
+    49089,
+    49071,
+    49039,
+    49006,
+    48966,
+    49671,
+    49934,
+    49916,
+    49884,
+    49869,
+    49855,
+    49730,
+    49715,
+    50191,
+    50151,
+    50137,
+    50066,
+    50046,
+    49997,
+    49978,
+    50295,
+    50263,
+    50227,
+    51285,
+    51256,
+    51242,
+    51213,
+    51097,
+    51084,
+    51063,
+    51048,
+    51020,
+    51003,
+    50917,
+    50886,
+    50861,
+    50850,
+    50806,
+    50704,
+    50690,
+    50654,
+    50633,
+    50591,
+    50528,
+    50477,
+    50401,
+    50369,
+    50343,
+    95496,
+    52288,
+    52066,
+    52042,
+    52031,
+    51982,
+    51964,
+    51946,
+    51877,
+    51865,
+    51777,
+    51765,
+    52793,
+    52747,
+    54167,
+    54072,
+    54003,
+    53938,
+    53916,
+    53872,
+    53849,
+    53838,
+    53756,
+    53716,
+    53692,
+    55328,
+    55322,
+    55229,
+    55167,
+    55155,
+    54943,
+    54715,
+    54614,
+    54602,
+    54532,
+    54520,
+    54386,
+    55744,
+    55637,
+    55632,
+    55626,
+    55617,
+    55611,
+    55605,
+    55597,
+    55586,
+    55580,
+    55565,
+    55552,
+    55402,
+    55392,
+    56757,
+    56693,
+    56680,
+    56653,
+    56575,
+    56482,
+    56347,
+    56324,
+    56296,
+    56282,
+    56171,
+    56139,
+    56096,
+    56085,
+    56063,
+    56038,
+    56027,
+    56013,
+    55993,
+    55963,
+    55876,
+    57072,
+    57052,
+    56988,
+    56966,
+    56913,
+    56893,
+    56829,
+    56807,
+    57175,
+    57139,
+    57103,
+    57198,
+    57274,
+    57285,
+    57299,
+    57947,
+    57878,
+    57925,
+    59371,
+    60639,
+    60490,
+    60427,
+    60342,
+    60284,
+    60239,
+    60174,
+    60119,
+    60040,
+    60004,
+    59983,
+    59921,
+    59864,
+    59846,
+    59824,
+    59809,
+    59779,
+    59763,
+    59745,
+    59710,
+    74146,
+    74113,
+    74079,
+    74051,
+    74027,
+    74003,
+    73964,
+    73947,
+    73930,
+    73913,
+    73833,
+    73805,
+    73791,
+    73767,
+    73728,
+    73710,
+    73600,
+    73586,
+    73536,
+    73518,
+    73496,
+    73446,
+    73353,
+    73327,
+    73308,
+    73280,
+    73236,
+    73206,
+    73170,
+    74598,
+    74531,
+    74500,
+    74397,
+    74311,
+    74278,
+    74245,
+    74212,
+    74179,
+    78997,
+    97258,
+    97254,
+    97250,
+    98210,
+    9211,
+    13295,
+    98168,
+    98172,
+    98228
+  ],
+  "matches": [
+    {
+      "module": "c0.ASM",
+      "module_file_offset": 0,
+      "segment_index": 1,
+      "segment_name": "_TEXT",
+      "segment_size": 661,
+      "candidate_count": 1,
+      "candidates": [
+        {
+          "image_offset": 0,
+          "size": 661,
+          "stable_bytes": 536,
+          "masked_bytes": 125,
+          "anchor_offset": 489,
+          "anchor_length": 149,
+          "relaxed_calls": [
+            {
+              "offset": 338,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 652,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "relaxed_transfers": [
+            {
+              "offset": 338,
+              "replacement": "NOP; PUSH CS; CALL near"
+            },
+            {
+              "offset": 652,
+              "replacement": "NOP; PUSH CS; CALL near"
+            }
+          ],
+          "file_offset": 4096
+        }
+      ],
+      "stable_ranges": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          8,
+          23
+        ],
+        [
+          25,
+          27
+        ],
+        [
+          29,
+          31
+        ],
+        [
+          33,
+          35
+        ],
+        [
+          37,
+          41
+        ],
+        [
+          43,
+          72
+        ],
+        [
+          74,
+          87
+        ],
+        [
+          89,
+          94
+        ],
+        [
+          96,
+          101
+        ],
+        [
+          103,
+          115
+        ],
+        [
+          117,
+          135
+        ],
+        [
+          137,
+          139
+        ],
+        [
+          141,
+          142
+        ],
+        [
+          144,
+          163
+        ],
+        [
+          165,
+          170
+        ],
+        [
+          172,
+          177
+        ],
+        [
+          179,
+          180
+        ],
+        [
+          182,
+          183
+        ],
+        [
+          185,
+          192
+        ],
+        [
+          194,
+          199
+        ],
+        [
+          201,
+          208
+        ],
+        [
+          210,
+          227
+        ],
+        [
+          229,
+          244
+        ],
+        [
+          246,
+          274
+        ],
+        [
+          276,
+          278
+        ],
+        [
+          280,
+          301
+        ],
+        [
+          303,
+          304
+        ],
+        [
+          306,
+          307
+        ],
+        [
+          309,
+          314
+        ],
+        [
+          316,
+          318
+        ],
+        [
+          320,
+          322
+        ],
+        [
+          324,
+          326
+        ],
+        [
+          328,
+          330
+        ],
+        [
+          337,
+          338
+        ],
+        [
+          343,
+          346
+        ],
+        [
+          348,
+          351
+        ],
+        [
+          353,
+          354
+        ],
+        [
+          356,
+          376
+        ],
+        [
+          378,
+          389
+        ],
+        [
+          391,
+          393
+        ],
+        [
+          395,
+          402
+        ],
+        [
+          404,
+          406
+        ],
+        [
+          408,
+          415
+        ],
+        [
+          417,
+          419
+        ],
+        [
+          421,
+          428
+        ],
+        [
+          430,
+          432
+        ],
+        [
+          434,
+          442
+        ],
+        [
+          444,
+          454
+        ],
+        [
+          456,
+          465
+        ],
+        [
+          467,
+          476
+        ],
+        [
+          478,
+          487
+        ],
+        [
+          489,
+          638
+        ],
+        [
+          640,
+          643
+        ],
+        [
+          645,
+          652
+        ],
+        [
+          659,
+          661
+        ]
+      ],
+      "fixups": [
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 0,
+          "offset": 6,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 4,
+          "offset": 23,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 9,
+          "offset": 27,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 14,
+          "offset": 31,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 19,
+          "offset": 35,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 24,
+          "offset": 41,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 29,
+          "offset": 72,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 34,
+          "offset": 87,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 39,
+          "offset": 135,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 44,
+          "offset": 139,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 49,
+          "offset": 142,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 54,
+          "offset": 177,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 58,
+          "offset": 180,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 14,
+            "name": "_BSS"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 63,
+          "offset": 183,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 15,
+            "name": "_BSSEND"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 68,
+          "offset": 199,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 73,
+          "offset": 208,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 78,
+          "offset": 244,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 83,
+          "offset": 274,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 88,
+          "offset": 278,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 93,
+          "offset": 301,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 97,
+          "offset": 314,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 102,
+          "offset": 318,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 107,
+          "offset": 1,
+          "width": 2,
+          "location_type": 2,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 111,
+          "offset": 94,
+          "width": 2,
+          "location_type": 2,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 6,
+            "name": "__stklen"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 115,
+          "offset": 101,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 6,
+            "name": "__stklen"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 119,
+          "offset": 115,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 6,
+            "name": "__stklen"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 123,
+          "offset": 163,
+          "width": 2,
+          "location_type": 2,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 6,
+            "name": "__stklen"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 127,
+          "offset": 170,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 6,
+            "name": "__stklen"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 131,
+          "offset": 192,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 4,
+            "name": "__nfile"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 135,
+          "offset": 227,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 4,
+            "name": "__nfile"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 139,
+          "offset": 304,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 10,
+            "name": "_INIT_"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 144,
+          "offset": 307,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 11,
+            "name": "_INITEND_"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 149,
+          "offset": 333,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 1,
+            "name": "_main"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 153,
+          "offset": 339,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 2,
+            "name": "_exit"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 157,
+          "offset": 351,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 12,
+            "name": "_EXIT_"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 162,
+          "offset": 354,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 13,
+            "name": "_EXITEND_"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 167,
+          "offset": 442,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 171,
+          "offset": 322,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 176,
+          "offset": 326,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 181,
+          "offset": 330,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 186,
+          "offset": 346,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 190,
+          "offset": 376,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 195,
+          "offset": 389,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 200,
+          "offset": 393,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 205,
+          "offset": 402,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 210,
+          "offset": 406,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 215,
+          "offset": 415,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 220,
+          "offset": 419,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 225,
+          "offset": 428,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 230,
+          "offset": 432,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 235,
+          "offset": 454,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 240,
+          "offset": 465,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 245,
+          "offset": 476,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 250,
+          "offset": 487,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 255,
+          "offset": 638,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 1,
+            "method_name": "group",
+            "datum": 1,
+            "name": "DGROUP"
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 6,
+            "name": "_DATA"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 260,
+          "offset": 643,
+          "width": 2,
+          "location_type": 1,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 0,
+            "method_name": "segment",
+            "datum": 1,
+            "name": "_TEXT"
+          },
+          "displacement": 0
+        },
+        {
+          "record_offset": 1895,
+          "subrecord_offset": 264,
+          "offset": 653,
+          "width": 4,
+          "location_type": 3,
+          "mode": "segment_relative",
+          "frame": {
+            "method": 5,
+            "method_name": "target",
+            "datum": null
+          },
+          "target": {
+            "method": 2,
+            "method_name": "external",
+            "datum": 3,
+            "name": "__exit"
+          },
+          "displacement": 0
+        }
+      ],
+      "potential_far_transfer_relaxations": [
+        332,
+        338,
+        652
+      ],
+      "symbols": [
+        {
+          "name": "__MMODEL",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 659,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 645
+        },
+        {
+          "name": "__terminate",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 363,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 682
+        },
+        {
+          "name": "_abort",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 634,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 795
+        },
+        {
+          "name": "__restorezero",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 448,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 866
+        },
+        {
+          "name": "__cleanup",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 343,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 907
+        },
+        {
+          "name": "DGROUP@",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 657,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 1054
+        },
+        {
+          "name": "__checknull",
+          "group": 0,
+          "segment": 1,
+          "frame": null,
+          "offset": 362,
+          "type_index": 0,
+          "local": false,
+          "record_offset": 1203
+        }
+      ]
+    }
+  ],
+  "matched_segment_count": 1,
+  "unique_segment_count": 1
+}

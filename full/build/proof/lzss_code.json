@@ -1,0 +1,199 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/LZSS.OBJ",
+  "object_sha256": "2b629e13a7f8c0ae42e82a0ab31c3b7ea0ecba1727923185c0282f81e2d9dd10",
+  "module": "LZSS.ASM",
+  "segment_index": 1,
+  "segment_name": "LZSS_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4664,
+    "offset": 13,
+    "image_offset": 74637,
+    "address": "1238:000D"
+  },
+  "file_offset": 78733,
+  "object_size": 4238,
+  "expected_size": 4238,
+  "public_bindings": [
+    {
+      "name": "_lzss_decode",
+      "object_offset": 4096,
+      "expected": {
+        "segment": 4664,
+        "offset": 4109,
+        "image_offset": 78733,
+        "address": "1238:100D"
+      },
+      "binding": {
+        "segment": 4664,
+        "offset": 4109,
+        "image_offset": 78733,
+        "address": "1238:100D"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      4238
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 4117,
+      "function_offset": 4117,
+      "omf_fixup": {
+        "record_offset": 308,
+        "subrecord_offset": 0,
+        "offset": 4117,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "LZSS_TEXT"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4664,
+        "offset": 13,
+        "image_offset": 74637,
+        "address": "1238:000D"
+      },
+      "frame": 4664,
+      "before_hex": "0000",
+      "after_hex": "0d00",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 4157,
+      "function_offset": 4157,
+      "omf_fixup": {
+        "record_offset": 308,
+        "subrecord_offset": 4,
+        "offset": 4157,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "LZSS_TEXT"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4664,
+        "offset": 13,
+        "image_offset": 74637,
+        "address": "1238:000D"
+      },
+      "frame": 4664,
+      "before_hex": "0000",
+      "after_hex": "0d00",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 4203,
+      "function_offset": 4203,
+      "omf_fixup": {
+        "record_offset": 308,
+        "subrecord_offset": 8,
+        "offset": 4203,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "LZSS_TEXT"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4664,
+        "offset": 13,
+        "image_offset": 74637,
+        "address": "1238:000D"
+      },
+      "frame": 4664,
+      "before_hex": "0000",
+      "after_hex": "0d00",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 4209,
+      "function_offset": 4209,
+      "omf_fixup": {
+        "record_offset": 308,
+        "subrecord_offset": 12,
+        "offset": 4209,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "LZSS_TEXT"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4664,
+        "offset": 13,
+        "image_offset": 74637,
+        "address": "1238:000D"
+      },
+      "frame": 4664,
+      "before_hex": "0000",
+      "after_hex": "0d00",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "3e7e315199e1d4ccbba64823f84d42ba02b4f33b44a682cfdccd9c2e6bc82a0c",
+  "original_sha256": "3e7e315199e1d4ccbba64823f84d42ba02b4f33b44a682cfdccd9c2e6bc82a0c",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "code"
+}

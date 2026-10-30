@@ -1,0 +1,30 @@
+[
+  {
+    "module": "FILES",
+    "segment": "_DATA",
+    "size": 52,
+    "ds_offset": 3326,
+    "byte_exact": true
+  },
+  {
+    "module": "TICKS",
+    "segment": "_DATA",
+    "size": 4,
+    "ds_offset": 3378,
+    "byte_exact": true
+  },
+  {
+    "module": "NUMBER",
+    "segment": "_DATA",
+    "size": 4,
+    "ds_offset": 3382,
+    "byte_exact": true
+  },
+  {
+    "module": "REC",
+    "segment": "_DATA",
+    "size": 76,
+    "ds_offset": 3770,
+    "byte_exact": true
+  }
+]

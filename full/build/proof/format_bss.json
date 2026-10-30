@@ -1,0 +1,53 @@
+{
+  "module": "format.c",
+  "segment_name": "_BSS",
+  "object_size": 256,
+  "expected_size": 256,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 15042,
+    "image_offset": 107090,
+    "address": "1679:3AC2"
+  },
+  "public_bindings": [
+    {
+      "name": "_sb_format_state",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 15042,
+        "image_offset": 107090,
+        "address": "1679:3AC2"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15042,
+        "image_offset": 107090,
+        "address": "1679:3AC2"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3ac2",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 15042,
+        "image_offset": 107090,
+        "address": "1679:3AC2"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15042,
+        "image_offset": 107090,
+        "address": "1679:3AC2"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

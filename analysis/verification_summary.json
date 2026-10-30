@@ -1,0 +1,35 @@
+{
+  "original_exe_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "full_game_reconstructed": false,
+  "full_exe_byte_exact": false,
+  "author_source_text_recovered": false,
+  "compiler": "Borland C++ 3.1 / Turbo Link 5.1",
+  "historically_unique_compiler_version_established": false,
+  "compiler_flags": "-ml -a- -k -O -r- -Z -G- -M",
+  "raw_matching_functions": 4,
+  "raw_matching_function_bytes": 232,
+  "additional_functions_matching_after_declared_address_bindings": 3,
+  "additional_function_bytes_after_declared_address_bindings": 864,
+  "dos_build_passed": true,
+  "byte_exact_output_files": 21,
+  "gpf_members": 82,
+  "gpf_streams": 94,
+  "dos_logic_vectors": 1064,
+  "crt_accepted_candidate_segments": 99,
+  "crt_distinct_ranges": 84,
+  "crt_covered_image_bytes": 16111,
+  "evidence_files": [
+    "build/dos/verification.json",
+    "analysis/snk_rec_full_build_match.json",
+    "analysis/logic_full_build_match.json",
+    "analysis/crt_symbols.json",
+    "analysis/rea_summary.json"
+  ],
+  "remaining": [
+    "Full menu and editor C",
+    "Complete game integration",
+    "Graphics, sound and DOS/BIOS interaction",
+    "Whole-program linker layout and all MZ bytes",
+    "Unresolved format fields documented in specifications"
+  ]
+}

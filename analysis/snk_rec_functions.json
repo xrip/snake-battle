@@ -1,0 +1,200 @@
+{
+  "exe_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "address_kind": "MZ-relative CS:IP",
+  "entries": [
+    {
+      "id": "E01",
+      "name": "snk_encode",
+      "cs_ip": "0B2B:000F",
+      "image_offset": 45759,
+      "file_offset": 49855,
+      "length": 55,
+      "sha256": "f70ca82c19679c35d04b416fd60148259b04ace56bb3e21719c6ffdf587bea25"
+    },
+    {
+      "id": "E02",
+      "name": "snk_decode",
+      "cs_ip": "0B2B:0046",
+      "image_offset": 45814,
+      "file_offset": 49910,
+      "length": 61,
+      "sha256": "ca25284a83413074338756664ca1efd8d4d745b6a1c7e6622e508ef2524aec43"
+    },
+    {
+      "id": "E03",
+      "name": "password_complement",
+      "cs_ip": "044D:022F",
+      "image_offset": 18175,
+      "file_offset": 22271,
+      "length": 30,
+      "sha256": "5c959c2bc5f6bbe466a17c1cc6cdc59f2b505180dc3a33895893dd60edd72bed"
+    },
+    {
+      "id": "E04",
+      "name": "snk_loader",
+      "cs_ip": "0B33:0A4C",
+      "image_offset": 48508,
+      "file_offset": 52604,
+      "length": 543,
+      "sha256": "82bf70f6aa3f077448da01e5485344171c71087ee4f0b06c2aa752c76da62157"
+    },
+    {
+      "id": "E05",
+      "name": "snk_saver",
+      "cs_ip": "0B33:0C6B",
+      "image_offset": 49051,
+      "file_offset": 53147,
+      "length": 292,
+      "sha256": "b06f246355c4dbc898c54ea85c355686c69131885a7a39b5c5bc5d1c264ef1f1"
+    },
+    {
+      "id": "E06",
+      "name": "rec_open_read",
+      "cs_ip": "0E92:0008",
+      "image_offset": 59688,
+      "file_offset": 63784,
+      "length": 84,
+      "sha256": "81f644ac037ebb9545744fa37547631f6b5c6c4203a429e81b1f08fc34740165"
+    },
+    {
+      "id": "E07",
+      "name": "rec_open_write_no_trunc",
+      "cs_ip": "0E92:0067",
+      "image_offset": 59783,
+      "file_offset": 63879,
+      "length": 90,
+      "sha256": "53074ce2163f7a2dc05227b8a84ba11532e88d2bd918b78b3d472dd1993a8271"
+    },
+    {
+      "id": "E08",
+      "name": "rec_close_and_set_packed",
+      "cs_ip": "0E92:00C1",
+      "image_offset": 59873,
+      "file_offset": 63969,
+      "length": 73,
+      "sha256": "fad147efa86085f14e19b0f229757338b2719ad62e7e1cfe05c676161fa0b1aa"
+    },
+    {
+      "id": "E09",
+      "name": "rec_write_stream",
+      "cs_ip": "0E92:010A",
+      "image_offset": 59946,
+      "file_offset": 64042,
+      "length": 236,
+      "sha256": "e6e486d85b129c7ad5e212e0499bd9c035ba05129dec87bc89b3fb9ea85637d7"
+    },
+    {
+      "id": "E10",
+      "name": "rec_unget_and_read_stream",
+      "cs_ip": "0E92:01F6",
+      "image_offset": 60182,
+      "file_offset": 64278,
+      "length": 253,
+      "sha256": "2719055369e313811d7c1f0bb92dd0293fef8473401398e6b50ae677fccf6045"
+    },
+    {
+      "id": "E11",
+      "name": "rec_write_bytes_as_nibbles",
+      "cs_ip": "0E92:02F3",
+      "image_offset": 60435,
+      "file_offset": 64531,
+      "length": 142,
+      "sha256": "a53c2ed52af01af64ff5e39b0a01d45e28b040db43e91aa7d35bd32407acc28a"
+    },
+    {
+      "id": "E12",
+      "name": "rec_header_read_write_call_sites",
+      "cs_ip": "0729:24EC",
+      "image_offset": 38780,
+      "file_offset": 42876,
+      "length": 241,
+      "sha256": "205b9204e9094ef335dcb696a2d02e4d193c69a585bb8b87d17ef666bcf775fb"
+    },
+    {
+      "id": "E13",
+      "name": "rec_read_write_scores",
+      "cs_ip": "0729:046E",
+      "image_offset": 30462,
+      "file_offset": 34558,
+      "length": 176,
+      "sha256": "930083efe18c652d02090d9420301293576e6cbe858f7ea67e7710120a03561d"
+    },
+    {
+      "id": "E14",
+      "name": "rec_mover_selection",
+      "cs_ip": "0729:0F27",
+      "image_offset": 33207,
+      "file_offset": 37303,
+      "length": 219,
+      "sha256": "4b039b59bc095735f706b8edb04647f834bbec15b60d7ee5976c4f22b39dc7db"
+    },
+    {
+      "id": "E15",
+      "name": "rec_direction_read_blocked_case",
+      "cs_ip": "0729:15C3",
+      "image_offset": 34899,
+      "file_offset": 38995,
+      "length": 88,
+      "sha256": "fa56468330e51064c6c651389e32b6c1a6cd56ed4ae77dd2e108e7baea6a4005"
+    },
+    {
+      "id": "E16",
+      "name": "rec_direction_write",
+      "cs_ip": "0729:18BC",
+      "image_offset": 35660,
+      "file_offset": 39756,
+      "length": 38,
+      "sha256": "f422d93e26a4de242be00b8978f0ac6ff429ae5fca7a8108af333a517dcaffb2"
+    },
+    {
+      "id": "E17",
+      "name": "rec_round_marker_and_playback_stop",
+      "cs_ip": "0729:2A7E",
+      "image_offset": 40206,
+      "file_offset": 44302,
+      "length": 297,
+      "sha256": "9671595202b47e8857b129c6c3b1d4e16bff2287ee74dac6b4611d1fccf590db"
+    },
+    {
+      "id": "E18",
+      "name": "round_count_and_rating",
+      "cs_ip": "0729:2BE9",
+      "image_offset": 40569,
+      "file_offset": 44665,
+      "length": 155,
+      "sha256": "36ccac652a91475186dc670511311f617f2ccdcb1231a15ee782bad3d09d2004"
+    },
+    {
+      "id": "E19",
+      "name": "rec_end_markers_and_close",
+      "cs_ip": "0729:2DC2",
+      "image_offset": 41042,
+      "file_offset": 45138,
+      "length": 50,
+      "sha256": "45e52f22ed02b6c37f8e21d4a006b186b69cede4816db06decec7a23166d0aea"
+    },
+    {
+      "id": "E20",
+      "name": "crt_conditional_truncate",
+      "cs_ip": "0000:2D99",
+      "image_offset": 11673,
+      "file_offset": 15769,
+      "length": 10,
+      "sha256": "586844a16a805f5c176960732ac8f75ff77a92c793e728cd887ff8cf46e343c3"
+    },
+    {
+      "id": "E21",
+      "name": "GROUP_AND",
+      "ds_offset": "1679:04B7",
+      "file_offset": 97351,
+      "hex": "01000000000001000100",
+      "values_u16le": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    }
+  ]
+}

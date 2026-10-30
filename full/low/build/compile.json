@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "SUPPORT.H": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd",
+    "REGISTER.C": "e5c0bb98361a3954cf243ee467a9b85f0450bcf777fd855603b162dd0632a9b1",
+    "ASSERT.C": "cbcdf71b10a3526079b98294f89f1a9edac8764ebc206ab8e15170948fb191f7",
+    "FORMAT.C": "5a0b8664110929e089e3542e4c4499d229bfe8454661ace940e56673904835b4",
+    "VIDEO.C": "a84b30474ab9861dca46f603499abcf6d563b4f01faceb1d4c95200ccc40e4a6"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G-",
+  "seconds": 1.273,
+  "files": [
+    "ASSERT.C",
+    "FORMAT.C",
+    "VIDEO.C",
+    "REGISTER.C"
+  ]
+}

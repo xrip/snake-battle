@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "GAME.C": "48cbc763807af8fed80885e20fcc433370db1afdfb78b75c121d947387200391",
+    "GAME.H": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G-",
+  "seconds": 1.631,
+  "files": [
+    "GAME.C"
+  ]
+}

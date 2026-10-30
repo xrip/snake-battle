@@ -1,0 +1,806 @@
+{
+  "format": "GAMOS five-column word grid",
+  "count": 100,
+  "records": [
+    {
+      "index": 0,
+      "column": "A",
+      "row": 1,
+      "decoded_16_hex": "4a454c4c594a454c4c594a454c4c5900",
+      "repeated_word": "JELLYJELLYJELLY",
+      "word": "JELLY"
+    },
+    {
+      "index": 1,
+      "column": "B",
+      "row": 1,
+      "decoded_16_hex": "43555256454355525645435552564500",
+      "repeated_word": "CURVECURVECURVE",
+      "word": "CURVE"
+    },
+    {
+      "index": 2,
+      "column": "C",
+      "row": 1,
+      "decoded_16_hex": "4e4f56454c4e4f56454c4e4f56454c00",
+      "repeated_word": "NOVELNOVELNOVEL",
+      "word": "NOVEL"
+    },
+    {
+      "index": 3,
+      "column": "D",
+      "row": 1,
+      "decoded_16_hex": "515549434b515549434b515549434b00",
+      "repeated_word": "QUICKQUICKQUICK",
+      "word": "QUICK"
+    },
+    {
+      "index": 4,
+      "column": "E",
+      "row": 1,
+      "decoded_16_hex": "42454152444245415244424541524400",
+      "repeated_word": "BEARDBEARDBEARD",
+      "word": "BEARD"
+    },
+    {
+      "index": 5,
+      "column": "A",
+      "row": 2,
+      "decoded_16_hex": "52454143485245414348524541434800",
+      "repeated_word": "REACHREACHREACH",
+      "word": "REACH"
+    },
+    {
+      "index": 6,
+      "column": "B",
+      "row": 2,
+      "decoded_16_hex": "46524f434b46524f434b46524f434b00",
+      "repeated_word": "FROCKFROCKFROCK",
+      "word": "FROCK"
+    },
+    {
+      "index": 7,
+      "column": "C",
+      "row": 2,
+      "decoded_16_hex": "434855524e434855524e434855524e00",
+      "repeated_word": "CHURNCHURNCHURN",
+      "word": "CHURN"
+    },
+    {
+      "index": 8,
+      "column": "D",
+      "row": 2,
+      "decoded_16_hex": "4445504f544445504f544445504f5400",
+      "repeated_word": "DEPOTDEPOTDEPOT",
+      "word": "DEPOT"
+    },
+    {
+      "index": 9,
+      "column": "E",
+      "row": 2,
+      "decoded_16_hex": "45494445524549444552454944455200",
+      "repeated_word": "EIDEREIDEREIDER",
+      "word": "EIDER"
+    },
+    {
+      "index": 10,
+      "column": "A",
+      "row": 3,
+      "decoded_16_hex": "534f434c45534f434c45534f434c4500",
+      "repeated_word": "SOCLESOCLESOCLE",
+      "word": "SOCLE"
+    },
+    {
+      "index": 11,
+      "column": "B",
+      "row": 3,
+      "decoded_16_hex": "4d455249544d455249544d4552495400",
+      "repeated_word": "MERITMERITMERIT",
+      "word": "MERIT"
+    },
+    {
+      "index": 12,
+      "column": "C",
+      "row": 3,
+      "decoded_16_hex": "5155414e545155414e545155414e5400",
+      "repeated_word": "QUANTQUANTQUANT",
+      "word": "QUANT"
+    },
+    {
+      "index": 13,
+      "column": "D",
+      "row": 3,
+      "decoded_16_hex": "53574f524453574f524453574f524400",
+      "repeated_word": "SWORDSWORDSWORD",
+      "word": "SWORD"
+    },
+    {
+      "index": 14,
+      "column": "E",
+      "row": 3,
+      "decoded_16_hex": "47554553544755455354475545535400",
+      "repeated_word": "GUESTGUESTGUEST",
+      "word": "GUEST"
+    },
+    {
+      "index": 15,
+      "column": "A",
+      "row": 4,
+      "decoded_16_hex": "444f575259444f575259444f57525900",
+      "repeated_word": "DOWRYDOWRYDOWRY",
+      "word": "DOWRY"
+    },
+    {
+      "index": 16,
+      "column": "B",
+      "row": 4,
+      "decoded_16_hex": "4c454153484c454153484c4541534800",
+      "repeated_word": "LEASHLEASHLEASH",
+      "word": "LEASH"
+    },
+    {
+      "index": 17,
+      "column": "C",
+      "row": 4,
+      "decoded_16_hex": "44454c544144454c544144454c544100",
+      "repeated_word": "DELTADELTADELTA",
+      "word": "DELTA"
+    },
+    {
+      "index": 18,
+      "column": "D",
+      "row": 4,
+      "decoded_16_hex": "50524f424550524f424550524f424500",
+      "repeated_word": "PROBEPROBEPROBE",
+      "word": "PROBE"
+    },
+    {
+      "index": 19,
+      "column": "E",
+      "row": 4,
+      "decoded_16_hex": "4149534c454149534c454149534c4500",
+      "repeated_word": "AISLEAISLEAISLE",
+      "word": "AISLE"
+    },
+    {
+      "index": 20,
+      "column": "A",
+      "row": 5,
+      "decoded_16_hex": "4a55524f524a55524f524a55524f5200",
+      "repeated_word": "JURORJURORJUROR",
+      "word": "JUROR"
+    },
+    {
+      "index": 21,
+      "column": "B",
+      "row": 5,
+      "decoded_16_hex": "47524f4f4d47524f4f4d47524f4f4d00",
+      "repeated_word": "GROOMGROOMGROOM",
+      "word": "GROOM"
+    },
+    {
+      "index": 22,
+      "column": "C",
+      "row": 5,
+      "decoded_16_hex": "53504f525453504f525453504f525400",
+      "repeated_word": "SPORTSPORTSPORT",
+      "word": "SPORT"
+    },
+    {
+      "index": 23,
+      "column": "D",
+      "row": 5,
+      "decoded_16_hex": "4c4150454c4c4150454c4c4150454c00",
+      "repeated_word": "LAPELLAPELLAPEL",
+      "word": "LAPEL"
+    },
+    {
+      "index": 24,
+      "column": "E",
+      "row": 5,
+      "decoded_16_hex": "4e555253454e555253454e5552534500",
+      "repeated_word": "NURSENURSENURSE",
+      "word": "NURSE"
+    },
+    {
+      "index": 25,
+      "column": "A",
+      "row": 6,
+      "decoded_16_hex": "524553494e524553494e524553494e00",
+      "repeated_word": "RESINRESINRESIN",
+      "word": "RESIN"
+    },
+    {
+      "index": 26,
+      "column": "B",
+      "row": 6,
+      "decoded_16_hex": "464f435553464f435553464f43555300",
+      "repeated_word": "FOCUSFOCUSFOCUS",
+      "word": "FOCUS"
+    },
+    {
+      "index": 27,
+      "column": "C",
+      "row": 6,
+      "decoded_16_hex": "494e4c4159494e4c4159494e4c415900",
+      "repeated_word": "INLAYINLAYINLAY",
+      "word": "INLAY"
+    },
+    {
+      "index": 28,
+      "column": "D",
+      "row": 6,
+      "decoded_16_hex": "5354414d505354414d505354414d5000",
+      "repeated_word": "STAMPSTAMPSTAMP",
+      "word": "STAMP"
+    },
+    {
+      "index": 29,
+      "column": "E",
+      "row": 6,
+      "decoded_16_hex": "54524f4f5054524f4f5054524f4f5000",
+      "repeated_word": "TROOPTROOPTROOP",
+      "word": "TROOP"
+    },
+    {
+      "index": 30,
+      "column": "A",
+      "row": 7,
+      "decoded_16_hex": "504c414e45504c414e45504c414e4500",
+      "repeated_word": "PLANEPLANEPLANE",
+      "word": "PLANE"
+    },
+    {
+      "index": 31,
+      "column": "B",
+      "row": 7,
+      "decoded_16_hex": "46415243454641524345464152434500",
+      "repeated_word": "FARCEFARCEFARCE",
+      "word": "FARCE"
+    },
+    {
+      "index": 32,
+      "column": "C",
+      "row": 7,
+      "decoded_16_hex": "434841494e434841494e434841494e00",
+      "repeated_word": "CHAINCHAINCHAIN",
+      "word": "CHAIN"
+    },
+    {
+      "index": 33,
+      "column": "D",
+      "row": 7,
+      "decoded_16_hex": "524f57414e524f57414e524f57414e00",
+      "repeated_word": "ROWANROWANROWAN",
+      "word": "ROWAN"
+    },
+    {
+      "index": 34,
+      "column": "E",
+      "row": 7,
+      "decoded_16_hex": "53504f524553504f524553504f524500",
+      "repeated_word": "SPORESPORESPORE",
+      "word": "SPORE"
+    },
+    {
+      "index": 35,
+      "column": "A",
+      "row": 8,
+      "decoded_16_hex": "57454447455745444745574544474500",
+      "repeated_word": "WEDGEWEDGEWEDGE",
+      "word": "WEDGE"
+    },
+    {
+      "index": 36,
+      "column": "B",
+      "row": 8,
+      "decoded_16_hex": "524f554e44524f554e44524f554e4400",
+      "repeated_word": "ROUNDROUNDROUND",
+      "word": "ROUND"
+    },
+    {
+      "index": 37,
+      "column": "C",
+      "row": 8,
+      "decoded_16_hex": "53434f524553434f524553434f524500",
+      "repeated_word": "SCORESCORESCORE",
+      "word": "SCORE"
+    },
+    {
+      "index": 38,
+      "column": "D",
+      "row": 8,
+      "decoded_16_hex": "554e494f4e554e494f4e554e494f4e00",
+      "repeated_word": "UNIONUNIONUNION",
+      "word": "UNION"
+    },
+    {
+      "index": 39,
+      "column": "E",
+      "row": 8,
+      "decoded_16_hex": "534845454e534845454e534845454e00",
+      "repeated_word": "SHEENSHEENSHEEN",
+      "word": "SHEEN"
+    },
+    {
+      "index": 40,
+      "column": "A",
+      "row": 9,
+      "decoded_16_hex": "43525950544352595054435259505400",
+      "repeated_word": "CRYPTCRYPTCRYPT",
+      "word": "CRYPT"
+    },
+    {
+      "index": 41,
+      "column": "B",
+      "row": 9,
+      "decoded_16_hex": "54494e474554494e474554494e474500",
+      "repeated_word": "TINGETINGETINGE",
+      "word": "TINGE"
+    },
+    {
+      "index": 42,
+      "column": "C",
+      "row": 9,
+      "decoded_16_hex": "554d49414b554d49414b554d49414b00",
+      "repeated_word": "UMIAKUMIAKUMIAK",
+      "word": "UMIAK"
+    },
+    {
+      "index": 43,
+      "column": "D",
+      "row": 9,
+      "decoded_16_hex": "53555247455355524745535552474500",
+      "repeated_word": "SURGESURGESURGE",
+      "word": "SURGE"
+    },
+    {
+      "index": 44,
+      "column": "E",
+      "row": 9,
+      "decoded_16_hex": "504f495345504f495345504f49534500",
+      "repeated_word": "POISEPOISEPOISE",
+      "word": "POISE"
+    },
+    {
+      "index": 45,
+      "column": "A",
+      "row": 10,
+      "decoded_16_hex": "574845454c574845454c574845454c00",
+      "repeated_word": "WHEELWHEELWHEEL",
+      "word": "WHEEL"
+    },
+    {
+      "index": 46,
+      "column": "B",
+      "row": 10,
+      "decoded_16_hex": "54524144455452414445545241444500",
+      "repeated_word": "TRADETRADETRADE",
+      "word": "TRADE"
+    },
+    {
+      "index": 47,
+      "column": "C",
+      "row": 10,
+      "decoded_16_hex": "50454143485045414348504541434800",
+      "repeated_word": "PEACHPEACHPEACH",
+      "word": "PEACH"
+    },
+    {
+      "index": 48,
+      "column": "D",
+      "row": 10,
+      "decoded_16_hex": "42494748544249474854424947485400",
+      "repeated_word": "BIGHTBIGHTBIGHT",
+      "word": "BIGHT"
+    },
+    {
+      "index": 49,
+      "column": "E",
+      "row": 10,
+      "decoded_16_hex": "4f524249544f524249544f5242495400",
+      "repeated_word": "ORBITORBITORBIT",
+      "word": "ORBIT"
+    },
+    {
+      "index": 50,
+      "column": "A",
+      "row": 11,
+      "decoded_16_hex": "44414952594441495259444149525900",
+      "repeated_word": "DAIRYDAIRYDAIRY",
+      "word": "DAIRY"
+    },
+    {
+      "index": 51,
+      "column": "B",
+      "row": 11,
+      "decoded_16_hex": "4341424c454341424c454341424c4500",
+      "repeated_word": "CABLECABLECABLE",
+      "word": "CABLE"
+    },
+    {
+      "index": 52,
+      "column": "C",
+      "row": 11,
+      "decoded_16_hex": "544f4e4753544f4e4753544f4e475300",
+      "repeated_word": "TONGSTONGSTONGS",
+      "word": "TONGS"
+    },
+    {
+      "index": 53,
+      "column": "D",
+      "row": 11,
+      "decoded_16_hex": "444f554748444f554748444f55474800",
+      "repeated_word": "DOUGHDOUGHDOUGH",
+      "word": "DOUGH"
+    },
+    {
+      "index": 54,
+      "column": "E",
+      "row": 11,
+      "decoded_16_hex": "435245414b435245414b435245414b00",
+      "repeated_word": "CREAKCREAKCREAK",
+      "word": "CREAK"
+    },
+    {
+      "index": 55,
+      "column": "A",
+      "row": 12,
+      "decoded_16_hex": "45535341594553534159455353415900",
+      "repeated_word": "ESSAYESSAYESSAY",
+      "word": "ESSAY"
+    },
+    {
+      "index": 56,
+      "column": "B",
+      "row": 12,
+      "decoded_16_hex": "414e47454c414e47454c414e47454c00",
+      "repeated_word": "ANGELANGELANGEL",
+      "word": "ANGEL"
+    },
+    {
+      "index": 57,
+      "column": "C",
+      "row": 12,
+      "decoded_16_hex": "424f4e5553424f4e5553424f4e555300",
+      "repeated_word": "BONUSBONUSBONUS",
+      "word": "BONUS"
+    },
+    {
+      "index": 58,
+      "column": "D",
+      "row": 12,
+      "decoded_16_hex": "535749524c535749524c535749524c00",
+      "repeated_word": "SWIRLSWIRLSWIRL",
+      "word": "SWIRL"
+    },
+    {
+      "index": 59,
+      "column": "E",
+      "row": 12,
+      "decoded_16_hex": "534e41434b534e41434b534e41434b00",
+      "repeated_word": "SNACKSNACKSNACK",
+      "word": "SNACK"
+    },
+    {
+      "index": 60,
+      "column": "A",
+      "row": 13,
+      "decoded_16_hex": "5052494f525052494f525052494f5200",
+      "repeated_word": "PRIORPRIORPRIOR",
+      "word": "PRIOR"
+    },
+    {
+      "index": 61,
+      "column": "B",
+      "row": 13,
+      "decoded_16_hex": "474f555244474f555244474f55524400",
+      "repeated_word": "GOURDGOURDGOURD",
+      "word": "GOURD"
+    },
+    {
+      "index": 62,
+      "column": "C",
+      "row": 13,
+      "decoded_16_hex": "4c455645454c455645454c4556454500",
+      "repeated_word": "LEVEELEVEELEVEE",
+      "word": "LEVEE"
+    },
+    {
+      "index": 63,
+      "column": "D",
+      "row": 13,
+      "decoded_16_hex": "4c454447454c454447454c4544474500",
+      "repeated_word": "LEDGELEDGELEDGE",
+      "word": "LEDGE"
+    },
+    {
+      "index": 64,
+      "column": "E",
+      "row": 13,
+      "decoded_16_hex": "5441424c455441424c455441424c4500",
+      "repeated_word": "TABLETABLETABLE",
+      "word": "TABLE"
+    },
+    {
+      "index": 65,
+      "column": "A",
+      "row": 14,
+      "decoded_16_hex": "4252414e444252414e444252414e4400",
+      "repeated_word": "BRANDBRANDBRAND",
+      "word": "BRAND"
+    },
+    {
+      "index": 66,
+      "column": "B",
+      "row": 14,
+      "decoded_16_hex": "41434f524e41434f524e41434f524e00",
+      "repeated_word": "ACORNACORNACORN",
+      "word": "ACORN"
+    },
+    {
+      "index": 67,
+      "column": "C",
+      "row": 14,
+      "decoded_16_hex": "53544147455354414745535441474500",
+      "repeated_word": "STAGESTAGESTAGE",
+      "word": "STAGE"
+    },
+    {
+      "index": 68,
+      "column": "D",
+      "row": 14,
+      "decoded_16_hex": "5049414e4f5049414e4f5049414e4f00",
+      "repeated_word": "PIANOPIANOPIANO",
+      "word": "PIANO"
+    },
+    {
+      "index": 69,
+      "column": "E",
+      "row": 14,
+      "decoded_16_hex": "474c4f5259474c4f5259474c4f525900",
+      "repeated_word": "GLORYGLORYGLORY",
+      "word": "GLORY"
+    },
+    {
+      "index": 70,
+      "column": "A",
+      "row": 15,
+      "decoded_16_hex": "4348494c4c4348494c4c4348494c4c00",
+      "repeated_word": "CHILLCHILLCHILL",
+      "word": "CHILL"
+    },
+    {
+      "index": 71,
+      "column": "B",
+      "row": 15,
+      "decoded_16_hex": "48415a454c48415a454c48415a454c00",
+      "repeated_word": "HAZELHAZELHAZEL",
+      "word": "HAZEL"
+    },
+    {
+      "index": 72,
+      "column": "C",
+      "row": 15,
+      "decoded_16_hex": "44455543454445554345444555434500",
+      "repeated_word": "DEUCEDEUCEDEUCE",
+      "word": "DEUCE"
+    },
+    {
+      "index": 73,
+      "column": "D",
+      "row": 15,
+      "decoded_16_hex": "414c544152414c544152414c54415200",
+      "repeated_word": "ALTARALTARALTAR",
+      "word": "ALTAR"
+    },
+    {
+      "index": 74,
+      "column": "E",
+      "row": 15,
+      "decoded_16_hex": "43415354454341535445434153544500",
+      "repeated_word": "CASTECASTECASTE",
+      "word": "CASTE"
+    },
+    {
+      "index": 75,
+      "column": "A",
+      "row": 16,
+      "decoded_16_hex": "4359434c454359434c454359434c4500",
+      "repeated_word": "CYCLECYCLECYCLE",
+      "word": "CYCLE"
+    },
+    {
+      "index": 76,
+      "column": "B",
+      "row": 16,
+      "decoded_16_hex": "534b45494e534b45494e534b45494e00",
+      "repeated_word": "SKEINSKEINSKEIN",
+      "word": "SKEIN"
+    },
+    {
+      "index": 77,
+      "column": "C",
+      "row": 16,
+      "decoded_16_hex": "544f415354544f415354544f41535400",
+      "repeated_word": "TOASTTOASTTOAST",
+      "word": "TOAST"
+    },
+    {
+      "index": 78,
+      "column": "D",
+      "row": 16,
+      "decoded_16_hex": "434c415348434c415348434c41534800",
+      "repeated_word": "CLASHCLASHCLASH",
+      "word": "CLASH"
+    },
+    {
+      "index": 79,
+      "column": "E",
+      "row": 16,
+      "decoded_16_hex": "554d424552554d424552554d42455200",
+      "repeated_word": "UMBERUMBERUMBER",
+      "word": "UMBER"
+    },
+    {
+      "index": 80,
+      "column": "A",
+      "row": 17,
+      "decoded_16_hex": "424f4f5448424f4f5448424f4f544800",
+      "repeated_word": "BOOTHBOOTHBOOTH",
+      "word": "BOOTH"
+    },
+    {
+      "index": 81,
+      "column": "B",
+      "row": 17,
+      "decoded_16_hex": "434f4c4f4e434f4c4f4e434f4c4f4e00",
+      "repeated_word": "COLONCOLONCOLON",
+      "word": "COLON"
+    },
+    {
+      "index": 82,
+      "column": "C",
+      "row": 17,
+      "decoded_16_hex": "4e415656594e415656594e4156565900",
+      "repeated_word": "NAVVYNAVVYNAVVY",
+      "word": "NAVVY"
+    },
+    {
+      "index": 83,
+      "column": "D",
+      "row": 17,
+      "decoded_16_hex": "4d455243594d455243594d4552435900",
+      "repeated_word": "MERCYMERCYMERCY",
+      "word": "MERCY"
+    },
+    {
+      "index": 84,
+      "column": "E",
+      "row": 17,
+      "decoded_16_hex": "46524941524652494152465249415200",
+      "repeated_word": "FRIARFRIARFRIAR",
+      "word": "FRIAR"
+    },
+    {
+      "index": 85,
+      "column": "A",
+      "row": 18,
+      "decoded_16_hex": "424f554e44424f554e44424f554e4400",
+      "repeated_word": "BOUNDBOUNDBOUND",
+      "word": "BOUND"
+    },
+    {
+      "index": 86,
+      "column": "B",
+      "row": 18,
+      "decoded_16_hex": "53414c4c5953414c4c5953414c4c5900",
+      "repeated_word": "SALLYSALLYSALLY",
+      "word": "SALLY"
+    },
+    {
+      "index": 87,
+      "column": "C",
+      "row": 18,
+      "decoded_16_hex": "464c554944464c554944464c55494400",
+      "repeated_word": "FLUIDFLUIDFLUID",
+      "word": "FLUID"
+    },
+    {
+      "index": 88,
+      "column": "D",
+      "row": 18,
+      "decoded_16_hex": "46494e434846494e434846494e434800",
+      "repeated_word": "FINCHFINCHFINCH",
+      "word": "FINCH"
+    },
+    {
+      "index": 89,
+      "column": "E",
+      "row": 18,
+      "decoded_16_hex": "474c4f4245474c4f4245474c4f424500",
+      "repeated_word": "GLOBEGLOBEGLOBE",
+      "word": "GLOBE"
+    },
+    {
+      "index": 90,
+      "column": "A",
+      "row": 19,
+      "decoded_16_hex": "4147454e544147454e544147454e5400",
+      "repeated_word": "AGENTAGENTAGENT",
+      "word": "AGENT"
+    },
+    {
+      "index": 91,
+      "column": "B",
+      "row": 19,
+      "decoded_16_hex": "534e41524c534e41524c534e41524c00",
+      "repeated_word": "SNARLSNARLSNARL",
+      "word": "SNARL"
+    },
+    {
+      "index": 92,
+      "column": "C",
+      "row": 19,
+      "decoded_16_hex": "4b4e4f55544b4e4f55544b4e4f555400",
+      "repeated_word": "KNOUTKNOUTKNOUT",
+      "word": "KNOUT"
+    },
+    {
+      "index": 93,
+      "column": "D",
+      "row": 19,
+      "decoded_16_hex": "4c494e45524c494e45524c494e455200",
+      "repeated_word": "LINERLINERLINER",
+      "word": "LINER"
+    },
+    {
+      "index": 94,
+      "column": "E",
+      "row": 19,
+      "decoded_16_hex": "4c415256414c415256414c4152564100",
+      "repeated_word": "LARVALARVALARVA",
+      "word": "LARVA"
+    },
+    {
+      "index": 95,
+      "column": "A",
+      "row": 20,
+      "decoded_16_hex": "534e414b45534e414b45534e414b4500",
+      "repeated_word": "SNAKESNAKESNAKE",
+      "word": "SNAKE"
+    },
+    {
+      "index": 96,
+      "column": "B",
+      "row": 20,
+      "decoded_16_hex": "53554954455355495445535549544500",
+      "repeated_word": "SUITESUITESUITE",
+      "word": "SUITE"
+    },
+    {
+      "index": 97,
+      "column": "C",
+      "row": 20,
+      "decoded_16_hex": "42454c4c5942454c4c5942454c4c5900",
+      "repeated_word": "BELLYBELLYBELLY",
+      "word": "BELLY"
+    },
+    {
+      "index": 98,
+      "column": "D",
+      "row": 20,
+      "decoded_16_hex": "50415354455041535445504153544500",
+      "repeated_word": "PASTEPASTEPASTE",
+      "word": "PASTE"
+    },
+    {
+      "index": 99,
+      "column": "E",
+      "row": 20,
+      "decoded_16_hex": "54554e494354554e494354554e494300",
+      "repeated_word": "TUNICTUNICTUNIC",
+      "word": "TUNIC"
+    }
+  ]
+}

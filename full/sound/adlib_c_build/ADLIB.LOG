@@ -1,0 +1,6 @@
+adlib.c
+adlib.c(462) : warning C4761: integral size mismatch in argument; conversion supplied
+adlib.c(541) : warning C4761: integral size mismatch in argument; conversion supplied
+adlib.c(556) : warning C4761: integral size mismatch in argument; conversion supplied
+adlib.c(570) : warning C4761: integral size mismatch in argument; conversion supplied
+adlib.c(641) : warning C4761: integral size mismatch in argument; conversion supplied

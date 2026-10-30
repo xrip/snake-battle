@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_f3d0a1e34530d4cb59a243357cadb7e4f41515bff164b0e4689fe256dcb7c465\",\"subject\":{\"name\":\"SNAKE.EXE\",\"digest\":{\"sha256\":\"c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821\"},\"local_path\":\"/workspace/scratch/488b0609771f/work/original/SNAKE.EXE\",\"format\":\"dos-mz\",\"architecture\":\"x86\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"dos-mz\",\"architecture\":\"x86\",\"available_architectures\":[\"x86\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"call_relationship_coverage\":\"function-body-call-coverage-v5\",\"function_dossier_coverage\":\"observed-facets-and-call-relationships-v1\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"procedure_file_offset_resolution\":\"address-first-unique-target-source-mapping-v2\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"instruction_references\":\"exact-address-incoming-without-synthetic-entry-v2\",\"function_boundary_observations\":\"ghidra-function-boundary-limitations-v4\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"load_image_evidence\":\"independent-mz-mapping-relocations-v2\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"MzLoader\",\"language_id\":\"x86:LE:16:Real Mode\",\"compiler_spec_id\":\"default\",\"load_segment\":\"0x1000\",\"address_coordinates\":\"linear-byte-offset\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"00872daa045ec4c4f503e0aa00aa9e560f42b5c7fcdcd08e54830338c2ca16b7\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_pseudo_code\",\"parameters\":{\"procedure\":\"0x152ff\"},\"raw_result\":{\"value\":\"\\nvoid __cdecl16far FUN_144d_0e2f(undefined2 param_1,int param_2,int param_3)\\n\\n{\\n  bool bVar1;\\n  undefined2 uVar2;\\n  int iVar3;\\n  undefined2 in_DX;\\n  undefined2 uVar4;\\n  undefined2 local_8;\\n  undefined2 local_6;\\n  undefined2 local_4;\\n  \\n  if (param_3 == 0) {\\n    local_4 = 1;\\n    local_6 = 0x12;\\n  }\\n  else {\\n    local_4 = 0x12;\\n    local_6 = 1;\\n  }\\n  bVar1 = true;\\n  do {\\n    if (!bVar1) {\\n      return;\\n    }\\n    uVar2 = FUN_1c10_000a();\\n    if (local_4 == local_6) {\\n      bVar1 = false;\\n    }\\n    FUN_1c85_0f74(uVar2,in_DX);\\n    FUN_144d_0c8f(param_1);\\n    if (param_3 == 0) {\\n      local_4 = local_4 + 2;\\n      if (local_6 < local_4) goto LAB_144d_0ea0;\\n    }\\n    else {\\n      local_4 = local_4 + -2;\\n      if (local_4 < local_6) {\\nLAB_144d_0ea0:\\n        local_4 = local_6;\\n      }\\n    }\\n    FUN_1c85_0ead(0x1f2,param_2,0x25f,param_2 + 0x11,DAT_2679_40bc,DAT_2679_40be,0);\\n    if (local_4 < 0xc) {\\n      local_8 = 6;\\n      iVar3 = (param_2 - local_4) + 0xc;\\n    }\\n    else {\\n      local_8 = 0x12 - local_4;\\n      iVar3 = param_2;\\n    }\\n    FUN_1c85_0bb2(0x16,iVar3,0x83,param_2 + 0x11,DAT_2679_1aca,DAT_2679_1acc,0x1f2,param_2 - local_8\\n                  ,DAT_2679_40bc,DAT_2679_40be);\\n    FUN_1c85_0bb2(0,local_4 + 1,0x6d,0x11,DAT_2679_1ad6,DAT_2679_1ad8,0x1f2,param_2 + local_4 + 1,\\n                  DAT_2679_40bc,DAT_2679_40be);\\n    FUN_1c85_0b83(0x1dc,param_1,DAT_2679_1ad2,DAT_2679_1ad4,DAT_2679_40bc,DAT_2679_40be);\\n    uVar4 = in_DX;\\n    FUN_1c85_0fb1();\\n    in_DX = 1;\\n    FUN_1c10_0016(uVar2,uVar4,1,0);\\n  } while( true );\\n}\\n\\n\",\"limitations\":[]},\"normalized_result\":\"\\nvoid __cdecl16far FUN_144d_0e2f(undefined2 param_1,int param_2,int param_3)\\n\\n{\\n  bool bVar1;\\n  undefined2 uVar2;\\n  int iVar3;\\n  undefined2 in_DX;\\n  undefined2 uVar4;\\n  undefined2 local_8;\\n  undefined2 local_6;\\n  undefined2 local_4;\\n  \\n  if (param_3 == 0) {\\n    local_4 = 1;\\n    local_6 = 0x12;\\n  }\\n  else {\\n    local_4 = 0x12;\\n    local_6 = 1;\\n  }\\n  bVar1 = true;\\n  do {\\n    if (!bVar1) {\\n      return;\\n    }\\n    uVar2 = FUN_1c10_000a();\\n    if (local_4 == local_6) {\\n      bVar1 = false;\\n    }\\n    FUN_1c85_0f74(uVar2,in_DX);\\n    FUN_144d_0c8f(param_1);\\n    if (param_3 == 0) {\\n      local_4 = local_4 + 2;\\n      if (local_6 < local_4) goto LAB_144d_0ea0;\\n    }\\n    else {\\n      local_4 = local_4 + -2;\\n      if (local_4 < local_6) {\\nLAB_144d_0ea0:\\n        local_4 = local_6;\\n      }\\n    }\\n    FUN_1c85_0ead(0x1f2,param_2,0x25f,param_2 + 0x11,DAT_2679_40bc,DAT_2679_40be,0);\\n    if (local_4 < 0xc) {\\n      local_8 = 6;\\n      iVar3 = (param_2 - local_4) + 0xc;\\n    }\\n    else {\\n      local_8 = 0x12 - local_4;\\n      iVar3 = param_2;\\n    }\\n    FUN_1c85_0bb2(0x16,iVar3,0x83,param_2 + 0x11,DAT_2679_1aca,DAT_2679_1acc,0x1f2,param_2 - local_8\\n                  ,DAT_2679_40bc,DAT_2679_40be);\\n    FUN_1c85_0bb2(0,local_4 + 1,0x6d,0x11,DAT_2679_1ad6,DAT_2679_1ad8,0x1f2,param_2 + local_4 + 1,\\n                  DAT_2679_40bc,DAT_2679_40be);\\n    FUN_1c85_0b83(0x1dc,param_1,DAT_2679_1ad2,DAT_2679_1ad4,DAT_2679_40bc,DAT_2679_40be);\\n    uVar4 = in_DX;\\n    FUN_1c85_0fb1();\\n    in_DX = 1;\\n    FUN_1c10_0016(uVar2,uVar4,1,0);\\n  } while( true );\\n}\\n\\n\",\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.\",\"External functions and functions without an analyzable body return null; other decompiler failures remain explicit.\",\"DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.\",\"Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module.\"],\"relationship_coverage\":null,\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_f3d0a1e34530d4cb59a243357cadb7e4f41515bff164b0e4689fe256dcb7c465",
+    "subject": {
+      "name": "SNAKE.EXE",
+      "digest": {
+        "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821"
+      },
+      "local_path": "/workspace/scratch/488b0609771f/work/original/SNAKE.EXE",
+      "format": "dos-mz",
+      "architecture": "x86"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "dos-mz",
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "call_relationship_coverage": "function-body-call-coverage-v5",
+        "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "instruction_references": "exact-address-incoming-without-synthetic-entry-v2",
+        "function_boundary_observations": "ghidra-function-boundary-limitations-v4",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "load_image_evidence": "independent-mz-mapping-relocations-v2",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "MzLoader",
+        "language_id": "x86:LE:16:Real Mode",
+        "compiler_spec_id": "default",
+        "load_segment": "0x1000",
+        "address_coordinates": "linear-byte-offset",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "00872daa045ec4c4f503e0aa00aa9e560f42b5c7fcdcd08e54830338c2ca16b7"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_pseudo_code",
+    "parameters": {
+      "procedure": "0x152ff"
+    },
+    "raw_result": {
+      "value": "\nvoid __cdecl16far FUN_144d_0e2f(undefined2 param_1,int param_2,int param_3)\n\n{\n  bool bVar1;\n  undefined2 uVar2;\n  int iVar3;\n  undefined2 in_DX;\n  undefined2 uVar4;\n  undefined2 local_8;\n  undefined2 local_6;\n  undefined2 local_4;\n  \n  if (param_3 == 0) {\n    local_4 = 1;\n    local_6 = 0x12;\n  }\n  else {\n    local_4 = 0x12;\n    local_6 = 1;\n  }\n  bVar1 = true;\n  do {\n    if (!bVar1) {\n      return;\n    }\n    uVar2 = FUN_1c10_000a();\n    if (local_4 == local_6) {\n      bVar1 = false;\n    }\n    FUN_1c85_0f74(uVar2,in_DX);\n    FUN_144d_0c8f(param_1);\n    if (param_3 == 0) {\n      local_4 = local_4 + 2;\n      if (local_6 < local_4) goto LAB_144d_0ea0;\n    }\n    else {\n      local_4 = local_4 + -2;\n      if (local_4 < local_6) {\nLAB_144d_0ea0:\n        local_4 = local_6;\n      }\n    }\n    FUN_1c85_0ead(0x1f2,param_2,0x25f,param_2 + 0x11,DAT_2679_40bc,DAT_2679_40be,0);\n    if (local_4 < 0xc) {\n      local_8 = 6;\n      iVar3 = (param_2 - local_4) + 0xc;\n    }\n    else {\n      local_8 = 0x12 - local_4;\n      iVar3 = param_2;\n    }\n    FUN_1c85_0bb2(0x16,iVar3,0x83,param_2 + 0x11,DAT_2679_1aca,DAT_2679_1acc,0x1f2,param_2 - local_8\n                  ,DAT_2679_40bc,DAT_2679_40be);\n    FUN_1c85_0bb2(0,local_4 + 1,0x6d,0x11,DAT_2679_1ad6,DAT_2679_1ad8,0x1f2,param_2 + local_4 + 1,\n                  DAT_2679_40bc,DAT_2679_40be);\n    FUN_1c85_0b83(0x1dc,param_1,DAT_2679_1ad2,DAT_2679_1ad4,DAT_2679_40bc,DAT_2679_40be);\n    uVar4 = in_DX;\n    FUN_1c85_0fb1();\n    in_DX = 1;\n    FUN_1c10_0016(uVar2,uVar4,1,0);\n  } while( true );\n}\n\n",
+      "limitations": []
+    },
+    "normalized_result": "\nvoid __cdecl16far FUN_144d_0e2f(undefined2 param_1,int param_2,int param_3)\n\n{\n  bool bVar1;\n  undefined2 uVar2;\n  int iVar3;\n  undefined2 in_DX;\n  undefined2 uVar4;\n  undefined2 local_8;\n  undefined2 local_6;\n  undefined2 local_4;\n  \n  if (param_3 == 0) {\n    local_4 = 1;\n    local_6 = 0x12;\n  }\n  else {\n    local_4 = 0x12;\n    local_6 = 1;\n  }\n  bVar1 = true;\n  do {\n    if (!bVar1) {\n      return;\n    }\n    uVar2 = FUN_1c10_000a();\n    if (local_4 == local_6) {\n      bVar1 = false;\n    }\n    FUN_1c85_0f74(uVar2,in_DX);\n    FUN_144d_0c8f(param_1);\n    if (param_3 == 0) {\n      local_4 = local_4 + 2;\n      if (local_6 < local_4) goto LAB_144d_0ea0;\n    }\n    else {\n      local_4 = local_4 + -2;\n      if (local_4 < local_6) {\nLAB_144d_0ea0:\n        local_4 = local_6;\n      }\n    }\n    FUN_1c85_0ead(0x1f2,param_2,0x25f,param_2 + 0x11,DAT_2679_40bc,DAT_2679_40be,0);\n    if (local_4 < 0xc) {\n      local_8 = 6;\n      iVar3 = (param_2 - local_4) + 0xc;\n    }\n    else {\n      local_8 = 0x12 - local_4;\n      iVar3 = param_2;\n    }\n    FUN_1c85_0bb2(0x16,iVar3,0x83,param_2 + 0x11,DAT_2679_1aca,DAT_2679_1acc,0x1f2,param_2 - local_8\n                  ,DAT_2679_40bc,DAT_2679_40be);\n    FUN_1c85_0bb2(0,local_4 + 1,0x6d,0x11,DAT_2679_1ad6,DAT_2679_1ad8,0x1f2,param_2 + local_4 + 1,\n                  DAT_2679_40bc,DAT_2679_40be);\n    FUN_1c85_0b83(0x1dc,param_1,DAT_2679_1ad2,DAT_2679_1ad4,DAT_2679_40bc,DAT_2679_40be);\n    uVar4 = in_DX;\n    FUN_1c85_0fb1();\n    in_DX = 1;\n    FUN_1c10_0016(uVar2,uVar4,1,0);\n  } while( true );\n}\n\n",
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+      "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+      "DOS MZ uses 16-bit x86 real mode with the Ghidra load segment 0x1000. Returned addresses are linear byte coordinates; they do not identify a unique segment:offset alias.",
+      "Static DOS analysis does not emulate BIOS, DOS interrupts, device ports, or self-modifying unpacking code. Packed targets require a separately identified unpacked artifact for original-program analysis; appended overlays are not the initialized load module."
+    ],
+    "relationship_coverage": null,
+    "locations": [],
+    "evidence_links": []
+  }
+}

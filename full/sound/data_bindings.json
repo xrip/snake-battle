@@ -1,0 +1,120 @@
+{
+  "functions": {
+    "_snd_0158": {
+      "address": "1341:0158"
+    },
+    "_snd_01A7": {
+      "address": "1341:01A7"
+    },
+    "_snd_01CB": {
+      "address": "1341:01CB"
+    },
+    "_snd_01D5": {
+      "address": "1341:01D5"
+    },
+    "_snd_01DC": {
+      "address": "1341:01DC"
+    },
+    "_snd_0217": {
+      "address": "1341:0217"
+    },
+    "_snd_021C": {
+      "address": "1341:021C"
+    },
+    "_snd_0269": {
+      "address": "1341:0269"
+    },
+    "_snd_029B": {
+      "address": "1341:029B"
+    },
+    "_snd_02B7": {
+      "address": "1341:02B7"
+    },
+    "_snd_066B": {
+      "address": "1341:066B"
+    },
+    "_snd_0857": {
+      "address": "1341:0857"
+    },
+    "_snd_0C3D": {
+      "address": "1341:0C3D"
+    },
+    "_snd_235A": {
+      "address": "1341:235A"
+    }
+  },
+  "externals": {
+    "_snd_basic_commands": "1679:0F08",
+    "_snd_midi_tags": "1679:0F24",
+    "_snd_paused": "1679:0F2C",
+    "_snd_disabled": "1679:0F2E",
+    "_snd_extended_commands": "1679:0F30",
+    "_snd_command_kinds": "1679:0F60",
+    "_snd_midi_lengths": "1679:0F78",
+    "_snd_channel_masks": "1679:0F80",
+    "_snd_default_instrument": "1679:0FA0",
+    "_snd_instrument_fields": "1679:0FBE",
+    "_snd_parameter_map": "1679:10D2",
+    "_snd_max_values": "1679:10E2",
+    "_snd_step_counts": "1679:1102",
+    "_snd_opl_index_delay": "1679:1142",
+    "_snd_opl_data_delay": "1679:1144",
+    "_snd_modulator_slots": "1679:1146",
+    "_snd_carrier_slots": "1679:114F",
+    "_snd_channel_frequency": "1679:1158",
+    "_snd_register_fields": "1679:117C",
+    "_snd_frequencies": "1679:11B8",
+    "_snd_octaves": "1679:1248",
+    "_snd_semitones": "1679:12C8",
+    "_snd_master_volume": "1679:413C",
+    "_snd_resources": "1679:413E",
+    "_snd_timer_accumulator": "1679:4142",
+    "_snd_tick_period": "1679:4144",
+    "_snd_parse_nesting": "1679:4148",
+    "_snd_parse_finished": "1679:4149",
+    "_snd_parse_cursor": "1679:414A",
+    "_snd_event_channel": "1679:414E",
+    "_snd_event_note": "1679:4150",
+    "_snd_event_velocity": "1679:4152",
+    "_snd_scan_note_count": "1679:4154",
+    "_snd_scan_end_tick": "1679:4156",
+    "_snd_note_channels": "1679:415A",
+    "_snd_sysex_buffer": "1679:425A",
+    "_snd_players": "1679:42DA",
+    "_snd_sequences": "1679:42FE",
+    "_snd_hooks": "1679:4366",
+    "_snd_held_notes": "1679:43EA",
+    "_snd_held_active": "1679:45CA",
+    "_snd_held_free": "1679:45CC",
+    "_snd_held_cursor": "1679:45CE",
+    "_snd_fade_tick_scale": "1679:45D0",
+    "_snd_fade_state": "1679:45D2",
+    "_snd_fades": "1679:45D4",
+    "_snd_queue_read": "1679:45F4",
+    "_snd_queue": "1679:45F6",
+    "_snd_queue_write": "1679:49F6",
+    "_snd_building_queue": "1679:49F8",
+    "_snd_queued_marker": "1679:49F9",
+    "_snd_queued_sound": "1679:49FA",
+    "_snd_trigger_count": "1679:49FC",
+    "_snd_scanning": "1679:49FE",
+    "_snd_parts": "1679:4A00",
+    "_snd_part_instruments": "1679:4E00",
+    "_snd_global_instruments": "1679:51C0",
+    "_snd_voices": "1679:5580",
+    "_snd_voice_counter": "1679:58F4",
+    "_snd_opl_cache": "1679:58F6",
+    "_snd_volume_products": "1679:59F6",
+    "_snd_voice_tick": "1679:58F2",
+    "_snd_voice_tick_pad": "1679:58F3",
+    "_snd_random_seed": "1679:1100",
+    "_snd_voice_counter_pad": "1679:58F5"
+  },
+  "segments": {
+    "_DATA": "1679:0F08",
+    "_BSS": "1679:413C"
+  },
+  "groups": {
+    "DGROUP": "1679:0000"
+  }
+}

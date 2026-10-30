@@ -1,0 +1,337 @@
+{
+  "original_exe_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "compiled_exe_sha256": "d4769303a2c4349821fd7cb34d68fa3e40e648963a9cf50e65356a9b8c671bf1",
+  "compilation": "Borland C++ 3.1: -ml -a- -k -O -r- -Z -G- -M",
+  "functions": [
+    {
+      "symbol": "_sb_mirror_x",
+      "size": 167,
+      "original_file_offset": 33437,
+      "original_image_offset": 29341,
+      "compiled_file_offset": 4830,
+      "compiled_cs_ip": "010D:000E",
+      "original_sha256": "1914ee4f27b684f07fe48b14f33888d4396aad2cfdad0c9d0404cc88d5603465",
+      "compiled_sha256": "f362d7e18bb0576726a195fa455efac66f611ade02da6fa978ecf40d3bafa774",
+      "raw_equal": false,
+      "raw_difference_count": 3,
+      "raw_differences": [
+        {
+          "relative_offset": 117,
+          "original": 169,
+          "compiled": 85
+        },
+        {
+          "relative_offset": 156,
+          "original": 142,
+          "compiled": 209
+        },
+        {
+          "relative_offset": 157,
+          "original": 43,
+          "compiled": 13
+        }
+      ],
+      "link_bindings": [
+        {
+          "symbol": "F_SCOPY@",
+          "relative_operand_offset": 117,
+          "width": 4,
+          "original_file_offset": 33554,
+          "compiled_file_offset": 4947,
+          "original_cs_ip": "0000:03A9",
+          "compiled_cs_ip": "0000:0355",
+          "original_bytes": "a9030000",
+          "compiled_bytes": "55030000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        },
+        {
+          "symbol": "_memcpy",
+          "relative_operand_offset": 156,
+          "width": 4,
+          "original_file_offset": 33593,
+          "compiled_file_offset": 4986,
+          "original_cs_ip": "0000:2B8E",
+          "compiled_cs_ip": "0000:0DD1",
+          "original_bytes": "8e2b0000",
+          "compiled_bytes": "d10d0000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        }
+      ],
+      "binding_adjusted_equal": true,
+      "unexpected_difference_offsets": [],
+      "matched_bytes_after_declared_link_bindings": 167
+    },
+    {
+      "symbol": "_sb_rotate_clockwise",
+      "size": 167,
+      "original_file_offset": 33604,
+      "original_image_offset": 29508,
+      "compiled_file_offset": 4997,
+      "compiled_cs_ip": "010D:00B5",
+      "original_sha256": "bfbe979c809ac2fad7eb779e9fc48cdbc36d91aa553714b73c85a18d1ba168be",
+      "compiled_sha256": "b14183b6862ff19ce72c8ebf5fb61c7cb724a4e580265e19609f21250ea03958",
+      "raw_equal": false,
+      "raw_difference_count": 3,
+      "raw_differences": [
+        {
+          "relative_offset": 117,
+          "original": 169,
+          "compiled": 85
+        },
+        {
+          "relative_offset": 156,
+          "original": 142,
+          "compiled": 209
+        },
+        {
+          "relative_offset": 157,
+          "original": 43,
+          "compiled": 13
+        }
+      ],
+      "link_bindings": [
+        {
+          "symbol": "F_SCOPY@",
+          "relative_operand_offset": 117,
+          "width": 4,
+          "original_file_offset": 33721,
+          "compiled_file_offset": 5114,
+          "original_cs_ip": "0000:03A9",
+          "compiled_cs_ip": "0000:0355",
+          "original_bytes": "a9030000",
+          "compiled_bytes": "55030000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        },
+        {
+          "symbol": "_memcpy",
+          "relative_operand_offset": 156,
+          "width": 4,
+          "original_file_offset": 33760,
+          "compiled_file_offset": 5153,
+          "original_cs_ip": "0000:2B8E",
+          "compiled_cs_ip": "0000:0DD1",
+          "original_bytes": "8e2b0000",
+          "compiled_bytes": "d10d0000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        }
+      ],
+      "binding_adjusted_equal": true,
+      "unexpected_difference_offsets": [],
+      "matched_bytes_after_declared_link_bindings": 167
+    },
+    {
+      "symbol": "_sb_compare_matches",
+      "size": 86,
+      "original_file_offset": 37522,
+      "original_image_offset": 33426,
+      "compiled_file_offset": 5164,
+      "compiled_cs_ip": "010D:015C",
+      "original_sha256": "2f5beb3259668a1b42ae945d7d151df4ffd314734810c4bd5a393e8f8c3a2d46",
+      "compiled_sha256": "2f5beb3259668a1b42ae945d7d151df4ffd314734810c4bd5a393e8f8c3a2d46",
+      "raw_equal": true,
+      "raw_difference_count": 0,
+      "raw_differences": [],
+      "link_bindings": [],
+      "binding_adjusted_equal": true,
+      "unexpected_difference_offsets": [],
+      "matched_bytes_after_declared_link_bindings": 86
+    },
+    {
+      "symbol": "_sb_match_card",
+      "size": 530,
+      "original_file_offset": 37608,
+      "original_image_offset": 33512,
+      "compiled_file_offset": 5250,
+      "compiled_cs_ip": "010D:01B2",
+      "original_sha256": "d076e1c5b7713b469d3b5105ed59698a58483e113ed6d8cfaea2cf12f3a27799",
+      "compiled_sha256": "4e52910e576f091312fd0754124d2361e59ca1293561552b151d5244480c06a7",
+      "raw_equal": false,
+      "raw_difference_count": 13,
+      "raw_differences": [
+        {
+          "relative_offset": 13,
+          "original": 163,
+          "compiled": 152
+        },
+        {
+          "relative_offset": 14,
+          "original": 4,
+          "compiled": 0
+        },
+        {
+          "relative_offset": 21,
+          "original": 169,
+          "compiled": 85
+        },
+        {
+          "relative_offset": 31,
+          "original": 173,
+          "compiled": 162
+        },
+        {
+          "relative_offset": 32,
+          "original": 4,
+          "compiled": 0
+        },
+        {
+          "relative_offset": 39,
+          "original": 169,
+          "compiled": 85
+        },
+        {
+          "relative_offset": 49,
+          "original": 183,
+          "compiled": 172
+        },
+        {
+          "relative_offset": 50,
+          "original": 4,
+          "compiled": 0
+        },
+        {
+          "relative_offset": 57,
+          "original": 169,
+          "compiled": 85
+        },
+        {
+          "relative_offset": 65,
+          "original": 158,
+          "compiled": 150
+        },
+        {
+          "relative_offset": 66,
+          "original": 4,
+          "compiled": 0
+        },
+        {
+          "relative_offset": 69,
+          "original": 156,
+          "compiled": 148
+        },
+        {
+          "relative_offset": 70,
+          "original": 4,
+          "compiled": 0
+        }
+      ],
+      "link_bindings": [
+        {
+          "symbol": "F_SCOPY@",
+          "relative_operand_offset": 21,
+          "width": 4,
+          "original_file_offset": 37629,
+          "compiled_file_offset": 5271,
+          "original_cs_ip": "0000:03A9",
+          "compiled_cs_ip": "0000:0355",
+          "original_bytes": "a9030000",
+          "compiled_bytes": "55030000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        },
+        {
+          "symbol": "F_SCOPY@",
+          "relative_operand_offset": 39,
+          "width": 4,
+          "original_file_offset": 37647,
+          "compiled_file_offset": 5289,
+          "original_cs_ip": "0000:03A9",
+          "compiled_cs_ip": "0000:0355",
+          "original_bytes": "a9030000",
+          "compiled_bytes": "55030000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        },
+        {
+          "symbol": "F_SCOPY@",
+          "relative_operand_offset": 57,
+          "width": 4,
+          "original_file_offset": 37665,
+          "compiled_file_offset": 5307,
+          "original_cs_ip": "0000:03A9",
+          "compiled_cs_ip": "0000:0355",
+          "original_bytes": "a9030000",
+          "compiled_bytes": "55030000",
+          "meaning": "Link-resolved FAR CALL operand; only segment half is an MZ loader relocation"
+        },
+        {
+          "symbol": "seen initializer",
+          "relative_operand_offset": 13,
+          "width": 2,
+          "original_file_offset": 37621,
+          "compiled_file_offset": 5263,
+          "original_ds_offset": "1679:04A3",
+          "compiled_ds_offset": "014A:0098",
+          "original_bytes": "a304",
+          "compiled_bytes": "9800",
+          "original_target_file_offset": 97331,
+          "compiled_target_file_offset": 5944,
+          "verified_target_bytes": "00000000000000000000",
+          "meaning": "Link-resolved DS-relative static-data address; referenced initializer bytes checked in both EXEs"
+        },
+        {
+          "symbol": "score initializer",
+          "relative_operand_offset": 31,
+          "width": 2,
+          "original_file_offset": 37639,
+          "compiled_file_offset": 5281,
+          "original_ds_offset": "1679:04AD",
+          "compiled_ds_offset": "014A:00A2",
+          "original_bytes": "ad04",
+          "compiled_bytes": "a200",
+          "original_target_file_offset": 97341,
+          "compiled_target_file_offset": 5954,
+          "verified_target_bytes": "00000000000000000000",
+          "meaning": "Link-resolved DS-relative static-data address; referenced initializer bytes checked in both EXEs"
+        },
+        {
+          "symbol": "AND/OR initializer",
+          "relative_operand_offset": 49,
+          "width": 2,
+          "original_file_offset": 37657,
+          "compiled_file_offset": 5299,
+          "original_ds_offset": "1679:04B7",
+          "compiled_ds_offset": "014A:00AC",
+          "original_bytes": "b704",
+          "compiled_bytes": "ac00",
+          "original_target_file_offset": 97351,
+          "compiled_target_file_offset": 5964,
+          "verified_target_bytes": "01000000000001000100",
+          "meaning": "Link-resolved DS-relative static-data address; referenced initializer bytes checked in both EXEs"
+        },
+        {
+          "symbol": "no-match.score",
+          "relative_operand_offset": 65,
+          "width": 2,
+          "original_file_offset": 37673,
+          "compiled_file_offset": 5315,
+          "original_ds_offset": "1679:049E",
+          "compiled_ds_offset": "014A:0096",
+          "original_bytes": "9e04",
+          "compiled_bytes": "9600",
+          "original_target_file_offset": 97326,
+          "compiled_target_file_offset": 5942,
+          "verified_target_bytes": "0000",
+          "meaning": "Link-resolved DS-relative static-data address; referenced initializer bytes checked in both EXEs"
+        },
+        {
+          "symbol": "no-match.matched",
+          "relative_operand_offset": 69,
+          "width": 2,
+          "original_file_offset": 37677,
+          "compiled_file_offset": 5319,
+          "original_ds_offset": "1679:049C",
+          "compiled_ds_offset": "014A:0094",
+          "original_bytes": "9c04",
+          "compiled_bytes": "9400",
+          "original_target_file_offset": 97324,
+          "compiled_target_file_offset": 5940,
+          "verified_target_bytes": "0000",
+          "meaning": "Link-resolved DS-relative static-data address; referenced initializer bytes checked in both EXEs"
+        }
+      ],
+      "binding_adjusted_equal": true,
+      "unexpected_difference_offsets": [],
+      "matched_bytes_after_declared_link_bindings": 530
+    }
+  ],
+  "passed": true,
+  "scope": "Function-level code generation only. Borland C++ 3.1 C, no inline assembly or embedded executable bytes. Declared FAR CALL and DS-relative static-data addresses are explicitly rebound in memory solely for comparison. This does not reconstruct or claim a byte-identical full EXE."
+}

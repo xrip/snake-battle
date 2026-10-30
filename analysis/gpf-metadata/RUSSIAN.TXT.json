@@ -1,0 +1,435 @@
+{
+  "format": "DOS CP866 CRLF text",
+  "lines": [
+    {
+      "index": 0,
+      "characters": 106,
+      "text": "  !@#$% &   _   QWERTYUIOP{}  ASDFGHJKL  ~  ZXCVBNM .  1234567890-   QWERTYUIOP    ASDFGHJKL '   ZXCVBNM ."
+    },
+    {
+      "index": 1,
+      "characters": 107,
+      "text": "  !@#$%^&*()_+  ЙЦУКЕНГШЩЗХЪ  ФЫВАПРОЛДЖЭ~ |ЯЧСМИТЬБЮ? 1234567890-=\\ йцукенгшщзхъ  фывапролджэ` \\ячсмитьбю/"
+    },
+    {
+      "index": 2,
+      "characters": 47,
+      "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\\[];',./"
+    },
+    {
+      "index": 3,
+      "characters": 47,
+      "text": "abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:\"<>?"
+    },
+    {
+      "index": 4,
+      "characters": 53,
+      "text": "АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ1234567890`-=\\[];',./"
+    },
+    {
+      "index": 5,
+      "characters": 53,
+      "text": "абвгдежзийклмнопрстуфхцчшщъыьэюя!@#$%^&*()~_+|{}:\"<>?"
+    },
+    {
+      "index": 6,
+      "characters": 4,
+      "text": " БОЙ"
+    },
+    {
+      "index": 7,
+      "characters": 19,
+      "text": "ПРОГРАММА ПОВЕДЕНИЯ"
+    },
+    {
+      "index": 8,
+      "characters": 11,
+      "text": "ВЫБОР ЦВЕТА"
+    },
+    {
+      "index": 9,
+      "characters": 14,
+      "text": "ИСПРАВЬ ПАРОЛЬ"
+    },
+    {
+      "index": 10,
+      "characters": 11,
+      "text": "    ПРАВИЛА"
+    },
+    {
+      "index": 11,
+      "characters": 13,
+      "text": "БЛАГОДАРНОСТИ"
+    },
+    {
+      "index": 12,
+      "characters": 12,
+      "text": "НОВЫЙ ПАРОЛЬ"
+    },
+    {
+      "index": 13,
+      "characters": 5,
+      "text": "ПОЧТА"
+    },
+    {
+      "index": 14,
+      "characters": 5,
+      "text": "ВЫХОД"
+    },
+    {
+      "index": 15,
+      "characters": 7,
+      "text": "НОВИЧОК"
+    },
+    {
+      "index": 16,
+      "characters": 8,
+      "text": "ЛЮБИТЕЛЬ"
+    },
+    {
+      "index": 17,
+      "characters": 7,
+      "text": "ЭКСПЕРТ"
+    },
+    {
+      "index": 18,
+      "characters": 3,
+      "text": "Имя"
+    },
+    {
+      "index": 19,
+      "characters": 7,
+      "text": "Рэйтинг"
+    },
+    {
+      "index": 20,
+      "characters": 10,
+      "text": "Комментаии"
+    },
+    {
+      "index": 21,
+      "characters": 7,
+      "text": " НАЧАТЬ"
+    },
+    {
+      "index": 22,
+      "characters": 8,
+      "text": "МЕДЛЕННО"
+    },
+    {
+      "index": 23,
+      "characters": 6,
+      "text": "  СТОП"
+    },
+    {
+      "index": 24,
+      "characters": 6,
+      "text": "  ЗВУК"
+    },
+    {
+      "index": 25,
+      "characters": 9,
+      "text": "КОНЕЦ БОЯ"
+    },
+    {
+      "index": 26,
+      "characters": 11,
+      "text": "своя голова"
+    },
+    {
+      "index": 27,
+      "characters": 12,
+      "text": "голова врага"
+    },
+    {
+      "index": 28,
+      "characters": 9,
+      "text": "свое тело"
+    },
+    {
+      "index": 29,
+      "characters": 10,
+      "text": "тело врага"
+    },
+    {
+      "index": 30,
+      "characters": 10,
+      "text": "свой хвост"
+    },
+    {
+      "index": 31,
+      "characters": 11,
+      "text": "хвост врага"
+    },
+    {
+      "index": 32,
+      "characters": 6,
+      "text": "барьер"
+    },
+    {
+      "index": 33,
+      "characters": 11,
+      "text": "пустое поле"
+    },
+    {
+      "index": 34,
+      "characters": 5,
+      "text": "КРОМЕ"
+    },
+    {
+      "index": 35,
+      "characters": 8,
+      "text": "ИЛИ-ЦВЕТ"
+    },
+    {
+      "index": 36,
+      "characters": 6,
+      "text": "И-ЦВЕТ"
+    },
+    {
+      "index": 37,
+      "characters": 13,
+      "text": "РЕДАКТИРОВАТЬ"
+    },
+    {
+      "index": 38,
+      "characters": 8,
+      "text": "ВСТАВИТЬ"
+    },
+    {
+      "index": 39,
+      "characters": 6,
+      "text": "УБРАТЬ"
+    },
+    {
+      "index": 40,
+      "characters": 13,
+      "text": "ОСНОВНОЕ МЕНЮ"
+    },
+    {
+      "index": 41,
+      "characters": 11,
+      "text": "ДЛЯ ЭСПЕРТА"
+    },
+    {
+      "index": 42,
+      "characters": 12,
+      "text": "ДЛЯ ЛЮБИТЕЛЯ"
+    },
+    {
+      "index": 43,
+      "characters": 7,
+      "text": "Пароль:"
+    },
+    {
+      "index": 44,
+      "characters": 12,
+      "text": "Новый пароль"
+    },
+    {
+      "index": 45,
+      "characters": 5,
+      "text": "ВЫХОД"
+    },
+    {
+      "index": 46,
+      "characters": 17,
+      "text": "Неправильный файл"
+    },
+    {
+      "index": 47,
+      "characters": 13,
+      "text": "Введите слово"
+    },
+    {
+      "index": 48,
+      "characters": 11,
+      "text": "Страница %d"
+    },
+    {
+      "index": 49,
+      "characters": 9,
+      "text": "Строка %d"
+    },
+    {
+      "index": 50,
+      "characters": 10,
+      "text": "Позиция %d"
+    },
+    {
+      "index": 51,
+      "characters": 10,
+      "text": "Колонка %c"
+    },
+    {
+      "index": 52,
+      "characters": 9,
+      "text": "Строка %d"
+    },
+    {
+      "index": 53,
+      "characters": 22,
+      "text": "Регистрационный номер:"
+    },
+    {
+      "index": 54,
+      "characters": 14,
+      "text": "Число попыток:"
+    },
+    {
+      "index": 55,
+      "characters": 15,
+      "text": "Сетевой пароль:"
+    },
+    {
+      "index": 56,
+      "characters": 19,
+      "text": "Имя файла для сети:"
+    },
+    {
+      "index": 57,
+      "characters": 25,
+      "text": "Файл не может быть открыт"
+    },
+    {
+      "index": 58,
+      "characters": 26,
+      "text": "Не разрешено в демо-версии"
+    },
+    {
+      "index": 59,
+      "characters": 27,
+      "text": "Не соханяется в демо_версии"
+    },
+    {
+      "index": 60,
+      "characters": 11,
+      "text": "Демо-версия"
+    },
+    {
+      "index": 61,
+      "characters": 26,
+      "text": "Не разрешено в демо-версии"
+    },
+    {
+      "index": 62,
+      "characters": 27,
+      "text": "Автор идеи и дизайнер игры:"
+    },
+    {
+      "index": 63,
+      "characters": 21,
+      "text": "     Евгений СОТНИКОВ"
+    },
+    {
+      "index": 64,
+      "characters": 12,
+      "text": "Программист:"
+    },
+    {
+      "index": 65,
+      "characters": 17,
+      "text": "     Виктор Лютый"
+    },
+    {
+      "index": 66,
+      "characters": 10,
+      "text": "Художники:"
+    },
+    {
+      "index": 67,
+      "characters": 42,
+      "text": "     Сергей Белов         Геннадий Денисов"
+    },
+    {
+      "index": 68,
+      "characters": 5,
+      "text": "Звук:"
+    },
+    {
+      "index": 69,
+      "characters": 25,
+      "text": "     Константин Миронович"
+    },
+    {
+      "index": 70,
+      "characters": 26,
+      "text": "Неоценимую помощь оказали:"
+    },
+    {
+      "index": 71,
+      "characters": 41,
+      "text": "     Дмитрий Маслов        Дмитрий Долгов"
+    },
+    {
+      "index": 72,
+      "characters": 8,
+      "text": "А также:"
+    },
+    {
+      "index": 73,
+      "characters": 40,
+      "text": "     Михаил Николаенко    Дмитрий Пашков"
+    },
+    {
+      "index": 74,
+      "characters": 40,
+      "text": "     Наталья Дмитриева    Елена Тумакова"
+    },
+    {
+      "index": 75,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 76,
+      "characters": 30,
+      "text": "Другие игры, созданные ГЕЙМОС:"
+    },
+    {
+      "index": 77,
+      "characters": 37,
+      "text": "     7Цветов(Филлер), Ветка, Змеелов,"
+    },
+    {
+      "index": 78,
+      "characters": 41,
+      "text": "     Тетриллер, Логическая серия, Регата."
+    },
+    {
+      "index": 79,
+      "characters": 30,
+      "text": "Адрес: 117602, Россия, Москва,"
+    },
+    {
+      "index": 80,
+      "characters": 31,
+      "text": "         Олимпийская деревня 27"
+    },
+    {
+      "index": 81,
+      "characters": 38,
+      "text": "Факс: (095)437-5629 Тел: (095)437-5672"
+    },
+    {
+      "index": 82,
+      "characters": 1,
+      "text": "%"
+    },
+    {
+      "index": 83,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 84,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 85,
+      "characters": 1,
+      "text": "\u001a"
+    }
+  ]
+}

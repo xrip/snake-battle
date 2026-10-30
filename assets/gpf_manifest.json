@@ -1,0 +1,1534 @@
+{
+  "format": "GAMOS-GPF-SnakeBattle-2.3",
+  "signature_hex": "1a47414d4f53205041434b45442046494c4500",
+  "header_bytes_19_22_hex": "01000001",
+  "reserved_25_32_hex": "0000000000000000",
+  "original_size": 269593,
+  "original_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+  "entries": [
+    {
+      "index": 0,
+      "name": "LETTER.BLO",
+      "name_field_hex": "4c45545445522e424c4f000000",
+      "method": 1,
+      "original_offset": 1837,
+      "original_stored_size": 1773,
+      "directory_decoded_size": 8992,
+      "decoded_size": 8992,
+      "decoded_sha256": "7617e6c03303cbefd2114b2df979abc99c6c8338c3b77a76c4f9168bc66f73d0",
+      "stored_sha256": "59a478c0b2bd42d0cf8bd91c631a94d628f6a8f0cf1632e4c8dc10fb36837099",
+      "chunks": [
+        {
+          "stored_size": 1773,
+          "decoded_size": 8992
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "PICKUP.BLO",
+      "name_field_hex": "5049434b55502e424c4f000000",
+      "method": 1,
+      "original_offset": 3610,
+      "original_stored_size": 65,
+      "directory_decoded_size": 160,
+      "decoded_size": 160,
+      "decoded_sha256": "d5f3a72475e8e294834ce94858abe958f3643e2b2e17fb72c6fbc629c5db7299",
+      "stored_sha256": "1a956dbf703eeecf36f9ad9276fd241238bb3f6ed64f943214723520af0ebb7e",
+      "chunks": [
+        {
+          "stored_size": 65,
+          "decoded_size": 160
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "KEYDOWN.BLO",
+      "name_field_hex": "4b4559444f574e2e424c4f0000",
+      "method": 1,
+      "original_offset": 3675,
+      "original_stored_size": 89,
+      "directory_decoded_size": 352,
+      "decoded_size": 352,
+      "decoded_sha256": "be472ccfa9bde3a5862cf0389578f282fce59b0e575cf89ce06159aece355e5e",
+      "stored_sha256": "8462b7d20391b74643b88977c02ce4ec9a7d4dbb1a8759ee8dd5aa413721ea3a",
+      "chunks": [
+        {
+          "stored_size": 89,
+          "decoded_size": 352
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "KEYUP.BLO",
+      "name_field_hex": "4b455955502e424c4f00000000",
+      "method": 1,
+      "original_offset": 3764,
+      "original_stored_size": 97,
+      "directory_decoded_size": 352,
+      "decoded_size": 352,
+      "decoded_sha256": "8dff9b2492ddbea13d97af57f247157288b9ad591393d03a8cbfc4ef72a6b955",
+      "stored_sha256": "3fc854b767bd9c702e9edbac501a28d0b34c8f59940003ea7cf2b68db278f55c",
+      "chunks": [
+        {
+          "stored_size": 97,
+          "decoded_size": 352
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "COLOR.BLO",
+      "name_field_hex": "434f4c4f522e424c4f00000000",
+      "method": 1,
+      "original_offset": 3861,
+      "original_stored_size": 1349,
+      "directory_decoded_size": 10400,
+      "decoded_size": 10400,
+      "decoded_sha256": "2fe7654a86e856fad7c82974ff7dbbe2c03e3102209e513eb6cf144668b48dee",
+      "stored_sha256": "2b05f6780cc27f421d2d631e0e889f1c0c4d63763a669e8dcb6d7b928d89bd92",
+      "chunks": [
+        {
+          "stored_size": 1349,
+          "decoded_size": 10400
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "COL-UP.BLO",
+      "name_field_hex": "434f4c2d55502e424c4f000000",
+      "method": 1,
+      "original_offset": 5210,
+      "original_stored_size": 64,
+      "directory_decoded_size": 160,
+      "decoded_size": 160,
+      "decoded_sha256": "889fd5385229636f7978e236b470fd099b92bbd164566c840c17828805f86eba",
+      "stored_sha256": "5b04ba6a62b791c20ab4b24e6151fa7a9cf363f48c8fab670a3e8b17e2af7922",
+      "chunks": [
+        {
+          "stored_size": 64,
+          "decoded_size": 160
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "COLDOWN.BLO",
+      "name_field_hex": "434f4c444f574e2e424c4f0000",
+      "method": 1,
+      "original_offset": 5274,
+      "original_stored_size": 76,
+      "directory_decoded_size": 160,
+      "decoded_size": 160,
+      "decoded_sha256": "308897eca43ac50def671b68883f3d383d487fdf3f39ef651cfd40152079c017",
+      "stored_sha256": "2c3b16ad810aac83ef6e10e36cb8f9b6f80104e962cca7b35677791a0657cc19",
+      "chunks": [
+        {
+          "stored_size": 76,
+          "decoded_size": 160
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "PASOPEN.BLO",
+      "name_field_hex": "5041534f50454e2e424c4f0000",
+      "method": 1,
+      "original_offset": 5350,
+      "original_stored_size": 4563,
+      "directory_decoded_size": 10400,
+      "decoded_size": 10400,
+      "decoded_sha256": "128ac9b39ca8939e27dbd051fe8be127e41363fd16e2768e94365395e2a1b6ab",
+      "stored_sha256": "7023efe56ce03dc1d5f5edbdae8ae59855b5dfee26b254da29708fc94a77ce4a",
+      "chunks": [
+        {
+          "stored_size": 4563,
+          "decoded_size": 10400
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "CLSCARD.BLO",
+      "name_field_hex": "434c53434152442e424c4f0000",
+      "method": 1,
+      "original_offset": 9913,
+      "original_stored_size": 1802,
+      "directory_decoded_size": 7200,
+      "decoded_size": 7200,
+      "decoded_sha256": "5fd3d79395292f53f4e3949bac86d65a4372dc3ab88ccf818c20477bf92aa33d",
+      "stored_sha256": "1fa9eaa6bb84f8b15231a3986fbfcf7dded658c21618346f7ceb6a4bfb1d2d10",
+      "chunks": [
+        {
+          "stored_size": 1802,
+          "decoded_size": 7200
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "OPNCARD.BLO",
+      "name_field_hex": "4f504e434152442e424c4f0000",
+      "method": 1,
+      "original_offset": 11715,
+      "original_stored_size": 831,
+      "directory_decoded_size": 6560,
+      "decoded_size": 6560,
+      "decoded_sha256": "8aaffb872c3d0cb7c53bf878793b54bfe708c8151ab7998e27c0979c6f151098",
+      "stored_sha256": "55ebdf110c9bc2753d9ca33a742422bfeffb4a63f38c9eaf539bd79e6251fbaf",
+      "chunks": [
+        {
+          "stored_size": 831,
+          "decoded_size": 6560
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "CARD.BLO",
+      "name_field_hex": "434152442e424c4f0000000000",
+      "method": 1,
+      "original_offset": 12546,
+      "original_stored_size": 678,
+      "directory_decoded_size": 5344,
+      "decoded_size": 5344,
+      "decoded_sha256": "7e48d4c6d8eec9c2c521bb026b0478a53607d1be297f96279df88b6db55a7f7e",
+      "stored_sha256": "60ce6fa5e446e87330c90166654a92493e866b03cdf1b5a73a4a3eaee56bd55b",
+      "chunks": [
+        {
+          "stored_size": 678,
+          "decoded_size": 5344
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "PANEL1.BLO",
+      "name_field_hex": "50414e454c312e424c4f000000",
+      "method": 1,
+      "original_offset": 13224,
+      "original_stored_size": 284,
+      "directory_decoded_size": 1888,
+      "decoded_size": 1888,
+      "decoded_sha256": "c618d58071378c801c4db417cbe4670bbc7f8a8c25f8d84def549598351adac9",
+      "stored_sha256": "f47a218c91fc472e8b85bbeeea58fbde45bc7af6842f5a7538f3cc6d70159856",
+      "chunks": [
+        {
+          "stored_size": 284,
+          "decoded_size": 1888
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "TIME.BLO",
+      "name_field_hex": "54494d452e424c4f0000000000",
+      "method": 1,
+      "original_offset": 13508,
+      "original_stored_size": 161,
+      "directory_decoded_size": 928,
+      "decoded_size": 928,
+      "decoded_sha256": "4040fbfc8c5f4fd258508d64bf9d6923a21ccaa44f3e01472496386ca759bb95",
+      "stored_sha256": "c31e64734b45e52f0bc00910db76161604e54ca4f257a6e4881d299f939be76c",
+      "chunks": [
+        {
+          "stored_size": 161,
+          "decoded_size": 928
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "KASSETA1.BLO",
+      "name_field_hex": "4b415353455441312e424c4f00",
+      "method": 1,
+      "original_offset": 13669,
+      "original_stored_size": 125,
+      "directory_decoded_size": 608,
+      "decoded_size": 608,
+      "decoded_sha256": "ce301b961d6a490e16605e4f402f930a114e6930340613d18a7ba4283125f55a",
+      "stored_sha256": "fabb2e43adf959c90ef4d57246cf5f8aed8d580a4bb57114852036c1b9f68676",
+      "chunks": [
+        {
+          "stored_size": 125,
+          "decoded_size": 608
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "KASSETA2.BLO",
+      "name_field_hex": "4b415353455441322e424c4f00",
+      "method": 1,
+      "original_offset": 13794,
+      "original_stored_size": 125,
+      "directory_decoded_size": 608,
+      "decoded_size": 608,
+      "decoded_sha256": "49f8dbfcf0546741ba36cb2953f3c4009f47d83885354831415bcf2d347511e7",
+      "stored_sha256": "f98e5a051db627642897529383a170b73f60af8de3112b38bc424da6d3fb22ca",
+      "chunks": [
+        {
+          "stored_size": 125,
+          "decoded_size": 608
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "KASSETA3.BLO",
+      "name_field_hex": "4b415353455441332e424c4f00",
+      "method": 1,
+      "original_offset": 13919,
+      "original_stored_size": 182,
+      "directory_decoded_size": 736,
+      "decoded_size": 736,
+      "decoded_sha256": "0d796195b6f96a75e30b03743999c3246ef9535eccb389f7126c24e62a7380df",
+      "stored_sha256": "8058b0f11fdfcb5f52ca081a9182b5793490857aedd41a3c9dbfaeb5da3bd620",
+      "chunks": [
+        {
+          "stored_size": 182,
+          "decoded_size": 736
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "KASSETA4.BLO",
+      "name_field_hex": "4b415353455441342e424c4f00",
+      "method": 1,
+      "original_offset": 14101,
+      "original_stored_size": 223,
+      "directory_decoded_size": 800,
+      "decoded_size": 800,
+      "decoded_sha256": "9c2153a137941b0716b39f8369c5d9d30e4ec42a4362feefa6d16293ce87c234",
+      "stored_sha256": "0a63471196650dd60388b7798ba25fe61be9295315a185566793d1bb94ea59ce",
+      "chunks": [
+        {
+          "stored_size": 223,
+          "decoded_size": 800
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "KASSETA5.BLO",
+      "name_field_hex": "4b415353455441352e424c4f00",
+      "method": 1,
+      "original_offset": 14324,
+      "original_stored_size": 201,
+      "directory_decoded_size": 928,
+      "decoded_size": 928,
+      "decoded_sha256": "68be32ac96ee2272bdb4c7fd78b4e72110b6a8c31b807c39b64831d10601d869",
+      "stored_sha256": "0bb514e9a48946d991f4488e0875e669858c80f8a06f3dbb51b2ccc78dae10bc",
+      "chunks": [
+        {
+          "stored_size": 201,
+          "decoded_size": 928
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "KASSETA6.BLO",
+      "name_field_hex": "4b415353455441362e424c4f00",
+      "method": 1,
+      "original_offset": 14525,
+      "original_stored_size": 200,
+      "directory_decoded_size": 928,
+      "decoded_size": 928,
+      "decoded_sha256": "49cc978f98c104505d71e20ab660607bcc169d5bef04bddeda4937183a47a2ef",
+      "stored_sha256": "385f520143b87eef31bfe6b351cf8f8c010181a00b4b3e29e0a989e15ab6bb08",
+      "chunks": [
+        {
+          "stored_size": 200,
+          "decoded_size": 928
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "ADVANCED.BLO",
+      "name_field_hex": "414456414e4345442e424c4f00",
+      "method": 1,
+      "original_offset": 14725,
+      "original_stored_size": 101,
+      "directory_decoded_size": 288,
+      "decoded_size": 288,
+      "decoded_sha256": "c9dbe6ec3ae927d326af1d5e55601c8e7812099c22316b72166752ff8f13fd02",
+      "stored_sha256": "1491fa0f8c7c6a18307c8c08686af3dd866491ce47f1bd03a44186464de3ebbf",
+      "chunks": [
+        {
+          "stored_size": 101,
+          "decoded_size": 288
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "EXPERT.BLO",
+      "name_field_hex": "4558504552542e424c4f000000",
+      "method": 1,
+      "original_offset": 14826,
+      "original_stored_size": 106,
+      "directory_decoded_size": 288,
+      "decoded_size": 288,
+      "decoded_sha256": "4b03f874886fe74a9a2950012d6555bc7bd3b8e3f262aea923e76fd7691d53aa",
+      "stored_sha256": "a7afa291f3fce3cda073b61fcc1d271b8a3b2de4682a5f3b472d67b349ae000a",
+      "chunks": [
+        {
+          "stored_size": 106,
+          "decoded_size": 288
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "NOVICE.BLO",
+      "name_field_hex": "4e4f564943452e424c4f000000",
+      "method": 1,
+      "original_offset": 14932,
+      "original_stored_size": 101,
+      "directory_decoded_size": 288,
+      "decoded_size": 288,
+      "decoded_sha256": "d94959696a54e8c9bd5f829e4228c4100abf7a9fcfc78364aac6f77ba19ce6f2",
+      "stored_sha256": "2815b03433d1a4df27d9c7e12aa5bd1f67c3e651a3cbb113935095371f2b7a5c",
+      "chunks": [
+        {
+          "stored_size": 101,
+          "decoded_size": 288
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "name": "ZAH_KASS.BLO",
+      "name_field_hex": "5a41485f4b4153532e424c4f00",
+      "method": 1,
+      "original_offset": 15033,
+      "original_stored_size": 533,
+      "directory_decoded_size": 2080,
+      "decoded_size": 2080,
+      "decoded_sha256": "21bf23a3b494147a5070ed9b93ffa1b3b8b0d5faf710328a6779729d9f3fa978",
+      "stored_sha256": "71afbd75aa5e55f4c5b39fe358f9735f0163924ef85426c892b3362f16246b5e",
+      "chunks": [
+        {
+          "stored_size": 533,
+          "decoded_size": 2080
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "name": "ZAHVAT1.BLO",
+      "name_field_hex": "5a4148564154312e424c4f0000",
+      "method": 1,
+      "original_offset": 15566,
+      "original_stored_size": 519,
+      "directory_decoded_size": 2208,
+      "decoded_size": 2208,
+      "decoded_sha256": "583f1403ce9f6b34f38d813c386d80ccda14345ee097ebe394ed8f34464e4a66",
+      "stored_sha256": "b654be85ba226f56e46d1a32c79e300b22c5ac8f476e9c0fb89306e39dd5d9ee",
+      "chunks": [
+        {
+          "stored_size": 519,
+          "decoded_size": 2208
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "name": "VOROTA1.BLO",
+      "name_field_hex": "564f524f5441312e424c4f0000",
+      "method": 1,
+      "original_offset": 16085,
+      "original_stored_size": 80,
+      "directory_decoded_size": 160,
+      "decoded_size": 160,
+      "decoded_sha256": "a70b3db9473814f0332e907a644fc9fe8e5d721bdaec59756551529a36957370",
+      "stored_sha256": "b57c6191812996e0f45b974adbc38fb82ebc59062ba6ceb7fbdbec5894bc9375",
+      "chunks": [
+        {
+          "stored_size": 80,
+          "decoded_size": 160
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "VOROTA2.BLO",
+      "name_field_hex": "564f524f5441322e424c4f0000",
+      "method": 1,
+      "original_offset": 16165,
+      "original_stored_size": 70,
+      "directory_decoded_size": 224,
+      "decoded_size": 224,
+      "decoded_sha256": "d29578a6b90f25a2a15a733d9da253e20df039431b7ba45534e51ef058ed7c7c",
+      "stored_sha256": "7dc21ee5e70cda2c0bbad34944c99fb8c1b55be8b8bdb5fbfde9ca97d3fa3280",
+      "chunks": [
+        {
+          "stored_size": 70,
+          "decoded_size": 224
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "name": "VOROTA3.BLO",
+      "name_field_hex": "564f524f5441332e424c4f0000",
+      "method": 1,
+      "original_offset": 16235,
+      "original_stored_size": 80,
+      "directory_decoded_size": 160,
+      "decoded_size": 160,
+      "decoded_sha256": "099352477d29fdc0561066c6befedf22ab88e120bafb1e77919057e65093f93e",
+      "stored_sha256": "2542b7520618e053ae9782e0f26d46fd0d1e924b8a9c4eca72394e30442a52aa",
+      "chunks": [
+        {
+          "stored_size": 80,
+          "decoded_size": 160
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "VOROTA4.BLO",
+      "name_field_hex": "564f524f5441342e424c4f0000",
+      "method": 1,
+      "original_offset": 16315,
+      "original_stored_size": 73,
+      "directory_decoded_size": 224,
+      "decoded_size": 224,
+      "decoded_sha256": "623101a69c3a21aca80d9f9c7e441b595f3fcc520ced5d9288bb8b1f0192859a",
+      "stored_sha256": "370df929686e4aa961e79e0e2b88a24a4be74981825019526a48d2c31afbce6e",
+      "chunks": [
+        {
+          "stored_size": 73,
+          "decoded_size": 224
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "1-9.BLO",
+      "name_field_hex": "312d392e424c4f000000000000",
+      "method": 1,
+      "original_offset": 16388,
+      "original_stored_size": 525,
+      "directory_decoded_size": 2848,
+      "decoded_size": 2848,
+      "decoded_sha256": "0b9bdcb7e3eb592dddc47632378eae6f45a4c1cbbe0cdc4cac99d4bc7bda0b56",
+      "stored_sha256": "a0bcaa656ac337caadc0015b5ee782adf0a452348c97590903df0d18e9ed605f",
+      "chunks": [
+        {
+          "stored_size": 525,
+          "decoded_size": 2848
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "name": "15-PICT.BLO",
+      "name_field_hex": "31352d504943542e424c4f0000",
+      "method": 1,
+      "original_offset": 16913,
+      "original_stored_size": 1884,
+      "directory_decoded_size": 9440,
+      "decoded_size": 9440,
+      "decoded_sha256": "b2dcc0a9fa7edade044fc8c60f570131cb439d71380024644a5e7649e70e5545",
+      "stored_sha256": "333b9beef7849a633be685c2c128599b2b5fdaa7b74ff66f1f2433f708fe6dc6",
+      "chunks": [
+        {
+          "stored_size": 1884,
+          "decoded_size": 9440
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "name": "PICT-C.BLO",
+      "name_field_hex": "504943542d432e424c4f000000",
+      "method": 1,
+      "original_offset": 18797,
+      "original_stored_size": 786,
+      "directory_decoded_size": 1824,
+      "decoded_size": 1824,
+      "decoded_sha256": "13d90ac9dcf9952434141b94a416fcc9c37f466f19a3603505ad379acf1f9070",
+      "stored_sha256": "03a0b0d7c6608111c7f0dc0fe13c4dae9636f32bcc9e4d9eada86897f173f3bd",
+      "chunks": [
+        {
+          "stored_size": 786,
+          "decoded_size": 1824
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "name": "BODYALL.BLO",
+      "name_field_hex": "424f4459414c4c2e424c4f0000",
+      "method": 1,
+      "original_offset": 19583,
+      "original_stored_size": 24394,
+      "directory_decoded_size": 45728,
+      "decoded_size": 45728,
+      "decoded_sha256": "74f13fb27a12ea110869d403519aa9626702abc65166284b0899ab486318bb78",
+      "stored_sha256": "8a3c93f063d4fa2e27e400565675b1fba1b87167cdac793255f985e020a3cac8",
+      "chunks": [
+        {
+          "stored_size": 24394,
+          "decoded_size": 45728
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "name": "ENGLISH.TXT",
+      "name_field_hex": "454e474c4953482e5458540000",
+      "method": 1,
+      "original_offset": 43977,
+      "original_stored_size": 1223,
+      "directory_decoded_size": 1699,
+      "decoded_size": 1699,
+      "decoded_sha256": "638aec666f126b5433db2fce4bf3148201f9eb388d0f494bccbc9a3909da642c",
+      "stored_sha256": "23a2ffe14f191d483e3c2d4c155685c6b29e8476cb539ab22d59cdafea1713a3",
+      "chunks": [
+        {
+          "stored_size": 1223,
+          "decoded_size": 1699
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "name": "PLAN1.BLO",
+      "name_field_hex": "504c414e312e424c4f00000000",
+      "method": 2,
+      "original_offset": 45200,
+      "original_stored_size": 40525,
+      "directory_decoded_size": 0,
+      "decoded_size": 112000,
+      "decoded_sha256": "7902d4880775cdcdcb2eb0a988d1cb589db56a3584aa094c8274ab6d478318e8",
+      "stored_sha256": "363e7231e94139b1fb14e454d5b1157d39b72f4c4b8963e94ee5e14c03df6939",
+      "chunks": [
+        {
+          "stored_size": 9515,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 9488,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 10138,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 11376,
+          "decoded_size": 28000
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "PLAN3.BLO",
+      "name_field_hex": "504c414e332e424c4f00000000",
+      "method": 2,
+      "original_offset": 85725,
+      "original_stored_size": 14669,
+      "directory_decoded_size": 0,
+      "decoded_size": 112000,
+      "decoded_sha256": "7cf236ce94600b082c471ee585ec0ffa7a2bce41fa60ddf9097a50250be00ec8",
+      "stored_sha256": "a2ae96f0ead93597017ca1e3b06e7910a15d67b7fc566a09ecebb312b72884b9",
+      "chunks": [
+        {
+          "stored_size": 3576,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 3612,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 3601,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 3872,
+          "decoded_size": 28000
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "name": "PLAN2.BLO",
+      "name_field_hex": "504c414e322e424c4f00000000",
+      "method": 2,
+      "original_offset": 100394,
+      "original_stored_size": 31817,
+      "directory_decoded_size": 0,
+      "decoded_size": 112000,
+      "decoded_sha256": "87b772b231928d59f44e48f165a07fc64de63afed3c755269188e3684ab616fa",
+      "stored_sha256": "3e72d27ae3929e3559d14de0abfa05fbe5164b3373e7263dcb5d18b538e0499b",
+      "chunks": [
+        {
+          "stored_size": 7511,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 7538,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 7556,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 9204,
+          "decoded_size": 28000
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "MUNUP.BLO",
+      "name_field_hex": "4d554e55502e424c4f00000000",
+      "method": 1,
+      "original_offset": 132211,
+      "original_stored_size": 146,
+      "directory_decoded_size": 352,
+      "decoded_size": 352,
+      "decoded_sha256": "259d32b414378c8d840a9eaa72b38a6a0ba6ed4428009aad07255a29befe2805",
+      "stored_sha256": "68b1b810ba918c781e853e36ab430b520f8e9c9f61f91ea69abd408129f7acbb",
+      "chunks": [
+        {
+          "stored_size": 146,
+          "decoded_size": 352
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "MUNDOWN.BLO",
+      "name_field_hex": "4d554e444f574e2e424c4f0000",
+      "method": 1,
+      "original_offset": 132357,
+      "original_stored_size": 143,
+      "directory_decoded_size": 352,
+      "decoded_size": 352,
+      "decoded_sha256": "07ca1670c192cf99412eac38a64bbc376970c100dee783b3822afa58bdc91bba",
+      "stored_sha256": "92ffbce5d417ff7fd06568e7e199f6a7de471a22f4da0d3c6d155cd2edf48071",
+      "chunks": [
+        {
+          "stored_size": 143,
+          "decoded_size": 352
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "KASSETS.BLO",
+      "name_field_hex": "4b4153534554532e424c4f0000",
+      "method": 1,
+      "original_offset": 132500,
+      "original_stored_size": 1129,
+      "directory_decoded_size": 6624,
+      "decoded_size": 6624,
+      "decoded_sha256": "a3765e67b32124d9b38ba7fb3fbb0e3c329565dfea36a4cea4e92f5150adec85",
+      "stored_sha256": "b921349b6017b2e9dd51af3a304e96ed15c9cdbfa6f741418c91c641e748a48a",
+      "chunks": [
+        {
+          "stored_size": 1129,
+          "decoded_size": 6624
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "KURSOR.BLO",
+      "name_field_hex": "4b5552534f522e424c4f000000",
+      "method": 1,
+      "original_offset": 133629,
+      "original_stored_size": 322,
+      "directory_decoded_size": 416,
+      "decoded_size": 416,
+      "decoded_sha256": "81f28e68ff981298c407dcb9df0a056dabb3cccfa435bbd5ea633fa675d0c3ce",
+      "stored_sha256": "01aa91126199dedc759b77378b152aead80e497cf1476c600bf10f2221a6080a",
+      "chunks": [
+        {
+          "stored_size": 322,
+          "decoded_size": 416
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "SHRIFT_1.BLO",
+      "name_field_hex": "5348524946545f312e424c4f00",
+      "method": 1,
+      "original_offset": 133951,
+      "original_stored_size": 2200,
+      "directory_decoded_size": 8480,
+      "decoded_size": 8480,
+      "decoded_sha256": "f914596aff40c8de160450c04d331a0373e6479c3d6e77aebdbbd8ba9974a8d1",
+      "stored_sha256": "94100f68ebd1cc5057168842696bc1e52cdebdbf5bbe1b8e446b1aec697dc90f",
+      "chunks": [
+        {
+          "stored_size": 2200,
+          "decoded_size": 8480
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "name": "SHRIFT_2.BLO",
+      "name_field_hex": "5348524946545f322e424c4f00",
+      "method": 1,
+      "original_offset": 136151,
+      "original_stored_size": 2165,
+      "directory_decoded_size": 8480,
+      "decoded_size": 8480,
+      "decoded_sha256": "02343b2d3af8236f6f9b204a919cc4b180393f4ef42ea02c815e6776b95d23be",
+      "stored_sha256": "7794a19036f413b25847936483b04488aea45b1bfd197686c555eb32fef274d5",
+      "chunks": [
+        {
+          "stored_size": 2165,
+          "decoded_size": 8480
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "RPASOPEN.BLO",
+      "name_field_hex": "525041534f50454e2e424c4f00",
+      "method": 1,
+      "original_offset": 138316,
+      "original_stored_size": 4680,
+      "directory_decoded_size": 10400,
+      "decoded_size": 10400,
+      "decoded_sha256": "29022d33f2aa5b8fd0dd7d34735a28f76432d9f99f3d6f0c4f46a94fa9c791f5",
+      "stored_sha256": "0fe1907cc92307294ca3e6e6a824f6e4645f8684a305d71f0ca78ea096f8df4e",
+      "chunks": [
+        {
+          "stored_size": 4680,
+          "decoded_size": 10400
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "name": "RSHRIF_1.BLO",
+      "name_field_hex": "5253485249465f312e424c4f00",
+      "method": 1,
+      "original_offset": 142996,
+      "original_stored_size": 4387,
+      "directory_decoded_size": 9440,
+      "decoded_size": 9440,
+      "decoded_sha256": "6e87a58aec8958ad1f0769e3ee231928d48e44810f3bf74e4c1b5973a3fc84e9",
+      "stored_sha256": "74f30ba07c8475478d22bcd58fdf8d344cb0c6dcea9cc9702f83efc008be68fa",
+      "chunks": [
+        {
+          "stored_size": 4387,
+          "decoded_size": 9440
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "name": "RSHRIF_2.BLO",
+      "name_field_hex": "5253485249465f322e424c4f00",
+      "method": 1,
+      "original_offset": 147383,
+      "original_stored_size": 2898,
+      "directory_decoded_size": 9440,
+      "decoded_size": 9440,
+      "decoded_sha256": "bce8aee1b87a319f046735bdce62e1584cdf7fcd402a15cb37c2cf89a863ad40",
+      "stored_sha256": "88c2b4615bc2c8aac5c2bbc268d8d86c772d02afdc723972349243131de1982c",
+      "chunks": [
+        {
+          "stored_size": 2898,
+          "decoded_size": 9440
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "name": "RCLSCARD.BLO",
+      "name_field_hex": "52434c53434152442e424c4f00",
+      "method": 1,
+      "original_offset": 150281,
+      "original_stored_size": 1783,
+      "directory_decoded_size": 7200,
+      "decoded_size": 7200,
+      "decoded_sha256": "b397a355c5ee1bdc91b5a14d9b0fe8b0dfc852512c1d3295a087383aaf7da4e3",
+      "stored_sha256": "2c90c1e7f09afafbdc31bed7a74dc4f33d82ae3c58bc01bdee47f4c144cb4e27",
+      "chunks": [
+        {
+          "stored_size": 1783,
+          "decoded_size": 7200
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "RPLAN2.BLO",
+      "name_field_hex": "52504c414e322e424c4f000000",
+      "method": 2,
+      "original_offset": 152064,
+      "original_stored_size": 31681,
+      "directory_decoded_size": 0,
+      "decoded_size": 112000,
+      "decoded_sha256": "cb2fdae14dc900da223b67a143ab7059a63aa84e716090a9095254e8f236efbf",
+      "stored_sha256": "f0bf8e008f82bebd3c21850aec78f3d5c9a3d9d4b1f63c24539373bccf571373",
+      "chunks": [
+        {
+          "stored_size": 7493,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 7499,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 7514,
+          "decoded_size": 28000
+        },
+        {
+          "stored_size": 9167,
+          "decoded_size": 28000
+        }
+      ]
+    },
+    {
+      "index": 47,
+      "name": "RUSSIAN.TXT",
+      "name_field_hex": "5255535349414e2e5458540000",
+      "method": 1,
+      "original_offset": 183745,
+      "original_stored_size": 1411,
+      "directory_decoded_size": 1728,
+      "decoded_size": 1728,
+      "decoded_sha256": "626aaa6cebccbe1bf79f9d5562b76b4ee9ae54937a923913c70699b0a24da87c",
+      "stored_sha256": "ae0e12153ad646206554b85b17cb83d3a65da0e4bfa83ad9f1c9e8e859024c48",
+      "chunks": [
+        {
+          "stored_size": 1411,
+          "decoded_size": 1728
+        }
+      ]
+    },
+    {
+      "index": 48,
+      "name": "PASSW.RUS",
+      "name_field_hex": "50415353572e52555300000000",
+      "method": 1,
+      "original_offset": 185156,
+      "original_stored_size": 1658,
+      "directory_decoded_size": 1802,
+      "decoded_size": 1802,
+      "decoded_sha256": "cf1bb7d361564ae3b7d1db1fe169857629573bdeee6453da439743f09c0dd4b0",
+      "stored_sha256": "442161ee5de3e3019b45346bda58325752f72a64707f14019d787be79fd014e9",
+      "chunks": [
+        {
+          "stored_size": 1658,
+          "decoded_size": 1802
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "name": "PASSW.ENG",
+      "name_field_hex": "50415353572e454e4700000000",
+      "method": 1,
+      "original_offset": 186814,
+      "original_stored_size": 1643,
+      "directory_decoded_size": 1802,
+      "decoded_size": 1802,
+      "decoded_sha256": "fd1d2f50a3cd4c77a6466c95414915c8e83a2ed59339ccdc8881381d4b3e810c",
+      "stored_sha256": "5f3b46870a4786da1db1515ab7f2014652119567e55bdc557086e9f5a15fd3a8",
+      "chunks": [
+        {
+          "stored_size": 1643,
+          "decoded_size": 1802
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "name": "MOOD.SND",
+      "name_field_hex": "4d4f4f442e534e440000000000",
+      "method": 1,
+      "original_offset": 188457,
+      "original_stored_size": 307,
+      "directory_decoded_size": 721,
+      "decoded_size": 721,
+      "decoded_sha256": "27dc907aa775d7d69fc9a64685f0193aa4325ed7161a76997ce47ee3504a3de0",
+      "stored_sha256": "7f8603e43556e1647e9c46a90f613c7150cb399b88a1b1f688b955cb8b3a9573",
+      "chunks": [
+        {
+          "stored_size": 307,
+          "decoded_size": 721
+        }
+      ]
+    },
+    {
+      "index": 51,
+      "name": "MOOD.MUS",
+      "name_field_hex": "4d4f4f442e4d55530000000000",
+      "method": 1,
+      "original_offset": 188764,
+      "original_stored_size": 1641,
+      "directory_decoded_size": 4218,
+      "decoded_size": 4218,
+      "decoded_sha256": "de965847492c63340dc201d6b9b9fc0d71889b27e662e72226a512db99166207",
+      "stored_sha256": "ff7438302084a975b4b42fe0434e51741333f2102bb7d018dc7f58b67da1cd65",
+      "chunks": [
+        {
+          "stored_size": 1641,
+          "decoded_size": 4218
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "name": "MUS1.SND",
+      "name_field_hex": "4d5553312e534e440000000000",
+      "method": 1,
+      "original_offset": 190405,
+      "original_stored_size": 209,
+      "directory_decoded_size": 461,
+      "decoded_size": 461,
+      "decoded_sha256": "658f80ce1f04766ec13283ad971a460e30ca9fea5813ed7fb5904aaa512f101f",
+      "stored_sha256": "392c5ab6a92f7a17750cde970a744d2605179484adf999253fefcb3743fd047c",
+      "chunks": [
+        {
+          "stored_size": 209,
+          "decoded_size": 461
+        }
+      ]
+    },
+    {
+      "index": 53,
+      "name": "MUS2.SND",
+      "name_field_hex": "4d5553322e534e440000000000",
+      "method": 1,
+      "original_offset": 190614,
+      "original_stored_size": 271,
+      "directory_decoded_size": 656,
+      "decoded_size": 656,
+      "decoded_sha256": "167af08a54d8114ca7ab1157d999502e6d13530527d148a43330a9caec887ef0",
+      "stored_sha256": "c655b2e29fa5fab5467aa7b70e85d7662bad3c5bf775d9b88efde30c4d99afda",
+      "chunks": [
+        {
+          "stored_size": 271,
+          "decoded_size": 656
+        }
+      ]
+    },
+    {
+      "index": 54,
+      "name": "MUS3.SND",
+      "name_field_hex": "4d5553332e534e440000000000",
+      "method": 1,
+      "original_offset": 190885,
+      "original_stored_size": 319,
+      "directory_decoded_size": 786,
+      "decoded_size": 786,
+      "decoded_sha256": "86000c0e5f25f9f2daf288ffdec53aa54027b5c211c26f183e7169add0b86c0d",
+      "stored_sha256": "0cf7a64d1e7bc92eea4d0f69e89ee579b8e7af196b9bb8ed8de5e9b546d67b7d",
+      "chunks": [
+        {
+          "stored_size": 319,
+          "decoded_size": 786
+        }
+      ]
+    },
+    {
+      "index": 55,
+      "name": "MUS1.MUS",
+      "name_field_hex": "4d5553312e4d55530000000000",
+      "method": 1,
+      "original_offset": 191204,
+      "original_stored_size": 220,
+      "directory_decoded_size": 619,
+      "decoded_size": 619,
+      "decoded_sha256": "620c1d43fa40b095f74e47925b39a9a63107464467cfbb3afeea4a551fe51d82",
+      "stored_sha256": "d1b4f2e7637f3718d9707875941cea9e270eaf1a461245b7da39d0b48cb9dc39",
+      "chunks": [
+        {
+          "stored_size": 220,
+          "decoded_size": 619
+        }
+      ]
+    },
+    {
+      "index": 56,
+      "name": "MUS2.MUS",
+      "name_field_hex": "4d5553322e4d55530000000000",
+      "method": 1,
+      "original_offset": 191424,
+      "original_stored_size": 1914,
+      "directory_decoded_size": 7493,
+      "decoded_size": 7493,
+      "decoded_sha256": "85a614648cb20c9e291642019870157f2a513d5171e97d1832ef62d2ef53b65a",
+      "stored_sha256": "d0b32b1f8a65c347a3d4e7f82084f2e668ec024e061213759074a040d767ae02",
+      "chunks": [
+        {
+          "stored_size": 1914,
+          "decoded_size": 7493
+        }
+      ]
+    },
+    {
+      "index": 57,
+      "name": "MUS3.MUS",
+      "name_field_hex": "4d5553332e4d55530000000000",
+      "method": 1,
+      "original_offset": 193338,
+      "original_stored_size": 1027,
+      "directory_decoded_size": 4024,
+      "decoded_size": 4024,
+      "decoded_sha256": "5384181065894cec8be5e9c7bb1591ea8ac9d1ecfe3e4f9def8001f99c5638b1",
+      "stored_sha256": "0c8055b9e60c37b85f4bdc95a7a1d9e39c6ca11570813f9721033c668a53fe4e",
+      "chunks": [
+        {
+          "stored_size": 1027,
+          "decoded_size": 4024
+        }
+      ]
+    },
+    {
+      "index": 58,
+      "name": "SN_BATT.SND",
+      "name_field_hex": "534e5f424154542e534e440000",
+      "method": 1,
+      "original_offset": 194365,
+      "original_stored_size": 319,
+      "directory_decoded_size": 786,
+      "decoded_size": 786,
+      "decoded_sha256": "86000c0e5f25f9f2daf288ffdec53aa54027b5c211c26f183e7169add0b86c0d",
+      "stored_sha256": "0cf7a64d1e7bc92eea4d0f69e89ee579b8e7af196b9bb8ed8de5e9b546d67b7d",
+      "chunks": [
+        {
+          "stored_size": 319,
+          "decoded_size": 786
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "name": "SN_GAME.SND",
+      "name_field_hex": "534e5f47414d452e534e440000",
+      "method": 1,
+      "original_offset": 194684,
+      "original_stored_size": 271,
+      "directory_decoded_size": 656,
+      "decoded_size": 656,
+      "decoded_sha256": "167af08a54d8114ca7ab1157d999502e6d13530527d148a43330a9caec887ef0",
+      "stored_sha256": "c655b2e29fa5fab5467aa7b70e85d7662bad3c5bf775d9b88efde30c4d99afda",
+      "chunks": [
+        {
+          "stored_size": 271,
+          "decoded_size": 656
+        }
+      ]
+    },
+    {
+      "index": 60,
+      "name": "SN_TITL.SND",
+      "name_field_hex": "534e5f5449544c2e534e440000",
+      "method": 1,
+      "original_offset": 194955,
+      "original_stored_size": 209,
+      "directory_decoded_size": 461,
+      "decoded_size": 461,
+      "decoded_sha256": "658f80ce1f04766ec13283ad971a460e30ca9fea5813ed7fb5904aaa512f101f",
+      "stored_sha256": "392c5ab6a92f7a17750cde970a744d2605179484adf999253fefcb3743fd047c",
+      "chunks": [
+        {
+          "stored_size": 209,
+          "decoded_size": 461
+        }
+      ]
+    },
+    {
+      "index": 61,
+      "name": "SN_BATT.MUS",
+      "name_field_hex": "534e5f424154542e4d55530000",
+      "method": 1,
+      "original_offset": 195164,
+      "original_stored_size": 1027,
+      "directory_decoded_size": 4024,
+      "decoded_size": 4024,
+      "decoded_sha256": "5384181065894cec8be5e9c7bb1591ea8ac9d1ecfe3e4f9def8001f99c5638b1",
+      "stored_sha256": "0c8055b9e60c37b85f4bdc95a7a1d9e39c6ca11570813f9721033c668a53fe4e",
+      "chunks": [
+        {
+          "stored_size": 1027,
+          "decoded_size": 4024
+        }
+      ]
+    },
+    {
+      "index": 62,
+      "name": "SN_GAME.MUS",
+      "name_field_hex": "534e5f47414d452e4d55530000",
+      "method": 1,
+      "original_offset": 196191,
+      "original_stored_size": 1914,
+      "directory_decoded_size": 7493,
+      "decoded_size": 7493,
+      "decoded_sha256": "85a614648cb20c9e291642019870157f2a513d5171e97d1832ef62d2ef53b65a",
+      "stored_sha256": "d0b32b1f8a65c347a3d4e7f82084f2e668ec024e061213759074a040d767ae02",
+      "chunks": [
+        {
+          "stored_size": 1914,
+          "decoded_size": 7493
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "name": "SN_TITL.MUS",
+      "name_field_hex": "534e5f5449544c2e4d55530000",
+      "method": 1,
+      "original_offset": 198105,
+      "original_stored_size": 220,
+      "directory_decoded_size": 619,
+      "decoded_size": 619,
+      "decoded_sha256": "620c1d43fa40b095f74e47925b39a9a63107464467cfbb3afeea4a551fe51d82",
+      "stored_sha256": "d1b4f2e7637f3718d9707875941cea9e270eaf1a461245b7da39d0b48cb9dc39",
+      "chunks": [
+        {
+          "stored_size": 220,
+          "decoded_size": 619
+        }
+      ]
+    },
+    {
+      "index": 64,
+      "name": "SWSHRI_1.BLO",
+      "name_field_hex": "5357534852495f312e424c4f00",
+      "method": 1,
+      "original_offset": 198325,
+      "original_stored_size": 2642,
+      "directory_decoded_size": 8800,
+      "decoded_size": 8800,
+      "decoded_sha256": "3a0107ce394e883226a15afa0fef7b90bef46dff1657e289d1d47fbd53756f89",
+      "stored_sha256": "97048b6d17d4a857232f534e7e900cd73519d5803f983b2c609dd78fdeed0200",
+      "chunks": [
+        {
+          "stored_size": 2642,
+          "decoded_size": 8800
+        }
+      ]
+    },
+    {
+      "index": 65,
+      "name": "SWSHRI_2.BLO",
+      "name_field_hex": "5357534852495f322e424c4f00",
+      "method": 1,
+      "original_offset": 200967,
+      "original_stored_size": 2348,
+      "directory_decoded_size": 8800,
+      "decoded_size": 8800,
+      "decoded_sha256": "4549f33d92d37c61e72de74ce5dee7587977edfefb5e34846a3a3d0669f4abae",
+      "stored_sha256": "6b21c99df7e6170a104915afccc902be2d9491a33ab117e4e797ecb6cdd7360c",
+      "chunks": [
+        {
+          "stored_size": 2348,
+          "decoded_size": 8800
+        }
+      ]
+    },
+    {
+      "index": 66,
+      "name": "SWEDEN.TXT",
+      "name_field_hex": "53574544454e2e545854000000",
+      "method": 1,
+      "original_offset": 203315,
+      "original_stored_size": 1225,
+      "directory_decoded_size": 1655,
+      "decoded_size": 1655,
+      "decoded_sha256": "9a1555bb69b94fdeeb3476ee8ac251a3692b35e319971219bd59584764d134b8",
+      "stored_sha256": "69262e809698a44f1ab9a2a07084c8720046123241eb7f05b348fd6727e65cfd",
+      "chunks": [
+        {
+          "stored_size": 1225,
+          "decoded_size": 1655
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "name": "RUSINSTR.TXT",
+      "name_field_hex": "525553494e5354522e54585400",
+      "method": 1,
+      "original_offset": 204540,
+      "original_stored_size": 6239,
+      "directory_decoded_size": 11896,
+      "decoded_size": 11896,
+      "decoded_sha256": "44223cc3eb95a53619fe94cac38b3d37270e4f1d6796e13c3f768313d74c0a94",
+      "stored_sha256": "74f6c3d7dad813d049af35edb8dc1c6c4cefe40f46bbc0fca0726bb9d02071cc",
+      "chunks": [
+        {
+          "stored_size": 6239,
+          "decoded_size": 11896
+        }
+      ]
+    },
+    {
+      "index": 68,
+      "name": "MKBATTLE.BLO",
+      "name_field_hex": "4d4b424154544c452e424c4f00",
+      "method": 1,
+      "original_offset": 210779,
+      "original_stored_size": 6038,
+      "directory_decoded_size": 12832,
+      "decoded_size": 12832,
+      "decoded_sha256": "32c36338d0360ee046409d61a67e645cb8421beee46c8fbb8b68572390f37c8a",
+      "stored_sha256": "03b37ab144ba72156beaa5471ca961fd5f9aac866915d1d21d202ea77384d406",
+      "chunks": [
+        {
+          "stored_size": 6038,
+          "decoded_size": 12832
+        }
+      ]
+    },
+    {
+      "index": 69,
+      "name": "MKBRAIN.BLO",
+      "name_field_hex": "4d4b425241494e2e424c4f0000",
+      "method": 1,
+      "original_offset": 216817,
+      "original_stored_size": 5295,
+      "directory_decoded_size": 12832,
+      "decoded_size": 12832,
+      "decoded_sha256": "106bb9cfad32805709d187991a57d4613842cf1e606e1e992e00f053451dbbdc",
+      "stored_sha256": "ab3f16168015beb6aec84eeb751152dcb406684c7c55b2358df24a497089cb0a",
+      "chunks": [
+        {
+          "stored_size": 5295,
+          "decoded_size": 12832
+        }
+      ]
+    },
+    {
+      "index": 70,
+      "name": "MKCOLOR.BLO",
+      "name_field_hex": "4d4b434f4c4f522e424c4f0000",
+      "method": 1,
+      "original_offset": 222112,
+      "original_stored_size": 3644,
+      "directory_decoded_size": 11680,
+      "decoded_size": 11680,
+      "decoded_sha256": "69c6955d3afbe864eae43e1edc8777619c845ed7aa72d4f02ee15065b9d5be01",
+      "stored_sha256": "7c364e0ef0b3953997b3188bf795bd45e90ce9bafaf19fb55e5b40d1666054fd",
+      "chunks": [
+        {
+          "stored_size": 3644,
+          "decoded_size": 11680
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "name": "R_MKPASS.BLO",
+      "name_field_hex": "525f4d4b504153532e424c4f00",
+      "method": 1,
+      "original_offset": 225756,
+      "original_stored_size": 4342,
+      "directory_decoded_size": 12832,
+      "decoded_size": 12832,
+      "decoded_sha256": "739214405a027a8d91df29e63d3384ce6ee90b6a51bdf2458ab70cdd5e5baf97",
+      "stored_sha256": "bfd22cd35d3584c28901285e9834d5a7e70914af9c03d0be5c413bd6a24ed22b",
+      "chunks": [
+        {
+          "stored_size": 4342,
+          "decoded_size": 12832
+        }
+      ]
+    },
+    {
+      "index": 72,
+      "name": "2-EXIT.BLO",
+      "name_field_hex": "322d455849542e424c4f000000",
+      "method": 1,
+      "original_offset": 230098,
+      "original_stored_size": 259,
+      "directory_decoded_size": 1504,
+      "decoded_size": 1504,
+      "decoded_sha256": "1d6f3ec339d3642af2803f10a84868fde823ace4fb35078037bd71390a8569ef",
+      "stored_sha256": "f989127aebc49fa0be8b938d20a85f894ebce0e154536fddbc30e1166bcf1fa9",
+      "chunks": [
+        {
+          "stored_size": 259,
+          "decoded_size": 1504
+        }
+      ]
+    },
+    {
+      "index": 73,
+      "name": "2-SLOW.BLO",
+      "name_field_hex": "322d534c4f572e424c4f000000",
+      "method": 1,
+      "original_offset": 230357,
+      "original_stored_size": 250,
+      "directory_decoded_size": 1504,
+      "decoded_size": 1504,
+      "decoded_sha256": "3b93fc8c0178993e1631e080ee23c79fa123c6c0d49c0d04a61eabf0652ee786",
+      "stored_sha256": "39f7641f887a55ad3fa8edc3d09739bb5a7ecb5d2d74398f4720435f0c329ced",
+      "chunks": [
+        {
+          "stored_size": 250,
+          "decoded_size": 1504
+        }
+      ]
+    },
+    {
+      "index": 74,
+      "name": "2-SOUND.BLO",
+      "name_field_hex": "322d534f554e442e424c4f0000",
+      "method": 1,
+      "original_offset": 230607,
+      "original_stored_size": 252,
+      "directory_decoded_size": 1504,
+      "decoded_size": 1504,
+      "decoded_sha256": "68aa73fad73d26b72c7cbd46a323ae3abbec5b60b19838f8fa7ec270c587499b",
+      "stored_sha256": "663ed0b183f9fba05e2e45963c223dff97b19a33fd498f43c6589bacc3f5b0a2",
+      "chunks": [
+        {
+          "stored_size": 252,
+          "decoded_size": 1504
+        }
+      ]
+    },
+    {
+      "index": 75,
+      "name": "2-START.BLO",
+      "name_field_hex": "322d53544152542e424c4f0000",
+      "method": 1,
+      "original_offset": 230859,
+      "original_stored_size": 251,
+      "directory_decoded_size": 1568,
+      "decoded_size": 1568,
+      "decoded_sha256": "f941621b49779b73ecb4a68225baf557bad46c5312be839592beeaddb0571154",
+      "stored_sha256": "db3e01ccf8d9f0df7e26a0b05d619b93a6405bece1ffbb64dad7c1796211d80c",
+      "chunks": [
+        {
+          "stored_size": 251,
+          "decoded_size": 1568
+        }
+      ]
+    },
+    {
+      "index": 76,
+      "name": "2-STOP.BLO",
+      "name_field_hex": "322d53544f502e424c4f000000",
+      "method": 1,
+      "original_offset": 231110,
+      "original_stored_size": 246,
+      "directory_decoded_size": 1504,
+      "decoded_size": 1504,
+      "decoded_sha256": "db57eb8c2fa6d654dc93a7433ea44f693875e435f3ac9813ead143df2b8e875f",
+      "stored_sha256": "8f2d4e9b046dfbd1066d3113a0ba0685d15d06706903708d91feaba4e977d414",
+      "chunks": [
+        {
+          "stored_size": 246,
+          "decoded_size": 1504
+        }
+      ]
+    },
+    {
+      "index": 77,
+      "name": "ENGINSTR.TXT",
+      "name_field_hex": "454e47494e5354522e54585400",
+      "method": 1,
+      "original_offset": 231356,
+      "original_stored_size": 5394,
+      "directory_decoded_size": 11447,
+      "decoded_size": 11447,
+      "decoded_sha256": "41e4616938cf6e91c96717d9da0f89091fe1548bcb716e3db0a975393720ca4c",
+      "stored_sha256": "b96aecdd52b5122e9c07cc1ba7f82d42cd085c78ff1135f2902d14f3a029d330",
+      "chunks": [
+        {
+          "stored_size": 5394,
+          "decoded_size": 11447
+        }
+      ]
+    },
+    {
+      "index": 78,
+      "name": "MUS1.MID",
+      "name_field_hex": "4d5553312e4d49440000000000",
+      "method": 1,
+      "original_offset": 236750,
+      "original_stored_size": 13659,
+      "directory_decoded_size": 44146,
+      "decoded_size": 44146,
+      "decoded_sha256": "99fa4a0a887aba52b200d2aab6fe3450699d83c5100d51a733ba1c5e4860292a",
+      "stored_sha256": "7580ded184d453f80857164d1691c22f6f01b5694c091418833d54612fecb675",
+      "chunks": [
+        {
+          "stored_size": 13659,
+          "decoded_size": 44146
+        }
+      ]
+    },
+    {
+      "index": 79,
+      "name": "MUS2.MID",
+      "name_field_hex": "4d5553322e4d49440000000000",
+      "method": 1,
+      "original_offset": 250409,
+      "original_stored_size": 9380,
+      "directory_decoded_size": 36433,
+      "decoded_size": 36433,
+      "decoded_sha256": "65873927a2dafe9d9afb9cb67ef424c89aaf430d6f7b40ff6722c1421b482187",
+      "stored_sha256": "f879325453d583c7e3cd4b40cfb1cb1d6cebde841756918d6ea8350c93ee9f5a",
+      "chunks": [
+        {
+          "stored_size": 9380,
+          "decoded_size": 36433
+        }
+      ]
+    },
+    {
+      "index": 80,
+      "name": "MUS3.MID",
+      "name_field_hex": "4d5553332e4d49440000000000",
+      "method": 1,
+      "original_offset": 259789,
+      "original_stored_size": 5134,
+      "directory_decoded_size": 15857,
+      "decoded_size": 15857,
+      "decoded_sha256": "d40b652eaf7392ed0a4cc2445a05a2c0cd04b0c0b9583b248a78e05855dfd645",
+      "stored_sha256": "664c4d305cca81f31cca01e7b5f8473766fba0b929579a6f575492136aa52b47",
+      "chunks": [
+        {
+          "stored_size": 5134,
+          "decoded_size": 15857
+        }
+      ]
+    },
+    {
+      "index": 81,
+      "name": "MKPASS.BLO",
+      "name_field_hex": "4d4b504153532e424c4f000000",
+      "method": 1,
+      "original_offset": 264923,
+      "original_stored_size": 4670,
+      "directory_decoded_size": 12768,
+      "decoded_size": 12768,
+      "decoded_sha256": "9dab293d712a5ae6baba3e22624e7f47132346aa8bef652353d02806bf2852ec",
+      "stored_sha256": "113bc25c84c1c5761c0806c93328ab3c407c84c114e582ab8e349668565c8940",
+      "chunks": [
+        {
+          "stored_size": 4670,
+          "decoded_size": 12768
+        }
+      ]
+    }
+  ]
+}

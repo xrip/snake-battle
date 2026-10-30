@@ -1,0 +1,806 @@
+{
+  "format": "GAMOS five-column word grid",
+  "count": 100,
+  "records": [
+    {
+      "index": 0,
+      "column": "A",
+      "row": 1,
+      "decoded_16_hex": "9196858d809196858d809196858d8000",
+      "repeated_word": "СЦЕНАСЦЕНАСЦЕНА",
+      "word": "СЦЕНА"
+    },
+    {
+      "index": 1,
+      "column": "B",
+      "row": 1,
+      "decoded_16_hex": "8e8f8590808e8f8590808e8f85908000",
+      "repeated_word": "ОПЕРАОПЕРАОПЕРА",
+      "word": "ОПЕРА"
+    },
+    {
+      "index": 2,
+      "column": "C",
+      "row": 1,
+      "decoded_16_hex": "8e8f858a808e8f858a808e8f858a8000",
+      "repeated_word": "ОПЕКАОПЕКАОПЕКА",
+      "word": "ОПЕКА"
+    },
+    {
+      "index": 3,
+      "column": "D",
+      "row": 1,
+      "decoded_16_hex": "8c808b9b988c808b9b988c808b9b9800",
+      "repeated_word": "МАЛЫШМАЛЫШМАЛЫШ",
+      "word": "МАЛЫШ"
+    },
+    {
+      "index": 4,
+      "column": "E",
+      "row": 1,
+      "decoded_16_hex": "8c8e9084808c8e9084808c8e90848000",
+      "repeated_word": "МОРДАМОРДАМОРДА",
+      "word": "МОРДА"
+    },
+    {
+      "index": 5,
+      "column": "A",
+      "row": 2,
+      "decoded_16_hex": "8a908591928a908591928a9085919200",
+      "repeated_word": "КРЕСТКРЕСТКРЕСТ",
+      "word": "КРЕСТ"
+    },
+    {
+      "index": 6,
+      "column": "B",
+      "row": 2,
+      "decoded_16_hex": "8180918d9f8180918d9f8180918d9f00",
+      "repeated_word": "БАСНЯБАСНЯБАСНЯ",
+      "word": "БАСНЯ"
+    },
+    {
+      "index": 7,
+      "column": "C",
+      "row": 2,
+      "decoded_16_hex": "918f8e9092918f8e9092918f8e909200",
+      "repeated_word": "СПОРТСПОРТСПОРТ",
+      "word": "СПОРТ"
+    },
+    {
+      "index": 8,
+      "column": "D",
+      "row": 2,
+      "decoded_16_hex": "868081909b868081909b868081909b00",
+      "repeated_word": "ЖАБРЫЖАБРЫЖАБРЫ",
+      "word": "ЖАБРЫ"
+    },
+    {
+      "index": 9,
+      "column": "E",
+      "row": 2,
+      "decoded_16_hex": "828e878d9f828e878d9f828e878d9f00",
+      "repeated_word": "ВОЗНЯВОЗНЯВОЗНЯ",
+      "word": "ВОЗНЯ"
+    },
+    {
+      "index": 10,
+      "column": "A",
+      "row": 3,
+      "decoded_16_hex": "8d808b888c8d808b888c8d808b888c00",
+      "repeated_word": "НАЛИМНАЛИМНАЛИМ",
+      "word": "НАЛИМ"
+    },
+    {
+      "index": 11,
+      "column": "B",
+      "row": 3,
+      "decoded_16_hex": "819b978e8a819b978e8a819b978e8a00",
+      "repeated_word": "БЫЧОКБЫЧОКБЫЧОК",
+      "word": "БЫЧОК"
+    },
+    {
+      "index": 12,
+      "column": "C",
+      "row": 3,
+      "decoded_16_hex": "88878d8e9188878d8e9188878d8e9100",
+      "repeated_word": "ИЗНОСИЗНОСИЗНОС",
+      "word": "ИЗНОС"
+    },
+    {
+      "index": 13,
+      "column": "D",
+      "row": 3,
+      "decoded_16_hex": "918a938b80918a938b80918a938b8000",
+      "repeated_word": "СКУЛАСКУЛАСКУЛА",
+      "word": "СКУЛА"
+    },
+    {
+      "index": 14,
+      "column": "E",
+      "row": 3,
+      "decoded_16_hex": "928e908596928e908596928e90859600",
+      "repeated_word": "ТОРЕЦТОРЕЦТОРЕЦ",
+      "word": "ТОРЕЦ"
+    },
+    {
+      "index": 15,
+      "column": "A",
+      "row": 4,
+      "decoded_16_hex": "83908882808390888280839088828000",
+      "repeated_word": "ГРИВАГРИВАГРИВА",
+      "word": "ГРИВА"
+    },
+    {
+      "index": 16,
+      "column": "B",
+      "row": 4,
+      "decoded_16_hex": "8485818e988485818e988485818e9800",
+      "repeated_word": "ДЕБОШДЕБОШДЕБОШ",
+      "word": "ДЕБОШ"
+    },
+    {
+      "index": 17,
+      "column": "C",
+      "row": 4,
+      "decoded_16_hex": "829b848e95829b848e95829b848e9500",
+      "repeated_word": "ВЫДОХВЫДОХВЫДОХ",
+      "word": "ВЫДОХ"
+    },
+    {
+      "index": 18,
+      "column": "D",
+      "row": 4,
+      "decoded_16_hex": "94888190809488819080948881908000",
+      "repeated_word": "ФИБРАФИБРАФИБРА",
+      "word": "ФИБРА"
+    },
+    {
+      "index": 19,
+      "column": "E",
+      "row": 4,
+      "decoded_16_hex": "8c80898e908c80898e908c80898e9000",
+      "repeated_word": "МАЙОРМАЙОРМАЙОР",
+      "word": "МАЙОР"
+    },
+    {
+      "index": 20,
+      "column": "A",
+      "row": 5,
+      "decoded_16_hex": "91808f8e8391808f8e8391808f8e8300",
+      "repeated_word": "САПОГСАПОГСАПОГ",
+      "word": "САПОГ"
+    },
+    {
+      "index": 21,
+      "column": "B",
+      "row": 5,
+      "decoded_16_hex": "90808d859690808d859690808d859600",
+      "repeated_word": "РАНЕЦРАНЕЦРАНЕЦ",
+      "word": "РАНЕЦ"
+    },
+    {
+      "index": 22,
+      "column": "C",
+      "row": 5,
+      "decoded_16_hex": "86888b859286888b859286888b859200",
+      "repeated_word": "ЖИЛЕТЖИЛЕТЖИЛЕТ",
+      "word": "ЖИЛЕТ"
+    },
+    {
+      "index": 23,
+      "column": "D",
+      "row": 5,
+      "decoded_16_hex": "988b808d83988b808d83988b808d8300",
+      "repeated_word": "ШЛАНГШЛАНГШЛАНГ",
+      "word": "ШЛАНГ"
+    },
+    {
+      "index": 24,
+      "column": "E",
+      "row": 5,
+      "decoded_16_hex": "818e908596818e908596818e90859600",
+      "repeated_word": "БОРЕЦБОРЕЦБОРЕЦ",
+      "word": "БОРЕЦ"
+    },
+    {
+      "index": 25,
+      "column": "A",
+      "row": 6,
+      "decoded_16_hex": "83909f848083909f848083909f848000",
+      "repeated_word": "ГРЯДАГРЯДАГРЯДА",
+      "word": "ГРЯДА"
+    },
+    {
+      "index": 26,
+      "column": "B",
+      "row": 6,
+      "decoded_16_hex": "9480918e8d9480918e8d9480918e8d00",
+      "repeated_word": "ФАСОНФАСОНФАСОН",
+      "word": "ФАСОН"
+    },
+    {
+      "index": 27,
+      "column": "C",
+      "row": 6,
+      "decoded_16_hex": "8d8e91888a8d8e91888a8d8e91888a00",
+      "repeated_word": "НОСИКНОСИКНОСИК",
+      "word": "НОСИК"
+    },
+    {
+      "index": 28,
+      "column": "D",
+      "row": 6,
+      "decoded_16_hex": "918e898a80918e898a80918e898a8000",
+      "repeated_word": "СОЙКАСОЙКАСОЙКА",
+      "word": "СОЙКА"
+    },
+    {
+      "index": 29,
+      "column": "E",
+      "row": 6,
+      "decoded_16_hex": "8e92909f848e92909f848e92909f8400",
+      "repeated_word": "ОТРЯДОТРЯДОТРЯД",
+      "word": "ОТРЯД"
+    },
+    {
+      "index": 30,
+      "column": "A",
+      "row": 7,
+      "decoded_16_hex": "918b858780918b858780918b85878000",
+      "repeated_word": "СЛЕЗАСЛЕЗАСЛЕЗА",
+      "word": "СЛЕЗА"
+    },
+    {
+      "index": 31,
+      "column": "B",
+      "row": 7,
+      "decoded_16_hex": "829b8b8592829b8b8592829b8b859200",
+      "repeated_word": "ВЫЛЕТВЫЛЕТВЫЛЕТ",
+      "word": "ВЫЛЕТ"
+    },
+    {
+      "index": 32,
+      "column": "C",
+      "row": 7,
+      "decoded_16_hex": "878d808c9f878d808c9f878d808c9f00",
+      "repeated_word": "ЗНАМЯЗНАМЯЗНАМЯ",
+      "word": "ЗНАМЯ"
+    },
+    {
+      "index": 33,
+      "column": "D",
+      "row": 7,
+      "decoded_16_hex": "8883908e8a8883908e8a8883908e8a00",
+      "repeated_word": "ИГРОКИГРОКИГРОК",
+      "word": "ИГРОК"
+    },
+    {
+      "index": 34,
+      "column": "E",
+      "row": 7,
+      "decoded_16_hex": "87938185968793818596879381859600",
+      "repeated_word": "ЗУБЕЦЗУБЕЦЗУБЕЦ",
+      "word": "ЗУБЕЦ"
+    },
+    {
+      "index": 35,
+      "column": "A",
+      "row": 8,
+      "decoded_16_hex": "91808a8b9f91808a8b9f91808a8b9f00",
+      "repeated_word": "САКЛЯСАКЛЯСАКЛЯ",
+      "word": "САКЛЯ"
+    },
+    {
+      "index": 36,
+      "column": "B",
+      "row": 8,
+      "decoded_16_hex": "9193849c9f9193849c9f9193849c9f00",
+      "repeated_word": "СУДЬЯСУДЬЯСУДЬЯ",
+      "word": "СУДЬЯ"
+    },
+    {
+      "index": 37,
+      "column": "C",
+      "row": 8,
+      "decoded_16_hex": "8c8e8d80958c8e8d80958c8e8d809500",
+      "repeated_word": "МОНАХМОНАХМОНАХ",
+      "word": "МОНАХ"
+    },
+    {
+      "index": 38,
+      "column": "D",
+      "row": 8,
+      "decoded_16_hex": "8c859288918c859288918c8592889100",
+      "repeated_word": "МЕТИСМЕТИСМЕТИС",
+      "word": "МЕТИС"
+    },
+    {
+      "index": 39,
+      "column": "E",
+      "row": 8,
+      "decoded_16_hex": "8b888c8e8d8b888c8e8d8b888c8e8d00",
+      "repeated_word": "ЛИМОНЛИМОНЛИМОН",
+      "word": "ЛИМОН"
+    },
+    {
+      "index": 40,
+      "column": "A",
+      "row": 9,
+      "decoded_16_hex": "84938a809284938a809284938a809200",
+      "repeated_word": "ДУКАТДУКАТДУКАТ",
+      "word": "ДУКАТ"
+    },
+    {
+      "index": 41,
+      "column": "B",
+      "row": 9,
+      "decoded_16_hex": "9180978e8a9180978e8a9180978e8a00",
+      "repeated_word": "САЧОКСАЧОКСАЧОК",
+      "word": "САЧОК"
+    },
+    {
+      "index": 42,
+      "column": "C",
+      "row": 9,
+      "decoded_16_hex": "9490938a929490938a929490938a9200",
+      "repeated_word": "ФРУКТФРУКТФРУКТ",
+      "word": "ФРУКТ"
+    },
+    {
+      "index": 43,
+      "column": "D",
+      "row": 9,
+      "decoded_16_hex": "8a8e8285908a8e8285908a8e82859000",
+      "repeated_word": "КОВЕРКОВЕРКОВЕР",
+      "word": "КОВЕР"
+    },
+    {
+      "index": 44,
+      "column": "E",
+      "row": 9,
+      "decoded_16_hex": "8891958e848891958e848891958e8400",
+      "repeated_word": "ИСХОДИСХОДИСХОД",
+      "word": "ИСХОД"
+    },
+    {
+      "index": 45,
+      "column": "A",
+      "row": 10,
+      "decoded_16_hex": "8c9b9899808c9b9899808c9b98998000",
+      "repeated_word": "МЫШЩАМЫШЩАМЫШЩА",
+      "word": "МЫШЩА"
+    },
+    {
+      "index": 46,
+      "column": "B",
+      "row": 10,
+      "decoded_16_hex": "8f85918d9f8f85918d9f8f85918d9f00",
+      "repeated_word": "ПЕСНЯПЕСНЯПЕСНЯ",
+      "word": "ПЕСНЯ"
+    },
+    {
+      "index": 47,
+      "column": "C",
+      "row": 10,
+      "decoded_16_hex": "8f858c87808f858c87808f858c878000",
+      "repeated_word": "ПЕМЗАПЕМЗАПЕМЗА",
+      "word": "ПЕМЗА"
+    },
+    {
+      "index": 48,
+      "column": "D",
+      "row": 10,
+      "decoded_16_hex": "81939485908193948590819394859000",
+      "repeated_word": "БУФЕРБУФЕРБУФЕР",
+      "word": "БУФЕР"
+    },
+    {
+      "index": 49,
+      "column": "E",
+      "row": 10,
+      "decoded_16_hex": "8b8e8c8a808b8e8c8a808b8e8c8a8000",
+      "repeated_word": "ЛОМКАЛОМКАЛОМКА",
+      "word": "ЛОМКА"
+    },
+    {
+      "index": 50,
+      "column": "A",
+      "row": 11,
+      "decoded_16_hex": "8f80988d9f8f80988d9f8f80988d9f00",
+      "repeated_word": "ПАШНЯПАШНЯПАШНЯ",
+      "word": "ПАШНЯ"
+    },
+    {
+      "index": 51,
+      "column": "B",
+      "row": 11,
+      "decoded_16_hex": "8688878d9c8688878d9c8688878d9c00",
+      "repeated_word": "ЖИЗНЬЖИЗНЬЖИЗНЬ",
+      "word": "ЖИЗНЬ"
+    },
+    {
+      "index": 52,
+      "column": "C",
+      "row": 11,
+      "decoded_16_hex": "9892808d9b9892808d9b9892808d9b00",
+      "repeated_word": "ШТАНЫШТАНЫШТАНЫ",
+      "word": "ШТАНЫ"
+    },
+    {
+      "index": 53,
+      "column": "D",
+      "row": 11,
+      "decoded_16_hex": "8a8891929c8a8891929c8a8891929c00",
+      "repeated_word": "КИСТЬКИСТЬКИСТЬ",
+      "word": "КИСТЬ"
+    },
+    {
+      "index": 54,
+      "column": "E",
+      "row": 11,
+      "decoded_16_hex": "848e8c8d80848e8c8d80848e8c8d8000",
+      "repeated_word": "ДОМНАДОМНАДОМНА",
+      "word": "ДОМНА"
+    },
+    {
+      "index": 55,
+      "column": "A",
+      "row": 12,
+      "decoded_16_hex": "909b91808a909b91808a909b91808a00",
+      "repeated_word": "РЫСАКРЫСАКРЫСАК",
+      "word": "РЫСАК"
+    },
+    {
+      "index": 56,
+      "column": "B",
+      "row": 12,
+      "decoded_16_hex": "818e8d8780818e8d8780818e8d878000",
+      "repeated_word": "БОНЗАБОНЗАБОНЗА",
+      "word": "БОНЗА"
+    },
+    {
+      "index": 57,
+      "column": "C",
+      "row": 12,
+      "decoded_16_hex": "8c85928e848c85928e848c85928e8400",
+      "repeated_word": "МЕТОДМЕТОДМЕТОД",
+      "word": "МЕТОД"
+    },
+    {
+      "index": 58,
+      "column": "D",
+      "row": 12,
+      "decoded_16_hex": "878086888c878086888c878086888c00",
+      "repeated_word": "ЗАЖИМЗАЖИМЗАЖИМ",
+      "word": "ЗАЖИМ"
+    },
+    {
+      "index": 59,
+      "column": "E",
+      "row": 12,
+      "decoded_16_hex": "8f8b85918a8f8b85918a8f8b85918a00",
+      "repeated_word": "ПЛЕСКПЛЕСКПЛЕСК",
+      "word": "ПЛЕСК"
+    },
+    {
+      "index": 60,
+      "column": "A",
+      "row": 13,
+      "decoded_16_hex": "9480838e929480838e929480838e9200",
+      "repeated_word": "ФАГОТФАГОТФАГОТ",
+      "word": "ФАГОТ"
+    },
+    {
+      "index": 61,
+      "column": "B",
+      "row": 13,
+      "decoded_16_hex": "8f8e978a808f8e978a808f8e978a8000",
+      "repeated_word": "ПОЧКАПОЧКАПОЧКА",
+      "word": "ПОЧКА"
+    },
+    {
+      "index": 62,
+      "column": "C",
+      "row": 13,
+      "decoded_16_hex": "94908e8d9294908e8d9294908e8d9200",
+      "repeated_word": "ФРОНТФРОНТФРОНТ",
+      "word": "ФРОНТ"
+    },
+    {
+      "index": 63,
+      "column": "D",
+      "row": 13,
+      "decoded_16_hex": "81808788918180878891818087889100",
+      "repeated_word": "БАЗИСБАЗИСБАЗИС",
+      "word": "БАЗИС"
+    },
+    {
+      "index": 64,
+      "column": "E",
+      "row": 13,
+      "decoded_16_hex": "91808f859091808f859091808f859000",
+      "repeated_word": "САПЕРСАПЕРСАПЕР",
+      "word": "САПЕР"
+    },
+    {
+      "index": 65,
+      "column": "A",
+      "row": 14,
+      "decoded_16_hex": "918b888280918b888280918b88828000",
+      "repeated_word": "СЛИВАСЛИВАСЛИВА",
+      "word": "СЛИВА"
+    },
+    {
+      "index": 66,
+      "column": "B",
+      "row": 14,
+      "decoded_16_hex": "81808b859281808b859281808b859200",
+      "repeated_word": "БАЛЕТБАЛЕТБАЛЕТ",
+      "word": "БАЛЕТ"
+    },
+    {
+      "index": 67,
+      "column": "C",
+      "row": 14,
+      "decoded_16_hex": "919290939f919290939f919290939f00",
+      "repeated_word": "СТРУЯСТРУЯСТРУЯ",
+      "word": "СТРУЯ"
+    },
+    {
+      "index": 68,
+      "column": "D",
+      "row": 14,
+      "decoded_16_hex": "979384808a979384808a979384808a00",
+      "repeated_word": "ЧУДАКЧУДАКЧУДАК",
+      "word": "ЧУДАК"
+    },
+    {
+      "index": 69,
+      "column": "E",
+      "row": 14,
+      "decoded_16_hex": "8a908e8d808a908e8d808a908e8d8000",
+      "repeated_word": "КРОНАКРОНАКРОНА",
+      "word": "КРОНА"
+    },
+    {
+      "index": 70,
+      "column": "A",
+      "row": 15,
+      "decoded_16_hex": "958c858b9c958c858b9c958c858b9c00",
+      "repeated_word": "ХМЕЛЬХМЕЛЬХМЕЛЬ",
+      "word": "ХМЕЛЬ"
+    },
+    {
+      "index": 71,
+      "column": "B",
+      "row": 15,
+      "decoded_16_hex": "8d8090929b8d8090929b8d8090929b00",
+      "repeated_word": "НАРТЫНАРТЫНАРТЫ",
+      "word": "НАРТЫ"
+    },
+    {
+      "index": 72,
+      "column": "C",
+      "row": 15,
+      "decoded_16_hex": "828e9f8a80828e9f8a80828e9f8a8000",
+      "repeated_word": "ВОЯКАВОЯКАВОЯКА",
+      "word": "ВОЯКА"
+    },
+    {
+      "index": 73,
+      "column": "D",
+      "row": 15,
+      "decoded_16_hex": "919a858784919a858784919a85878400",
+      "repeated_word": "СЪЕЗДСЪЕЗДСЪЕЗД",
+      "word": "СЪЕЗД"
+    },
+    {
+      "index": 74,
+      "column": "E",
+      "row": 15,
+      "decoded_16_hex": "989293908c989293908c989293908c00",
+      "repeated_word": "ШТУРМШТУРМШТУРМ",
+      "word": "ШТУРМ"
+    },
+    {
+      "index": 75,
+      "column": "A",
+      "row": 16,
+      "decoded_16_hex": "8a938f85968a938f85968a938f859600",
+      "repeated_word": "КУПЕЦКУПЕЦКУПЕЦ",
+      "word": "КУПЕЦ"
+    },
+    {
+      "index": 76,
+      "column": "B",
+      "row": 16,
+      "decoded_16_hex": "888485808b888485808b888485808b00",
+      "repeated_word": "ИДЕАЛИДЕАЛИДЕАЛ",
+      "word": "ИДЕАЛ"
+    },
+    {
+      "index": 77,
+      "column": "C",
+      "row": 16,
+      "decoded_16_hex": "828e86849c828e86849c828e86849c00",
+      "repeated_word": "ВОЖДЬВОЖДЬВОЖДЬ",
+      "word": "ВОЖДЬ"
+    },
+    {
+      "index": 78,
+      "column": "D",
+      "row": 16,
+      "decoded_16_hex": "8c8e9288828c8e9288828c8e92888200",
+      "repeated_word": "МОТИВМОТИВМОТИВ",
+      "word": "МОТИВ"
+    },
+    {
+      "index": 79,
+      "column": "E",
+      "row": 16,
+      "decoded_16_hex": "8d80848e898d80848e898d80848e8900",
+      "repeated_word": "НАДОЙНАДОЙНАДОЙ",
+      "word": "НАДОЙ"
+    },
+    {
+      "index": 80,
+      "column": "A",
+      "row": 17,
+      "decoded_16_hex": "8e9282808b8e9282808b8e9282808b00",
+      "repeated_word": "ОТВАЛОТВАЛОТВАЛ",
+      "word": "ОТВАЛ"
+    },
+    {
+      "index": 81,
+      "column": "B",
+      "row": 17,
+      "decoded_16_hex": "8190808d9c8190808d9c8190808d9c00",
+      "repeated_word": "БРАНЬБРАНЬБРАНЬ",
+      "word": "БРАНЬ"
+    },
+    {
+      "index": 82,
+      "column": "C",
+      "row": 17,
+      "decoded_16_hex": "8c85928b808c85928b808c85928b8000",
+      "repeated_word": "МЕТЛАМЕТЛАМЕТЛА",
+      "word": "МЕТЛА"
+    },
+    {
+      "index": 83,
+      "column": "D",
+      "row": 17,
+      "decoded_16_hex": "878d80929c878d80929c878d80929c00",
+      "repeated_word": "ЗНАТЬЗНАТЬЗНАТЬ",
+      "word": "ЗНАТЬ"
+    },
+    {
+      "index": 84,
+      "column": "E",
+      "row": 17,
+      "decoded_16_hex": "828e898d80828e898d80828e898d8000",
+      "repeated_word": "ВОЙНАВОЙНАВОЙНА",
+      "word": "ВОЙНА"
+    },
+    {
+      "index": 85,
+      "column": "A",
+      "row": 18,
+      "decoded_16_hex": "908e8b888a908e8b888a908e8b888a00",
+      "repeated_word": "РОЛИКРОЛИКРОЛИК",
+      "word": "РОЛИК"
+    },
+    {
+      "index": 86,
+      "column": "B",
+      "row": 18,
+      "decoded_16_hex": "909b828e8a909b828e8a909b828e8a00",
+      "repeated_word": "РЫВОКРЫВОКРЫВОК",
+      "word": "РЫВОК"
+    },
+    {
+      "index": 87,
+      "column": "C",
+      "row": 18,
+      "decoded_16_hex": "9195858c809195858c809195858c8000",
+      "repeated_word": "СХЕМАСХЕМАСХЕМА",
+      "word": "СХЕМА"
+    },
+    {
+      "index": 88,
+      "column": "D",
+      "row": 18,
+      "decoded_16_hex": "84939d8b9c84939d8b9c84939d8b9c00",
+      "repeated_word": "ДУЭЛЬДУЭЛЬДУЭЛЬ",
+      "word": "ДУЭЛЬ"
+    },
+    {
+      "index": 89,
+      "column": "E",
+      "row": 18,
+      "decoded_16_hex": "828a8b8084828a8b8084828a8b808400",
+      "repeated_word": "ВКЛАДВКЛАДВКЛАД",
+      "word": "ВКЛАД"
+    },
+    {
+      "index": 90,
+      "column": "A",
+      "row": 19,
+      "decoded_16_hex": "8a8e8d85968a8e8d85968a8e8d859600",
+      "repeated_word": "КОНЕЦКОНЕЦКОНЕЦ",
+      "word": "КОНЕЦ"
+    },
+    {
+      "index": 91,
+      "column": "B",
+      "row": 19,
+      "decoded_16_hex": "918a8b858f918a8b858f918a8b858f00",
+      "repeated_word": "СКЛЕПСКЛЕПСКЛЕП",
+      "word": "СКЛЕП"
+    },
+    {
+      "index": 92,
+      "column": "C",
+      "row": 19,
+      "decoded_16_hex": "8a858b9c928a858b9c928a858b9c9200",
+      "repeated_word": "КЕЛЬТКЕЛЬТКЕЛЬТ",
+      "word": "КЕЛЬТ"
+    },
+    {
+      "index": 93,
+      "column": "D",
+      "row": 19,
+      "decoded_16_hex": "828584908e828584908e828584908e00",
+      "repeated_word": "ВЕДРОВЕДРОВЕДРО",
+      "word": "ВЕДРО"
+    },
+    {
+      "index": 94,
+      "column": "E",
+      "row": 19,
+      "decoded_16_hex": "8891928e8a8891928e8a8891928e8a00",
+      "repeated_word": "ИСТОКИСТОКИСТОК",
+      "word": "ИСТОК"
+    },
+    {
+      "index": 95,
+      "column": "A",
+      "row": 20,
+      "decoded_16_hex": "8c80908b9f8c80908b9f8c80908b9f00",
+      "repeated_word": "МАРЛЯМАРЛЯМАРЛЯ",
+      "word": "МАРЛЯ"
+    },
+    {
+      "index": 96,
+      "column": "B",
+      "row": 20,
+      "decoded_16_hex": "8f8e8b8a808f8e8b8a808f8e8b8a8000",
+      "repeated_word": "ПОЛКАПОЛКАПОЛКА",
+      "word": "ПОЛКА"
+    },
+    {
+      "index": 97,
+      "column": "C",
+      "row": 20,
+      "decoded_16_hex": "8a808b9b8c8a808b9b8c8a808b9b8c00",
+      "repeated_word": "КАЛЫМКАЛЫМКАЛЫМ",
+      "word": "КАЛЫМ"
+    },
+    {
+      "index": 98,
+      "column": "D",
+      "row": 20,
+      "decoded_16_hex": "84908e819c84908e819c84908e819c00",
+      "repeated_word": "ДРОБЬДРОБЬДРОБЬ",
+      "word": "ДРОБЬ"
+    },
+    {
+      "index": 99,
+      "column": "E",
+      "row": 20,
+      "decoded_16_hex": "8d808b8e838d808b8e838d808b8e8300",
+      "repeated_word": "НАЛОГНАЛОГНАЛОГ",
+      "word": "НАЛОГ"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "source_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "passed": true,
+  "decrypted_file_range": [
+    65046,
+    77110
+  ],
+  "decrypted_size": 12064,
+  "decoded_sha256": "329e58a15e80df4c559db734a719a2837346ad3e82a73ca29c8ddeda1d063c90",
+  "inverse_reencoding_exact": true,
+  "original_wrapper_and_initializer_executed": true,
+  "relocation": {
+    "source_image_offset": "0xEE16",
+    "destination_image_offset": "0xEE00",
+    "length": 11968,
+    "downward_shift": 22,
+    "rewritten_entry_image_offset": "0xED66",
+    "rewritten_entry_bytes": "EA B0 00 D5 0E",
+    "entry_cs_ip": "0ED5:00B0",
+    "offset_mapping": "decoded file-equivalent = 0xFD66 + driver offset; runtime image = 0xED50 + driver offset"
+  },
+  "scope": "Original decoder plus memory relocation initializer returned to caller. No graphics dispatch, EGA hardware or DOS execution."
+}

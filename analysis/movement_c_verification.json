@@ -1,0 +1,29 @@
+{
+  "source_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "passed": true,
+  "cases": 180,
+  "seed": 7359,
+  "categories": [
+    "empty cell",
+    "enemy tail length 3",
+    "enemy tail length 2",
+    "enemy last remaining segment",
+    "own tail",
+    "initial growth"
+  ],
+  "state_compared": [
+    "board: 5476 bytes",
+    "four snake states: 660 bytes",
+    "active and pending arrays",
+    "alive/active/pending counts",
+    "moved flag"
+  ],
+  "stubs_image_offsets": {
+    "0x429a": "audio service",
+    "0x7cb0": "draw snake segment",
+    "0xc10a": "clock read",
+    "0xc116": "timing wait",
+    "0xd3d3": "sprite update"
+  },
+  "scope": "Original 0729:0BEC logical updates versus compiled C. Drawing, audio and timing callees stubbed. No complete DOS or EGA validation."
+}

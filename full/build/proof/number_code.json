@@ -1,0 +1,161 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/NUMBER.OBJ",
+  "object_sha256": "b98d3eb50ff877a16d5d0319a609834430647c9efea166276d8ea51b7f9f37fb",
+  "module": "number.c",
+  "segment_index": 1,
+  "segment_name": "NUMBER_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 3102,
+    "offset": 12,
+    "image_offset": 49644,
+    "address": "0C1E:000C"
+  },
+  "file_offset": 53740,
+  "object_size": 42,
+  "expected_size": 42,
+  "public_bindings": [
+    {
+      "name": "_fmt_number",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3102,
+        "offset": 12,
+        "image_offset": 49644,
+        "address": "0C1E:000C"
+      },
+      "binding": {
+        "segment": 3102,
+        "offset": 12,
+        "image_offset": 49644,
+        "address": "0C1E:000C"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0c1e_000c",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3102,
+        "offset": 12,
+        "image_offset": 49644,
+        "address": "0C1E:000C"
+      },
+      "binding": {
+        "segment": 3102,
+        "offset": 12,
+        "image_offset": 49644,
+        "address": "0C1E:000C"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      42
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 25,
+      "function_offset": 25,
+      "omf_fixup": {
+        "record_offset": 314,
+        "subrecord_offset": 0,
+        "offset": 25,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_f_0c31_004b"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 3121,
+        "offset": 75,
+        "image_offset": 50011,
+        "address": "0C31:004B"
+      },
+      "frame": 3121,
+      "before_hex": "00000000",
+      "after_hex": "4b00310c",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 15,
+      "function_offset": 15,
+      "omf_fixup": {
+        "record_offset": 314,
+        "subrecord_offset": 4,
+        "offset": 15,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3382,
+        "image_offset": 95430,
+        "address": "1679:0D36"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "360d",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [
+    {
+      "segment": 3102,
+      "offset": 39,
+      "image_offset": 49671,
+      "address": "0C1E:0027"
+    }
+  ],
+  "original_relocations": [
+    {
+      "segment": 3102,
+      "offset": 39,
+      "image_offset": 49671,
+      "address": "0C1E:0027"
+    }
+  ],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "a6ce4f2ed570630bf7909ef7ad8514334d92e0dfc5890d07e4228391703e24d9",
+  "original_sha256": "a6ce4f2ed570630bf7909ef7ad8514334d92e0dfc5890d07e4228391703e24d9",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "code"
+}

@@ -1,0 +1,87 @@
+{
+  "module": "register.c",
+  "segment_name": "_BSS",
+  "object_size": 128,
+  "expected_size": 128,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 15298,
+    "image_offset": 107346,
+    "address": "1679:3BC2"
+  },
+  "public_bindings": [
+    {
+      "name": "_sb_register_state",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 15298,
+        "image_offset": 107346,
+        "address": "1679:3BC2"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15298,
+        "image_offset": 107346,
+        "address": "1679:3BC2"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3bc2",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 15298,
+        "image_offset": 107346,
+        "address": "1679:3BC2"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15298,
+        "image_offset": 107346,
+        "address": "1679:3BC2"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3c3a",
+      "object_offset": 120,
+      "actual": {
+        "segment": 5753,
+        "offset": 15418,
+        "image_offset": 107466,
+        "address": "1679:3C3A"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15418,
+        "image_offset": 107466,
+        "address": "1679:3C3A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3c3e",
+      "object_offset": 124,
+      "actual": {
+        "segment": 5753,
+        "offset": 15422,
+        "image_offset": 107470,
+        "address": "1679:3C3E"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15422,
+        "image_offset": 107470,
+        "address": "1679:3C3E"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

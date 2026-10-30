@@ -1,0 +1,267 @@
+{
+  "offset_base": "driver header",
+  "original_file_base": 64870,
+  "runtime_image_base": 60752,
+  "symbols": [
+    {
+      "offset": 0,
+      "offset_hex": "0000",
+      "name": "protected_entry"
+    },
+    {
+      "offset": 176,
+      "offset_hex": "00B0",
+      "name": "sprite_dispatch"
+    },
+    {
+      "offset": 312,
+      "offset_hex": "0138",
+      "name": "unsupported_operation"
+    },
+    {
+      "offset": 320,
+      "offset_hex": "0140",
+      "name": "generated_write_cursor"
+    },
+    {
+      "offset": 322,
+      "offset_hex": "0142",
+      "name": "generated_scanline"
+    },
+    {
+      "offset": 1122,
+      "offset_hex": "0462",
+      "name": "generated_scanline_default_return"
+    },
+    {
+      "offset": 1123,
+      "offset_hex": "0463",
+      "name": "ega_prepare_blit"
+    },
+    {
+      "offset": 1149,
+      "offset_hex": "047D",
+      "name": "ega_select_blit_plane"
+    },
+    {
+      "offset": 1170,
+      "offset_hex": "0492",
+      "name": "ega_restore_blit"
+    },
+    {
+      "offset": 1196,
+      "offset_hex": "04AC",
+      "name": "prepare_if_video"
+    },
+    {
+      "offset": 1206,
+      "offset_hex": "04B6",
+      "name": "restore_if_video"
+    },
+    {
+      "offset": 1216,
+      "offset_hex": "04C0",
+      "name": "select_source_destination_plane"
+    },
+    {
+      "offset": 1273,
+      "offset_hex": "04F9",
+      "name": "ega_select_and_operation"
+    },
+    {
+      "offset": 1281,
+      "offset_hex": "0501",
+      "name": "ega_select_or_operation"
+    },
+    {
+      "offset": 1289,
+      "offset_hex": "0509",
+      "name": "ega_enable_all_planes"
+    },
+    {
+      "offset": 1297,
+      "offset_hex": "0511",
+      "name": "select_mask_source"
+    },
+    {
+      "offset": 2559,
+      "offset_hex": "09FF",
+      "name": "emit_template"
+    },
+    {
+      "offset": 2588,
+      "offset_hex": "0A1C",
+      "name": "build_unmasked_scanline"
+    },
+    {
+      "offset": 3975,
+      "offset_hex": "0F87",
+      "name": "build_source_masked_scanline"
+    },
+    {
+      "offset": 5422,
+      "offset_hex": "152E",
+      "name": "build_destination_masked_scanline"
+    },
+    {
+      "offset": 6875,
+      "offset_hex": "1ADB",
+      "name": "build_both_masked_scanline"
+    },
+    {
+      "offset": 8388,
+      "offset_hex": "20C4",
+      "name": "mask_builder_table"
+    },
+    {
+      "offset": 8396,
+      "offset_hex": "20CC",
+      "name": "execute_generic_blit"
+    },
+    {
+      "offset": 8511,
+      "offset_hex": "213F",
+      "name": "build_and_execute_plain_blit"
+    },
+    {
+      "offset": 8894,
+      "offset_hex": "22BE",
+      "name": "build_ega_mask_and_pass"
+    },
+    {
+      "offset": 9247,
+      "offset_hex": "241F",
+      "name": "build_ega_color_or_pass"
+    },
+    {
+      "offset": 9592,
+      "offset_hex": "2578",
+      "name": "execute_two_pass_ega_masked_blit"
+    },
+    {
+      "offset": 9664,
+      "offset_hex": "25C0",
+      "name": "blit_kind_table"
+    },
+    {
+      "offset": 9696,
+      "offset_hex": "25E0",
+      "name": "command_1_blit"
+    },
+    {
+      "offset": 10100,
+      "offset_hex": "2774",
+      "name": "command_0_create_color_key_mask"
+    },
+    {
+      "offset": 10240,
+      "offset_hex": "2800",
+      "name": "create_mask_ram"
+    },
+    {
+      "offset": 10471,
+      "offset_hex": "28E7",
+      "name": "create_mask_video_noop"
+    },
+    {
+      "offset": 10488,
+      "offset_hex": "28F8",
+      "name": "command_5_put_pixel"
+    },
+    {
+      "offset": 10572,
+      "offset_hex": "294C",
+      "name": "put_pixel_video"
+    },
+    {
+      "offset": 10623,
+      "offset_hex": "297F",
+      "name": "put_pixel_ram"
+    },
+    {
+      "offset": 10656,
+      "offset_hex": "29A0",
+      "name": "put_pixel_masked_ram"
+    },
+    {
+      "offset": 10713,
+      "offset_hex": "29D9",
+      "name": "put_pixel_masked_video"
+    },
+    {
+      "offset": 10868,
+      "offset_hex": "2A74",
+      "name": "command_4_get_pixel"
+    },
+    {
+      "offset": 10961,
+      "offset_hex": "2AD1",
+      "name": "get_pixel_video"
+    },
+    {
+      "offset": 10989,
+      "offset_hex": "2AED",
+      "name": "get_pixel_ram"
+    },
+    {
+      "offset": 11104,
+      "offset_hex": "2B60",
+      "name": "command_2_initialize_image"
+    },
+    {
+      "offset": 11264,
+      "offset_hex": "2C00",
+      "name": "command_3_create_view"
+    },
+    {
+      "offset": 11456,
+      "offset_hex": "2CC0",
+      "name": "command_6_measure_storage"
+    },
+    {
+      "offset": 11536,
+      "offset_hex": "2D10",
+      "name": "command_7_mirror_x"
+    },
+    {
+      "offset": 11695,
+      "offset_hex": "2DAF",
+      "name": "mirror_select_plane"
+    },
+    {
+      "offset": 11727,
+      "offset_hex": "2DCF",
+      "name": "mirror_rows"
+    },
+    {
+      "offset": 11812,
+      "offset_hex": "2E24",
+      "name": "command_8_fill"
+    },
+    {
+      "offset": 11936,
+      "offset_hex": "2EA0",
+      "name": "fill_ram"
+    },
+    {
+      "offset": 12039,
+      "offset_hex": "2F07",
+      "name": "fill_video"
+    },
+    {
+      "offset": 12144,
+      "offset_hex": "2F70",
+      "name": "relocate_and_install"
+    },
+    {
+      "offset": 12240,
+      "offset_hex": "2FD0",
+      "name": "decrypt_wrapper"
+    },
+    {
+      "offset": 12367,
+      "offset_hex": "304F",
+      "name": "final_checksum_extent_byte"
+    }
+  ]
+}

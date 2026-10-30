@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "REGPROF.C": "86a99993e75a3e61fdecee4797d2cfdede2c92fba095838a85a31df3f79e845d",
+    "ADLIB.H": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9"
+  },
+  "flags": "/AS /G2 /Gs /Zp /Oi /Os",
+  "seconds": 4.29,
+  "files": [
+    "REGPROF.C"
+  ],
+  "dpmi": null
+}

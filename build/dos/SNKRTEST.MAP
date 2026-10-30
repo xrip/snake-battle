@@ -1,0 +1,328 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 02810H 02811H _TEXT              CODE
+ 02811H 02A83H 00273H SNKRTEST_TEXT      CODE
+ 02A84H 03356H 008D3H SNKREC_TEXT        CODE
+ 03360H 03360H 00000H _FARDATA           FAR_DATA
+ 03360H 03360H 00000H _FARBSS            FAR_BSS
+ 03360H 03360H 00000H _OVERLAY_          OVRINFO
+ 03360H 03360H 00000H _1STUB_            STUBSEG
+ 03360H 0372BH 003CCH _DATA              DATA
+ 0372CH 0372DH 00002H _CVTSEG            DATA
+ 0372EH 03733H 00006H _SCNSEG            DATA
+ 03734H 03734H 00000H _CONST             CONST
+ 03734H 0373FH 0000CH _INIT_             INITDATA
+ 03740H 03740H 00000H _INITEND_          INITDATA
+ 03740H 03740H 00000H _EXIT_             EXITDATA
+ 03740H 03740H 00000H _EXITEND_          EXITDATA
+ 03740H 037D1H 00092H _BSS               BSS
+ 037D2H 037D2H 00000H _BSSEND            BSSEND
+ 037E0H 0385FH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 0336:0000       DATASEG@
+ 0000:0291       DGROUP@
+ 0000:0395       F_LXLSH@
+ 0000:03B6       F_PADD@
+ 0000:03E5       F_PSUB@
+ 0000:0395       LXLSH@
+ 0000:0392       N_LXLSH@
+ 0000:05F0       N_LXMUL@
+ 0000:03B3       N_PADD@
+ 0000:0607       N_PCMP@
+ 0000:03E2       N_PSUB@
+ 0000:03B6       PADD@
+ 0000:03E5       PSUB@
+ 0000:027A       _abort
+ 0000:0295       _atexit
+ 0000:135A       _close
+ 0000:13A0       _eof
+ 0336:007F       _errno
+ 0000:0357       _exit
+ 0000:0D97       _farfree
+ 0000:0EAB       _farmalloc
+ 0000:100F       _farrealloc
+ 0000:1417       _fclose
+ 0000:14CF       _fflush
+ 0000:1CA7       _fgetc
+ 0000:1D95       _fgetchar
+ 0000:159C       _flushall
+ 0000:17B5       _fopen
+ 0000:1FE7       _fputc
+ 0000:217C       _fputchar
+ 0000:18DE       _fread
+ 0000:0D97       _free
+ 0000:19EE       _fseek
+ 0000:1A6E       _ftell
+ 0000:1B4E       _fwrite
+ 0000:11C9       _ioctl
+ 0000:045E       _isatty
+ 0000:0511       _lseek
+ 0281:0001       _main
+ 0000:0EA1       _malloc
+ 0000:1DA1       _memcpy
+ 0000:1DF2       _open
+ 0000:1FB0       _printf
+ 0000:1008       _realloc
+ 02A8:02BB       _rec_begin_read
+ 02A8:0302       _rec_begin_write
+ 02A8:05E8       _rec_finish_write
+ 02A8:04E9       _rec_read_bytes
+ 02A8:0620       _rec_read_header
+ 02A8:0812       _rec_read_scores
+ 02A8:0361       _rec_read_token
+ 02A8:0347       _rec_set_packed
+ 02A8:04BD       _rec_unget_token
+ 02A8:0559       _rec_write_bytes
+ 02A8:0703       _rec_write_header
+ 02A8:0876       _rec_write_scores
+ 02A8:0417       _rec_write_token
+ 0000:1321       _setblock
+ 0000:2464       _setvbuf
+ 02A8:0078       _snk_complement_password
+ 02A8:003B       _snk_decode
+ 02A8:0004       _snk_encode
+ 02A8:0096       _snk_read
+ 02A8:01BD       _snk_write
+ 0000:2581       _strcat
+ 0000:25C0       _strcmp
+ 0000:25F0       _strlen
+ 0000:0711       _unlink
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 0336:03B6       __argc
+ 0336:03B8       __argv
+ 0336:00E6       __atexitcnt
+ 0336:03E0       __atexittbl
+ 0000:10FF       __brk
+ 0336:008B       __brklvl
+ 0336:006B       __C0argc
+ 0336:006D       __C0argv
+ 0336:0071       __C0environ
+ 0000:0378       __cexit
+ 0000:016A       __checknull
+ 0000:133D       __chmod
+ 0000:0157       __cleanup
+ 0000:1382       __close
+ 0000:0000  Abs  __cvtfak
+ 0000:0386       __c_exit
+ 0336:02B2       __doserrno
+ 0000:044C       __DOSERROR
+ 0336:02B4       __dosErrorToSV
+ 0000:02C2       __dos_getfileattr
+ 0000:02E2       __dos_setfileattr
+ 0336:0075       __envLng
+ 0336:0077       __envseg
+ 0336:0079       __envSize
+ 0000:0366       __exit
+ 0336:00E8       __exitbuf
+ 0336:00EC       __exitfopen
+ 0336:00F0       __exitopen
+ 0000:1C8F       __fgetc
+ 0336:02AE       __fmode
+ 0000:1FCB       __fputc
+ 0000:2190       __FPUTN
+ 0000:176B       __GETFP
+ 0336:0087       __heapbase
+ 0336:008F       __heaptop
+ 0336:005B       __Int0Vector
+ 0336:005F       __Int4Vector
+ 0336:0063       __Int5Vector
+ 0336:0067       __Int6Vector
+ 0000:0413       __IOERROR
+ 0000:046F       __LONGTOA
+ 0000:053A       __MKNAME
+ 0000:0293       __MMODEL
+ 0000:1CA4       __Nfgetc
+ 0336:0284       __nfile
+ 0336:02B0       __notUmask
+ 0000:1F61       __open
+ 0336:0286       __openfd
+ 0000:169A       __OPENFP
+ 0336:007D       __osmajor
+ 0336:007E       __osminor
+ 0336:007D       __osversion
+ 0336:007B       __psp
+ 0000:0628       __read
+ 0000:11F2       __REALCVT
+ 0336:03CC       __RealCvtVector
+ 0000:01C0       __restorezero
+ 0000:113E       __sbrk
+ 0336:03CE       __ScanTodVector
+ 0000:0000  Abs  __setargv__
+ 0000:0657       __setupio
+ 0336:0081       __StartTime
+ 0336:0318       __stklen
+ 0000:0C04       __stpcpy
+ 0336:00F4       __streams
+ 0000:016B       __terminate
+ 0000:0597       __TMPNAM
+ 0000:04F1       __UTOA
+ 0336:007D       __version
+ 0000:0741       __VPRINTER
+ 0000:2760       __write
+ 0000:279C       __xfclose
+ 0000:27D9       __xfflush
+ 0336:0085       ___brklvl
+ 0000:0C57       ___first
+ 0000:0C59       ___last
+ 0000:2393       ___read
+ 0000:0C5B       ___rover
+ 0000:260F       ___write
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __setargv__
+ 0000:0000  Abs  __cvtfak
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0157       __cleanup
+ 0000:016A       __checknull
+ 0000:016B       __terminate
+ 0000:01C0       __restorezero
+ 0000:027A       _abort
+ 0000:0291       DGROUP@
+ 0000:0293       __MMODEL
+ 0000:0295       _atexit
+ 0000:02C2       __dos_getfileattr
+ 0000:02E2       __dos_setfileattr
+ 0000:0357       _exit
+ 0000:0366       __exit
+ 0000:0378       __cexit
+ 0000:0386       __c_exit
+ 0000:0392       N_LXLSH@
+ 0000:0395       LXLSH@
+ 0000:0395       F_LXLSH@
+ 0000:03B3       N_PADD@
+ 0000:03B6       F_PADD@
+ 0000:03B6       PADD@
+ 0000:03E2       N_PSUB@
+ 0000:03E5       F_PSUB@
+ 0000:03E5       PSUB@
+ 0000:0413       __IOERROR
+ 0000:044C       __DOSERROR
+ 0000:045E       _isatty
+ 0000:046F       __LONGTOA
+ 0000:04F1       __UTOA
+ 0000:0511       _lseek
+ 0000:053A       __MKNAME
+ 0000:0597       __TMPNAM
+ 0000:05F0       N_LXMUL@
+ 0000:0607       N_PCMP@
+ 0000:0628       __read
+ 0000:0657       __setupio
+ 0000:0711       _unlink
+ 0000:0741       __VPRINTER
+ 0000:0C04       __stpcpy
+ 0000:0C57       ___first
+ 0000:0C59       ___last
+ 0000:0C5B       ___rover
+ 0000:0D97       _free
+ 0000:0D97       _farfree
+ 0000:0EA1       _malloc
+ 0000:0EAB       _farmalloc
+ 0000:1000  Abs  __AHINCR
+ 0000:1008       _realloc
+ 0000:100F       _farrealloc
+ 0000:10FF       __brk
+ 0000:113E       __sbrk
+ 0000:11C9       _ioctl
+ 0000:11F2       __REALCVT
+ 0000:1321       _setblock
+ 0000:133D       __chmod
+ 0000:135A       _close
+ 0000:1382       __close
+ 0000:13A0       _eof
+ 0000:1417       _fclose
+ 0000:14CF       _fflush
+ 0000:159C       _flushall
+ 0000:169A       __OPENFP
+ 0000:176B       __GETFP
+ 0000:17B5       _fopen
+ 0000:18DE       _fread
+ 0000:19EE       _fseek
+ 0000:1A6E       _ftell
+ 0000:1B4E       _fwrite
+ 0000:1C8F       __fgetc
+ 0000:1CA4       __Nfgetc
+ 0000:1CA7       _fgetc
+ 0000:1D95       _fgetchar
+ 0000:1DA1       _memcpy
+ 0000:1DF2       _open
+ 0000:1F61       __open
+ 0000:1FB0       _printf
+ 0000:1FCB       __fputc
+ 0000:1FE7       _fputc
+ 0000:217C       _fputchar
+ 0000:2190       __FPUTN
+ 0000:2393       ___read
+ 0000:2464       _setvbuf
+ 0000:2581       _strcat
+ 0000:25C0       _strcmp
+ 0000:25F0       _strlen
+ 0000:260F       ___write
+ 0000:2760       __write
+ 0000:279C       __xfclose
+ 0000:27D9       __xfflush
+ 0281:0001       _main
+ 02A8:0004       _snk_encode
+ 02A8:003B       _snk_decode
+ 02A8:0078       _snk_complement_password
+ 02A8:0096       _snk_read
+ 02A8:01BD       _snk_write
+ 02A8:02BB       _rec_begin_read
+ 02A8:0302       _rec_begin_write
+ 02A8:0347       _rec_set_packed
+ 02A8:0361       _rec_read_token
+ 02A8:0417       _rec_write_token
+ 02A8:04BD       _rec_unget_token
+ 02A8:04E9       _rec_read_bytes
+ 02A8:0559       _rec_write_bytes
+ 02A8:05E8       _rec_finish_write
+ 02A8:0620       _rec_read_header
+ 02A8:0703       _rec_write_header
+ 02A8:0812       _rec_read_scores
+ 02A8:0876       _rec_write_scores
+ 0336:0000       DATASEG@
+ 0336:005B       __Int0Vector
+ 0336:005F       __Int4Vector
+ 0336:0063       __Int5Vector
+ 0336:0067       __Int6Vector
+ 0336:006B       __C0argc
+ 0336:006D       __C0argv
+ 0336:0071       __C0environ
+ 0336:0075       __envLng
+ 0336:0077       __envseg
+ 0336:0079       __envSize
+ 0336:007B       __psp
+ 0336:007D       __osversion
+ 0336:007D       __osmajor
+ 0336:007D       __version
+ 0336:007E       __osminor
+ 0336:007F       _errno
+ 0336:0081       __StartTime
+ 0336:0085       ___brklvl
+ 0336:0087       __heapbase
+ 0336:008B       __brklvl
+ 0336:008F       __heaptop
+ 0336:00E6       __atexitcnt
+ 0336:00E8       __exitbuf
+ 0336:00EC       __exitfopen
+ 0336:00F0       __exitopen
+ 0336:00F4       __streams
+ 0336:0284       __nfile
+ 0336:0286       __openfd
+ 0336:02AE       __fmode
+ 0336:02B0       __notUmask
+ 0336:02B2       __doserrno
+ 0336:02B4       __dosErrorToSV
+ 0336:0318       __stklen
+ 0336:03B6       __argc
+ 0336:03B8       __argv
+ 0336:03CC       __RealCvtVector
+ 0336:03CE       __ScanTodVector
+ 0336:03E0       __atexittbl
+
+Program entry point at 0000:0000
+

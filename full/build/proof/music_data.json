@@ -1,0 +1,143 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/MUSIC.OBJ",
+  "object_sha256": "6d4dbe7fa94006ea9a0b9710666d1d9f0537e1c67c456e86fdc617511c58773d",
+  "module": "music.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 148,
+    "image_offset": 92196,
+    "address": "1679:0094"
+  },
+  "file_offset": 96292,
+  "object_size": 52,
+  "expected_size": 52,
+  "public_bindings": [
+    {
+      "name": "_sb_music_defaults",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 148,
+        "image_offset": 92196,
+        "address": "1679:0094"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 148,
+        "image_offset": 92196,
+        "address": "1679:0094"
+      },
+      "equal": true
+    },
+    {
+      "name": "_music_available",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 148,
+        "image_offset": 92196,
+        "address": "1679:0094"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 148,
+        "image_offset": 92196,
+        "address": "1679:0094"
+      },
+      "equal": true
+    },
+    {
+      "name": "_music_playing",
+      "object_offset": 2,
+      "expected": {
+        "segment": 5753,
+        "offset": 150,
+        "image_offset": 92198,
+        "address": "1679:0096"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 150,
+        "image_offset": 92198,
+        "address": "1679:0096"
+      },
+      "equal": true
+    },
+    {
+      "name": "_resource_error",
+      "object_offset": 4,
+      "expected": {
+        "segment": 5753,
+        "offset": 152,
+        "image_offset": 92200,
+        "address": "1679:0098"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 152,
+        "image_offset": 92200,
+        "address": "1679:0098"
+      },
+      "equal": true
+    },
+    {
+      "name": "_music_suffix",
+      "object_offset": 28,
+      "expected": {
+        "segment": 5753,
+        "offset": 176,
+        "image_offset": 92224,
+        "address": "1679:00B0"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 176,
+        "image_offset": 92224,
+        "address": "1679:00B0"
+      },
+      "equal": true
+    },
+    {
+      "name": "_music_error",
+      "object_offset": 33,
+      "expected": {
+        "segment": 5753,
+        "offset": 181,
+        "image_offset": 92229,
+        "address": "1679:00B5"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 181,
+        "image_offset": 92229,
+        "address": "1679:00B5"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      52
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "5a5f00615fbc1c7b8e284d47bd717ba765a79070303c8edc697eb11e4feec427",
+  "original_sha256": "5a5f00615fbc1c7b8e284d47bd717ba765a79070303c8edc697eb11e4feec427",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

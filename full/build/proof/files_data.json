@@ -1,0 +1,177 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/FILES.OBJ",
+  "object_sha256": "0ae744bbb9b33245937ecb2a35943a82062fae35c99bcdd6347ceea41e941e13",
+  "module": "files.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3326,
+    "image_offset": 95374,
+    "address": "1679:0CFE"
+  },
+  "file_offset": 99470,
+  "object_size": 52,
+  "expected_size": 52,
+  "public_bindings": [
+    {
+      "name": "_fmt_caps",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3326,
+        "image_offset": 95374,
+        "address": "1679:0CFE"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3326,
+        "image_offset": 95374,
+        "address": "1679:0CFE"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_wb",
+      "object_offset": 49,
+      "expected": {
+        "segment": 5753,
+        "offset": 3375,
+        "image_offset": 95423,
+        "address": "1679:0D2F"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3375,
+        "image_offset": 95423,
+        "address": "1679:0D2F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_rb",
+      "object_offset": 46,
+      "expected": {
+        "segment": 5753,
+        "offset": 3372,
+        "image_offset": 95420,
+        "address": "1679:0D2C"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3372,
+        "image_offset": 95420,
+        "address": "1679:0D2C"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_dot",
+      "object_offset": 44,
+      "expected": {
+        "segment": 5753,
+        "offset": 3370,
+        "image_offset": 95418,
+        "address": "1679:0D2A"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3370,
+        "image_offset": 95418,
+        "address": "1679:0D2A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_snk_glob",
+      "object_offset": 38,
+      "expected": {
+        "segment": 5753,
+        "offset": 3364,
+        "image_offset": 95412,
+        "address": "1679:0D24"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3364,
+        "image_offset": 95412,
+        "address": "1679:0D24"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_date_format",
+      "object_offset": 25,
+      "expected": {
+        "segment": 5753,
+        "offset": 3351,
+        "image_offset": 95399,
+        "address": "1679:0D17"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3351,
+        "image_offset": 95399,
+        "address": "1679:0D17"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_error_memory",
+      "object_offset": 7,
+      "expected": {
+        "segment": 5753,
+        "offset": 3333,
+        "image_offset": 95381,
+        "address": "1679:0D05"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3333,
+        "image_offset": 95381,
+        "address": "1679:0D05"
+      },
+      "equal": true
+    },
+    {
+      "name": "_fmt_error_format",
+      "object_offset": 2,
+      "expected": {
+        "segment": 5753,
+        "offset": 3328,
+        "image_offset": 95376,
+        "address": "1679:0D00"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3328,
+        "image_offset": 95376,
+        "address": "1679:0D00"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      52
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "7edbf9f1170aae0e62def6ca9b1f54cf5cff3622580538a27e4177b53b5df43e",
+  "original_sha256": "7edbf9f1170aae0e62def6ca9b1f54cf5cff3622580538a27e4177b53b5df43e",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

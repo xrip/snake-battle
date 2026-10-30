@@ -1,0 +1,214 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 010D6H 010D7H _TEXT              CODE
+ 010D7H 010DDH 00007H MAIN_TEXT          CODE
+ 010DEH 01493H 003B6H AIMATCH_TEXT       CODE
+ 014A0H 014A0H 00000H _FARDATA           FAR_DATA
+ 014A0H 014A0H 00000H _FARBSS            FAR_BSS
+ 014A0H 014A0H 00000H _OVERLAY_          OVRINFO
+ 014A0H 014A0H 00000H _1STUB_            STUBSEG
+ 014A0H 01781H 002E2H _DATA              DATA
+ 01782H 01782H 00000H _CVTSEG            DATA
+ 01782H 01782H 00000H _SCNSEG            DATA
+ 01782H 01782H 00000H _CONST             CONST
+ 01782H 01787H 00006H _INIT_             INITDATA
+ 01788H 01788H 00000H _INITEND_          INITDATA
+ 01788H 01788H 00000H _EXIT_             EXITDATA
+ 01788H 01788H 00000H _EXITEND_          EXITDATA
+ 01788H 01807H 00080H _BSS               BSS
+ 01808H 01808H 00000H _BSSEND            BSSEND
+ 01810H 0188FH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 014A:0000       DATASEG@
+ 0000:0291       DGROUP@
+ 0000:0374       F_LXLSH@
+ 0000:0395       F_PADD@
+ 0000:03C4       F_PSUB@
+ 0000:0355       F_SCOPY@
+ 0000:0374       LXLSH@
+ 0000:0371       N_LXLSH@
+ 0000:0392       N_PADD@
+ 0000:0477       N_PCMP@
+ 0000:03C1       N_PSUB@
+ 0000:0395       PADD@
+ 0000:03C4       PSUB@
+ 0000:0355       SCOPY@
+ 0000:027A       _abort
+ 0000:0295       _atexit
+ 014A:007F       _errno
+ 0000:031A       _exit
+ 0000:0692       _farfree
+ 0000:07A6       _farmalloc
+ 0000:090A       _farrealloc
+ 0000:0AE0       _fflush
+ 0000:0BAD       _flushall
+ 0000:0692       _free
+ 0000:0C71       _fseek
+ 0000:0CF1       _ftell
+ 0000:043D       _isatty
+ 0000:044E       _lseek
+ 010D:0007       _main
+ 0000:079C       _malloc
+ 0000:0DD1       _memcpy
+ 0000:0903       _realloc
+ 010D:015C       _sb_compare_matches
+ 010D:01B2       _sb_match_card
+ 010D:000E       _sb_mirror_x
+ 010D:00B5       _sb_rotate_clockwise
+ 0000:0AC4       _setblock
+ 0000:0DF5       _setvbuf
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 014A:00B6       __atexitcnt
+ 014A:02E8       __atexittbl
+ 0000:09FA       __brk
+ 014A:008B       __brklvl
+ 014A:006B       __C0argc
+ 014A:006D       __C0argv
+ 014A:0071       __C0environ
+ 0000:033B       __cexit
+ 0000:016A       __checknull
+ 0000:0157       __cleanup
+ 0000:0349       __c_exit
+ 014A:027E       __doserrno
+ 0000:042B       __DOSERROR
+ 014A:0280       __dosErrorToSV
+ 014A:0075       __envLng
+ 014A:0077       __envseg
+ 014A:0079       __envSize
+ 0000:0329       __exit
+ 014A:00B8       __exitbuf
+ 014A:00BC       __exitfopen
+ 014A:00C0       __exitopen
+ 014A:0087       __heapbase
+ 014A:008F       __heaptop
+ 014A:005B       __Int0Vector
+ 014A:005F       __Int4Vector
+ 014A:0063       __Int5Vector
+ 014A:0067       __Int6Vector
+ 0000:03F2       __IOERROR
+ 0000:0293       __MMODEL
+ 014A:0254       __nfile
+ 014A:0256       __openfd
+ 014A:007D       __osmajor
+ 014A:007E       __osminor
+ 014A:007D       __osversion
+ 014A:007B       __psp
+ 014A:02E2       __RealCvtVector
+ 0000:01C0       __restorezero
+ 0000:0A39       __sbrk
+ 014A:02E2       __ScanTodVector
+ 0000:0498       __setupio
+ 014A:0081       __StartTime
+ 014A:02DA       __stklen
+ 014A:00C4       __streams
+ 0000:016B       __terminate
+ 014A:007D       __version
+ 0000:1063       __write
+ 0000:109F       __xfflush
+ 014A:0085       ___brklvl
+ 0000:0552       ___first
+ 0000:0554       ___last
+ 0000:0556       ___rover
+ 0000:0F12       ___write
+
+  Address         Publics by Value
+
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0157       __cleanup
+ 0000:016A       __checknull
+ 0000:016B       __terminate
+ 0000:01C0       __restorezero
+ 0000:027A       _abort
+ 0000:0291       DGROUP@
+ 0000:0293       __MMODEL
+ 0000:0295       _atexit
+ 0000:031A       _exit
+ 0000:0329       __exit
+ 0000:033B       __cexit
+ 0000:0349       __c_exit
+ 0000:0355       F_SCOPY@
+ 0000:0355       SCOPY@
+ 0000:0371       N_LXLSH@
+ 0000:0374       LXLSH@
+ 0000:0374       F_LXLSH@
+ 0000:0392       N_PADD@
+ 0000:0395       F_PADD@
+ 0000:0395       PADD@
+ 0000:03C1       N_PSUB@
+ 0000:03C4       F_PSUB@
+ 0000:03C4       PSUB@
+ 0000:03F2       __IOERROR
+ 0000:042B       __DOSERROR
+ 0000:043D       _isatty
+ 0000:044E       _lseek
+ 0000:0477       N_PCMP@
+ 0000:0498       __setupio
+ 0000:0552       ___first
+ 0000:0554       ___last
+ 0000:0556       ___rover
+ 0000:0692       _free
+ 0000:0692       _farfree
+ 0000:079C       _malloc
+ 0000:07A6       _farmalloc
+ 0000:0903       _realloc
+ 0000:090A       _farrealloc
+ 0000:09FA       __brk
+ 0000:0A39       __sbrk
+ 0000:0AC4       _setblock
+ 0000:0AE0       _fflush
+ 0000:0BAD       _flushall
+ 0000:0C71       _fseek
+ 0000:0CF1       _ftell
+ 0000:0DD1       _memcpy
+ 0000:0DF5       _setvbuf
+ 0000:0F12       ___write
+ 0000:1000  Abs  __AHINCR
+ 0000:1063       __write
+ 0000:109F       __xfflush
+ 010D:0007       _main
+ 010D:000E       _sb_mirror_x
+ 010D:00B5       _sb_rotate_clockwise
+ 010D:015C       _sb_compare_matches
+ 010D:01B2       _sb_match_card
+ 014A:0000       DATASEG@
+ 014A:005B       __Int0Vector
+ 014A:005F       __Int4Vector
+ 014A:0063       __Int5Vector
+ 014A:0067       __Int6Vector
+ 014A:006B       __C0argc
+ 014A:006D       __C0argv
+ 014A:0071       __C0environ
+ 014A:0075       __envLng
+ 014A:0077       __envseg
+ 014A:0079       __envSize
+ 014A:007B       __psp
+ 014A:007D       __osversion
+ 014A:007D       __osmajor
+ 014A:007D       __version
+ 014A:007E       __osminor
+ 014A:007F       _errno
+ 014A:0081       __StartTime
+ 014A:0085       ___brklvl
+ 014A:0087       __heapbase
+ 014A:008B       __brklvl
+ 014A:008F       __heaptop
+ 014A:00B6       __atexitcnt
+ 014A:00B8       __exitbuf
+ 014A:00BC       __exitfopen
+ 014A:00C0       __exitopen
+ 014A:00C4       __streams
+ 014A:0254       __nfile
+ 014A:0256       __openfd
+ 014A:027E       __doserrno
+ 014A:0280       __dosErrorToSV
+ 014A:02DA       __stklen
+ 014A:02E2       __ScanTodVector
+ 014A:02E2       __RealCvtVector
+ 014A:02E8       __atexittbl
+
+Program entry point at 0000:0000
+

@@ -1,0 +1,488 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/CHUNK.OBJ",
+  "object_sha256": "76357f67337748db0092fc3a4579b6475c7b39989fe8656a6bf16aacea984e81",
+  "module": "chunk.c",
+  "segment_index": 1,
+  "segment_name": "CHUNK_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 3547,
+    "offset": 9,
+    "image_offset": 56761,
+    "address": "0DDB:0009"
+  },
+  "file_offset": 60857,
+  "object_size": 318,
+  "expected_size": 318,
+  "public_bindings": [
+    {
+      "name": "_chunk_00a8",
+      "object_offset": 159,
+      "expected": {
+        "segment": 3547,
+        "offset": 168,
+        "image_offset": 56920,
+        "address": "0DDB:00A8"
+      },
+      "binding": {
+        "segment": 3547,
+        "offset": 168,
+        "image_offset": 56920,
+        "address": "0DDB:00A8"
+      },
+      "equal": true
+    },
+    {
+      "name": "_chunk_0009",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3547,
+        "offset": 9,
+        "image_offset": 56761,
+        "address": "0DDB:0009"
+      },
+      "binding": {
+        "segment": 3547,
+        "offset": 9,
+        "image_offset": 56761,
+        "address": "0DDB:0009"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0ddb_0009",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3547,
+        "offset": 9,
+        "image_offset": 56761,
+        "address": "0DDB:0009"
+      },
+      "binding": {
+        "segment": 3547,
+        "offset": 9,
+        "image_offset": 56761,
+        "address": "0DDB:0009"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0ddb_00a8",
+      "object_offset": 159,
+      "expected": {
+        "segment": 3547,
+        "offset": 168,
+        "image_offset": 56920,
+        "address": "0DDB:00A8"
+      },
+      "binding": {
+        "segment": 3547,
+        "offset": 168,
+        "image_offset": 56920,
+        "address": "0DDB:00A8"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      318
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 309,
+      "function_offset": 309,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 0,
+        "offset": 309,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_f_0c21_00f5"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 3105,
+        "offset": 245,
+        "image_offset": 49925,
+        "address": "0C21:00F5"
+      },
+      "frame": 3105,
+      "before_hex": "00000000",
+      "after_hex": "f500210c",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 289,
+      "function_offset": 289,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 4,
+        "offset": 289,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 3,
+          "name": "_fread"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 9819,
+        "image_offset": 9819,
+        "address": "0000:265B"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "5b260000",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 225,
+      "function_offset": 225,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 8,
+        "offset": 225,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_f_0c21_00f5"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 3105,
+        "offset": 245,
+        "image_offset": 49925,
+        "address": "0C21:00F5"
+      },
+      "frame": 3105,
+      "before_hex": "00000000",
+      "after_hex": "f500210c",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 203,
+      "function_offset": 203,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 12,
+        "offset": 203,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 3,
+          "name": "_fread"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 9819,
+        "image_offset": 9819,
+        "address": "0000:265B"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "5b260000",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 150,
+      "function_offset": 150,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 16,
+        "offset": 150,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_f_0c21_00f5"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 3105,
+        "offset": 245,
+        "image_offset": 49925,
+        "address": "0C21:00F5"
+      },
+      "frame": 3105,
+      "before_hex": "00000000",
+      "after_hex": "f500210c",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 130,
+      "function_offset": 130,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 20,
+        "offset": 130,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_fwrite"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 10443,
+        "image_offset": 10443,
+        "address": "0000:28CB"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "cb280000",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 66,
+      "function_offset": 66,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 24,
+        "offset": 66,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_f_0c21_00f5"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 3105,
+        "offset": 245,
+        "image_offset": 49925,
+        "address": "0C21:00F5"
+      },
+      "frame": 3105,
+      "before_hex": "00000000",
+      "after_hex": "f500210c",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 44,
+      "function_offset": 44,
+      "omf_fixup": {
+        "record_offset": 738,
+        "subrecord_offset": 28,
+        "offset": 44,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_fwrite"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 0,
+        "offset": 10443,
+        "image_offset": 10443,
+        "address": "0000:28CB"
+      },
+      "frame": 0,
+      "before_hex": "00000000",
+      "after_hex": "cb280000",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [
+    {
+      "segment": 3547,
+      "offset": 320,
+      "image_offset": 57072,
+      "address": "0DDB:0140"
+    },
+    {
+      "segment": 3547,
+      "offset": 300,
+      "image_offset": 57052,
+      "address": "0DDB:012C"
+    },
+    {
+      "segment": 3547,
+      "offset": 236,
+      "image_offset": 56988,
+      "address": "0DDB:00EC"
+    },
+    {
+      "segment": 3547,
+      "offset": 214,
+      "image_offset": 56966,
+      "address": "0DDB:00D6"
+    },
+    {
+      "segment": 3547,
+      "offset": 161,
+      "image_offset": 56913,
+      "address": "0DDB:00A1"
+    },
+    {
+      "segment": 3547,
+      "offset": 141,
+      "image_offset": 56893,
+      "address": "0DDB:008D"
+    },
+    {
+      "segment": 3547,
+      "offset": 77,
+      "image_offset": 56829,
+      "address": "0DDB:004D"
+    },
+    {
+      "segment": 3547,
+      "offset": 55,
+      "image_offset": 56807,
+      "address": "0DDB:0037"
+    }
+  ],
+  "original_relocations": [
+    {
+      "segment": 3547,
+      "offset": 320,
+      "image_offset": 57072,
+      "address": "0DDB:0140"
+    },
+    {
+      "segment": 3547,
+      "offset": 300,
+      "image_offset": 57052,
+      "address": "0DDB:012C"
+    },
+    {
+      "segment": 3547,
+      "offset": 236,
+      "image_offset": 56988,
+      "address": "0DDB:00EC"
+    },
+    {
+      "segment": 3547,
+      "offset": 214,
+      "image_offset": 56966,
+      "address": "0DDB:00D6"
+    },
+    {
+      "segment": 3547,
+      "offset": 161,
+      "image_offset": 56913,
+      "address": "0DDB:00A1"
+    },
+    {
+      "segment": 3547,
+      "offset": 141,
+      "image_offset": 56893,
+      "address": "0DDB:008D"
+    },
+    {
+      "segment": 3547,
+      "offset": 77,
+      "image_offset": 56829,
+      "address": "0DDB:004D"
+    },
+    {
+      "segment": 3547,
+      "offset": 55,
+      "image_offset": 56807,
+      "address": "0DDB:0037"
+    }
+  ],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "2ea3d126130760ee009d54ce9df7474c85c50037b53465279c13e62d79aeb669",
+  "original_sha256": "2ea3d126130760ee009d54ce9df7474c85c50037b53465279c13e62d79aeb669",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "code"
+}

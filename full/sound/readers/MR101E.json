@@ -1,0 +1,57 @@
+{
+  "object": "work/midi-analysis/build/MR101E.OBJ",
+  "object_sha256": "6868924a8e9b7cac11279ac88cf9184bcd20bacf76bea01a4f3ede6f93eb49f5",
+  "module": "MR101E.ASM",
+  "segment_index": 1,
+  "segment_name": "_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4929,
+    "offset": 4126,
+    "image_offset": 82990,
+    "address": "1341:101E"
+  },
+  "file_offset": 87086,
+  "object_size": 35,
+  "expected_size": 35,
+  "public_bindings": [
+    {
+      "name": "_snd_101E",
+      "object_offset": 0,
+      "expected": {
+        "segment": 4929,
+        "offset": 4126,
+        "image_offset": 82990,
+        "address": "1341:101E"
+      },
+      "binding": {
+        "segment": 4929,
+        "offset": 4126,
+        "image_offset": 82990,
+        "address": "1341:101E"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      35
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "892d5f5c58b126f82856a914fd14a6bdf016ac84145c721a3a811cd66a60b9ed",
+  "original_sha256": "892d5f5c58b126f82856a914fd14a6bdf016ac84145c721a3a811cd66a60b9ed",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

@@ -1,0 +1,39 @@
+{
+  "object": "snake-battle-recovered/full/render/build/RENDER.OBJ",
+  "object_sha256": "a352c9e79dcf73f72e4d363be2deab88ee9d164f84280059e780f36a99273be8",
+  "module": "render.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3510,
+    "image_offset": 95558,
+    "address": "1679:0DB6"
+  },
+  "file_offset": 99654,
+  "object_size": 35,
+  "expected_size": 35,
+  "public_bindings": [],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      35
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "7a790e3b5163f7c8c9a275f8340c57e6570527bd14d229cfb835ab9c0e1a9c92",
+  "original_sha256": "7a790e3b5163f7c8c9a275f8340c57e6570527bd14d229cfb835ab9c0e1a9c92",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

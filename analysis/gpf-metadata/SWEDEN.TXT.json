@@ -1,0 +1,420 @@
+{
+  "format": "DOS CP866 CRLF text",
+  "lines": [
+    {
+      "index": 0,
+      "characters": 106,
+      "text": "  !@#$% &   _   QWERTYUIOP{}  ASDFGHJKL  ~  ZXCVBNM .  1234567890-   QWERTYUIOP    ASDFGHJKL '   ZXCVBNM ."
+    },
+    {
+      "index": 1,
+      "characters": 108,
+      "text": "  !@#$%^&*()_+  QWERTYUIOP{}  ASDFGHJKL:\"~ |ZXCVBNM<>? 1234567890-=\\ qwertyuiop[]  asdfghjkl;'` \\zxcvbnm,./ "
+    },
+    {
+      "index": 2,
+      "characters": 48,
+      "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\\[];',./ "
+    },
+    {
+      "index": 3,
+      "characters": 48,
+      "text": "abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:\"<>? "
+    },
+    {
+      "index": 4,
+      "characters": 51,
+      "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZПОЩ1234567890`-=\\[];',./ "
+    },
+    {
+      "index": 5,
+      "characters": 51,
+      "text": "abcdefghijklmnopqrstuvwxyzЖДФ!@#$%^&*()~_+|{}:\"<>? "
+    },
+    {
+      "index": 6,
+      "characters": 8,
+      "text": "BATTLE\t\t"
+    },
+    {
+      "index": 7,
+      "characters": 16,
+      "text": "MAKE SNAKE BRAIN"
+    },
+    {
+      "index": 8,
+      "characters": 12,
+      "text": "CHOOSE COLOR"
+    },
+    {
+      "index": 9,
+      "characters": 13,
+      "text": "EDIT PASSWORD"
+    },
+    {
+      "index": 10,
+      "characters": 15,
+      "text": "ACKNOWLEDGEMENT"
+    },
+    {
+      "index": 11,
+      "characters": 9,
+      "text": "Nya lФsen"
+    },
+    {
+      "index": 12,
+      "characters": 4,
+      "text": "MAIL"
+    },
+    {
+      "index": 13,
+      "characters": 7,
+      "text": "Avsluta"
+    },
+    {
+      "index": 14,
+      "characters": 6,
+      "text": "NOVICE"
+    },
+    {
+      "index": 15,
+      "characters": 8,
+      "text": "ADVANCED"
+    },
+    {
+      "index": 16,
+      "characters": 6,
+      "text": "EXPERT"
+    },
+    {
+      "index": 17,
+      "characters": 4,
+      "text": "Namn"
+    },
+    {
+      "index": 18,
+      "characters": 5,
+      "text": "Betyg"
+    },
+    {
+      "index": 19,
+      "characters": 5,
+      "text": "MДrke"
+    },
+    {
+      "index": 20,
+      "characters": 7,
+      "text": " Starta"
+    },
+    {
+      "index": 21,
+      "characters": 8,
+      "text": "LЖngsamt"
+    },
+    {
+      "index": 22,
+      "characters": 5,
+      "text": " Stop"
+    },
+    {
+      "index": 23,
+      "characters": 5,
+      "text": " Ljud"
+    },
+    {
+      "index": 24,
+      "characters": 7,
+      "text": "Avsluta"
+    },
+    {
+      "index": 25,
+      "characters": 9,
+      "text": "sin huvud"
+    },
+    {
+      "index": 26,
+      "characters": 13,
+      "text": "fiendes huvud"
+    },
+    {
+      "index": 27,
+      "characters": 9,
+      "text": "sin kropp"
+    },
+    {
+      "index": 28,
+      "characters": 13,
+      "text": "fiendes kropp"
+    },
+    {
+      "index": 29,
+      "characters": 9,
+      "text": "sin svans"
+    },
+    {
+      "index": 30,
+      "characters": 13,
+      "text": "fiendes svans"
+    },
+    {
+      "index": 31,
+      "characters": 7,
+      "text": "barriДr"
+    },
+    {
+      "index": 32,
+      "characters": 12,
+      "text": "obebodd fДlt"
+    },
+    {
+      "index": 33,
+      "characters": 10,
+      "text": "utestuting"
+    },
+    {
+      "index": 34,
+      "characters": 10,
+      "text": "eller-fДrg"
+    },
+    {
+      "index": 35,
+      "characters": 8,
+      "text": "ock-fДrg"
+    },
+    {
+      "index": 36,
+      "characters": 8,
+      "text": "redigera"
+    },
+    {
+      "index": 37,
+      "characters": 11,
+      "text": "INSERT CARD"
+    },
+    {
+      "index": 38,
+      "characters": 11,
+      "text": "DELETE CARD"
+    },
+    {
+      "index": 39,
+      "characters": 10,
+      "text": "huvud menu"
+    },
+    {
+      "index": 40,
+      "characters": 10,
+      "text": "FOR EXPERT"
+    },
+    {
+      "index": 41,
+      "characters": 12,
+      "text": "FOR ADVANCED"
+    },
+    {
+      "index": 42,
+      "characters": 9,
+      "text": "Password:"
+    },
+    {
+      "index": 43,
+      "characters": 9,
+      "text": "Nya lФsen"
+    },
+    {
+      "index": 44,
+      "characters": 7,
+      "text": "Avsluta"
+    },
+    {
+      "index": 45,
+      "characters": 16,
+      "text": "Wrong snake file"
+    },
+    {
+      "index": 46,
+      "characters": 10,
+      "text": "Enter word"
+    },
+    {
+      "index": 47,
+      "characters": 7,
+      "text": "Page %d"
+    },
+    {
+      "index": 48,
+      "characters": 7,
+      "text": "Line %d"
+    },
+    {
+      "index": 49,
+      "characters": 11,
+      "text": "Position %d"
+    },
+    {
+      "index": 50,
+      "characters": 9,
+      "text": "Column %c"
+    },
+    {
+      "index": 51,
+      "characters": 6,
+      "text": "Row %d"
+    },
+    {
+      "index": 52,
+      "characters": 16,
+      "text": "Check_in number:"
+    },
+    {
+      "index": 53,
+      "characters": 19,
+      "text": "Number of attempts:"
+    },
+    {
+      "index": 54,
+      "characters": 13,
+      "text": "Net password:"
+    },
+    {
+      "index": 55,
+      "characters": 14,
+      "text": "File for mail:"
+    },
+    {
+      "index": 56,
+      "characters": 16,
+      "text": "Cann`t open file"
+    },
+    {
+      "index": 57,
+      "characters": 28,
+      "text": "Not possible in demo version"
+    },
+    {
+      "index": 58,
+      "characters": 25,
+      "text": "Not saved in demo version"
+    },
+    {
+      "index": 59,
+      "characters": 12,
+      "text": "Demo version"
+    },
+    {
+      "index": 60,
+      "characters": 34,
+      "text": "Author of idea and game designer: "
+    },
+    {
+      "index": 61,
+      "characters": 21,
+      "text": "     Jevgeni Sotnikov"
+    },
+    {
+      "index": 62,
+      "characters": 11,
+      "text": "Programmer:"
+    },
+    {
+      "index": 63,
+      "characters": 16,
+      "text": "     Viktor Luti"
+    },
+    {
+      "index": 64,
+      "characters": 11,
+      "text": "Konstnarer:"
+    },
+    {
+      "index": 65,
+      "characters": 41,
+      "text": "     Sergei Belov         Gennadi Denisov"
+    },
+    {
+      "index": 66,
+      "characters": 25,
+      "text": "Take part in development:"
+    },
+    {
+      "index": 67,
+      "characters": 39,
+      "text": "     Dmitry Maslov        Dmitry Dolgov"
+    },
+    {
+      "index": 68,
+      "characters": 20,
+      "text": "Speciell ocksЖ till:"
+    },
+    {
+      "index": 69,
+      "characters": 40,
+      "text": "     Mikail Nikolajenko   Dmitry Parskov"
+    },
+    {
+      "index": 70,
+      "characters": 41,
+      "text": "     Natalja Dmitrijeva   Jelena Tumakova"
+    },
+    {
+      "index": 71,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 72,
+      "characters": 31,
+      "text": "Other games developed by Gamos:"
+    },
+    {
+      "index": 73,
+      "characters": 32,
+      "text": "     7Colors(Filler)      Branch"
+    },
+    {
+      "index": 74,
+      "characters": 35,
+      "text": "     Wildsnake            Tetriller"
+    },
+    {
+      "index": 75,
+      "characters": 32,
+      "text": "     Gamos logik serial   Regata"
+    },
+    {
+      "index": 76,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 77,
+      "characters": 40,
+      "text": "Address: GAMOS, Ostrovityanova st., 37a,"
+    },
+    {
+      "index": 78,
+      "characters": 29,
+      "text": "         Moskow, 117279, USSR"
+    },
+    {
+      "index": 79,
+      "characters": 20,
+      "text": "Fax: SU(095)420-5311"
+    },
+    {
+      "index": 80,
+      "characters": 1,
+      "text": "%"
+    },
+    {
+      "index": 81,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 82,
+      "characters": 1,
+      "text": "\u001a"
+    }
+  ]
+}

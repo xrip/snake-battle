@@ -1,0 +1,359 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/TICKS.OBJ",
+  "object_sha256": "65a6849ee6bd0b7719ea133ed7ccb0d357d26d682a13321cbab36064b0b99c46",
+  "module": "ticks.c",
+  "segment_index": 1,
+  "segment_name": "TICKS_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 3088,
+    "offset": 10,
+    "image_offset": 49418,
+    "address": "0C10:000A"
+  },
+  "file_offset": 53514,
+  "object_size": 226,
+  "expected_size": 226,
+  "public_bindings": [
+    {
+      "name": "_tick_active",
+      "object_offset": 41,
+      "expected": {
+        "segment": 3088,
+        "offset": 51,
+        "image_offset": 49459,
+        "address": "0C10:0033"
+      },
+      "binding": {
+        "segment": 3088,
+        "offset": 51,
+        "image_offset": 49459,
+        "address": "0C10:0033"
+      },
+      "equal": true
+    },
+    {
+      "name": "_tick_wait",
+      "object_offset": 12,
+      "expected": {
+        "segment": 3088,
+        "offset": 22,
+        "image_offset": 49430,
+        "address": "0C10:0016"
+      },
+      "binding": {
+        "segment": 3088,
+        "offset": 22,
+        "image_offset": 49430,
+        "address": "0C10:0016"
+      },
+      "equal": true
+    },
+    {
+      "name": "_tick_now",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3088,
+        "offset": 10,
+        "image_offset": 49418,
+        "address": "0C10:000A"
+      },
+      "binding": {
+        "segment": 3088,
+        "offset": 10,
+        "image_offset": 49418,
+        "address": "0C10:000A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0c10_000a",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3088,
+        "offset": 10,
+        "image_offset": 49418,
+        "address": "0C10:000A"
+      },
+      "binding": {
+        "segment": 3088,
+        "offset": 10,
+        "image_offset": 49418,
+        "address": "0C10:000A"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0c10_0016",
+      "object_offset": 12,
+      "expected": {
+        "segment": 3088,
+        "offset": 22,
+        "image_offset": 49430,
+        "address": "0C10:0016"
+      },
+      "binding": {
+        "segment": 3088,
+        "offset": 22,
+        "image_offset": 49430,
+        "address": "0C10:0016"
+      },
+      "equal": true
+    },
+    {
+      "name": "_f_0c10_0033",
+      "object_offset": 41,
+      "expected": {
+        "segment": 3088,
+        "offset": 51,
+        "image_offset": 49459,
+        "address": "0C10:0033"
+      },
+      "binding": {
+        "segment": 3088,
+        "offset": 51,
+        "image_offset": 49459,
+        "address": "0C10:0033"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      226
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 197,
+      "function_offset": 197,
+      "omf_fixup": {
+        "record_offset": 512,
+        "subrecord_offset": 0,
+        "offset": 197,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "320d",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 174,
+      "function_offset": 174,
+      "omf_fixup": {
+        "record_offset": 512,
+        "subrecord_offset": 5,
+        "offset": 174,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "320d",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 114,
+      "function_offset": 114,
+      "omf_fixup": {
+        "record_offset": 512,
+        "subrecord_offset": 10,
+        "offset": 114,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "320d",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 91,
+      "function_offset": 91,
+      "omf_fixup": {
+        "record_offset": 512,
+        "subrecord_offset": 15,
+        "offset": 91,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "320d",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 28,
+      "function_offset": 28,
+      "omf_fixup": {
+        "record_offset": 512,
+        "subrecord_offset": 20,
+        "offset": 28,
+        "width": 4,
+        "location_type": 3,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 5,
+          "method_name": "target",
+          "datum": null
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "TICKS_TEXT"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 3088,
+        "offset": 51,
+        "image_offset": 49459,
+        "address": "0C10:0033"
+      },
+      "frame": 3088,
+      "before_hex": "29000000",
+      "after_hex": "900ee80900",
+      "relaxation": "CALL_FAR_to_PUSH_CS_CALL_NEAR",
+      "resolved": true
+    },
+    {
+      "object_offset": 2,
+      "function_offset": 2,
+      "omf_fixup": {
+        "record_offset": 512,
+        "subrecord_offset": 24,
+        "offset": 2,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 1,
+          "method_name": "group",
+          "datum": 1,
+          "name": "DGROUP"
+        },
+        "target": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 3378,
+        "image_offset": 95426,
+        "address": "1679:0D32"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "320d",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "0e71697f1ebde0588dd3e79c1b08b7310decf7724889582fbbf48e33c18b0b59",
+  "original_sha256": "0e71697f1ebde0588dd3e79c1b08b7310decf7724889582fbbf48e33c18b0b59",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "code"
+}

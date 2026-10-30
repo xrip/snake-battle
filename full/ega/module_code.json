@@ -1,0 +1,74 @@
+{
+  "object": "snake-battle-recovered/full/ega/build/EGAENC.OBJ",
+  "object_sha256": "b60892901964c2ef6f80bacafc51a3212cbf4c8b594d168d95b0f84b77c6f000",
+  "module": "SPEGAVGA",
+  "segment_index": 1,
+  "segment_name": "EGA_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 3798,
+    "offset": 0,
+    "image_offset": 60768,
+    "address": "0ED6:0000"
+  },
+  "file_offset": 64864,
+  "object_size": 12374,
+  "expected_size": 12374,
+  "public_bindings": [
+    {
+      "name": "_ega_dispatch",
+      "object_offset": 0,
+      "expected": {
+        "segment": 3798,
+        "offset": 0,
+        "image_offset": 60768,
+        "address": "0ED6:0000"
+      },
+      "binding": {
+        "segment": 3798,
+        "offset": 0,
+        "image_offset": 60768,
+        "address": "0ED6:0000"
+      },
+      "equal": true
+    },
+    {
+      "name": "_ega_header",
+      "object_offset": 6,
+      "expected": {
+        "segment": 3798,
+        "offset": 6,
+        "image_offset": 60774,
+        "address": "0ED6:0006"
+      },
+      "binding": {
+        "segment": 3798,
+        "offset": 6,
+        "image_offset": 60774,
+        "address": "0ED6:0006"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      12374
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "a4acb6c24aefb5d8cb087b7d6e327d1ae2648d02293b005968218365cd6a2113",
+  "original_sha256": "a4acb6c24aefb5d8cb087b7d6e327d1ae2648d02293b005968218365cd6a2113",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

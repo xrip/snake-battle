@@ -1,0 +1,438 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/adlib_c_build/ADLIB.OBJ",
+  "object_sha256": "132fbc1809fa81710569d620c9d3fd3ea71b1cf8edffe9971d29469dc264e904",
+  "reference_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "cs": "1341",
+  "ds": "1679",
+  "patch_offset": "F000",
+  "result_kind": "differential procedure semantics; not compiler byte matching",
+  "canonical_source_sha256": "6ee15d5f6c3518060a7b0042a0122ab2a202f508a96a47da14b8b007cf739811",
+  "canonical_header_sha256": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9",
+  "harness_sha256": "2b623c2585f32b6aef61bfabcc1ffe90240478b9796539507925fec2c92e4107",
+  "engine_sha256": "f40d22399007fda3d8f30cf2a1a481dc2af6c06756ee016e2459c71f7e797f3b",
+  "experiment": "One compiled procedure with original callees, deterministic DOS data fixtures, Unicorn x86-16",
+  "limitations": [
+    "No full gameplay run or compiler-matching claim.",
+    "Inputs and branches are sampled, not exhaustive. Recursive calls also use reference callees.",
+    "Functions 26C3/22CD stub 2A5E to compare its exact three arguments safely.",
+    "Function 1FCC stubs hardware timer delay0496, retaining OPL reset writes."
+  ],
+  "functions": [
+    {
+      "function": "_snd_1E1A",
+      "entry": "1341:1E1A",
+      "cases": 2,
+      "passed": 2,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_1E83",
+      "entry": "1341:1E83",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_1FA2",
+      "entry": "1341:1FA2",
+      "cases": 2,
+      "passed": 2,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_1FCC",
+      "entry": "1341:1FCC",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_1FE4",
+      "entry": "1341:1FE4",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_20AA",
+      "entry": "1341:20AA",
+      "cases": 2,
+      "passed": 2,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_20E7",
+      "entry": "1341:20E7",
+      "cases": 2,
+      "passed": 2,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2102",
+      "entry": "1341:2102",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2129",
+      "entry": "1341:2129",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_216C",
+      "entry": "1341:216C",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_21A2",
+      "entry": "1341:21A2",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_21EF",
+      "entry": "1341:21EF",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2209",
+      "entry": "1341:2209",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_222F",
+      "entry": "1341:222F",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2277",
+      "entry": "1341:2277",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_22A4",
+      "entry": "1341:22A4",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_22CD",
+      "entry": "1341:22CD",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_22F1",
+      "entry": "1341:22F1",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_235A",
+      "entry": "1341:235A",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_23D1",
+      "entry": "1341:23D1",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_23D2",
+      "entry": "1341:23D2",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_247E",
+      "entry": "1341:247E",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2509",
+      "entry": "1341:2509",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_253C",
+      "entry": "1341:253C",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2567",
+      "entry": "1341:2567",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2594",
+      "entry": "1341:2594",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_25E7",
+      "entry": "1341:25E7",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_261A",
+      "entry": "1341:261A",
+      "cases": 9,
+      "passed": 9,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2665",
+      "entry": "1341:2665",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2679",
+      "entry": "1341:2679",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_269B",
+      "entry": "1341:269B",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_26C3",
+      "entry": "1341:26C3",
+      "cases": 70,
+      "passed": 70,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2709",
+      "entry": "1341:2709",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2750",
+      "entry": "1341:2750",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2772",
+      "entry": "1341:2772",
+      "cases": 2,
+      "passed": 2,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_278D",
+      "entry": "1341:278D",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_28BD",
+      "entry": "1341:28BD",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_28DB",
+      "entry": "1341:28DB",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_28FB",
+      "entry": "1341:28FB",
+      "cases": 7,
+      "passed": 7,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_29A1",
+      "entry": "1341:29A1",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2A5E",
+      "entry": "1341:2A5E",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2A87",
+      "entry": "1341:2A87",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2AD9",
+      "entry": "1341:2AD9",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2B03",
+      "entry": "1341:2B03",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2B3F",
+      "entry": "1341:2B3F",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2B6C",
+      "entry": "1341:2B6C",
+      "cases": 13,
+      "passed": 13,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2BC4",
+      "entry": "1341:2BC4",
+      "cases": 2,
+      "passed": 2,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2BF6",
+      "entry": "1341:2BF6",
+      "cases": 1,
+      "passed": 1,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2C59",
+      "entry": "1341:2C59",
+      "cases": 151,
+      "passed": 151,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2D33",
+      "entry": "1341:2D33",
+      "cases": 151,
+      "passed": 151,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2DD3",
+      "entry": "1341:2DD3",
+      "cases": 568,
+      "passed": 568,
+      "failed": [],
+      "all_cases_equal": true
+    },
+    {
+      "function": "_snd_2E7A",
+      "entry": "1341:2E7A",
+      "cases": 1281,
+      "passed": 1281,
+      "failed": [],
+      "all_cases_equal": true
+    }
+  ]
+}

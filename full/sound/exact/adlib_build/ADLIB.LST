@@ -1,0 +1,2729 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 1
+ADLIB.ASM
+
+
+
+      1				     ; Executable specification	transcribed from SNAKE.EXE segment 1341.
+      2				     ; Scope: 1E1A..2E9B, 52 AdLib part/voice/envelope procedures.
+      3				     ; This is a symbolic disassembly reconstruction, NOT a recovered historical
+      4				     ; assembler source	and NOT	evidence of a byte-exact C recompilation.
+      5				     ; The independently recovered typed C remains in ../ADLIB.C and ADLIB.H.
+      6				     ; The build assembles these mnemonics and symbolic	references only.
+      7				     .286
+      8	0000			     _TEXT segment word	public 'CODE'
+      9				     assume cs:_TEXT, ds:DGROUP
+     10				     extrn _snd_04D9:near
+     11				     extrn _snd_04F4:near
+     12				     extrn _snd_053D:near
+     13				     extrn _snd_1DC6:near
+     14				     extrn _snd_2E9B:near
+     15				     extrn _snd_2F48:near
+     16				     extrn _snd_2F6F:near
+     17				     extrn _snd_2F94:near
+     18				     extrn _snd_2FA0:near
+     19				     extrn _snd_2FB1:near
+     20				     extrn _snd_304C:near
+     21
+     22
+     23				     ; Advance voice and envelope timers
+     24				     public _snd_1E1A
+     25	0000			     _snd_1E1A label near
+     26	0000  57			 push di ; 1E1A
+     27	0001  56			 push si ; 1E1B
+     28	0002  80 06 0000e 03		 add byte ptr [_snd_voice_tick], 3 ; 1E1C
+     29	0007  80 3E 0000e 0A		 cmp byte ptr [_snd_voice_tick], 0Ah ; 1E21
+     30	000C  72 58			 jb L1E80 ; 1E26
+     31	000E  80 2E 0000e 0A		 sub byte ptr [_snd_voice_tick], 0Ah ; 1E28
+     32	0013  BE 0000e			 mov si, offset	_snd_voices ; 1E2D
+     33	0016  BF 0009			 mov di, 9 ; 1E30
+     34	0019			     L1E33:
+     35	0019  83 3C 00			 cmp word ptr [si], 0 ;	1E33
+     36	001C  74 3A			 je L1E72 ; 1E36
+     37	001E  83 7C 0C 00		 cmp word ptr [si + 0Ch], 0 ; 1E38
+     38	0022  74 0A			 je L1E48 ; 1E3C
+     39	0024  83 6C 0C 11		 sub word ptr [si + 0Ch], 011h ; 1E3E
+     40	0028  83 7C 0C 00		 cmp word ptr [si + 0Ch], 0 ; 1E42
+     41	002C  7E 32			 jle L1E7A ; 1E46
+     42	002E			     L1E48:
+     43	002E  80 7C 0E 00		 cmp byte ptr [si + 0Eh], 0 ; 1E48
+     44	0032  74 0F			 je L1E5D ; 1E4C
+     45	0034  8D 44 30			 lea ax, [si + 030h] ; 1E4E
+     46	0037  50			 push ax ; 1E51
+     47	0038  8D 44 0E			 lea ax, [si + 0Eh] ; 1E52
+     48	003B  50			 push ax ; 1E55
+     49	003C  56			 push si ; 1E56
+     50	003D  E8 0AA1			 call near ptr _snd_28FB ; 1E57
+     51	0040  83 C4 06			 add sp, 6 ; 1E5A
+     52	0043			     L1E5D:
+     53	0043  80 7C 38 00		 cmp byte ptr [si + 038h], 0 ; 1E5D
+     54	0047  74 0F			 je L1E72 ; 1E61
+     55	0049  8D 44 5A			 lea ax, [si + 05Ah] ; 1E63
+     56	004C  50			 push ax ; 1E66
+     57	004D  8D 44 38			 lea ax, [si + 038h] ; 1E67
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 2
+ADLIB.ASM
+
+
+
+     58	0050  50			 push ax ; 1E6A
+     59	0051  56			 push si ; 1E6B
+     60	0052  E8 0A8C			 call near ptr _snd_28FB ; 1E6C
+     61	0055  83 C4 06			 add sp, 6 ; 1E6F
+     62	0058			     L1E72:
+     63	0058  83 C6 62			 add si, 062h ;	1E72
+     64	005B  4F			 dec di	; 1E75
+     65	005C  74 08			 je L1E80 ; 1E76
+     66	005E  EB B9			 jmp short L1E33 ; 1E78
+     67	0060			     L1E7A:
+     68	0060  56			 push si ; 1E7A
+     69	0061  E8 0D46			 call near ptr _snd_2BC4 ; 1E7B
+     70	0064  44			 inc sp	; 1E7E
+     71	0065  44			 inc sp	; 1E7F
+     72	0066			     L1E80:
+     73	0066  5E			 pop si	; 1E80
+     74	0067  5F			 pop di	; 1E81
+     75	0068  C3			 ret ; 1E82
+     76
+     77				     ; Allocate	and initialize an instrument part from a preset
+     78				     public _snd_1E83
+     79	0069			     _snd_1E83 label near
+     80	0069  C8 0002 00		 enter 2, 0 ; 1E83
+     81	006D  57			 push di ; 1E87
+     82	006E  56			 push si ; 1E88
+     83	006F  8B 7E 06			 mov di, word ptr [bp +	6] ; 1E89
+     84	0072  8A 45 02			 mov al, byte ptr [di +	2] ; 1E8C
+     85	0075  98			 cbw ; 1E8F
+     86	0076  8B 5E 04			 mov bx, word ptr [bp +	4] ; 1E90
+     87	0079  8A 4F 0C			 mov cl, byte ptr [bx +	0Ch] ; 1E93
+     88	007C  32 ED			 xor ch, ch ; 1E96
+     89	007E  03 C1			 add ax, cx ; 1E98
+     90	0080  68 00FF			 push 0FFh ; 1E9A
+     91	0083  6A 00			 push 0	; 1E9D
+     92	0085  50			 push ax ; 1E9F
+     93	0086  E8 0000e			 call near ptr _snd_04D9 ; 1EA0
+     94	0089  83 C4 06			 add sp, 6 ; 1EA3
+     95	008C  88 46 FE			 mov byte ptr [bp - 2],	al ; 1EA6
+     96	008F  50			 push ax ; 1EA9
+     97	0090  E8 027C			 call near ptr _snd_2129 ; 1EAA
+     98	0093  44			 inc sp	; 1EAD
+     99	0094  44			 inc sp	; 1EAE
+    100	0095  0B C0			 or ax,	ax ; 1EAF
+    101	0097  75 03			 jne L1EB6 ; 1EB1
+    102	0099  E9 00E8			 jmp near ptr L1F9E ; 1EB3
+    103	009C			     L1EB6:
+    104	009C  8B F0			 mov si, ax ; 1EB6
+    105	009E  56			 push si ; 1EB8
+    106	009F  FF 76 04			 push word ptr [bp + 4]	; 1EB9
+    107	00A2  E8 0243			 call near ptr _snd_2102 ; 1EBC
+    108	00A5  83 C4 04			 add sp, 4 ; 1EBF
+    109	00A8  8A 05			 mov al, byte ptr [di] ; 1EC2
+    110	00AA  88 44 0B			 mov byte ptr [si + 0Bh], al ; 1EC4
+    111	00AD  8A 45 01			 mov al, byte ptr [di +	1] ; 1EC7
+    112	00B0  24 01			 and al, 1 ; 1ECA
+    113	00B2  88 44 0D			 mov byte ptr [si + 0Dh], al ; 1ECC
+    114	00B5  8A 45 02			 mov al, byte ptr [di +	2] ; 1ECF
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 3
+ADLIB.ASM
+
+
+
+    115	00B8  88 44 0E			 mov byte ptr [si + 0Eh], al ; 1ED2
+    116	00BB  8A 46 FE			 mov al, byte ptr [bp -	2] ; 1ED5
+    117	00BE  88 44 0F			 mov byte ptr [si + 0Fh], al ; 1ED8
+    118	00C1  8A 45 03			 mov al, byte ptr [di +	3] ; 1EDB
+    119	00C4  88 44 10			 mov byte ptr [si + 010h], al ;	1EDE
+    120	00C7  32 E4			 xor ah, ah ; 1EE1
+    121	00C9  40			 inc ax	; 1EE3
+    122	00CA  8B 5E 04			 mov bx, word ptr [bp +	4] ; 1EE4
+    123	00CD  8A 4F 0E			 mov cl, byte ptr [bx +	0Eh] ; 1EE7
+    124	00D0  32 ED			 xor ch, ch ; 1EEA
+    125	00D2  F7 E9			 imul cx ; 1EEC
+    126	00D4  C1 F8 07			 sar ax, 7 ; 1EEE
+    127	00D7  88 44 11			 mov byte ptr [si + 011h], al ;	1EF1
+    128	00DA  8A 45 04			 mov al, byte ptr [di +	4] ; 1EF4
+    129	00DD  88 44 12			 mov byte ptr [si + 012h], al ;	1EF7
+    130	00E0  98			 cbw ; 1EFA
+    131	00E1  8B C8			 mov cx, ax ; 1EFB
+    132	00E3  8A 47 0F			 mov al, byte ptr [bx +	0Fh] ; 1EFD
+    133	00E6  98			 cbw ; 1F00
+    134	00E7  03 C8			 add cx, ax ; 1F01
+    135	00E9  6A 3F			 push 03Fh ; 1F03
+    136	00EB  6A C0			 push -040h ; 1F05
+    137	00ED  51			 push cx ; 1F07
+    138	00EE  E8 0000e			 call near ptr _snd_04D9 ; 1F08
+    139	00F1  83 C4 06			 add sp, 6 ; 1F0B
+    140	00F4  88 44 13			 mov byte ptr [si + 013h], al ;	1F0E
+    141	00F7  8A 45 05			 mov al, byte ptr [di +	5] ; 1F11
+    142	00FA  88 44 14			 mov byte ptr [si + 014h], al ;	1F14
+    143	00FD  3C 80			 cmp al, 080h ;	1F17
+    144	00FF  B0 00			 mov al, 0 ; 1F19
+    145	0101  74 1A			 je L1F37 ; 1F1B
+    146	0103  8B 5E 04			 mov bx, word ptr [bp +	4] ; 1F1D
+    147	0106  8A 47 10			 mov al, byte ptr [bx +	010h] ;	1F20
+    148	0109  98			 cbw ; 1F23
+    149	010A  8B C8			 mov cx, ax ; 1F24
+    150	010C  8A 44 14			 mov al, byte ptr [si +	014h] ;	1F26
+    151	010F  98			 cbw ; 1F29
+    152	0110  03 C8			 add cx, ax ; 1F2A
+    153	0112  6A 0C			 push 0Ch ; 1F2C
+    154	0114  6A F4			 push -0Ch ; 1F2E
+    155	0116  51			 push cx ; 1F30
+    156	0117  E8 0000e			 call near ptr _snd_04F4 ; 1F31
+    157	011A  83 C4 06			 add sp, 6 ; 1F34
+    158	011D			     L1F37:
+    159	011D  88 44 15			 mov byte ptr [si + 015h], al ;	1F37
+    160	0120  32 C0			 xor al, al ; 1F3A
+    161	0122  88 44 18			 mov byte ptr [si + 018h], al ;	1F3C
+    162	0125  88 44 19			 mov byte ptr [si + 019h], al ;	1F3F
+    163	0128  8A 45 07			 mov al, byte ptr [di +	7] ; 1F42
+    164	012B  88 44 1A			 mov byte ptr [si + 01Ah], al ;	1F45
+    165	012E  C7 44 1C 0000		 mov word ptr [si + 01Ch], 0 ; 1F48
+    166	0133  8B 5E 04			 mov bx, word ptr [bp +	4] ; 1F4D
+    167	0136  8A 47 11			 mov al, byte ptr [bx +	011h] ;	1F50
+    168	0139  98			 cbw ; 1F53
+    169	013A  8B C8			 mov cx, ax ; 1F54
+    170	013C  8A 45 06			 mov al, byte ptr [di +	6] ; 1F56
+    171	013F  88 44 16			 mov byte ptr [si + 016h], al ;	1F59
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 4
+ADLIB.ASM
+
+
+
+    172	0142  98			 cbw ; 1F5C
+    173	0143  03 C8			 add cx, ax ; 1F5D
+    174	0145  6A 7F			 push 07Fh ; 1F5F
+    175	0147  6A 80			 push -080h ; 1F61
+    176	0149  51			 push cx ; 1F63
+    177	014A  E8 0000e			 call near ptr _snd_04D9 ; 1F64
+    178	014D  83 C4 06			 add sp, 6 ; 1F67
+    179	0150  88 44 17			 mov byte ptr [si + 017h], al ;	1F6A
+    180	0153  8B C8			 mov cx, ax ; 1F6D
+    181	0155  8A 44 15			 mov al, byte ptr [si +	015h] ;	1F6F
+    182	0158  98			 cbw ; 1F72
+    183	0159  C1 E0 07			 shl ax, 7 ; 1F73
+    184	015C  8B D0			 mov dx, ax ; 1F76
+    185	015E  8A C1			 mov al, cl ; 1F78
+    186	0160  98			 cbw ; 1F7A
+    187	0161  03 D0			 add dx, ax ; 1F7B
+    188	0163  68 07FF			 push 07FFh ; 1F7D
+    189	0166  68 F800			 push 0F800h ; 1F80
+    190	0169  52			 push dx ; 1F83
+    191	016A  E8 0000e			 call near ptr _snd_04D9 ; 1F84
+    192	016D  83 C4 06			 add sp, 6 ; 1F87
+    193	0170  89 44 1E			 mov word ptr [si + 01Eh], ax ;	1F8A
+    194	0173  8A 45 08			 mov al, byte ptr [di +	8] ; 1F8D
+    195	0176  50			 push ax ; 1F90
+    196	0177  8A 44 0B			 mov al, byte ptr [si +	0Bh] ; 1F91
+    197	017A  50			 push ax ; 1F94
+    198	017B  FF 76 04			 push word ptr [bp + 4]	; 1F95
+    199	017E  E8 02DC			 call near ptr _snd_2277 ; 1F98
+    200	0181  83 C4 06			 add sp, 6 ; 1F9B
+    201	0184			     L1F9E:
+    202	0184  5E			 pop si	; 1F9E
+    203	0185  5F			 pop di	; 1F9F
+    204	0186  C9			 leave ; 1FA0
+    205	0187  C3			 ret ; 1FA1
+    206
+    207				     ; Recursively release parts belonging to a	channel
+    208				     public _snd_1FA2
+    209	0188			     _snd_1FA2 label near
+    210	0188  C8 0000 00		 enter 0, 0 ; 1FA2
+    211	018C  56			 push si ; 1FA6
+    212	018D  8B 76 04			 mov si, word ptr [bp +	4] ; 1FA7
+    213	0190  0B F6			 or si,	si ; 1FAA
+    214	0192  74 1B			 je L1FC9 ; 1FAC
+    215	0194  8A 46 06			 mov al, byte ptr [bp +	6] ; 1FAE
+    216	0197  50			 push ax ; 1FB1
+    217	0198  FF 74 04			 push word ptr [si + 4]	; 1FB2
+    218	019B  E8 FFEA			 call near ptr _snd_1FA2 ; 1FB5
+    219	019E  83 C4 04			 add sp, 4 ; 1FB8
+    220	01A1  8A 46 06			 mov al, byte ptr [bp +	6] ; 1FBB
+    221	01A4  38 44 0B			 cmp byte ptr [si + 0Bh], al ; 1FBE
+    222	01A7  75 06			 jne L1FC9 ; 1FC1
+    223	01A9  56			 push si ; 1FC3
+    224	01AA  E8 00E3			 call near ptr _snd_20AA ; 1FC4
+    225	01AD  44			 inc sp	; 1FC7
+    226	01AE  44			 inc sp	; 1FC8
+    227	01AF			     L1FC9:
+    228	01AF  5E			 pop si	; 1FC9
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 5
+ADLIB.ASM
+
+
+
+    229	01B0  C9			 leave ; 1FCA
+    230	01B1  C3			 ret ; 1FCB
+    231
+    232				     ; Release all parts and reset held	notes
+    233				     public _snd_1FCC
+    234	01B2			     _snd_1FCC label near
+    235	01B2  56			 push si ; 1FCC
+    236	01B3  BE 0000e			 mov si, offset	_snd_parts ; 1FCD
+    237	01B6			     L1FD0:
+    238	01B6  56			 push si ; 1FD0
+    239	01B7  E8 00D6			 call near ptr _snd_20AA ; 1FD1
+    240	01BA  44			 inc sp	; 1FD4
+    241	01BB  44			 inc sp	; 1FD5
+    242	01BC  83 C6 20			 add si, 020h ;	1FD6
+    243	01BF  81 FE 0400e		 cmp si, offset	_snd_parts+1024	; 1FD9
+    244	01C3  72 F1			 jb L1FD0 ; 1FDD
+    245	01C5  E8 0000e			 call near ptr _snd_1DC6 ; 1FDF
+    246	01C8  5E			 pop si	; 1FE2
+    247	01C9  C3			 ret ; 1FE3
+    248
+    249				     ; Find or allocate	a player channel part
+    250				     public _snd_1FE4
+    251	01CA			     _snd_1FE4 label near
+    252	01CA  C8 0000 00		 enter 0, 0 ; 1FE4
+    253	01CE  56			 push si ; 1FE8
+    254	01CF  57			 push di ; 1FE9
+    255	01D0  8B 7E 04			 mov di, word ptr [bp +	4] ; 1FEA
+    256	01D3  8B 75 04			 mov si, word ptr [di +	4] ; 1FED
+    257	01D6			     L1FF0:
+    258	01D6  0B F6			 or si,	si ; 1FF0
+    259	01D8  74 10			 je L2004 ; 1FF2
+    260	01DA  8A 46 06			 mov al, byte ptr [bp +	6] ; 1FF4
+    261	01DD  38 44 0B			 cmp byte ptr [si + 0Bh], al ; 1FF7
+    262	01E0  75 03			 jne L1FFF ; 1FFA
+    263	01E2  E9 00A5			 jmp near ptr L20A4 ; 1FFC
+    264	01E5			     L1FFF:
+    265	01E5  8B 74 04			 mov si, word ptr [si +	4] ; 1FFF
+    266	01E8  EB EC			 jmp short L1FF0 ; 2002
+    267	01EA			     L2004:
+    268	01EA  8A 45 0C			 mov al, byte ptr [di +	0Ch] ; 2004
+    269	01ED  50			 push ax ; 2007
+    270	01EE  E8 011E			 call near ptr _snd_2129 ; 2008
+    271	01F1  44			 inc sp	; 200B
+    272	01F2  44			 inc sp	; 200C
+    273	01F3  0B C0			 or ax,	ax ; 200D
+    274	01F5  75 04			 jne L2015 ; 200F
+    275	01F7  5F			 pop di	; 2011
+    276	01F8  5E			 pop si	; 2012
+    277	01F9  C9			 leave ; 2013
+    278	01FA  C3			 ret ; 2014
+    279	01FB			     L2015:
+    280	01FB  8B F0			 mov si, ax ; 2015
+    281	01FD  89 3C			 mov word ptr [si], di ; 2017
+    282	01FF  C7 44 02 0000		 mov word ptr [si + 2],	0 ; 2019
+    283	0204  8B 5D 04			 mov bx, word ptr [di +	4] ; 201E
+    284	0207  89 5C 04			 mov word ptr [si + 4],	bx ; 2021
+    285	020A  89 75 04			 mov word ptr [di + 4],	si ; 2024
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 6
+ADLIB.ASM
+
+
+
+    286	020D  0B DB			 or bx,	bx ; 2027
+    287	020F  74 03			 je L202E ; 2029
+    288	0211  89 77 02			 mov word ptr [bx + 2],	si ; 202B
+    289	0214			     L202E:
+    290	0214  8A 46 06			 mov al, byte ptr [bp +	6] ; 202E
+    291	0217  88 44 0B			 mov byte ptr [si + 0Bh], al ; 2031
+    292	021A  B0 01			 mov al, 1 ; 2034
+    293	021C  88 44 0C			 mov byte ptr [si + 0Ch], al ; 2036
+    294	021F  88 44 0D			 mov byte ptr [si + 0Dh], al ; 2039
+    295	0222  8A 45 0C			 mov al, byte ptr [di +	0Ch] ; 203C
+    296	0225  88 44 0F			 mov byte ptr [si + 0Fh], al ; 203F
+    297	0228  C6 44 10 7F		 mov byte ptr [si + 010h], 07Fh	; 2042
+    298	022C  8A 45 0E			 mov al, byte ptr [di +	0Eh] ; 2046
+    299	022F  88 44 11			 mov byte ptr [si + 011h], al ;	2049
+    300	0232  8A 45 0F			 mov al, byte ptr [di +	0Fh] ; 204C
+    301	0235  98			 cbw ; 204F
+    302	0236  6A 3F			 push 03Fh ; 2050
+    303	0238  6A C0			 push -040h ; 2052
+    304	023A  50			 push ax ; 2054
+    305	023B  E8 0000e			 call near ptr _snd_04D9 ; 2055
+    306	023E  83 C4 06			 add sp, 6 ; 2058
+    307	0241  88 44 13			 mov byte ptr [si + 013h], al ;	205B
+    308	0244  32 C0			 xor al, al ; 205E
+    309	0246  88 44 0E			 mov byte ptr [si + 0Eh], al ; 2060
+    310	0249  88 44 12			 mov byte ptr [si + 012h], al ;	2063
+    311	024C  88 44 14			 mov byte ptr [si + 014h], al ;	2066
+    312	024F  88 44 16			 mov byte ptr [si + 016h], al ;	2069
+    313	0252  C6 44 1A 02		 mov byte ptr [si + 01Ah], 2 ; 206C
+    314	0256  C7 44 1C 0000		 mov word ptr [si + 01Ch], 0 ; 2070
+    315	025B  8A 4D 11			 mov cl, byte ptr [di +	011h] ;	2075
+    316	025E  88 4C 17			 mov byte ptr [si + 017h], cl ;	2078
+    317	0261  8A 45 10			 mov al, byte ptr [di +	010h] ;	207B
+    318	0264  88 44 15			 mov byte ptr [si + 015h], al ;	207E
+    319	0267  98			 cbw ; 2081
+    320	0268  C1 E0 07			 shl ax, 7 ; 2082
+    321	026B  91			 xchg cx, ax ; 2085
+    322	026C  98			 cbw ; 2086
+    323	026D  03 C1			 add ax, cx ; 2087
+    324	026F  68 07FF			 push 07FFh ; 2089
+    325	0272  68 F800			 push 0F800h ; 208C
+    326	0275  50			 push ax ; 208F
+    327	0276  E8 0000e			 call near ptr _snd_04D9 ; 2090
+    328	0279  83 C4 06			 add sp, 6 ; 2093
+    329	027C  89 44 1E			 mov word ptr [si + 01Eh], ax ;	2096
+    330	027F  32 C0			 xor al, al ; 2099
+    331	0281  88 44 18			 mov byte ptr [si + 018h], al ;	209B
+    332	0284  88 44 19			 mov byte ptr [si + 019h], al ;	209E
+    333	0287  88 44 0A			 mov byte ptr [si + 0Ah], al ; 20A1
+    334	028A			     L20A4:
+    335	028A  8B C6			 mov ax, si ; 20A4
+    336	028C  5F			 pop di	; 20A6
+    337	028D  5E			 pop si	; 20A7
+    338	028E  C9			 leave ; 20A8
+    339	028F  C3			 ret ; 20A9
+    340
+    341				     ; Unlink and release a part and its voices
+    342				     public _snd_20AA
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 7
+ADLIB.ASM
+
+
+
+    343	0290			     _snd_20AA label near
+    344	0290  C8 0000 00		 enter 0, 0 ; 20AA
+    345	0294  56			 push si ; 20AE
+    346	0295  8B 76 04			 mov si, word ptr [bp +	4] ; 20AF
+    347	0298  83 3C 00			 cmp word ptr [si], 0 ;	20B2
+    348	029B  74 2D			 je L20E4 ; 20B5
+    349	029D  56			 push si ; 20B7
+    350	029E  E8 06B7			 call near ptr _snd_2772 ; 20B8
+    351	02A1  44			 inc sp	; 20BB
+    352	02A2  44			 inc sp	; 20BC
+    353	02A3  8B 44 02			 mov ax, word ptr [si +	2] ; 20BD
+    354	02A6  8B 5C 04			 mov bx, word ptr [si +	4] ; 20C0
+    355	02A9  0B DB			 or bx,	bx ; 20C3
+    356	02AB  74 03			 je L20CA ; 20C5
+    357	02AD  89 47 02			 mov word ptr [bx + 2],	ax ; 20C7
+    358	02B0			     L20CA:
+    359	02B0  0B C0			 or ax,	ax ; 20CA
+    360	02B2  74 06			 je L20D4 ; 20CC
+    361	02B4  93			 xchg bx, ax ; 20CE
+    362	02B5  89 47 04			 mov word ptr [bx + 4],	ax ; 20CF
+    363	02B8  EB 06			 jmp short L20DA ; 20D2
+    364	02BA			     L20D4:
+    365	02BA  8B 04			 mov ax, word ptr [si] ; 20D4
+    366	02BC  93			 xchg bx, ax ; 20D6
+    367	02BD  89 47 04			 mov word ptr [bx + 4],	ax ; 20D7
+    368	02C0			     L20DA:
+    369	02C0  33 C0			 xor ax, ax ; 20DA
+    370	02C2  89 04			 mov word ptr [si], ax ; 20DC
+    371	02C4  89 44 02			 mov word ptr [si + 2],	ax ; 20DE
+    372	02C7  89 44 04			 mov word ptr [si + 4],	ax ; 20E1
+    373	02CA			     L20E4:
+    374	02CA  5E			 pop si	; 20E4
+    375	02CB  C9			 leave ; 20E5
+    376	02CC  C3			 ret ; 20E6
+    377
+    378				     ; Release every part owned	by a player
+    379				     public _snd_20E7
+    380	02CD			     _snd_20E7 label near
+    381	02CD  C8 0000 00		 enter 0, 0 ; 20E7
+    382	02D1  56			 push si ; 20EB
+    383	02D2  8B 76 04			 mov si, word ptr [bp +	4] ; 20EC
+    384	02D5  EB 08			 jmp short L20F9 ; 20EF
+    385	02D7			     L20F1:
+    386	02D7  FF 74 04			 push word ptr [si + 4]	; 20F1
+    387	02DA  E8 FFB3			 call near ptr _snd_20AA ; 20F4
+    388	02DD  44			 inc sp	; 20F7
+    389	02DE  44			 inc sp	; 20F8
+    390	02DF			     L20F9:
+    391	02DF  83 7C 04 00		 cmp word ptr [si + 4],	0 ; 20F9
+    392	02E3  75 F2			 jne L20F1 ; 20FD
+    393	02E5  5E			 pop si	; 20FF
+    394	02E6  C9			 leave ; 2100
+    395	02E7  C3			 ret ; 2101
+    396
+    397				     ; Link a part into	its player list
+    398				     public _snd_2102
+    399	02E8			     _snd_2102 label near
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 8
+ADLIB.ASM
+
+
+
+    400	02E8  C8 0000 00		 enter 0, 0 ; 2102
+    401	02EC  56			 push si ; 2106
+    402	02ED  8B 5E 06			 mov bx, word ptr [bp +	6] ; 2107
+    403	02F0  C7 47 02 0000		 mov word ptr [bx + 2],	0 ; 210A
+    404	02F5  8B 76 04			 mov si, word ptr [bp +	4] ; 210F
+    405	02F8  89 37			 mov word ptr [bx], si ; 2112
+    406	02FA  8B 44 04			 mov ax, word ptr [si +	4] ; 2114
+    407	02FD  89 47 04			 mov word ptr [bx + 4],	ax ; 2117
+    408	0300  89 5C 04			 mov word ptr [si + 4],	bx ; 211A
+    409	0303  0B C0			 or ax,	ax ; 211D
+    410	0305  74 05			 je L2126 ; 211F
+    411	0307  8B F0			 mov si, ax ; 2121
+    412	0309  89 5C 02			 mov word ptr [si + 2],	bx ; 2123
+    413	030C			     L2126:
+    414	030C  5E			 pop si	; 2126
+    415	030D  C9			 leave ; 2127
+    416	030E  C3			 ret ; 2128
+    417
+    418				     ; Allocate	a free part or steal one by priority
+    419				     public _snd_2129
+    420	030F			     _snd_2129 label near
+    421	030F  C8 0000 00		 enter 0, 0 ; 2129
+    422	0313  56			 push si ; 212D
+    423	0314  57			 push di ; 212E
+    424	0315  BE 0000e			 mov si, offset	_snd_parts ; 212F
+    425	0318  33 FF			 xor di, di ; 2132
+    426	031A  33 D2			 xor dx, dx ; 2134
+    427	031C			     L2136:
+    428	031C  83 3C 00			 cmp word ptr [si], 0 ;	2136
+    429	031F  74 1B			 je L2156 ; 2139
+    430	0321  8A 46 04			 mov al, byte ptr [bp +	4] ; 213B
+    431	0324  38 44 0F			 cmp byte ptr [si + 0Fh], al ; 213E
+    432	0327  77 08			 ja L214B ; 2141
+    433	0329  8A 44 0F			 mov al, byte ptr [si +	0Fh] ; 2143
+    434	032C  88 46 04			 mov byte ptr [bp + 4],	al ; 2146
+    435	032F  8B FE			 mov di, si ; 2149
+    436	0331			     L214B:
+    437	0331  83 C6 20			 add si, 020h ;	214B
+    438	0334  42			 inc dx	; 214E
+    439	0335  83 FA 20			 cmp dx, 020h ;	214F
+    440	0338  7C E2			 jl L2136 ; 2152
+    441	033A  EB 06			 jmp short L215C ; 2154
+    442	033C			     L2156:
+    443	033C  8B C6			 mov ax, si ; 2156
+    444	033E  5F			 pop di	; 2158
+    445	033F  5E			 pop si	; 2159
+    446	0340  C9			 leave ; 215A
+    447	0341  C3			 ret ; 215B
+    448	0342			     L215C:
+    449	0342  0B FF			 or di,	di ; 215C
+    450	0344  74 06			 je L2166 ; 215E
+    451	0346  57			 push di ; 2160
+    452	0347  E8 FF46			 call near ptr _snd_20AA ; 2161
+    453	034A  44			 inc sp	; 2164
+    454	034B  44			 inc sp	; 2165
+    455	034C			     L2166:
+    456	034C  8B C7			 mov ax, di ; 2166
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 9
+ADLIB.ASM
+
+
+
+    457	034E  5F			 pop di	; 2168
+    458	034F  5E			 pop si	; 2169
+    459	0350  C9			 leave ; 216A
+    460	0351  C3			 ret ; 216B
+    461
+    462				     ; Start a note on a player	channel
+    463				     public _snd_216C
+    464	0352			     _snd_216C label near
+    465	0352  C8 0000 00		 enter 0, 0 ; 216C
+    466	0356  56			 push si ; 2170
+    467	0357  8A 46 06			 mov al, byte ptr [bp +	6] ; 2171
+    468	035A  50			 push ax ; 2174
+    469	035B  FF 76 04			 push word ptr [bp + 4]	; 2175
+    470	035E  E8 FE69			 call near ptr _snd_1FE4 ; 2178
+    471	0361  83 C4 04			 add sp, 4 ; 217B
+    472	0364  0B C0			 or ax,	ax ; 217E
+    473	0366  74 1D			 je L219F ; 2180
+    474	0368  8B F0			 mov si, ax ; 2182
+    475	036A  80 7C 0D 00		 cmp byte ptr [si + 0Dh], 0 ; 2184
+    476	036E  74 15			 je L219F ; 2188
+    477	0370  80 7C 0C 00		 cmp byte ptr [si + 0Ch], 0 ; 218A
+    478	0374  75 0F			 jne L219F ; 218E
+    479	0376  8A 46 0A			 mov al, byte ptr [bp +	0Ah] ; 2190
+    480	0379  50			 push ax ; 2193
+    481	037A  8A 46 08			 mov al, byte ptr [bp +	8] ; 2194
+    482	037D  50			 push ax ; 2197
+    483	037E  56			 push si ; 2198
+    484	037F  E8 056D			 call near ptr _snd_2709 ; 2199
+    485	0382  83 C4 06			 add sp, 6 ; 219C
+    486	0385			     L219F:
+    487	0385  5E			 pop si	; 219F
+    488	0386  C9			 leave ; 21A0
+    489	0387  C3			 ret ; 21A1
+    490
+    491				     ; Stop or sustain a note on a player channel
+    492				     public _snd_21A2
+    493	0388			     _snd_21A2 label near
+    494	0388  C8 0000 00		 enter 0, 0 ; 21A2
+    495	038C  56			 push si ; 21A6
+    496	038D  8B 5E 04			 mov bx, word ptr [bp +	4] ; 21A7
+    497	0390  8B 77 04			 mov si, word ptr [bx +	4] ; 21AA
+    498	0393			     L21AD:
+    499	0393  0B F6			 or si,	si ; 21AD
+    500	0395  74 3B			 je L21EC ; 21AF
+    501	0397  8A 46 06			 mov al, byte ptr [bp +	6] ; 21B1
+    502	039A  38 44 0B			 cmp byte ptr [si + 0Bh], al ; 21B4
+    503	039D  75 2E			 jne L21E7 ; 21B7
+    504	039F  80 7C 0D 00		 cmp byte ptr [si + 0Dh], 0 ; 21B9
+    505	03A3  74 28			 je L21E7 ; 21BD
+    506	03A5  80 7C 0C 00		 cmp byte ptr [si + 0Ch], 0 ; 21BF
+    507	03A9  75 22			 jne L21E7 ; 21C3
+    508	03AB  80 7C 19 00		 cmp byte ptr [si + 019h], 0 ; 21C5
+    509	03AF  74 0F			 je L21DA ; 21C9
+    510	03B1  8A 46 08			 mov al, byte ptr [bp +	8] ; 21CB
+    511	03B4  50			 push ax ; 21CE
+    512	03B5  FF 74 06			 push word ptr [si + 6]	; 21CF
+    513	03B8  E8 06E8			 call near ptr _snd_28BD ; 21D2
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 10
+ADLIB.ASM
+
+
+
+    514	03BB  83 C4 04			 add sp, 4 ; 21D5
+    515	03BE  EB 0D			 jmp short L21E7 ; 21D8
+    516	03C0			     L21DA:
+    517	03C0  8A 46 08			 mov al, byte ptr [bp +	8] ; 21DA
+    518	03C3  50			 push ax ; 21DD
+    519	03C4  FF 74 06			 push word ptr [si + 6]	; 21DE
+    520	03C7  E8 056C			 call near ptr _snd_2750 ; 21E1
+    521	03CA  83 C4 04			 add sp, 4 ; 21E4
+    522	03CD			     L21E7:
+    523	03CD  8B 74 04			 mov si, word ptr [si +	4] ; 21E7
+    524	03D0  EB C1			 jmp short L21AD ; 21EA
+    525	03D2			     L21EC:
+    526	03D2  5E			 pop si	; 21EC
+    527	03D3  C9			 leave ; 21ED
+    528	03D4  C3			 ret ; 21EE
+    529
+    530				     ; Stop voices on a	list of	parts
+    531				     public _snd_21EF
+    532	03D5			     _snd_21EF label near
+    533	03D5  C8 0000 00		 enter 0, 0 ; 21EF
+    534	03D9  56			 push si ; 21F3
+    535	03DA  8B 76 04			 mov si, word ptr [bp +	4] ; 21F4
+    536	03DD			     L21F7:
+    537	03DD  0B F6			 or si,	si ; 21F7
+    538	03DF  74 0B			 je L2206 ; 21F9
+    539	03E1  56			 push si ; 21FB
+    540	03E2  E8 0573			 call near ptr _snd_2772 ; 21FC
+    541	03E5  44			 inc sp	; 21FF
+    542	03E6  44			 inc sp	; 2200
+    543	03E7  8B 74 04			 mov si, word ptr [si +	4] ; 2201
+    544	03EA  EB F1			 jmp short L21F7 ; 2204
+    545	03EC			     L2206:
+    546	03EC  5E			 pop si	; 2206
+    547	03ED  C9			 leave ; 2207
+    548	03EE  C3			 ret ; 2208
+    549
+    550				     ; Release sustained voices	on a list of parts
+    551				     public _snd_2209
+    552	03EF			     _snd_2209 label near
+    553	03EF  C8 0000 00		 enter 0, 0 ; 2209
+    554	03F3  56			 push si ; 220D
+    555	03F4  8B 76 04			 mov si, word ptr [bp +	4] ; 220E
+    556	03F7			     L2211:
+    557	03F7  0B F6			 or si,	si ; 2211
+    558	03F9  74 17			 je L222C ; 2213
+    559	03FB  80 7C 19 00		 cmp byte ptr [si + 019h], 0 ; 2215
+    560	03FF  74 0C			 je L2227 ; 2219
+    561	0401  C6 44 19 00		 mov byte ptr [si + 019h], 0 ; 221B
+    562	0405  FF 74 06			 push word ptr [si + 6]	; 221F
+    563	0408  E8 06B6			 call near ptr _snd_28DB ; 2222
+    564	040B  44			 inc sp	; 2225
+    565	040C  44			 inc sp	; 2226
+    566	040D			     L2227:
+    567	040D  8B 74 04			 mov si, word ptr [si +	4] ; 2227
+    568	0410  EB E5			 jmp short L2211 ; 222A
+    569	0412			     L222C:
+    570	0412  5E			 pop si	; 222C
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 11
+ADLIB.ASM
+
+
+
+    571	0413  C9			 leave ; 222D
+    572	0414  C3			 ret ; 222E
+    573
+    574				     ; Collect note/channel masks from active voices
+    575				     public _snd_222F
+    576	0415			     _snd_222F label near
+    577	0415  C8 0000 00		 enter 0, 0 ; 222F
+    578	0419  57			 push di ; 2233
+    579	041A  56			 push si ; 2234
+    580	041B  8B 56 06			 mov dx, word ptr [bp +	6] ; 2235
+    581	041E  8B 4E 08			 mov cx, word ptr [bp +	8] ; 2238
+    582	0421  8B 76 04			 mov si, word ptr [bp +	4] ; 223B
+    583	0424			     L223E:
+    584	0424  0B F6			 or si,	si ; 223E
+    585	0426  74 31			 je L2273 ; 2240
+    586	0428  8B 7C 06			 mov di, word ptr [si +	6] ; 2242
+    587	042B  0B FF			 or di,	di ; 2245
+    588	042D  74 25			 je L226E ; 2247
+    589	042F  8A 5C 0B			 mov bl, byte ptr [si +	0Bh] ; 2249
+    590	0432  32 FF			 xor bh, bh ; 224C
+    591	0434  D1 E3			 shl bx, 1 ; 224E
+    592	0436  8B 87 0000e		 mov ax, word ptr [bx +	_snd_channel_masks] ; 2250
+    593	043A			     L2254:
+    594	043A  8A 5D 08			 mov bl, byte ptr [di +	8] ; 2254
+    595	043D  32 FF			 xor bh, bh ; 2257
+    596	043F  D1 E3			 shl bx, 1 ; 2259
+    597	0441  03 DA			 add bx, dx ; 225B
+    598	0443  85 07			 test word ptr [bx], ax	; 225D
+    599	0445  75 06			 jne L2267 ; 225F
+    600	0447  09 07			 or word ptr [bx], ax ;	2261
+    601	0449  8B D9			 mov bx, cx ; 2263
+    602	044B  FF 07			 inc word ptr [bx] ; 2265
+    603	044D			     L2267:
+    604	044D  8B 7D 04			 mov di, word ptr [di +	4] ; 2267
+    605	0450  0B FF			 or di,	di ; 226A
+    606	0452  75 E6			 jne L2254 ; 226C
+    607	0454			     L226E:
+    608	0454  8B 74 04			 mov si, word ptr [si +	4] ; 226E
+    609	0457  EB CB			 jmp short L223E ; 2271
+    610	0459			     L2273:
+    611	0459  5E			 pop si	; 2273
+    612	045A  5F			 pop di	; 2274
+    613	045B  C9			 leave ; 2275
+    614	045C  C3			 ret ; 2276
+    615
+    616				     ; Set instrument program
+    617				     public _snd_2277
+    618	045D			     _snd_2277 label near
+    619	045D  C8 0000 00		 enter 0, 0 ; 2277
+    620	0461  56			 push si ; 227B
+    621	0462  8A 46 06			 mov al, byte ptr [bp +	6] ; 227C
+    622	0465  50			 push ax ; 227F
+    623	0466  FF 76 04			 push word ptr [bp + 4]	; 2280
+    624	0469  E8 FD5E			 call near ptr _snd_1FE4 ; 2283
+    625	046C  83 C4 04			 add sp, 4 ; 2286
+    626	046F  0B C0			 or ax,	ax ; 2289
+    627	0471  74 14			 je L22A1 ; 228B
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 12
+ADLIB.ASM
+
+
+
+    628	0473  8B F0			 mov si, ax ; 228D
+    629	0475  8A 46 08			 mov al, byte ptr [bp +	8] ; 228F
+    630	0478  88 44 0A			 mov byte ptr [si + 0Ah], al ; 2292
+    631	047B  50			 push ax ; 2295
+    632	047C  56			 push si ; 2296
+    633	047D  E8 0401			 call near ptr _snd_269B ; 2297
+    634	0480  83 C4 04			 add sp, 4 ; 229A
+    635	0483  C6 44 0C 00		 mov byte ptr [si + 0Ch], 0 ; 229D
+    636	0487			     L22A1:
+    637	0487  5E			 pop si	; 22A1
+    638	0488  C9			 leave ; 22A2
+    639	0489  C3			 ret ; 22A3
+    640
+    641				     ; Set a custom instrument
+    642				     public _snd_22A4
+    643	048A			     _snd_22A4 label near
+    644	048A  C8 0000 00		 enter 0, 0 ; 22A4
+    645	048E  56			 push si ; 22A8
+    646	048F  8A 46 06			 mov al, byte ptr [bp +	6] ; 22A9
+    647	0492  50			 push ax ; 22AC
+    648	0493  FF 76 04			 push word ptr [bp + 4]	; 22AD
+    649	0496  E8 FD31			 call near ptr _snd_1FE4 ; 22B0
+    650	0499  83 C4 04			 add sp, 4 ; 22B3
+    651	049C  0B C0			 or ax,	ax ; 22B6
+    652	049E  74 10			 je L22CA ; 22B8
+    653	04A0  8B F0			 mov si, ax ; 22BA
+    654	04A2  FF 76 08			 push word ptr [bp + 8]	; 22BC
+    655	04A5  56			 push si ; 22BF
+    656	04A6  E8 03A2			 call near ptr _snd_2665 ; 22C0
+    657	04A9  83 C4 04			 add sp, 4 ; 22C3
+    658	04AC  C6 44 0C 00		 mov byte ptr [si + 0Ch], 0 ; 22C6
+    659	04B0			     L22CA:
+    660	04B0  5E			 pop si	; 22CA
+    661	04B1  C9			 leave ; 22CB
+    662	04B2  C3			 ret ; 22CC
+    663
+    664				     ; Set an instrument parameter
+    665				     public _snd_22CD
+    666	04B3			     _snd_22CD label near
+    667	04B3  C8 0000 00		 enter 0, 0 ; 22CD
+    668	04B7  8A 46 06			 mov al, byte ptr [bp +	6] ; 22D1
+    669	04BA  50			 push ax ; 22D4
+    670	04BB  FF 76 04			 push word ptr [bp + 4]	; 22D5
+    671	04BE  E8 FD09			 call near ptr _snd_1FE4 ; 22D8
+    672	04C1  83 C4 04			 add sp, 4 ; 22DB
+    673	04C4  0B C0			 or ax,	ax ; 22DE
+    674	04C6  74 0D			 je L22EF ; 22E0
+    675	04C8  FF 76 0A			 push word ptr [bp + 0Ah] ; 22E2
+    676	04CB  FF 76 08			 push word ptr [bp + 8]	; 22E5
+    677	04CE  50			 push ax ; 22E8
+    678	04CF  E8 03D7			 call near ptr _snd_26C3 ; 22E9
+    679	04D2  83 C4 06			 add sp, 6 ; 22EC
+    680	04D5			     L22EF:
+    681	04D5  C9			 leave ; 22EF
+    682	04D6  C3			 ret ; 22F0
+    683
+    684				     ; Set effective part priority
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 13
+ADLIB.ASM
+
+
+
+    685				     public _snd_22F1
+    686	04D7			     _snd_22F1 label near
+    687	04D7  C8 0000 00		 enter 0, 0 ; 22F1
+    688	04DB  56			 push si ; 22F5
+    689	04DC  80 7E 06 10		 cmp byte ptr [bp + 6],	010h ; 22F6
+    690	04E0  75 29			 jne L2325 ; 22FA
+    691	04E2  8B 5E 04			 mov bx, word ptr [bp +	4] ; 22FC
+    692	04E5  8B 77 04			 mov si, word ptr [bx +	4] ; 22FF
+    693	04E8			     L2302:
+    694	04E8  0B F6			 or si,	si ; 2302
+    695	04EA  74 51			 je L2357 ; 2304
+    696	04EC  8A 44 0E			 mov al, byte ptr [si +	0Eh] ; 2306
+    697	04EF  98			 cbw ; 2309
+    698	04F0  8A 4E 08			 mov cl, byte ptr [bp +	8] ; 230A
+    699	04F3  32 ED			 xor ch, ch ; 230D
+    700	04F5  03 C1			 add ax, cx ; 230F
+    701	04F7  68 00FF			 push 0FFh ; 2311
+    702	04FA  6A 00			 push 0	; 2314
+    703	04FC  50			 push ax ; 2316
+    704	04FD  E8 0000e			 call near ptr _snd_04D9 ; 2317
+    705	0500  83 C4 06			 add sp, 6 ; 231A
+    706	0503  88 44 0F			 mov byte ptr [si + 0Fh], al ; 231D
+    707	0506  8B 74 04			 mov si, word ptr [si +	4] ; 2320
+    708	0509  EB DD			 jmp short L2302 ; 2323
+    709	050B			     L2325:
+    710	050B  8A 46 06			 mov al, byte ptr [bp +	6] ; 2325
+    711	050E  50			 push ax ; 2328
+    712	050F  FF 76 04			 push word ptr [bp + 4]	; 2329
+    713	0512  E8 FCB5			 call near ptr _snd_1FE4 ; 232C
+    714	0515  83 C4 04			 add sp, 4 ; 232F
+    715	0518  0B C0			 or ax,	ax ; 2332
+    716	051A  74 21			 je L2357 ; 2334
+    717	051C  8B F0			 mov si, ax ; 2336
+    718	051E  8A 46 08			 mov al, byte ptr [bp +	8] ; 2338
+    719	0521  88 44 0E			 mov byte ptr [si + 0Eh], al ; 233B
+    720	0524  98			 cbw ; 233E
+    721	0525  8B 1C			 mov bx, word ptr [si] ; 233F
+    722	0527  8A 4F 0C			 mov cl, byte ptr [bx +	0Ch] ; 2341
+    723	052A  32 ED			 xor ch, ch ; 2344
+    724	052C  03 C1			 add ax, cx ; 2346
+    725	052E  68 00FF			 push 0FFh ; 2348
+    726	0531  6A 00			 push 0	; 234B
+    727	0533  50			 push ax ; 234D
+    728	0534  E8 0000e			 call near ptr _snd_04D9 ; 234E
+    729	0537  83 C4 06			 add sp, 6 ; 2351
+    730	053A  88 44 0F			 mov byte ptr [si + 0Fh], al ; 2354
+    731	053D			     L2357:
+    732	053D  5E			 pop si	; 2357
+    733	053E  C9			 leave ; 2358
+    734	053F  C3			 ret ; 2359
+    735
+    736				     ; Set part	volume and update its voices
+    737				     public _snd_235A
+    738	0540			     _snd_235A label near
+    739	0540  C8 0000 00		 enter 0, 0 ; 235A
+    740	0544  56			 push si ; 235E
+    741	0545  80 7E 06 10		 cmp byte ptr [bp + 6],	010h ; 235F
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 14
+ADLIB.ASM
+
+
+
+    742	0549  75 2C			 jne L2391 ; 2363
+    743	054B  8B 5E 04			 mov bx, word ptr [bp +	4] ; 2365
+    744	054E  8B 77 04			 mov si, word ptr [bx +	4] ; 2368
+    745	0551			     L236B:
+    746	0551  0B F6			 or si,	si ; 236B
+    747	0553  74 57			 je L23C6 ; 236D
+    748	0555  8A 44 10			 mov al, byte ptr [si +	010h] ;	236F
+    749	0558  32 E4			 xor ah, ah ; 2372
+    750	055A  40			 inc ax	; 2374
+    751	055B  8A 4E 08			 mov cl, byte ptr [bp +	8] ; 2375
+    752	055E  32 ED			 xor ch, ch ; 2378
+    753	0560  F7 E9			 imul cx ; 237A
+    754	0562  C1 F8 07			 sar ax, 7 ; 237C
+    755	0565  88 44 11			 mov byte ptr [si + 011h], al ;	237F
+    756	0568  50			 push ax ; 2382
+    757	0569  FF 74 06			 push word ptr [si + 6]	; 2383
+    758	056C  E8 06FE			 call near ptr _snd_2A87 ; 2386
+    759	056F  83 C4 04			 add sp, 4 ; 2389
+    760	0572  8B 74 04			 mov si, word ptr [si +	4] ; 238C
+    761	0575  EB DA			 jmp short L236B ; 238F
+    762	0577			     L2391:
+    763	0577  8A 46 06			 mov al, byte ptr [bp +	6] ; 2391
+    764	057A  50			 push ax ; 2394
+    765	057B  FF 76 04			 push word ptr [bp + 4]	; 2395
+    766	057E  E8 FC49			 call near ptr _snd_1FE4 ; 2398
+    767	0581  83 C4 04			 add sp, 4 ; 239B
+    768	0584  0B C0			 or ax,	ax ; 239E
+    769	0586  74 29			 je L23CB ; 23A0
+    770	0588  8B F0			 mov si, ax ; 23A2
+    771	058A  8A 46 08			 mov al, byte ptr [bp +	8] ; 23A4
+    772	058D  88 44 10			 mov byte ptr [si + 010h], al ;	23A7
+    773	0590  32 E4			 xor ah, ah ; 23AA
+    774	0592  40			 inc ax	; 23AC
+    775	0593  8B 1C			 mov bx, word ptr [si] ; 23AD
+    776	0595  8A 4F 0E			 mov cl, byte ptr [bx +	0Eh] ; 23AF
+    777	0598  32 ED			 xor ch, ch ; 23B2
+    778	059A  F7 E9			 imul cx ; 23B4
+    779	059C  C1 F8 07			 sar ax, 7 ; 23B6
+    780	059F  88 44 11			 mov byte ptr [si + 011h], al ;	23B9
+    781	05A2  50			 push ax ; 23BC
+    782	05A3  FF 74 06			 push word ptr [si + 6]	; 23BD
+    783	05A6  E8 06C4			 call near ptr _snd_2A87 ; 23C0
+    784	05A9  83 C4 04			 add sp, 4 ; 23C3
+    785	05AC			     L23C6:
+    786	05AC  33 C0			 xor ax, ax ; 23C6
+    787	05AE  5E			 pop si	; 23C8
+    788	05AF  C9			 leave ; 23C9
+    789	05B0  C3			 ret ; 23CA
+    790	05B1			     L23CB:
+    791	05B1  B8 FFFF			 mov ax, 0FFFFh	; 23CB
+    792	05B4  5E			 pop si	; 23CE
+    793	05B5  C9			 leave ; 23CF
+    794	05B6  C3			 ret ; 23D0
+    795
+    796				     ; Empty reserved procedure
+    797				     public _snd_23D1
+    798	05B7			     _snd_23D1 label near
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 15
+ADLIB.ASM
+
+
+
+    799	05B7  C3			 ret ; 23D1
+    800
+    801				     ; Set part	transposition
+    802				     public _snd_23D2
+    803	05B8			     _snd_23D2 label near
+    804	05B8  C8 0000 00		 enter 0, 0 ; 23D2
+    805	05BC  56			 push si ; 23D6
+    806	05BD  80 7E 0A 18		 cmp byte ptr [bp + 0Ah], 018h ; 23D7
+    807	05C1  7E 03			 jle L23E0 ; 23DB
+    808	05C3  E9 009B			 jmp near ptr L247B ; 23DD
+    809	05C6			     L23E0:
+    810	05C6  80 7E 0A E8		 cmp byte ptr [bp + 0Ah], 0E8h ; 23E0
+    811	05CA  7D 03			 jge L23E9 ; 23E4
+    812	05CC  E9 0092			 jmp near ptr L247B ; 23E6
+    813	05CF			     L23E9:
+    814	05CF  80 7E 06 10		 cmp byte ptr [bp + 6],	010h ; 23E9
+    815	05D3  75 36			 jne L2425 ; 23ED
+    816	05D5  8B 5E 04			 mov bx, word ptr [bp +	4] ; 23EF
+    817	05D8  8B 77 04			 mov si, word ptr [bx +	4] ; 23F2
+    818	05DB			     L23F5:
+    819	05DB  0B F6			 or si,	si ; 23F5
+    820	05DD  75 03			 jne L23FC ; 23F7
+    821	05DF  E9 007F			 jmp near ptr L247B ; 23F9
+    822	05E2			     L23FC:
+    823	05E2  8A 46 0A			 mov al, byte ptr [bp +	0Ah] ; 23FC
+    824	05E5  98			 cbw ; 23FF
+    825	05E6  8B C8			 mov cx, ax ; 2400
+    826	05E8  8A 44 14			 mov al, byte ptr [si +	014h] ;	2402
+    827	05EB  98			 cbw ; 2405
+    828	05EC  03 C8			 add cx, ax ; 2406
+    829	05EE  6A 18			 push 018h ; 2408
+    830	05F0  6A E8			 push -018h ; 240A
+    831	05F2  51			 push cx ; 240C
+    832	05F3  E8 0000e			 call near ptr _snd_04F4 ; 240D
+    833	05F6  83 C4 06			 add sp, 6 ; 2410
+    834	05F9  88 44 15			 mov byte ptr [si + 015h], al ;	2413
+    835	05FC  50			 push ax ; 2416
+    836	05FD  FF 74 06			 push word ptr [si + 6]	; 2417
+    837	0600  E8 06BC			 call near ptr _snd_2AD9 ; 241A
+    838	0603  83 C4 04			 add sp, 4 ; 241D
+    839	0606  8B 74 04			 mov si, word ptr [si +	4] ; 2420
+    840	0609  EB D0			 jmp short L23F5 ; 2423
+    841	060B			     L2425:
+    842	060B  8A 46 06			 mov al, byte ptr [bp +	6] ; 2425
+    843	060E  50			 push ax ; 2428
+    844	060F  FF 76 04			 push word ptr [bp + 4]	; 2429
+    845	0612  E8 FBB5			 call near ptr _snd_1FE4 ; 242C
+    846	0615  83 C4 04			 add sp, 4 ; 242F
+    847	0618  0B C0			 or ax,	ax ; 2432
+    848	061A  74 45			 je L247B ; 2434
+    849	061C  8B F0			 mov si, ax ; 2436
+    850	061E  8A 46 0A			 mov al, byte ptr [bp +	0Ah] ; 2438
+    851	0621  80 7E 08 00		 cmp byte ptr [bp + 8],	0 ; 243B
+    852	0625  74 14			 je L2455 ; 243F
+    853	0627  98			 cbw ; 2441
+    854	0628  8B C8			 mov cx, ax ; 2442
+    855	062A  8A 44 14			 mov al, byte ptr [si +	014h] ;	2444
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 16
+ADLIB.ASM
+
+
+
+    856	062D  98			 cbw ; 2447
+    857	062E  03 C8			 add cx, ax ; 2448
+    858	0630  6A 07			 push 7	; 244A
+    859	0632  6A F9			 push -7 ; 244C
+    860	0634  51			 push cx ; 244E
+    861	0635  E8 0000e			 call near ptr _snd_04F4 ; 244F
+    862	0638  83 C4 06			 add sp, 6 ; 2452
+    863	063B			     L2455:
+    864	063B  88 44 14			 mov byte ptr [si + 014h], al ;	2455
+    865	063E  98			 cbw ; 2458
+    866	063F  8B C8			 mov cx, ax ; 2459
+    867	0641  8B 1C			 mov bx, word ptr [si] ; 245B
+    868	0643  8A 47 10			 mov al, byte ptr [bx +	010h] ;	245D
+    869	0646  98			 cbw ; 2460
+    870	0647  03 C8			 add cx, ax ; 2461
+    871	0649  6A 18			 push 018h ; 2463
+    872	064B  6A E8			 push -018h ; 2465
+    873	064D  51			 push cx ; 2467
+    874	064E  E8 0000e			 call near ptr _snd_04F4 ; 2468
+    875	0651  83 C4 06			 add sp, 6 ; 246B
+    876	0654  88 44 15			 mov byte ptr [si + 015h], al ;	246E
+    877	0657  50			 push ax ; 2471
+    878	0658  FF 74 06			 push word ptr [si + 6]	; 2472
+    879	065B  E8 0661			 call near ptr _snd_2AD9 ; 2475
+    880	065E  83 C4 04			 add sp, 4 ; 2478
+    881	0661			     L247B:
+    882	0661  5E			 pop si	; 247B
+    883	0662  C9			 leave ; 247C
+    884	0663  C3			 ret ; 247D
+    885
+    886				     ; Set part	detune
+    887				     public _snd_247E
+    888	0664			     _snd_247E label near
+    889	0664  C8 0000 00		 enter 0, 0 ; 247E
+    890	0668  56			 push si ; 2482
+    891	0669  80 7E 06 10		 cmp byte ptr [bp + 6],	010h ; 2483
+    892	066D  75 3A			 jne L24C3 ; 2487
+    893	066F  8B 5E 04			 mov bx, word ptr [bp +	4] ; 2489
+    894	0672  8B 77 04			 mov si, word ptr [bx +	4] ; 248C
+    895	0675			     L248F:
+    896	0675  0B F6			 or si,	si ; 248F
+    897	0677  74 73			 je L2506 ; 2491
+    898	0679  8A 46 08			 mov al, byte ptr [bp +	8] ; 2493
+    899	067C  98			 cbw ; 2496
+    900	067D  8B C8			 mov cx, ax ; 2497
+    901	067F  8A 44 16			 mov al, byte ptr [si +	016h] ;	2499
+    902	0682  98			 cbw ; 249C
+    903	0683  03 C8			 add cx, ax ; 249D
+    904	0685  6A 7F			 push 07Fh ; 249F
+    905	0687  6A 80			 push -080h ; 24A1
+    906	0689  51			 push cx ; 24A3
+    907	068A  E8 0000e			 call near ptr _snd_04D9 ; 24A4
+    908	068D  83 C4 06			 add sp, 6 ; 24A7
+    909	0690  88 44 17			 mov byte ptr [si + 017h], al ;	24AA
+    910	0693  98			 cbw ; 24AD
+    911	0694  03 44 1C			 add ax, word ptr [si +	01Ch] ;	24AE
+    912	0697  89 44 1E			 mov word ptr [si + 01Eh], ax ;	24B1
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 17
+ADLIB.ASM
+
+
+
+    913	069A  50			 push ax ; 24B4
+    914	069B  FF 74 06			 push word ptr [si + 6]	; 24B5
+    915	069E  E8 0684			 call near ptr _snd_2B3F ; 24B8
+    916	06A1  83 C4 04			 add sp, 4 ; 24BB
+    917	06A4  8B 74 04			 mov si, word ptr [si +	4] ; 24BE
+    918	06A7  EB CC			 jmp short L248F ; 24C1
+    919	06A9			     L24C3:
+    920	06A9  8A 46 06			 mov al, byte ptr [bp +	6] ; 24C3
+    921	06AC  50			 push ax ; 24C6
+    922	06AD  FF 76 04			 push word ptr [bp + 4]	; 24C7
+    923	06B0  E8 FB17			 call near ptr _snd_1FE4 ; 24CA
+    924	06B3  83 C4 04			 add sp, 4 ; 24CD
+    925	06B6  0B C0			 or ax,	ax ; 24D0
+    926	06B8  74 32			 je L2506 ; 24D2
+    927	06BA  8B F0			 mov si, ax ; 24D4
+    928	06BC  8B 1C			 mov bx, word ptr [si] ; 24D6
+    929	06BE  8A 47 11			 mov al, byte ptr [bx +	011h] ;	24D8
+    930	06C1  98			 cbw ; 24DB
+    931	06C2  8B C8			 mov cx, ax ; 24DC
+    932	06C4  8A 46 08			 mov al, byte ptr [bp +	8] ; 24DE
+    933	06C7  88 44 16			 mov byte ptr [si + 016h], al ;	24E1
+    934	06CA  98			 cbw ; 24E4
+    935	06CB  03 C8			 add cx, ax ; 24E5
+    936	06CD  6A 7F			 push 07Fh ; 24E7
+    937	06CF  6A 80			 push -080h ; 24E9
+    938	06D1  51			 push cx ; 24EB
+    939	06D2  E8 0000e			 call near ptr _snd_04D9 ; 24EC
+    940	06D5  83 C4 06			 add sp, 6 ; 24EF
+    941	06D8  88 44 17			 mov byte ptr [si + 017h], al ;	24F2
+    942	06DB  98			 cbw ; 24F5
+    943	06DC  03 44 1C			 add ax, word ptr [si +	01Ch] ;	24F6
+    944	06DF  89 44 1E			 mov word ptr [si + 01Eh], ax ;	24F9
+    945	06E2  50			 push ax ; 24FC
+    946	06E3  FF 74 06			 push word ptr [si + 6]	; 24FD
+    947	06E6  E8 063C			 call near ptr _snd_2B3F ; 2500
+    948	06E9  83 C4 04			 add sp, 4 ; 2503
+    949	06EC			     L2506:
+    950	06EC  5E			 pop si	; 2506
+    951	06ED  C9			 leave ; 2507
+    952	06EE  C3			 ret ; 2508
+    953
+    954				     ; Set part	enable state
+    955				     public _snd_2509
+    956	06EF			     _snd_2509 label near
+    957	06EF  C8 0000 00		 enter 0, 0 ; 2509
+    958	06F3  56			 push si ; 250D
+    959	06F4  8A 46 06			 mov al, byte ptr [bp +	6] ; 250E
+    960	06F7  50			 push ax ; 2511
+    961	06F8  FF 76 04			 push word ptr [bp + 4]	; 2512
+    962	06FB  E8 FACC			 call near ptr _snd_1FE4 ; 2515
+    963	06FE  83 C4 04			 add sp, 4 ; 2518
+    964	0701  0B C0			 or ax,	ax ; 251B
+    965	0703  74 17			 je L2536 ; 251D
+    966	0705  8B F0			 mov si, ax ; 251F
+    967	0707  8A 46 08			 mov al, byte ptr [bp +	8] ; 2521
+    968	070A  88 44 0D			 mov byte ptr [si + 0Dh], al ; 2524
+    969	070D  0A C0			 or al,	al ; 2527
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 18
+ADLIB.ASM
+
+
+
+    970	070F  75 06			 jne L2531 ; 2529
+    971	0711  56			 push si ; 252B
+    972	0712  E8 0243			 call near ptr _snd_2772 ; 252C
+    973	0715  44			 inc sp	; 252F
+    974	0716  44			 inc sp	; 2530
+    975	0717			     L2531:
+    976	0717  33 C0			 xor ax, ax ; 2531
+    977	0719  5E			 pop si	; 2533
+    978	071A  C9			 leave ; 2534
+    979	071B  C3			 ret ; 2535
+    980	071C			     L2536:
+    981	071C  B8 FFFF			 mov ax, 0FFFFh	; 2536
+    982	071F  5E			 pop si	; 2539
+    983	0720  C9			 leave ; 253A
+    984	0721  C3			 ret ; 253B
+    985
+    986				     ; Set part	modulation
+    987				     public _snd_253C
+    988	0722			     _snd_253C label near
+    989	0722  C8 0000 00		 enter 0, 0 ; 253C
+    990	0726  56			 push si ; 2540
+    991	0727  8A 46 06			 mov al, byte ptr [bp +	6] ; 2541
+    992	072A  50			 push ax ; 2544
+    993	072B  FF 76 04			 push word ptr [bp + 4]	; 2545
+    994	072E  E8 FA99			 call near ptr _snd_1FE4 ; 2548
+    995	0731  83 C4 04			 add sp, 4 ; 254B
+    996	0734  0B C0			 or ax,	ax ; 254E
+    997	0736  74 12			 je L2564 ; 2550
+    998	0738  8B F0			 mov si, ax ; 2552
+    999	073A  8A 46 08			 mov al, byte ptr [bp +	8] ; 2554
+   1000	073D  88 44 18			 mov byte ptr [si + 018h], al ;	2557
+   1001	0740  50			 push ax ; 255A
+   1002	0741  FF 74 06			 push word ptr [si + 6]	; 255B
+   1003	0744  E8 05A2			 call near ptr _snd_2B03 ; 255E
+   1004	0747  83 C4 04			 add sp, 4 ; 2561
+   1005	074A			     L2564:
+   1006	074A  5E			 pop si	; 2564
+   1007	074B  C9			 leave ; 2565
+   1008	074C  C3			 ret ; 2566
+   1009
+   1010				     ; Set sustain-pedal state
+   1011				     public _snd_2567
+   1012	074D			     _snd_2567 label near
+   1013	074D  C8 0000 00		 enter 0, 0 ; 2567
+   1014	0751  56			 push si ; 256B
+   1015	0752  8A 46 06			 mov al, byte ptr [bp +	6] ; 256C
+   1016	0755  50			 push ax ; 256F
+   1017	0756  FF 76 04			 push word ptr [bp + 4]	; 2570
+   1018	0759  E8 FA6E			 call near ptr _snd_1FE4 ; 2573
+   1019	075C  83 C4 04			 add sp, 4 ; 2576
+   1020	075F  0B C0			 or ax,	ax ; 2579
+   1021	0761  74 14			 je L2591 ; 257B
+   1022	0763  8B F0			 mov si, ax ; 257D
+   1023	0765  8A 46 08			 mov al, byte ptr [bp +	8] ; 257F
+   1024	0768  88 44 19			 mov byte ptr [si + 019h], al ;	2582
+   1025	076B  0A C0			 or al,	al ; 2585
+   1026	076D  75 08			 jne L2591 ; 2587
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 19
+ADLIB.ASM
+
+
+
+   1027	076F  FF 74 06			 push word ptr [si + 6]	; 2589
+   1028	0772  E8 034C			 call near ptr _snd_28DB ; 258C
+   1029	0775  44			 inc sp	; 258F
+   1030	0776  44			 inc sp	; 2590
+   1031	0777			     L2591:
+   1032	0777  5E			 pop si	; 2591
+   1033	0778  C9			 leave ; 2592
+   1034	0779  C3			 ret ; 2593
+   1035
+   1036				     ; Set pitch bend
+   1037				     public _snd_2594
+   1038	077A			     _snd_2594 label near
+   1039	077A  C8 0000 00		 enter 0, 0 ; 2594
+   1040	077E  56			 push si ; 2598
+   1041	077F  8A 46 06			 mov al, byte ptr [bp +	6] ; 2599
+   1042	0782  50			 push ax ; 259C
+   1043	0783  FF 76 04			 push word ptr [bp + 4]	; 259D
+   1044	0786  E8 FA41			 call near ptr _snd_1FE4 ; 25A0
+   1045	0789  83 C4 04			 add sp, 4 ; 25A3
+   1046	078C  0B C0			 or ax,	ax ; 25A6
+   1047	078E  74 3A			 je L25E4 ; 25A8
+   1048	0790  8B F0			 mov si, ax ; 25AA
+   1049	0792  8A 44 1A			 mov al, byte ptr [si +	01Ah] ;	25AC
+   1050	0795  32 E4			 xor ah, ah ; 25AF
+   1051	0797  F7 6E 08			 imul word ptr [bp + 8]	; 25B1
+   1052	079A  D1 FA			 sar dx, 1 ; 25B4
+   1053	079C  D1 D8			 rcr ax, 1 ; 25B6
+   1054	079E  D1 FA			 sar dx, 1 ; 25B8
+   1055	07A0  D1 D8			 rcr ax, 1 ; 25BA
+   1056	07A2  D1 FA			 sar dx, 1 ; 25BC
+   1057	07A4  D1 D8			 rcr ax, 1 ; 25BE
+   1058	07A6  D1 FA			 sar dx, 1 ; 25C0
+   1059	07A8  D1 D8			 rcr ax, 1 ; 25C2
+   1060	07AA  D1 FA			 sar dx, 1 ; 25C4
+   1061	07AC  D1 D8			 rcr ax, 1 ; 25C6
+   1062	07AE  D1 FA			 sar dx, 1 ; 25C8
+   1063	07B0  D1 D8			 rcr ax, 1 ; 25CA
+   1064	07B2  89 44 1C			 mov word ptr [si + 01Ch], ax ;	25CC
+   1065	07B5  8B C8			 mov cx, ax ; 25CF
+   1066	07B7  8A 44 17			 mov al, byte ptr [si +	017h] ;	25D1
+   1067	07BA  98			 cbw ; 25D4
+   1068	07BB  03 C8			 add cx, ax ; 25D5
+   1069	07BD  89 4C 1E			 mov word ptr [si + 01Eh], cx ;	25D7
+   1070	07C0  51			 push cx ; 25DA
+   1071	07C1  FF 74 06			 push word ptr [si + 6]	; 25DB
+   1072	07C4  E8 055E			 call near ptr _snd_2B3F ; 25DE
+   1073	07C7  83 C4 04			 add sp, 4 ; 25E1
+   1074	07CA			     L25E4:
+   1075	07CA  5E			 pop si	; 25E4
+   1076	07CB  C9			 leave ; 25E5
+   1077	07CC  C3			 ret ; 25E6
+   1078
+   1079				     ; Set pitch-bend range; preserves original	pointer/channel	anomaly
+   1080				     public _snd_25E7
+   1081	07CD			     _snd_25E7 label near
+   1082	07CD  C8 0000 00		 enter 0, 0 ; 25E7
+   1083	07D1  56			 push si ; 25EB
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 20
+ADLIB.ASM
+
+
+
+   1084	07D2  80 7E 08 0C		 cmp byte ptr [bp + 8],	0Ch ; 25EC
+   1085	07D6  77 25			 ja L2617 ; 25F0
+   1086	07D8  8A 46 06			 mov al, byte ptr [bp +	6] ; 25F2
+   1087	07DB  50			 push ax ; 25F5
+   1088	07DC  FF 76 04			 push word ptr [bp + 4]	; 25F6
+   1089	07DF  E8 F9E8			 call near ptr _snd_1FE4 ; 25F9
+   1090	07E2  83 C4 04			 add sp, 4 ; 25FC
+   1091	07E5  0B C0			 or ax,	ax ; 25FF
+   1092	07E7  74 14			 je L2617 ; 2601
+   1093	07E9  8B F0			 mov si, ax ; 2603
+   1094	07EB  6A 00			 push 0	; 2605
+   1095	07ED  50			 push ax ; 2607
+   1096	07EE  FF 76 04			 push word ptr [bp + 4]	; 2608
+   1097	07F1  E8 FF86			 call near ptr _snd_2594 ; 260B
+   1098	07F4  83 C4 06			 add sp, 6 ; 260E
+   1099	07F7  8A 46 08			 mov al, byte ptr [bp +	8] ; 2611
+   1100	07FA  88 44 1A			 mov byte ptr [si + 01Ah], al ;	2614
+   1101	07FD			     L2617:
+   1102	07FD  5E			 pop si	; 2617
+   1103	07FE  C9			 leave ; 2618
+   1104	07FF  C3			 ret ; 2619
+   1105
+   1106				     ; Read a part parameter
+   1107				     public _snd_261A
+   1108	0800			     _snd_261A label near
+   1109	0800  C8 0000 00		 enter 0, 0 ; 261A
+   1110	0804  8B 5E 04			 mov bx, word ptr [bp +	4] ; 261E
+   1111	0807  8B 5F 04			 mov bx, word ptr [bx +	4] ; 2621
+   1112	080A  8A 46 08			 mov al, byte ptr [bp +	8] ; 2624
+   1113	080D			     L2627:
+   1114	080D  0B DB			 or bx,	bx ; 2627
+   1115	080F  74 36			 je L2661 ; 2629
+   1116	0811  38 47 0B			 cmp byte ptr [bx + 0Bh], al ; 262B
+   1117	0814  74 05			 je L2635 ; 262E
+   1118	0816  8B 5F 04			 mov bx, word ptr [bx +	4] ; 2630
+   1119	0819  EB F2			 jmp short L2627 ; 2633
+   1120	081B			     L2635:
+   1121	081B  8A 46 06			 mov al, byte ptr [bp +	6] ; 2635
+   1122	081E  32 E4			 xor ah, ah ; 2638
+   1123	0820  2D 000E			 sub ax, 0Eh ; 263A
+   1124	0823  74 0E			 je L264D ; 263D
+   1125	0825  48			 dec ax	; 263F
+   1126	0826  74 10			 je L2652 ; 2640
+   1127	0828  48			 dec ax	; 2642
+   1128	0829  74 12			 je L2657 ; 2643
+   1129	082B  48			 dec ax	; 2645
+   1130	082C  74 14			 je L265C ; 2646
+   1131	082E  B8 FFFF			 mov ax, 0FFFFh	; 2648
+   1132	0831  C9			 leave ; 264B
+   1133	0832  C3			 ret ; 264C
+   1134	0833			     L264D:
+   1135	0833  8A 47 0D			 mov al, byte ptr [bx +	0Dh] ; 264D
+   1136	0836  C9			 leave ; 2650
+   1137	0837  C3			 ret ; 2651
+   1138	0838			     L2652:
+   1139	0838  8A 47 10			 mov al, byte ptr [bx +	010h] ;	2652
+   1140	083B  C9			 leave ; 2655
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 21
+ADLIB.ASM
+
+
+
+   1141	083C  C3			 ret ; 2656
+   1142	083D			     L2657:
+   1143	083D  8A 47 0A			 mov al, byte ptr [bx +	0Ah] ; 2657
+   1144	0840  C9			 leave ; 265A
+   1145	0841  C3			 ret ; 265B
+   1146	0842			     L265C:
+   1147	0842  8A 47 14			 mov al, byte ptr [bx +	014h] ;	265C
+   1148	0845  C9			 leave ; 265F
+   1149	0846  C3			 ret ; 2660
+   1150	0847			     L2661:
+   1151	0847  B0 81			 mov al, 081h ;	2661
+   1152	0849  C9			 leave ; 2663
+   1153	084A  C3			 ret ; 2664
+   1154
+   1155				     ; Copy custom instrument to a part
+   1156				     public _snd_2665
+   1157	084B			     _snd_2665 label near
+   1158	084B  C8 0000 00		 enter 0, 0 ; 2665
+   1159	084F  6A 1E			 push 01Eh ; 2669
+   1160	0851  FF 76 06			 push word ptr [bp + 6]	; 266B
+   1161	0854  8B 5E 04			 mov bx, word ptr [bp +	4] ; 266E
+   1162	0857  FF 77 08			 push word ptr [bx + 8]	; 2671
+   1163	085A  E8 0000e			 call near ptr _snd_053D ; 2674
+   1164	085D  C9			 leave ; 2677
+   1165	085E  C3			 ret ; 2678
+   1166
+   1167				     ; Copy a global instrument
+   1168				     public _snd_2679
+   1169	085F			     _snd_2679 label near
+   1170	085F  C8 0000 00		 enter 0, 0 ; 2679
+   1171	0863  56			 push si ; 267D
+   1172	0864  8A 46 04			 mov al, byte ptr [bp +	4] ; 267E
+   1173	0867  3C 20			 cmp al, 020h ;	2681
+   1174	0869  73 13			 jae L2698 ; 2683
+   1175	086B  B9 001E			 mov cx, 01Eh ;	2685
+   1176	086E  F6 E1			 mul cl	; 2688
+   1177	0870  05 0000e			 add ax, offset	_snd_global_instruments	; 268A
+   1178	0873  51			 push cx ; 268D
+   1179	0874  FF 76 06			 push word ptr [bp + 6]	; 268E
+   1180	0877  50			 push ax ; 2691
+   1181	0878  E8 0000e			 call near ptr _snd_053D ; 2692
+   1182	087B  83 C4 06			 add sp, 6 ; 2695
+   1183	087E			     L2698:
+   1184	087E  5E			 pop si	; 2698
+   1185	087F  C9			 leave ; 2699
+   1186	0880  C3			 ret ; 269A
+   1187
+   1188				     ; Select a	global or default instrument
+   1189				     public _snd_269B
+   1190	0881			     _snd_269B label near
+   1191	0881  C8 0000 00		 enter 0, 0 ; 269B
+   1192	0885  8A 46 06			 mov al, byte ptr [bp +	6] ; 269F
+   1193	0888  B9 001E			 mov cx, 01Eh ;	26A2
+   1194	088B  3C 20			 cmp al, 020h ;	26A5
+   1195	088D  73 07			 jae L26B0 ; 26A7
+   1196	088F  F6 E1			 mul cl	; 26A9
+   1197	0891  05 0000e			 add ax, offset	_snd_global_instruments	; 26AB
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 22
+ADLIB.ASM
+
+
+
+   1198	0894  EB 03			 jmp short L26B3 ; 26AE
+   1199	0896			     L26B0:
+   1200	0896  B8 0000e			 mov ax, offset	_snd_default_instrument	; 26B0
+   1201	0899			     L26B3:
+   1202	0899  8B 5E 04			 mov bx, word ptr [bp +	4] ; 26B3
+   1203	089C  51			 push cx ; 26B6
+   1204	089D  50			 push ax ; 26B7
+   1205	089E  FF 77 08			 push word ptr [bx + 8]	; 26B8
+   1206	08A1  E8 0000e			 call near ptr _snd_053D ; 26BB
+   1207	08A4  83 C4 06			 add sp, 6 ; 26BE
+   1208	08A7  C9			 leave ; 26C1
+   1209	08A8  C3			 ret ; 26C2
+   1210
+   1211				     ; Modify instrument field;	preserves original DI-clobber anomaly
+   1212				     public _snd_26C3
+   1213	08A9			     _snd_26C3 label near
+   1214	08A9  C8 0000 00		 enter 0, 0 ; 26C3
+   1215	08AD  57			 push di ; 26C7
+   1216	08AE  56			 push si ; 26C8
+   1217	08AF  8B 7E 04			 mov di, word ptr [bp +	4] ; 26C9
+   1218	08B2  8B 76 06			 mov si, word ptr [bp +	6] ; 26CC
+   1219	08B5  C1 E6 02			 shl si, 2 ; 26CF
+   1220	08B8  81 C6 0000e		 add si, offset	_snd_instrument_fields ; 26D2
+   1221	08BC  8D 5C 01			 lea bx, [si + 1] ; 26D6
+   1222	08BF  8A 47 01			 mov al, byte ptr [bx +	1] ; 26D9
+   1223	08C2  F6 D0			 not al	; 26DC
+   1224	08C4  8B CB			 mov cx, bx ; 26DE
+   1225	08C6  8A 1C			 mov bl, byte ptr [si] ; 26E0
+   1226	08C8  32 FF			 xor bh, bh ; 26E2
+   1227	08CA  8B 75 08			 mov si, word ptr [di +	8] ; 26E4
+   1228	08CD  22 00			 and al, byte ptr [bx +	si] ; 26E7
+   1229	08CF  8B F9			 mov di, cx ; 26E9
+   1230	08D1  8A 0D			 mov cl, byte ptr [di] ; 26EB
+   1231	08D3  8A 56 08			 mov dl, byte ptr [bp +	8] ; 26ED
+   1232	08D6  D2 E2			 shl dl, cl ; 26F0
+   1233	08D8  0A C2			 or al,	dl ; 26F2
+   1234	08DA  88 00			 mov byte ptr [bx + si], al ; 26F4
+   1235	08DC  FF 76 08			 push word ptr [bp + 8]	; 26F6
+   1236	08DF  FF 76 06			 push word ptr [bp + 6]	; 26F9
+   1237	08E2  FF 75 06			 push word ptr [di + 6]	; 26FC
+   1238	08E5  E8 035C			 call near ptr _snd_2A5E ; 26FF
+   1239	08E8  83 C4 06			 add sp, 6 ; 2702
+   1240	08EB  5E			 pop si	; 2705
+   1241	08EC  5F			 pop di	; 2706
+   1242	08ED  C9			 leave ; 2707
+   1243	08EE  C3			 ret ; 2708
+   1244
+   1245				     ; Allocate	and link a voice, then start the note
+   1246				     public _snd_2709
+   1247	08EF			     _snd_2709 label near
+   1248	08EF  C8 0000 00		 enter 0, 0 ; 2709
+   1249	08F3  57			 push di ; 270D
+   1250	08F4  56			 push si ; 270E
+   1251	08F5  8B 7E 04			 mov di, word ptr [bp +	4] ; 270F
+   1252	08F8  8A 45 0F			 mov al, byte ptr [di +	0Fh] ; 2712
+   1253	08FB  32 E4			 xor ah, ah ; 2715
+   1254	08FD  50			 push ax ; 2717
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 23
+ADLIB.ASM
+
+
+
+   1255	08FE  E8 0451			 call near ptr _snd_2B6C ; 2718
+   1256	0901  44			 inc sp	; 271B
+   1257	0902  44			 inc sp	; 271C
+   1258	0903  0B C0			 or ax,	ax ; 271D
+   1259	0905  74 2B			 je L274C ; 271F
+   1260	0907  8B F0			 mov si, ax ; 2721
+   1261	0909  89 3C			 mov word ptr [si], di ; 2723
+   1262	090B  8B 5D 06			 mov bx, word ptr [di +	6] ; 2725
+   1263	090E  89 5C 04			 mov word ptr [si + 4],	bx ; 2728
+   1264	0911  C7 44 02 0000		 mov word ptr [si + 2],	0 ; 272B
+   1265	0916  89 75 06			 mov word ptr [di + 6],	si ; 2730
+   1266	0919  0B DB			 or bx,	bx ; 2733
+   1267	091B  74 03			 je L273A ; 2735
+   1268	091D  89 77 02			 mov word ptr [bx + 2],	si ; 2737
+   1269	0920			     L273A:
+   1270	0920  8A 46 08			 mov al, byte ptr [bp +	8] ; 273A
+   1271	0923  32 E4			 xor ah, ah ; 273D
+   1272	0925  50			 push ax ; 273F
+   1273	0926  8A 46 06			 mov al, byte ptr [bp +	6] ; 2740
+   1274	0929  50			 push ax ; 2743
+   1275	092A  56			 push si ; 2744
+   1276	092B  57			 push di ; 2745
+   1277	092C  E8 0044			 call near ptr _snd_278D ; 2746
+   1278	092F  83 C4 08			 add sp, 8 ; 2749
+   1279	0932			     L274C:
+   1280	0932  5E			 pop si	; 274C
+   1281	0933  5F			 pop di	; 274D
+   1282	0934  C9			 leave ; 274E
+   1283	0935  C3			 ret ; 274F
+   1284
+   1285				     ; Stop a matching note in a voice list
+   1286				     public _snd_2750
+   1287	0936			     _snd_2750 label near
+   1288	0936  C8 0000 00		 enter 0, 0 ; 2750
+   1289	093A  56			 push si ; 2754
+   1290	093B  8B 76 04			 mov si, word ptr [bp +	4] ; 2755
+   1291	093E			     L2758:
+   1292	093E  0B F6			 or si,	si ; 2758
+   1293	0940  74 13			 je L276F ; 275A
+   1294	0942  8A 46 06			 mov al, byte ptr [bp +	6] ; 275C
+   1295	0945  38 44 08			 cmp byte ptr [si + 8],	al ; 275F
+   1296	0948  75 06			 jne L276A ; 2762
+   1297	094A  56			 push si ; 2764
+   1298	094B  E8 045C			 call near ptr _snd_2BC4 ; 2765
+   1299	094E  44			 inc sp	; 2768
+   1300	094F  44			 inc sp	; 2769
+   1301	0950			     L276A:
+   1302	0950  8B 74 04			 mov si, word ptr [si +	4] ; 276A
+   1303	0953  EB E9			 jmp short L2758 ; 276D
+   1304	0955			     L276F:
+   1305	0955  5E			 pop si	; 276F
+   1306	0956  C9			 leave ; 2770
+   1307	0957  C3			 ret ; 2771
+   1308
+   1309				     ; Stop every voice	belonging to a part
+   1310				     public _snd_2772
+   1311	0958			     _snd_2772 label near
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 24
+ADLIB.ASM
+
+
+
+   1312	0958  C8 0000 00		 enter 0, 0 ; 2772
+   1313	095C  56			 push si ; 2776
+   1314	095D  8B 76 04			 mov si, word ptr [bp +	4] ; 2777
+   1315	0960			     L277A:
+   1316	0960  83 7C 06 00		 cmp word ptr [si + 6],	0 ; 277A
+   1317	0964  74 0A			 je L278A ; 277E
+   1318	0966  FF 74 06			 push word ptr [si + 6]	; 2780
+   1319	0969  E8 043E			 call near ptr _snd_2BC4 ; 2783
+   1320	096C  44			 inc sp	; 2786
+   1321	096D  44			 inc sp	; 2787
+   1322	096E  EB F0			 jmp short L277A ; 2788
+   1323	0970			     L278A:
+   1324	0970  5E			 pop si	; 278A
+   1325	0971  C9			 leave ; 278B
+   1326	0972  C3			 ret ; 278C
+   1327
+   1328				     ; Program a new voice and initialize its two envelopes
+   1329				     public _snd_278D
+   1330	0973			     _snd_278D label near
+   1331	0973  C8 0004 00		 enter 4, 0 ; 278D
+   1332	0977  57			 push di ; 2791
+   1333	0978  56			 push si ; 2792
+   1334	0979  8B 7E 04			 mov di, word ptr [bp +	4] ; 2793
+   1335	097C  8B 76 06			 mov si, word ptr [bp +	6] ; 2796
+   1336	097F  8B 5D 08			 mov bx, word ptr [di +	8] ; 2799
+   1337	0982  89 5E FE			 mov word ptr [bp - 2],	bx ; 279C
+   1338	0985  8A 47 0A			 mov al, byte ptr [bx +	0Ah] ; 279F
+   1339	0988  24 01			 and al, 1 ; 27A2
+   1340	098A  88 44 06			 mov byte ptr [si + 6],	al ; 27A4
+   1341	098D  8A 46 08			 mov al, byte ptr [bp +	8] ; 27A7
+   1342	0990  88 44 08			 mov byte ptr [si + 8],	al ; 27AA
+   1343	0993  C6 44 0B 00		 mov byte ptr [si + 0Bh], 0 ; 27AD
+   1344	0997  8A 47 1D			 mov al, byte ptr [bx +	01Dh] ;	27B1
+   1345	099A  32 E4			 xor ah, ah ; 27B4
+   1346	099C  89 44 0C			 mov word ptr [si + 0Ch], ax ; 27B6
+   1347	099F  0B C0			 or ax,	ax ; 27B9
+   1348	09A1  74 09			 je L27C6 ; 27BB
+   1349	09A3  B8 003F			 mov ax, 03Fh ;	27BD
+   1350	09A6  F7 6C 0C			 imul word ptr [si + 0Ch] ; 27C0
+   1351	09A9  89 44 0C			 mov word ptr [si + 0Ch], ax ; 27C3
+   1352	09AC			     L27C6:
+   1353	09AC  8B 5E FE			 mov bx, word ptr [bp -	2] ; 27C6
+   1354	09AF  8A 5F 04			 mov bl, byte ptr [bx +	4] ; 27C9
+   1355	09B2  C0 EB 02			 shr bl, 2 ; 27CC
+   1356	09B5  32 FF			 xor bh, bh ; 27CF
+   1357	09B7  8A 46 0A			 mov al, byte ptr [bp +	0Ah] ; 27D1
+   1358	09BA  25 00FE			 and ax, 0FEh ;	27D4
+   1359	09BD  C1 E0 04			 shl ax, 4 ; 27D7
+   1360	09C0  89 46 FC			 mov word ptr [bp - 4],	ax ; 27DA
+   1361	09C3  03 D8			 add bx, ax ; 27DD
+   1362	09C5  8A 87 0000e		 mov al, byte ptr [bx +	_snd_volume_products] ;	27DF
+   1363	09C9  8B 5E FE			 mov bx, word ptr [bp -	2] ; 27E3
+   1364	09CC  8A 4F 01			 mov cl, byte ptr [bx +	1] ; 27E6
+   1365	09CF  80 E1 3F			 and cl, 03Fh ;	27E9
+   1366	09D2  02 C1			 add al, cl ; 27EC
+   1367	09D4  3C 3F			 cmp al, 03Fh ;	27EE
+   1368	09D6  76 02			 jbe L27F4 ; 27F0
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 25
+ADLIB.ASM
+
+
+
+   1369	09D8  B0 3F			 mov al, 03Fh ;	27F2
+   1370	09DA			     L27F4:
+   1371	09DA  88 44 0A			 mov byte ptr [si + 0Ah], al ; 27F4
+   1372	09DD  8A 5F 09			 mov bl, byte ptr [bx +	9] ; 27F7
+   1373	09E0  C0 EB 02			 shr bl, 2 ; 27FA
+   1374	09E3  32 FF			 xor bh, bh ; 27FD
+   1375	09E5  03 5E FC			 add bx, word ptr [bp -	4] ; 27FF
+   1376	09E8  8A 87 0000e		 mov al, byte ptr [bx +	_snd_volume_products] ;	2802
+   1377	09EC  8B 5E FE			 mov bx, word ptr [bp -	2] ; 2806
+   1378	09EF  8A 4F 06			 mov cl, byte ptr [bx +	6] ; 2809
+   1379	09F2  80 E1 3F			 and cl, 03Fh ;	280C
+   1380	09F5  02 C1			 add al, cl ; 280F
+   1381	09F7  3C 3F			 cmp al, 03Fh ;	2811
+   1382	09F9  76 02			 jbe L2817 ; 2813
+   1383	09FB  B0 3F			 mov al, 03Fh ;	2815
+   1384	09FD			     L2817:
+   1385	09FD  88 44 09			 mov byte ptr [si + 9],	al ; 2817
+   1386	0A00  32 E4			 xor ah, ah ; 281A
+   1387	0A02  C1 E0 05			 shl ax, 5 ; 281C
+   1388	0A05  8B D8			 mov bx, ax ; 281F
+   1389	0A07  8A 45 11			 mov al, byte ptr [di +	011h] ;	2821
+   1390	0A0A  C0 E8 02			 shr al, 2 ; 2824
+   1391	0A0D  32 E4			 xor ah, ah ; 2827
+   1392	0A0F  03 D8			 add bx, ax ; 2829
+   1393	0A11  8A 8F 0000e		 mov cl, byte ptr [bx +	_snd_volume_products] ;	282B
+   1394	0A15  8A 5C 0A			 mov bl, byte ptr [si +	0Ah] ; 282F
+   1395	0A18  80 7C 06 01		 cmp byte ptr [si + 6],	1 ; 2832
+   1396	0A1C  75 0B			 jne L2843 ; 2836
+   1397	0A1E  32 FF			 xor bh, bh ; 2838
+   1398	0A20  C1 E3 05			 shl bx, 5 ; 283A
+   1399	0A23  03 D8			 add bx, ax ; 283D
+   1400	0A25  8A 9F 0000e		 mov bl, byte ptr [bx +	_snd_volume_products] ;	283F
+   1401	0A29			     L2843:
+   1402	0A29  51			 push cx ; 2843
+   1403	0A2A  53			 push bx ; 2844
+   1404	0A2B  FF 76 FE			 push word ptr [bp - 2]	; 2845
+   1405	0A2E  56			 push si ; 2848
+   1406	0A2F  E8 0000e			 call near ptr _snd_2E9B ; 2849
+   1407	0A32  83 C4 08			 add sp, 8 ; 284C
+   1408	0A35  FF 75 1E			 push word ptr [di + 01Eh] ; 284F
+   1409	0A38  8A 45 15			 mov al, byte ptr [di +	015h] ;	2852
+   1410	0A3B  02 46 08			 add al, byte ptr [bp +	8] ; 2855
+   1411	0A3E  50			 push ax ; 2858
+   1412	0A3F  8A 44 07			 mov al, byte ptr [si +	7] ; 2859
+   1413	0A42  50			 push ax ; 285C
+   1414	0A43  E8 0000e			 call near ptr _snd_2F48 ; 285D
+   1415	0A46  83 C4 06			 add sp, 6 ; 2860
+   1416	0A49  8B 5E FE			 mov bx, word ptr [bp -	2] ; 2863
+   1417	0A4C  F6 47 0B 80		 test byte ptr [bx + 0Bh], 080h	; 2866
+   1418	0A50  74 1D			 je L2889 ; 286A
+   1419	0A52  8B C3			 mov ax, bx ; 286C
+   1420	0A54  05 000C			 add ax, 0Ch ; 286E
+   1421	0A57  50			 push ax ; 2871
+   1422	0A58  8A 47 0B			 mov al, byte ptr [bx +	0Bh] ; 2872
+   1423	0A5B  32 E4			 xor ah, ah ; 2875
+   1424	0A5D  50			 push ax ; 2877
+   1425	0A5E  8D 44 30			 lea ax, [si + 030h] ; 2878
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 26
+ADLIB.ASM
+
+
+
+   1426	0A61  50			 push ax ; 287B
+   1427	0A62  8D 44 0E			 lea ax, [si + 0Eh] ; 287C
+   1428	0A65  50			 push ax ; 287F
+   1429	0A66  56			 push si ; 2880
+   1430	0A67  E8 011D			 call near ptr _snd_29A1 ; 2881
+   1431	0A6A  83 C4 0A			 add sp, 0Ah ; 2884
+   1432	0A6D  EB 04			 jmp short L288D ; 2887
+   1433	0A6F			     L2889:
+   1434	0A6F  C6 44 0E 00		 mov byte ptr [si + 0Eh], 0 ; 2889
+   1435	0A73			     L288D:
+   1436	0A73  8B 5E FE			 mov bx, word ptr [bp -	2] ; 288D
+   1437	0A76  F6 47 14 80		 test byte ptr [bx + 014h], 080h ; 2890
+   1438	0A7A  74 1F			 je L28B5 ; 2894
+   1439	0A7C  8B C3			 mov ax, bx ; 2896
+   1440	0A7E  05 0015			 add ax, 015h ;	2898
+   1441	0A81  50			 push ax ; 289B
+   1442	0A82  8A 47 14			 mov al, byte ptr [bx +	014h] ;	289C
+   1443	0A85  32 E4			 xor ah, ah ; 289F
+   1444	0A87  50			 push ax ; 28A1
+   1445	0A88  8D 44 5A			 lea ax, [si + 05Ah] ; 28A2
+   1446	0A8B  50			 push ax ; 28A5
+   1447	0A8C  8D 44 38			 lea ax, [si + 038h] ; 28A6
+   1448	0A8F  50			 push ax ; 28A9
+   1449	0A90  56			 push si ; 28AA
+   1450	0A91  E8 00F3			 call near ptr _snd_29A1 ; 28AB
+   1451	0A94  83 C4 0A			 add sp, 0Ah ; 28AE
+   1452	0A97  5E			 pop si	; 28B1
+   1453	0A98  5F			 pop di	; 28B2
+   1454	0A99  C9			 leave ; 28B3
+   1455	0A9A  C3			 ret ; 28B4
+   1456	0A9B			     L28B5:
+   1457	0A9B  C6 44 38 00		 mov byte ptr [si + 038h], 0 ; 28B5
+   1458	0A9F  5E			 pop si	; 28B9
+   1459	0AA0  5F			 pop di	; 28BA
+   1460	0AA1  C9			 leave ; 28BB
+   1461	0AA2  C3			 ret ; 28BC
+   1462
+   1463				     ; Mark a note as sustained
+   1464				     public _snd_28BD
+   1465	0AA3			     _snd_28BD label near
+   1466	0AA3  C8 0000 00		 enter 0, 0 ; 28BD
+   1467	0AA7  8B 5E 04			 mov bx, word ptr [bp +	4] ; 28C1
+   1468	0AAA			     L28C4:
+   1469	0AAA  0B DB			 or bx,	bx ; 28C4
+   1470	0AAC  74 11			 je L28D9 ; 28C6
+   1471	0AAE  8A 46 06			 mov al, byte ptr [bp +	6] ; 28C8
+   1472	0AB1  38 47 08			 cmp byte ptr [bx + 8],	al ; 28CB
+   1473	0AB4  75 04			 jne L28D4 ; 28CE
+   1474	0AB6  C6 47 0B 01		 mov byte ptr [bx + 0Bh], 1 ; 28D0
+   1475	0ABA			     L28D4:
+   1476	0ABA  8B 5F 04			 mov bx, word ptr [bx +	4] ; 28D4
+   1477	0ABD  EB EB			 jmp short L28C4 ; 28D7
+   1478	0ABF			     L28D9:
+   1479	0ABF  C9			 leave ; 28D9
+   1480	0AC0  C3			 ret ; 28DA
+   1481
+   1482				     ; Release sustained voices
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 27
+ADLIB.ASM
+
+
+
+   1483				     public _snd_28DB
+   1484	0AC1			     _snd_28DB label near
+   1485	0AC1  C8 0000 00		 enter 0, 0 ; 28DB
+   1486	0AC5  56			 push si ; 28DF
+   1487	0AC6  8B 76 04			 mov si, word ptr [bp +	4] ; 28E0
+   1488	0AC9			     L28E3:
+   1489	0AC9  0B F6			 or si,	si ; 28E3
+   1490	0ACB  74 11			 je L28F8 ; 28E5
+   1491	0ACD  80 7C 0B 00		 cmp byte ptr [si + 0Bh], 0 ; 28E7
+   1492	0AD1  74 06			 je L28F3 ; 28EB
+   1493	0AD3  56			 push si ; 28ED
+   1494	0AD4  E8 02D3			 call near ptr _snd_2BC4 ; 28EE
+   1495	0AD7  44			 inc sp	; 28F1
+   1496	0AD8  44			 inc sp	; 28F2
+   1497	0AD9			     L28F3:
+   1498	0AD9  8B 74 04			 mov si, word ptr [si +	4] ; 28F3
+   1499	0ADC  EB EB			 jmp short L28E3 ; 28F6
+   1500	0ADE			     L28F8:
+   1501	0ADE  5E			 pop si	; 28F8
+   1502	0ADF  C9			 leave ; 28F9
+   1503	0AE0  C3			 ret ; 28FA
+   1504
+   1505				     ; Advance one envelope and	apply its parameter change
+   1506				     public _snd_28FB
+   1507	0AE1			     _snd_28FB label near
+   1508	0AE1  C8 0002 00		 enter 2, 0 ; 28FB
+   1509	0AE5  57			 push di ; 28FF
+   1510	0AE6  56			 push si ; 2900
+   1511	0AE7  8B 7E 04			 mov di, word ptr [bp +	4] ; 2901
+   1512	0AEA  8B 76 08			 mov si, word ptr [bp +	8] ; 2904
+   1513	0AED  56			 push si ; 2907
+   1514	0AEE  FF 76 06			 push word ptr [bp + 6]	; 2908
+   1515	0AF1  E8 0425			 call near ptr _snd_2D33 ; 290B
+   1516	0AF4  83 C4 04			 add sp, 4 ; 290E
+   1517	0AF7  88 46 FE			 mov byte ptr [bp - 2],	al ; 2911
+   1518	0AFA  A8 01			 test al, 1 ; 2914
+   1519	0AFC  74 73			 je L298B ; 2916
+   1520	0AFE  8A 4C 02			 mov cl, byte ptr [si +	2] ; 2918
+   1521	0B01  32 ED			 xor ch, ch ; 291B
+   1522	0B03  80 F9 00			 cmp cl, 0 ; 291D
+   1523	0B06  74 19			 je L293B ; 2920
+   1524	0B08  80 F9 0D			 cmp cl, 0Dh ; 2922
+   1525	0B0B  74 21			 je L2948 ; 2925
+   1526	0B0D  80 F9 1E			 cmp cl, 01Eh ;	2927
+   1527	0B10  74 4D			 je L2979 ; 292A
+   1528	0B12  80 F9 1F			 cmp cl, 01Fh ;	292C
+   1529	0B15  74 52			 je L2983 ; 292F
+   1530	0B17  8B 5E 06			 mov bx, word ptr [bp +	6] ; 2931
+   1531	0B1A  8B 47 08			 mov ax, word ptr [bx +	8] ; 2934
+   1532	0B1D  03 04			 add ax, word ptr [si] ; 2937
+   1533	0B1F  EB 33			 jmp short L296E ; 2939
+   1534	0B21			     L293B:
+   1535	0B21  8B 5E 06			 mov bx, word ptr [bp +	6] ; 293B
+   1536	0B24  8A 47 08			 mov al, byte ptr [bx +	8] ; 293E
+   1537	0B27  02 04			 add al, byte ptr [si] ; 2941
+   1538	0B29  88 45 09			 mov byte ptr [di + 9],	al ; 2943
+   1539	0B2C  EB 11			 jmp short L2959 ; 2946
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 28
+ADLIB.ASM
+
+
+
+   1540	0B2E			     L2948:
+   1541	0B2E  8B 5E 06			 mov bx, word ptr [bp +	6] ; 2948
+   1542	0B31  8A 47 08			 mov al, byte ptr [bx +	8] ; 294B
+   1543	0B34  02 04			 add al, byte ptr [si] ; 294E
+   1544	0B36  88 45 0A			 mov byte ptr [di + 0Ah], al ; 2950
+   1545	0B39  80 7D 06 01		 cmp byte ptr [di + 6],	1 ; 2953
+   1546	0B3D  75 15			 jne L296E ; 2957
+   1547	0B3F			     L2959:
+   1548	0B3F  32 E4			 xor ah, ah ; 2959
+   1549	0B41  C1 E0 05			 shl ax, 5 ; 295B
+   1550	0B44  8B 1D			 mov bx, word ptr [di] ; 295E
+   1551	0B46  8A 5F 11			 mov bl, byte ptr [bx +	011h] ;	2960
+   1552	0B49  C0 EB 02			 shr bl, 2 ; 2963
+   1553	0B4C  32 FF			 xor bh, bh ; 2966
+   1554	0B4E  03 D8			 add bx, ax ; 2968
+   1555	0B50  8A 87 0000e		 mov al, byte ptr [bx +	_snd_volume_products] ;	296A
+   1556	0B54			     L296E:
+   1557	0B54  50			 push ax ; 296E
+   1558	0B55  51			 push cx ; 296F
+   1559	0B56  57			 push di ; 2970
+   1560	0B57  E8 0000e			 call near ptr _snd_2FB1 ; 2971
+   1561	0B5A  83 C4 06			 add sp, 6 ; 2974
+   1562	0B5D  EB 12			 jmp short L298B ; 2977
+   1563	0B5F			     L2979:
+   1564	0B5F  8A 04			 mov al, byte ptr [si] ; 2979
+   1565	0B61  8B 5C 06			 mov bx, word ptr [si +	6] ; 297B
+   1566	0B64  88 47 14			 mov byte ptr [bx + 014h], al ;	297E
+   1567	0B67  EB 08			 jmp short L298B ; 2981
+   1568	0B69			     L2983:
+   1569	0B69  8A 04			 mov al, byte ptr [si] ; 2983
+   1570	0B6B  8B 5C 06			 mov bx, word ptr [si +	6] ; 2985
+   1571	0B6E  88 47 13			 mov byte ptr [bx + 013h], al ;	2988
+   1572	0B71			     L298B:
+   1573	0B71  F6 46 FE 02		 test byte ptr [bp - 2], 2 ; 298B
+   1574	0B75  74 0C			 je L299D ; 298F
+   1575	0B77  80 7C 04 00		 cmp byte ptr [si + 4],	0 ; 2991
+   1576	0B7B  74 06			 je L299D ; 2995
+   1577	0B7D  8A 65 07			 mov ah, byte ptr [di +	7] ; 2997
+   1578	0B80  E8 0000e			 call near ptr _snd_2FA0 ; 299A
+   1579	0B83			     L299D:
+   1580	0B83  5E			 pop si	; 299D
+   1581	0B84  5F			 pop di	; 299E
+   1582	0B85  C9			 leave ; 299F
+   1583	0B86  C3			 ret ; 29A0
+   1584
+   1585				     ; Initialize an envelope and its companion	work record
+   1586				     public _snd_29A1
+   1587	0B87			     _snd_29A1 label near
+   1588	0B87  C8 0000 00		 enter 0, 0 ; 29A1
+   1589	0B8B  57			 push di ; 29A5
+   1590	0B8C  56			 push si ; 29A6
+   1591	0B8D  8B 56 08			 mov dx, word ptr [bp +	8] ; 29A7
+   1592	0B90  8B 76 06			 mov si, word ptr [bp +	6] ; 29AA
+   1593	0B93  8B DA			 mov bx, dx ; 29AD
+   1594	0B95  C7 07 0000		 mov word ptr [bx], 0 ;	29AF
+   1595	0B99  8A 46 0A			 mov al, byte ptr [bp +	0Ah] ; 29B3
+   1596	0B9C  24 40			 and al, 040h ;	29B6
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 29
+ADLIB.ASM
+
+
+
+   1597	0B9E  88 47 03			 mov byte ptr [bx + 3],	al ; 29B8
+   1598	0BA1  8A 4E 0A			 mov cl, byte ptr [bp +	0Ah] ; 29BB
+   1599	0BA4  80 E1 20			 and cl, 020h ;	29BE
+   1600	0BA7  88 4C 0A			 mov byte ptr [si + 0Ah], cl ; 29C1
+   1601	0BAA  8A 4E 0A			 mov cl, byte ptr [bp +	0Ah] ; 29C4
+   1602	0BAD  80 E1 10			 and cl, 010h ;	29C7
+   1603	0BB0  88 4F 04			 mov byte ptr [bx + 4],	cl ; 29CA
+   1604	0BB3  8A 5E 0A			 mov bl, byte ptr [bp +	0Ah] ; 29CD
+   1605	0BB6  83 E3 0F			 and bx, 0Fh ; 29D0
+   1606	0BB9  8A 8F 0000e		 mov cl, byte ptr [bx +	_snd_parameter_map] ; 29D3
+   1607	0BBD  8B FA			 mov di, dx ; 29D7
+   1608	0BBF  88 4D 02			 mov byte ptr [di + 2],	cl ; 29D9
+   1609	0BC2  D1 E3			 shl bx, 1 ; 29DC
+   1610	0BC4  8B 8F 0000e		 mov cx, word ptr [bx +	_snd_max_values] ; 29DE
+   1611	0BC8  89 4C 06			 mov word ptr [si + 6],	cx ; 29E2
+   1612	0BCB  8B 7E 04			 mov di, word ptr [bp +	4] ; 29E5
+   1613	0BCE  0A C0			 or al,	al ; 29E8
+   1614	0BD0  B0 1F			 mov al, 01Fh ;	29EA
+   1615	0BD2  88 44 13			 mov byte ptr [si + 013h], al ;	29EC
+   1616	0BD5  74 08			 je L29F9 ; 29EF
+   1617	0BD7  8B 1D			 mov bx, word ptr [di] ; 29F1
+   1618	0BD9  8A 47 18			 mov al, byte ptr [bx +	018h] ;	29F3
+   1619	0BDC  C0 E8 02			 shr al, 2 ; 29F6
+   1620	0BDF			     L29F9:
+   1621	0BDF  88 44 14			 mov byte ptr [si + 014h], al ;	29F9
+   1622	0BE2  8B DA			 mov bx, dx ; 29FC
+   1623	0BE4  8A 47 02			 mov al, byte ptr [bx +	2] ; 29FE
+   1624	0BE7  32 E4			 xor ah, ah ; 2A01
+   1625	0BE9  0A C0			 or al,	al ; 2A03
+   1626	0BEB  74 1F			 je L2A26 ; 2A05
+   1627	0BED  3C 0D			 cmp al, 0Dh ; 2A07
+   1628	0BEF  74 23			 je L2A2E ; 2A09
+   1629	0BF1  3C 1E			 cmp al, 01Eh ;	2A0B
+   1630	0BF3  74 27			 je L2A36 ; 2A0D
+   1631	0BF5  3C 1F			 cmp al, 01Fh ;	2A0F
+   1632	0BF7  74 31			 je L2A44 ; 2A11
+   1633	0BF9  8A 47 02			 mov al, byte ptr [bx +	2] ; 2A13
+   1634	0BFC  50			 push ax ; 2A16
+   1635	0BFD  8A 45 07			 mov al, byte ptr [di +	7] ; 2A17
+   1636	0C00  50			 push ax ; 2A1A
+   1637	0C01  E8 0000e			 call near ptr _snd_304C ; 2A1B
+   1638	0C04  83 C4 04			 add sp, 4 ; 2A1E
+   1639	0C07  89 44 08			 mov word ptr [si + 8],	ax ; 2A21
+   1640	0C0A  EB 2A			 jmp short L2A50 ; 2A24
+   1641	0C0C			     L2A26:
+   1642	0C0C  8A 45 09			 mov al, byte ptr [di +	9] ; 2A26
+   1643	0C0F  89 44 08			 mov word ptr [si + 8],	ax ; 2A29
+   1644	0C12  EB 22			 jmp short L2A50 ; 2A2C
+   1645	0C14			     L2A2E:
+   1646	0C14  8A 45 0A			 mov al, byte ptr [di +	0Ah] ; 2A2E
+   1647	0C17  89 44 08			 mov word ptr [si + 8],	ax ; 2A31
+   1648	0C1A  EB 1A			 jmp short L2A50 ; 2A34
+   1649	0C1C			     L2A36:
+   1650	0C1C  C7 44 08 001F		 mov word ptr [si + 8],	01Fh ; 2A36
+   1651	0C21  8B 5F 06			 mov bx, word ptr [bx +	6] ; 2A3B
+   1652	0C24  C6 47 14 00		 mov byte ptr [bx + 014h], 0 ; 2A3E
+   1653	0C28  EB 0C			 jmp short L2A50 ; 2A42
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 30
+ADLIB.ASM
+
+
+
+   1654	0C2A			     L2A44:
+   1655	0C2A  C7 44 08 0000		 mov word ptr [si + 8],	0 ; 2A44
+   1656	0C2F  8B 5F 06			 mov bx, word ptr [bx +	6] ; 2A49
+   1657	0C32  C6 47 13 00		 mov byte ptr [bx + 013h], 0 ; 2A4C
+   1658	0C36			     L2A50:
+   1659	0C36  FF 76 0C			 push word ptr [bp + 0Ch] ; 2A50
+   1660	0C39  56			 push si ; 2A53
+   1661	0C3A  E8 019F			 call near ptr _snd_2BF6 ; 2A54
+   1662	0C3D  83 C4 04			 add sp, 4 ; 2A57
+   1663	0C40  5E			 pop si	; 2A5A
+   1664	0C41  5F			 pop di	; 2A5B
+   1665	0C42  C9			 leave ; 2A5C
+   1666	0C43  C3			 ret ; 2A5D
+   1667
+   1668				     ; Set a parameter across a	voice list
+   1669				     public _snd_2A5E
+   1670	0C44			     _snd_2A5E label near
+   1671	0C44  C8 0000 00		 enter 0, 0 ; 2A5E
+   1672	0C48  57			 push di ; 2A62
+   1673	0C49  56			 push si ; 2A63
+   1674	0C4A  8B 76 06			 mov si, word ptr [bp +	6] ; 2A64
+   1675	0C4D  83 FE 1C			 cmp si, 01Ch ;	2A67
+   1676	0C50  7D 17			 jge L2A83 ; 2A6A
+   1677	0C52  8B 7E 04			 mov di, word ptr [bp +	4] ; 2A6C
+   1678	0C55			     L2A6F:
+   1679	0C55  0B FF			 or di,	di ; 2A6F
+   1680	0C57  74 10			 je L2A83 ; 2A71
+   1681	0C59  FF 76 08			 push word ptr [bp + 8]	; 2A73
+   1682	0C5C  56			 push si ; 2A76
+   1683	0C5D  57			 push di ; 2A77
+   1684	0C5E  E8 0000e			 call near ptr _snd_2FB1 ; 2A78
+   1685	0C61  83 C4 06			 add sp, 6 ; 2A7B
+   1686	0C64  8B 7D 04			 mov di, word ptr [di +	4] ; 2A7E
+   1687	0C67  EB EC			 jmp short L2A6F ; 2A81
+   1688	0C69			     L2A83:
+   1689	0C69  5E			 pop si	; 2A83
+   1690	0C6A  5F			 pop di	; 2A84
+   1691	0C6B  C9			 leave ; 2A85
+   1692	0C6C  C3			 ret ; 2A86
+   1693
+   1694				     ; Recompute voice output levels
+   1695				     public _snd_2A87
+   1696	0C6D			     _snd_2A87 label near
+   1697	0C6D  C8 0000 00		 enter 0, 0 ; 2A87
+   1698	0C71  57			 push di ; 2A8B
+   1699	0C72  56			 push si ; 2A8C
+   1700	0C73  8A 46 06			 mov al, byte ptr [bp +	6] ; 2A8D
+   1701	0C76  C0 E8 02			 shr al, 2 ; 2A90
+   1702	0C79  32 E4			 xor ah, ah ; 2A93
+   1703	0C7B  8B F8			 mov di, ax ; 2A95
+   1704	0C7D  8B 76 04			 mov si, word ptr [bp +	4] ; 2A97
+   1705	0C80			     L2A9A:
+   1706	0C80  0B F6			 or si,	si ; 2A9A
+   1707	0C82  74 37			 je L2AD5 ; 2A9C
+   1708	0C84  8A 5C 09			 mov bl, byte ptr [si +	9] ; 2A9E
+   1709	0C87  32 FF			 xor bh, bh ; 2AA1
+   1710	0C89  C1 E3 05			 shl bx, 5 ; 2AA3
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 31
+ADLIB.ASM
+
+
+
+   1711	0C8C  8A 81 0000e		 mov al, byte ptr [bx +	di + _snd_volume_products] ; 2AA6
+   1712	0C90  50			 push ax ; 2AAA
+   1713	0C91  6A 00			 push 0	; 2AAB
+   1714	0C93  56			 push si ; 2AAD
+   1715	0C94  E8 0000e			 call near ptr _snd_2FB1 ; 2AAE
+   1716	0C97  83 C4 06			 add sp, 6 ; 2AB1
+   1717	0C9A  80 7C 06 01		 cmp byte ptr [si + 6],	1 ; 2AB4
+   1718	0C9E  75 16			 jne L2AD0 ; 2AB8
+   1719	0CA0  8A 5C 0A			 mov bl, byte ptr [si +	0Ah] ; 2ABA
+   1720	0CA3  32 FF			 xor bh, bh ; 2ABD
+   1721	0CA5  C1 E3 05			 shl bx, 5 ; 2ABF
+   1722	0CA8  8A 81 0000e		 mov al, byte ptr [bx +	di + _snd_volume_products] ; 2AC2
+   1723	0CAC  50			 push ax ; 2AC6
+   1724	0CAD  6A 0D			 push 0Dh ; 2AC7
+   1725	0CAF  56			 push si ; 2AC9
+   1726	0CB0  E8 0000e			 call near ptr _snd_2FB1 ; 2ACA
+   1727	0CB3  83 C4 06			 add sp, 6 ; 2ACD
+   1728	0CB6			     L2AD0:
+   1729	0CB6  8B 74 04			 mov si, word ptr [si +	4] ; 2AD0
+   1730	0CB9  EB C5			 jmp short L2A9A ; 2AD3
+   1731	0CBB			     L2AD5:
+   1732	0CBB  5E			 pop si	; 2AD5
+   1733	0CBC  5F			 pop di	; 2AD6
+   1734	0CBD  C9			 leave ; 2AD7
+   1735	0CBE  C3			 ret ; 2AD8
+   1736
+   1737				     ; Transpose a list	of voices
+   1738				     public _snd_2AD9
+   1739	0CBF			     _snd_2AD9 label near
+   1740	0CBF  C8 0000 00		 enter 0, 0 ; 2AD9
+   1741	0CC3  56			 push si ; 2ADD
+   1742	0CC4  8B 76 04			 mov si, word ptr [bp +	4] ; 2ADE
+   1743	0CC7			     L2AE1:
+   1744	0CC7  0B F6			 or si,	si ; 2AE1
+   1745	0CC9  74 1B			 je L2B00 ; 2AE3
+   1746	0CCB  8B 1C			 mov bx, word ptr [si] ; 2AE5
+   1747	0CCD  FF 77 1E			 push word ptr [bx + 01Eh] ; 2AE7
+   1748	0CD0  8A 44 08			 mov al, byte ptr [si +	8] ; 2AEA
+   1749	0CD3  02 46 06			 add al, byte ptr [bp +	6] ; 2AED
+   1750	0CD6  50			 push ax ; 2AF0
+   1751	0CD7  8A 44 07			 mov al, byte ptr [si +	7] ; 2AF1
+   1752	0CDA  50			 push ax ; 2AF4
+   1753	0CDB  E8 0000e			 call near ptr _snd_2F6F ; 2AF5
+   1754	0CDE  83 C4 06			 add sp, 6 ; 2AF8
+   1755	0CE1  8B 74 04			 mov si, word ptr [si +	4] ; 2AFB
+   1756	0CE4  EB E1			 jmp short L2AE1 ; 2AFE
+   1757	0CE6			     L2B00:
+   1758	0CE6  5E			 pop si	; 2B00
+   1759	0CE7  C9			 leave ; 2B01
+   1760	0CE8  C3			 ret ; 2B02
+   1761
+   1762				     ; Update modulation envelope scaling
+   1763				     public _snd_2B03
+   1764	0CE9			     _snd_2B03 label near
+   1765	0CE9  C8 0000 00		 enter 0, 0 ; 2B03
+   1766	0CED  8B 5E 04			 mov bx, word ptr [bp +	4] ; 2B07
+   1767	0CF0			     L2B0A:
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 32
+ADLIB.ASM
+
+
+
+   1768	0CF0  0B DB			 or bx,	bx ; 2B0A
+   1769	0CF2  74 2F			 je L2B3D ; 2B0C
+   1770	0CF4  80 7F 0E 00		 cmp byte ptr [bx + 0Eh], 0 ; 2B0E
+   1771	0CF8  74 0F			 je L2B23 ; 2B12
+   1772	0CFA  80 7F 33 00		 cmp byte ptr [bx + 033h], 0 ; 2B14
+   1773	0CFE  74 09			 je L2B23 ; 2B18
+   1774	0D00  8A 46 06			 mov al, byte ptr [bp +	6] ; 2B1A
+   1775	0D03  C0 E8 02			 shr al, 2 ; 2B1D
+   1776	0D06  88 47 22			 mov byte ptr [bx + 022h], al ;	2B20
+   1777	0D09			     L2B23:
+   1778	0D09  80 7F 38 00		 cmp byte ptr [bx + 038h], 0 ; 2B23
+   1779	0D0D  74 0F			 je L2B38 ; 2B27
+   1780	0D0F  80 7F 5D 00		 cmp byte ptr [bx + 05Dh], 0 ; 2B29
+   1781	0D13  74 09			 je L2B38 ; 2B2D
+   1782	0D15  8A 46 06			 mov al, byte ptr [bp +	6] ; 2B2F
+   1783	0D18  C0 E8 02			 shr al, 2 ; 2B32
+   1784	0D1B  88 47 4C			 mov byte ptr [bx + 04Ch], al ;	2B35
+   1785	0D1E			     L2B38:
+   1786	0D1E  8B 5F 04			 mov bx, word ptr [bx +	4] ; 2B38
+   1787	0D21  EB CD			 jmp short L2B0A ; 2B3B
+   1788	0D23			     L2B3D:
+   1789	0D23  C9			 leave ; 2B3D
+   1790	0D24  C3			 ret ; 2B3E
+   1791
+   1792				     ; Retune a	list of	voices
+   1793				     public _snd_2B3F
+   1794	0D25			     _snd_2B3F label near
+   1795	0D25  C8 0000 00		 enter 0, 0 ; 2B3F
+   1796	0D29  57			 push di ; 2B43
+   1797	0D2A  56			 push si ; 2B44
+   1798	0D2B  8B 7E 06			 mov di, word ptr [bp +	6] ; 2B45
+   1799	0D2E  8B 76 04			 mov si, word ptr [bp +	4] ; 2B48
+   1800	0D31			     L2B4B:
+   1801	0D31  0B F6			 or si,	si ; 2B4B
+   1802	0D33  74 19			 je L2B68 ; 2B4D
+   1803	0D35  57			 push di ; 2B4F
+   1804	0D36  8B 1C			 mov bx, word ptr [si] ; 2B50
+   1805	0D38  8A 47 15			 mov al, byte ptr [bx +	015h] ;	2B52
+   1806	0D3B  02 44 08			 add al, byte ptr [si +	8] ; 2B55
+   1807	0D3E  50			 push ax ; 2B58
+   1808	0D3F  8A 44 07			 mov al, byte ptr [si +	7] ; 2B59
+   1809	0D42  50			 push ax ; 2B5C
+   1810	0D43  E8 0000e			 call near ptr _snd_2F6F ; 2B5D
+   1811	0D46  83 C4 06			 add sp, 6 ; 2B60
+   1812	0D49  8B 74 04			 mov si, word ptr [si +	4] ; 2B63
+   1813	0D4C  EB E3			 jmp short L2B4B ; 2B66
+   1814	0D4E			     L2B68:
+   1815	0D4E  5E			 pop si	; 2B68
+   1816	0D4F  5F			 pop di	; 2B69
+   1817	0D50  C9			 leave ; 2B6A
+   1818	0D51  C3			 ret ; 2B6B
+   1819
+   1820				     ; Allocate	a free voice or	steal a	lower-priority voice
+   1821				     public _snd_2B6C
+   1822	0D52			     _snd_2B6C label near
+   1823	0D52  C8 0000 00		 enter 0, 0 ; 2B6C
+   1824	0D56  57			 push di ; 2B70
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 33
+ADLIB.ASM
+
+
+
+   1825	0D57  56			 push si ; 2B71
+   1826	0D58  8A 56 04			 mov dl, byte ptr [bp +	4] ; 2B72
+   1827	0D5B  33 FF			 xor di, di ; 2B75
+   1828	0D5D  B9 0009			 mov cx, 9 ; 2B77
+   1829	0D60			     L2B7A:
+   1830	0D60  FE 06 0000e		 inc byte ptr [_snd_voice_counter] ; 2B7A
+   1831	0D64  80 3E 0000e 09		 cmp byte ptr [_snd_voice_counter], 9 ;	2B7E
+   1832	0D69  72 05			 jb L2B8A ; 2B83
+   1833	0D6B  C6 06 0000e 00		 mov byte ptr [_snd_voice_counter], 0 ;	2B85
+   1834	0D70			     L2B8A:
+   1835	0D70  B0 62			 mov al, 062h ;	2B8A
+   1836	0D72  F6 26 0000e		 mul byte ptr [_snd_voice_counter] ; 2B8C
+   1837	0D76  05 0000e			 add ax, offset	_snd_voices ; 2B90
+   1838	0D79  8B F0			 mov si, ax ; 2B93
+   1839	0D7B  83 3C 00			 cmp word ptr [si], 0 ;	2B95
+   1840	0D7E  74 24			 je L2BBE ; 2B98
+   1841	0D80  83 7C 04 00		 cmp word ptr [si + 4],	0 ; 2B9A
+   1842	0D84  75 0C			 jne L2BAC ; 2B9E
+   1843	0D86  8B 1C			 mov bx, word ptr [si] ; 2BA0
+   1844	0D88  3A 57 0F			 cmp dl, byte ptr [bx +	0Fh] ; 2BA2
+   1845	0D8B  72 05			 jb L2BAC ; 2BA5
+   1846	0D8D  8A 57 0F			 mov dl, byte ptr [bx +	0Fh] ; 2BA7
+   1847	0D90  8B FE			 mov di, si ; 2BAA
+   1848	0D92			     L2BAC:
+   1849	0D92  E2 CC			 loop L2B7A ; 2BAC
+   1850	0D94  0B FF			 or di,	di ; 2BAE
+   1851	0D96  74 06			 je L2BB8 ; 2BB0
+   1852	0D98  57			 push di ; 2BB2
+   1853	0D99  E8 000E			 call near ptr _snd_2BC4 ; 2BB3
+   1854	0D9C  44			 inc sp	; 2BB6
+   1855	0D9D  44			 inc sp	; 2BB7
+   1856	0D9E			     L2BB8:
+   1857	0D9E  8B C7			 mov ax, di ; 2BB8
+   1858	0DA0  5E			 pop si	; 2BBA
+   1859	0DA1  5F			 pop di	; 2BBB
+   1860	0DA2  C9			 leave ; 2BBC
+   1861	0DA3  C3			 ret ; 2BBD
+   1862	0DA4			     L2BBE:
+   1863	0DA4  8B C6			 mov ax, si ; 2BBE
+   1864	0DA6  5E			 pop si	; 2BC0
+   1865	0DA7  5F			 pop di	; 2BC1
+   1866	0DA8  C9			 leave ; 2BC2
+   1867	0DA9  C3			 ret ; 2BC3
+   1868
+   1869				     ; Stop and	unlink one voice
+   1870				     public _snd_2BC4
+   1871	0DAA			     _snd_2BC4 label near
+   1872	0DAA  C8 0000 00		 enter 0, 0 ; 2BC4
+   1873	0DAE  57			 push di ; 2BC8
+   1874	0DAF  56			 push si ; 2BC9
+   1875	0DB0  8B 7E 04			 mov di, word ptr [bp +	4] ; 2BCA
+   1876	0DB3  8A 65 07			 mov ah, byte ptr [di +	7] ; 2BCD
+   1877	0DB6  E8 0000e			 call near ptr _snd_2F94 ; 2BD0
+   1878	0DB9  8B 5D 02			 mov bx, word ptr [di +	2] ; 2BD3
+   1879	0DBC  8B 75 04			 mov si, word ptr [di +	4] ; 2BD6
+   1880	0DBF  0B F6			 or si,	si ; 2BD9
+   1881	0DC1  74 03			 je L2BE0 ; 2BDB
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 34
+ADLIB.ASM
+
+
+
+   1882	0DC3  89 5C 02			 mov word ptr [si + 2],	bx ; 2BDD
+   1883	0DC6			     L2BE0:
+   1884	0DC6  0B DB			 or bx,	bx ; 2BE0
+   1885	0DC8  74 05			 je L2BE9 ; 2BE2
+   1886	0DCA  89 77 04			 mov word ptr [bx + 4],	si ; 2BE4
+   1887	0DCD  EB 05			 jmp short L2BEE ; 2BE7
+   1888	0DCF			     L2BE9:
+   1889	0DCF  8B 1D			 mov bx, word ptr [di] ; 2BE9
+   1890	0DD1  89 77 06			 mov word ptr [bx + 6],	si ; 2BEB
+   1891	0DD4			     L2BEE:
+   1892	0DD4  C7 05 0000		 mov word ptr [di], 0 ;	2BEE
+   1893	0DD8  5E			 pop si	; 2BF2
+   1894	0DD9  5F			 pop di	; 2BF3
+   1895	0DDA  C9			 leave ; 2BF4
+   1896	0DDB  C3			 ret ; 2BF5
+   1897
+   1898				     ; Load envelope state from	instrument bytes
+   1899				     public _snd_2BF6
+   1900	0DDC			     _snd_2BF6 label near
+   1901	0DDC  C8 0000 00		 enter 0, 0 ; 2BF6
+   1902	0DE0  56			 push si ; 2BFA
+   1903	0DE1  8B 5E 06			 mov bx, word ptr [bp +	6] ; 2BFB
+   1904	0DE4  8B 76 04			 mov si, word ptr [bp +	4] ; 2BFE
+   1905	0DE7  C6 04 01			 mov byte ptr [si], 1 ;	2C01
+   1906	0DEA  C7 44 02 0000		 mov word ptr [si + 2],	0 ; 2C04
+   1907	0DEF  C6 44 15 1F		 mov byte ptr [si + 015h], 01Fh	; 2C09
+   1908	0DF3  8A 07			 mov al, byte ptr [bx] ; 2C0D
+   1909	0DF5  32 E4			 xor ah, ah ; 2C0F
+   1910	0DF7  89 44 04			 mov word ptr [si + 4],	ax ; 2C11
+   1911	0DFA  0B C0			 or ax,	ax ; 2C14
+   1912	0DFC  74 09			 je L2C21 ; 2C16
+   1913	0DFE  B8 003F			 mov ax, 03Fh ;	2C18
+   1914	0E01  F7 6C 04			 imul word ptr [si + 4]	; 2C1B
+   1915	0E04  89 44 04			 mov word ptr [si + 4],	ax ; 2C1E
+   1916	0E07			     L2C21:
+   1917	0E07  8A 47 01			 mov al, byte ptr [bx +	1] ; 2C21
+   1918	0E0A  88 44 0B			 mov byte ptr [si + 0Bh], al ; 2C24
+   1919	0E0D  8A 47 03			 mov al, byte ptr [bx +	3] ; 2C27
+   1920	0E10  88 44 0C			 mov byte ptr [si + 0Ch], al ; 2C2A
+   1921	0E13  8A 47 05			 mov al, byte ptr [bx +	5] ; 2C2D
+   1922	0E16  88 44 0D			 mov byte ptr [si + 0Dh], al ; 2C30
+   1923	0E19  8A 47 06			 mov al, byte ptr [bx +	6] ; 2C33
+   1924	0E1C  88 44 0E			 mov byte ptr [si + 0Eh], al ; 2C36
+   1925	0E1F  8A 47 02			 mov al, byte ptr [bx +	2] ; 2C39
+   1926	0E22  88 44 0F			 mov byte ptr [si + 0Fh], al ; 2C3C
+   1927	0E25  8A 47 04			 mov al, byte ptr [bx +	4] ; 2C3F
+   1928	0E28  88 44 10			 mov byte ptr [si + 010h], al ;	2C42
+   1929	0E2B  32 C0			 xor al, al ; 2C45
+   1930	0E2D  88 44 11			 mov byte ptr [si + 011h], al ;	2C47
+   1931	0E30  8A 47 07			 mov al, byte ptr [bx +	7] ; 2C4A
+   1932	0E33  88 44 12			 mov byte ptr [si + 012h], al ;	2C4D
+   1933	0E36  56			 push si ; 2C50
+   1934	0E37  E8 0005			 call near ptr _snd_2C59 ; 2C51
+   1935	0E3A  44			 inc sp	; 2C54
+   1936	0E3B  44			 inc sp	; 2C55
+   1937	0E3C  5E			 pop si	; 2C56
+   1938	0E3D  C9			 leave ; 2C57
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 35
+ADLIB.ASM
+
+
+
+   1939	0E3E  C3			 ret ; 2C58
+   1940
+   1941				     ; Initialize one envelope stage
+   1942				     public _snd_2C59
+   1943	0E3F			     _snd_2C59 label near
+   1944	0E3F  C8 000C 00		 enter 0Ch, 0 ;	2C59
+   1945	0E43  57			 push di ; 2C5D
+   1946	0E44  56			 push si ; 2C5E
+   1947	0E45  8B 7E 04			 mov di, word ptr [bp +	4] ; 2C5F
+   1948	0E48  8A 45 13			 mov al, byte ptr [di +	013h] ;	2C62
+   1949	0E4B  98			 cbw ; 2C65
+   1950	0E4C  89 46 F6			 mov word ptr [bp - 0Ah], ax ; 2C66
+   1951	0E4F  8A 1D			 mov bl, byte ptr [di] ; 2C69
+   1952	0E51  FE CB			 dec bl	; 2C6B
+   1953	0E53  32 FF			 xor bh, bh ; 2C6D
+   1954	0E55  88 5E FE			 mov byte ptr [bp - 2],	bl ; 2C6F
+   1955	0E58  8A 41 0B			 mov al, byte ptr [bx +	di + 0Bh] ; 2C72
+   1956	0E5B  8B C8			 mov cx, ax ; 2C75
+   1957	0E5D  25 007F			 and ax, 07Fh ;	2C77
+   1958	0E60  8B F0			 mov si, ax ; 2C7A
+   1959	0E62  C1 E6 05			 shl si, 5 ; 2C7C
+   1960	0E65  8B 5E F6			 mov bx, word ptr [bp -	0Ah] ; 2C7F
+   1961	0E68  8A 98 0000e		 mov bl, byte ptr [bx +	si + _snd_volume_products] ; 2C82
+   1962	0E6C  32 FF			 xor bh, bh ; 2C86
+   1963	0E6E  D1 E3			 shl bx, 1 ; 2C88
+   1964	0E70  8B 87 0000e		 mov ax, word ptr [bx +	_snd_step_counts] ; 2C8A
+   1965	0E74  89 46 FC			 mov word ptr [bp - 4],	ax ; 2C8E
+   1966	0E77  F6 C1 80			 test cl, 080h ; 2C91
+   1967	0E7A  74 09			 je L2C9F ; 2C94
+   1968	0E7C  50			 push ax ; 2C96
+   1969	0E7D  E8 01E0			 call near ptr _snd_2E7A ; 2C97
+   1970	0E80  44			 inc sp	; 2C9A
+   1971	0E81  44			 inc sp	; 2C9B
+   1972	0E82  89 46 FC			 mov word ptr [bp - 4],	ax ; 2C9C
+   1973	0E85			     L2C9F:
+   1974	0E85  83 7E FC 00		 cmp word ptr [bp - 4],	0 ; 2C9F
+   1975	0E89  75 03			 jne L2CA8 ; 2CA3
+   1976	0E8B  FF 46 FC			 inc word ptr [bp - 4] ; 2CA5
+   1977	0E8E			     L2CA8:
+   1978	0E8E  8B 46 FC			 mov ax, word ptr [bp -	4] ; 2CA8
+   1979	0E91  89 45 16			 mov word ptr [di + 016h], ax ;	2CAB
+   1980	0E94  89 45 18			 mov word ptr [di + 018h], ax ;	2CAE
+   1981	0E97  80 7E FE 02		 cmp byte ptr [bp - 2],	2 ; 2CB1
+   1982	0E9B  74 58			 je L2D0F ; 2CB5
+   1983	0E9D  8B 45 06			 mov ax, word ptr [di +	6] ; 2CB7
+   1984	0EA0  89 46 F8			 mov word ptr [bp - 8],	ax ; 2CBA
+   1985	0EA3  8B 75 08			 mov si, word ptr [di +	8] ; 2CBD
+   1986	0EA6  8A 5E FE			 mov bl, byte ptr [bp -	2] ; 2CC0
+   1987	0EA9  32 FF			 xor bh, bh ; 2CC3
+   1988	0EAB  8A 49 0F			 mov cl, byte ptr [bx +	di + 0Fh] ; 2CC5
+   1989	0EAE  8B D1			 mov dx, cx ; 2CC8
+   1990	0EB0  83 E1 7F			 and cx, 07Fh ;	2CCA
+   1991	0EB3  83 E9 1F			 sub cx, 01Fh ;	2CCD
+   1992	0EB6  89 56 F4			 mov word ptr [bp - 0Ch], dx ; 2CD0
+   1993	0EB9  51			 push cx ; 2CD3
+   1994	0EBA  50			 push ax ; 2CD4
+   1995	0EBB  E8 00FB			 call near ptr _snd_2DD3 ; 2CD5
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 36
+ADLIB.ASM
+
+
+
+   1996	0EBE  83 C4 04			 add sp, 4 ; 2CD8
+   1997	0EC1  89 46 FA			 mov word ptr [bp - 6],	ax ; 2CDB
+   1998	0EC4  F6 46 F4 80		 test byte ptr [bp - 0Ch], 080h	; 2CDE
+   1999	0EC8  74 09			 je L2CED ; 2CE2
+   2000	0ECA  50			 push ax ; 2CE4
+   2001	0ECB  E8 0192			 call near ptr _snd_2E7A ; 2CE5
+   2002	0ECE  44			 inc sp	; 2CE8
+   2003	0ECF  44			 inc sp	; 2CE9
+   2004	0ED0  89 46 FA			 mov word ptr [bp - 6],	ax ; 2CEA
+   2005	0ED3			     L2CED:
+   2006	0ED3  03 C6			 add ax, si ; 2CED
+   2007	0ED5  3B 46 F8			 cmp ax, word ptr [bp -	8] ; 2CEF
+   2008	0ED8  7E 07			 jle L2CFB ; 2CF2
+   2009	0EDA  8B 56 F8			 mov dx, word ptr [bp -	8] ; 2CF4
+   2010	0EDD  2B D6			 sub dx, si ; 2CF7
+   2011	0EDF  EB 0D			 jmp short L2D08 ; 2CF9
+   2012	0EE1			     L2CFB:
+   2013	0EE1  8B 56 FA			 mov dx, word ptr [bp -	6] ; 2CFB
+   2014	0EE4  8B C2			 mov ax, dx ; 2CFE
+   2015	0EE6  03 C6			 add ax, si ; 2D00
+   2016	0EE8  79 04			 jns L2D08 ; 2D02
+   2017	0EEA  8B D6			 mov dx, si ; 2D04
+   2018	0EEC  F7 DA			 neg dx	; 2D06
+   2019	0EEE			     L2D08:
+   2020	0EEE  8B DA			 mov bx, dx ; 2D08
+   2021	0EF0  2B 5D 02			 sub bx, word ptr [di +	2] ; 2D0A
+   2022	0EF3  EB 02			 jmp short L2D11 ; 2D0D
+   2023	0EF5			     L2D0F:
+   2024	0EF5  33 DB			 xor bx, bx ; 2D0F
+   2025	0EF7			     L2D11:
+   2026	0EF7  8B C3			 mov ax, bx ; 2D11
+   2027	0EF9  99			 cwd ; 2D13
+   2028	0EFA  F7 7E FC			 idiv word ptr [bp - 4]	; 2D14
+   2029	0EFD  89 45 1A			 mov word ptr [di + 01Ah], ax ;	2D17
+   2030	0F00  B0 01			 mov al, 1 ; 2D1A
+   2031	0F02  0B DB			 or bx,	bx ; 2D1C
+   2032	0F04  7D 04			 jge L2D24 ; 2D1E
+   2033	0F06  F7 DA			 neg dx	; 2D20
+   2034	0F08  F6 D8			 neg al	; 2D22
+   2035	0F0A			     L2D24:
+   2036	0F0A  88 45 1C			 mov byte ptr [di + 01Ch], al ;	2D24
+   2037	0F0D  89 55 1E			 mov word ptr [di + 01Eh], dx ;	2D27
+   2038	0F10  C7 45 20 0000		 mov word ptr [di + 020h], 0 ; 2D2A
+   2039	0F15  5E			 pop si	; 2D2F
+   2040	0F16  5F			 pop di	; 2D30
+   2041	0F17  C9			 leave ; 2D31
+   2042	0F18  C3			 ret ; 2D32
+   2043
+   2044				     ; Advance envelope	interpolation and stage	transitions
+   2045				     public _snd_2D33
+   2046	0F19			     _snd_2D33 label near
+   2047	0F19  C8 0002 00		 enter 2, 0 ; 2D33
+   2048	0F1D  57			 push di ; 2D37
+   2049	0F1E  56			 push si ; 2D38
+   2050	0F1F  8B 76 04			 mov si, word ptr [bp +	4] ; 2D39
+   2051	0F22  C7 46 FE 0000		 mov word ptr [bp - 2],	0 ; 2D3C
+   2052	0F27  83 7C 04 00		 cmp word ptr [si + 4],	0 ; 2D41
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 37
+ADLIB.ASM
+
+
+
+   2053	0F2B  74 13			 je L2D5A ; 2D45
+   2054	0F2D  83 6C 04 11		 sub word ptr [si + 4],	011h ; 2D47
+   2055	0F31  83 7C 04 00		 cmp word ptr [si + 4],	0 ; 2D4B
+   2056	0F35  7F 09			 jg L2D5A ; 2D4F
+   2057	0F37  C6 04 00			 mov byte ptr [si], 0 ;	2D51
+   2058	0F3A  33 C0			 xor ax, ax ; 2D54
+   2059	0F3C  5E			 pop si	; 2D56
+   2060	0F3D  5F			 pop di	; 2D57
+   2061	0F3E  C9			 leave ; 2D58
+   2062	0F3F  C3			 ret ; 2D59
+   2063	0F40			     L2D5A:
+   2064	0F40  8B 7C 02			 mov di, word ptr [si +	2] ; 2D5A
+   2065	0F43  03 7C 1A			 add di, word ptr [si +	01Ah] ;	2D5D
+   2066	0F46  8B 44 16			 mov ax, word ptr [si +	016h] ;	2D60
+   2067	0F49  8B 4C 1E			 mov cx, word ptr [si +	01Eh] ;	2D63
+   2068	0F4C  01 4C 20			 add word ptr [si + 020h], cx ;	2D66
+   2069	0F4F  39 44 20			 cmp word ptr [si + 020h], ax ;	2D69
+   2070	0F52  72 09			 jb L2D77 ; 2D6C
+   2071	0F54  29 44 20			 sub word ptr [si + 020h], ax ;	2D6E
+   2072	0F57  8A 44 1C			 mov al, byte ptr [si +	01Ch] ;	2D71
+   2073	0F5A  98			 cbw ; 2D74
+   2074	0F5B  03 F8			 add di, ax ; 2D75
+   2075	0F5D			     L2D77:
+   2076	0F5D  39 7C 02			 cmp word ptr [si + 2],	di ; 2D77
+   2077	0F60  75 08			 jne L2D84 ; 2D7A
+   2078	0F62  8A 44 15			 mov al, byte ptr [si +	015h] ;	2D7C
+   2079	0F65  38 44 14			 cmp byte ptr [si + 014h], al ;	2D7F
+   2080	0F68  74 22			 je L2DA6 ; 2D82
+   2081	0F6A			     L2D84:
+   2082	0F6A  89 7C 02			 mov word ptr [si + 2],	di ; 2D84
+   2083	0F6D  8A 44 14			 mov al, byte ptr [si +	014h] ;	2D87
+   2084	0F70  88 44 15			 mov byte ptr [si + 015h], al ;	2D8A
+   2085	0F73  98			 cbw ; 2D8D
+   2086	0F74  50			 push ax ; 2D8E
+   2087	0F75  57			 push di ; 2D8F
+   2088	0F76  E8 0040			 call near ptr _snd_2DD3 ; 2D90
+   2089	0F79  83 C4 04			 add sp, 4 ; 2D93
+   2090	0F7C  8B F8			 mov di, ax ; 2D96
+   2091	0F7E  8B 5E 06			 mov bx, word ptr [bp +	6] ; 2D98
+   2092	0F81  3B 3F			 cmp di, word ptr [bx] ; 2D9B
+   2093	0F83  74 07			 je L2DA6 ; 2D9D
+   2094	0F85  89 3F			 mov word ptr [bx], di ; 2D9F
+   2095	0F87  C7 46 FE 0001		 mov word ptr [bp - 2],	1 ; 2DA1
+   2096	0F8C			     L2DA6:
+   2097	0F8C  FF 4C 18			 dec word ptr [si + 018h] ; 2DA6
+   2098	0F8F  75 21			 jne L2DCC ; 2DA9
+   2099	0F91  FE 04			 inc byte ptr [si] ; 2DAB
+   2100	0F93  80 3C 04			 cmp byte ptr [si], 4 ;	2DAD
+   2101	0F96  76 14			 jbe L2DC6 ; 2DB0
+   2102	0F98  80 7C 0A 00		 cmp byte ptr [si + 0Ah], 0 ; 2DB2
+   2103	0F9C  74 09			 je L2DC1 ; 2DB6
+   2104	0F9E  C6 04 01			 mov byte ptr [si], 1 ;	2DB8
+   2105	0FA1  83 4E FE 02		 or word ptr [bp - 2], 2 ; 2DBB
+   2106	0FA5  EB 05			 jmp short L2DC6 ; 2DBF
+   2107	0FA7			     L2DC1:
+   2108	0FA7  C6 04 00			 mov byte ptr [si], 0 ;	2DC1
+   2109	0FAA  EB 06			 jmp short L2DCC ; 2DC4
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 38
+ADLIB.ASM
+
+
+
+   2110	0FAC			     L2DC6:
+   2111	0FAC  56			 push si ; 2DC6
+   2112	0FAD  E8 FE8F			 call near ptr _snd_2C59 ; 2DC7
+   2113	0FB0  44			 inc sp	; 2DCA
+   2114	0FB1  44			 inc sp	; 2DCB
+   2115	0FB2			     L2DCC:
+   2116	0FB2  8B 46 FE			 mov ax, word ptr [bp -	2] ; 2DCC
+   2117	0FB5  5E			 pop si	; 2DCF
+   2118	0FB6  5F			 pop di	; 2DD0
+   2119	0FB7  C9			 leave ; 2DD1
+   2120	0FB8  C3			 ret ; 2DD2
+   2121
+   2122				     ; Scale an	envelope amplitude
+   2123				     public _snd_2DD3
+   2124	0FB9			     _snd_2DD3 label near
+   2125	0FB9  C8 0000 00		 enter 0, 0 ; 2DD3
+   2126	0FBD  56			 push si ; 2DD7
+   2127	0FBE  80 7E 06 00		 cmp byte ptr [bp + 6],	0 ; 2DD8
+   2128	0FC2  75 05			 jne L2DE3 ; 2DDC
+   2129	0FC4  33 C0			 xor ax, ax ; 2DDE
+   2130	0FC6  5E			 pop si	; 2DE0
+   2131	0FC7  C9			 leave ; 2DE1
+   2132	0FC8  C3			 ret ; 2DE2
+   2133	0FC9			     L2DE3:
+   2134	0FC9  80 7E 06 1F		 cmp byte ptr [bp + 6],	01Fh ; 2DE3
+   2135	0FCD  75 06			 jne L2DEF ; 2DE7
+   2136	0FCF  8B 46 04			 mov ax, word ptr [bp +	4] ; 2DE9
+   2137	0FD2  5E			 pop si	; 2DEC
+   2138	0FD3  C9			 leave ; 2DED
+   2139	0FD4  C3			 ret ; 2DEE
+   2140	0FD5			     L2DEF:
+   2141	0FD5  8B 76 04			 mov si, word ptr [bp +	4] ; 2DEF
+   2142	0FD8  83 FE 3F			 cmp si, 03Fh ;	2DF2
+   2143	0FDB  7F 61			 jg L2E58 ; 2DF5
+   2144	0FDD  83 FE C1			 cmp si, -03Fh ; 2DF7
+   2145	0FE0  7C 5C			 jl L2E58 ; 2DFA
+   2146	0FE2  80 7E 06 00		 cmp byte ptr [bp + 6],	0 ; 2DFC
+   2147	0FE6  7D 31			 jge L2E33 ; 2E00
+   2148	0FE8  0B F6			 or si,	si ; 2E02
+   2149	0FEA  7D 17			 jge L2E1D ; 2E04
+   2150	0FEC  8A 46 06			 mov al, byte ptr [bp +	6] ; 2E06
+   2151	0FEF  98			 cbw ; 2E09
+   2152	0FF0  BB 0000e			 mov bx, offset	_snd_volume_products ; 2E0A
+   2153	0FF3  8B CE			 mov cx, si ; 2E0D
+   2154	0FF5  C1 E1 05			 shl cx, 5 ; 2E0F
+   2155	0FF8  2B D9			 sub bx, cx ; 2E12
+   2156	0FFA  2B D8			 sub bx, ax ; 2E14
+   2157	0FFC  8A 07			 mov al, byte ptr [bx] ; 2E16
+   2158	0FFE  32 E4			 xor ah, ah ; 2E18
+   2159	1000  5E			 pop si	; 2E1A
+   2160	1001  C9			 leave ; 2E1B
+   2161	1002  C3			 ret ; 2E1C
+   2162	1003			     L2E1D:
+   2163	1003  8A 46 06			 mov al, byte ptr [bp +	6] ; 2E1D
+   2164	1006  98			 cbw ; 2E20
+   2165	1007  8B DE			 mov bx, si ; 2E21
+   2166	1009  C1 E3 05			 shl bx, 5 ; 2E23
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 39
+ADLIB.ASM
+
+
+
+   2167	100C			     L2E26:
+   2168	100C  2B D8			 sub bx, ax ; 2E26
+   2169	100E  8A 87 0000e		 mov al, byte ptr [bx +	_snd_volume_products] ;	2E28
+   2170	1012  32 E4			 xor ah, ah ; 2E2C
+   2171	1014  F7 D8			 neg ax	; 2E2E
+   2172	1016  5E			 pop si	; 2E30
+   2173	1017  C9			 leave ; 2E31
+   2174	1018  C3			 ret ; 2E32
+   2175	1019			     L2E33:
+   2176	1019  0B F6			 or si,	si ; 2E33
+   2177	101B  7D 0D			 jge L2E44 ; 2E35
+   2178	101D  8A 46 06			 mov al, byte ptr [bp +	6] ; 2E37
+   2179	1020  98			 cbw ; 2E3A
+   2180	1021  8B D8			 mov bx, ax ; 2E3B
+   2181	1023  8B C6			 mov ax, si ; 2E3D
+   2182	1025  C1 E0 05			 shl ax, 5 ; 2E3F
+   2183	1028  EB E2			 jmp short L2E26 ; 2E42
+   2184	102A			     L2E44:
+   2185	102A  8B DE			 mov bx, si ; 2E44
+   2186	102C  C1 E3 05			 shl bx, 5 ; 2E46
+   2187	102F  8A 46 06			 mov al, byte ptr [bp +	6] ; 2E49
+   2188	1032  98			 cbw ; 2E4C
+   2189	1033  03 D8			 add bx, ax ; 2E4D
+   2190	1035  8A 87 0000e		 mov al, byte ptr [bx +	_snd_volume_products] ;	2E4F
+   2191	1039  32 E4			 xor ah, ah ; 2E53
+   2192	103B  5E			 pop si	; 2E55
+   2193	103C  C9			 leave ; 2E56
+   2194	103D  C3			 ret ; 2E57
+   2195	103E			     L2E58:
+   2196	103E  8A 46 06			 mov al, byte ptr [bp +	6] ; 2E58
+   2197	1041  98			 cbw ; 2E5B
+   2198	1042  8B C8			 mov cx, ax ; 2E5C
+   2199	1044  8D 44 01			 lea ax, [si + 1] ; 2E5E
+   2200	1047  F7 E9			 imul cx ; 2E61
+   2201	1049  D1 FA			 sar dx, 1 ; 2E63
+   2202	104B  D1 D8			 rcr ax, 1 ; 2E65
+   2203	104D  D1 FA			 sar dx, 1 ; 2E67
+   2204	104F  D1 D8			 rcr ax, 1 ; 2E69
+   2205	1051  D1 FA			 sar dx, 1 ; 2E6B
+   2206	1053  D1 D8			 rcr ax, 1 ; 2E6D
+   2207	1055  D1 FA			 sar dx, 1 ; 2E6F
+   2208	1057  D1 D8			 rcr ax, 1 ; 2E71
+   2209	1059  D1 FA			 sar dx, 1 ; 2E73
+   2210	105B  D1 D8			 rcr ax, 1 ; 2E75
+   2211	105D  5E			 pop si	; 2E77
+   2212	105E  C9			 leave ; 2E78
+   2213	105F  C3			 ret ; 2E79
+   2214
+   2215				     ; Advance byte LFSR and scale its result
+   2216				     public _snd_2E7A
+   2217	1060			     _snd_2E7A label near
+   2218	1060  C8 0000 00		 enter 0, 0 ; 2E7A
+   2219	1064  A0 0000e			 mov al, byte ptr [_snd_random_seed] ; 2E7E
+   2220	1067  D0 E8			 shr al, 1 ; 2E81
+   2221	1069  73 02			 jae L2E87 ; 2E83
+   2222	106B  34 B8			 xor al, 0B8h ;	2E85
+   2223	106D			     L2E87:
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 40
+ADLIB.ASM
+
+
+
+   2224	106D  A2 0000e			 mov byte ptr [_snd_random_seed], al ; 2E87
+   2225	1070  32 E4			 xor ah, ah ; 2E8A
+   2226	1072  F7 6E 04			 imul word ptr [bp + 4]	; 2E8C
+   2227	1075  8A C4			 mov al, ah ; 2E8F
+   2228	1077  8A E2			 mov ah, dl ; 2E91
+   2229	1079  8A D6			 mov dl, dh ; 2E93
+   2230	107B  D0 E6			 shl dh, 1 ; 2E95
+   2231	107D  1A F6			 sbb dh, dh ; 2E97
+   2232	107F  C9			 leave ; 2E99
+   2233	1080  C3			 ret ; 2E9A
+   2234	1081			     _TEXT ends
+   2235	0000			     _DATA segment word	public 'DATA'
+   2236				     extrn _snd_channel_masks:byte
+   2237				     extrn _snd_default_instrument:byte
+   2238				     extrn _snd_global_instruments:byte
+   2239				     extrn _snd_instrument_fields:byte
+   2240				     extrn _snd_max_values:byte
+   2241				     extrn _snd_parameter_map:byte
+   2242				     extrn _snd_parts:byte
+   2243				     extrn _snd_random_seed:byte
+   2244				     extrn _snd_step_counts:byte
+   2245				     extrn _snd_voice_counter:byte
+   2246				     extrn _snd_voice_tick:byte
+   2247				     extrn _snd_voices:byte
+   2248				     extrn _snd_volume_products:byte
+   2249	0000			     _DATA ends
+   2250				     DGROUP group _DATA
+   2251				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 41
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "ADLIB	  "
+??time				  Text	 "18:49:31"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 ADLIB
+@WordSize			  Text	 2
+@curseg				  Text	 _DATA
+L1E33				  Near	 _TEXT:0019
+L1E48				  Near	 _TEXT:002E
+L1E5D				  Near	 _TEXT:0043
+L1E72				  Near	 _TEXT:0058
+L1E7A				  Near	 _TEXT:0060
+L1E80				  Near	 _TEXT:0066
+L1EB6				  Near	 _TEXT:009C
+L1F37				  Near	 _TEXT:011D
+L1F9E				  Near	 _TEXT:0184
+L1FC9				  Near	 _TEXT:01AF
+L1FD0				  Near	 _TEXT:01B6
+L1FF0				  Near	 _TEXT:01D6
+L1FFF				  Near	 _TEXT:01E5
+L2004				  Near	 _TEXT:01EA
+L2015				  Near	 _TEXT:01FB
+L202E				  Near	 _TEXT:0214
+L20A4				  Near	 _TEXT:028A
+L20CA				  Near	 _TEXT:02B0
+L20D4				  Near	 _TEXT:02BA
+L20DA				  Near	 _TEXT:02C0
+L20E4				  Near	 _TEXT:02CA
+L20F1				  Near	 _TEXT:02D7
+L20F9				  Near	 _TEXT:02DF
+L2126				  Near	 _TEXT:030C
+L2136				  Near	 _TEXT:031C
+L214B				  Near	 _TEXT:0331
+L2156				  Near	 _TEXT:033C
+L215C				  Near	 _TEXT:0342
+L2166				  Near	 _TEXT:034C
+L219F				  Near	 _TEXT:0385
+L21AD				  Near	 _TEXT:0393
+L21DA				  Near	 _TEXT:03C0
+L21E7				  Near	 _TEXT:03CD
+L21EC				  Near	 _TEXT:03D2
+L21F7				  Near	 _TEXT:03DD
+L2206				  Near	 _TEXT:03EC
+L2211				  Near	 _TEXT:03F7
+L2227				  Near	 _TEXT:040D
+L222C				  Near	 _TEXT:0412
+L223E				  Near	 _TEXT:0424
+L2254				  Near	 _TEXT:043A
+L2267				  Near	 _TEXT:044D
+L226E				  Near	 _TEXT:0454
+L2273				  Near	 _TEXT:0459
+L22A1				  Near	 _TEXT:0487
+L22CA				  Near	 _TEXT:04B0
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 42
+Symbol Table
+
+
+
+L22EF				  Near	 _TEXT:04D5
+L2302				  Near	 _TEXT:04E8
+L2325				  Near	 _TEXT:050B
+L2357				  Near	 _TEXT:053D
+L236B				  Near	 _TEXT:0551
+L2391				  Near	 _TEXT:0577
+L23C6				  Near	 _TEXT:05AC
+L23CB				  Near	 _TEXT:05B1
+L23E0				  Near	 _TEXT:05C6
+L23E9				  Near	 _TEXT:05CF
+L23F5				  Near	 _TEXT:05DB
+L23FC				  Near	 _TEXT:05E2
+L2425				  Near	 _TEXT:060B
+L2455				  Near	 _TEXT:063B
+L247B				  Near	 _TEXT:0661
+L248F				  Near	 _TEXT:0675
+L24C3				  Near	 _TEXT:06A9
+L2506				  Near	 _TEXT:06EC
+L2531				  Near	 _TEXT:0717
+L2536				  Near	 _TEXT:071C
+L2564				  Near	 _TEXT:074A
+L2591				  Near	 _TEXT:0777
+L25E4				  Near	 _TEXT:07CA
+L2617				  Near	 _TEXT:07FD
+L2627				  Near	 _TEXT:080D
+L2635				  Near	 _TEXT:081B
+L264D				  Near	 _TEXT:0833
+L2652				  Near	 _TEXT:0838
+L2657				  Near	 _TEXT:083D
+L265C				  Near	 _TEXT:0842
+L2661				  Near	 _TEXT:0847
+L2698				  Near	 _TEXT:087E
+L26B0				  Near	 _TEXT:0896
+L26B3				  Near	 _TEXT:0899
+L273A				  Near	 _TEXT:0920
+L274C				  Near	 _TEXT:0932
+L2758				  Near	 _TEXT:093E
+L276A				  Near	 _TEXT:0950
+L276F				  Near	 _TEXT:0955
+L277A				  Near	 _TEXT:0960
+L278A				  Near	 _TEXT:0970
+L27C6				  Near	 _TEXT:09AC
+L27F4				  Near	 _TEXT:09DA
+L2817				  Near	 _TEXT:09FD
+L2843				  Near	 _TEXT:0A29
+L2889				  Near	 _TEXT:0A6F
+L288D				  Near	 _TEXT:0A73
+L28B5				  Near	 _TEXT:0A9B
+L28C4				  Near	 _TEXT:0AAA
+L28D4				  Near	 _TEXT:0ABA
+L28D9				  Near	 _TEXT:0ABF
+L28E3				  Near	 _TEXT:0AC9
+L28F3				  Near	 _TEXT:0AD9
+L28F8				  Near	 _TEXT:0ADE
+L293B				  Near	 _TEXT:0B21
+L2948				  Near	 _TEXT:0B2E
+L2959				  Near	 _TEXT:0B3F
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 43
+Symbol Table
+
+
+
+L296E				  Near	 _TEXT:0B54
+L2979				  Near	 _TEXT:0B5F
+L2983				  Near	 _TEXT:0B69
+L298B				  Near	 _TEXT:0B71
+L299D				  Near	 _TEXT:0B83
+L29F9				  Near	 _TEXT:0BDF
+L2A26				  Near	 _TEXT:0C0C
+L2A2E				  Near	 _TEXT:0C14
+L2A36				  Near	 _TEXT:0C1C
+L2A44				  Near	 _TEXT:0C2A
+L2A50				  Near	 _TEXT:0C36
+L2A6F				  Near	 _TEXT:0C55
+L2A83				  Near	 _TEXT:0C69
+L2A9A				  Near	 _TEXT:0C80
+L2AD0				  Near	 _TEXT:0CB6
+L2AD5				  Near	 _TEXT:0CBB
+L2AE1				  Near	 _TEXT:0CC7
+L2B00				  Near	 _TEXT:0CE6
+L2B0A				  Near	 _TEXT:0CF0
+L2B23				  Near	 _TEXT:0D09
+L2B38				  Near	 _TEXT:0D1E
+L2B3D				  Near	 _TEXT:0D23
+L2B4B				  Near	 _TEXT:0D31
+L2B68				  Near	 _TEXT:0D4E
+L2B7A				  Near	 _TEXT:0D60
+L2B8A				  Near	 _TEXT:0D70
+L2BAC				  Near	 _TEXT:0D92
+L2BB8				  Near	 _TEXT:0D9E
+L2BBE				  Near	 _TEXT:0DA4
+L2BE0				  Near	 _TEXT:0DC6
+L2BE9				  Near	 _TEXT:0DCF
+L2BEE				  Near	 _TEXT:0DD4
+L2C21				  Near	 _TEXT:0E07
+L2C9F				  Near	 _TEXT:0E85
+L2CA8				  Near	 _TEXT:0E8E
+L2CED				  Near	 _TEXT:0ED3
+L2CFB				  Near	 _TEXT:0EE1
+L2D08				  Near	 _TEXT:0EEE
+L2D0F				  Near	 _TEXT:0EF5
+L2D11				  Near	 _TEXT:0EF7
+L2D24				  Near	 _TEXT:0F0A
+L2D5A				  Near	 _TEXT:0F40
+L2D77				  Near	 _TEXT:0F5D
+L2D84				  Near	 _TEXT:0F6A
+L2DA6				  Near	 _TEXT:0F8C
+L2DC1				  Near	 _TEXT:0FA7
+L2DC6				  Near	 _TEXT:0FAC
+L2DCC				  Near	 _TEXT:0FB2
+L2DE3				  Near	 _TEXT:0FC9
+L2DEF				  Near	 _TEXT:0FD5
+L2E1D				  Near	 _TEXT:1003
+L2E26				  Near	 _TEXT:100C
+L2E33				  Near	 _TEXT:1019
+L2E44				  Near	 _TEXT:102A
+L2E58				  Near	 _TEXT:103E
+L2E87				  Near	 _TEXT:106D
+_snd_04D9			  Near	 _TEXT:---- Extern
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 44
+Symbol Table
+
+
+
+_snd_04F4			  Near	 _TEXT:---- Extern
+_snd_053D			  Near	 _TEXT:---- Extern
+_snd_1DC6			  Near	 _TEXT:---- Extern
+_snd_1E1A			  Near	 _TEXT:0000
+_snd_1E83			  Near	 _TEXT:0069
+_snd_1FA2			  Near	 _TEXT:0188
+_snd_1FCC			  Near	 _TEXT:01B2
+_snd_1FE4			  Near	 _TEXT:01CA
+_snd_20AA			  Near	 _TEXT:0290
+_snd_20E7			  Near	 _TEXT:02CD
+_snd_2102			  Near	 _TEXT:02E8
+_snd_2129			  Near	 _TEXT:030F
+_snd_216C			  Near	 _TEXT:0352
+_snd_21A2			  Near	 _TEXT:0388
+_snd_21EF			  Near	 _TEXT:03D5
+_snd_2209			  Near	 _TEXT:03EF
+_snd_222F			  Near	 _TEXT:0415
+_snd_2277			  Near	 _TEXT:045D
+_snd_22A4			  Near	 _TEXT:048A
+_snd_22CD			  Near	 _TEXT:04B3
+_snd_22F1			  Near	 _TEXT:04D7
+_snd_235A			  Near	 _TEXT:0540
+_snd_23D1			  Near	 _TEXT:05B7
+_snd_23D2			  Near	 _TEXT:05B8
+_snd_247E			  Near	 _TEXT:0664
+_snd_2509			  Near	 _TEXT:06EF
+_snd_253C			  Near	 _TEXT:0722
+_snd_2567			  Near	 _TEXT:074D
+_snd_2594			  Near	 _TEXT:077A
+_snd_25E7			  Near	 _TEXT:07CD
+_snd_261A			  Near	 _TEXT:0800
+_snd_2665			  Near	 _TEXT:084B
+_snd_2679			  Near	 _TEXT:085F
+_snd_269B			  Near	 _TEXT:0881
+_snd_26C3			  Near	 _TEXT:08A9
+_snd_2709			  Near	 _TEXT:08EF
+_snd_2750			  Near	 _TEXT:0936
+_snd_2772			  Near	 _TEXT:0958
+_snd_278D			  Near	 _TEXT:0973
+_snd_28BD			  Near	 _TEXT:0AA3
+_snd_28DB			  Near	 _TEXT:0AC1
+_snd_28FB			  Near	 _TEXT:0AE1
+_snd_29A1			  Near	 _TEXT:0B87
+_snd_2A5E			  Near	 _TEXT:0C44
+_snd_2A87			  Near	 _TEXT:0C6D
+_snd_2AD9			  Near	 _TEXT:0CBF
+_snd_2B03			  Near	 _TEXT:0CE9
+_snd_2B3F			  Near	 _TEXT:0D25
+_snd_2B6C			  Near	 _TEXT:0D52
+_snd_2BC4			  Near	 _TEXT:0DAA
+_snd_2BF6			  Near	 _TEXT:0DDC
+_snd_2C59			  Near	 _TEXT:0E3F
+_snd_2D33			  Near	 _TEXT:0F19
+_snd_2DD3			  Near	 _TEXT:0FB9
+_snd_2E7A			  Near	 _TEXT:1060
+_snd_2E9B			  Near	 _TEXT:---- Extern
+_snd_2F48			  Near	 _TEXT:---- Extern
+Turbo Assembler	 Version 3.1	    10/21/26 18:49:31	    Page 45
+Symbol Table
+
+
+
+_snd_2F6F			  Near	 _TEXT:---- Extern
+_snd_2F94			  Near	 _TEXT:---- Extern
+_snd_2FA0			  Near	 _TEXT:---- Extern
+_snd_2FB1			  Near	 _TEXT:---- Extern
+_snd_304C			  Near	 _TEXT:---- Extern
+_snd_channel_masks		  Byte	 _DATA:---- Extern
+_snd_default_instrument		  Byte	 _DATA:---- Extern
+_snd_global_instruments		  Byte	 _DATA:---- Extern
+_snd_instrument_fields		  Byte	 _DATA:---- Extern
+_snd_max_values			  Byte	 _DATA:---- Extern
+_snd_parameter_map		  Byte	 _DATA:---- Extern
+_snd_parts			  Byte	 _DATA:---- Extern
+_snd_random_seed		  Byte	 _DATA:---- Extern
+_snd_step_counts		  Byte	 _DATA:---- Extern
+_snd_voice_counter		  Byte	 _DATA:---- Extern
+_snd_voice_tick			  Byte	 _DATA:---- Extern
+_snd_voices			  Byte	 _DATA:---- Extern
+_snd_volume_products		  Byte	 _DATA:---- Extern
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+DGROUP				  Group
+  _DATA				  16  0000 Word	  Public  DATA
+_TEXT				  16  1081 Word	  Public  CODE
+

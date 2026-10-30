@@ -1,0 +1,126 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/BLO.OBJ",
+  "object_sha256": "17c8819504eb8178e0002c9d887037ede5287bba7cd555e298ccf6778d545af6",
+  "module": "blo.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3660,
+    "image_offset": 95708,
+    "address": "1679:0E4C"
+  },
+  "file_offset": 99804,
+  "object_size": 43,
+  "expected_size": 43,
+  "public_bindings": [
+    {
+      "name": "_sb_blo_strings",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3660,
+        "image_offset": 95708,
+        "address": "1679:0E4C"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3660,
+        "image_offset": 95708,
+        "address": "1679:0E4C"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e4c",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3660,
+        "image_offset": 95708,
+        "address": "1679:0E4C"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3660,
+        "image_offset": 95708,
+        "address": "1679:0E4C"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e4f",
+      "object_offset": 3,
+      "expected": {
+        "segment": 5753,
+        "offset": 3663,
+        "image_offset": 95711,
+        "address": "1679:0E4F"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3663,
+        "image_offset": 95711,
+        "address": "1679:0E4F"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e64",
+      "object_offset": 24,
+      "expected": {
+        "segment": 5753,
+        "offset": 3684,
+        "image_offset": 95732,
+        "address": "1679:0E64"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3684,
+        "image_offset": 95732,
+        "address": "1679:0E64"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e74",
+      "object_offset": 40,
+      "expected": {
+        "segment": 5753,
+        "offset": 3700,
+        "image_offset": 95748,
+        "address": "1679:0E74"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3700,
+        "image_offset": 95748,
+        "address": "1679:0E74"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      43
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "56fd273e4e354ccd97c81d1f9011d3de1c4a90e05fed0d24e22a3c7d91fc0553",
+  "original_sha256": "56fd273e4e354ccd97c81d1f9011d3de1c4a90e05fed0d24e22a3c7d91fc0553",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

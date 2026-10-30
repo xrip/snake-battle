@@ -1,0 +1,57 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/gpf/build/GPF.OBJ",
+  "object_sha256": "c63295cb0431806332b986e2a7d222cace538bde3dde2fe9aa93d8dbbf0beebb",
+  "module": "gpf.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3846,
+    "image_offset": 95894,
+    "address": "1679:0F06"
+  },
+  "file_offset": 99990,
+  "object_size": 2,
+  "expected_size": 2,
+  "public_bindings": [
+    {
+      "name": "_gpf_handle",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3846,
+        "image_offset": 95894,
+        "address": "1679:0F06"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3846,
+        "image_offset": 95894,
+        "address": "1679:0F06"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      2
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+  "original_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

@@ -1,0 +1,57 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/sound/control_asm/SNDMEM.OBJ",
+  "object_sha256": "ca2b982acc4d3906286e43354387b816b9da875efb4800b4d954880b57800455",
+  "module": "SNDMEM.ASM",
+  "segment_index": 1,
+  "segment_name": "_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4929,
+    "offset": 1341,
+    "image_offset": 80205,
+    "address": "1341:053D"
+  },
+  "file_offset": 84301,
+  "object_size": 33,
+  "expected_size": 33,
+  "public_bindings": [
+    {
+      "name": "_snd_053D",
+      "object_offset": 0,
+      "expected": {
+        "segment": 4929,
+        "offset": 1341,
+        "image_offset": 80205,
+        "address": "1341:053D"
+      },
+      "binding": {
+        "segment": 4929,
+        "offset": 1341,
+        "image_offset": 80205,
+        "address": "1341:053D"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      33
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "b48f413f6490b52f087d1ce61eacc0d9324a99e67033db97e9fc999171c3734d",
+  "original_sha256": "b48f413f6490b52f087d1ce61eacc0d9324a99e67033db97e9fc999171c3734d",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

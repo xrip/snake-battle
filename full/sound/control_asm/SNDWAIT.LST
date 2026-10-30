@@ -1,0 +1,65 @@
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 1
+SNDWAIT.ASM
+
+
+
+      1				     ; Original	port-61	refresh-toggle wait. BX	is the loop count; AX/CX preserved.
+      2				     ; The two jump-to-next instructions intentionally provide I/O settling time.
+      3				     .286
+      4	0000			     _TEXT segment byte	public 'CODE'
+      5				     assume cs:_TEXT
+      6				     public _snd_0496
+      7	0000			     _snd_0496 label near
+      8	0000  50			 push ax
+      9	0001  51			 push cx
+     10	0002			     next_wait:
+     11	0002  0B DB			 or bx,bx
+     12	0004  74 19			 jz short wait_done
+     13	0006  B9 0041			 mov cx,041h
+     14	0009  33 C0			 xor ax,ax
+     15	000B			     next_toggle:
+     16	000B  EB 00			 jmp short delay1
+     17	000D			     delay1:
+     18	000D  EB 00			 jmp short delay2
+     19	000F			     delay2:
+     20	000F  E4 61			 in al,061h
+     21	0011  24 10			 and al,010h
+     22	0013  3A C4			 cmp al,ah
+     23	0015  74 F4			 je short next_toggle
+     24	0017  80 F4 10			 xor ah,010h
+     25	001A  E2 EF			 loop next_toggle
+     26	001C  4B			 dec bx
+     27	001D  EB E3			 jmp short next_wait
+     28	001F			     wait_done:
+     29	001F  59			 pop cx
+     30	0020  58			 pop ax
+     31	0021  C3			 ret
+     32	0022			     _TEXT ends
+     33				     end
+Turbo Assembler	 Version 3.1	    10/21/26 18:15:27	    Page 2
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??date				  Text	 "10/21/26"
+??filename			  Text	 "SNDWAIT "
+??time				  Text	 "18:15:27"
+??version			  Number 030A
+@Cpu				  Text	 0707H
+@FileName			  Text	 SNDWAIT
+@WordSize			  Text	 2
+@curseg				  Text	 _TEXT
+_snd_0496			  Near	 _TEXT:0000
+delay1				  Near	 _TEXT:000D
+delay2				  Near	 _TEXT:000F
+next_toggle			  Near	 _TEXT:000B
+next_wait			  Near	 _TEXT:0002
+wait_done			  Near	 _TEXT:001F
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+_TEXT				  16  0022 Byte	  Public  CODE
+

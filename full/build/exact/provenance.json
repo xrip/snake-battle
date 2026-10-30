@@ -1,0 +1,2243 @@
+{
+  "original_tool_binaries": [
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC/BIN/BCC.EXE",
+      "size": 672150,
+      "sha256": "87c6dfbad817eeca31c069043f08063f7122663e51932ad089e6d1c563450d3b"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC/BIN/TASM.EXE",
+      "size": 129266,
+      "sha256": "80534cd6a1e2c2b4376ae3f21954c6dbfa77a6998d5e0bf8b8bee6153f3174ea"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC/BIN/TLINK.EXE",
+      "size": 150569,
+      "sha256": "ab8b8b96c1bde5ff6f56c8be2c3b928d21ead7430e72b01e3b22f1fa179ad006"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "/workspace/scratch/488b0609771f/work/bc2/original/BC2/BIN/BCC.EXE",
+      "size": 502432,
+      "sha256": "dd5744b99c6fa61dc1d95c580a1f1d6f1b3e97ae8b920dd6e9cfedce29f82fb6"
+    },
+    {
+      "distribution": "DOSBox host",
+      "path": "/workspace/scratch/488b0609771f/work/tools/dosbox-bin/usr/bin/dosbox",
+      "size": 2560896,
+      "sha256": "3cc3d58b52e5d457b345ef039c4ede92c39c92adf4c74da7951a6dd9f7971e38"
+    }
+  ],
+  "original_tool_configuration_files": [
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "/workspace/scratch/488b0609771f/work/gamemaker-tools/tools/BORLANDC/BIN/TLINK.CFG",
+      "size": 19,
+      "sha256": "68d39dc31cec3a6b8956d83c06e5ba20289d756f842b85a311f0d7fc6acdebd0"
+    }
+  ],
+  "compiler_include_file_inventory": [
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/ALLOC.H",
+      "size": 2757,
+      "sha256": "26666244c4537a4b2973cf67700b9da3b663a07762d880ee1b9160f04cb12855"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/ASSERT.H",
+      "size": 812,
+      "sha256": "0250a76920304ddfb84be5618c4a0b8ae6767ea51c3006534f82770b9a29e596"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/BCD.H",
+      "size": 9219,
+      "sha256": "dcb559951dd76690193ffc10bf400fc844f9babfde57dcdbd9335ef083031987"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/BIOS.H",
+      "size": 4724,
+      "sha256": "db055eb3fa84a96c7ce9ca69ae44d0f6dfde188907a0e9183a697c641c632299"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/COMPLEX.H",
+      "size": 8020,
+      "sha256": "726454bda1fafb3bcd875f8cd127edeac9539f8eb1e3a278398f3ed30112b340"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/CONIO.H",
+      "size": 4707,
+      "sha256": "352de28c27933ac0bc64b6e4af4ac4821be5fa9c8d27111fe71021a25457357f"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/CONSTREA.H",
+      "size": 4768,
+      "sha256": "679fef6133f90451a4d728cac10b4b4c8b317d4eb808b13cf1c8ffd534f417bb"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/CTYPE.H",
+      "size": 2069,
+      "sha256": "eed76b430f2a027451c4e7a0a39e4e9fc873ee2b721f24556bda0f4391241603"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/DIR.H",
+      "size": 2398,
+      "sha256": "47e356ec33d6d50ba09960297f5b70a3ce492301e1e8c0b4af0a88385c93469c"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/DIRECT.H",
+      "size": 489,
+      "sha256": "4121a2ae942e565d97ba4c88de445630dead5a9bf17736967b826f183b65f36e"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/DIRENT.H",
+      "size": 1326,
+      "sha256": "d875b123135b3f654b6b61ba063f7f88af0f378c6fba113bf65f85239a90b7f0"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/DOS.H",
+      "size": 18607,
+      "sha256": "62da21330e10b095897056e85c13d7d026da4006488e282752f018556ea5ed86"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/ERRNO.H",
+      "size": 3668,
+      "sha256": "948affcb3e53aed0e351af0d7928d1b3f368de04b9bf37ce9329576e71005f2e"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/FCNTL.H",
+      "size": 1513,
+      "sha256": "4e0bb6a8ee1cff833500bda9673572ddf56093d57f4975b4468d33bd10c97c1e"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/FLOAT.H",
+      "size": 4936,
+      "sha256": "5937651b901292b88a25f95544a418f1919b491ccae194cad3b6356a939f6362"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/FSTREAM.H",
+      "size": 7511,
+      "sha256": "2b571336d74bc5d02c2c0b8289b03a6fe79da68e56f7d79d5b2a3f99f431ff36"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/GENERIC.H",
+      "size": 1589,
+      "sha256": "5e9823fc7691d825b16b6320823fbe06c47cd52d060e205ff37890401b6875c6"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/GRAPHICS.H",
+      "size": 13981,
+      "sha256": "6995ec84f14113d2ac095148eb290bbb380cba1f611a1912de06b9661293fe41"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/IO.H",
+      "size": 3737,
+      "sha256": "9b8e1a25e297194be6e862ee11213ea3174e8896d34f61c3f920214ad0909d8c"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/IOMANIP.H",
+      "size": 7223,
+      "sha256": "01fef6ec5801503134fa1ae5935f1b724c183a60b542e1d8f2bd3b4d10291388"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/IOSTREAM.H",
+      "size": 29782,
+      "sha256": "23e0444a36966d8e2748a70318f0dfa054dd5e56a463af28f116e5516fae1a52"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/LIMITS.H",
+      "size": 978,
+      "sha256": "2b606d2ad5ab4296e842accf23878704971d9e7316ab41edaf853c596d43fd36"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/LOCALE.H",
+      "size": 1134,
+      "sha256": "d25571698f0ac2ec359ce926813b43a0ca1511045688e054591718125ba78e74"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/MALLOC.H",
+      "size": 1473,
+      "sha256": "c876afc64ded6f9b2a4d1e26da54733dbe25ed22af57078161d6fed0801be612"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/MATH.H",
+      "size": 5558,
+      "sha256": "d3c8da8b1962c8170b431bc9b412c3cbe5b40cccd2a2919496d1f08612f4528f"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/MEM.H",
+      "size": 3296,
+      "sha256": "db2a431fe2e6150cacac4fb792fee20c7443dad4e7f94e39df763158037c086c"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/MEMORY.H",
+      "size": 158,
+      "sha256": "cfbc6694dcc96841bfe0c577200abce1c35e479491b73cc15412c2a7e655c33e"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/NEW.H",
+      "size": 627,
+      "sha256": "553652b3a8b0d52cd66186062fcc1f8b13592139904c6218ca663ab3b8347762"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/PROCESS.H",
+      "size": 2478,
+      "sha256": "44957b54128bead5b06226aecd4085494af73c1096908ee7045ac892f1c75611"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SEARCH.H",
+      "size": 1255,
+      "sha256": "2481440cec089d9f242446787e5b3d4a421d606d433e7b93c1c5dd53288278d6"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SETJMP.H",
+      "size": 888,
+      "sha256": "418f74df9a8539a3a709806561b0db7ecdb0699b2e29c25e58fa78959fbafed0"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SHARE.H",
+      "size": 527,
+      "sha256": "63d9ddb5c8e8eea45447add3a8c2d6b7e9480cd07457b6fa20383b0577a97650"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SIGNAL.H",
+      "size": 1093,
+      "sha256": "65874e78e5f5bb849696a6747cbc17b9146751e04431905c114981e14f20e20e"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STDARG.H",
+      "size": 895,
+      "sha256": "43fd1e0fb2875382a56b36f52af6f824cf542e7b70fa31b0a82276231e560970"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STDDEF.H",
+      "size": 726,
+      "sha256": "95e442298e4745bbfb3ffe470c7c5a8d134160ccbf52bcb301b7a96bc163112b"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STDIO.H",
+      "size": 8784,
+      "sha256": "a11e0f45a8ef21d9ea702b49001da1e9980ef664c999b1c88a78ef7571c594ac"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STDIOSTR.H",
+      "size": 1584,
+      "sha256": "8509166451e6b9751239cf90b5769201ffe26495ef3d35fbfe67ba5358d47e46"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STDLIB.H",
+      "size": 8085,
+      "sha256": "bc63b47de5cd3741912dd5ff606e12a29892c3a1387feca4f1429150ceaa3fa5"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STRING.H",
+      "size": 8192,
+      "sha256": "db5367c71782d212fa1fa12ded39fa30233e1bf4303cb14a115556a69162f826"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/STRSTREA.H",
+      "size": 3458,
+      "sha256": "67d14307c093f3643fc79fc49735220796234cdd62800b42b5f93c294eea5f24"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SYS/LOCKING.H",
+      "size": 499,
+      "sha256": "50cb32e744321cd9316e24d3412566c18674dd37b554de4a411697928380f804"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SYS/STAT.H",
+      "size": 1515,
+      "sha256": "59fa6d2dbe98291251a508e5505d396558c5f378d1c113061392b7b0809069e2"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SYS/TIMEB.H",
+      "size": 581,
+      "sha256": "61fcc43fee40214f8fea3745c6fa40509a2ef9fa757639b63e78d2f6ef6ded32"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/SYS/TYPES.H",
+      "size": 204,
+      "sha256": "b494da54a14b470acfbf258e9ff6faa5b2e07fc651192893ccd15cb106d56497"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/TIME.H",
+      "size": 2112,
+      "sha256": "0463a44c84f31fff01811ad374f0a81778cd7ff40ab95fcd3519411cea284785"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/UTIME.H",
+      "size": 631,
+      "sha256": "b44b5453c8580dc24d1037186ffadc50b0a6564ea6caa75119edcf4fae8a646d"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/VALUES.H",
+      "size": 1149,
+      "sha256": "47427650b8ffcc6a7b026383534f4465d14120d0ecfe3624336a23b75e4c8b92"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/VARARGS.H",
+      "size": 797,
+      "sha256": "4e8e67d45ebf9772044061c97ee74b031b0108d5e018b317af2738a8c9af4a26"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/_DEFS.H",
+      "size": 2303,
+      "sha256": "650a4264602e05373f4a89be0b0e3385ee029cd54c39090ab1d3a34b71735db9"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/_NFILE.H",
+      "size": 211,
+      "sha256": "f6cf70ec6fe8197383998907461e7c5b029ba6dae30ccdd73341e25c7230f691"
+    },
+    {
+      "distribution": "Borland C++ 3.1",
+      "path": "INCLUDE/_NULL.H",
+      "size": 287,
+      "sha256": "f6f0a111fb3efa55b0ba557d81076586d3a888ba0af0b6823700c8008137fdf8"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/ALLOC.H",
+      "size": 3076,
+      "sha256": "93e7928a44dac0efa58092c0e53afb7756d7fbcdde5427b4ab7613d896e12750"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/ASSERT.H",
+      "size": 803,
+      "sha256": "964c3442b163ef01395250f9f6e249681a2dadd4a58f46668722e5e1111c1a82"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/BCD.H",
+      "size": 8576,
+      "sha256": "317762ea0c09c8d2b437f66cb186714c27210594dee71ea9dbd6445b28bf55a2"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/BIOS.H",
+      "size": 3869,
+      "sha256": "7f5d2caa4aa8768289173cbacb7eb6a0bd8a417f7fea25d299510e6125150791"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/COMPLEX.H",
+      "size": 7105,
+      "sha256": "9d71646f02e239c48a9a5a239b3424b81cd4902b3284cf68b07ca2cf2c4a8d63"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/CONIO.H",
+      "size": 4324,
+      "sha256": "31cedaf57f05a22cb0edaf10059a855fb265418fc97e209e744d5f269fe58ddd"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/CTYPE.H",
+      "size": 2236,
+      "sha256": "defd40482bc6f34a34ff17400d93280cf542d4351bb1dcbaeb1b4ccc4030053b"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/CUSTCNTL.H",
+      "size": 2826,
+      "sha256": "84b692dd161217ec892314cc79a78975705ce9c4c1bf50e9c4caedbb5b92a1ef"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/DDE.H",
+      "size": 3917,
+      "sha256": "b228406a037289ca6542f7edb179f89298689094fd99f70e31d26582a0815c91"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/DIR.H",
+      "size": 2266,
+      "sha256": "4ff56375bdb49f2ebb7357c8b15b39667177c34fb14c0434e472ad418ba7be82"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/DIRECT.H",
+      "size": 249,
+      "sha256": "549ca535d722693bafeb05f9fd94222dfc31bde2fc1c7178a563190e86d2d1be"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/DOS.H",
+      "size": 14056,
+      "sha256": "646abfb795d939a6d845f76ca69958f91127117f2788a95e8c73081109a98614"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/DRIVINIT.H",
+      "size": 5251,
+      "sha256": "26688c12231465a3b9f86a9b072482b341ceecc6b8b94138eaa91b17c315200e"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/ERRNO.H",
+      "size": 3506,
+      "sha256": "1eb553ae3a610dfb41dcdd766c0471d88e2a9754a3e5ec789e9f1218409eac92"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/FCNTL.H",
+      "size": 1624,
+      "sha256": "99e16eaf235895889921ca4f2c0e8161ee7dcd29d1f56a70f94eb44677af20fd"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/FLOAT.H",
+      "size": 5076,
+      "sha256": "17c035205362525b0431eef6b28333df5479217270af9d810fca7d6f85e26ef9"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/FSTREAM.H",
+      "size": 5704,
+      "sha256": "3d7d5627a723d75bcea25bb225ad1df444ca7aa04aaffca4f805950b6b6d215c"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/GENERIC.H",
+      "size": 1643,
+      "sha256": "dba28430fa46087bd738a9861ed868819a98ff496ab8f75518fddb758b5dbe02"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/GRAPHICS.H",
+      "size": 12848,
+      "sha256": "25938929ade995e08d2f2c52423da2df44329ec91b67d9b35ef311434bf599a6"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/IO.H",
+      "size": 3380,
+      "sha256": "11216d9644443d1656e70e7f89f3602f90a3cae4c198607bae14ba3e2d7c1c81"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/IOMANIP.H",
+      "size": 6549,
+      "sha256": "6bfdb1af20afbdcb7f60042acf203a1cb4cf5a1f7ad06a417d681cd90ce1f43c"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/IOSTREAM.H",
+      "size": 28895,
+      "sha256": "85030e1e3de345cdbc0075a91f03d7ff0a7fc39211b6fcef37630a75f1ece499"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/LIMITS.H",
+      "size": 1144,
+      "sha256": "d4cbb2ddff8a6caeec1805501b859b0a9ad5c92db1bfb1412db53b46aec71824"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/LOCALE.H",
+      "size": 1304,
+      "sha256": "770389290a79a69780c875e208e18ff4cdfa72e4431d7f9e8280ca0f975ea6c1"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/MALLOC.H",
+      "size": 989,
+      "sha256": "106a123afb43d2d0d71a0f7df8f98f726423da16845b1a4ec8428001482f0803"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/MATH.H",
+      "size": 3801,
+      "sha256": "779df76b1858d4b7b5e1ec7eee9f4fb28d3cc5fd4fb5262430910d4a963aa9de"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/MEM.H",
+      "size": 3000,
+      "sha256": "884c0b6a646eedef5bbdd405f2d44f46677196169dd8d89e1c15125e3a9861d3"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/MEMORY.H",
+      "size": 149,
+      "sha256": "3b76cfd0adbc043723061fb44ea33132981f4684ea893ec497c72f22cf1402fb"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/NEW.H",
+      "size": 567,
+      "sha256": "f575b73e1b4bda28fb3e37331347dbbd7145b9b8236e6f5b3ff63475c07f4cca"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/PROCESS.H",
+      "size": 2596,
+      "sha256": "3dda456975b8e2514cbe82db5a68386e35d2783bc8c880d98f942ee79d4e34b6"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SEARCH.H",
+      "size": 1342,
+      "sha256": "91d4849dafd8ce36acf1ee221472c417569916ca979c8b7ab2372440ba0bf0cf"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SETJMP.H",
+      "size": 1058,
+      "sha256": "8b04b0408f0611010e5af038340649a313356c963eb3a81e1a0a936191bf7d56"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SHARE.H",
+      "size": 554,
+      "sha256": "1a751eed0fa0af1bef6c762e9b4154bdf4ad88d0762d74049ef611250f59b6c9"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SIGNAL.H",
+      "size": 1194,
+      "sha256": "8339cea5d749be5aab084d55c2a86294ec3193c9d99c02fcf1ebef562d3e1f59"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STDARG.H",
+      "size": 1048,
+      "sha256": "f4cd6f446d68c0296760bbb3a6b1d3b4d498abaaa71e2562b2d984e1566f9989"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STDDEF.H",
+      "size": 1000,
+      "sha256": "ac1e606e026f532fa0f1c7600cbd17fff6b8e21923a9e26adbe22fe384d0eaa2"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STDIO.H",
+      "size": 8082,
+      "sha256": "cc4f106b44226dfe3ae6d4a42bd777c7ffe3965967d80d9248d2661d43383e9a"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STDIOSTR.H",
+      "size": 1633,
+      "sha256": "c5b1bf8c1daa09c2ad4941cb8a3855fa9d174b542259db888bb2a43900dbcc0e"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STDLIB.H",
+      "size": 6725,
+      "sha256": "c64195dabca7c0485e8ea85c7d58b38ed74c8d8378966a28af9e458cd745c5d2"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STREAM.H",
+      "size": 9781,
+      "sha256": "b346a6f6e83e62a3e15a5ccc640b9e7a7af1e0a1c928cc037ef65821e8921a82"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STRING.H",
+      "size": 6445,
+      "sha256": "3e06db50bbf72b4cc7d7ccf5d8663d91829ee89b447fcfcd9222eb3e45e96b84"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/STRSTREA.H",
+      "size": 3119,
+      "sha256": "48e836fb8d31204b8b0c6e27f602b1e68429c9e27a22b6e02db90dabaed23c81"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SYS/STAT.H",
+      "size": 1332,
+      "sha256": "b90190f827fee17e46195a4ecde0dfce19a60b407fe7a3c1c3c536df680b060b"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SYS/TIMEB.H",
+      "size": 684,
+      "sha256": "87a5d9413a4448202d277ca529e9b3799d8cfcda96ee61bb740fbad35a1635c6"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/SYS/TYPES.H",
+      "size": 214,
+      "sha256": "907b8e3cd494b2ad95f86ea3f07f8ef6da4db4a03967d9896b2050e00caccc36"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/TIME.H",
+      "size": 1757,
+      "sha256": "cdee4e1a8f35e9c17866a82be407a87a7ed6aa15189ed5c2ccfad46746c514d8"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/VALUES.H",
+      "size": 1256,
+      "sha256": "38866e6eded1704df016a03d5b41daa141fa25fc6cc2638fb024fb9b8db54296"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/VARARGS.H",
+      "size": 951,
+      "sha256": "50fe3b60ff24ec3bc4d3135fadbdcfd17d0bcd4c5b0b11aee13c77ef94c1856f"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/WINDOWS.H",
+      "size": 120094,
+      "sha256": "82658f31ca253c2856f456e6203cbcbf1e5f6d9b2c71e7fa2edb7291f12d357b"
+    },
+    {
+      "distribution": "Borland C++ 2.0",
+      "path": "INCLUDE/WINDOWS.INC",
+      "size": 58084,
+      "sha256": "a38b017ccef42429dd8efa6a7e87c1039d966c59592be957519ae534eec36f50"
+    }
+  ],
+  "recovered_sources_and_build_scripts": [
+    {
+      "path": "full/build/aliases.py",
+      "size": 9467,
+      "sha256": "327f144e02dc1c64df12edc76048fd76aceec4b0866c0ea12e954a1b1c82659a"
+    },
+    {
+      "path": "full/build/build.py",
+      "size": 7703,
+      "sha256": "ad009b98f2a18f2b8e417655a0978e846b138e3fa378a3c9fcf2726eaa6e4492"
+    },
+    {
+      "path": "full/build/exact_sound.py",
+      "size": 14038,
+      "sha256": "51e6dace17cde734b7765aa001cdc381aa70b7c46e82a72657480f6f1ebec8c0"
+    },
+    {
+      "path": "full/build/globals/ASSERT_prefix.inc",
+      "size": 478,
+      "sha256": "d6a0ea3c1ea9be4e4750c6657db14b21745b6908f061e66c705c98040c188312"
+    },
+    {
+      "path": "full/build/globals/ASSERT_state.inc",
+      "size": 232,
+      "sha256": "2156be2c7cb3cd4c56743b9d4db0b57fadce18e50d1c5ab0d45b323b0808a317"
+    },
+    {
+      "path": "full/build/globals/BLO_prefix.inc",
+      "size": 382,
+      "sha256": "2d48f60e148cabbf0e574d47a3522e489486bc739f85a2d2216258d6950d33a3"
+    },
+    {
+      "path": "full/build/globals/BLO_state.inc",
+      "size": 248,
+      "sha256": "5b39ec963829458a5117f5082b65b7e60b3c8c9ac877a3891ac9db71b369724b"
+    },
+    {
+      "path": "full/build/globals/CARDS_prefix.inc",
+      "size": 897,
+      "sha256": "cdeefe7f187c6186162c140c76c1e6b312ca53ed6fbdd5d4e369b5715d9d6b18"
+    },
+    {
+      "path": "full/build/globals/FORMAT_state.inc",
+      "size": 239,
+      "sha256": "63782b76caa3658c6f578773d2e5b2a830d178bb0d0dd96aeb9c1ed89984efb9"
+    },
+    {
+      "path": "full/build/globals/GAME_prefix.inc",
+      "size": 974,
+      "sha256": "d887de78ad17be6c87a5fe729248d5dfd3c0efb6e29526a193577dc2d9a4b0a2"
+    },
+    {
+      "path": "full/build/globals/GAME_state.inc",
+      "size": 954,
+      "sha256": "1f9139d4300cc37c21d252733399b19ba8d80feab3979e92ac301e0681a6e986"
+    },
+    {
+      "path": "full/build/globals/GAME_suffix.inc",
+      "size": 759,
+      "sha256": "29d2e213fd40a9ee1c17a7004e1bc3bb45db1184e47b658f386e6853fe93fb22"
+    },
+    {
+      "path": "full/build/globals/HW_prefix.inc",
+      "size": 542,
+      "sha256": "bb49698ae97894b6b596cd06685943d4412c2bb7ecd36765457e78768dcba72e"
+    },
+    {
+      "path": "full/build/globals/HW_state.inc",
+      "size": 475,
+      "sha256": "afd21001da75e29599bce824cf63a02d8bf8be9210f0a6b345e46569cf302207"
+    },
+    {
+      "path": "full/build/globals/INPUT_state.inc",
+      "size": 317,
+      "sha256": "775d40b0516dac40bfa4ec539b1db07c6e50c3c5c37c00fa2c615d72f6b1017c"
+    },
+    {
+      "path": "full/build/globals/MUSIC_prefix.inc",
+      "size": 423,
+      "sha256": "79cf16b7c94847f3cf63e916269b1f684c79e3ee63818b28a39320524df14880"
+    },
+    {
+      "path": "full/build/globals/MUSIC_state.inc",
+      "size": 251,
+      "sha256": "025190b62beef99998b2eb629e7ae8db2bfbb05d6d95d8ce26262d78064148a5"
+    },
+    {
+      "path": "full/build/globals/PARA_prefix.inc",
+      "size": 324,
+      "sha256": "1bdb4b5012e37d1779d47537a9681a3e5ac51cf7b69f4464eb6a6da9fd1105b2"
+    },
+    {
+      "path": "full/build/globals/REC_extra.inc",
+      "size": 87,
+      "sha256": "d277de29a9a8c9385ebdb121cf0851b65bc59ff56c0c59e5af097299c62217d3"
+    },
+    {
+      "path": "full/build/globals/REGISTER_prefix.inc",
+      "size": 341,
+      "sha256": "5e0b56b71bcb87619f4a51e2a47ddb1747081daae826664d5d3132dfd869200d"
+    },
+    {
+      "path": "full/build/globals/REGISTER_state.inc",
+      "size": 303,
+      "sha256": "71c64bbb4a312a08a93ade86b52f9dbd021482b88e68c5d5b078366777a0d2a9"
+    },
+    {
+      "path": "full/build/globals/REGISTER_suffix.inc",
+      "size": 501,
+      "sha256": "fe91223ad22999b6b27e1b320a36ffee36274ced30115af4b5c237cd8af18373"
+    },
+    {
+      "path": "full/build/globals/RENDER_prefix.inc",
+      "size": 285,
+      "sha256": "33478c3d5f8a27105ed0bbbae554712c2790d2d47105365061b603a9445e892c"
+    },
+    {
+      "path": "full/build/globals/RENDER_state.inc",
+      "size": 585,
+      "sha256": "78eca18b2488e5aa47311fb5b90a739cd3d3f9c9930eb0f491f97d31d428121f"
+    },
+    {
+      "path": "full/build/globals/RENDER_suffix.inc",
+      "size": 661,
+      "sha256": "2d33591370e97b6f214de344f11cde5a681a5da01b0ca045a9e6c0c72b2a8514"
+    },
+    {
+      "path": "full/build/globals/START_state.inc",
+      "size": 447,
+      "sha256": "416713a2cdde6b064fa7162db4b6fe10838535d14a4ca6daa01896e044b83889"
+    },
+    {
+      "path": "full/build/globals/UI_prefix.inc",
+      "size": 1032,
+      "sha256": "afc1fde6f1af3d08daf669b154d778cb65fc7df825b845a692f815fb603349a8"
+    },
+    {
+      "path": "full/build/globals/UI_state.inc",
+      "size": 542,
+      "sha256": "cf390556ee78222967e9427d845b70b307bb5b7da15cb17d15f2817d3877ae8a"
+    },
+    {
+      "path": "full/build/globals/UI_suffix.inc",
+      "size": 1418,
+      "sha256": "3a42965c230bf1ad1cb04795fc0a8a79cfc6f984cec5c9219fb429994359f310"
+    },
+    {
+      "path": "full/build/globals/manifest.json",
+      "size": 64617,
+      "sha256": "829159c2cf462f75af758278fcde0ebe6852a1c572b9681ab53ae36a7ec0f539"
+    },
+    {
+      "path": "full/build/modules.json",
+      "size": 5412,
+      "sha256": "f46415efb406e5fad75ad7c75b1fec1a2758e7f018b8e37247f893c0552e0498"
+    },
+    {
+      "path": "full/build/prepare.py",
+      "size": 2585,
+      "sha256": "c8b91b5866e9872cd90991ba0dcb377e1a881a5b7c50274570955a7b2491101f"
+    },
+    {
+      "path": "full/build/sound_listing.py",
+      "size": 9945,
+      "sha256": "a5f8a1ae280be95cb889127145a6b6fd7aa87281f796b4ead30b7d427227e0ef"
+    },
+    {
+      "path": "full/compile.py",
+      "size": 3446,
+      "sha256": "b9ff2ce1c1e92d17688ffab453e786d0b89d1e796047be90d9492e3255340f3f"
+    },
+    {
+      "path": "full/ega/EGA.ASM",
+      "size": 132354,
+      "sha256": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40"
+    },
+    {
+      "path": "full/ega/RETRACE.C",
+      "size": 493,
+      "sha256": "5fd5ba9d6b4cff50468d5715e0f09378a73338de065a316e8079f7eb92a33dd4"
+    },
+    {
+      "path": "full/ega/assemble.py",
+      "size": 2147,
+      "sha256": "b1bf6dfced48f5e8ea8e9ec88b2abf0840a20dbbb857860f0488916ea3a6cc57"
+    },
+    {
+      "path": "full/ega/pack.py",
+      "size": 3243,
+      "sha256": "5b1b85bdc9e118bafad83399e84c3efa99339905206ca7f3ce8e160bf62a053e"
+    },
+    {
+      "path": "full/ega/retrace_bindings.json",
+      "size": 44,
+      "sha256": "6903cea6457e8fe20f479e4e117584c75f2f54650ac8f9ae97ef9ba96403ba66"
+    },
+    {
+      "path": "full/formats/about.c",
+      "size": 589,
+      "sha256": "cf2e1fbd81f41d0cb695662976908354aaf1581b063d856902a379f12bff1b6e"
+    },
+    {
+      "path": "full/formats/bindings.json",
+      "size": 6552,
+      "sha256": "b9db6157a95294b79919c6636b0dcf7605ea0262e2d75df6d1f69e86c810e786"
+    },
+    {
+      "path": "full/formats/cards.c",
+      "size": 18620,
+      "sha256": "7041102ca01f84fedf089e507c94a0df6aa735e63cf6190816995b4511ff2c30"
+    },
+    {
+      "path": "full/formats/cards.h",
+      "size": 1881,
+      "sha256": "1a61c8596b8691884ea95dfe3285f18998efbcf7fc8f85a26bebb25c2b0b32d1"
+    },
+    {
+      "path": "full/formats/files.c",
+      "size": 10815,
+      "sha256": "f6f6b40513f5bed7fa06def36f4703cb897e18442789e06fdb4d43407e0b1e71"
+    },
+    {
+      "path": "full/formats/fmtabi.h",
+      "size": 3666,
+      "sha256": "9f44fd672caad953a5a3cbb8cd08207ec86f80539ebc6cc47ca8f378d51306bf"
+    },
+    {
+      "path": "full/formats/number.c",
+      "size": 281,
+      "sha256": "ff5829e068225c5b50cd6e0b7858681d42913f9965f9ced0f9a9813553919d9d"
+    },
+    {
+      "path": "full/formats/rec.c",
+      "size": 4263,
+      "sha256": "78570958b100b6e8dba40a9c024bd012814cf940bc2cedff420bab3f649a9d23"
+    },
+    {
+      "path": "full/formats/ticks.c",
+      "size": 724,
+      "sha256": "4468bdac54b9896a1974986c5402e9efa01e19e170533609eddb9a405172ba09"
+    },
+    {
+      "path": "full/formats/xor.c",
+      "size": 539,
+      "sha256": "35f709cf291803898fb0a0ab4cb61563055625cdefe790b19b1011c3a6496414"
+    },
+    {
+      "path": "full/game/GAME.C",
+      "size": 33461,
+      "sha256": "48cbc763807af8fed80885e20fcc433370db1afdfb78b75c121d947387200391"
+    },
+    {
+      "path": "full/game/GAME.H",
+      "size": 4775,
+      "sha256": "517359fbaaf6ebe3b24230fa6d9816fd265ccd7bd3e70c323b570ac1aecbaacf"
+    },
+    {
+      "path": "full/game/bindings.json",
+      "size": 6960,
+      "sha256": "944d84d2e805703375650ad3fde225464de14bf560728fa4b0ba82189d7b52f5"
+    },
+    {
+      "path": "full/gpf/GPF.C",
+      "size": 4849,
+      "sha256": "b9fe78b0c8606aeb65f53109982e4669eeb297367cf3748daa5dae4a6965f753"
+    },
+    {
+      "path": "full/gpf/GPF.H",
+      "size": 1234,
+      "sha256": "3ba579ca8b060ec2255adc46454fdef683e233cd1567b82868d0883cf4981987"
+    },
+    {
+      "path": "full/gpf/LZSS.ASM",
+      "size": 1805,
+      "sha256": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07"
+    },
+    {
+      "path": "full/gpf/assemble.py",
+      "size": 2718,
+      "sha256": "575062ae121aa0462c85b484434cadb978e818be37f11a8aa391c8264ba5347a"
+    },
+    {
+      "path": "full/gpf/bindings.json",
+      "size": 618,
+      "sha256": "7fad87abbdc4b7910ce03d1af80ce4df3f1311d17776c1768e78e78ba4108ae0"
+    },
+    {
+      "path": "full/graphics/BLO.C",
+      "size": 2339,
+      "sha256": "05c0d2b7ddbe28aa03ce3dad9af7fa2da2693781d6f3a18cb1762c45ced1d030"
+    },
+    {
+      "path": "full/graphics/CHUNK.C",
+      "size": 884,
+      "sha256": "2422f90e93e5621043653e3267fae6f36788404b534a721507ccdea5027748c7"
+    },
+    {
+      "path": "full/graphics/LOW.H",
+      "size": 893,
+      "sha256": "aaa54f01fee4e79d51156651eb8d34ded68ac4a332dd07d0a5d3b933af9172db"
+    },
+    {
+      "path": "full/graphics/PARA.C",
+      "size": 379,
+      "sha256": "818a52c67b3e7a27b575afa6b7fc1a58f6b959c98c280c10f17655eb758d0e94"
+    },
+    {
+      "path": "full/graphics/bindings.json",
+      "size": 1645,
+      "sha256": "b6065e87acd5dd375fa900de9353f7c8de6e93e3cba5bb3d45065a06dc2406c9"
+    },
+    {
+      "path": "full/hardware/HW.C",
+      "size": 9725,
+      "sha256": "4af3f76ffa1571957eb1bfdf66b4d234c19bd9706828f8f36f1104e25be13920"
+    },
+    {
+      "path": "full/hardware/HW.H",
+      "size": 1105,
+      "sha256": "43abd0069b6165367e9fad2922dbfbc8c72d02a9783fe1bf12a0ffff2fbf5968"
+    },
+    {
+      "path": "full/hardware/bindings.json",
+      "size": 1508,
+      "sha256": "b23542baf449fb61522148cbca397a97080cf8e6e75738a6834d1c3166dad7de"
+    },
+    {
+      "path": "full/link/extract_runtime.py",
+      "size": 4556,
+      "sha256": "53a5895d1f3a49595168d9901a8f6f710a51710120c16472a1a88e69274de369"
+    },
+    {
+      "path": "full/link/runtime/bindings.json",
+      "size": 25902,
+      "sha256": "2fb5aa3e743e5078c143e515fcc50d6694f66421a2accb1a994a23ae7c8dde33"
+    },
+    {
+      "path": "full/link/runtime/layout.json",
+      "size": 92519,
+      "sha256": "37c8640283b502b912022aa69e179e470a62ff7e067e97b5ba351cee8ce3b264"
+    },
+    {
+      "path": "full/link/stage_link.py",
+      "size": 3282,
+      "sha256": "688884fdab6ee88764010342b12ca2d886f7d7b59437cfc1c5a757e7af38d382"
+    },
+    {
+      "path": "full/low/ASSERT.C",
+      "size": 766,
+      "sha256": "cbcdf71b10a3526079b98294f89f1a9edac8764ebc206ab8e15170948fb191f7"
+    },
+    {
+      "path": "full/low/FORMAT.C",
+      "size": 844,
+      "sha256": "5a0b8664110929e089e3542e4c4499d229bfe8454661ace940e56673904835b4"
+    },
+    {
+      "path": "full/low/REGISTER.C",
+      "size": 2666,
+      "sha256": "e5c0bb98361a3954cf243ee467a9b85f0450bcf777fd855603b162dd0632a9b1"
+    },
+    {
+      "path": "full/low/SUPPORT.H",
+      "size": 1545,
+      "sha256": "568b24606b6c35d731e2e0276377722a40b749a8f88ed1db8b20151814d6a8bd"
+    },
+    {
+      "path": "full/low/VIDEO.C",
+      "size": 354,
+      "sha256": "a84b30474ab9861dca46f603499abcf6d563b4f01faceb1d4c95200ccc40e4a6"
+    },
+    {
+      "path": "full/low/bindings.json",
+      "size": 3005,
+      "sha256": "b5b296d7058aa4196aed96e6fa422fa86e7740ef776799396377243436484da7"
+    },
+    {
+      "path": "full/render/RENDER.C",
+      "size": 12549,
+      "sha256": "6dfb028f88e29f27f0c9e17bbd8e140a89f1266eb1191a3a6285d530ee75c149"
+    },
+    {
+      "path": "full/render/RENDER.H",
+      "size": 3570,
+      "sha256": "f5f7405926acb5998b4b53b3da174cbab05b82d0a3492cfcccf8c32b92b7c287"
+    },
+    {
+      "path": "full/render/bindings.json",
+      "size": 4537,
+      "sha256": "41448a985ba3ce92937982c24fc6fb4fb389d1fc7f7ec8265c52a6da3cacac64"
+    },
+    {
+      "path": "full/sound/ADIO.ASM",
+      "size": 7506,
+      "sha256": "bfc202e2b9d872b4166d92476a589d94ef3615c92ddbc0887990240d6fb58b50"
+    },
+    {
+      "path": "full/sound/ADLIB.H",
+      "size": 5685,
+      "sha256": "29dfe9707665abfa58e3b61744a7d296ba71ec742b52cae1af30194e096bd0c9"
+    },
+    {
+      "path": "full/sound/MIDISND.H",
+      "size": 4847,
+      "sha256": "f4ae76580caa1f53032811357a291e913af9ce1f3f89e065b6bc3668e7966a84"
+    },
+    {
+      "path": "full/sound/SNDATA.C",
+      "size": 9603,
+      "sha256": "90454db95bf77ffa5de2c2bea06c2af2105a6b0667a6c8dc74634f581951a020"
+    },
+    {
+      "path": "full/sound/SNDATA.H",
+      "size": 814,
+      "sha256": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899"
+    },
+    {
+      "path": "full/sound/SNDIRQ.ASM",
+      "size": 1810,
+      "sha256": "f3e394d594b50bb2c446801abaa85d96ddfc95961e781c2becb8ba75a556d641"
+    },
+    {
+      "path": "full/sound/SNDMEM.ASM",
+      "size": 488,
+      "sha256": "104caee71165ab74316f80830a2359e917a8970a967c37832734de3189418fe9"
+    },
+    {
+      "path": "full/sound/SNDTAIL.ASM",
+      "size": 5132,
+      "sha256": "fe485d527e81b331a5e1ee7bf3b21ce83548685d60dff3c9399fed4844724a5f"
+    },
+    {
+      "path": "full/sound/SNDWAIT.ASM",
+      "size": 618,
+      "sha256": "47b98af359e5e74844c6a2228cf1765d7f077600ba13e6969bc81fca810fd2b5"
+    },
+    {
+      "path": "full/sound/SOUND.H",
+      "size": 5698,
+      "sha256": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be"
+    },
+    {
+      "path": "full/sound/bindings.json",
+      "size": 11409,
+      "sha256": "12fe82757c0ba1014adc61b947b31abdd6e511803ac36b66dca574ce343b3883"
+    },
+    {
+      "path": "full/sound/data_bindings.json",
+      "size": 3389,
+      "sha256": "ebbec186ea6e4fe5db44159ba641336abbfa7216fe8c349ee6faeafae646eed1"
+    },
+    {
+      "path": "full/sound/exact/ADLIB.ASM",
+      "size": 55487,
+      "sha256": "f6f0f65b3916a2ffc5f0d6241a6fb7784968c678d9f8540bc67c97624e14c3cc"
+    },
+    {
+      "path": "full/sound/exact/CONTROL.ASM",
+      "size": 51950,
+      "sha256": "01f6fda4ff28570871d5e4ddf4ec26b52a3f0f55c0fb9991e78c5d1c653a3843"
+    },
+    {
+      "path": "full/sound/exact/MIDI.ASM",
+      "size": 59614,
+      "sha256": "2a6d9655afc21393a979decdadee84b58cd93cba88018e20d734fce417bbd900"
+    },
+    {
+      "path": "full/ui/INPUT.C",
+      "size": 4471,
+      "sha256": "5784b09e313c3b05f4a8ac688073f64e1a481bd2e452f2d77dd738ac942a9884"
+    },
+    {
+      "path": "full/ui/INPUT.H",
+      "size": 1360,
+      "sha256": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c"
+    },
+    {
+      "path": "full/ui/MUSIC.C",
+      "size": 2531,
+      "sha256": "18f332426bccb5bbdbb0fc822cf202a8419f6eeaeb4595018dccbe8310f4c192"
+    },
+    {
+      "path": "full/ui/START.C",
+      "size": 393,
+      "sha256": "39d535182c3b3387b4f91abe6d418751e41eda1e2120b49bbd5ff84124fdca14"
+    },
+    {
+      "path": "full/ui/UI.C",
+      "size": 38631,
+      "sha256": "df247e2fdf469fb04870390cf5c5fc93c0d927cb9225d90445996fb3b181f5db"
+    },
+    {
+      "path": "full/ui/UI.H",
+      "size": 4621,
+      "sha256": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13"
+    },
+    {
+      "path": "full/ui/ui_symbols.json",
+      "size": 11700,
+      "sha256": "c0db42899008a835a9578ad5d59d63fa0f8bb47eb28af2a4a5d1f16b8ba8d811"
+    },
+    {
+      "path": "tools/omf.py",
+      "size": 20929,
+      "sha256": "767cf4e06a67f71c988041ffd0381030785ca0cb6648b028dfce9a992c1820d6"
+    }
+  ],
+  "runtime_library_sha256": "57a3103f5df4d6965c0cb809f0b7cf209a1b8f63a13db87d2f4aadcacddd8124",
+  "runtime_startup_sha256": "1004f6318f4c0854fc84a02b1c954517dbde408d0d3cad76887764b0336a591a",
+  "runtime_objects": [
+    {
+      "object": "C0L.OBJ",
+      "module": "c0.ASM",
+      "source": "C0L.OBJ",
+      "source_offset": 0,
+      "source_end": 2362,
+      "size": 2362,
+      "sha256": "1004f6318f4c0854fc84a02b1c954517dbde408d0d3cad76887764b0336a591a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "ATEXIT.OBJ",
+      "module": "ATEXIT",
+      "source": "CL.LIB",
+      "source_offset": 352,
+      "source_end": 599,
+      "size": 247,
+      "sha256": "e66cf565f921c5b85556af55a8884361a2b9f47ff34d39676e7c527557e3075e",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "CTYPE.OBJ",
+      "module": "CTYPE",
+      "source": "CL.LIB",
+      "source_offset": 2800,
+      "source_end": 3178,
+      "size": 378,
+      "sha256": "e0a8e6b9397d790a401e98a8a57fcf8617736d13537a7e62b9afeb7e4684985d",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "DOSFATTR.OBJ",
+      "module": "DOSFATTR",
+      "source": "CL.LIB",
+      "source_offset": 5728,
+      "source_end": 6002,
+      "size": 274,
+      "sha256": "43b3a9c57cf54694bd0e5bed12caade236dc1e6b09d138f84e33ae91cc9b3a9f",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "EXIT.OBJ",
+      "module": "EXIT",
+      "source": "CL.LIB",
+      "source_offset": 10320,
+      "source_end": 10868,
+      "size": 548,
+      "sha256": "e5415bcde5ae18ee8c7319b14fabd16c749281ffe9cade743579da6e343d0d1a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FILES.OBJ",
+      "module": "FILES",
+      "source": "CL.LIB",
+      "source_offset": 11536,
+      "source_end": 12088,
+      "size": 552,
+      "sha256": "86ef6f390471757d67567332a19a60eddb90f6942964ff93a6bfc6c73f169d2e",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FILES2.OBJ",
+      "module": "FILES2",
+      "source": "CL.LIB",
+      "source_offset": 12096,
+      "source_end": 12278,
+      "size": 182,
+      "sha256": "09df2b8f3564e1040768f95474c3ce273db78908a2eeea40bfe54b28b04b52c9",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FMODE.OBJ",
+      "module": "FMODE",
+      "source": "CL.LIB",
+      "source_offset": 12288,
+      "source_end": 12433,
+      "size": 145,
+      "sha256": "510d1f0e86b60b0dfbdae74edeecf626b5bf04bf291e403e9fee2b60c3e7223c",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "F_LXMUL.OBJ",
+      "module": "F_LXMUL",
+      "source": "CL.LIB",
+      "source_offset": 12768,
+      "source_end": 12928,
+      "size": 160,
+      "sha256": "ee45a455d181d26306bc3daadb8282093b7de0e240366f90189a73d2df67d8ba",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "F_SCOPY.OBJ",
+      "module": "F_SCOPY",
+      "source": "CL.LIB",
+      "source_offset": 13104,
+      "source_end": 13269,
+      "size": 165,
+      "sha256": "8f2da1e738279c3acdb235936b6fcd1e68e639c28ef854fbfe5079dda1abb58a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "GETDATE.OBJ",
+      "module": "GETDATE",
+      "source": "CL.LIB",
+      "source_offset": 13664,
+      "source_end": 13844,
+      "size": 180,
+      "sha256": "8b524a887b6b317f9bdad543eddef6d44d9158b49e1ce1bb8bd91c338c1ad053",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "GETVECT.OBJ",
+      "module": "GETVECT",
+      "source": "CL.LIB",
+      "source_offset": 15088,
+      "source_end": 15284,
+      "size": 196,
+      "sha256": "e7c031a24ef61bea8bab22d5467ae6718a3d09df326b3cbd14ffd1a529250ff0",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "H_LDIV.OBJ",
+      "module": "H_LDIV",
+      "source": "CL.LIB",
+      "source_offset": 15888,
+      "source_end": 16366,
+      "size": 478,
+      "sha256": "67017c7587bb61233351ec3706b2f5872afab064651b6980d1c2a79c62afdf24",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "H_LLSH.OBJ",
+      "module": "H_LLSH",
+      "source": "CL.LIB",
+      "source_offset": 16368,
+      "source_end": 16555,
+      "size": 187,
+      "sha256": "4c62a96a8be3b5bb2cbfb1c3e9afbda068b61b031bdc1888c7527175e64e7056",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "H_PADA.OBJ",
+      "module": "H_PADA",
+      "source": "CL.LIB",
+      "source_offset": 16944,
+      "source_end": 17280,
+      "size": 336,
+      "sha256": "1b02ebd7393b7f33a24d95f499af5a73d8077b244ff1a6c4fe3555a9dd2c6a70",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "H_PADD.OBJ",
+      "module": "H_PADD",
+      "source": "CL.LIB",
+      "source_offset": 17280,
+      "source_end": 17576,
+      "size": 296,
+      "sha256": "cd0efdb14632532dd2665534a68475d642f10d645a27a981bb108240014e35a1",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "IOERROR.OBJ",
+      "module": "IOERROR",
+      "source": "CL.LIB",
+      "source_offset": 18688,
+      "source_end": 19108,
+      "size": 420,
+      "sha256": "184c7b514c675ed235b05b7785ebfd71733dcd2573d0ec1fc0ea6afc4be8b4ca",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "ISATTY.OBJ",
+      "module": "ISATTY",
+      "source": "CL.LIB",
+      "source_offset": 20160,
+      "source_end": 20321,
+      "size": 161,
+      "sha256": "bb53ebbed0ac71ab9db129e59f59486254a708a366f59cad2c8dbff2881ed784",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "LONGTOA.OBJ",
+      "module": "LONGTOA",
+      "source": "CL.LIB",
+      "source_offset": 20496,
+      "source_end": 20821,
+      "size": 325,
+      "sha256": "e45ca8f4dddcb66f9e8b3d5a6e69174ea4b0c02ed515edd6c4e06dce5785b336",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "LSEEK.OBJ",
+      "module": "LSEEK",
+      "source": "CL.LIB",
+      "source_offset": 21184,
+      "source_end": 21406,
+      "size": 222,
+      "sha256": "5ab83dd71c4b7e9be9230b9f623eef20f6c2df53fbe890b113fe8846267b0c65",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "MKNAME.OBJ",
+      "module": "MKNAME",
+      "source": "CL.LIB",
+      "source_offset": 21600,
+      "source_end": 22024,
+      "size": 424,
+      "sha256": "f535d3b1785258d915a2a85984846052f00c705d342edb627c9c97fb0130d33a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "N_LXMUL.OBJ",
+      "module": "N_LXMUL",
+      "source": "CL.LIB",
+      "source_offset": 22656,
+      "source_end": 22800,
+      "size": 144,
+      "sha256": "a40546689d43081cf2a3aacfc54701f39efd4235fde6629ff1b663245ea0be1a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "N_PCMP.OBJ",
+      "module": "N_PCMP",
+      "source": "CL.LIB",
+      "source_offset": 22800,
+      "source_end": 22952,
+      "size": 152,
+      "sha256": "3ea606ef46230351f3802cb2206133d6707ee5e00cebd7adbe11c366dcec751f",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "RAND.OBJ",
+      "module": "RAND",
+      "source": "CL.LIB",
+      "source_offset": 24272,
+      "source_end": 24529,
+      "size": 257,
+      "sha256": "e23d02d6c9c98e9aba7f9b74456d6c067194877a24831553d8a3105822a4c3c6",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "READA.OBJ",
+      "module": "READA",
+      "source": "CL.LIB",
+      "source_offset": 24544,
+      "source_end": 24772,
+      "size": 228,
+      "sha256": "7e2cf494c3b92481eb1d5e78f2ae90ff3b2ebb41634a1ae8d744bf849ca55dfc",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SCANNER.OBJ",
+      "module": "SCANNER",
+      "source": "CL.LIB",
+      "source_offset": 25744,
+      "source_end": 27500,
+      "size": 1756,
+      "sha256": "700652307d7abe63d9d517c299421bc31088bc1955cea444e80b9f7fc7a4a7b5",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SCANTOL.OBJ",
+      "module": "SCANTOL",
+      "source": "CL.LIB",
+      "source_offset": 27504,
+      "source_end": 28133,
+      "size": 629,
+      "sha256": "5ae594f3d3acc1d198240a90bea201be472b9098e011f05b45acd27bd9aee359",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SETDATE.OBJ",
+      "module": "SETDATE",
+      "source": "CL.LIB",
+      "source_offset": 29968,
+      "source_end": 30174,
+      "size": 206,
+      "sha256": "a8948f62af6e5564f6a6af03f794d183bb700c57e2bc6e257ffe60c39fe2fbc3",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SETUPIO.OBJ",
+      "module": "SETUPIO",
+      "source": "CL.LIB",
+      "source_offset": 30544,
+      "source_end": 31071,
+      "size": 527,
+      "sha256": "a8b9ee436816c7897359f0691bc512eb3cbeb3500eea17f404236eb2f2c46028",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STIME.OBJ",
+      "module": "STIME",
+      "source": "CL.LIB",
+      "source_offset": 31728,
+      "source_end": 32111,
+      "size": 383,
+      "sha256": "d3104cf91fb2f76ba48643cf9a490661eb9b81b2faafdbbb4e9ead095bf29071",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STKLEN.OBJ",
+      "module": "STKLEN",
+      "source": "CL.LIB",
+      "source_offset": 32112,
+      "source_end": 32237,
+      "size": 125,
+      "sha256": "cbd6f89678ba935010017e4c3ba3bd1bc52bd05e6c1d295927646b79021e866d",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "TOUPPER.OBJ",
+      "module": "TOUPPER",
+      "source": "CL.LIB",
+      "source_offset": 33216,
+      "source_end": 33406,
+      "size": 190,
+      "sha256": "8866ad9cde21327446f8032fb5e704465f11f80a2f9a44d14c4eb74b504eab35",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "UNLINK.OBJ",
+      "module": "UNLINK",
+      "source": "CL.LIB",
+      "source_offset": 33584,
+      "source_end": 33776,
+      "size": 192,
+      "sha256": "ea347a832fbc4ee65439fba49c8400be23b92cfa173cc9a1839c0b934e2308e9",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "VPRINTER.OBJ",
+      "module": "VPRINTER",
+      "source": "CL.LIB",
+      "source_offset": 40832,
+      "source_end": 42495,
+      "size": 1663,
+      "sha256": "8e8d0778e9e62e5b60759ec7405c13bd94e583b81a7179c43c05dd7a55ad095a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "_STPCPY.OBJ",
+      "module": "_STPCPY",
+      "source": "CL.LIB",
+      "source_offset": 44640,
+      "source_end": 44850,
+      "size": 210,
+      "sha256": "c9ac544c2dfaa33a128539cd7b1531012b77df62f5ce2e6b300b0d86a25c4b5f",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "CVTFAK.OBJ",
+      "module": "CVTFAK",
+      "source": "CL.LIB",
+      "source_offset": 56304,
+      "source_end": 56649,
+      "size": 345,
+      "sha256": "a46ce6446ada49bc17b92f028909fcdc7f1802b2652d89c6c3c1fd3d90f6e482",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "DELAY.OBJ",
+      "module": "DELAY",
+      "source": "CL.LIB",
+      "source_offset": 56656,
+      "source_end": 57060,
+      "size": 404,
+      "sha256": "7cd84f1f7b119ddc37eb44977326b297f1d89c574c75c665fdd5e7bff78ed696",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FARHEAP.OBJ",
+      "module": "FARHEAP",
+      "source": "CL.LIB",
+      "source_offset": 59920,
+      "source_end": 61481,
+      "size": 1561,
+      "sha256": "4b7e6d309d78b1b65695e4f608eb83de1ce28ed6292b6371cae00af082840fb3",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FBRK.OBJ",
+      "module": "FBRK",
+      "source": "CL.LIB",
+      "source_offset": 61488,
+      "source_end": 62196,
+      "size": 708,
+      "sha256": "b22374e8297c68dc9c538cf26fed9ea5ac2f963f2291c98b4c319d2fa4eeb366",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FCALLOC.OBJ",
+      "module": "FCALLOC",
+      "source": "CL.LIB",
+      "source_offset": 62208,
+      "source_end": 62564,
+      "size": 356,
+      "sha256": "b88f286beb1cc2cd7478c932f225dbfee8a3034433e3a45e70fc7f4de21d3eea",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "INTR.OBJ",
+      "module": "INTR",
+      "source": "CL.LIB",
+      "source_offset": 68336,
+      "source_end": 68640,
+      "size": 304,
+      "sha256": "219d164dedd6deb8cf54de9595bb16c03bd2b80f38c182f640b514a7417546f1",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "IOCTL.OBJ",
+      "module": "IOCTL",
+      "source": "CL.LIB",
+      "source_offset": 68640,
+      "source_end": 68847,
+      "size": 207,
+      "sha256": "fc7f6c2c1a75a601e94ab9ee9c05f53a29040c4709c3b6aff3452af1921d6cdc",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "REALCVT.OBJ",
+      "module": "REALCVT",
+      "source": "CL.LIB",
+      "source_offset": 70688,
+      "source_end": 70882,
+      "size": 194,
+      "sha256": "fc67b0e92b4e21bed9c76d505d54ae5ed314cade760c4ef3d1e3fe76ff3d7dc9",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SCANTOD.OBJ",
+      "module": "SCANTOD",
+      "source": "CL.LIB",
+      "source_offset": 70896,
+      "source_end": 71145,
+      "size": 249,
+      "sha256": "56b875bc3e00fa38d371cafd0e9fb3520e18e44e3f4172b153dfb3bb84730c93",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SETARGV.OBJ",
+      "module": "SETARGV",
+      "source": "CL.LIB",
+      "source_offset": 72528,
+      "source_end": 73243,
+      "size": 715,
+      "sha256": "a879352e6effe075cd2cf6c65ab7060a94f2524f75729767a6b2c21a024f7598",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SETBLOCK.OBJ",
+      "module": "SETBLOCK",
+      "source": "CL.LIB",
+      "source_offset": 73248,
+      "source_end": 73448,
+      "size": 200,
+      "sha256": "6a911a87856d60eec4e07635878b8bcb17ee972bd3c826735ca5ffde1d2c7acc",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SETENVP.OBJ",
+      "module": "SETENVP",
+      "source": "CL.LIB",
+      "source_offset": 73456,
+      "source_end": 73861,
+      "size": 405,
+      "sha256": "6e6aca713c31d9d18b68692953c04c6679a40b49e34f1145cd601bcca89b3cb2",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SOUND.OBJ",
+      "module": "SOUND",
+      "source": "CL.LIB",
+      "source_offset": 76096,
+      "source_end": 76307,
+      "size": 211,
+      "sha256": "20c03a64eccfc4ad593e175c32aa6fd37e072a09afcba5e3abe7281a110e7075",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "ATOL.OBJ",
+      "module": "ATOL",
+      "source": "CL.LIB",
+      "source_offset": 81264,
+      "source_end": 81574,
+      "size": 310,
+      "sha256": "0c6259c818f1ef630a1e81243c3230791d53a5d4bab0bcdce5ec44a8b5967c9f",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "CHMODA.OBJ",
+      "module": "CHMODA",
+      "source": "CL.LIB",
+      "source_offset": 83888,
+      "source_end": 84085,
+      "size": 197,
+      "sha256": "59cee840c5beea16b34a1178a1bd685e416c3c14bed251a4928d55ac96f43d58",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "CLOSE.OBJ",
+      "module": "CLOSE",
+      "source": "CL.LIB",
+      "source_offset": 84480,
+      "source_end": 84705,
+      "size": 225,
+      "sha256": "a39c30ad56500cbe726043d32692611c3f6ff4ffe7c778a138dd37d77c56e211",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "CLOSEA.OBJ",
+      "module": "CLOSEA",
+      "source": "CL.LIB",
+      "source_offset": 84720,
+      "source_end": 84933,
+      "size": 213,
+      "sha256": "971decfd9abf6c9e38c2b9acf9f562a33338fe907e356970e7e87c9153876fe9",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "EOF.OBJ",
+      "module": "EOF",
+      "source": "CL.LIB",
+      "source_offset": 102080,
+      "source_end": 102390,
+      "size": 310,
+      "sha256": "65b1217195b16442b41a9b80ccbedc86385bf7232a50c1d4796a97520ceddcff",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FCLOSE.OBJ",
+      "module": "FCLOSE",
+      "source": "CL.LIB",
+      "source_offset": 102400,
+      "source_end": 102777,
+      "size": 377,
+      "sha256": "7719753b3a794e2d68878c231b04b6328d86268af6a48422692597517e04a6b3",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FFLUSH.OBJ",
+      "module": "FFLUSH",
+      "source": "CL.LIB",
+      "source_offset": 103008,
+      "source_end": 103372,
+      "size": 364,
+      "sha256": "8f9cc6fb2605f65a86ff6eec3e9087da169884a337bbfef18c93e9c449ab07db",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FGETS.OBJ",
+      "module": "FGETS",
+      "source": "CL.LIB",
+      "source_offset": 103376,
+      "source_end": 103673,
+      "size": 297,
+      "sha256": "7ff83ecbc4f344f66ec4b6a27d1cbb92396d8ea1ff0ff8bce0bc23510e0175ba",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FINDFIRS.OBJ",
+      "module": "FINDFIRS",
+      "source": "CL.LIB",
+      "source_offset": 103680,
+      "source_end": 103973,
+      "size": 293,
+      "sha256": "25e691b3e9a17cddf1d6d2384997c234cb2fc8946cabf949e9bd329cf017b3fc",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FLUSHALL.OBJ",
+      "module": "FLUSHALL",
+      "source": "CL.LIB",
+      "source_offset": 104224,
+      "source_end": 104467,
+      "size": 243,
+      "sha256": "60a45ba0376ba0de096bfdce637a2bcec29c38fa6cd3e28b3e5a71a55adc8359",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FOPEN.OBJ",
+      "module": "FOPEN",
+      "source": "CL.LIB",
+      "source_offset": 104864,
+      "source_end": 105693,
+      "size": 829,
+      "sha256": "3de1d9603be9397d869cfa74f080d0d90998fadaf5834a78866db258155bb8c7",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FREAD.OBJ",
+      "module": "FREAD",
+      "source": "CL.LIB",
+      "source_offset": 106128,
+      "source_end": 106718,
+      "size": 590,
+      "sha256": "fe8795a11b43689cf19eadf5b7ef6a9f5c0daaa580dfe5a3a98be5afd042a0bd",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FSEEK.OBJ",
+      "module": "FSEEK",
+      "source": "CL.LIB",
+      "source_offset": 107168,
+      "source_end": 107846,
+      "size": 678,
+      "sha256": "f180762c69029016a6eaaa37702d67758c06114ab1de1b59c93d327457e57c7d",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "FWRITE.OBJ",
+      "module": "FWRITE",
+      "source": "CL.LIB",
+      "source_offset": 109568,
+      "source_end": 109907,
+      "size": 339,
+      "sha256": "ca2c9f345010d1c68a611edfb903994069ff086546b03ecda6dd60d5b23b671a",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "GETC.OBJ",
+      "module": "GETC",
+      "source": "CL.LIB",
+      "source_offset": 109920,
+      "source_end": 110655,
+      "size": 735,
+      "sha256": "f0fb804cc5f3d51f0e5c614827b6568dd2d1210b88ea9651937038bd422819ff",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "GETENV.OBJ",
+      "module": "GETENV",
+      "source": "CL.LIB",
+      "source_offset": 111408,
+      "source_end": 111686,
+      "size": 278,
+      "sha256": "09b5add8d81b2c7f6d67ec0cab4d1959a9b7c0dad6de5cb88f1a93b1551f1376",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "MEMCPY.OBJ",
+      "module": "MEMCPY",
+      "source": "CL.LIB",
+      "source_offset": 115168,
+      "source_end": 115348,
+      "size": 180,
+      "sha256": "395eb5952835841039939eac1d0a3c235007b0d9ec10a37f03e63e83229872e2",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "MEMSET.OBJ",
+      "module": "MEMSET",
+      "source": "CL.LIB",
+      "source_offset": 115584,
+      "source_end": 115812,
+      "size": 228,
+      "sha256": "f47b1e74ae3bfdd9cabeadea2d94803011176ba96c246bc13ed6d50c7723a54c",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "MOVMEM.OBJ",
+      "module": "MOVMEM",
+      "source": "CL.LIB",
+      "source_offset": 116464,
+      "source_end": 116763,
+      "size": 299,
+      "sha256": "3c6c951eb1a43ef05807516889f93fd1851801f7c752a90c39674a8577472898",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "OPEN.OBJ",
+      "module": "OPEN",
+      "source": "CL.LIB",
+      "source_offset": 117184,
+      "source_end": 117896,
+      "size": 712,
+      "sha256": "5e28da64e3a6d04753243d1b307834f2af0d02d6296100c024f0ecb0d39dd4e5",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "OPENA.OBJ",
+      "module": "OPENA",
+      "source": "CL.LIB",
+      "source_offset": 117904,
+      "source_end": 118164,
+      "size": 260,
+      "sha256": "3405d8d2ae7e635ed8d7997933942f5036f3f116b78f4d57fd5f187843c9e1d5",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "PRINTF.OBJ",
+      "module": "PRINTF",
+      "source": "CL.LIB",
+      "source_offset": 119488,
+      "source_end": 119690,
+      "size": 202,
+      "sha256": "6ab5bcdb7a53dae24b63e22a1c8c328adb97a89b87997e9183399882608a1b8b",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "PUTC.OBJ",
+      "module": "PUTC",
+      "source": "CL.LIB",
+      "source_offset": 119696,
+      "source_end": 121053,
+      "size": 1357,
+      "sha256": "b4cb0a8e8e00736a354b6239f391b2e6134cf53829cbd42f21d311040c5268fc",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "READ.OBJ",
+      "module": "READ",
+      "source": "CL.LIB",
+      "source_offset": 123120,
+      "source_end": 123562,
+      "size": 442,
+      "sha256": "c965810d055ac33ca3f81454c59a227ef4b55c26ab323e946193b83a65b30b73",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "READU.OBJ",
+      "module": "READU",
+      "source": "CL.LIB",
+      "source_offset": 123568,
+      "source_end": 123709,
+      "size": 141,
+      "sha256": "587c6f803df05a8021338e873d9422509a9a3937ef84c16ef0b6cac4c9a22e52",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "REWIND.OBJ",
+      "module": "REWIND",
+      "source": "CL.LIB",
+      "source_offset": 123920,
+      "source_end": 124100,
+      "size": 180,
+      "sha256": "95be4f80e2a302577ddc3771ee52e46a06b24433548cd510a123710e1dcdebcd",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SETVBUF.OBJ",
+      "module": "SETVBUF",
+      "source": "CL.LIB",
+      "source_offset": 124608,
+      "source_end": 125153,
+      "size": 545,
+      "sha256": "a36f131e46c343c93f18bd7d948c55a39e0074f194f739c3bc432d7d466233a5",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "SPRINTF.OBJ",
+      "module": "SPRINTF",
+      "source": "CL.LIB",
+      "source_offset": 126160,
+      "source_end": 126483,
+      "size": 323,
+      "sha256": "20615751426b990646f05e8b451d2c6f780f1963e649c714399118b251abb4ef",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRCAT.OBJ",
+      "module": "STRCAT",
+      "source": "CL.LIB",
+      "source_offset": 127488,
+      "source_end": 127695,
+      "size": 207,
+      "sha256": "8d6c21d58dd36ff83f0fc1cbc7875865c9e7901b65a72bd98df9545a3c65e21c",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRCMP.OBJ",
+      "module": "STRCMP",
+      "source": "CL.LIB",
+      "source_offset": 127904,
+      "source_end": 128096,
+      "size": 192,
+      "sha256": "8604782cfa954520340f5072ad266aad269e298ea1c01b23a5efcdf2529c50d3",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRCPY.OBJ",
+      "module": "STRCPY",
+      "source": "CL.LIB",
+      "source_offset": 128096,
+      "source_end": 128281,
+      "size": 185,
+      "sha256": "ddc59280f9bc345a4e084ead0a456a65abbf4ad609989e35698cb2951acac540",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRCSPN.OBJ",
+      "module": "STRCSPN",
+      "source": "CL.LIB",
+      "source_offset": 128288,
+      "source_end": 128481,
+      "size": 193,
+      "sha256": "364b5d4ec37461f75bb6e485f6dd3009d51196d9f29c2e176e3a3a2741a91d78",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRLEN.OBJ",
+      "module": "STRLEN",
+      "source": "CL.LIB",
+      "source_offset": 129888,
+      "source_end": 130063,
+      "size": 175,
+      "sha256": "31be69771d6c03b8918162fd63d79c1fd3e2d9199cd51c81e4b75da53aaa126b",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRNCAT.OBJ",
+      "module": "STRNCAT",
+      "source": "CL.LIB",
+      "source_offset": 130256,
+      "source_end": 130517,
+      "size": 261,
+      "sha256": "c4a4f461d7a938e042eddc1f8a9ef52fda55c017ab097c61ef3f49453751f167",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "STRNCPY.OBJ",
+      "module": "STRNCPY",
+      "source": "CL.LIB",
+      "source_offset": 130736,
+      "source_end": 130931,
+      "size": 195,
+      "sha256": "7dd56312129e57b870f02bf0826f5b7ec0c94f0d2f78ff2b8d4d229727854597",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "TIMECVT.OBJ",
+      "module": "TIMECVT",
+      "source": "CL.LIB",
+      "source_offset": 135024,
+      "source_end": 136203,
+      "size": 1179,
+      "sha256": "a89d6e39d665788450fcd66f599e73a818c6d535d1ae4d31cf756047f0d83ec8",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "TZSET.OBJ",
+      "module": "TZSET",
+      "source": "CL.LIB",
+      "source_offset": 136688,
+      "source_end": 138058,
+      "size": 1370,
+      "sha256": "d2903019cde5d4edffaf052a9b5bafd65095532d1b74f7c84a993045d2b3c5c0",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "UNGETC.OBJ",
+      "module": "UNGETC",
+      "source": "CL.LIB",
+      "source_offset": 138064,
+      "source_end": 138337,
+      "size": 273,
+      "sha256": "39a5fe80cbadc5ab496bf0726838ed05c0fa7bdc4edf88fb116538571727e8b6",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "VFSCANF.OBJ",
+      "module": "VFSCANF",
+      "source": "CL.LIB",
+      "source_offset": 139584,
+      "source_end": 139797,
+      "size": 213,
+      "sha256": "bd73464085bcedb40e357a06f4cfb5feebd4bfc63d0c92d03655bc02f37a4cd1",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "WRITE.OBJ",
+      "module": "WRITE",
+      "source": "CL.LIB",
+      "source_offset": 140256,
+      "source_end": 140810,
+      "size": 554,
+      "sha256": "9b52199c11ee9443fce2d589332fb4d238f37d0be2e34d1700141e61d8723515",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "WRITEA.OBJ",
+      "module": "WRITEA",
+      "source": "CL.LIB",
+      "source_offset": 140816,
+      "source_end": 141064,
+      "size": 248,
+      "sha256": "c96b13945d42176f9c1e6dc38f2bb7dd74ed3b73713fcf470fcc263fd2a12810",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "WRITEU.OBJ",
+      "module": "WRITEU",
+      "source": "CL.LIB",
+      "source_offset": 141072,
+      "source_end": 141216,
+      "size": 144,
+      "sha256": "c6c9bd4ac9c2404c3d6358d8b1725d7e5bd2af50e26905561a3d847f8c738e6f",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "XFCLOSE.OBJ",
+      "module": "XFCLOSE",
+      "source": "CL.LIB",
+      "source_offset": 141216,
+      "source_end": 141458,
+      "size": 242,
+      "sha256": "f2f56c990b8a9f615b3d29bac4e667bee8542c607728f9e5b2704cd81c9b2fb5",
+      "omf_records_unchanged": true
+    },
+    {
+      "object": "XFFLUSH.OBJ",
+      "module": "XFFLUSH",
+      "source": "CL.LIB",
+      "source_offset": 141472,
+      "source_end": 141690,
+      "size": 218,
+      "sha256": "171bcd88fe53f7835428be4d088ec1f443b21bf21731479cb7063f93a9fed67f",
+      "omf_records_unchanged": true
+    }
+  ],
+  "freshly_compiled_core": true,
+  "compiler_generated_source_snapshots": [
+    {
+      "name": "START",
+      "source": "src/START.C",
+      "sha256": "1f87cfcf8dd8e876bc552c9a09d95a6fc384a29b60e88b905e3960a6a0274b77",
+      "compiler": "bc31"
+    },
+    {
+      "name": "INPUT",
+      "source": "src/INPUT.C",
+      "sha256": "c5075053432264d662e3a2a0d64106f36ceacebc8728460e6ba69a8bf4fe4f1f",
+      "compiler": "bc31"
+    },
+    {
+      "name": "MUSIC",
+      "source": "src/MUSIC.C",
+      "sha256": "f73fc66630aa2455e0687c6d86e71aba5174a5f308f40ce621f9bd9ffb98504e",
+      "compiler": "bc31"
+    },
+    {
+      "name": "UI",
+      "source": "src/UI.C",
+      "sha256": "ebf72d89735f3d99e227b4c49078eb6c49b281a92e9bf1729051940d7f7543a1",
+      "compiler": "bc31"
+    },
+    {
+      "name": "GAME",
+      "source": "src/GAME.C",
+      "sha256": "624c197dda1792578e0213ab9b81f221ca9d5a8576023c9717dc3de131d757f1",
+      "compiler": "bc31"
+    },
+    {
+      "name": "CARDS",
+      "source": "src/CARDS.C",
+      "sha256": "503a787e3aa29f51174ccd20e95f1ae104d0bc46fe5ee17800f1064308e2a425",
+      "compiler": "bc31"
+    },
+    {
+      "name": "ABOUT",
+      "source": "src/ABOUT.C",
+      "sha256": "140772ed9ee1a5cffb90c4820b8c730226fa2175f03a1a22f5f675e7cb3b8778",
+      "compiler": "bc31"
+    },
+    {
+      "name": "XOR",
+      "source": "src/XOR.C",
+      "sha256": "87413b5b7f626c82e926e2524d2184563ebb47fa4121123e8275c1759610cd24",
+      "compiler": "bc31"
+    },
+    {
+      "name": "FILES",
+      "source": "src/FILES.C",
+      "sha256": "065ae596829e48b83b586c323342fe1fa94fd032f127ccb100bc36370a8438bb",
+      "compiler": "bc31"
+    },
+    {
+      "name": "TICKS",
+      "source": "src/TICKS.C",
+      "sha256": "ee48a71694143e8e378632fd66501022e1050c7804f66dae25baca05146e3e32",
+      "compiler": "bc31"
+    },
+    {
+      "name": "NUMBER",
+      "source": "src/NUMBER.C",
+      "sha256": "07c3198849e525e6c0f212e4f03906f505ff04bfa219f37db27783dc3e874294",
+      "compiler": "bc31"
+    },
+    {
+      "name": "ASSERT",
+      "source": "src/ASSERT.C",
+      "sha256": "ebaf758d0e9e072bc27e741fa3f77629b8030fb2c31c69af239f18855f866bee",
+      "compiler": "bc31"
+    },
+    {
+      "name": "FORMAT",
+      "source": "src/FORMAT.C",
+      "sha256": "a98a87ae94711aee563e363fced0d5c55a9246a43893d2ad88597005b25a17a1",
+      "compiler": "bc31"
+    },
+    {
+      "name": "VIDEO",
+      "source": "src/VIDEO.C",
+      "sha256": "0157444189fe7dab389470e51ce408dc0debb0c7ba51b5564d7749ded1df7e3e",
+      "compiler": "bc31"
+    },
+    {
+      "name": "REGISTER",
+      "source": "src/REGISTER.C",
+      "sha256": "2c34f3a243d3a5e5a31668bb4b5298d2e46fef8d7b71dbec0d0b02ee5489c7c4",
+      "compiler": "bc31"
+    },
+    {
+      "name": "RENDER",
+      "source": "src/RENDER.C",
+      "sha256": "a5539ce9cf75308024a0165572100b9fe4ceed9d450d1d08ea4e0efe302ee553",
+      "compiler": "bc31"
+    },
+    {
+      "name": "BLO",
+      "source": "src/BLO.C",
+      "sha256": "91d8fc9bfcd2df5eb41c375ce0abeedc2bd69ff1939c390d4c87de64f8545eb6",
+      "compiler": "bc31"
+    },
+    {
+      "name": "CHUNK",
+      "source": "src/CHUNK.C",
+      "sha256": "d0dbeb6a417af87dfe95c8bcdf24478bd8909a5a1e013ae45bef9ac3f71de68c",
+      "compiler": "bc31"
+    },
+    {
+      "name": "PARA",
+      "source": "src/PARA.C",
+      "sha256": "8c156c240a0f6ac7dd0a0679b69dc33a8b08bb1b16c09b712f939f21b578636b",
+      "compiler": "bc31"
+    },
+    {
+      "name": "HW",
+      "source": "src/HW.C",
+      "sha256": "5e5f9a63e3737834b0159b86727fe76014c40c8d069c42b051abf812fa3d1892",
+      "compiler": "bc31"
+    },
+    {
+      "name": "REC",
+      "source": "src/REC.C",
+      "sha256": "1975fae9e53d0edfd1d10a4cb7c713ad532b27cd8d24ea5a1436f273f7987dec",
+      "compiler": "bc31"
+    },
+    {
+      "name": "RETRACE",
+      "source": "src/RETRACE.C",
+      "sha256": "e58ca2fad7ef9277fa84d7fa8aa839f8cfb30df269983cefbe78474011565186",
+      "compiler": "bc31"
+    },
+    {
+      "name": "EGA",
+      "source": "src/EGA.ASM",
+      "sha256": "89f95c677cf3deccc0f8e0bfc04271c117b79513c90215d24192a871da7f7a40",
+      "compiler": "tasm31-ega"
+    },
+    {
+      "name": "GPF",
+      "source": "src/GPF.C",
+      "sha256": "fe87c6ac364ba0a6f0184e15c1cbbf586e09c4d74379e61447a8ff5e0a65abd6",
+      "compiler": "bc2"
+    },
+    {
+      "name": "LZSS",
+      "source": "src/LZSS.ASM",
+      "sha256": "35f6e1c8f501f4178bffa44fbab2ebb18b9046cdf3574500830f07acbfe8cb07",
+      "compiler": "tasm31"
+    },
+    {
+      "name": "SNDATA",
+      "source": "src/SNDATA.C",
+      "sha256": "4b4e404f961fe028d9a0da3d6cb8fbc9d0ec8c2b68a4acbd92256ddc5e2d6552",
+      "compiler": "bc31"
+    }
+  ],
+  "all_paths_are_build_inputs_or_source_metadata": true,
+  "reads_reference_executable": false,
+  "note": "Header inventory records the supplied include tree; individual include use is compiler-dependent."
+}

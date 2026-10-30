@@ -1,0 +1,320 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 027F1H 027F2H _TEXT              CODE
+ 027F2H 02B0CH 0031BH LOGICTST_TEXT      CODE
+ 02B0DH 0375AH 00C4EH LOGIC_TEXT         CODE
+ 03760H 03760H 00000H _FARDATA           FAR_DATA
+ 03760H 03760H 00000H _FARBSS            FAR_BSS
+ 03760H 03760H 00000H _OVERLAY_          OVRINFO
+ 03760H 03760H 00000H _1STUB_            STUBSEG
+ 03760H 03BA7H 00448H _DATA              DATA
+ 03BA8H 03BA9H 00002H _CVTSEG            DATA
+ 03BAAH 03BAFH 00006H _SCNSEG            DATA
+ 03BB0H 03BB0H 00000H _CONST             CONST
+ 03BB0H 03BBBH 0000CH _INIT_             INITDATA
+ 03BBCH 03BBCH 00000H _INITEND_          INITDATA
+ 03BBCH 03BBCH 00000H _EXIT_             EXITDATA
+ 03BBCH 03BBCH 00000H _EXITEND_          EXITDATA
+ 03BBCH 03F89H 003CEH _BSS               BSS
+ 03F8AH 03F8AH 00000H _BSSEND            BSSEND
+ 03F90H 0400FH 00080H _STACK             STACK
+
+  Address         Publics by Name
+
+ 0376:0000       DATASEG@
+ 0000:0291       DGROUP@
+ 0000:03B1       F_LXLSH@
+ 0000:03D2       F_PADD@
+ 0000:0401       F_PSUB@
+ 0000:0392       F_SCOPY@
+ 0000:03B1       LXLSH@
+ 0000:03AE       N_LXLSH@
+ 0000:060C       N_LXMUL@
+ 0000:03CF       N_PADD@
+ 0000:0623       N_PCMP@
+ 0000:03FE       N_PSUB@
+ 0000:03D2       PADD@
+ 0000:0401       PSUB@
+ 0000:0392       SCOPY@
+ 0000:027A       _abort
+ 0000:0295       _atexit
+ 0000:1376       _close
+ 0000:13BC       _eof
+ 0376:007F       _errno
+ 0000:0357       _exit
+ 0000:0DB3       _farfree
+ 0000:0EC7       _farmalloc
+ 0000:102B       _farrealloc
+ 0000:1433       _fclose
+ 0000:14EB       _fflush
+ 0000:1C38       _fgetc
+ 0000:1D26       _fgetchar
+ 0000:15B8       _flushall
+ 0000:17D1       _fopen
+ 0000:1FA0       _fputc
+ 0000:2135       _fputchar
+ 0000:18FA       _fread
+ 0000:0DB3       _free
+ 0000:1A0A       _fseek
+ 0000:1A8A       _ftell
+ 0000:11E5       _ioctl
+ 0000:047A       _isatty
+ 0000:052D       _lseek
+ 027F:002E       _main
+ 0000:0EBD       _malloc
+ 0000:1D32       _memcmp
+ 0000:1D5A       _memcpy
+ 0000:1DAB       _open
+ 0000:1F69       _printf
+ 0000:234C       _puts
+ 0000:1024       _realloc
+ 02B0:091F       _sb_apply_move
+ 02B0:0492       _sb_choose_direction
+ 02B0:015B       _sb_compare_matches
+ 02B0:077A       _sb_make_board
+ 02B0:03C3       _sb_make_view
+ 02B0:01B1       _sb_match_card
+ 02B0:000D       _sb_mirror_x
+ 02B0:07E3       _sb_relabel_tail
+ 02B0:00B4       _sb_rotate_clockwise
+ 02B0:0B36       _sb_seed_snake_step
+ 02B0:0BCF       _sb_select_pending_slot
+ 02B0:088F       _sb_trim_tail
+ 0000:133D       _setblock
+ 0000:2475       _setvbuf
+ 0000:2592       _strcat
+ 0000:25D1       _strlen
+ 0000:072D       _unlink
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 0376:0432       __argc
+ 0376:0434       __argv
+ 0376:0162       __atexitcnt
+ 0376:0798       __atexittbl
+ 0000:111B       __brk
+ 0376:008B       __brklvl
+ 0376:006B       __C0argc
+ 0376:006D       __C0argv
+ 0376:0071       __C0environ
+ 0000:0378       __cexit
+ 0000:016A       __checknull
+ 0000:1359       __chmod
+ 0000:0157       __cleanup
+ 0000:139E       __close
+ 0000:0000  Abs  __cvtfak
+ 0000:0386       __c_exit
+ 0376:032E       __doserrno
+ 0000:0468       __DOSERROR
+ 0376:0330       __dosErrorToSV
+ 0000:02C2       __dos_getfileattr
+ 0000:02E2       __dos_setfileattr
+ 0376:0075       __envLng
+ 0376:0077       __envseg
+ 0376:0079       __envSize
+ 0000:0366       __exit
+ 0376:0164       __exitbuf
+ 0376:0168       __exitfopen
+ 0376:016C       __exitopen
+ 0000:1C20       __fgetc
+ 0376:032A       __fmode
+ 0000:1F84       __fputc
+ 0000:2149       __FPUTN
+ 0000:1787       __GETFP
+ 0376:0087       __heapbase
+ 0376:008F       __heaptop
+ 0376:005B       __Int0Vector
+ 0376:005F       __Int4Vector
+ 0376:0063       __Int5Vector
+ 0376:0067       __Int6Vector
+ 0000:042F       __IOERROR
+ 0000:048B       __LONGTOA
+ 0000:0556       __MKNAME
+ 0000:0293       __MMODEL
+ 0000:1C35       __Nfgetc
+ 0376:0300       __nfile
+ 0376:032C       __notUmask
+ 0000:1F1A       __open
+ 0376:0302       __openfd
+ 0000:16B6       __OPENFP
+ 0376:007D       __osmajor
+ 0376:007E       __osminor
+ 0376:007D       __osversion
+ 0376:007B       __psp
+ 0000:0644       __read
+ 0000:120E       __REALCVT
+ 0376:0448       __RealCvtVector
+ 0000:01C0       __restorezero
+ 0000:115A       __sbrk
+ 0376:044A       __ScanTodVector
+ 0000:0000  Abs  __setargv__
+ 0000:0673       __setupio
+ 0376:0081       __StartTime
+ 0376:0394       __stklen
+ 0000:0C20       __stpcpy
+ 0376:0170       __streams
+ 0000:016B       __terminate
+ 0000:05B3       __TMPNAM
+ 0000:050D       __UTOA
+ 0376:007D       __version
+ 0000:075D       __VPRINTER
+ 0000:2741       __write
+ 0000:277D       __xfclose
+ 0000:27BA       __xfflush
+ 0376:0085       ___brklvl
+ 0000:0C73       ___first
+ 0000:0C75       ___last
+ 0000:23A4       ___read
+ 0000:0C77       ___rover
+ 0000:25F0       ___write
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __setargv__
+ 0000:0000  Abs  __cvtfak
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0157       __cleanup
+ 0000:016A       __checknull
+ 0000:016B       __terminate
+ 0000:01C0       __restorezero
+ 0000:027A       _abort
+ 0000:0291       DGROUP@
+ 0000:0293       __MMODEL
+ 0000:0295       _atexit
+ 0000:02C2       __dos_getfileattr
+ 0000:02E2       __dos_setfileattr
+ 0000:0357       _exit
+ 0000:0366       __exit
+ 0000:0378       __cexit
+ 0000:0386       __c_exit
+ 0000:0392       F_SCOPY@
+ 0000:0392       SCOPY@
+ 0000:03AE       N_LXLSH@
+ 0000:03B1       LXLSH@
+ 0000:03B1       F_LXLSH@
+ 0000:03CF       N_PADD@
+ 0000:03D2       F_PADD@
+ 0000:03D2       PADD@
+ 0000:03FE       N_PSUB@
+ 0000:0401       F_PSUB@
+ 0000:0401       PSUB@
+ 0000:042F       __IOERROR
+ 0000:0468       __DOSERROR
+ 0000:047A       _isatty
+ 0000:048B       __LONGTOA
+ 0000:050D       __UTOA
+ 0000:052D       _lseek
+ 0000:0556       __MKNAME
+ 0000:05B3       __TMPNAM
+ 0000:060C       N_LXMUL@
+ 0000:0623       N_PCMP@
+ 0000:0644       __read
+ 0000:0673       __setupio
+ 0000:072D       _unlink
+ 0000:075D       __VPRINTER
+ 0000:0C20       __stpcpy
+ 0000:0C73       ___first
+ 0000:0C75       ___last
+ 0000:0C77       ___rover
+ 0000:0DB3       _free
+ 0000:0DB3       _farfree
+ 0000:0EBD       _malloc
+ 0000:0EC7       _farmalloc
+ 0000:1000  Abs  __AHINCR
+ 0000:1024       _realloc
+ 0000:102B       _farrealloc
+ 0000:111B       __brk
+ 0000:115A       __sbrk
+ 0000:11E5       _ioctl
+ 0000:120E       __REALCVT
+ 0000:133D       _setblock
+ 0000:1359       __chmod
+ 0000:1376       _close
+ 0000:139E       __close
+ 0000:13BC       _eof
+ 0000:1433       _fclose
+ 0000:14EB       _fflush
+ 0000:15B8       _flushall
+ 0000:16B6       __OPENFP
+ 0000:1787       __GETFP
+ 0000:17D1       _fopen
+ 0000:18FA       _fread
+ 0000:1A0A       _fseek
+ 0000:1A8A       _ftell
+ 0000:1C20       __fgetc
+ 0000:1C35       __Nfgetc
+ 0000:1C38       _fgetc
+ 0000:1D26       _fgetchar
+ 0000:1D32       _memcmp
+ 0000:1D5A       _memcpy
+ 0000:1DAB       _open
+ 0000:1F1A       __open
+ 0000:1F69       _printf
+ 0000:1F84       __fputc
+ 0000:1FA0       _fputc
+ 0000:2135       _fputchar
+ 0000:2149       __FPUTN
+ 0000:234C       _puts
+ 0000:23A4       ___read
+ 0000:2475       _setvbuf
+ 0000:2592       _strcat
+ 0000:25D1       _strlen
+ 0000:25F0       ___write
+ 0000:2741       __write
+ 0000:277D       __xfclose
+ 0000:27BA       __xfflush
+ 027F:002E       _main
+ 02B0:000D       _sb_mirror_x
+ 02B0:00B4       _sb_rotate_clockwise
+ 02B0:015B       _sb_compare_matches
+ 02B0:01B1       _sb_match_card
+ 02B0:03C3       _sb_make_view
+ 02B0:0492       _sb_choose_direction
+ 02B0:077A       _sb_make_board
+ 02B0:07E3       _sb_relabel_tail
+ 02B0:088F       _sb_trim_tail
+ 02B0:091F       _sb_apply_move
+ 02B0:0B36       _sb_seed_snake_step
+ 02B0:0BCF       _sb_select_pending_slot
+ 0376:0000       DATASEG@
+ 0376:005B       __Int0Vector
+ 0376:005F       __Int4Vector
+ 0376:0063       __Int5Vector
+ 0376:0067       __Int6Vector
+ 0376:006B       __C0argc
+ 0376:006D       __C0argv
+ 0376:0071       __C0environ
+ 0376:0075       __envLng
+ 0376:0077       __envseg
+ 0376:0079       __envSize
+ 0376:007B       __psp
+ 0376:007D       __osversion
+ 0376:007D       __osmajor
+ 0376:007D       __version
+ 0376:007E       __osminor
+ 0376:007F       _errno
+ 0376:0081       __StartTime
+ 0376:0085       ___brklvl
+ 0376:0087       __heapbase
+ 0376:008B       __brklvl
+ 0376:008F       __heaptop
+ 0376:0162       __atexitcnt
+ 0376:0164       __exitbuf
+ 0376:0168       __exitfopen
+ 0376:016C       __exitopen
+ 0376:0170       __streams
+ 0376:0300       __nfile
+ 0376:0302       __openfd
+ 0376:032A       __fmode
+ 0376:032C       __notUmask
+ 0376:032E       __doserrno
+ 0376:0330       __dosErrorToSV
+ 0376:0394       __stklen
+ 0376:0432       __argc
+ 0376:0434       __argv
+ 0376:0448       __RealCvtVector
+ 0376:044A       __ScanTodVector
+ 0376:0798       __atexittbl
+
+Program entry point at 0000:0000
+

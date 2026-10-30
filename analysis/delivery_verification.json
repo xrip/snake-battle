@@ -1,0 +1,30 @@
+{
+  "kind": "Delivery integrity checks; build and behavioral evidence remain separate",
+  "whole_EXE_equal": true,
+  "file_size": 102326,
+  "sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "reference_files_verified_unchanged": 26,
+  "build_input_hashes_verified": 101,
+  "fresh_application_build": true,
+  "fresh_original_CRT_extraction": true,
+  "all_sound_C_compiler_matched": false,
+  "adlib_selected_semantic_functions": 52,
+  "adlib_selected_semantic_cases": 2404,
+  "midi_selected_semantic_summary": {
+    "functions": 21,
+    "passed_functions": 21,
+    "cases": 172,
+    "passed_cases": 172,
+    "all_selected_cases_equal": true,
+    "complete_module_semantics_proven": false,
+    "compiler_byte_exact_proven": false
+  },
+  "report": {
+    "filename": "snake-battle-report.html",
+    "sha256": "1add91021c10a4a40a9f296c7df164af731bd9d23fbdcf7a4e275c599965d063",
+    "sections": 14,
+    "broken_internal_links": [],
+    "duplicate_ids": [],
+    "external_assets": []
+  }
+}

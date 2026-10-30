@@ -1,0 +1,19 @@
+{
+  "language": "C89",
+  "compiler_observed": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+  "flags": "-std=c89 -pedantic -Wall -Wextra -Werror",
+  "streams_verified": 94,
+  "members": 82,
+  "byte_exact": true,
+  "original_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+  "rebuilt_sha256": "f4cdf17fe0b0d2b6630b7dbb99c453469219dada00f89372530182809e8c7a68",
+  "builder_reads_original_archive": false,
+  "source": [
+    "src/gpfcodec.c",
+    "src/gpfcodec.h",
+    "src/gpfbuild.c",
+    "src/gpfindex.h",
+    "src/gpftest.c"
+  ],
+  "borland_validation": "separate build log owned by integration; not asserted by this host check"
+}

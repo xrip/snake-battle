@@ -1,0 +1,14 @@
+{
+  "source_sha256": "c4e064a1cf15e438017d4d6443817424f816ce4b749fcc279f2d97dc7bd86821",
+  "checks": {
+    "mirror": 150,
+    "rotate": 150,
+    "matcher": 700,
+    "comparator": 64,
+    "decrypt_wrapper": 1
+  },
+  "total": 1065,
+  "passed": true,
+  "scope": "Original machine code for mirror, rotate, matcher, score comparator, and driver decrypt wrapper. No full DOS or EGA runtime.",
+  "seed": 357795187525
+}

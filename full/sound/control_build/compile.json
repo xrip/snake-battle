@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "SOUND.C": "8730b9dd3ae133a9b0876d99146a980f191b28d9e68fb9fb06184ec2a7e9d80e",
+    "SNDATA.C": "e27685820ba1d9c28d0cbeadfb70cc1bc348b51bdf53b3316d628fbc597aebf6",
+    "SOUND.H": "31d2bb517c31f57fbdcc2efe791ca81f6e9f7485f7b50caee99a7140ebc240be",
+    "MIDISND.C": "0ff296b79082f1d8c50942b4ca9523c018e335d28046e69fb018db67a0217a1d",
+    "ADLIB.C": "ae5712bc8e611c9fc797636e7e2f05d40dc8f0ef7bca326f6931f0dd35ec7347",
+    "SNDATA.H": "762c8cfbc12f57f8d34f0638bf7b6766abaf6e2130a968d87424d74dcebc5899",
+    "MIDISND.H": "447a798d98474b3c3f078ea8a78a903ea835738d8232d742cabfb7b9646febe9",
+    "ADLIB.H": "ffb6e9d3f062f3c72762863c61c0730e0d9ff33defff1fb9af1d1d221f154e4f"
+  },
+  "flags": "/AS /G2 /Gs /Ox /Zp1",
+  "seconds": 2.342,
+  "files": [
+    "SOUND.C"
+  ],
+  "dpmi": "hdpmi32 -r"
+}

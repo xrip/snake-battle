@@ -1,0 +1,92 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/PARA.OBJ",
+  "object_sha256": "187c2e90597bdd0b5bab7cdbd338f2d4f3a1b6f541c8e5fc748816c80e24452e",
+  "module": "para.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3704,
+    "image_offset": 95752,
+    "address": "1679:0E78"
+  },
+  "file_offset": 99848,
+  "object_size": 39,
+  "expected_size": 39,
+  "public_bindings": [
+    {
+      "name": "_sb_para_strings",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3704,
+        "image_offset": 95752,
+        "address": "1679:0E78"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3704,
+        "image_offset": 95752,
+        "address": "1679:0E78"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e78",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3704,
+        "image_offset": 95752,
+        "address": "1679:0E78"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3704,
+        "image_offset": 95752,
+        "address": "1679:0E78"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_0e88",
+      "object_offset": 16,
+      "expected": {
+        "segment": 5753,
+        "offset": 3720,
+        "image_offset": 95768,
+        "address": "1679:0E88"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3720,
+        "image_offset": 95768,
+        "address": "1679:0E88"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      39
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "ccbe8ae0134096997ce894ddd6398bb2e7d1bc39e01daa0064c9bd01e157046a",
+  "original_sha256": "ccbe8ae0134096997ce894ddd6398bb2e7d1bc39e01daa0064c9bd01e157046a",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

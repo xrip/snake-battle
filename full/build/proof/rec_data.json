@@ -1,0 +1,109 @@
+{
+  "object": "/workspace/scratch/488b0609771f/snake-battle-recovered/full/build/linkobj/REC.OBJ",
+  "object_sha256": "dc40c69097de1886edd108814ea2aaeaa0890204a761324645b108b98a80671f",
+  "module": "rec.c",
+  "segment_index": 2,
+  "segment_name": "_DATA",
+  "segment_class": "DATA",
+  "target": {
+    "segment": 5753,
+    "offset": 3770,
+    "image_offset": 95818,
+    "address": "1679:0EBA"
+  },
+  "file_offset": 99914,
+  "object_size": 76,
+  "expected_size": 76,
+  "public_bindings": [
+    {
+      "name": "_rec_error_packed",
+      "object_offset": 47,
+      "expected": {
+        "segment": 5753,
+        "offset": 3817,
+        "image_offset": 95865,
+        "address": "1679:0EE9"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3817,
+        "image_offset": 95865,
+        "address": "1679:0EE9"
+      },
+      "equal": true
+    },
+    {
+      "name": "_rec_error_read",
+      "object_offset": 24,
+      "expected": {
+        "segment": 5753,
+        "offset": 3794,
+        "image_offset": 95842,
+        "address": "1679:0ED2"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3794,
+        "image_offset": 95842,
+        "address": "1679:0ED2"
+      },
+      "equal": true
+    },
+    {
+      "name": "_rec_error_write",
+      "object_offset": 0,
+      "expected": {
+        "segment": 5753,
+        "offset": 3770,
+        "image_offset": 95818,
+        "address": "1679:0EBA"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3770,
+        "image_offset": 95818,
+        "address": "1679:0EBA"
+      },
+      "equal": true
+    },
+    {
+      "name": "_rec_push_flag",
+      "object_offset": 74,
+      "expected": {
+        "segment": 5753,
+        "offset": 3844,
+        "image_offset": 95892,
+        "address": "1679:0F04"
+      },
+      "binding": {
+        "segment": 5753,
+        "offset": 3844,
+        "image_offset": 95892,
+        "address": "1679:0F04"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      76
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "3d49cdfc426b4ad4bf1a0a8cb0437f5c6fb2fe900e9f10eb0eb530e72744f5ae",
+  "original_sha256": "3d49cdfc426b4ad4bf1a0a8cb0437f5c6fb2fe900e9f10eb0eb530e72744f5ae",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false,
+  "storage": "data"
+}

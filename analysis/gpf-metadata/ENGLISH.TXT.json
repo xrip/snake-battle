@@ -1,0 +1,435 @@
+{
+  "format": "DOS CP866 CRLF text",
+  "lines": [
+    {
+      "index": 0,
+      "characters": 106,
+      "text": "  !@#$% &   _   QWERTYUIOP{}  ASDFGHJKL  ~  ZXCVBNM .  1234567890-   QWERTYUIOP    ASDFGHJKL '   ZXCVBNM ."
+    },
+    {
+      "index": 1,
+      "characters": 108,
+      "text": "  !@#$%^&*()_+  QWERTYUIOP{}  ASDFGHJKL:\"~ |ZXCVBNM<>? 1234567890-=\\ qwertyuiop[]  asdfghjkl;'` \\zxcvbnm,./ "
+    },
+    {
+      "index": 2,
+      "characters": 48,
+      "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\\[];',./ "
+    },
+    {
+      "index": 3,
+      "characters": 48,
+      "text": "abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:\"<>? "
+    },
+    {
+      "index": 4,
+      "characters": 48,
+      "text": "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890`-=\\[];',./ "
+    },
+    {
+      "index": 5,
+      "characters": 48,
+      "text": "abcdefghijklmnopqrstuvwxyz!@#$%^&*()~_+|{}:\"<>? "
+    },
+    {
+      "index": 6,
+      "characters": 6,
+      "text": "BATTLE"
+    },
+    {
+      "index": 7,
+      "characters": 16,
+      "text": "MAKE SNAKE BRAIN"
+    },
+    {
+      "index": 8,
+      "characters": 12,
+      "text": "CHOOSE COLOR"
+    },
+    {
+      "index": 9,
+      "characters": 13,
+      "text": "EDIT PASSWORD"
+    },
+    {
+      "index": 10,
+      "characters": 9,
+      "text": "     HELP"
+    },
+    {
+      "index": 11,
+      "characters": 14,
+      "text": "ACKNOWLEDGMENT"
+    },
+    {
+      "index": 12,
+      "characters": 12,
+      "text": "NEW PASSWORD"
+    },
+    {
+      "index": 13,
+      "characters": 4,
+      "text": "MAIL"
+    },
+    {
+      "index": 14,
+      "characters": 4,
+      "text": "EXIT"
+    },
+    {
+      "index": 15,
+      "characters": 6,
+      "text": "NOVICE"
+    },
+    {
+      "index": 16,
+      "characters": 8,
+      "text": "ADVANCED"
+    },
+    {
+      "index": 17,
+      "characters": 6,
+      "text": "EXPERT"
+    },
+    {
+      "index": 18,
+      "characters": 4,
+      "text": "Name"
+    },
+    {
+      "index": 19,
+      "characters": 7,
+      "text": "Raiting"
+    },
+    {
+      "index": 20,
+      "characters": 8,
+      "text": "Comments"
+    },
+    {
+      "index": 21,
+      "characters": 6,
+      "text": "  PLAY"
+    },
+    {
+      "index": 22,
+      "characters": 6,
+      "text": "  SLOW"
+    },
+    {
+      "index": 23,
+      "characters": 6,
+      "text": "  STOP"
+    },
+    {
+      "index": 24,
+      "characters": 6,
+      "text": " SOUND"
+    },
+    {
+      "index": 25,
+      "characters": 9,
+      "text": "MAIN MENU"
+    },
+    {
+      "index": 26,
+      "characters": 8,
+      "text": "own head"
+    },
+    {
+      "index": 27,
+      "characters": 10,
+      "text": "enemy head"
+    },
+    {
+      "index": 28,
+      "characters": 8,
+      "text": "own body"
+    },
+    {
+      "index": 29,
+      "characters": 10,
+      "text": "enemy body"
+    },
+    {
+      "index": 30,
+      "characters": 8,
+      "text": "own tail"
+    },
+    {
+      "index": 31,
+      "characters": 10,
+      "text": "enemy tail"
+    },
+    {
+      "index": 32,
+      "characters": 7,
+      "text": "barrier"
+    },
+    {
+      "index": 33,
+      "characters": 7,
+      "text": "  space"
+    },
+    {
+      "index": 34,
+      "characters": 6,
+      "text": "EXCEPT"
+    },
+    {
+      "index": 35,
+      "characters": 8,
+      "text": "OR-COLOR"
+    },
+    {
+      "index": 36,
+      "characters": 9,
+      "text": "AND-COLOR"
+    },
+    {
+      "index": 37,
+      "characters": 9,
+      "text": "EDIT CARD"
+    },
+    {
+      "index": 38,
+      "characters": 11,
+      "text": "INSERT CARD"
+    },
+    {
+      "index": 39,
+      "characters": 11,
+      "text": "DELETE CARD"
+    },
+    {
+      "index": 40,
+      "characters": 9,
+      "text": "MAIN MENU"
+    },
+    {
+      "index": 41,
+      "characters": 10,
+      "text": "FOR EXPERT"
+    },
+    {
+      "index": 42,
+      "characters": 12,
+      "text": "FOR ADVANCED"
+    },
+    {
+      "index": 43,
+      "characters": 9,
+      "text": "Password:"
+    },
+    {
+      "index": 44,
+      "characters": 12,
+      "text": "New password"
+    },
+    {
+      "index": 45,
+      "characters": 4,
+      "text": "EXIT"
+    },
+    {
+      "index": 46,
+      "characters": 16,
+      "text": "Wrong snake file"
+    },
+    {
+      "index": 47,
+      "characters": 10,
+      "text": "Enter word"
+    },
+    {
+      "index": 48,
+      "characters": 7,
+      "text": "Page %d"
+    },
+    {
+      "index": 49,
+      "characters": 7,
+      "text": "Line %d"
+    },
+    {
+      "index": 50,
+      "characters": 11,
+      "text": "Position %d"
+    },
+    {
+      "index": 51,
+      "characters": 9,
+      "text": "Column %c"
+    },
+    {
+      "index": 52,
+      "characters": 6,
+      "text": "Row %d"
+    },
+    {
+      "index": 53,
+      "characters": 16,
+      "text": "Check_in number:"
+    },
+    {
+      "index": 54,
+      "characters": 19,
+      "text": "Number of attempts:"
+    },
+    {
+      "index": 55,
+      "characters": 13,
+      "text": "Net password:"
+    },
+    {
+      "index": 56,
+      "characters": 14,
+      "text": "File for mail:"
+    },
+    {
+      "index": 57,
+      "characters": 16,
+      "text": "Cann`t open file"
+    },
+    {
+      "index": 58,
+      "characters": 28,
+      "text": "Not possible in demo version"
+    },
+    {
+      "index": 59,
+      "characters": 25,
+      "text": "Not saved in demo version"
+    },
+    {
+      "index": 60,
+      "characters": 12,
+      "text": "Demo version"
+    },
+    {
+      "index": 61,
+      "characters": 20,
+      "text": "Not possible in demo"
+    },
+    {
+      "index": 62,
+      "characters": 34,
+      "text": "Author of idea and game designer: "
+    },
+    {
+      "index": 63,
+      "characters": 20,
+      "text": "     Eugene SOTNIKOV"
+    },
+    {
+      "index": 64,
+      "characters": 11,
+      "text": "Programmer:"
+    },
+    {
+      "index": 65,
+      "characters": 19,
+      "text": "     Victor Lioutyi"
+    },
+    {
+      "index": 66,
+      "characters": 11,
+      "text": "Painters:  "
+    },
+    {
+      "index": 67,
+      "characters": 38,
+      "text": "     Sergey Belov         Gena Denisov"
+    },
+    {
+      "index": 68,
+      "characters": 6,
+      "text": "Sound:"
+    },
+    {
+      "index": 69,
+      "characters": 27,
+      "text": "     Konstantin Mironovitch"
+    },
+    {
+      "index": 70,
+      "characters": 25,
+      "text": "Take part in development:"
+    },
+    {
+      "index": 71,
+      "characters": 39,
+      "text": "     Dmitry Maslov        Dmitry Dolgov"
+    },
+    {
+      "index": 72,
+      "characters": 18,
+      "text": "Special thanks to:"
+    },
+    {
+      "index": 73,
+      "characters": 40,
+      "text": "     Mikle Nicolaenko     Dmitry Pashcov"
+    },
+    {
+      "index": 74,
+      "characters": 39,
+      "text": "     Nataly Dmitrieva     Elena Tumakov"
+    },
+    {
+      "index": 75,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 76,
+      "characters": 31,
+      "text": "Other games developed by Gamos:"
+    },
+    {
+      "index": 77,
+      "characters": 40,
+      "text": "     7Colors(Filler), Branch, Wildsnake,"
+    },
+    {
+      "index": 78,
+      "characters": 43,
+      "text": "     Tetriller, Gamos logik serial, Regata."
+    },
+    {
+      "index": 79,
+      "characters": 40,
+      "text": "Address: GAMOS, the Olympic Village, 27,"
+    },
+    {
+      "index": 80,
+      "characters": 31,
+      "text": "         Moskow, 117602, Russia"
+    },
+    {
+      "index": 81,
+      "characters": 40,
+      "text": "Fax: (095)437-5629, Phone: (095)437-5672"
+    },
+    {
+      "index": 82,
+      "characters": 1,
+      "text": "%"
+    },
+    {
+      "index": 83,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 84,
+      "characters": 0,
+      "text": ""
+    },
+    {
+      "index": 85,
+      "characters": 1,
+      "text": "\u001a"
+    }
+  ]
+}

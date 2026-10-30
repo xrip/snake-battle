@@ -1,0 +1,238 @@
+{
+  "object": "work/midi-analysis/build/MR1DDB.OBJ",
+  "object_sha256": "1c72eb6ba88099f6ba84a1caa593c95419f3876c3f48ff7444116713e88ca287",
+  "module": "MR1DDB.ASM",
+  "segment_index": 1,
+  "segment_name": "_TEXT",
+  "segment_class": "CODE",
+  "target": {
+    "segment": 4929,
+    "offset": 7643,
+    "image_offset": 86507,
+    "address": "1341:1DDB"
+  },
+  "file_offset": 90603,
+  "object_size": 63,
+  "expected_size": 63,
+  "public_bindings": [
+    {
+      "name": "_snd_1DDB",
+      "object_offset": 0,
+      "expected": {
+        "segment": 4929,
+        "offset": 7643,
+        "image_offset": 86507,
+        "address": "1341:1DDB"
+      },
+      "binding": {
+        "segment": 4929,
+        "offset": 7643,
+        "image_offset": 86507,
+        "address": "1341:1DDB"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "initialized_ranges": [
+    [
+      0,
+      63
+    ]
+  ],
+  "unresolved": [],
+  "fixups": [
+    {
+      "object_offset": 1,
+      "function_offset": 1,
+      "omf_fixup": {
+        "record_offset": 316,
+        "subrecord_offset": 0,
+        "offset": 1,
+        "width": 2,
+        "location_type": 1,
+        "mode": "segment_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 2,
+          "name": "_DATA"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 3,
+          "name": "_snd_voices"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 5753,
+        "offset": 21888,
+        "image_offset": 113936,
+        "address": "1679:5580"
+      },
+      "frame": 5753,
+      "before_hex": "0000",
+      "after_hex": "8055",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 40,
+      "function_offset": 40,
+      "omf_fixup": {
+        "record_offset": 316,
+        "subrecord_offset": 5,
+        "offset": 40,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "_TEXT"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 1,
+          "name": "_snd_1DC6"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 7622,
+        "image_offset": 86486,
+        "address": "1341:1DC6"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "c1ff",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 46,
+      "function_offset": 46,
+      "omf_fixup": {
+        "record_offset": 316,
+        "subrecord_offset": 10,
+        "offset": 46,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "_TEXT"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_snd_312B"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 12587,
+        "image_offset": 91451,
+        "address": "1341:312B"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "2013",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 52,
+      "function_offset": 52,
+      "omf_fixup": {
+        "record_offset": 316,
+        "subrecord_offset": 15,
+        "offset": 52,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "_TEXT"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_snd_312B"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 12587,
+        "image_offset": 91451,
+        "address": "1341:312B"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "1a13",
+      "relaxation": null,
+      "resolved": true
+    },
+    {
+      "object_offset": 58,
+      "function_offset": 58,
+      "omf_fixup": {
+        "record_offset": 316,
+        "subrecord_offset": 20,
+        "offset": 58,
+        "width": 2,
+        "location_type": 1,
+        "mode": "self_relative",
+        "frame": {
+          "method": 0,
+          "method_name": "segment",
+          "datum": 1,
+          "name": "_TEXT"
+        },
+        "target": {
+          "method": 2,
+          "method_name": "external",
+          "datum": 2,
+          "name": "_snd_312B"
+        },
+        "displacement": 0
+      },
+      "target": {
+        "segment": 4929,
+        "offset": 12587,
+        "image_offset": 91451,
+        "address": "1341:312B"
+      },
+      "frame": 4929,
+      "before_hex": "0000",
+      "after_hex": "1413",
+      "relaxation": null,
+      "resolved": true
+    }
+  ],
+  "relocations": [],
+  "original_relocations": [],
+  "relocation_sites_equal": true,
+  "relocation_order_equal": true,
+  "relocation_representation_equal": true,
+  "mismatches": [],
+  "byte_exact": true,
+  "relocated_sha256": "d327b9606ee802533cc6fae6c917dca0db1c03889332f20165760d2bdfd2b4c0",
+  "original_sha256": "d327b9606ee802533cc6fae6c917dca0db1c03889332f20165760d2bdfd2b4c0",
+  "passed": true,
+  "complete_segment_contribution_proven": true,
+  "complete_executable_proven": false
+}

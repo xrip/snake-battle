@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "source_hashes": {
+    "START.C": "39d535182c3b3387b4f91abe6d418751e41eda1e2120b49bbd5ff84124fdca14",
+    "UI.C": "df247e2fdf469fb04870390cf5c5fc93c0d927cb9225d90445996fb3b181f5db",
+    "INPUT.C": "5784b09e313c3b05f4a8ac688073f64e1a481bd2e452f2d77dd738ac942a9884",
+    "MUSIC.C": "18f332426bccb5bbdbb0fc822cf202a8419f6eeaeb4595018dccbe8310f4c192",
+    "INPUT.H": "15257853eede90c89fa641adde1ccd394bf5cc1a47d7cf2d04710ab4f2790e2c",
+    "UI.H": "68f35b91f52104c11db9bd939d3bc7471786a27a88e6e3287cbf43d276f0be13"
+  },
+  "flags": "-ml -a- -k- -O -r- -Z -G-",
+  "seconds": 2.733,
+  "files": [
+    "UI.C"
+  ]
+}

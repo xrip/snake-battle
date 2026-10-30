@@ -1,0 +1,328 @@
+{
+  "abi": {
+    "compiler": "Borland C++ 3.1 C89",
+    "model": "large",
+    "alignment": 1,
+    "int": 2,
+    "long": 4,
+    "data_pointer": 4,
+    "driver_call": "far pascal"
+  },
+  "globals": [
+    {
+      "name": "g_0db2",
+      "omf_symbol": "_g_0db2",
+      "address": "1679:0DB2",
+      "declaration": "extern int g_0db2,g_0db4,g_1af6;",
+      "extent": 2,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "0000"
+    },
+    {
+      "name": "g_0db4",
+      "omf_symbol": "_g_0db4",
+      "address": "1679:0DB4",
+      "declaration": "extern int g_0db2,g_0db4,g_1af6;",
+      "extent": 2,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "0100"
+    },
+    {
+      "name": "g_0dd9",
+      "omf_symbol": "_g_0dd9",
+      "address": "1679:0DD9",
+      "declaration": "extern char g_0dd9[],g_0de6[],g_0df3[],g_0e00[],g_0e0d[],g_0e1a[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "7273687269665f312e626c6f00"
+    },
+    {
+      "name": "g_0de6",
+      "omf_symbol": "_g_0de6",
+      "address": "1679:0DE6",
+      "declaration": "extern char g_0dd9[],g_0de6[],g_0df3[],g_0e00[],g_0e0d[],g_0e1a[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "7377736872695f312e626c6f00"
+    },
+    {
+      "name": "g_0df3",
+      "omf_symbol": "_g_0df3",
+      "address": "1679:0DF3",
+      "declaration": "extern char g_0dd9[],g_0de6[],g_0df3[],g_0e00[],g_0e0d[],g_0e1a[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "7368726966745f312e626c6f00"
+    },
+    {
+      "name": "g_0e00",
+      "omf_symbol": "_g_0e00",
+      "address": "1679:0E00",
+      "declaration": "extern char g_0dd9[],g_0de6[],g_0df3[],g_0e00[],g_0e0d[],g_0e1a[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "7273687269665f322e626c6f00"
+    },
+    {
+      "name": "g_0e0d",
+      "omf_symbol": "_g_0e0d",
+      "address": "1679:0E0D",
+      "declaration": "extern char g_0dd9[],g_0de6[],g_0df3[],g_0e00[],g_0e0d[],g_0e1a[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "7377736872695f322e626c6f00"
+    },
+    {
+      "name": "g_0e1a",
+      "omf_symbol": "_g_0e1a",
+      "address": "1679:0E1A",
+      "declaration": "extern char g_0dd9[],g_0de6[],g_0df3[],g_0e00[],g_0e0d[],g_0e1a[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "7368726966745f322e626c6f00"
+    },
+    {
+      "name": "g_0e27",
+      "omf_symbol": "_g_0e27",
+      "address": "1679:0E27",
+      "declaration": "extern char g_0e27[],g_0e2a[],g_0e35[],g_0e42[];",
+      "extent": 3,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "256400"
+    },
+    {
+      "name": "g_0e2a",
+      "omf_symbol": "_g_0e2a",
+      "address": "1679:0E2A",
+      "declaration": "extern char g_0e27[],g_0e2a[],g_0e35[],g_0e42[];",
+      "extent": 11,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "6b7572736f722e626c6f00"
+    },
+    {
+      "name": "g_0e35",
+      "omf_symbol": "_g_0e35",
+      "address": "1679:0E35",
+      "declaration": "extern char g_0e27[],g_0e2a[],g_0e35[],g_0e42[];",
+      "extent": 13,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "70757a7a6c65206572726f7200"
+    },
+    {
+      "name": "g_0e42",
+      "omf_symbol": "_g_0e42",
+      "address": "1679:0E42",
+      "declaration": "extern char g_0e27[],g_0e2a[],g_0e35[],g_0e42[];",
+      "extent": 10,
+      "storage": "initialized",
+      "access": "RENDER.C",
+      "initializer_hex": "736e616b652e67706600"
+    },
+    {
+      "name": "g_19bf",
+      "omf_symbol": "_g_19bf",
+      "address": "1679:19BF",
+      "declaration": "extern char g_19bf;",
+      "extent": 1,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_1af6",
+      "omf_symbol": "_g_1af6",
+      "address": "1679:1AF6",
+      "declaration": "extern int g_0db2,g_0db4,g_1af6;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_3c42",
+      "omf_symbol": "_g_3c42",
+      "address": "1679:3C42",
+      "declaration": "extern Glyph g_3c42[256];",
+      "extent": 1024,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_4042",
+      "omf_symbol": "_g_4042",
+      "address": "1679:4042",
+      "declaration": "extern char *g_4042,*g_4046,*g_40ae;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_4046",
+      "omf_symbol": "_g_4046",
+      "address": "1679:4046",
+      "declaration": "extern char *g_4042,*g_4046,*g_40ae;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_404a",
+      "omf_symbol": "_g_404a",
+      "address": "1679:404A",
+      "declaration": "extern Image *g_404a,*g_404e,*g_4052;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_404e",
+      "omf_symbol": "_g_404e",
+      "address": "1679:404E",
+      "declaration": "extern Image *g_404a,*g_404e,*g_4052;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_4052",
+      "omf_symbol": "_g_4052",
+      "address": "1679:4052",
+      "declaration": "extern Image *g_404a,*g_404e,*g_4052;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_4056",
+      "omf_symbol": "_g_4056",
+      "address": "1679:4056",
+      "declaration": "extern int g_4056,g_4058;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_4058",
+      "omf_symbol": "_g_4058",
+      "address": "1679:4058",
+      "declaration": "extern int g_4056,g_4058;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_405a",
+      "omf_symbol": "_g_405a",
+      "address": "1679:405A",
+      "declaration": "extern Image g_405a,g_407a;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_407a",
+      "omf_symbol": "_g_407a",
+      "address": "1679:407A",
+      "declaration": "extern Image g_405a,g_407a;",
+      "extent": 32,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_409a",
+      "omf_symbol": "_g_409a",
+      "address": "1679:409A",
+      "declaration": "extern int g_409a,g_40a4,g_40b6;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_409c",
+      "omf_symbol": "_g_409c",
+      "address": "1679:409C",
+      "declaration": "extern Image *g_409c[2],*g_40b8,*g_40bc;",
+      "extent": 8,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40a4",
+      "omf_symbol": "_g_40a4",
+      "address": "1679:40A4",
+      "declaration": "extern int g_409a,g_40a4,g_40b6;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40ae",
+      "omf_symbol": "_g_40ae",
+      "address": "1679:40AE",
+      "declaration": "extern char *g_4042,*g_4046,*g_40ae;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40b2",
+      "omf_symbol": "_g_40b2",
+      "address": "1679:40B2",
+      "declaration": "extern Cursor *g_40b2;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40b6",
+      "omf_symbol": "_g_40b6",
+      "address": "1679:40B6",
+      "declaration": "extern int g_409a,g_40a4,g_40b6;",
+      "extent": 2,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40b8",
+      "omf_symbol": "_g_40b8",
+      "address": "1679:40B8",
+      "declaration": "extern Image *g_409c[2],*g_40b8,*g_40bc;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40bc",
+      "omf_symbol": "_g_40bc",
+      "address": "1679:40BC",
+      "declaration": "extern Image *g_409c[2],*g_40b8,*g_40bc;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    },
+    {
+      "name": "g_40c4",
+      "omf_symbol": "_g_40c4",
+      "address": "1679:40C4",
+      "declaration": "extern Driver g_40c4;",
+      "extent": 4,
+      "storage": "BSS",
+      "access": "RENDER.C"
+    }
+  ],
+  "compiler_generated_data": {
+    "address": "1679:0DB6",
+    "extent": 35,
+    "proof": "module_data.json",
+    "declarations": "english.txt, russian.txt, sweden.txt initialized automatic arrays"
+  }
+}

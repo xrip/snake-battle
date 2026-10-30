@@ -1,0 +1,3061 @@
+[
+  {
+    "module": "START",
+    "include": "START_state.inc",
+    "section": "state",
+    "anchor": "_sb_main_state",
+    "storage": "BSS",
+    "address": "1679:1826",
+    "size": 388,
+    "aliases": [
+      {
+        "name": "_resource_names",
+        "address": "1679:1826",
+        "offset": 0
+      },
+      {
+        "name": "_g1826",
+        "address": "1679:1826",
+        "offset": 0
+      },
+      {
+        "name": "_button_background",
+        "address": "1679:1976",
+        "offset": 336
+      },
+      {
+        "name": "_g1976",
+        "address": "1679:1976",
+        "offset": 336
+      },
+      {
+        "name": "_g197a",
+        "address": "1679:197A",
+        "offset": 340
+      },
+      {
+        "name": "_icons_by_level",
+        "address": "1679:197E",
+        "offset": 344
+      },
+      {
+        "name": "_g197e",
+        "address": "1679:197E",
+        "offset": 344
+      },
+      {
+        "name": "_g_198a",
+        "address": "1679:198A",
+        "offset": 356
+      },
+      {
+        "name": "_card_slot_image",
+        "address": "1679:198E",
+        "offset": 360
+      },
+      {
+        "name": "_g198e",
+        "address": "1679:198E",
+        "offset": 360
+      },
+      {
+        "name": "_g_198e",
+        "address": "1679:198E",
+        "offset": 360
+      },
+      {
+        "name": "_card_tiles",
+        "address": "1679:1992",
+        "offset": 364
+      },
+      {
+        "name": "_g1992",
+        "address": "1679:1992",
+        "offset": 364
+      },
+      {
+        "name": "_g1996",
+        "address": "1679:1996",
+        "offset": 368
+      },
+      {
+        "name": "_g199a",
+        "address": "1679:199A",
+        "offset": 372
+      },
+      {
+        "name": "_g199e",
+        "address": "1679:199E",
+        "offset": 376
+      },
+      {
+        "name": "_button_off",
+        "address": "1679:19A2",
+        "offset": 380
+      },
+      {
+        "name": "_g19a2",
+        "address": "1679:19A2",
+        "offset": 380
+      },
+      {
+        "name": "_g_19a2",
+        "address": "1679:19A2",
+        "offset": 380
+      },
+      {
+        "name": "_button_on",
+        "address": "1679:19A6",
+        "offset": 384
+      },
+      {
+        "name": "_g19a6",
+        "address": "1679:19A6",
+        "offset": 384
+      },
+      {
+        "name": "_g_19a6",
+        "address": "1679:19A6",
+        "offset": 384
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char *text[84]",
+        "offset": 0,
+        "size": 336,
+        "initializer": null
+      },
+      {
+        "declaration": "void *button_background",
+        "offset": 336,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *passport",
+        "offset": 340,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *level[3]",
+        "offset": 344,
+        "size": 12,
+        "initializer": null
+      },
+      {
+        "declaration": "void *game_board",
+        "offset": 356,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *slot",
+        "offset": 360,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *tiles",
+        "offset": 364,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *menu",
+        "offset": 368,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *panel",
+        "offset": 372,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *cassette",
+        "offset": 376,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *button_off",
+        "offset": 380,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *button_on",
+        "offset": 384,
+        "size": 4,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "INPUT",
+    "include": "INPUT_state.inc",
+    "section": "state",
+    "anchor": "_sb_input_state",
+    "storage": "BSS",
+    "address": "1679:19AA",
+    "size": 22,
+    "aliases": [
+      {
+        "name": "_sound_enabled",
+        "address": "1679:19AA",
+        "offset": 0
+      },
+      {
+        "name": "_g_19aa",
+        "address": "1679:19AA",
+        "offset": 0
+      },
+      {
+        "name": "_input_state",
+        "address": "1679:19AC",
+        "offset": 2
+      },
+      {
+        "name": "_input_buttons",
+        "address": "1679:19BC",
+        "offset": 18
+      },
+      {
+        "name": "_g_19bc",
+        "address": "1679:19BC",
+        "offset": 18
+      },
+      {
+        "name": "_input_modifiers",
+        "address": "1679:19BE",
+        "offset": 20
+      },
+      {
+        "name": "_input_key",
+        "address": "1679:19BF",
+        "offset": 21
+      },
+      {
+        "name": "_g_19bf",
+        "address": "1679:19BF",
+        "offset": 21
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "int sound",
+        "offset": 0,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "InputState mouse",
+        "offset": 2,
+        "size": 16,
+        "initializer": null
+      },
+      {
+        "declaration": "int buttons",
+        "offset": 18,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "unsigned char modifiers",
+        "offset": 20,
+        "size": 1,
+        "initializer": null
+      },
+      {
+        "declaration": "unsigned char key",
+        "offset": 21,
+        "size": 1,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "MUSIC",
+    "include": "MUSIC_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_music_defaults",
+    "storage": "DATA",
+    "address": "1679:0094",
+    "size": 52,
+    "aliases": [
+      {
+        "name": "_music_available",
+        "address": "1679:0094",
+        "offset": 0
+      },
+      {
+        "name": "_music_playing",
+        "address": "1679:0096",
+        "offset": 2
+      },
+      {
+        "name": "_resource_error",
+        "address": "1679:0098",
+        "offset": 4
+      },
+      {
+        "name": "_music_suffix",
+        "address": "1679:00B0",
+        "offset": 28
+      },
+      {
+        "name": "_music_error",
+        "address": "1679:00B5",
+        "offset": 33
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "int available",
+        "offset": 0,
+        "size": 2,
+        "initializer": "0"
+      },
+      {
+        "declaration": "int playing",
+        "offset": 2,
+        "size": 2,
+        "initializer": "0"
+      },
+      {
+        "declaration": "char resource_error[24]",
+        "offset": 4,
+        "size": 24,
+        "initializer": "\"File isn't in archive: \""
+      },
+      {
+        "declaration": "char suffix[5]",
+        "offset": 28,
+        "size": 5,
+        "initializer": "\".mid\""
+      },
+      {
+        "declaration": "char error[19]",
+        "offset": 33,
+        "size": 19,
+        "initializer": "\"Can not play music\""
+      }
+    ]
+  },
+  {
+    "module": "MUSIC",
+    "include": "MUSIC_state.inc",
+    "section": "state",
+    "anchor": "_sb_music_state",
+    "storage": "BSS",
+    "address": "1679:19C0",
+    "size": 8,
+    "aliases": [
+      {
+        "name": "_music_hardware",
+        "address": "1679:19C0",
+        "offset": 0
+      },
+      {
+        "name": "_music_data",
+        "address": "1679:19C4",
+        "offset": 4
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "unsigned hardware[2]",
+        "offset": 0,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *data",
+        "offset": 4,
+        "size": 4,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "UI",
+    "include": "UI_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_ui_layout",
+    "storage": "DATA",
+    "address": "1679:00C8",
+    "size": 376,
+    "aliases": [
+      {
+        "name": "_g00c8",
+        "address": "1679:00C8",
+        "offset": 0
+      },
+      {
+        "name": "_g00e8",
+        "address": "1679:00E8",
+        "offset": 32
+      },
+      {
+        "name": "_g0128",
+        "address": "1679:0128",
+        "offset": 96
+      },
+      {
+        "name": "_g01a0",
+        "address": "1679:01A0",
+        "offset": 216
+      },
+      {
+        "name": "_g0218",
+        "address": "1679:0218",
+        "offset": 336
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "Point toolbar[8]",
+        "offset": 0,
+        "size": 32,
+        "initializer": "{{107,136},{268,136},{81,266},{277,266},{39,288},{184,288},{350,320},{350,288}}"
+      },
+      {
+        "declaration": "Rect windows[8]",
+        "offset": 32,
+        "size": 64,
+        "initializer": "{{36,26,221,143},{240,26,425,143},{36,156,221,273},{240,156,425,273},{36,286,160,298},{170,286,294,298},{350,320,420,330},{304,286,428,298}}"
+      },
+      {
+        "declaration": "Rect buttons[15]",
+        "offset": 96,
+        "size": 120,
+        "initializer": "{{498,7,607,24},{498,28,607,45},{498,49,607,66},{498,70,607,87},{498,113,607,130},{498,134,607,151},{498,155,607,172},{498,176,607,193},{498,197,607,214},{498,218,607,235},{498,239,607,256},{498,260,607,277},{498,281,607,298},{498,302,607,319},{498,323,607,340}}"
+      },
+      {
+        "declaration": "Slot slots[15]",
+        "offset": 216,
+        "size": 120,
+        "initializer": "{{0,1,0},{1,1,0},{2,1,0},{3,1,0},{4,1,0},{5,1,0},{6,1,0},{7,1,0},{8,1,0},{9,1,0},{10,1,0},{11,1,0},{12,1,0},{13,1,0},{14,1,0}}"
+      },
+      {
+        "declaration": "Rect passport[5]",
+        "offset": 336,
+        "size": 40,
+        "initializer": "{{36,92,221,106},{36,103,221,117},{36,114,221,128},{36,26,221,143},{0,0,640,350}}"
+      }
+    ]
+  },
+  {
+    "module": "UI",
+    "include": "UI_suffix.inc",
+    "section": "suffix",
+    "anchor": "_sb_ui_strings",
+    "storage": "DATA",
+    "address": "1679:02AB",
+    "size": 257,
+    "aliases": [
+      {
+        "name": "_g02ab",
+        "address": "1679:02AB",
+        "offset": 0
+      },
+      {
+        "name": "_g02af",
+        "address": "1679:02AF",
+        "offset": 4
+      },
+      {
+        "name": "_g02b3",
+        "address": "1679:02B3",
+        "offset": 8
+      },
+      {
+        "name": "_g02b7",
+        "address": "1679:02B7",
+        "offset": 12
+      },
+      {
+        "name": "_g02bb",
+        "address": "1679:02BB",
+        "offset": 16
+      },
+      {
+        "name": "_g02bf",
+        "address": "1679:02BF",
+        "offset": 20
+      },
+      {
+        "name": "_g02c3",
+        "address": "1679:02C3",
+        "offset": 24
+      },
+      {
+        "name": "_g02c7",
+        "address": "1679:02C7",
+        "offset": 28
+      },
+      {
+        "name": "_g02cb",
+        "address": "1679:02CB",
+        "offset": 32
+      },
+      {
+        "name": "_g02cf",
+        "address": "1679:02CF",
+        "offset": 36
+      },
+      {
+        "name": "_g02d3",
+        "address": "1679:02D3",
+        "offset": 40
+      },
+      {
+        "name": "_g02d5",
+        "address": "1679:02D5",
+        "offset": 42
+      },
+      {
+        "name": "_g02d8",
+        "address": "1679:02D8",
+        "offset": 45
+      },
+      {
+        "name": "_g02dd",
+        "address": "1679:02DD",
+        "offset": 50
+      },
+      {
+        "name": "_g02e7",
+        "address": "1679:02E7",
+        "offset": 60
+      },
+      {
+        "name": "_g02f3",
+        "address": "1679:02F3",
+        "offset": 72
+      },
+      {
+        "name": "_g02fe",
+        "address": "1679:02FE",
+        "offset": 83
+      },
+      {
+        "name": "_g0309",
+        "address": "1679:0309",
+        "offset": 94
+      },
+      {
+        "name": "_g0316",
+        "address": "1679:0316",
+        "offset": 107
+      },
+      {
+        "name": "_g0321",
+        "address": "1679:0321",
+        "offset": 118
+      },
+      {
+        "name": "_g032b",
+        "address": "1679:032B",
+        "offset": 128
+      },
+      {
+        "name": "_g0337",
+        "address": "1679:0337",
+        "offset": 140
+      },
+      {
+        "name": "_g0342",
+        "address": "1679:0342",
+        "offset": 151
+      },
+      {
+        "name": "_g034f",
+        "address": "1679:034F",
+        "offset": 164
+      },
+      {
+        "name": "_g035c",
+        "address": "1679:035C",
+        "offset": 177
+      },
+      {
+        "name": "_g0368",
+        "address": "1679:0368",
+        "offset": 189
+      },
+      {
+        "name": "_g0373",
+        "address": "1679:0373",
+        "offset": 200
+      },
+      {
+        "name": "_g037f",
+        "address": "1679:037F",
+        "offset": 212
+      },
+      {
+        "name": "_g038c",
+        "address": "1679:038C",
+        "offset": 225
+      },
+      {
+        "name": "_g0398",
+        "address": "1679:0398",
+        "offset": 237
+      },
+      {
+        "name": "_g03a2",
+        "address": "1679:03A2",
+        "offset": 247
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_02ab[4]",
+        "offset": 0,
+        "size": 4,
+        "initializer": "\"RE0\""
+      },
+      {
+        "declaration": "char text_02af[4]",
+        "offset": 4,
+        "size": 4,
+        "initializer": "\"RE1\""
+      },
+      {
+        "declaration": "char text_02b3[4]",
+        "offset": 8,
+        "size": 4,
+        "initializer": "\"RE2\""
+      },
+      {
+        "declaration": "char text_02b7[4]",
+        "offset": 12,
+        "size": 4,
+        "initializer": "\"RE3\""
+      },
+      {
+        "declaration": "char text_02bb[4]",
+        "offset": 16,
+        "size": 4,
+        "initializer": "\"RE4\""
+      },
+      {
+        "declaration": "char text_02bf[4]",
+        "offset": 20,
+        "size": 4,
+        "initializer": "\"RE5\""
+      },
+      {
+        "declaration": "char text_02c3[4]",
+        "offset": 24,
+        "size": 4,
+        "initializer": "\"RE6\""
+      },
+      {
+        "declaration": "char text_02c7[4]",
+        "offset": 28,
+        "size": 4,
+        "initializer": "\"RE7\""
+      },
+      {
+        "declaration": "char text_02cb[4]",
+        "offset": 32,
+        "size": 4,
+        "initializer": "\"REC\""
+      },
+      {
+        "declaration": "char text_02cf[4]",
+        "offset": 36,
+        "size": 4,
+        "initializer": "\"SNK\""
+      },
+      {
+        "declaration": "char text_02d3[2]",
+        "offset": 40,
+        "size": 2,
+        "initializer": "\".\""
+      },
+      {
+        "declaration": "char text_02d5[3]",
+        "offset": 42,
+        "size": 3,
+        "initializer": "\"wb\""
+      },
+      {
+        "declaration": "char text_02d8[5]",
+        "offset": 45,
+        "size": 5,
+        "initializer": "\"mus3\""
+      },
+      {
+        "declaration": "char text_02dd[10]",
+        "offset": 50,
+        "size": 10,
+        "initializer": "\"keyup.blo\""
+      },
+      {
+        "declaration": "char text_02e7[12]",
+        "offset": 60,
+        "size": 12,
+        "initializer": "\"keydown.blo\""
+      },
+      {
+        "declaration": "char text_02f3[11]",
+        "offset": 72,
+        "size": 11,
+        "initializer": "\"pict-c.blo\""
+      },
+      {
+        "declaration": "char text_02fe[11]",
+        "offset": 83,
+        "size": 11,
+        "initializer": "\"novice.blo\""
+      },
+      {
+        "declaration": "char text_0309[13]",
+        "offset": 94,
+        "size": 13,
+        "initializer": "\"advanced.blo\""
+      },
+      {
+        "declaration": "char text_0316[11]",
+        "offset": 107,
+        "size": 11,
+        "initializer": "\"expert.blo\""
+      },
+      {
+        "declaration": "char text_0321[10]",
+        "offset": 118,
+        "size": 10,
+        "initializer": "\"munup.blo\""
+      },
+      {
+        "declaration": "char text_032b[12]",
+        "offset": 128,
+        "size": 12,
+        "initializer": "\"mundown.blo\""
+      },
+      {
+        "declaration": "char text_0337[11]",
+        "offset": 140,
+        "size": 11,
+        "initializer": "\"panel1.blo\""
+      },
+      {
+        "declaration": "char text_0342[13]",
+        "offset": 151,
+        "size": 13,
+        "initializer": "\"rpasopen.blo\""
+      },
+      {
+        "declaration": "char text_034f[13]",
+        "offset": 164,
+        "size": 13,
+        "initializer": "\"rclscard.blo\""
+      },
+      {
+        "declaration": "char text_035c[12]",
+        "offset": 177,
+        "size": 12,
+        "initializer": "\"coldown.blo\""
+      },
+      {
+        "declaration": "char text_0368[11]",
+        "offset": 189,
+        "size": 11,
+        "initializer": "\"col-up.blo\""
+      },
+      {
+        "declaration": "char text_0373[12]",
+        "offset": 200,
+        "size": 12,
+        "initializer": "\"zahvat1.blo\""
+      },
+      {
+        "declaration": "char text_037f[13]",
+        "offset": 212,
+        "size": 13,
+        "initializer": "\"zah_kass.blo\""
+      },
+      {
+        "declaration": "char text_038c[12]",
+        "offset": 225,
+        "size": 12,
+        "initializer": "\"kassets.blo\""
+      },
+      {
+        "declaration": "char text_0398[10]",
+        "offset": 237,
+        "size": 10,
+        "initializer": "\"plan1.blo\""
+      },
+      {
+        "declaration": "char text_03a2[10]",
+        "offset": 247,
+        "size": 10,
+        "initializer": "\"color.blo\""
+      }
+    ]
+  },
+  {
+    "module": "UI",
+    "include": "UI_state.inc",
+    "section": "state",
+    "anchor": "_sb_ui_state",
+    "storage": "BSS",
+    "address": "1679:19C8",
+    "size": 304,
+    "aliases": [
+      {
+        "name": "_g19e8",
+        "address": "1679:19E8",
+        "offset": 32
+      },
+      {
+        "name": "_g19ec",
+        "address": "1679:19EC",
+        "offset": 36
+      },
+      {
+        "name": "_g19fa",
+        "address": "1679:19FA",
+        "offset": 50
+      },
+      {
+        "name": "_g19fe",
+        "address": "1679:19FE",
+        "offset": 54
+      },
+      {
+        "name": "_g1a02",
+        "address": "1679:1A02",
+        "offset": 58
+      },
+      {
+        "name": "_g1ac2",
+        "address": "1679:1AC2",
+        "offset": 250
+      },
+      {
+        "name": "_g1ac6",
+        "address": "1679:1AC6",
+        "offset": 254
+      },
+      {
+        "name": "_g1aca",
+        "address": "1679:1ACA",
+        "offset": 258
+      },
+      {
+        "name": "_g1ace",
+        "address": "1679:1ACE",
+        "offset": 262
+      },
+      {
+        "name": "_g1ad2",
+        "address": "1679:1AD2",
+        "offset": 266
+      },
+      {
+        "name": "_g1ad6",
+        "address": "1679:1AD6",
+        "offset": 270
+      },
+      {
+        "name": "_g1aee",
+        "address": "1679:1AEE",
+        "offset": 294
+      },
+      {
+        "name": "_g1af2",
+        "address": "1679:1AF2",
+        "offset": 298
+      },
+      {
+        "name": "_g_1af2",
+        "address": "1679:1AF2",
+        "offset": 298
+      },
+      {
+        "name": "_g1af4",
+        "address": "1679:1AF4",
+        "offset": 300
+      },
+      {
+        "name": "_g_1af4",
+        "address": "1679:1AF4",
+        "offset": 300
+      },
+      {
+        "name": "_game_quit",
+        "address": "1679:1AF6",
+        "offset": 302
+      },
+      {
+        "name": "_g1af6",
+        "address": "1679:1AF6",
+        "offset": 302
+      },
+      {
+        "name": "_g_1af6",
+        "address": "1679:1AF6",
+        "offset": 302
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "unsigned char reserved_image[32]",
+        "offset": 0,
+        "size": 32,
+        "initializer": null
+      },
+      {
+        "declaration": "void *saved_screen",
+        "offset": 32,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "int selection_values[7]",
+        "offset": 36,
+        "size": 14,
+        "initializer": null
+      },
+      {
+        "declaration": "FileNode *files",
+        "offset": 50,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "int menu_y[2]",
+        "offset": 54,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "unsigned char saved_images[6][32]",
+        "offset": 58,
+        "size": 192,
+        "initializer": null
+      },
+      {
+        "declaration": "void *up",
+        "offset": 250,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *down",
+        "offset": 254,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *highlight",
+        "offset": 258,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *held",
+        "offset": 262,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *released",
+        "offset": 266,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "void *panels[6]",
+        "offset": 270,
+        "size": 24,
+        "initializer": null
+      },
+      {
+        "declaration": "void *colors",
+        "offset": 294,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "int game_mode",
+        "offset": 298,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int unlocked",
+        "offset": 300,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int quit",
+        "offset": 302,
+        "size": 2,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "GAME",
+    "include": "GAME_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_game_layout",
+    "storage": "DATA",
+    "address": "1679:03AC",
+    "size": 244,
+    "aliases": [
+      {
+        "name": "_g_03ac",
+        "address": "1679:03AC",
+        "offset": 0
+      },
+      {
+        "name": "_g_03cc",
+        "address": "1679:03CC",
+        "offset": 32
+      },
+      {
+        "name": "_g_03ec",
+        "address": "1679:03EC",
+        "offset": 64
+      },
+      {
+        "name": "_g_040c",
+        "address": "1679:040C",
+        "offset": 96
+      },
+      {
+        "name": "_g_043c",
+        "address": "1679:043C",
+        "offset": 144
+      },
+      {
+        "name": "_g_0444",
+        "address": "1679:0444",
+        "offset": 152
+      },
+      {
+        "name": "_g_044c",
+        "address": "1679:044C",
+        "offset": 160
+      },
+      {
+        "name": "_g_047c",
+        "address": "1679:047C",
+        "offset": 208
+      },
+      {
+        "name": "_g_049c",
+        "address": "1679:049C",
+        "offset": 240
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "Rect score_rect[4]",
+        "offset": 0,
+        "size": 32,
+        "initializer": "{{472,7,505,20},{472,28,505,41},{472,49,505,62},{472,70,505,83}}"
+      },
+      {
+        "declaration": "Rect name_rect[4]",
+        "offset": 32,
+        "size": 32,
+        "initializer": "{{518,9,591,19},{518,30,591,40},{518,51,591,61},{518,72,591,82}}"
+      },
+      {
+        "declaration": "Rect mark_rect[4]",
+        "offset": 64,
+        "size": 32,
+        "initializer": "{{604,10,636,18},{604,31,636,39},{604,52,636,60},{604,73,636,81}}"
+      },
+      {
+        "declaration": "Rect status_rect[6]",
+        "offset": 96,
+        "size": 48,
+        "initializer": "{{492,115,614,137},{492,140,614,162},{492,165,614,187},{492,190,614,212},{492,215,614,237},{465,115,614,237}}"
+      },
+      {
+        "declaration": "int direction_x[4]",
+        "offset": 144,
+        "size": 8,
+        "initializer": "{0,1,0,-1}"
+      },
+      {
+        "declaration": "int direction_y[4]",
+        "offset": 152,
+        "size": 8,
+        "initializer": "{-1,0,1,0}"
+      },
+      {
+        "declaration": "Gate gates[4]",
+        "offset": 160,
+        "size": 48,
+        "initializer": "{{219,301,245,306,192,301},{24,151,28,172,24,129},{219,17,245,22,246,17},{435,151,439,172,435,173}}"
+      },
+      {
+        "declaration": "Rect spawn_rect[4]",
+        "offset": 208,
+        "size": 32,
+        "initializer": "{{224,299,239,308},{24,156,32,167},{224,15,239,24},{433,156,442,167}}"
+      },
+      {
+        "declaration": "Match no_match",
+        "offset": 240,
+        "size": 4,
+        "initializer": "{0,0}"
+      }
+    ]
+  },
+  {
+    "module": "GAME",
+    "include": "GAME_suffix.inc",
+    "section": "suffix",
+    "anchor": "_sb_game_strings",
+    "storage": "DATA",
+    "address": "1679:04E9",
+    "size": 134,
+    "aliases": [
+      {
+        "name": "_g_04e9",
+        "address": "1679:04E9",
+        "offset": 0
+      },
+      {
+        "name": "_g_04f5",
+        "address": "1679:04F5",
+        "offset": 12
+      },
+      {
+        "name": "_g_04fa",
+        "address": "1679:04FA",
+        "offset": 17
+      },
+      {
+        "name": "_g_0504",
+        "address": "1679:0504",
+        "offset": 27
+      },
+      {
+        "name": "_g_050d",
+        "address": "1679:050D",
+        "offset": 36
+      },
+      {
+        "name": "_g_0516",
+        "address": "1679:0516",
+        "offset": 45
+      },
+      {
+        "name": "_g_0522",
+        "address": "1679:0522",
+        "offset": 57
+      },
+      {
+        "name": "_g_052e",
+        "address": "1679:052E",
+        "offset": 69
+      },
+      {
+        "name": "_g_053a",
+        "address": "1679:053A",
+        "offset": 81
+      },
+      {
+        "name": "_g_0546",
+        "address": "1679:0546",
+        "offset": 93
+      },
+      {
+        "name": "_g_0548",
+        "address": "1679:0548",
+        "offset": 95
+      },
+      {
+        "name": "_g_0550",
+        "address": "1679:0550",
+        "offset": 103
+      },
+      {
+        "name": "_g_056a",
+        "address": "1679:056A",
+        "offset": 129
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_04e9[12]",
+        "offset": 0,
+        "size": 12,
+        "initializer": "\"bodyall.blo\""
+      },
+      {
+        "declaration": "char text_04f5[5]",
+        "offset": 12,
+        "size": 5,
+        "initializer": "\"mus1\""
+      },
+      {
+        "declaration": "char text_04fa[10]",
+        "offset": 17,
+        "size": 10,
+        "initializer": "\"plan3.blo\""
+      },
+      {
+        "declaration": "char text_0504[9]",
+        "offset": 27,
+        "size": 9,
+        "initializer": "\"card.blo\""
+      },
+      {
+        "declaration": "char text_050d[9]",
+        "offset": 36,
+        "size": 9,
+        "initializer": "\"time.blo\""
+      },
+      {
+        "declaration": "char text_0516[12]",
+        "offset": 45,
+        "size": 12,
+        "initializer": "\"vorota1.blo\""
+      },
+      {
+        "declaration": "char text_0522[12]",
+        "offset": 57,
+        "size": 12,
+        "initializer": "\"vorota2.blo\""
+      },
+      {
+        "declaration": "char text_052e[12]",
+        "offset": 69,
+        "size": 12,
+        "initializer": "\"vorota3.blo\""
+      },
+      {
+        "declaration": "char text_053a[12]",
+        "offset": 81,
+        "size": 12,
+        "initializer": "\"vorota4.blo\""
+      },
+      {
+        "declaration": "char text_0546[2]",
+        "offset": 93,
+        "size": 2,
+        "initializer": "\"\\000\""
+      },
+      {
+        "declaration": "char text_0548[8]",
+        "offset": 95,
+        "size": 8,
+        "initializer": "\"snk.rec\""
+      },
+      {
+        "declaration": "char text_0550[26]",
+        "offset": 103,
+        "size": 26,
+        "initializer": "\"cann't open protocol file\""
+      },
+      {
+        "declaration": "char text_056a[5]",
+        "offset": 129,
+        "size": 5,
+        "initializer": "\"mus3\""
+      }
+    ]
+  },
+  {
+    "module": "GAME",
+    "include": "GAME_state.inc",
+    "section": "state",
+    "anchor": "_sb_game_state",
+    "storage": "BSS",
+    "address": "1679:1AF8",
+    "size": 6641,
+    "aliases": [
+      {
+        "name": "_g_1af8",
+        "address": "1679:1AF8",
+        "offset": 0
+      },
+      {
+        "name": "_g_1b00",
+        "address": "1679:1B00",
+        "offset": 8
+      },
+      {
+        "name": "_g_1b08",
+        "address": "1679:1B08",
+        "offset": 16
+      },
+      {
+        "name": "_g_1b10",
+        "address": "1679:1B10",
+        "offset": 24
+      },
+      {
+        "name": "_g_1b18",
+        "address": "1679:1B18",
+        "offset": 32
+      },
+      {
+        "name": "_g_1b20",
+        "address": "1679:1B20",
+        "offset": 40
+      },
+      {
+        "name": "_g_1b28",
+        "address": "1679:1B28",
+        "offset": 48
+      },
+      {
+        "name": "_g_1b30",
+        "address": "1679:1B30",
+        "offset": 56
+      },
+      {
+        "name": "_g_1b38",
+        "address": "1679:1B38",
+        "offset": 64
+      },
+      {
+        "name": "_g_1b3c",
+        "address": "1679:1B3C",
+        "offset": 68
+      },
+      {
+        "name": "_g_1b40",
+        "address": "1679:1B40",
+        "offset": 72
+      },
+      {
+        "name": "_g_1b41",
+        "address": "1679:1B41",
+        "offset": 73
+      },
+      {
+        "name": "_g_1b43",
+        "address": "1679:1B43",
+        "offset": 75
+      },
+      {
+        "name": "_g_1b45",
+        "address": "1679:1B45",
+        "offset": 77
+      },
+      {
+        "name": "_g_1b4d",
+        "address": "1679:1B4D",
+        "offset": 85
+      },
+      {
+        "name": "_g_1b55",
+        "address": "1679:1B55",
+        "offset": 93
+      },
+      {
+        "name": "_g_30b9",
+        "address": "1679:30B9",
+        "offset": 5569
+      },
+      {
+        "name": "_g_3159",
+        "address": "1679:3159",
+        "offset": 5729
+      },
+      {
+        "name": "_g_3169",
+        "address": "1679:3169",
+        "offset": 5745
+      },
+      {
+        "name": "_g_316d",
+        "address": "1679:316D",
+        "offset": 5749
+      },
+      {
+        "name": "_g_3171",
+        "address": "1679:3171",
+        "offset": 5753
+      },
+      {
+        "name": "_g_3405",
+        "address": "1679:3405",
+        "offset": 6413
+      },
+      {
+        "name": "_g_3409",
+        "address": "1679:3409",
+        "offset": 6417
+      },
+      {
+        "name": "_g_340b",
+        "address": "1679:340B",
+        "offset": 6419
+      },
+      {
+        "name": "_g_340d",
+        "address": "1679:340D",
+        "offset": 6421
+      },
+      {
+        "name": "_g_340f",
+        "address": "1679:340F",
+        "offset": 6423
+      },
+      {
+        "name": "_g_3411",
+        "address": "1679:3411",
+        "offset": 6425
+      },
+      {
+        "name": "_g_3413",
+        "address": "1679:3413",
+        "offset": 6427
+      },
+      {
+        "name": "_g_3415",
+        "address": "1679:3415",
+        "offset": 6429
+      },
+      {
+        "name": "_g_34ad",
+        "address": "1679:34AD",
+        "offset": 6581
+      },
+      {
+        "name": "_g_34af",
+        "address": "1679:34AF",
+        "offset": 6583
+      },
+      {
+        "name": "_g_34b1",
+        "address": "1679:34B1",
+        "offset": 6585
+      },
+      {
+        "name": "_g_34b3",
+        "address": "1679:34B3",
+        "offset": 6587
+      },
+      {
+        "name": "_g_34c3",
+        "address": "1679:34C3",
+        "offset": 6603
+      },
+      {
+        "name": "_g_34d3",
+        "address": "1679:34D3",
+        "offset": 6619
+      },
+      {
+        "name": "_g_34d5",
+        "address": "1679:34D5",
+        "offset": 6621
+      },
+      {
+        "name": "_g_34d7",
+        "address": "1679:34D7",
+        "offset": 6623
+      },
+      {
+        "name": "_g_34e7",
+        "address": "1679:34E7",
+        "offset": 6639
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "int count[4]",
+        "offset": 0,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int alive[4]",
+        "offset": 8,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int active[4]",
+        "offset": 16,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int flag[4]",
+        "offset": 24,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int visits[4]",
+        "offset": 32,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int direction[4]",
+        "offset": 40,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int total[4]",
+        "offset": 48,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int last[4]",
+        "offset": 56,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "Callback callback",
+        "offset": 64,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Card (*patterns)[4][2][9]",
+        "offset": 68,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "char moving",
+        "offset": 72,
+        "size": 1,
+        "initializer": null
+      },
+      {
+        "declaration": "int turn",
+        "offset": 73,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int status",
+        "offset": 75,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int remaining[4]",
+        "offset": 77,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int used[4]",
+        "offset": 85,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "BoardCell board[37][37]",
+        "offset": 93,
+        "size": 5476,
+        "initializer": null
+      },
+      {
+        "declaration": "Image screen[5]",
+        "offset": 5569,
+        "size": 160,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *gate_image[4]",
+        "offset": 5729,
+        "size": 16,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *board_image",
+        "offset": 5745,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *clock_image",
+        "offset": 5749,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Snake snake[4]",
+        "offset": 5753,
+        "size": 660,
+        "initializer": null
+      },
+      {
+        "declaration": "long started",
+        "offset": 6413,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "int paused",
+        "offset": 6417,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int elapsed",
+        "offset": 6419,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int board_left",
+        "offset": 6421,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int board_top",
+        "offset": 6423,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int width",
+        "offset": 6425,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int height",
+        "offset": 6427,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "Card rule",
+        "offset": 6429,
+        "size": 152,
+        "initializer": null
+      },
+      {
+        "declaration": "int selected",
+        "offset": 6581,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int animation",
+        "offset": 6583,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int mode",
+        "offset": 6585,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *head_image[4]",
+        "offset": 6587,
+        "size": 16,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *tail_image[4]",
+        "offset": 6603,
+        "size": 16,
+        "initializer": null
+      },
+      {
+        "declaration": "int current",
+        "offset": 6619,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int player",
+        "offset": 6621,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "Profile *profile[4]",
+        "offset": 6623,
+        "size": 16,
+        "initializer": null
+      },
+      {
+        "declaration": "int rounds",
+        "offset": 6639,
+        "size": 2,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "CARDS",
+    "include": "CARDS_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_card_defaults",
+    "storage": "DATA",
+    "address": "1679:0570",
+    "size": 1653,
+    "aliases": [
+      {
+        "name": "_group_and",
+        "address": "1679:0570",
+        "offset": 0
+      },
+      {
+        "name": "_default_card",
+        "address": "1679:057A",
+        "offset": 10
+      },
+      {
+        "name": "_g057a",
+        "address": "1679:057A",
+        "offset": 10
+      },
+      {
+        "name": "_g_057a",
+        "address": "1679:057A",
+        "offset": 10
+      },
+      {
+        "name": "_default_empty_cell",
+        "address": "1679:0612",
+        "offset": 162
+      },
+      {
+        "name": "_default_header",
+        "address": "1679:0624",
+        "offset": 180
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "int group_and[5]",
+        "offset": 0,
+        "size": 10,
+        "initializer": "{1,0,0,1,1}"
+      },
+      {
+        "declaration": "SnkCard card",
+        "offset": 10,
+        "size": 152,
+        "initializer": "{0,3,3,{{{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9}},{{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9}},{{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9}},{{3,0,9},{3,0,9},{3,0,9},{3,0,8},{3,0,9},{3,0,9},{3,0,9}},{{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9}},{{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9}},{{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9},{3,0,9}}}}"
+      },
+      {
+        "declaration": "CardCell empty",
+        "offset": 162,
+        "size": 3,
+        "initializer": "{3,0,9}"
+      },
+      {
+        "declaration": "CardCell head",
+        "offset": 165,
+        "size": 3,
+        "initializer": "{3,0,8}"
+      },
+      {
+        "declaration": "int reserved_settings[6]",
+        "offset": 168,
+        "size": 12,
+        "initializer": "{111,333,13,1,1,0}"
+      },
+      {
+        "declaration": "Snake snake",
+        "offset": 180,
+        "size": 1473,
+        "initializer": "{{1,0,1,0,1000,\"\",\"\",\"\",{\"\",\"\",\"\"},4},{{0}}}"
+      }
+    ]
+  },
+  {
+    "module": "ASSERT",
+    "include": "ASSERT_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_assert_strings",
+    "storage": "DATA",
+    "address": "1679:0D3A",
+    "size": 60,
+    "aliases": [
+      {
+        "name": "_g_0d3a",
+        "address": "1679:0D3A",
+        "offset": 0
+      },
+      {
+        "name": "_g_0d3e",
+        "address": "1679:0D3E",
+        "offset": 4
+      },
+      {
+        "name": "_g_0d4f",
+        "address": "1679:0D4F",
+        "offset": 21
+      },
+      {
+        "name": "_g_0d57",
+        "address": "1679:0D57",
+        "offset": 29
+      },
+      {
+        "name": "_g_0d5e",
+        "address": "1679:0D5E",
+        "offset": 36
+      },
+      {
+        "name": "_g_0d64",
+        "address": "1679:0D64",
+        "offset": 42
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_0d3a[4]",
+        "offset": 0,
+        "size": 4,
+        "initializer": "\"%s\\n\""
+      },
+      {
+        "declaration": "char text_0d3e[17]",
+        "offset": 4,
+        "size": 17,
+        "initializer": "\"%s violation: %s\""
+      },
+      {
+        "declaration": "char text_0d4f[8]",
+        "offset": 21,
+        "size": 8,
+        "initializer": "\"REQUIRE\""
+      },
+      {
+        "declaration": "char text_0d57[7]",
+        "offset": 29,
+        "size": 7,
+        "initializer": "\"ENSURE\""
+      },
+      {
+        "declaration": "char text_0d5e[6]",
+        "offset": 36,
+        "size": 6,
+        "initializer": "\"CHECK\""
+      },
+      {
+        "declaration": "char text_0d64[18]",
+        "offset": 42,
+        "size": 18,
+        "initializer": "\"Exception : %s %s\""
+      }
+    ]
+  },
+  {
+    "module": "ASSERT",
+    "include": "ASSERT_state.inc",
+    "section": "state",
+    "anchor": "_sb_assert_state",
+    "storage": "BSS",
+    "address": "1679:3AC0",
+    "size": 2,
+    "aliases": [
+      {
+        "name": "_g_3ac0",
+        "address": "1679:3AC0",
+        "offset": 0
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "int enabled",
+        "offset": 0,
+        "size": 2,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "FORMAT",
+    "include": "FORMAT_state.inc",
+    "section": "state",
+    "anchor": "_sb_format_state",
+    "storage": "BSS",
+    "address": "1679:3AC2",
+    "size": 256,
+    "aliases": [
+      {
+        "name": "_g_3ac2",
+        "address": "1679:3AC2",
+        "offset": 0
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text[256]",
+        "offset": 0,
+        "size": 256,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "REGISTER",
+    "include": "REGISTER_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_register_defaults",
+    "storage": "DATA",
+    "address": "1679:0D76",
+    "size": 6,
+    "aliases": [
+      {
+        "name": "_g_0d76",
+        "address": "1679:0D76",
+        "offset": 0
+      },
+      {
+        "name": "_g_0d7a",
+        "address": "1679:0D7A",
+        "offset": 4
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char *filename",
+        "offset": 0,
+        "size": 4,
+        "initializer": "sb_psw_name"
+      },
+      {
+        "declaration": "int enabled",
+        "offset": 4,
+        "size": 2,
+        "initializer": "1"
+      }
+    ]
+  },
+  {
+    "module": "REGISTER",
+    "include": "REGISTER_suffix.inc",
+    "section": "suffix",
+    "anchor": "_sb_register_strings",
+    "storage": "DATA",
+    "address": "1679:0D8E",
+    "size": 35,
+    "aliases": [
+      {
+        "name": "_g_0d8e",
+        "address": "1679:0D8E",
+        "offset": 0
+      },
+      {
+        "name": "_g_0d91",
+        "address": "1679:0D91",
+        "offset": 3
+      },
+      {
+        "name": "_g_0d97",
+        "address": "1679:0D97",
+        "offset": 9
+      },
+      {
+        "name": "_g_0d9a",
+        "address": "1679:0D9A",
+        "offset": 12
+      },
+      {
+        "name": "_g_0da4",
+        "address": "1679:0DA4",
+        "offset": 22
+      },
+      {
+        "name": "_g_0dae",
+        "address": "1679:0DAE",
+        "offset": 32
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_0d8e[3]",
+        "offset": 0,
+        "size": 3,
+        "initializer": "\"\\\\*\""
+      },
+      {
+        "declaration": "char text_0d91[6]",
+        "offset": 3,
+        "size": 6,
+        "initializer": "\"*.exe\""
+      },
+      {
+        "declaration": "char text_0d97[3]",
+        "offset": 9,
+        "size": 3,
+        "initializer": "\"rb\""
+      },
+      {
+        "declaration": "char text_0d9a[10]",
+        "offset": 12,
+        "size": 10,
+        "initializer": "\"passw.rus\""
+      },
+      {
+        "declaration": "char text_0da4[10]",
+        "offset": 22,
+        "size": 10,
+        "initializer": "\"passw.eng\""
+      },
+      {
+        "declaration": "char text_0dae[3]",
+        "offset": 32,
+        "size": 3,
+        "initializer": "\"wb\""
+      }
+    ]
+  },
+  {
+    "module": "REGISTER",
+    "section": "existing_suffix",
+    "anchor": "_sb_psw_name",
+    "storage": "DATA",
+    "address": "1679:0D84",
+    "size": 10,
+    "aliases": [],
+    "fields": []
+  },
+  {
+    "module": "REGISTER",
+    "include": "REGISTER_state.inc",
+    "section": "state",
+    "anchor": "_sb_register_state",
+    "storage": "BSS",
+    "address": "1679:3BC2",
+    "size": 128,
+    "aliases": [
+      {
+        "name": "_g_3bc2",
+        "address": "1679:3BC2",
+        "offset": 0
+      },
+      {
+        "name": "_g_3c3a",
+        "address": "1679:3C3A",
+        "offset": 120
+      },
+      {
+        "name": "_g_3c3e",
+        "address": "1679:3C3E",
+        "offset": 124
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "Stamp cache[15]",
+        "offset": 0,
+        "size": 120,
+        "initializer": null
+      },
+      {
+        "declaration": "Challenge *challenge",
+        "offset": 120,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "ChallengeList *list",
+        "offset": 124,
+        "size": 4,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "RENDER",
+    "include": "RENDER_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_render_defaults",
+    "storage": "DATA",
+    "address": "1679:0DB2",
+    "size": 4,
+    "aliases": [
+      {
+        "name": "_g_0db2",
+        "address": "1679:0DB2",
+        "offset": 0
+      },
+      {
+        "name": "_g_0db4",
+        "address": "1679:0DB4",
+        "offset": 2
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "int update",
+        "offset": 0,
+        "size": 2,
+        "initializer": "0"
+      },
+      {
+        "declaration": "int active",
+        "offset": 2,
+        "size": 2,
+        "initializer": "1"
+      }
+    ]
+  },
+  {
+    "module": "RENDER",
+    "include": "RENDER_suffix.inc",
+    "section": "suffix",
+    "anchor": "_sb_render_strings",
+    "storage": "DATA",
+    "address": "1679:0DD9",
+    "size": 115,
+    "aliases": [
+      {
+        "name": "_g_0dd9",
+        "address": "1679:0DD9",
+        "offset": 0
+      },
+      {
+        "name": "_g_0de6",
+        "address": "1679:0DE6",
+        "offset": 13
+      },
+      {
+        "name": "_g_0df3",
+        "address": "1679:0DF3",
+        "offset": 26
+      },
+      {
+        "name": "_g_0e00",
+        "address": "1679:0E00",
+        "offset": 39
+      },
+      {
+        "name": "_g_0e0d",
+        "address": "1679:0E0D",
+        "offset": 52
+      },
+      {
+        "name": "_g_0e1a",
+        "address": "1679:0E1A",
+        "offset": 65
+      },
+      {
+        "name": "_g_0e27",
+        "address": "1679:0E27",
+        "offset": 78
+      },
+      {
+        "name": "_g_0e2a",
+        "address": "1679:0E2A",
+        "offset": 81
+      },
+      {
+        "name": "_g_0e35",
+        "address": "1679:0E35",
+        "offset": 92
+      },
+      {
+        "name": "_g_0e42",
+        "address": "1679:0E42",
+        "offset": 105
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_0dd9[13]",
+        "offset": 0,
+        "size": 13,
+        "initializer": "\"rshrif_1.blo\""
+      },
+      {
+        "declaration": "char text_0de6[13]",
+        "offset": 13,
+        "size": 13,
+        "initializer": "\"swshri_1.blo\""
+      },
+      {
+        "declaration": "char text_0df3[13]",
+        "offset": 26,
+        "size": 13,
+        "initializer": "\"shrift_1.blo\""
+      },
+      {
+        "declaration": "char text_0e00[13]",
+        "offset": 39,
+        "size": 13,
+        "initializer": "\"rshrif_2.blo\""
+      },
+      {
+        "declaration": "char text_0e0d[13]",
+        "offset": 52,
+        "size": 13,
+        "initializer": "\"swshri_2.blo\""
+      },
+      {
+        "declaration": "char text_0e1a[13]",
+        "offset": 65,
+        "size": 13,
+        "initializer": "\"shrift_2.blo\""
+      },
+      {
+        "declaration": "char text_0e27[3]",
+        "offset": 78,
+        "size": 3,
+        "initializer": "\"%d\""
+      },
+      {
+        "declaration": "char text_0e2a[11]",
+        "offset": 81,
+        "size": 11,
+        "initializer": "\"kursor.blo\""
+      },
+      {
+        "declaration": "char text_0e35[13]",
+        "offset": 92,
+        "size": 13,
+        "initializer": "\"puzzle error\""
+      },
+      {
+        "declaration": "char text_0e42[10]",
+        "offset": 105,
+        "size": 10,
+        "initializer": "\"snake.gpf\""
+      }
+    ]
+  },
+  {
+    "module": "RENDER",
+    "include": "RENDER_state.inc",
+    "section": "state",
+    "anchor": "_sb_render_state",
+    "storage": "BSS",
+    "address": "1679:3C42",
+    "size": 1150,
+    "aliases": [
+      {
+        "name": "_g_3c42",
+        "address": "1679:3C42",
+        "offset": 0
+      },
+      {
+        "name": "_g_4042",
+        "address": "1679:4042",
+        "offset": 1024
+      },
+      {
+        "name": "_g_4046",
+        "address": "1679:4046",
+        "offset": 1028
+      },
+      {
+        "name": "_g_404a",
+        "address": "1679:404A",
+        "offset": 1032
+      },
+      {
+        "name": "_g_404e",
+        "address": "1679:404E",
+        "offset": 1036
+      },
+      {
+        "name": "_g_4052",
+        "address": "1679:4052",
+        "offset": 1040
+      },
+      {
+        "name": "_g_4056",
+        "address": "1679:4056",
+        "offset": 1044
+      },
+      {
+        "name": "_g_4058",
+        "address": "1679:4058",
+        "offset": 1046
+      },
+      {
+        "name": "_g_405a",
+        "address": "1679:405A",
+        "offset": 1048
+      },
+      {
+        "name": "_g_409a",
+        "address": "1679:409A",
+        "offset": 1112
+      },
+      {
+        "name": "_g_409c",
+        "address": "1679:409C",
+        "offset": 1114
+      },
+      {
+        "name": "_g_40a4",
+        "address": "1679:40A4",
+        "offset": 1122
+      },
+      {
+        "name": "_g_40a6",
+        "address": "1679:40A6",
+        "offset": 1124
+      },
+      {
+        "name": "_g_40ae",
+        "address": "1679:40AE",
+        "offset": 1132
+      },
+      {
+        "name": "_g_40b2",
+        "address": "1679:40B2",
+        "offset": 1136
+      },
+      {
+        "name": "_g_40b6",
+        "address": "1679:40B6",
+        "offset": 1140
+      },
+      {
+        "name": "_g_40b8",
+        "address": "1679:40B8",
+        "offset": 1142
+      },
+      {
+        "name": "_g_40bc",
+        "address": "1679:40BC",
+        "offset": 1146
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "Glyph font[256]",
+        "offset": 0,
+        "size": 1024,
+        "initializer": null
+      },
+      {
+        "declaration": "char *messages",
+        "offset": 1024,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "char *font_table",
+        "offset": 1028,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *font_small",
+        "offset": 1032,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *font_large",
+        "offset": 1036,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *font_current",
+        "offset": 1040,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "int font_height",
+        "offset": 1044,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int font_width",
+        "offset": 1046,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "Image surfaces[2]",
+        "offset": 1048,
+        "size": 64,
+        "initializer": null
+      },
+      {
+        "declaration": "int mode",
+        "offset": 1112,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *pages[2]",
+        "offset": 1114,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "int page",
+        "offset": 1122,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "unsigned planes[4]",
+        "offset": 1124,
+        "size": 8,
+        "initializer": null
+      },
+      {
+        "declaration": "char *keymap",
+        "offset": 1132,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Cursor *cursor",
+        "offset": 1136,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "int front_page",
+        "offset": 1140,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *back",
+        "offset": 1142,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "Image *front",
+        "offset": 1146,
+        "size": 4,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "BLO",
+    "include": "BLO_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_blo_strings",
+    "storage": "DATA",
+    "address": "1679:0E4C",
+    "size": 43,
+    "aliases": [
+      {
+        "name": "_g_0e4c",
+        "address": "1679:0E4C",
+        "offset": 0
+      },
+      {
+        "name": "_g_0e4f",
+        "address": "1679:0E4F",
+        "offset": 3
+      },
+      {
+        "name": "_g_0e64",
+        "address": "1679:0E64",
+        "offset": 24
+      },
+      {
+        "name": "_g_0e74",
+        "address": "1679:0E74",
+        "offset": 40
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_0e4c[3]",
+        "offset": 0,
+        "size": 3,
+        "initializer": "\"rb\""
+      },
+      {
+        "declaration": "char text_0e4f[21]",
+        "offset": 3,
+        "size": 21,
+        "initializer": "\"game not full. file \""
+      },
+      {
+        "declaration": "char text_0e64[16]",
+        "offset": 24,
+        "size": 16,
+        "initializer": "\"wrong game file\""
+      },
+      {
+        "declaration": "char text_0e74[3]",
+        "offset": 40,
+        "size": 3,
+        "initializer": "\"wb\""
+      }
+    ]
+  },
+  {
+    "module": "BLO",
+    "include": "BLO_state.inc",
+    "section": "state",
+    "anchor": "_sb_blo_state",
+    "storage": "BSS",
+    "address": "1679:40C0",
+    "size": 8,
+    "aliases": [
+      {
+        "name": "_g_40c0",
+        "address": "1679:40C0",
+        "offset": 0
+      },
+      {
+        "name": "_g_40c4",
+        "address": "1679:40C4",
+        "offset": 4
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "DriverEntry original",
+        "offset": 0,
+        "size": 4,
+        "initializer": null
+      },
+      {
+        "declaration": "DriverEntry current",
+        "offset": 4,
+        "size": 4,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "PARA",
+    "include": "PARA_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_para_strings",
+    "storage": "DATA",
+    "address": "1679:0E78",
+    "size": 39,
+    "aliases": [
+      {
+        "name": "_g_0e78",
+        "address": "1679:0E78",
+        "offset": 0
+      },
+      {
+        "name": "_g_0e88",
+        "address": "1679:0E88",
+        "offset": 16
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "char text_0e78[16]",
+        "offset": 0,
+        "size": 16,
+        "initializer": "\"not free memory\""
+      },
+      {
+        "declaration": "char text_0e88[23]",
+        "offset": 16,
+        "size": 23,
+        "initializer": "\"error in allocmemblock\""
+      }
+    ]
+  },
+  {
+    "module": "REC",
+    "include": "REC_extra.inc",
+    "section": "before_all",
+    "anchor": "_sb_replay_flags",
+    "storage": "BSS",
+    "address": "1679:40FF",
+    "size": 4,
+    "aliases": [
+      {
+        "name": "_g_40ff",
+        "address": "1679:40FF",
+        "offset": 0
+      },
+      {
+        "name": "_g_4101",
+        "address": "1679:4101",
+        "offset": 2
+      }
+    ],
+    "fields": []
+  },
+  {
+    "module": "HW",
+    "include": "HW_prefix.inc",
+    "section": "prefix",
+    "anchor": "_sb_hw_data",
+    "storage": "DATA",
+    "address": "1679:0EA0",
+    "size": 25,
+    "aliases": [
+      {
+        "name": "_g0ea0",
+        "address": "1679:0EA0",
+        "offset": 0
+      },
+      {
+        "name": "_g0ea1",
+        "address": "1679:0EA1",
+        "offset": 1
+      },
+      {
+        "name": "_g0ea2",
+        "address": "1679:0EA2",
+        "offset": 2
+      },
+      {
+        "name": "_g0ea3",
+        "address": "1679:0EA3",
+        "offset": 3
+      },
+      {
+        "name": "_g0ea5",
+        "address": "1679:0EA5",
+        "offset": 5
+      },
+      {
+        "name": "_g0ea6",
+        "address": "1679:0EA6",
+        "offset": 6
+      },
+      {
+        "name": "_g0eaa",
+        "address": "1679:0EAA",
+        "offset": 10
+      },
+      {
+        "name": "_g0eac",
+        "address": "1679:0EAC",
+        "offset": 12
+      },
+      {
+        "name": "_g0eae",
+        "address": "1679:0EAE",
+        "offset": 14
+      },
+      {
+        "name": "_g0eb0",
+        "address": "1679:0EB0",
+        "offset": 16
+      },
+      {
+        "name": "_g0eb2",
+        "address": "1679:0EB2",
+        "offset": 18
+      },
+      {
+        "name": "_g0eb4",
+        "address": "1679:0EB4",
+        "offset": 20
+      },
+      {
+        "name": "_g0eb5",
+        "address": "1679:0EB5",
+        "offset": 21
+      },
+      {
+        "name": "_g0eb6",
+        "address": "1679:0EB6",
+        "offset": 22
+      },
+      {
+        "name": "_g0eb7",
+        "address": "1679:0EB7",
+        "offset": 23
+      },
+      {
+        "name": "_g0eb8",
+        "address": "1679:0EB8",
+        "offset": 24
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "unsigned char left_key",
+        "offset": 0,
+        "size": 1,
+        "initializer": 82
+      },
+      {
+        "declaration": "unsigned char middle_key",
+        "offset": 1,
+        "size": 1,
+        "initializer": 0
+      },
+      {
+        "declaration": "unsigned char right_key",
+        "offset": 2,
+        "size": 1,
+        "initializer": 83
+      },
+      {
+        "declaration": "int mouse_installed",
+        "offset": 3,
+        "size": 2,
+        "initializer": 0
+      },
+      {
+        "declaration": "unsigned char locked",
+        "offset": 5,
+        "size": 1,
+        "initializer": 0
+      },
+      {
+        "declaration": "HwCallback callback",
+        "offset": 6,
+        "size": 4,
+        "initializer": 0
+      },
+      {
+        "declaration": "int left_held",
+        "offset": 10,
+        "size": 2,
+        "initializer": 0
+      },
+      {
+        "declaration": "int middle_held",
+        "offset": 12,
+        "size": 2,
+        "initializer": 0
+      },
+      {
+        "declaration": "int right_held",
+        "offset": 14,
+        "size": 2,
+        "initializer": 0
+      },
+      {
+        "declaration": "int button_mask",
+        "offset": 16,
+        "size": 2,
+        "initializer": 0
+      },
+      {
+        "declaration": "int cursor_enabled",
+        "offset": 18,
+        "size": 2,
+        "initializer": 1
+      },
+      {
+        "declaration": "unsigned char modifier",
+        "offset": 20,
+        "size": 1,
+        "initializer": 0
+      },
+      {
+        "declaration": "unsigned char scan",
+        "offset": 21,
+        "size": 1,
+        "initializer": 0
+      },
+      {
+        "declaration": "unsigned char scan_ready",
+        "offset": 22,
+        "size": 1,
+        "initializer": 0
+      },
+      {
+        "declaration": "unsigned char extended",
+        "offset": 23,
+        "size": 1,
+        "initializer": 0
+      },
+      {
+        "declaration": "unsigned char active",
+        "offset": 24,
+        "size": 1,
+        "initializer": 1
+      }
+    ]
+  },
+  {
+    "module": "HW",
+    "include": "HW_state.inc",
+    "section": "state",
+    "anchor": "_sb_hw_state",
+    "storage": "BSS",
+    "address": "1679:40C8",
+    "size": 45,
+    "aliases": [
+      {
+        "name": "_g40c8",
+        "address": "1679:40C8",
+        "offset": 0
+      },
+      {
+        "name": "_g40c9",
+        "address": "1679:40C9",
+        "offset": 1
+      },
+      {
+        "name": "_g40cb",
+        "address": "1679:40CB",
+        "offset": 3
+      },
+      {
+        "name": "_g40cd",
+        "address": "1679:40CD",
+        "offset": 5
+      },
+      {
+        "name": "_g40cf",
+        "address": "1679:40CF",
+        "offset": 7
+      },
+      {
+        "name": "_g40d1",
+        "address": "1679:40D1",
+        "offset": 9
+      },
+      {
+        "name": "_g40d3",
+        "address": "1679:40D3",
+        "offset": 11
+      },
+      {
+        "name": "_g40d5",
+        "address": "1679:40D5",
+        "offset": 13
+      },
+      {
+        "name": "_g40d7",
+        "address": "1679:40D7",
+        "offset": 15
+      },
+      {
+        "name": "_g40d9",
+        "address": "1679:40D9",
+        "offset": 17
+      },
+      {
+        "name": "_g40db",
+        "address": "1679:40DB",
+        "offset": 19
+      },
+      {
+        "name": "_g40dd",
+        "address": "1679:40DD",
+        "offset": 21
+      },
+      {
+        "name": "_g40df",
+        "address": "1679:40DF",
+        "offset": 23
+      },
+      {
+        "name": "_g40e1",
+        "address": "1679:40E1",
+        "offset": 25
+      },
+      {
+        "name": "_g40e3",
+        "address": "1679:40E3",
+        "offset": 27
+      },
+      {
+        "name": "_g40e5",
+        "address": "1679:40E5",
+        "offset": 29
+      },
+      {
+        "name": "_g40e7",
+        "address": "1679:40E7",
+        "offset": 31
+      },
+      {
+        "name": "_g40e9",
+        "address": "1679:40E9",
+        "offset": 33
+      },
+      {
+        "name": "_g40eb",
+        "address": "1679:40EB",
+        "offset": 35
+      },
+      {
+        "name": "_g40ed",
+        "address": "1679:40ED",
+        "offset": 37
+      },
+      {
+        "name": "_g40ef",
+        "address": "1679:40EF",
+        "offset": 39
+      },
+      {
+        "name": "_g40f1",
+        "address": "1679:40F1",
+        "offset": 41
+      }
+    ],
+    "fields": [
+      {
+        "declaration": "unsigned char scan",
+        "offset": 0,
+        "size": 1,
+        "initializer": null
+      },
+      {
+        "declaration": "int x",
+        "offset": 1,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int y",
+        "offset": 3,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int left_count",
+        "offset": 5,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int middle_count",
+        "offset": 7,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int right_count",
+        "offset": 9,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int buttons",
+        "offset": 11,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int min_x",
+        "offset": 13,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int min_y",
+        "offset": 15,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int max_x",
+        "offset": 17,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int max_y",
+        "offset": 19,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int height",
+        "offset": 21,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int width",
+        "offset": 23,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "unsigned keyboard_flags",
+        "offset": 25,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int e3",
+        "offset": 27,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int e5",
+        "offset": 29,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int e7",
+        "offset": 31,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int e9",
+        "offset": 33,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int eb",
+        "offset": 35,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int ed",
+        "offset": 37,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "int ef",
+        "offset": 39,
+        "size": 2,
+        "initializer": null
+      },
+      {
+        "declaration": "void interrupt (*previous_keyboard)(void)",
+        "offset": 41,
+        "size": 4,
+        "initializer": null
+      }
+    ]
+  },
+  {
+    "module": "SNDATA",
+    "anchor": "_snd_max_values",
+    "storage": "DATA",
+    "address": "1679:10E2",
+    "size": 32,
+    "declaration": "SndWord snd_max_values[16]; /* canonical SNDATA.C; last slot overlaps random seed */",
+    "aliases": [
+      {
+        "name": "_snd_random_seed",
+        "address": "1679:1100",
+        "offset": 30
+      }
+    ]
+  }
+]

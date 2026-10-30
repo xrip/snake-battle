@@ -1,0 +1,53 @@
+{
+  "module": "assert.c",
+  "segment_name": "_BSS",
+  "object_size": 2,
+  "expected_size": 2,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 15040,
+    "image_offset": 107088,
+    "address": "1679:3AC0"
+  },
+  "public_bindings": [
+    {
+      "name": "_sb_assert_state",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 15040,
+        "image_offset": 107088,
+        "address": "1679:3AC0"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15040,
+        "image_offset": 107088,
+        "address": "1679:3AC0"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g_3ac0",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 15040,
+        "image_offset": 107088,
+        "address": "1679:3AC0"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 15040,
+        "image_offset": 107088,
+        "address": "1679:3AC0"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}

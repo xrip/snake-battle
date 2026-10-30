@@ -1,0 +1,935 @@
+[
+  {
+    "module": "about.c",
+    "object": "ABOUT.OBJ",
+    "segments": [
+      {
+        "name": "ABOUT_TEXT",
+        "class": "CODE",
+        "size": 236,
+        "address": "0B1D:0003",
+        "initialized": 236
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 0,
+        "address": null,
+        "initialized": 0
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 0,
+        "address": null,
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_fmt_about",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 371
+      }
+    ]
+  },
+  {
+    "module": "cards.c",
+    "object": "CARDS.OBJ",
+    "segments": [
+      {
+        "name": "CARDS_TEXT",
+        "class": "CODE",
+        "size": 4379,
+        "address": "0A0B:0008",
+        "initialized": 4379
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 280,
+        "address": "1679:0BE5",
+        "initialized": 280,
+        "byte_exact": true,
+        "sha256": "ff7f2497846f42c6fa13c79b1751450c51d20dc7c63fe6e18815baacc9aac7f0"
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 1494,
+        "address": "1679:34EA",
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_card_panel",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 4343,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 833
+      },
+      {
+        "name": "_card_edit",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1553,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 854
+      },
+      {
+        "name": "_card_group",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1423,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 874
+      },
+      {
+        "name": "_card_button",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1335,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 895
+      },
+      {
+        "name": "_card_reset_stats",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1310,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 917
+      },
+      {
+        "name": "_card_new",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1216,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 944
+      },
+      {
+        "name": "_card_draw_all",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1179,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 963
+      },
+      {
+        "name": "_card_draw",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 1003,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 987
+      },
+      {
+        "name": "_card_outline",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 766,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1007
+      },
+      {
+        "name": "_card_cell",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 489,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1030
+      },
+      {
+        "name": "_card_clear",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 421,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1050
+      },
+      {
+        "name": "_card_slot",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 279,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1071
+      },
+      {
+        "name": "_card_flash_mode",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1091
+      },
+      {
+        "name": "_card_tool",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1117
+      },
+      {
+        "name": "_card_mode",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 3,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1137
+      },
+      {
+        "name": "_card_numbers",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 5,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1157
+      },
+      {
+        "name": "_card_icons",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 9,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1180
+      },
+      {
+        "name": "_card_background",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 13,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1201
+      },
+      {
+        "name": "_card_modified",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 17,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1227
+      },
+      {
+        "name": "_card_current",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 19,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1251
+      },
+      {
+        "name": "_card_snake",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 21,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1274
+      },
+      {
+        "name": "_card_actions",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 186,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1295
+      },
+      {
+        "name": "_card_rects",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 10,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1318
+      },
+      {
+        "name": "_card_colors",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1339
+      }
+    ]
+  },
+  {
+    "module": "files.c",
+    "object": "FILES.OBJ",
+    "segments": [
+      {
+        "name": "FILES_TEXT",
+        "class": "CODE",
+        "size": 3543,
+        "address": "0B33:0003",
+        "initialized": 3543
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 52,
+        "address": "1679:0CFE",
+        "initialized": 52,
+        "byte_exact": true,
+        "sha256": "7edbf9f1170aae0e62def6ca9b1f54cf5cff3622580538a27e4177b53b5df43e"
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 0,
+        "address": "1679:40AE",
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_fmt_caps",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 862
+      },
+      {
+        "name": "_fmt_wb",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 49,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 881
+      },
+      {
+        "name": "_fmt_rb",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 46,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 898
+      },
+      {
+        "name": "_fmt_dot",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 44,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 915
+      },
+      {
+        "name": "_fmt_snk_glob",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 38,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 933
+      },
+      {
+        "name": "_fmt_date_format",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 25,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 956
+      },
+      {
+        "name": "_fmt_error_memory",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 7,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 982
+      },
+      {
+        "name": "_fmt_error_format",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 2,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1009
+      },
+      {
+        "name": "_fmt_random",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 3468,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1036
+      },
+      {
+        "name": "_fmt_save",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 3176,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1057
+      },
+      {
+        "name": "_fmt_load",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 2633,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1076
+      },
+      {
+        "name": "_fmt_pause",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 2545,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1095
+      },
+      {
+        "name": "_fmt_edit",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 904,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1115
+      },
+      {
+        "name": "_fmt_key",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 509,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1134
+      },
+      {
+        "name": "_fmt_snk_list",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 229,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1152
+      },
+      {
+        "name": "_fmt_date",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 114,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1175
+      },
+      {
+        "name": "_fmt_free",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 96,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1194
+      },
+      {
+        "name": "_fmt_alloc",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 39,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1213
+      },
+      {
+        "name": "_fmt_fatal",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 1233
+      }
+    ]
+  },
+  {
+    "module": "number.c",
+    "object": "NUMBER.OBJ",
+    "segments": [
+      {
+        "name": "NUMBER_TEXT",
+        "class": "CODE",
+        "size": 42,
+        "address": "0C1E:000C",
+        "initialized": 42
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 4,
+        "address": "1679:0D36",
+        "initialized": 4,
+        "byte_exact": true,
+        "sha256": "c13936bf4a9afd3983348878302f727d21fc06de9ebb93beda40b5de0b70d0bb"
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 0,
+        "address": null,
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_fmt_number",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 216
+      },
+      {
+        "name": "_fmt_number_format",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 237
+      }
+    ]
+  },
+  {
+    "module": "rec.c",
+    "object": "REC.OBJ",
+    "segments": [
+      {
+        "name": "REC_TEXT",
+        "class": "CODE",
+        "size": 1032,
+        "address": "0E92:0008",
+        "initialized": 1032
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 76,
+        "address": "1679:0EBA",
+        "initialized": 76,
+        "byte_exact": true,
+        "sha256": "3d49cdfc426b4ad4bf1a0a8cb0437f5c6fb2fe900e9f10eb0eb530e72744f5ae"
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 9,
+        "address": "1679:40F6",
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_rec_read_bytes",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 889,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 359
+      },
+      {
+        "name": "_rec_write_bytes",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 747,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 384
+      },
+      {
+        "name": "_rec_read_stream",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 514,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 410
+      },
+      {
+        "name": "_rec_unget",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 494,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 436
+      },
+      {
+        "name": "_rec_write_stream",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 258,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 456
+      },
+      {
+        "name": "_rec_packed",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 240,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 483
+      },
+      {
+        "name": "_rec_close_write",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 185,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 504
+      },
+      {
+        "name": "_rec_open_write",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 95,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 530
+      },
+      {
+        "name": "_rec_close_read",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 84,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 555
+      },
+      {
+        "name": "_rec_open_read",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 580
+      },
+      {
+        "name": "_rec_error_packed",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 47,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 604
+      },
+      {
+        "name": "_rec_error_read",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 24,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 631
+      },
+      {
+        "name": "_rec_error_write",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 656
+      },
+      {
+        "name": "_rec_push_flag",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 74,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 682
+      },
+      {
+        "name": "_rec_pushed",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 706
+      },
+      {
+        "name": "_rec_previous",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 1,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 727
+      },
+      {
+        "name": "_rec_handle",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 2,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 750
+      },
+      {
+        "name": "_rec_mode",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 4,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 771
+      },
+      {
+        "name": "_rec_buffer",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 6,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 790
+      },
+      {
+        "name": "_rec_phase",
+        "group": 1,
+        "segment": 3,
+        "frame": null,
+        "offset": 7,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 811
+      }
+    ]
+  },
+  {
+    "module": "ticks.c",
+    "object": "TICKS.OBJ",
+    "segments": [
+      {
+        "name": "TICKS_TEXT",
+        "class": "CODE",
+        "size": 226,
+        "address": "0C10:000A",
+        "initialized": 226
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 4,
+        "address": "1679:0D32",
+        "initialized": 4,
+        "byte_exact": true,
+        "sha256": "17614e8421e7701151c2f7eaa5f1bb33236764a896aa0cd3d609af41600910a8"
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 0,
+        "address": null,
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_tick_active",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 41,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 195
+      },
+      {
+        "name": "_tick_wait",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 12,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 217
+      },
+      {
+        "name": "_tick_now",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 237
+      },
+      {
+        "name": "_tick_pointer",
+        "group": 1,
+        "segment": 2,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 256
+      }
+    ]
+  },
+  {
+    "module": "xor.c",
+    "object": "XOR.OBJ",
+    "segments": [
+      {
+        "name": "XOR_TEXT",
+        "class": "CODE",
+        "size": 116,
+        "address": "0B2B:000F",
+        "initialized": 116
+      },
+      {
+        "name": "_DATA",
+        "class": "DATA",
+        "size": 0,
+        "address": null,
+        "initialized": 0
+      },
+      {
+        "name": "_BSS",
+        "class": "BSS",
+        "size": 0,
+        "address": null,
+        "initialized": 0
+      }
+    ],
+    "publics": [
+      {
+        "name": "_snk_decode",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 55,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 189
+      },
+      {
+        "name": "_snk_encode",
+        "group": 0,
+        "segment": 1,
+        "frame": null,
+        "offset": 0,
+        "type_index": 0,
+        "local": false,
+        "record_offset": 210
+      }
+    ]
+  }
+]

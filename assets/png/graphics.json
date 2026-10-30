@@ -1,0 +1,1212 @@
+[
+  {
+    "width": 640,
+    "height": 28,
+    "stride": 80,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2272,
+      4512,
+      6752
+    ],
+    "preserved_header_tail_16_31_hex": "000014c400224cd26e05000000007d0b",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "LETTER.BLO"
+  },
+  {
+    "width": 14,
+    "height": 11,
+    "stride": 2,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "PICKUP.BLO"
+  },
+  {
+    "width": 21,
+    "height": 17,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      112,
+      192,
+      272
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fc40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KEYDOWN.BLO"
+  },
+  {
+    "width": 21,
+    "height": 17,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      112,
+      192,
+      272
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fc40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KEYUP.BLO"
+  },
+  {
+    "width": 187,
+    "height": 108,
+    "stride": 24,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2624,
+      5216,
+      7808
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040e540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "COLOR.BLO"
+  },
+  {
+    "width": 12,
+    "height": 16,
+    "stride": 2,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040fc40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "COL-UP.BLO"
+  },
+  {
+    "width": 12,
+    "height": 16,
+    "stride": 2,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040fc40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "COLDOWN.BLO"
+  },
+  {
+    "width": 187,
+    "height": 108,
+    "stride": 24,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2624,
+      5216,
+      7808
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040e540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "PASOPEN.BLO"
+  },
+  {
+    "width": 141,
+    "height": 99,
+    "stride": 18,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      1824,
+      3616,
+      5408
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080e740004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "CLSCARD.BLO"
+  },
+  {
+    "width": 131,
+    "height": 90,
+    "stride": 18,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      1664,
+      3296,
+      4928
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0e940004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "OPNCARD.BLO"
+  },
+  {
+    "width": 125,
+    "height": 83,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      1360,
+      2688,
+      4016
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080eb40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "CARD.BLO"
+  },
+  {
+    "width": 154,
+    "height": 23,
+    "stride": 20,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      496,
+      960,
+      1424
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "PANEL1.BLO"
+  },
+  {
+    "width": 155,
+    "height": 11,
+    "stride": 20,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      256,
+      480,
+      704
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "TIME.BLO"
+  },
+  {
+    "width": 91,
+    "height": 11,
+    "stride": 12,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      176,
+      320,
+      464
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETA1.BLO"
+  },
+  {
+    "width": 95,
+    "height": 12,
+    "stride": 12,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      176,
+      320,
+      464
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETA2.BLO"
+  },
+  {
+    "width": 99,
+    "height": 12,
+    "stride": 14,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      208,
+      384,
+      560
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETA3.BLO"
+  },
+  {
+    "width": 103,
+    "height": 13,
+    "stride": 14,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      224,
+      416,
+      608
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETA4.BLO"
+  },
+  {
+    "width": 107,
+    "height": 15,
+    "stride": 14,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      256,
+      480,
+      704
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fc40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETA5.BLO"
+  },
+  {
+    "width": 111,
+    "height": 16,
+    "stride": 14,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      256,
+      480,
+      704
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040fc40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETA6.BLO"
+  },
+  {
+    "width": 17,
+    "height": 13,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      96,
+      160,
+      224
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "ADVANCED.BLO"
+  },
+  {
+    "width": 17,
+    "height": 13,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      96,
+      160,
+      224
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "EXPERT.BLO"
+  },
+  {
+    "width": 17,
+    "height": 13,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      96,
+      160,
+      224
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "NOVICE.BLO"
+  },
+  {
+    "width": 155,
+    "height": 25,
+    "stride": 20,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      544,
+      1056,
+      1568
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "ZAH_KASS.BLO"
+  },
+  {
+    "width": 155,
+    "height": 27,
+    "stride": 20,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      576,
+      1120,
+      1664
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080f940004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "ZAHVAT1.BLO"
+  },
+  {
+    "width": 27,
+    "height": 6,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0fe40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "VOROTA1.BLO"
+  },
+  {
+    "width": 5,
+    "height": 22,
+    "stride": 2,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      80,
+      128,
+      176
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "VOROTA2.BLO"
+  },
+  {
+    "width": 27,
+    "height": 6,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      64,
+      96,
+      128
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0fe40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "VOROTA3.BLO"
+  },
+  {
+    "width": 5,
+    "height": 22,
+    "stride": 2,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      80,
+      128,
+      176
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "VOROTA4.BLO"
+  },
+  {
+    "width": 43,
+    "height": 116,
+    "stride": 6,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      736,
+      1440,
+      2144
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040e340004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "1-9.BLO"
+  },
+  {
+    "width": 287,
+    "height": 65,
+    "stride": 36,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2384,
+      4736,
+      7088
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000f040004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "15-PICT.BLO"
+  },
+  {
+    "width": 269,
+    "height": 13,
+    "stride": 34,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      480,
+      928,
+      1376
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "PICT-C.BLO"
+  },
+  {
+    "width": 322,
+    "height": 272,
+    "stride": 42,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      11456,
+      22880,
+      34304
+    ],
+    "preserved_header_tail_16_31_hex": "00000000000000000000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "BODYALL.BLO"
+  },
+  {
+    "width": 640,
+    "height": 350,
+    "stride": 80,
+    "plane_offsets": [
+      0,
+      28000,
+      56000,
+      84000
+    ],
+    "plane_color_bits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "layout": "full_screen",
+    "name": "PLAN1.BLO"
+  },
+  {
+    "width": 640,
+    "height": 350,
+    "stride": 80,
+    "plane_offsets": [
+      0,
+      28000,
+      56000,
+      84000
+    ],
+    "plane_color_bits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "layout": "full_screen",
+    "name": "PLAN3.BLO"
+  },
+  {
+    "width": 640,
+    "height": 350,
+    "stride": 80,
+    "plane_offsets": [
+      0,
+      28000,
+      56000,
+      84000
+    ],
+    "plane_color_bits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "layout": "full_screen",
+    "name": "PLAN2.BLO"
+  },
+  {
+    "width": 42,
+    "height": 11,
+    "stride": 6,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      112,
+      192,
+      272
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "MUNUP.BLO"
+  },
+  {
+    "width": 42,
+    "height": 11,
+    "stride": 6,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      112,
+      192,
+      272
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fd40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "MUNDOWN.BLO"
+  },
+  {
+    "width": 113,
+    "height": 103,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      1680,
+      3328,
+      4976
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080e640004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KASSETS.BLO"
+  },
+  {
+    "width": 26,
+    "height": 21,
+    "stride": 4,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      128,
+      224,
+      320
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000fb40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "KURSOR.BLO"
+  },
+  {
+    "width": 391,
+    "height": 42,
+    "stride": 50,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2144,
+      4256,
+      6368
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0f540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "SHRIFT_1.BLO"
+  },
+  {
+    "width": 391,
+    "height": 42,
+    "stride": 50,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2144,
+      4256,
+      6368
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0f540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "SHRIFT_2.BLO"
+  },
+  {
+    "width": 187,
+    "height": 108,
+    "stride": 24,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2624,
+      5216,
+      7808
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040e540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "RPASOPEN.BLO"
+  },
+  {
+    "width": 438,
+    "height": 42,
+    "stride": 56,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2384,
+      4736,
+      7088
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0f540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "RSHRIF_1.BLO"
+  },
+  {
+    "width": 439,
+    "height": 42,
+    "stride": 56,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2384,
+      4736,
+      7088
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0f540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "RSHRIF_2.BLO"
+  },
+  {
+    "width": 141,
+    "height": 99,
+    "stride": 18,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      1824,
+      3616,
+      5408
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080e740004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "RCLSCARD.BLO"
+  },
+  {
+    "width": 640,
+    "height": 350,
+    "stride": 80,
+    "plane_offsets": [
+      0,
+      28000,
+      56000,
+      84000
+    ],
+    "plane_color_bits": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "layout": "full_screen",
+    "name": "RPLAN2.BLO"
+  },
+  {
+    "width": 414,
+    "height": 42,
+    "stride": 52,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2224,
+      4416,
+      6608
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0f540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "SWSHRI_1.BLO"
+  },
+  {
+    "width": 415,
+    "height": 42,
+    "stride": 52,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2224,
+      4416,
+      6608
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0f540004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "SWSHRI_2.BLO"
+  },
+  {
+    "width": 195,
+    "height": 123,
+    "stride": 26,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      3232,
+      6432,
+      9632
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080e140004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "MKBATTLE.BLO"
+  },
+  {
+    "width": 195,
+    "height": 123,
+    "stride": 26,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      3232,
+      6432,
+      9632
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080e140004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "MKBRAIN.BLO"
+  },
+  {
+    "width": 192,
+    "height": 121,
+    "stride": 24,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      2944,
+      5856,
+      8768
+    ],
+    "preserved_header_tail_16_31_hex": "0000000000e240004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "MKCOLOR.BLO"
+  },
+  {
+    "width": 193,
+    "height": 123,
+    "stride": 26,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      3232,
+      6432,
+      9632
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080e140004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "R_MKPASS.BLO"
+  },
+  {
+    "width": 123,
+    "height": 23,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      400,
+      768,
+      1136
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "2-EXIT.BLO"
+  },
+  {
+    "width": 123,
+    "height": 23,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      400,
+      768,
+      1136
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "2-SLOW.BLO"
+  },
+  {
+    "width": 123,
+    "height": 23,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      400,
+      768,
+      1136
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "2-SOUND.BLO"
+  },
+  {
+    "width": 123,
+    "height": 24,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      416,
+      800,
+      1184
+    ],
+    "preserved_header_tail_16_31_hex": "0000000040fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "2-START.BLO"
+  },
+  {
+    "width": 123,
+    "height": 23,
+    "stride": 16,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      400,
+      768,
+      1136
+    ],
+    "preserved_header_tail_16_31_hex": "0000000080fa40004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "2-STOP.BLO"
+  },
+  {
+    "width": 193,
+    "height": 122,
+    "stride": 26,
+    "flags": 24,
+    "plane_offsets": [
+      32,
+      3216,
+      6400,
+      9584
+    ],
+    "preserved_header_tail_16_31_hex": "00000000c0e140004000000000000000",
+    "plane_color_bits": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "layout": "sprite",
+    "name": "MKPASS.BLO"
+  }
+]

@@ -1,0 +1,189 @@
+{
+  "module": "cards.c",
+  "segment_name": "_BSS",
+  "object_size": 1494,
+  "expected_size": 1494,
+  "initialized_bytes": 0,
+  "target": {
+    "segment": 5753,
+    "offset": 13546,
+    "image_offset": 105594,
+    "address": "1679:34EA"
+  },
+  "public_bindings": [
+    {
+      "name": "_card_tool",
+      "object_offset": 0,
+      "actual": {
+        "segment": 5753,
+        "offset": 13546,
+        "image_offset": 105594,
+        "address": "1679:34EA"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13546,
+        "image_offset": 105594,
+        "address": "1679:34EA"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_mode",
+      "object_offset": 3,
+      "actual": {
+        "segment": 5753,
+        "offset": 13549,
+        "image_offset": 105597,
+        "address": "1679:34ED"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13549,
+        "image_offset": 105597,
+        "address": "1679:34ED"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_numbers",
+      "object_offset": 5,
+      "actual": {
+        "segment": 5753,
+        "offset": 13551,
+        "image_offset": 105599,
+        "address": "1679:34EF"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13551,
+        "image_offset": 105599,
+        "address": "1679:34EF"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_icons",
+      "object_offset": 9,
+      "actual": {
+        "segment": 5753,
+        "offset": 13555,
+        "image_offset": 105603,
+        "address": "1679:34F3"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13555,
+        "image_offset": 105603,
+        "address": "1679:34F3"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_background",
+      "object_offset": 13,
+      "actual": {
+        "segment": 5753,
+        "offset": 13559,
+        "image_offset": 105607,
+        "address": "1679:34F7"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13559,
+        "image_offset": 105607,
+        "address": "1679:34F7"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_modified",
+      "object_offset": 17,
+      "actual": {
+        "segment": 5753,
+        "offset": 13563,
+        "image_offset": 105611,
+        "address": "1679:34FB"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13563,
+        "image_offset": 105611,
+        "address": "1679:34FB"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_current",
+      "object_offset": 19,
+      "actual": {
+        "segment": 5753,
+        "offset": 13565,
+        "image_offset": 105613,
+        "address": "1679:34FD"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13565,
+        "image_offset": 105613,
+        "address": "1679:34FD"
+      },
+      "equal": true
+    },
+    {
+      "name": "_card_snake",
+      "object_offset": 21,
+      "actual": {
+        "segment": 5753,
+        "offset": 13567,
+        "image_offset": 105615,
+        "address": "1679:34FF"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13567,
+        "image_offset": 105615,
+        "address": "1679:34FF"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g34ff",
+      "object_offset": 21,
+      "actual": {
+        "segment": 5753,
+        "offset": 13567,
+        "image_offset": 105615,
+        "address": "1679:34FF"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13567,
+        "image_offset": 105615,
+        "address": "1679:34FF"
+      },
+      "equal": true
+    },
+    {
+      "name": "_g34fb",
+      "object_offset": 17,
+      "actual": {
+        "segment": 5753,
+        "offset": 13563,
+        "image_offset": 105611,
+        "address": "1679:34FB"
+      },
+      "expected": {
+        "segment": 5753,
+        "offset": 13563,
+        "image_offset": 105611,
+        "address": "1679:34FB"
+      },
+      "equal": true
+    }
+  ],
+  "public_layout_exact": true,
+  "note": "BSS contributes allocation only; no bytes are present in the EXE.",
+  "passed": true,
+  "storage": "bss"
+}
